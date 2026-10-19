@@ -1,0 +1,30 @@
+{
+  "scope": "guarded three-file optional-permission history transfer only",
+  "recorded_at": "2026-10-16T04:38:26.421218+00:00",
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/improvement_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "2737c04abfae98436c79c12a433f70b42d2f77abd7b3731d55b76d802137eb27"
+    },
+    {
+      "path": "tests/unit/test_improvement_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "c8b8dbb484064bd3b896979c740eec005362e928340717d4030d82b8c90ab142"
+    },
+    {
+      "path": "tests/integration/test_improvement_lineage_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "8efd4c619d57b3185fa212df1a557b6052b7bd5d5c3069e4bc7c2057b7042405"
+    }
+  ],
+  "origin_inputs": 599,
+  "result_inputs": 602,
+  "canonical_matches_candidate": true,
+  "preserved_source_inputs": 599,
+  "hashed_selected_receipts": 21,
+  "canonical_verification": "PENDING",
+  "full_workflow_acceptance": false,
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

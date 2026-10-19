@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-10-17T19:26:37.483161+00:00",
+  "ended_at": "2026-10-17T19:26:49.983310+00:00",
+  "command": [
+    "C:/Users/vijay/AppData/Roaming/uv/tools/graphifyy/Scripts/python.exe",
+    "-m",
+    "graphify",
+    "update",
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\services\\api"
+  ],
+  "exit_code": 0,
+  "source_unchanged": true,
+  "nodes": 2119,
+  "edges": 9218,
+  "api_files": 142,
+  "graph_sha256": "015a5f9fc8e897d978e388ed8c0b4aa25d83fe670ee37661c5dd1970a47cdc19",
+  "scope": "API-only structural navigation; no semantic/security/release proof"
+}

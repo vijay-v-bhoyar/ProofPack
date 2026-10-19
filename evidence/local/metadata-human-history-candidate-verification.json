@@ -1,0 +1,47 @@
+{
+  "status": "PASS_FOR_STAGED_HUMAN_DISPOSITION_HISTORY_ONLY",
+  "checks": {
+    "metadata-lineage-human-history": {
+      "tests": 261,
+      "passing_phases": 783
+    },
+    "metadata-human-installed": {
+      "tests": 261,
+      "passing_phases": 783
+    },
+    "metadata-human-package": {
+      "tests": 336,
+      "passing_phases": 1008
+    }
+  },
+  "canonical_matches_upstream": true,
+  "source_inputs": 595,
+  "exact_backend_files": 111,
+  "exact_frontend_files": 3,
+  "installed_modules": 100,
+  "opencv_version": "5.0.0",
+  "wheel_sha256": "56713dc7d8b581895f788a49ff2b4246dddb904b1132510625c3dd380af2f012",
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/human_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "dcdc8419a0b35b3f1e13d4830310b70da95ad3479ffb799d1e83e20314f5a514"
+    },
+    {
+      "path": "tests/unit/test_human_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "dd1a0ccaf1f489895c3f32970c7110dd782c578fe8880541498cef35da1430fd"
+    },
+    {
+      "path": "tests/integration/test_human_history_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "2ecbf7bf78f8e25864631308674c0b07c7f17e0c849a7f489d451b9bfa0f1b9b"
+    }
+  ],
+  "integrated": false,
+  "scope": "provided closed-root human append history and source-transition coherence only; no label/reuse/full cleanup/current-rights/provider/truth acceptance",
+  "retained_failure": "pre-feature empty history cannot import absent human validator; exact unchanged oracle passes",
+  "retained_setup_failure": "malformed unit parameter decorator prevented collection; original output/source retained",
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

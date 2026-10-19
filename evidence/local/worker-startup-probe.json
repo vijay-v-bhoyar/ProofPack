@@ -1,0 +1,25 @@
+{
+  "scope": "local_serial_startup_diagnostic_only",
+  "recorded_at": "2026-10-15T01:25:17.867880+00:00",
+  "controls_sha256": "ecb838088cd0e8801a403183e6d4b5b422af51107d504972a6ce117b7ab90fe0",
+  "startup_limit_ms": 5000,
+  "trials": [
+    {
+      "trial": 1,
+      "status": "PASS",
+      "elapsed_ms": 2171
+    },
+    {
+      "trial": 2,
+      "status": "PASS",
+      "elapsed_ms": 2093
+    },
+    {
+      "trial": 3,
+      "status": "PASS",
+      "elapsed_ms": 1641
+    }
+  ],
+  "mode": "fresh process per independent measurement; no automatic service restart",
+  "beta_decision": "NO_GO"
+}

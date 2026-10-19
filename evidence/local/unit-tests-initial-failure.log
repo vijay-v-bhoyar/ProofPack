@@ -1,0 +1,31 @@
+..................................................................F      [100%]
+================================== FAILURES ===================================
+___________________ test_bounded_decode_and_metadata_strip ____________________
+
+    def test_bounded_decode_and_metadata_strip():
+        image=scene()
+        ok,encoded=cv2.imencode('.png',image)
+        assert ok
+>       assert np.array_equal(decode_image(encoded.tobytes()),image)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\unit\test_vision.py:81: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+services\api\proofpack\vision\pipeline.py:35: in decode_image
+    image.verify()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <PIL.PngImagePlugin.PngImageFile image mode=RGB size=600x300 at 0x29BCD1FEC00>
+
+    def verify(self) -> None:
+        """Verify PNG file"""
+    
+        if self.fp is None:
+            msg = "verify must be called directly after open"
+>           raise RuntimeError(msg)
+E           RuntimeError: verify must be called directly after open
+
+.venv\Lib\site-packages\PIL\PngImagePlugin.py:854: RuntimeError
+=========================== short test summary info ===========================
+FAILED tests/unit/test_vision.py::test_bounded_decode_and_metadata_strip - Ru...
+1 failed, 66 passed in 5.83s

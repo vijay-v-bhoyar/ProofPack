@@ -1,0 +1,114 @@
+{
+  "recorded_at": "2026-10-18T13:26:20.635961+00:00",
+  "run_id": "host-startup-readback-v1",
+  "scope_id": "HS01-HS07-private-reference-and-read-only-startup-observation",
+  "mode": "Verify",
+  "subject_id": "working-tree-manifest-sha256:5498ab1395fc6b9584acd891749849028ff1a5432356e7b086920cc595908d88",
+  "source_inputs": 777,
+  "status": "PASS_SELECTED_SOURCE_INSTALLED_AND_LOCAL_STORE",
+  "source_cases": 731,
+  "source_phases": 2193,
+  "installed_same_cases": 731,
+  "installed_phases": 2193,
+  "groups": {
+    "hs": {
+      "cases": 42,
+      "phases": 126,
+      "source_process": "evidence/local/host-startup-readback-models-hs-final-v1/process.json",
+      "installed_process": ".loop/repairs/host-startup-readback/installed-hs-v1-process.json"
+    },
+    "runtime": {
+      "cases": 183,
+      "phases": 549,
+      "source_process": "evidence/local/host-startup-readback-models-runtime-final-v1/process.json",
+      "installed_process": ".loop/repairs/host-startup-readback/installed-runtime-v1-process.json"
+    },
+    "consumers": {
+      "cases": 199,
+      "phases": 597,
+      "source_process": "evidence/local/host-startup-readback-models-consumers-final-v1/process.json",
+      "installed_process": ".loop/repairs/host-startup-readback/installed-consumers-v1-process.json"
+    },
+    "history": {
+      "cases": 189,
+      "phases": 567,
+      "source_process": "evidence/local/host-startup-readback-models-history-final-v1/process.json",
+      "installed_process": ".loop/repairs/host-startup-readback/installed-history-v1-process.json"
+    },
+    "decode": {
+      "cases": 118,
+      "phases": 354,
+      "source_process": "evidence/local/host-startup-readback-models-decode-final-v1/process.json",
+      "installed_process": ".loop/repairs/host-startup-readback/installed-decode-v1-process.json"
+    }
+  },
+  "failures_preserved": [
+    {
+      "id": "HS-F01",
+      "cases": 27,
+      "failed": 27,
+      "passed": 0,
+      "original_process": "evidence/local/host-startup-readback-models-probes-v2/process.json"
+    },
+    {
+      "id": "HS-F02",
+      "cases": 4,
+      "failed": 3,
+      "passed": 1,
+      "original_process": "evidence/local/host-startup-readback-models-frames-probes-v1/process.json"
+    }
+  ],
+  "rejected_original_baseline": "rejected-baseline-case-identity-v1.json",
+  "case_identity_review": "stable-identity-review-v1.json",
+  "native": {
+    "cases": 101,
+    "phases": 303,
+    "local_sdk_sends": 82536,
+    "external_sdk_sends": 0,
+    "process": ".loop/repairs/host-startup-readback/native-scope-v1-process.json",
+    "database_terminated": true,
+    "database_state_removed": true,
+    "scope": "100local unfenced regression cases and1actual missing-TableId denial; no protected positive target acceptance",
+    "pytest_seconds": 298.22,
+    "execution_limit_seconds": 300,
+    "timing_margin": "narrow; not a product throughput or SLA result"
+  },
+  "wheel_sha256": "6ca3635629aacaea2aa51f417e3ef49d34f979a02bb047d90596c46bdd2eee15",
+  "backend_files": 153,
+  "frontend_assets": 3,
+  "graph": {
+    "nodes": 2334,
+    "edges": 10085,
+    "scope": "API navigation; legacy IDs/community labels and no UI/test semantics"
+  },
+  "collection": {
+    "cases": 5745,
+    "phases": 0,
+    "prior5702_in_order": true,
+    "new_cases": 43,
+    "process": "evidence/local/host-startup-readback-collection-v1/process.json"
+  },
+  "source_unchanged": true,
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "remaining": [
+    "genuine protected enrollment/release/effect writers and full restore coordinator",
+    "actual retained original-reference/private-log and installed-artifact identity proof",
+    "complete classification/confirmation/cleanup/requester closeout",
+    "original8 actual creation-ID positive calls",
+    "actual target/IAM/backup/media/provider/physical/human evidence",
+    "prior owner-pointer failure cause",
+    "D11 actual data duties and policy",
+    "full current suite, rendered recovery and representative operator acceptance"
+  ],
+  "documentation_validation": {
+    "status": "PASS",
+    "checks": 34,
+    "inputs": 33,
+    "receipt": "evidence/documentation-validation.json",
+    "sha256": "08bcbb5a44ff420895abffd4670409cb9a5b32664cae3d936ea0ac89b9aa2229"
+  },
+  "current_source_manifest_still_matches": true,
+  "repair_record": ".loop/repairs/host-startup-readback/record-validation-v1.json",
+  "readme_navigation": ".loop/repairs/host-startup-readback/readme-navigation-check-v1.json"
+}

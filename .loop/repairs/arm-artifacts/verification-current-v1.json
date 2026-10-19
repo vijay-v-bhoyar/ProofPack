@@ -1,0 +1,117 @@
+{
+  "recorded_at": "2026-10-18T17:40:29.655251+00:00",
+  "subject_id": "working-tree-manifest-sha256:387571d6f6174c942e7dc73286ab3e07d7a5710b9a43d8c848f2a82eda6555ec",
+  "source_inputs": 813,
+  "status": "PASS_LOCAL_ACTUAL_ARTIFACT_CLOSURE_AND_SYNTHETIC_TARGET_GUARDS_ONLY",
+  "source_cases": 103,
+  "source_phases": 309,
+  "groups": [
+    {
+      "group": "builder",
+      "cases": 46,
+      "phases": 138,
+      "process": "evidence/local/fresh-enrollment-models-arm-artifact-builder-final-v1/process.json",
+      "process_sha256": "5f8a7662093c8040f24d099e0dc044a6f6b079e08fe72dc5b5f64c0702c909c1"
+    },
+    {
+      "group": "runtime",
+      "cases": 32,
+      "phases": 96,
+      "process": "evidence/local/fresh-enrollment-models-arm-artifact-runtime-final-v1/process.json",
+      "process_sha256": "d8a7685f72b7fe2f34e3db14b269bcca435f2bc3d62f04eff301c4e2526db442"
+    },
+    {
+      "group": "target",
+      "cases": 25,
+      "phases": 75,
+      "process": "evidence/local/fresh-enrollment-models-arm-artifact-target-final-v1/process.json",
+      "process_sha256": "7adb7c05f49e3f60a7411ceec7c349606281fc2479456f6830c1e10c68c0c69d"
+    }
+  ],
+  "original_oracles": "ALL_PREVIOUS78_AND_NEW25_BYTE_IDENTICAL_TO_RESPECTIVE_PRESERVED_ORIGINALS",
+  "tracked_local_sdk_sends": 0,
+  "tracked_external_sdk_sends": 0,
+  "full_collection_cases": 6111,
+  "collection_execution_phases": 0,
+  "full_current_suite": "NOT_RUN",
+  "collection_process": "evidence/local/arm-artifacts-collection-v1/process.json",
+  "collection_process_sha256": "30bd69eb3368e3783bde5c0e59156ebf5b0052c605cc389ac9f6f2babe8b1c01",
+  "metadata": {
+    "exact_pins": 32,
+    "compatible_candidates": 32,
+    "unknown": 0,
+    "receipt": ".loop/repairs/arm-artifacts/metadata-review-v1.json",
+    "sha256": "dcc654205400c9efd01b51712757a27cd6f1d4141a86dfa535ffb7b9239e1b21"
+  },
+  "downloaded_artifacts": {
+    "count": 32,
+    "bytes": 97745697,
+    "all_published_sha256_match": true,
+    "receipt": ".loop/repairs/arm-artifacts/download-receipt-v1.json",
+    "sha256": "c33f4a567860c4a76605a089387b1d8e5979e365dffd93d27e08fbd0406bf662",
+    "provenance": "PYPI_HTTPS_AND_SHA_ONLY_NOT_INDEPENDENT_PUBLISHER_ATTESTATION"
+  },
+  "actual_bundle": {
+    "artifacts": 33,
+    "files": 41,
+    "all_payload_digests_match": true,
+    "builder_exit_code": 0,
+    "windows_installer_denial_exit_code": 2,
+    "receipt": ".loop/repairs/arm-artifacts/actual-builder-v3-process.json",
+    "sha256": "b1b5712b823f17ff45d51120f3390b7ee26e35617b45823fe95ba7bd87bf418b",
+    "original_no_target_real_wheel_hold": "RETAINED_EXPECTED_CONTRACT_HOLD_EXIT2_NOT_AN_EXPLOIT",
+    "declared_python_candidate": "3.12.15",
+    "actual_local_tools_python": "3.12.3",
+    "aws_target": "SYNTHETIC_ACCOUNT_AMI_CERTIFICATE_COSTS_NOT_APPROVED"
+  },
+  "changed_existing_inputs": [
+    "scripts/install_host_bundle.py",
+    "scripts/prepare_host_install.py"
+  ],
+  "added_inputs": [
+    "tests/unit/test_host_install_python_target.py",
+    "tests/unit/test_host_install_target_boundaries.py"
+  ],
+  "runtime_members_verified": 161,
+  "app_runtime_unchanged": true,
+  "installed_app_or_tool_test": "NOT_RUN_THIS_SUBJECT; tools outside app wheel; prior installed runtime evidence retained at original subjects",
+  "graph": {
+    "nodes": 2390,
+    "edges": 10294,
+    "scope": "API unchanged; no scripts/tests graph coverage, direct source/closure/phase trace"
+  },
+  "native_arm_installation": "NOT_RUN",
+  "native_database": "NOT_RUN_MEMORY_HELD",
+  "human_A01_A09": "NOT_RUN",
+  "limits": {
+    "collection_seconds": 60,
+    "execution_seconds": 120,
+    "installer_phase_seconds": [
+      60,
+      120,
+      30
+    ],
+    "scope": "Original per-run bounds/guard, no assertion or bound relaxation"
+  },
+  "repair_records": [
+    "AT-F01-record.json",
+    "AT-F02-record.json"
+  ],
+  "parent_complete": false,
+  "authority": "NONE",
+  "beta_decision": "NO_GO",
+  "remaining": [
+    "Actual approved Python3.12.15 ARM image/interpreter/native wheel import/system libraries/provenance and privileged-host install",
+    "D07/D11 real account/region/budget/quotes/domain/purpose/retention/approvers and provider/schema/IAM/TLS/SG/private-log proof",
+    "Service/private configuration/key delivery/start and source-bound recovery/teardown",
+    "Full current/native suite, complete privacy/requester/media obligations and all five features/nine personas/78operations",
+    "IJ-T01 independent replacement-oracle review; earlier browser adverse causes UNKNOWN; physical/operator/human acceptance"
+  ],
+  "ledger_validation": {
+    "path": ".loop/repairs/arm-artifacts/ledger-validation-v1.json",
+    "sha256": "3b556dfad83cb5db632381d5e4d658d82c4a974b08f25345d15dad197b7d6f37",
+    "status": "TWO_PARENT_REVIEW_READY_LOCAL_STRUCTURAL_ONLY",
+    "parent_complete": false,
+    "authority": "none"
+  }
+}

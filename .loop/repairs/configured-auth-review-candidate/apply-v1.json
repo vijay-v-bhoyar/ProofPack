@@ -1,0 +1,103 @@
+{
+  "recorded_at": "2026-10-17T23:11:35.285383+00:00",
+  "status": "APPLIED_UNVERIFIED",
+  "files": [
+    {
+      "path": "services/api/proofpack/evidence/owner_metadata_review.py",
+      "original_sha256": "47fa90facdf89b756efe94d12b6c00e9eb96c738d056273d00a87933f2158daf",
+      "candidate_sha256": "2660e97bd19fe86c874e7a5502af0f3c77e61f79c729009f4e021e0d2c55428e",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "services/api/proofpack/runtime/review_host.py",
+      "original_sha256": "d0b362293fec0a2ed8f89657e09ac932bdc081366609148ac8132882d8b59441",
+      "candidate_sha256": "344409b8221d98d1cd110e3b5a02f0469f90d3a412abcd136d557af75b378c3d",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "services/api/proofpack/runtime/composition.py",
+      "original_sha256": "3f69739912859ed3c5dd32e9391027ac2ea4156ad76747393d18b6691a3e295c",
+      "candidate_sha256": "cdffc54fbc4ab9754a956cc8c2301cc07d74fce8b0a240bb31bce8ec94ff9ce6",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "apps/web/src/ownerMetadataReview.ts",
+      "original_sha256": "b1f2742162ce182b6e24912dfd55796f3c712f7fdd9615dbe07e7489893861ee",
+      "candidate_sha256": "02a826cd58729140fad7b0f144f4773215dd632e14a6b8864a98f65bd99b3c98",
+      "syntax": "NOT_CHECKED"
+    },
+    {
+      "path": "apps/web/src/MetadataPanel.tsx",
+      "original_sha256": "26f731b7cac00553e8aeca9d702973fb031d1bbb354cc655a1aecf819839a219",
+      "candidate_sha256": "6719c53152d6cf89e99b9d89121488c5d686686f66c2965fd07ed4673a4b10c7",
+      "syntax": "NOT_CHECKED"
+    },
+    {
+      "path": "tests/unit/test_owner_auth_review_host.py",
+      "original_sha256": null,
+      "candidate_sha256": "870bb833e6c573518c8b14eebf161e6f37eefd38b6c31f3c1e09f91689717687",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "tests/integration/test_owner_auth_review_store.py",
+      "original_sha256": null,
+      "candidate_sha256": "eece65963ac43d2b6f07dbf257ab6c4d75634ea0c5611359f620c10729ccc0e3",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "tests/unit/test_owner_auth_review_client.py",
+      "original_sha256": null,
+      "candidate_sha256": "d162d6b3914d683b048b6c2b6f1cbf9a959d7085a14738d65faee2014b9749f9",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "services/api/proofpack/evidence/owner_metadata_http.py",
+      "original_sha256": "7c8a2df3e188e01a53cdbd15ee758c3c670dd283151e1bc47318928ed439ec7a",
+      "candidate_sha256": "4f31f5c6b3647b2108d4ecfd3e9081272883b2bc3ba2646e08fb286f1b5a4109",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "tests/unit/test_owner_auth_review_response.py",
+      "original_sha256": null,
+      "candidate_sha256": "26255241982b1bc16201ecd6e589ed565e0d794843572062f68aa7b1e2dd1fba",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "tests/unit/test_owner_auth_review_factory.py",
+      "original_sha256": null,
+      "candidate_sha256": "16e8b2a63acc8683b0c7cf2b619f33e705cec64d4c353e4cee86c9b19bd9605e",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "tests/e2e/metadata-maintenance.spec.ts",
+      "original_sha256": "2ac5ce814ee3b449267fde0c7eb20401178e5589b15aea18071f78a4a27ca374",
+      "candidate_sha256": "d6eaff425f863d31a79a5776ad08f00fde9768688b8d79f29306dbccd4311a44",
+      "syntax": "NOT_CHECKED"
+    },
+    {
+      "path": "tests/integration/test_configured_owner_auth_review.py",
+      "original_sha256": null,
+      "candidate_sha256": "a5e4b1a651b0390ee8dd75d7a6b420c4f5f033b5bb54d0929116d0ecefc70ed7",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "tests/integration/test_owner_review_browser.py",
+      "original_sha256": "589eb067075b7ed0da7fa757add454790fbb416f8427bc4232247c7ef31f4a91",
+      "candidate_sha256": "9382c38f261df06b27e76bd6d05b46c1194f7a32dd68c8a927ec7fc6a6d1c818",
+      "syntax": "AST_PARSE_ONLY"
+    },
+    {
+      "path": "tests/integration/test_owner_auth_review_browser.py",
+      "original_sha256": null,
+      "candidate_sha256": "4b008cb9a1f8585d976f2567bd6e98669054e0d27166ba3e9440bd2a8bd2ad83",
+      "syntax": "AST_PARSE_ONLY"
+    }
+  ],
+  "source_inputs": 730,
+  "backend_python_files": 145,
+  "baseline_terminal_audit_sha256": "bf0074368f8f1333c0f8d3cfe52608f3c16de1f7f8555418a00a01969d864564",
+  "backup": ".loop\\repairs\\configured-auth-review-candidate\\before-apply-v1",
+  "tests": "NOT_RUN",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

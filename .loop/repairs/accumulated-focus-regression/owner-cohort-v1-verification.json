@@ -1,0 +1,91 @@
+{
+  "recorded_at": "2026-10-17T18:25:31.718982+00:00",
+  "status": "PASS_CURRENT_COHORT_ONLY",
+  "scope": "completed132-case group9 within current full run; full attempt remains unaccepted",
+  "cases": 132,
+  "phases": 396,
+  "owner_case": "tests/integration/test_public_asset_store.py::test_configured_https_browser_owner_flow_uses_real_local_store_and_auth",
+  "owner_case_outcomes": [
+    {
+      "nodeid": "tests/integration/test_public_asset_store.py::test_configured_https_browser_owner_flow_uses_real_local_store_and_auth",
+      "phase": "setup",
+      "outcome": "passed",
+      "duration_seconds": 0.006723400001646951
+    },
+    {
+      "nodeid": "tests/integration/test_public_asset_store.py::test_configured_https_browser_owner_flow_uses_real_local_store_and_auth",
+      "phase": "call",
+      "outcome": "passed",
+      "duration_seconds": 4.228246100003162
+    },
+    {
+      "nodeid": "tests/integration/test_public_asset_store.py::test_configured_https_browser_owner_flow_uses_real_local_store_and_auth",
+      "phase": "teardown",
+      "outcome": "passed",
+      "duration_seconds": 0.0212284000008367
+    }
+  ],
+  "source_inputs": 713,
+  "source_and_runtime_unchanged": true,
+  "exact_original132_case_order_preserved": true,
+  "preceding_full_groups": 8,
+  "all_preceding_groups_reported_pass": true,
+  "local_sdk_sends": 69772,
+  "blocked_sdk_sends": 0,
+  "database_terminated": true,
+  "database_state_removed": true,
+  "journal_elapsed_seconds": 300.922,
+  "raw_evidence": [
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-preview-focus\\candidate\\evidence\\local\\accumulated-focus-full-v1\\evidence\\local\\python-cohort-009.json",
+      "sha256": "b85efc1bef7f13ea28ae40dfc9e5d4b5b2597458558619b99ae94c353701b65d"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-preview-focus\\candidate\\evidence\\local\\accumulated-focus-full-v1\\evidence\\local\\python-cohort-009.xml",
+      "sha256": "d1d445143079f38f6d021a33a805fb0dcd70d9f9dd272f68de90dc63c7aaec4c"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-preview-focus\\candidate\\evidence\\local\\accumulated-focus-full-v1\\evidence\\local\\python-cohort-009.origins.json",
+      "sha256": "f84912b3ad8cdc1bd198c96afada318465b7004408370ef6ab44a6887f5e81b1"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-preview-focus\\candidate\\evidence\\local\\accumulated-focus-full-v1\\evidence\\local\\python-cohort-009.json.sdk.json",
+      "sha256": "23d04112a7230418c231ecc53cfe41f44260796032bab528ced4c43b7d1ede1f"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-preview-focus\\candidate\\evidence\\local\\accumulated-focus-full-v1\\evidence\\local\\python-cohort-009-database.json",
+      "sha256": "c851e34d33a7767e55c47eeed61e2d44a426bf227a9dc6e414f1189b59a943d5"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-preview-focus\\candidate\\evidence\\local\\accumulated-focus-full-v1\\evidence\\local\\python-cohort-009-database.log",
+      "sha256": "20d96aeadb099de3f90dd632a59516e12ec598f64db36f90761a1743e3eb307e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-preview-focus\\candidate\\evidence\\local\\accumulated-focus-full-v1\\evidence\\local\\python-cohort-009.log",
+      "sha256": "2ccf613829ec2b871f9a60de852ca7076b9e38df224075649b6490c045c38a01"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-preview-focus\\candidate\\evidence\\local\\accumulated-focus-full-v1\\evidence\\local\\python-cohort-009.owner-observation.js",
+      "sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\integration-regression\\accumulated-focus-full-v1-phases\\python-cohort-009.jsonl",
+      "sha256": "771e26a7561b7593cf5366b2266e191fc13977978cc8be94ab295d20bd8553da"
+    }
+  ],
+  "profile_difference": "bounded passive phase journals; fresh memory admission before Java; reversible failure-only owner-browser observer with bounded passive listeners; original actions/assertions/defaultChrome/case limits retained; overhead disclosed",
+  "diagnostic_source_copy": {
+    "logical_sha256": "081020c0a49a6ae09c2686edc521e8b7ffda10e1fd95ae84f8271c728e9f7bc5",
+    "copy_sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419",
+    "copy_encoding": "UTF-8 without BOM; exact CRLF text-write serialization"
+  },
+  "native_program_transport": "node -e module.BROWSER; logical program digest fixed by frozen observer, separate Windows text-write diagnostic copy verified exactly",
+  "copy_verifier_sha256": "7978e901faaf957b87cc584446c3d17c1f963a5183f3c97a7a64e51d606b7a7f",
+  "original_failure_cause": "UNKNOWN; no new failure-triggered frame/GPU diagnosis from this passing execution",
+  "canonical_transfer": "NOT_RUN",
+  "full_current_regression": "PENDING",
+  "provider_physical_human_acceptance": "NOT_RUN",
+  "independence": "same Codex operator; no independent person acceptance",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

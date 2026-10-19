@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-10-17T14:57:32.578887+00:00",
+  "status": "PASS_PURE_UNIT_SCOPE_ONLY",
+  "cases": 41,
+  "original_late_source_defect_reproduced": true,
+  "original_actual_exit_code": 1,
+  "same_oracle_fixed_and_adjacent_regression_pass": true,
+  "source_hashes_match_current_working_copy": true,
+  "native_installed_execution": "NOT_RUN",
+  "new_browser_execution": "NOT_RUN",
+  "frozen_candidate_and_canonical_transfer": "NOT_RUN",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

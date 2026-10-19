@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-17T06:09:54.244166+00:00",
+  "status": "PASS_UNIT8_AND_NEGATIVE_TERMINAL_RECONCILIATION",
+  "scope": "failed-attempt reporting only; never complete-suite acceptance",
+  "unit_command": ".venv/Scripts/python.exe -X utf8 .loop/repairs/accumulated-current/terminal-auditor-incomplete-receipt-repair/test_receipt_states.py",
+  "unit_actual_exit_code": 0,
+  "unit_test_cases": 8,
+  "unit_tool_chunk_id": "e5aa54",
+  "auditor_actual_exit_code": 0,
+  "auditor_tool_chunk_id": "db1aca",
+  "auditor_sha256": "6f28f0e6db63a548b6cb26071d1e1cccf49f2971d547ebafd73af43bf9c4da59",
+  "unit_source_sha256": "a242b0d8d68543fea3b3e902dcbbd5bd5c648a2a67bf6a77cf5aa65980382bdb",
+  "terminal_verification_sha256": "3f83b941b468fedd151f70ad38464996fcd0bb23edb2597a534847fd8d228feb",
+  "positive_auditor_sha256_unchanged": "b63b81a03157d688e7da98f5ed54709032fc04a829c9ecf32ae2757632dc14f6",
+  "before_failure": "before-failure.json",
+  "source_tests_assertions_deadlines_unchanged": true,
+  "parent_complete": false
+}

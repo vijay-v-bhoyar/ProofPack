@@ -1,0 +1,108 @@
+{
+  "status": "PASS_FOR_STATED_SCOPE",
+  "scope": "retained selected native/installed phases, cleanup and exact package bytes",
+  "recorded_at": "2026-10-15T23:33:26.628973+00:00",
+  "checks": {
+    "metadata-lineage-direct-verified-core": {
+      "tests": 56,
+      "passing_phases": 168
+    },
+    "metadata-direct-installed": {
+      "tests": 56,
+      "passing_phases": 168
+    },
+    "metadata-direct-package": {
+      "tests": 71,
+      "passing_phases": 213
+    }
+  },
+  "changed_api_files_from_direct_baseline": [
+    {
+      "path": "services/api/proofpack/auth/service.py",
+      "sha256": "5e72c7c989ac715e05bd09be306e53dbe4b228f74c9f0ccab2f763299befee88"
+    },
+    {
+      "path": "services/api/proofpack/calibrations/service.py",
+      "sha256": "e6b241ff4b80f9a08df16185270a3628f21094a8012a455a78fc510d928d4f24"
+    },
+    {
+      "path": "services/api/proofpack/capture/observations.py",
+      "sha256": "b5767d4a79cebb41d23c415ddfa22c1004b49e0196dc09e9541d34d22a624fe6"
+    },
+    {
+      "path": "services/api/proofpack/capture/publication.py",
+      "sha256": "9d55ed73f8529331c971358d4ef0b54bea5fe5504056d3de5baa082c9e4a299f"
+    },
+    {
+      "path": "services/api/proofpack/capture/service.py",
+      "sha256": "5ce6cc2dfb3dbbf42a6ba9bcfda354b0b05c0fea671fe46c4f7bee8852109912"
+    },
+    {
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "sha256": "2afef3b6b8a927ea0ecab6ddf6ca1d0b70e2fde0459d71a8d16024689e039963"
+    },
+    {
+      "path": "services/api/proofpack/evidence/exports.py",
+      "sha256": "0fd1de5e12d6fd3b542553e3c2e7615732318c6047334fed58c97d8a27c4e341"
+    },
+    {
+      "path": "services/api/proofpack/evidence/reads.py",
+      "sha256": "e824d0aa554e4877125f6b4f1f6eb4021d8348e48bcc9d5788e789bacea266d3"
+    },
+    {
+      "path": "services/api/proofpack/evidence/references.py",
+      "sha256": "629b3a94ea3015af9a62db1fff040901f794dc8679487267c8118ba060a42758"
+    },
+    {
+      "path": "services/api/proofpack/evidence/resource_bindings.py",
+      "sha256": "0b5d324b03b532397eacc5b6bd38241c68e20436d97b365c5c748a38c1eaf0d9"
+    },
+    {
+      "path": "services/api/proofpack/planner/activation.py",
+      "sha256": "cf027e613974f2e71907d734da5d621496363048cecadffcfe586adc8c51ca2c"
+    },
+    {
+      "path": "services/api/proofpack/planner/candidates.py",
+      "sha256": "72527f7da873f56897e8d45ce7ef65c25f31598269a482aeb3d58b5a2e3b62e9"
+    },
+    {
+      "path": "services/api/proofpack/recipes/qualification.py",
+      "sha256": "601c188da2e4b7ce07231ac95e18abb6d06eb0218c346ebf9399fcd497987504"
+    },
+    {
+      "path": "services/api/proofpack/review/evaluations.py",
+      "sha256": "66d24c3ee85425decae0e72d29325808483f99529ebac1256fc9dd90567cb55e"
+    },
+    {
+      "path": "services/api/proofpack/review/manifests.py",
+      "sha256": "46563773e419e96ef18f9737412a7fe788550cacbc4c69ca602b53aa78fe59ad"
+    },
+    {
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "sha256": "d6213cbcc51dc76dd3b457a824a7a8fa3986d7bc3db56f02e6b2bc31cce56af1"
+    },
+    {
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "sha256": "0e093dcce4242045dedf0858f69617c4ef6a721cd35ab1b6b9fd6f9fd69baa45"
+    },
+    {
+      "path": "services/api/proofpack/runtime/control.py",
+      "sha256": "744421c04d77f33b0bc032d61cb76856bd3bf14fdcf421ec716ad9b349b300a2"
+    }
+  ],
+  "installed_modules": 98,
+  "owned_native_sdk_sends": 3176,
+  "owned_installed_sdk_sends": 3176,
+  "opencv_version": "5.0.0",
+  "wheel_sha256": "738c78820db3bb3caf1b53a8043385a8acd98a8e9c75879cfbcb7f60ead86ab5",
+  "baseline": "one original direct oracle FAIL retained unchanged",
+  "evaluator": "same Codex operator; not independent human review",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "limitations": [
+    "Counts overlap; archived oracle instances are not unique product cases.",
+    "Full Python suite is separate; this audit does not accept it.",
+    "No-event jobs, consumers, legacy handling and complete privacy lifecycle remain unfinished.",
+    "No provider, physical, human or beta acceptance."
+  ]
+}

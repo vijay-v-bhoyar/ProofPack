@@ -1,0 +1,3 @@
+# Preserve source and evidence bytes across Windows/Linux checkouts.
+# Recorded SHA256 values must not be changed by automatic line-ending conversion.
+* -text

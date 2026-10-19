@@ -1,0 +1,602 @@
+{
+  "schema_version": "1.0",
+  "product": {
+    "id": "ProofPack",
+    "name": "ProofPack",
+    "version": "working-tree-manifest-sha256:2085f3aafb550c1a806cf8a5a92ae2ca885f8fb505ed89b53901e4a42168f5cb",
+    "description": "Existing owner/privacy workflow: explicit non-authorizing explanation of missing D11 decisions"
+  },
+  "scope": {
+    "mode": "reassess",
+    "synthetic": true,
+    "authorization": "read_only",
+    "boundary": "Planning/independent-acceptance handoff only. Existing authorized delivery runs local regressions separately; this suite is not claimed executed.",
+    "scope_status": "draft",
+    "source_code_access": true,
+    "owners": {
+      "product": "P01 duty, actual assignee unknown",
+      "qa": "P06 independent acceptance pending; Codex local delivery",
+      "research": "P08 actual assignee unknown",
+      "release": "P01 actual decision and target authority absent"
+    },
+    "access_gaps": [
+      "No permitted actual participants/kits/operators or provider/native host proof",
+      "PO-T01 malformed-body400 expectation and earlier CR-T01/IJ-T01 require independent review"
+    ],
+    "exclusions": [
+      "No new persona/grant; canonical nine personas/78operations unchanged",
+      "No actual research/contact/deployment/spend/erasure/fulfillment authorized"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "PO-E01",
+      "kind": "documented_requirement",
+      "reference": "docs/PERSONAS-OPERATIONS.md; docs/WORKFLOW-COVERAGE.md",
+      "statement": "Existing P01/P07 truthful remaining-policy duties and P05/P06 private handoff; W20/W21/W22 A06/A07",
+      "freshness": "current",
+      "confidence": "supported"
+    },
+    {
+      "id": "PO-E02",
+      "kind": "documented_requirement",
+      "reference": ".loop/repairs/owner-policy-obligations/contract.md; oracle-review/PO-T01.md",
+      "statement": "PO01-PO08 strict owner/read-only/category/work-budget and honest-D11 limitations; independent oracle review pending",
+      "freshness": "current",
+      "confidence": "provisional"
+    }
+  ],
+  "users": [
+    {
+      "id": "P01",
+      "name": "Business owner",
+      "family": "accountable",
+      "status": "provisional",
+      "goals": [
+        "Recover accurate pending state and preserve outstanding duties"
+      ],
+      "permissions": [
+        "Fresh enabled owner with MFA for app recovery; no grant inferred from this plan"
+      ],
+      "evidence_ids": [
+        "PO-E01"
+      ],
+      "research_gaps": [
+        "No actual participant needs/understanding/value evidence"
+      ]
+    },
+    {
+      "id": "P07",
+      "name": "Data/privacy steward",
+      "family": "collaborator",
+      "status": "provisional",
+      "goals": [
+        "Recover accurate pending state and preserve outstanding duties"
+      ],
+      "permissions": [
+        "Existing private business handoff; no new app role"
+      ],
+      "evidence_ids": [
+        "PO-E01"
+      ],
+      "research_gaps": [
+        "No actual participant needs/understanding/value evidence"
+      ]
+    },
+    {
+      "id": "P05",
+      "name": "Service administrator",
+      "family": "operator_maintainer",
+      "status": "provisional",
+      "goals": [
+        "Recover accurate pending state and preserve outstanding duties"
+      ],
+      "permissions": [
+        "Actual approved host actions separately; no owner permission inferred"
+      ],
+      "evidence_ids": [
+        "PO-E01"
+      ],
+      "research_gaps": [
+        "No actual participant needs/understanding/value evidence"
+      ]
+    },
+    {
+      "id": "P06",
+      "name": "Maintainer/test engineer",
+      "family": "builder",
+      "status": "provisional",
+      "goals": [
+        "Recover accurate pending state and preserve outstanding duties"
+      ],
+      "permissions": [
+        "Dedicated synthetic local test identities only; no production owner grant"
+      ],
+      "evidence_ids": [
+        "PO-E01"
+      ],
+      "research_gaps": [
+        "No actual participant needs/understanding/value evidence"
+      ]
+    },
+    {
+      "id": "P02",
+      "name": "Packing operator for this owner-only operation",
+      "family": "excluded_former",
+      "status": "excluded",
+      "goals": [
+        "Avoid exposure to owner private metadata"
+      ],
+      "permissions": [],
+      "evidence_ids": [
+        "PO-E01"
+      ],
+      "research_gaps": [
+        "Full P02 canonical workflows remain required"
+      ],
+      "exclusion_reason": "No owner grant; this scoped operation is excluded, not the persona from the product"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "PO-B01",
+      "name": "Recoverable state priority",
+      "user_ids": [
+        "P01"
+      ],
+      "kind": "priority",
+      "statement": "May prioritize recovery without repeated opaque-ID copying; this is a hypothesis",
+      "context": "Lost tab/reference or interrupted connection",
+      "status": "hypothesis",
+      "evidence_ids": [
+        "PO-E01"
+      ],
+      "test_effect": "Observe ability to find current read and distinguish pending/reconciled/fulfilled without coaching"
+    }
+  ],
+  "needs": [
+    {
+      "id": "N01",
+      "user_ids": [
+        "P01",
+        "P05",
+        "P06"
+      ],
+      "statement": "Understand which supported authentication record categories remain subject to a business policy decision",
+      "priority": "P1",
+      "status": "hypothesis",
+      "evidence_ids": [
+        "PO-E01"
+      ],
+      "owner": "P01/P07 duty holders unassigned"
+    },
+    {
+      "id": "N07",
+      "user_ids": [
+        "P01",
+        "P07"
+      ],
+      "statement": "Hand off missing purpose/retention/rights/approver decisions without confusing structural review with cleanup authority",
+      "priority": "P1",
+      "status": "hypothesis",
+      "evidence_ids": [
+        "PO-E01"
+      ],
+      "owner": "P01/P07 duty holders unassigned"
+    }
+  ],
+  "journeys": [
+    {
+      "id": "W20",
+      "name": "Explain missing privacy decisions for a current held request; related W21/W22",
+      "user_ids": [
+        "P01",
+        "P07",
+        "P05",
+        "P06"
+      ],
+      "need_ids": [
+        "N01",
+        "N07"
+      ],
+      "stages": [
+        "Authenticate fresh enabled MFA owner",
+        "Read exact held request and configured v5 history",
+        "Explicitly request missing policy explanation",
+        "Review bounded category hints and unresolved D11 limitations",
+        "Hand off only through existing private owner/steward/admin channels or safely exit"
+      ],
+      "handoffs": [
+        "P01 communicates only authorized status through existing private P07/P05 channel; no notification sent"
+      ],
+      "baseline": "Generic v5 unresolved-policy notice without category counts",
+      "outcome": "Accurate bounded category counts and explicit missing D11 decision; no ownership, retention or cleanup inference",
+      "owner": "P01 actual assignee unknown"
+    }
+  ],
+  "controls": [
+    {
+      "id": "PO-C1",
+      "name": "Fresh MFA owner and exact existing control lifetime",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    },
+    {
+      "id": "PO-C2",
+      "name": "Current request/version/source binding and configured v5 required",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    },
+    {
+      "id": "PO-C3",
+      "name": "Original cumulative work/byte/deadline and pending ownership",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    },
+    {
+      "id": "PO-C4",
+      "name": "No inferred policy/ownership/cleanup or false fulfillment",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    },
+    {
+      "id": "PO-C5",
+      "name": "Explicit keyboard/narrow-screen explanation and stale/offline clearing",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    }
+  ],
+  "tests": [
+    {
+      "id": "PO-TECH01",
+      "title": "Policy explanation technical",
+      "primary_user_id": "P06",
+      "related_user_ids": [
+        "P01",
+        "P07",
+        "P05"
+      ],
+      "profile_ids": [],
+      "need_ids": [
+        "N01",
+        "N07"
+      ],
+      "journey_id": "W20",
+      "control_ids": [
+        "PO-C1",
+        "PO-C2",
+        "PO-C3",
+        "PO-C4",
+        "PO-C5"
+      ],
+      "priority": "P1",
+      "kind": "technical",
+      "starting_conditions": [
+        "Authorized current held request with empty confirmed drain; configured genuine v5 review; actual participant setting/permissions still unverified"
+      ],
+      "permissions": [
+        "Owner API requires actual fresh owner authority; local fixtures are not production approval"
+      ],
+      "fixtures": [
+        "Synthetic current/open/unknown-write/denial/abort states; no real private data"
+      ],
+      "task": "Determine which privacy decisions remain and who must resolve them, without inferring permission from counts.",
+      "steps": [
+        "Read exact held request and v5 historical accounting",
+        "Explicitly request category explanation with original versions",
+        "Verify missing D11 purpose/retention/rights/approver handoff, denials and stale clearing"
+      ],
+      "expected_experience": [
+        "Discoverable explanation and truthful limits; participant comprehension/effort still UNKNOWN"
+      ],
+      "expected_outcome": [
+        "Exact authorized minimized category snapshot or honest hold; no policy or cleanup granted"
+      ],
+      "prohibited_outcomes": [
+        "Unregistered work, non-owner disclosure, scope substitution, automatic cancellation or false completion",
+        "Counting synthetic/automated behavior as human understanding"
+      ],
+      "reference_evidence_ids": [
+        "PO-E01",
+        "PO-E02"
+      ],
+      "oracle_status": "unresolved",
+      "verification_methods": [
+        "deterministic",
+        "trace_inspection"
+      ],
+      "assertions": [
+        "Original current-owner, scope, control lifetime and cumulative work/byte/deadline bounds hold",
+        "Counts do not prove ownership, historical identity, D11 resolution, erasure, fulfillment or resumption",
+        "Human comprehension/full effort/assistance/recovery/voluntary-use evidence must be collected independently"
+      ],
+      "required_access": [
+        "Scoped authorized fixture/source/browser for local checks; actual safe participant setting and independent acceptance still absent"
+      ],
+      "evidence_to_capture": [
+        "Exact source/fixture/identity and all trials",
+        "Redacted outcome, help/effort/error/recovery and remaining obligations"
+      ],
+      "cleanup": "Stop scoped fixtures; preserve evidence; no actual data deletion or remote cleanup.",
+      "stop_conditions": [
+        "Any unapproved actual identity/data/destination or consequential action",
+        "Original assigned bound reached or outcome cannot be verified"
+      ],
+      "budget": {
+        "max_actions": 20,
+        "max_minutes": 20,
+        "max_model_calls": 0
+      },
+      "trial_plan": {
+        "required_runs": 1,
+        "reason": "Proposed planning placeholder, not a claimed adequate human sample or authorized execution budget"
+      },
+      "execution": {
+        "status": "not_run",
+        "provenance": "none",
+        "completed_trials": 0,
+        "failed_trials": 0,
+        "evidence_refs": [],
+        "reason": "Formal independent/human acceptance handoff not executed; local delivery regression receipts tracked separately",
+        "build_version": "working-tree-manifest-sha256:2085f3aafb550c1a806cf8a5a92ae2ca885f8fb505ed89b53901e4a42168f5cb",
+        "freshness": "unknown"
+      },
+      "ownership": {
+        "executor": "Existing authorized delivery for local checks; actual research/QA owner unassigned",
+        "reviewer": "P06 independent technical oracle/P08 research review pending"
+      }
+    },
+    {
+      "id": "PO-MECH01",
+      "title": "Policy explanation regression",
+      "primary_user_id": "P01",
+      "related_user_ids": [
+        "P07",
+        "P05",
+        "P06"
+      ],
+      "profile_ids": [],
+      "need_ids": [
+        "N01",
+        "N07"
+      ],
+      "journey_id": "W20",
+      "control_ids": [
+        "PO-C1",
+        "PO-C2",
+        "PO-C3",
+        "PO-C4",
+        "PO-C5"
+      ],
+      "priority": "P1",
+      "kind": "regression",
+      "starting_conditions": [
+        "Authorized current held request with empty confirmed drain; configured genuine v5 review; actual participant setting/permissions still unverified"
+      ],
+      "permissions": [
+        "Owner API requires actual fresh owner authority; local fixtures are not production approval"
+      ],
+      "fixtures": [
+        "Synthetic current/open/unknown-write/denial/abort states; no real private data"
+      ],
+      "task": "Determine which privacy decisions remain and who must resolve them, without inferring permission from counts.",
+      "steps": [
+        "Read exact held request and v5 historical accounting",
+        "Explicitly request category explanation with original versions",
+        "Verify missing D11 purpose/retention/rights/approver handoff, denials and stale clearing"
+      ],
+      "expected_experience": [
+        "Discoverable explanation and truthful limits; participant comprehension/effort still UNKNOWN"
+      ],
+      "expected_outcome": [
+        "Exact authorized minimized category snapshot or honest hold; no policy or cleanup granted"
+      ],
+      "prohibited_outcomes": [
+        "Unregistered work, non-owner disclosure, scope substitution, automatic cancellation or false completion",
+        "Counting synthetic/automated behavior as human understanding"
+      ],
+      "reference_evidence_ids": [
+        "PO-E01",
+        "PO-E02"
+      ],
+      "oracle_status": "proposed",
+      "verification_methods": [
+        "deterministic"
+      ],
+      "assertions": [
+        "Original current-owner, scope, control lifetime and cumulative work/byte/deadline bounds hold",
+        "Counts do not prove ownership, historical identity, D11 resolution, erasure, fulfillment or resumption",
+        "Human comprehension/full effort/assistance/recovery/voluntary-use evidence must be collected independently"
+      ],
+      "required_access": [
+        "Scoped authorized fixture/source/browser for local checks; actual safe participant setting and independent acceptance still absent"
+      ],
+      "evidence_to_capture": [
+        "Exact source/fixture/identity and all trials",
+        "Redacted outcome, help/effort/error/recovery and remaining obligations"
+      ],
+      "cleanup": "Stop scoped fixtures; preserve evidence; no actual data deletion or remote cleanup.",
+      "stop_conditions": [
+        "Any unapproved actual identity/data/destination or consequential action",
+        "Original assigned bound reached or outcome cannot be verified"
+      ],
+      "budget": {
+        "max_actions": 20,
+        "max_minutes": 20,
+        "max_model_calls": 0
+      },
+      "trial_plan": {
+        "required_runs": 1,
+        "reason": "Proposed planning placeholder, not a claimed adequate human sample or authorized execution budget"
+      },
+      "execution": {
+        "status": "not_run",
+        "provenance": "none",
+        "completed_trials": 0,
+        "failed_trials": 0,
+        "evidence_refs": [],
+        "reason": "Formal independent/human acceptance handoff not executed; local delivery regression receipts tracked separately",
+        "build_version": "working-tree-manifest-sha256:2085f3aafb550c1a806cf8a5a92ae2ca885f8fb505ed89b53901e4a42168f5cb",
+        "freshness": "unknown"
+      },
+      "ownership": {
+        "executor": "Existing authorized delivery for local checks; actual research/QA owner unassigned",
+        "reviewer": "P06 independent technical oracle/P08 research review pending"
+      }
+    },
+    {
+      "id": "PO-HUMAN01",
+      "title": "Policy explanation human_research",
+      "primary_user_id": "P01",
+      "related_user_ids": [
+        "P07",
+        "P05",
+        "P06"
+      ],
+      "profile_ids": [
+        "PO-B01"
+      ],
+      "need_ids": [
+        "N01",
+        "N07"
+      ],
+      "journey_id": "W20",
+      "control_ids": [
+        "PO-C1",
+        "PO-C2",
+        "PO-C3",
+        "PO-C4",
+        "PO-C5"
+      ],
+      "priority": "P1",
+      "kind": "human_research",
+      "starting_conditions": [
+        "Authorized current held request with empty confirmed drain; configured genuine v5 review; actual participant setting/permissions still unverified"
+      ],
+      "permissions": [
+        "Owner API requires actual fresh owner authority; local fixtures are not production approval"
+      ],
+      "fixtures": [
+        "Synthetic current/open/unknown-write/denial/abort states; no real private data"
+      ],
+      "task": "Determine which privacy decisions remain and who must resolve them, without inferring permission from counts.",
+      "steps": [],
+      "expected_experience": [
+        "Discoverable explanation and truthful limits; participant comprehension/effort still UNKNOWN"
+      ],
+      "expected_outcome": [
+        "Exact authorized minimized category snapshot or honest hold; no policy or cleanup granted"
+      ],
+      "prohibited_outcomes": [
+        "Unregistered work, non-owner disclosure, scope substitution, automatic cancellation or false completion",
+        "Counting synthetic/automated behavior as human understanding"
+      ],
+      "reference_evidence_ids": [
+        "PO-E01",
+        "PO-E02"
+      ],
+      "oracle_status": "proposed",
+      "verification_methods": [
+        "human_observation",
+        "domain_review"
+      ],
+      "assertions": [
+        "Original current-owner, scope, control lifetime and cumulative work/byte/deadline bounds hold",
+        "Counts do not prove ownership, historical identity, D11 resolution, erasure, fulfillment or resumption",
+        "Human comprehension/full effort/assistance/recovery/voluntary-use evidence must be collected independently"
+      ],
+      "required_access": [
+        "Scoped authorized fixture/source/browser for local checks; actual safe participant setting and independent acceptance still absent"
+      ],
+      "evidence_to_capture": [
+        "Exact source/fixture/identity and all trials",
+        "Redacted outcome, help/effort/error/recovery and remaining obligations"
+      ],
+      "cleanup": "Stop scoped fixtures; preserve evidence; no actual data deletion or remote cleanup.",
+      "stop_conditions": [
+        "Any unapproved actual identity/data/destination or consequential action",
+        "Original assigned bound reached or outcome cannot be verified"
+      ],
+      "budget": {
+        "max_actions": 20,
+        "max_minutes": 20,
+        "max_model_calls": 0
+      },
+      "trial_plan": {
+        "required_runs": 1,
+        "reason": "Proposed planning placeholder, not a claimed adequate human sample or authorized execution budget"
+      },
+      "execution": {
+        "status": "not_run",
+        "provenance": "none",
+        "completed_trials": 0,
+        "failed_trials": 0,
+        "evidence_refs": [],
+        "reason": "Formal independent/human acceptance handoff not executed; local delivery regression receipts tracked separately",
+        "build_version": "working-tree-manifest-sha256:2085f3aafb550c1a806cf8a5a92ae2ca885f8fb505ed89b53901e4a42168f5cb",
+        "freshness": "unknown"
+      },
+      "ownership": {
+        "executor": "Existing authorized delivery for local checks; actual research/QA owner unassigned",
+        "reviewer": "P06 independent technical oracle/P08 research review pending"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "PO-D01",
+      "summary": "Independently review PO-T01 exact400 INVALID_REQUEST expectation; existing CR-T01/IJ-T01 also unresolved",
+      "owner": "P06 unassigned",
+      "status": "open",
+      "affected_ids": [
+        "PO-TECH01",
+        "PO-C3"
+      ]
+    },
+    {
+      "id": "PO-D02",
+      "summary": "Obtain actual human comprehension/effort/voluntary-use and operational/provider evidence before acceptance",
+      "owner": "P01/P08 unassigned",
+      "status": "open",
+      "affected_ids": [
+        "PO-HUMAN01",
+        "W20"
+      ]
+    }
+  ]
+}

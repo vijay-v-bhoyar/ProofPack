@@ -1,0 +1,48 @@
+{
+  "status": "PASS_FOR_STAGED_CAPTURE_INTENT_TARGET_ONLY",
+  "recorded_at": "2026-10-16T01:22:12.570002+00:00",
+  "checks": {
+    "metadata-lineage-capture-final": {
+      "tests": 43,
+      "passing_phases": 129
+    },
+    "metadata-capture-installed": {
+      "tests": 43,
+      "passing_phases": 129
+    },
+    "metadata-capture-package": {
+      "tests": 194,
+      "passing_phases": 582
+    }
+  },
+  "changes": [
+    {
+      "path": "services/api/proofpack/capture/publication.py",
+      "before_sha256": "9d55ed73f8529331c971358d4ef0b54bea5fe5504056d3de5baa082c9e4a299f",
+      "candidate_sha256": "28ff1c2c65a22620ba360e8cecfee855b66f1b587e4cd896d385a4c22e291ca7"
+    },
+    {
+      "path": "tests/integration/test_capture_intent_storage_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "f0570fd6862741120bb18e7cc162b6706b12d6ad592228c5f84af66dec1b4235"
+    }
+  ],
+  "canonical_source_unchanged": true,
+  "integrated": false,
+  "installed_modules": 97,
+  "opencv_version": "5.0.0",
+  "original_oracles": [
+    "original-capture-intent-oracle.py",
+    "original-binding-progress-oracle.py"
+  ],
+  "wheel_sha256": "f1f0fb38902a443db32545fc4c5dab59c5abc8b7f284f9d4a00ac2879bad1ef6",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "evaluator": "same Codex operator; not independent human review",
+  "limitations": [
+    "Counts overlap and include two archived original logical cases.",
+    "Configured adapters are trusted; checks do not attest arbitrary provider or privileged client mutation.",
+    "Target identity does not undo partial uploads or resolve unknown outcomes/legacy targets.",
+    "No complete capture/media ownership closure, object-version removal, privacy barrier/journal/job/UI or external acceptance."
+  ]
+}

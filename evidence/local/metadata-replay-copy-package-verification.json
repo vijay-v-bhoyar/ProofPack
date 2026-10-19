@@ -1,0 +1,22 @@
+{
+  "status": "PASS_FOR_INSTALLED_PURE_AND_PACKAGE_BYTES_ONLY",
+  "recorded_at": "2026-10-16T07:52:42.836135+00:00",
+  "source_inputs": 611,
+  "passed_cases": 708,
+  "passed_phases": 2124,
+  "counts_overlap_other_runs": true,
+  "exact_backend_files": 116,
+  "exact_frontend_files": 3,
+  "site_only_imported_modules": 55,
+  "opencv_version": "5.0.0",
+  "sdk_transport": "PROHIBITED",
+  "database_used": false,
+  "temporary_installation_removed": true,
+  "wheel": ".loop/repairs/metadata-replay-copies/working/evidence/local/metadata-replay-package-v2-dist/proofpack-0.1.0-py3-none-any.whl",
+  "wheel_sha256": "4b715b95e5c5a0a60fd427e0137855f8c40daaf0389626d75c87e29e3854bb02",
+  "native_execution": "NOT_RUN",
+  "canonical_integration": "PENDING",
+  "retained_failure": "v1 offline install failed sandbox temporary-file rename WinError5; exact source unchanged; v2 host-authorized offline check passes. No product cause claimed.",
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

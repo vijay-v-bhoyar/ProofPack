@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-17T15:30:23.386375+00:00",
+  "status": "STARTUP_ABORTED_NO_TEST_EVIDENCE",
+  "actual_outer_failure": "preparation subprocess TimeoutExpired after15s; full parent had become terminal, so real-state negative admission check raced into baseline startup",
+  "parent_pid": 26936,
+  "parent_terminal_receipt": "MISSING; do not infer functional test outcome",
+  "emulator_observation": "sandbox Java loopback startup exception; no pytest log/execution/journal observed",
+  "owned_processes": "none in exact scoped CIM query b2efe9",
+  "temporary_state": "observed exact path absent; no recursive deletion",
+  "cleanup_receipt": "aborted-preparation-cleanup.json",
+  "emulator_log_sha256": "d03518563473dbeabd5afc4bc93d4b3c9b16d2f2f526b6a030f3eab55061f892",
+  "native_test_acceptance": false,
+  "no_full_run_overlap": "full-v2 ended15:20:48Z; unintended baseline started15:22:53Z",
+  "remaining_plan": "one fresh baseline native case run and one observed native case run,875s each; v1 startup is retained separately",
+  "parent_complete": false
+}

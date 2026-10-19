@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-10-17T23:22:07.222139+00:00",
+  "status": "PASS_SELECTED_SOURCE_SCOPE_ONLY",
+  "cases": 553,
+  "phases": 1659,
+  "same_ordered_collection_as_failed_restricted_attempt": true,
+  "source_inputs": 730,
+  "source_unchanged": true,
+  "sdk_attempts": 0,
+  "transport_attempts": 0,
+  "canonical_import_modules": 139,
+  "prior_restricted_attempt": "FAIL:120s timeout; first HTTP test blocked before app entry in internal socketpair; original cleanup command failed",
+  "restricted_diagnostic": "FAIL:original120s timeout; exact Popen-owned child exit confirmed",
+  "host_diagnostic": "PASS:same original1case/3phases with unchanged source/assertions/bounds/SDK guard",
+  "context_difference": "Broader host execution allowed internal loopback needed by TestClient; no app/event-loop/security/assertion/time-limit modification",
+  "native_installed_build_rendered_full_current": "NOT_RUN",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "raw_evidence": [
+    {
+      "path": ".loop\\repairs\\configured-auth-review-candidate\\selected-host-v1-process.json",
+      "sha256": "c25687e9d8c55929642d941cfc34c77fed8d2f4043b5ec5d753db8f736a4c3d3"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-selected-host-v1\\execution.json",
+      "sha256": "686709b7f468f7aca9c4fa8e7c1b94fcc5df2b52eb22cebeed47856f2da90e3a"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-selected-host-v1\\tests.xml",
+      "sha256": "06a4058328ff419fb3008a0e15b3be5ff80b876a01a3ad954fcae94c5cac00fd"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-selected-host-v1\\sdk.json",
+      "sha256": "ceaf7d1b9bc34f7e0405bb26126e4fb8e61076e47c434dbb1c58271869f325e5"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-selected-host-v1\\origins.json",
+      "sha256": "c6809533edf11967f740bc9c0e2513d9d0a452ab00637a3156c4e5f27be31dc7"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-selected-host-v1\\run.log",
+      "sha256": "ad61ab5f42adfcfed32078a8533cf65619c3af623a100bfa161e0f336ae59b6c"
+    }
+  ]
+}

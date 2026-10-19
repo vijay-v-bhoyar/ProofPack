@@ -1,0 +1,11 @@
+{
+  "session_id": null,
+  "pid": 44068,
+  "status": "TERMINAL",
+  "plan": "full-v1-plan.json",
+  "scope": "all4707 current Python cases; no whole-product acceptance",
+  "former_session_id": 44166,
+  "exit_code": 0,
+  "ended_at": "2026-10-17T18:32:20.097574+00:00",
+  "terminal_process": "full-v1-process.json"
+}

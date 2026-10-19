@@ -1,0 +1,46 @@
+{
+  "scope": "guarded six-file integration; combined verification pending",
+  "baseline_python_tests": 2189,
+  "baseline_source_inputs": 583,
+  "preserved_receipt_artifacts": 128,
+  "changes": [
+    {
+      "stage": "metadata-support",
+      "path": "services/api/proofpack/evidence/support_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "1f8f80e53fb85ec5b1c798c6b9592a4116488ade7f2b065e30882decdcc4ed28"
+    },
+    {
+      "stage": "metadata-support",
+      "path": "services/api/proofpack/stations/handoffs.py",
+      "before_sha256": "1ddcb9b4fb021ac9c6171bcc6b60112be297c29fe5ef2a2e38621f366c45a519",
+      "candidate_sha256": "b80f531ad016b18258ce91e562d60cde12289d9c302f8f305fd0ddcb7ca08982"
+    },
+    {
+      "stage": "metadata-support",
+      "path": "tests/integration/test_support_family_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "c6a62e0dc99b96ebc77954bd5d8e3db6003c1fdaaba2647a6f72efb1518ec360"
+    },
+    {
+      "stage": "metadata-support",
+      "path": "tests/unit/test_support_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "846e1e08d74a660caf5fe077a64e5dfe6be4f8ca779932da5816cfdfca2c0a4b"
+    },
+    {
+      "stage": "metadata-capture",
+      "path": "services/api/proofpack/capture/publication.py",
+      "before_sha256": "9d55ed73f8529331c971358d4ef0b54bea5fe5504056d3de5baa082c9e4a299f",
+      "candidate_sha256": "28ff1c2c65a22620ba360e8cecfee855b66f1b587e4cd896d385a4c22e291ca7"
+    },
+    {
+      "stage": "metadata-capture",
+      "path": "tests/integration/test_capture_intent_storage_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "f0570fd6862741120bb18e7cc162b6706b12d6ad592228c5f84af66dec1b4235"
+    }
+  ],
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

@@ -1,0 +1,51 @@
+{
+  "status": "PASS_FOR_ISOLATED_PROVIDED_DATASET_FAMILY_ONLY",
+  "checks": {
+    "metadata-lineage-dataset-family-complete-native": {
+      "tests": 360,
+      "passing_phases": 1080
+    },
+    "metadata-dataset-family-package-v2": {
+      "tests": 601,
+      "passing_phases": 1803
+    },
+    "metadata-dataset-family-installed-v1": {
+      "tests": 360,
+      "passing_phases": 1080
+    }
+  },
+  "counts_overlap": true,
+  "source_inputs": 605,
+  "exact_backend_files": 114,
+  "exact_frontend_files": 3,
+  "installed_modules": 104,
+  "opencv_version": "5.0.0",
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/dataset_lineage.py",
+      "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+    },
+    {
+      "path": "tests/unit/test_dataset_lineage.py",
+      "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+    },
+    {
+      "path": "tests/integration/test_dataset_lineage_store.py",
+      "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+    }
+  ],
+  "canonical_matches_origin": true,
+  "integrated": false,
+  "original_job_window_failures": 6,
+  "original_failure_oracles_unchanged": true,
+  "scope": "complete supplied dataset/copy/source metadata only; historical references do not grant current rights, authenticate private MACs, establish physical truth or authorize removal",
+  "remaining": [
+    "full inventory/barrier/read-set admission",
+    "shared group and idempotency families",
+    "durable journal/restore/cleanup job",
+    "exact owner review/receipts/communication",
+    "provider/physical/human acceptance"
+  ],
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

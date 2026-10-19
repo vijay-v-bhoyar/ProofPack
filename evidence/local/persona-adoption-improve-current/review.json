@@ -1,0 +1,691 @@
+{
+  "recorded_at": "2026-10-18T09:55:30.922998+00:00",
+  "mode": "user-first-product-adoption Improve",
+  "status": "PARTIAL_CAPACITY_COMPATIBILITY_FENCED_DIAGNOSTIC_HELD",
+  "scope": "9hypothesis personas/78operations/AP01-AP04/W01-W26/T01-T58; JA01-JA08 selected proof only; whole owner/cleanup/restore/requester and human work unfinished",
+  "personas": 9,
+  "operations": 78,
+  "operation_counts": {
+    "P01": 10,
+    "P02": 10,
+    "P03": 10,
+    "P04": 8,
+    "P05": 8,
+    "P06": 8,
+    "P07": 8,
+    "P08": 8,
+    "P09": 8
+  },
+  "affected_groups": 4,
+  "workflows": 26,
+  "planned_technical_acceptance_scopes": 58,
+  "profiles": "HYPOTHESIS; not customer interviews or confirmed market segments",
+  "human_scenarios": "A01-A09 NOT_RUN",
+  "research": "No participant session or contact",
+  "checks": [
+    {
+      "name": "Current740 scoped repair audit",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "tool_chunk": "217d3c",
+      "receipt": ".loop/repairs/operator-frame-delivery/verification-current-v1.json",
+      "applicability": "RETAINED_PRIOR_REVIEW_NOT_CURRENT744_EXECUTION"
+    },
+    {
+      "name": "Current399 canonical browser audit",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "tool_chunk": "a702f6",
+      "applicability": "RETAINED_PRIOR_REVIEW_NOT_CURRENT744_EXECUTION"
+    },
+    {
+      "name": "Current92 installed support audit",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "tool_chunk": "c5a4c6",
+      "applicability": "RETAINED_PRIOR_REVIEW_NOT_CURRENT744_EXECUTION"
+    },
+    {
+      "name": "Documentation contracts",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33,
+      "tool_chunk": "ccf108",
+      "applicability": "RETAINED_PRIOR_REVIEW_NOT_CURRENT744_EXECUTION"
+    },
+    {
+      "name": "Current running-state documentation contracts",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33,
+      "tool_chunk": "71285a",
+      "applicability": "RETAINED_PRIOR_REVIEW_NOT_CURRENT744_EXECUTION"
+    },
+    {
+      "name": "Complete current5278strict terminal audit",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "cases": 5278,
+      "phases": 15834,
+      "tool_chunk": "50f87c",
+      "applicability": "RETAINED_PRIOR_REVIEW_NOT_CURRENT744_EXECUTION"
+    },
+    {
+      "name": "Complete current5278outcome reconciliation",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "tool_chunk": "e917e0",
+      "applicability": "RETAINED_PRIOR_REVIEW_NOT_CURRENT744_EXECUTION"
+    },
+    {
+      "name": "Post-terminal documentation contracts",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33,
+      "tool_chunk": "f01dc5",
+      "applicability": "RETAINED_PRIOR_REVIEW_NOT_CURRENT744_EXECUTION"
+    },
+    {
+      "name": "Current744 bounded receipt reconciliation",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "receipt": ".loop/repairs/journal-scope-completeness/adoption-evidence-reconciliation-v1.json",
+      "scope": "receipt reconciliation, not new application execution"
+    },
+    {
+      "name": "Current persona/adoption documentation structure",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33,
+      "receipt": "evidence/documentation-validation.json",
+      "scope": "structure only; not human or application execution"
+    },
+    {
+      "name": "Current746 scoped component verification",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "receipt": ".loop/repairs/journal-scope-commit/verification-current-v1.json",
+      "scope": "111source/same111installed/23native only"
+    },
+    {
+      "name": "Post-JC01 documentation structure",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33
+    },
+    {
+      "name": "Current750 scoped anchor verification",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "receipt": ".loop/repairs/journal-anchors/verification-current-v1.json",
+      "scope": "161source/same161installed/31native only"
+    },
+    {
+      "name": "Post-JA01 documentation structure",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33
+    },
+    {
+      "name": "Current750 post-full-launch documentation contracts",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33,
+      "scope": "structure only; full5408 remains IN_PROGRESS"
+    },
+    {
+      "name": "RS01-RS06 contract documentation structure",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33,
+      "scope": "documentation only; all RS execution NOT_RUN; full5408 IN_PROGRESS"
+    },
+    {
+      "name": "Improve closeout documentation structure",
+      "status": "PASS",
+      "actual_exit_code": 0,
+      "checks": 34,
+      "inputs": 33,
+      "receipt": "evidence/documentation-validation.json",
+      "tool_chunk": "a7376b"
+    }
+  ],
+  "executed_improvements": [
+    "PA-I43: single latest Improve entry and persona navigation",
+    "PA-I44: ordered adoption/repair dependencies",
+    "PA-I45: prior selected-asset final-admission repair",
+    "PA-I46: deterministic concurrent manual-disposition replay repair, preserving current authorization and no-extra-write controls",
+    "PA-I47: raw browser failure reconciliation; preserve OP-F01 and correct affected persona/test/build/adoption evidence",
+    "PA-I48: correct stale full-browser PASS and DR unresolved-cause summaries; fix current-decision links; retain isolated CB diagnostic limit",
+    "PA-I49: implement original750ms completion guard, preserve exact before/after oracle and all historical failures; current740 controlled/helper/installed/rendered proof, complete5278collection and42cohort plan only; no actual user value claim",
+    "PA-I50: actual full5278/15834/42 terminal local regression passes strict positive and separate outcome audits; correct current docs/receipts and release freeze; preserve failed historical runs and unaccepted complete workflow/human obligations",
+    "PA-I51: current-source applicability, scoped evidence and validated-value/budget contract clarification",
+    "PA-I53 terminal evidence applicability reconciliation",
+    "PA-I54 owner-control acceptance and session recovery admission",
+    "PA-I56 verified immutable sealed history manifest for pending restore coordinator",
+    "PA-I57 read-only complete backup/target reconciliation; final callback defects repaired; original verification failures retained",
+    "PA-I58 private protected reader/repository conditions and original first-clock deadline repair; consumer integration remains open",
+    "PA-I59 captured97/100capacity and original-budget readset compatibility",
+    "PA-I60 correct host schema documentation and disclose missing mandatory fence integration"
+  ],
+  "current_subject_id": "working-tree-manifest-sha256:4367e95d5b303fada619d2afd4e45bf8653c9d734cfea4a0f3d30ef1684614bb",
+  "source_inputs": 757,
+  "historical_full_regression": {
+    "status": "PASS_AT_HISTORICAL730_SUBJECT_ONLY",
+    "cases": 5133,
+    "phases": 15399,
+    "cohorts": 41,
+    "verification": ".loop/repairs/configured-auth-review-candidate/full-composite-v1-verification.json"
+  },
+  "remaining_priorities": [
+    "Complete server-derived metadata classification/preview/confirmation/conditional cleanup/journal/restore/requester workflows",
+    "Actual D11business/data owner, purposes, retention and request approver unanswered",
+    "Actual authorized provider/target, physical kits/independent truth, staffed support, humanA01-A09 and measured first/repeat value"
+  ],
+  "decision_gates": {
+    "user_understanding": "UNKNOWN",
+    "product_value": "UNKNOWN",
+    "experience": "BLOCKED",
+    "technical_assurance": "BLOCKED",
+    "demonstration": "BLOCKED",
+    "adoption": "BLOCKED",
+    "publication": "BLOCKED"
+  },
+  "application_tests_this_review": "209source/same209installed and16unfenced-store PASS. Separate5fenced diagnostic held before DB/0phases with original60seconds unused. Prior8creation-ID calls not accepted. Full5543NOT_RUN.",
+  "source_frozen": false,
+  "runtime_changes": "Actual camera.ts completion checks reject equal/late/backwards original750ms; once-only cleanup; new21-case actual-TS unit oracle",
+  "beta_decision": "NO_GO",
+  "parent_complete": false,
+  "prior_receipt_preserved": ".loop/repairs/disposition-duplicate-replay/adoption-review-before-v1.json",
+  "inputs": [
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "e540a0f4ccc116c262deaa06c7e68144a79ed615ce282689d90acd89999973da"
+    },
+    {
+      "path": "BACKLOG.md",
+      "sha256": "2fa300029b92e8988e03521c68dcc1ba7856a092ca6aa32e3ede182b019924b0"
+    },
+    {
+      "path": "docs/AGENT-DESIGN.md",
+      "sha256": "b3f9a048f755210ca0559cbba572333441cbeb3adad6481c87ada41e27e34d40"
+    },
+    {
+      "path": "docs/AWS-DEPLOYMENT.md",
+      "sha256": "4b10a9a99f04486ef269cf8fc6fdec5987d8cdd487c96c026ac9706876dbf3e8"
+    },
+    {
+      "path": "docs/BETA-READINESS.md",
+      "sha256": "d2278c0f526e57d271b2b46b6580c02f84fdb986a539b2002f6e505189c831bb"
+    },
+    {
+      "path": "docs/BETA-USER-GUIDE.md",
+      "sha256": "2f2bcbc5e6e8f6eed4d942a65740f2ae0c507785b86279beb12a64b7626d55db"
+    },
+    {
+      "path": "docs/BUILD-STATUS.md",
+      "sha256": "335e232adb947a5ddb8637144274517f62aface88dc85d99886c71918ba33001"
+    },
+    {
+      "path": "docs/contracts/evidence.schema.json",
+      "sha256": "f552882f482f912f572cd25ca41fbec1b08917dbaacc0dabb6812ad245512179"
+    },
+    {
+      "path": "docs/contracts/validate_documentation.py",
+      "sha256": "bda7e85cdc44cba3711ea826f8da4d45a09f114b4edcfa6b39341e4e949e5c96"
+    },
+    {
+      "path": "docs/controls.yaml",
+      "sha256": "b0e1d53f9a9abdc72628317ebc4f44e5fd2c64691f47071270ae7102435cb7dc"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "cc5795546d2220a1b1bd8bb70eb89dd1755b1a14f1c39f797919015728fce117"
+    },
+    {
+      "path": "docs/FEATURE-SPECS.md",
+      "sha256": "46dac9bee2ee68e215935c47c64a985625eeebf77efe8a64d5bca8d9044cf5ce"
+    },
+    {
+      "path": "docs/HACKATHON-EVIDENCE.md",
+      "sha256": "83d0393d4ea4a46d792db0869f04a502ee810a2523762d933f675b5da5f0c644"
+    },
+    {
+      "path": "docs/OPENCV-PIPELINE.md",
+      "sha256": "5ecb9f12d6206e0795c11ff7d0eb87db78f340dd30f45e3132e41879a06daf04"
+    },
+    {
+      "path": "docs/OPERATIONS.md",
+      "sha256": "928819de8c63450e5da5e0b7f11c2498f508c77d68799aec21a52bd8d168533f"
+    },
+    {
+      "path": "docs/PERSONAS-OPERATIONS.md",
+      "sha256": "e853ae80308b08911dd6ad3705e9e5de1bd4b744648dc921ede7c531e873d9d5"
+    },
+    {
+      "path": "docs/SECURITY-PRIVACY.md",
+      "sha256": "c16eb8daa3edf939dca710a78202ccf6adef95d4efc6e7ce1e0050ad6aa8e299"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "sha256": "9c3e3e2b70250c9b92bcadfc3014e44b92c9606d7d78848f4a76639b0cb51cd6"
+    },
+    {
+      "path": "docs/STATE-DATA-API.md",
+      "sha256": "107adb7272ff98385d6afaf28a32baab5e4eff31533926171fd058a4d277b2a4"
+    },
+    {
+      "path": "docs/templates/BETA-SESSION-RECORD.md",
+      "sha256": "1ec293e794d89f776a4ec2e451690f451599e9eeb8b4847d59cadebde7437597"
+    },
+    {
+      "path": "docs/templates/DEMO-SCRIPT.md",
+      "sha256": "996b2b0fc8ba2c6fd1bc9b8eb504a3ff397018bc48a12f8fbb79b46f78ad8a11"
+    },
+    {
+      "path": "docs/templates/OWNER-REVIEW-LIMITS.example.json",
+      "sha256": "e22890b0215c6f276f4fe9e310addd634ed15f833824f87c94eeac54528acece"
+    },
+    {
+      "path": "docs/templates/PERSONA-OPERATION-EVIDENCE.csv",
+      "sha256": "f55b70e22df56f2981291c0bc8b1b9e362c8084a6a716133afc9366851745722"
+    },
+    {
+      "path": "docs/templates/TECHNICAL-REPORT.md",
+      "sha256": "6c2da094f5571dd57e2b6046d7b306e1cab38343d6100284b9a95a8520ef90e5"
+    },
+    {
+      "path": "docs/TEST-PLAN.md",
+      "sha256": "6ecb5634eaf1409ab84b5fc6831b896931960d6fa004313fc64d916c2d198643"
+    },
+    {
+      "path": "docs/USER-NEEDS-ADOPTION.md",
+      "sha256": "833f5fa30b124f66bfaab125bccb09226c74dc93190a887c25ee2ccafdb8bf84"
+    },
+    {
+      "path": "docs/UX-ACCESSIBILITY.md",
+      "sha256": "211aa0b34b16ba36a2401a5ee49ddbd468ee26060291e4703b261ef0f5cb0d7c"
+    },
+    {
+      "path": "docs/WORKFLOW-COVERAGE.md",
+      "sha256": "abf382e4b26bb7889a97c035210a28b90d3a2f84da79382c3d2a42284569a418"
+    },
+    {
+      "path": "evidence/index.json",
+      "sha256": "e0416868b76ffe021a1681cefefa384542e88b33d835f82fc2496ccb4eeb01f4"
+    },
+    {
+      "path": "IMPLEMENTATION-PLAN.md",
+      "sha256": "04281757c7288620f970cbde7b9072179b47d48531d6271aef6ca38e7b40043a"
+    },
+    {
+      "path": "PRD.md",
+      "sha256": "b2198dee43410eb005b0401224c5b64195b099ac7656e639da7e0df452637cdc"
+    },
+    {
+      "path": "README.md",
+      "sha256": "69c7da0845ee20b93d87392c7591876914eb4ebfcac8578f8ae1f81f1d264cc2"
+    },
+    {
+      "path": "VISION.md",
+      "sha256": "3e0e68f0525848e7b6a726119919107372814fb6510a405df078c6ad0ade193c"
+    }
+  ],
+  "execution_status_updated_at": "2026-10-18T11:12:36.518562+00:00",
+  "prior_execution_status_receipt_preserved": ".loop/repairs/operator-frame-delivery/adoption-review-before-v1.json",
+  "documentation_validation_updated_at": "2026-10-18T11:13:35.207089+00:00",
+  "supplemental_terminal_copy_dependency": {
+    "status": "PASS_TERMINAL_POST_RUN_COPY_DEPENDENCY",
+    "checkpoint": ".loop/repairs/purpose-create-commit/copy-dependency-checkpoint-v1.json",
+    "actual_live_refusal_exit_code": 2,
+    "scope": "post-run verifier binding; no human or whole-workflow acceptance",
+    "actual_terminal_auditor_exit_code": 0,
+    "verification": ".loop/repairs/purpose-create-commit/terminal-copy-dependency-v1-verification.json",
+    "applicability": "HISTORICAL732_SUBJECT_ONLY"
+  },
+  "retained732_full_local_regression": {
+    "status": "PASS_LOCAL_SCOPE_ONLY",
+    "cases": 5149,
+    "phases": 15447,
+    "cohorts": 41,
+    "actual_auditor_exit_code": 0,
+    "verification": ".loop/repairs/purpose-create-commit/full-composite-v2-verification.json",
+    "sha256": "0f9a3fdb934097ae74c673beee5def9edc8df1740769a53bb63313f4076836f8",
+    "supplemental_verification": ".loop/repairs/purpose-create-commit/terminal-copy-dependency-v1-verification.json",
+    "supplemental_actual_auditor_exit_code": 0,
+    "original_memory_holds_preserved": true,
+    "original_collection_reexecuted": false,
+    "completed_prefix_repeated": false,
+    "local_sdk_sends": 840191,
+    "external_sdk_sends": 0,
+    "applicability": "HISTORICAL732_AFTER_JOURNAL_ADDITION"
+  },
+  "current_failure": "Original VC-F01 collection failure reconciled without acceptance. Separate corrected147case diagnostic terminal exit1:146PASS/1FAIL, owner pointer action cause UNKNOWN. Cleanup verified; no live test handle or full PASS.",
+  "current_failures": [
+    {
+      "id": "OP-F01",
+      "status": "OPEN_CAUSE_UNKNOWN"
+    },
+    {
+      "id": "OP-F02",
+      "status": "OPEN_CAUSE_UNKNOWN"
+    },
+    {
+      "id": "CB-F01",
+      "status": "OPEN_CAUSE_UNKNOWN"
+    }
+  ],
+  "historical737_full_regression": {
+    "status": "FAIL_RECONCILED",
+    "cases": 5245,
+    "phases": 15735,
+    "passed": 5243,
+    "failed": 2,
+    "local_sdk_sends": 840647,
+    "external_sends": 0,
+    "receipt": ".loop/repairs/asset-confirm-commit/full-composite-failure-v1-verification.json",
+    "actual_auditor_tool_chunk": "8fd8fb",
+    "scope": "Negative diagnostic reconciliation, not positive software acceptance"
+  },
+  "retained740_current_local_selected_proof": {
+    "recorded_at": "2026-10-18T06:30:48.313662+00:00",
+    "status": "PASS_CURRENT_CAMERA_COMPLETION_REPAIR_SCOPE_ONLY",
+    "subject_id": "working-tree-manifest-sha256:dc4fb3dffbc61397e42b8e95428c8c1a7573c0ea9ad148597fdfc5daddf64ed3",
+    "source_inputs": 740,
+    "finding": "CF01",
+    "new_unit_cases": 21,
+    "related_unit_cases_including_same21": 57,
+    "installed_support_cases": 92,
+    "installed_support_phases": 276,
+    "public_returns": 93,
+    "native_local_sdk_sends": 19424,
+    "external_sends": 0,
+    "browser_cases": 399,
+    "browser_files": 16,
+    "all_owned_resources_cleaned": true,
+    "wheel_sha256": "1d702b98db70c078337a193c356f3c87741351d1ff393cf349e26d153cb6f20d",
+    "backend_files": 146,
+    "frontend_assets": 3,
+    "complete_python_collection": 5278,
+    "complete_python_execution": "NOT_RUN",
+    "remaining": [
+      "Original OP-F01/OP-F02/CB-F01 browser causes UNKNOWN",
+      "Complete5278 regression NOT_RUN",
+      "Full metadata/D11/provider/physical/human workflows unfinished"
+    ],
+    "parent_complete": false,
+    "beta_decision": "NO_GO",
+    "applicability": "HISTORICAL740_SUBJECT_ONLY"
+  },
+  "retained740_full_current_local_regression": {
+    "status": "PASS_CURRENT_LOCAL_SOFTWARE_ONLY",
+    "cases": 5278,
+    "execution_phases": 15834,
+    "collection_phases": 0,
+    "cohorts": 42,
+    "cohort_seconds": 750,
+    "allocated_process_seconds": 31500,
+    "local_sdk_sends": 842703,
+    "external_sdk_sends": 0,
+    "all_owned_databases_cleaned": true,
+    "source_inputs": 740,
+    "source_frozen": false,
+    "active_process_handles": [],
+    "receipt": ".loop/repairs/operator-frame-delivery/full-v1-terminal-verification.json",
+    "actual_auditor_exit_code": 0,
+    "tool_chunk": "50f87c",
+    "separate_outcome_audit": ".loop/repairs/operator-frame-delivery/full-v1-outcome-reconciliation.json",
+    "actual_outcome_auditor_exit_code": 0,
+    "outcome_tool_chunk": "e917e0",
+    "applicability": "HISTORICAL740_SUBJECT_ONLY"
+  },
+  "retained740_current_full_preflight": {
+    "status": "PASS_SCOPED_FIXTURES_ONLY",
+    "support_cases": 92,
+    "support_phases": 276,
+    "public_returns": 93,
+    "local_sdk_sends": 19424,
+    "browser_cases": 399,
+    "browser_files": 16,
+    "all_owned_resources_cleaned": true,
+    "source_inputs": 740,
+    "receipt": ".loop/repairs/operator-frame-delivery/verification-current-v1.json",
+    "full5278_execution": "PASS_CURRENT_LOCAL_SOFTWARE_ONLY",
+    "applicability": "HISTORICAL740_SUBJECT_ONLY"
+  },
+  "retained740_current_native_collateral_result": {
+    "status": "PASS_CURRENT_FINITE_FULL_SEQUENCE_CASE_ONLY",
+    "cohort": 9,
+    "receipt": ".loop/repairs/operator-frame-delivery/full-v1-ninth-cohort-protocol-check.json",
+    "historical_cause": "UNKNOWN",
+    "human_acceptance": "NOT_RUN",
+    "applicability": "HISTORICAL740_SUBJECT_ONLY"
+  },
+  "retained744_current_subject": {
+    "inputs": 744,
+    "backend_files": 147,
+    "web_assets": 3,
+    "manifest_sha256": "ad91e96dbd44650f87affb9bb4d381f7721fcf79b0cb02e9970a3bbb53aac099",
+    "full_execution": "NOT_RUN",
+    "collected_cases": 5330
+  },
+  "retained744_current_local_selected_proof": {
+    "status": "PASS_SCOPED_LOCAL_ONLY",
+    "source_cases": 97,
+    "installed_same_cases": 97,
+    "native_cases": 17,
+    "new_unique_unit_cases": 45,
+    "new_unique_native_cases": 7,
+    "local_sdk_sends": 382,
+    "external_sdk_sends": 0,
+    "installed_http_sends": 0,
+    "receipt": ".loop/repairs/journal-scope-completeness/adoption-evidence-reconciliation-v1.json"
+  },
+  "retained744_full_current_local_regression": {
+    "status": "NOT_RUN",
+    "collected_cases": 5330,
+    "collection_execution_phases": 0
+  },
+  "retained746_current_subject": {
+    "source_inputs": 746,
+    "backend_files": 147,
+    "web_assets": 3,
+    "subject_id": "working-tree-manifest-sha256:5fcfc34aca35e571e5daf22ff62fca24357c24f7c4e1f157180ecff7fdc9f190"
+  },
+  "retained746_current_local_selected_proof": {
+    "status": "PASS_SCOPED_LOCAL_ONLY",
+    "subject_id": "working-tree-manifest-sha256:5fcfc34aca35e571e5daf22ff62fca24357c24f7c4e1f157180ecff7fdc9f190",
+    "checks": {
+      "source_current": true,
+      "source_complete": true,
+      "installed_complete": true,
+      "native_complete": true,
+      "same_installed_cases": true,
+      "all20_new_cases_executed": true,
+      "native_guard_cleanup": true,
+      "installed_cleanup": true,
+      "wheel": true,
+      "collection_retained": true
+    },
+    "source_inputs": 746,
+    "source_cases": 111,
+    "installed_same_cases": 111,
+    "native_cases": 23,
+    "local_sdk_sends": 588,
+    "external_sdk_sends": 0,
+    "full5350_execution": "NOT_RUN",
+    "scope": "Declared immutable journal intent recording only; no primary erasure, global anchor, IAM, provider or human acceptance",
+    "parent_complete": false,
+    "beta_decision": "NO_GO"
+  },
+  "retained746_full_current_local_regression": {
+    "status": "NOT_RUN",
+    "collected_cases": 5350,
+    "collection_execution_phases": 0
+  },
+  "current_subject": {
+    "subject_id": "working-tree-manifest-sha256:4367e95d5b303fada619d2afd4e45bf8653c9d734cfea4a0f3d30ef1684614bb",
+    "source_inputs": 757,
+    "verification": ".loop/repairs/fenced-inventory-capacity/verification-current-v1.json"
+  },
+  "current_local_selected_proof": {
+    "recorded_at": "2026-10-18T11:09:50.296257+00:00",
+    "status": "PASS_CAPACITY_MODEL_PACKAGE_AND_UNFENCED_NATIVE; FENCED_NATIVE_DIAGNOSTIC_HELD",
+    "subject_id": "working-tree-manifest-sha256:4367e95d5b303fada619d2afd4e45bf8653c9d734cfea4a0f3d30ef1684614bb",
+    "source_inputs": 757,
+    "source_cases": 209,
+    "installed_same_cases": 209,
+    "phases_each": 627,
+    "new_unit_cases": 19,
+    "all19new_unit_cases_executed": true,
+    "native_unfenced_cases": 16,
+    "native_unfenced_phases": 48,
+    "local_sdk_sends": 543,
+    "external_sdk_sends": 0,
+    "cleanup_verified": true,
+    "fenced_capacity_diagnostic": {
+      "collected_cases": 5,
+      "execution_phases": 0,
+      "status": "HELD_MEMORY_BEFORE_DATABASE",
+      "original_unused_execution_allowance_seconds": 60,
+      "collection_reused_on_continuation": true,
+      "renewed_execution_allowance": false,
+      "holds_preserved": [
+        "hybrid-native-scope-v1-process.json",
+        "hybrid-native-resume-v1-process.json"
+      ],
+      "memory_after_independent_work": {
+        "observed_at": "2026-10-18T11:07:00.852412+00:00",
+        "reading_succeeded": true,
+        "method": "Windows GlobalMemoryStatusEx",
+        "available_physical_bytes": 662364160,
+        "available_commit_bytes": 17786851328,
+        "total_physical_bytes": 16858472448,
+        "total_commit_bytes": 68398080000,
+        "decision": "ADMIT_LOCAL_DIAGNOSTIC"
+      },
+      "entry_gate_reading": {
+        "observed_at": "2026-10-18T11:07:53.417059+00:00",
+        "reading_succeeded": true,
+        "method": "Windows GlobalMemoryStatusEx",
+        "available_physical_bytes": 436039680,
+        "available_commit_bytes": 17792589824,
+        "total_physical_bytes": 16858472448,
+        "total_commit_bytes": 68398080000,
+        "decision": "HOLD_INSUFFICIENT_MEMORY"
+      }
+    },
+    "original8creation_ID_acceptance": "CALLS_NOT_RUN; prior setup errors remain retained; no metadata requirement relaxed",
+    "wheel_sha256": "73c33af916a7520802ea54d6b1df734f5432fa70e343eefc3a92f86fdb4c6d8a",
+    "graph_nodes": 2297,
+    "graph_edges": 9913,
+    "collected_cases": 5543,
+    "collection_phases": 0,
+    "full_current_execution": "NOT_RUN",
+    "configured_startup_HTTP_worker_consumption": "NOT_IMPLEMENTED",
+    "parent_complete": false,
+    "beta_decision": "NO_GO"
+  },
+  "full_current_local_regression": {
+    "status": "NOT_RUN",
+    "collected_cases": 5543,
+    "collection_phases": 0,
+    "subject_id": "working-tree-manifest-sha256:4367e95d5b303fada619d2afd4e45bf8653c9d734cfea4a0f3d30ef1684614bb"
+  },
+  "current_full_preflight": {
+    "capture_cases": 92,
+    "capture_phases": 276,
+    "public_returns": 93,
+    "capture_auditor_exit_code": 0,
+    "capture_receipt": ".loop/repairs/journal-regression/canonical-support-v1-verification.json",
+    "browser_cases": 399,
+    "browser_files": 16,
+    "browser_auditor_exit_code": 0,
+    "browser_receipt": ".loop/repairs/journal-regression/canonical-browser-v1-verification.json"
+  },
+  "current_repair_verification": {
+    "recorded_at": "2026-10-18T10:04:45.638483+00:00",
+    "status": "FAILED147_DIAGNOSTIC_RECONCILED_ONLY",
+    "source_inputs": 750,
+    "cases": 147,
+    "phases": 441,
+    "passed_cases": 146,
+    "failed_cases": 1,
+    "failed_calls": [
+      "tests/integration/test_public_asset_store.py::test_configured_https_browser_owner_flow_uses_real_local_store_and_auth"
+    ],
+    "actual_exit_code": 1,
+    "local_sdk_sends": 95564,
+    "external_sdk_sends": 0,
+    "database_cleanup_verified": true,
+    "source_and_diagnostic_inputs_unchanged": true,
+    "observer_copy": {
+      "logical_sha256": "081020c0a49a6ae09c2686edc521e8b7ffda10e1fd95ae84f8271c728e9f7bc5",
+      "copy_sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419",
+      "copy_encoding": "UTF-8 without BOM; exact CRLF text-write serialization"
+    },
+    "observer_cohort_guard_passed_and_all147_executed": true,
+    "failure_message": "TimeoutError: locator.check: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('I acknowledge interruption of ordinary work; this hold erases nothing.')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"checkbox\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+    "dom_visibility": "visible",
+    "keyboard_diagnostic_checked": true,
+    "keyboard_diagnostic_is_not_pass": true,
+    "cause": "UNKNOWN",
+    "parent_complete": false,
+    "beta_decision": "NO_GO",
+    "active_process_handles": []
+  },
+  "current_static_control_diagnostic": {
+    "receipt": ".loop/repairs/owner-pointer-followup/static-v1-process.json",
+    "checkbox_action": "PASS",
+    "animation_frames": 0,
+    "scope": "mixed diagnostic only; application failure remains open",
+    "cause": "UNKNOWN"
+  },
+  "historical_before_manifest_full_regression": {
+    "status": "TERMINAL_INCOMPLETE_RECONCILED",
+    "cases": 5408,
+    "controller_pid": 46716,
+    "exec_session": 98118,
+    "cohorts": 43,
+    "seconds_each": 732,
+    "allocated_seconds": 31476,
+    "ceiling": 31500,
+    "source_frozen": false,
+    "plan": ".loop/repairs/journal-regression/full-v1-plan.json",
+    "failed_cohorts": [
+      10
+    ],
+    "unexecuted_cases": 147,
+    "repair_integrated": false,
+    "executed_cases": 5261,
+    "phases": 15783,
+    "active_process_handles": [],
+    "negative_receipt": ".loop/repairs/journal-regression/full-v1-collection-failure-reconciliation.json"
+  },
+  "historical_manifest_full_regression": {
+    "status": "NOT_RUN",
+    "collected_cases": 5433,
+    "collection_phases": 0,
+    "subject_id": "working-tree-manifest-sha256:51dc70166b2ee2b97c3c7b3eca3a453b94a2a723683567a8fd60c2266f63609a"
+  },
+  "historical_restore_inventory_full_regression": {
+    "status": "NOT_RUN",
+    "collected_cases": 5470,
+    "collection_phases": 0,
+    "subject_id": "working-tree-manifest-sha256:541a12d1f68c5bbacc47a3f7973a4483706e6160aa1300f143d22256ba9193ee"
+  },
+  "historical_protected_fence_full_regression": {
+    "status": "NOT_RUN",
+    "collected_cases": 5524,
+    "collection_phases": 0,
+    "subject_id": "working-tree-manifest-sha256:63125493f8c2eba630fda9de7ef51acfcf9aef9305c48bb9dd343dfffb9509ad"
+  }
+}

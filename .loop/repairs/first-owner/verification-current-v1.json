@@ -1,0 +1,71 @@
+{
+  "recorded_at": "2026-10-18T15:20:27.905230+00:00",
+  "subject_id": "working-tree-manifest-sha256:bf9c1d4e81d48b5cc361e1d57ab64f3c1d289b2917a9b206332aa599096d5fdd",
+  "source_inputs": 795,
+  "status": "PASS_SELECTED_MODELS_INSTALLED_AND_ENTRY_ONLY_NATIVE_HELD",
+  "groups": [
+    {
+      "group": "feature",
+      "cases": 45,
+      "phases": 135,
+      "source_process": "evidence/local/fresh-enrollment-models-first-owner-feature-current-v2/process.json",
+      "source_process_sha256": "2424c4c0a75d7088f9ff8530fdfdc902af8e9c27e926dcf8cb421e6d26b65d5d",
+      "installed_process": ".loop/repairs/first-owner/installed-feature-v1-process.json",
+      "installed_process_sha256": "d11fc9424edafa1fe5017645ccd8e4bec3da8750f6026f7aaebcb3d1d4230961"
+    },
+    {
+      "group": "auth",
+      "cases": 178,
+      "phases": 534,
+      "source_process": "evidence/local/fresh-enrollment-models-first-owner-auth-current-v2/process.json",
+      "source_process_sha256": "61250711cd079eb181ef4d7023b0e808e72b9488d6c10744cf0fffb7305e3475",
+      "installed_process": ".loop/repairs/first-owner/installed-auth-v1-process.json",
+      "installed_process_sha256": "383b74bffbfb55266216e4edf26f2359aca300498a049b83b46c34e046c80dea"
+    },
+    {
+      "group": "wiring",
+      "cases": 234,
+      "phases": 702,
+      "source_process": "evidence/local/fresh-enrollment-models-first-owner-wiring-current-v2/process.json",
+      "source_process_sha256": "b99a344f2eeba93e8307f49527c4b247ceb2c510c57401c533f7315f9ce93321",
+      "installed_process": ".loop/repairs/first-owner/installed-wiring-v1-process.json",
+      "installed_process_sha256": "1265556716d06c2ea9431d4b2a5fd823dc99a3ed85da7b2864c6e21c497986f4"
+    }
+  ],
+  "distinct_source_cases": 457,
+  "source_phases": 1371,
+  "installed_same_cases": 457,
+  "installed_phases": 1371,
+  "new_unit_cases": 45,
+  "sdk_http_sends": 0,
+  "wheel_sha256": "80eb01a4f91327b29ff2a77bbe847d12f25f4ec3e843d1bdf64890b5bae91c6e",
+  "backend_files": 157,
+  "web_assets": 3,
+  "collection_cases": 5909,
+  "collection_phases": 0,
+  "new_native_cases": 3,
+  "native_selected_cases": 10,
+  "native_execution": "NOT_RUN_MEMORY_ADMISSION_HELD",
+  "native_memory": {
+    "observed_at": "2026-10-18T15:14:28.123291+00:00",
+    "reading_succeeded": true,
+    "method": "Windows GlobalMemoryStatusEx",
+    "available_physical_bytes": 499609600,
+    "available_commit_bytes": 12426219520,
+    "total_physical_bytes": 16858472448,
+    "total_commit_bytes": 68398080000,
+    "decision": "HOLD_INSUFFICIENT_MEMORY"
+  },
+  "browser_cases": 1,
+  "browser_scope": "actual built local UI; setup navigation endpoint intercepted unavailable fixture; no authenticated journey/provider/human proof",
+  "browser_server_terminated": true,
+  "graph_nodes": 2383,
+  "graph_edges": 10276,
+  "graph_limits": "API AST only; legacy IDs/community labels; no UI/test semantic coverage",
+  "full_current_suite": "NOT_RUN",
+  "initial_fixture_limit": "Original25 missing-module failures retained. Original eager-response fixture cannot pass its signed-transport cases unchanged; do not claim whole-file unchanged acceptance or independent replacement approval.",
+  "race_original_oracle_byte_identical": true,
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "authority": "none"
+}

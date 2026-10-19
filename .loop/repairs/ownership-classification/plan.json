@@ -1,0 +1,49 @@
+{
+  "primary_owner": "codex-product-build-loop",
+  "support": "agentic-product-assurance Change/Verify",
+  "mode": "IMPLEMENT",
+  "baseline": "693-input isolated owner-collateral-ui; runtime backend/frontend unchanged from691",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "MC13 fresh complete private ownership classification under original proof/resource/deadline",
+    "MC13 explicit context rationale and no accepted shared/unresolved/forged partial result",
+    "MC13 held-reader source/configuration/digest and independent-bound revalidation"
+  ],
+  "contract": "docs/STATE-DATA-API.md#accepted-private-classification-policy--implementation-contract",
+  "planned_surfaces": [
+    "services/api/proofpack/evidence/ownership_classification.py",
+    "services/api/proofpack/evidence/held_corpus.py",
+    "tests/unit/test_ownership_classification.py",
+    "tests/integration/test_ownership_classification_store.py"
+  ],
+  "graph": "2050nodes/8848edges/137API files; integrity checked, API-only/pre-1504/private/fuzzy/truncated limits; direct source/tests govern",
+  "not_implemented": [
+    "remaining family/retention/collateral policies;63unresolved records observed in one synthetic history",
+    "accepted positive classification on actual stored history",
+    "configured owner/worker/UI preview and confirmation",
+    "cleanup/journal/restore/requester integration",
+    "full-current/provider/physical/human acceptance"
+  ],
+  "source_mutations_this_step": true,
+  "max_attempts": 8,
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "current_subject_inputs": 696,
+  "state": "IMPLEMENTED_SELECTED_VERIFICATION_ONLY",
+  "implemented": [
+    "private accepted classification core with explicit context reasons and no accepted shared/unresolved partial result",
+    "held-reader method and original proof/source/resource/budget revalidation",
+    "returned binding/bounds/counts/non-authorizing flag checks"
+  ],
+  "evidence": "verification-current.json",
+  "oracle_review": "original no-op duplicate fault retained unresolved; separate source diagnostic validates stronger replacement, no automatic oracle waiver",
+  "current_subject_revision": "559b0920d03dd6a72968a271333afebac568a18f5af0f363ec574840f6efd067",
+  "combined_work_fix": "Remaining allowance subtracts original inventory work before accounting; exact archived probe/current/native/installed proof bound to final hashes",
+  "current_tests": {
+    "modeled_reports": 261,
+    "native_cases": 3,
+    "installed_reports": 121,
+    "installed_overlap": "61current plus60unchanged archived, overlapping"
+  },
+  "formal_review": "Current audit passes selected scope; ledger retains original no-op oracle and historical source-epoch bindings pending current-subject review. No parent acceptance or scope reduction."
+}

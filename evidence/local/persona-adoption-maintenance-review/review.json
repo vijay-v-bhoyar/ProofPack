@@ -1,0 +1,115 @@
+{
+  "recorded_at": "2026-10-16T20:53:26.673790+00:00",
+  "mode": "Improve",
+  "status": "PASS_BOUNDED_IMPROVE_REVIEW",
+  "personas": {
+    "P01": 10,
+    "P02": 10,
+    "P03": 10,
+    "P04": 8,
+    "P05": 8,
+    "P06": 8,
+    "P07": 8,
+    "P08": 8,
+    "P09": 8
+  },
+  "operations": 78,
+  "source_inputs": 669,
+  "source_equals_selected_candidate": true,
+  "frontend_hashes_match": true,
+  "changed_documents": [
+    "docs/PERSONAS-OPERATIONS.md",
+    "docs/USER-NEEDS-ADOPTION.md",
+    "docs/BUILD-STATUS.md",
+    "docs/TEST-PLAN.md",
+    "docs/templates/BETA-SESSION-RECORD.md"
+  ],
+  "candidate_selected_evidence": {
+    "model_cases": 325,
+    "rendered_cases": 15,
+    "native_cases": 31,
+    "installed_cases": 31
+  },
+  "canonical_focused_result": {
+    "status": "PASS",
+    "cases": 325,
+    "phases": 975,
+    "exit_code": 0,
+    "sdk_calls": 0,
+    "subject_inputs": 669,
+    "process_receipt": "adoption-maintenance-canonical-oct16-native-process.json"
+  },
+  "full_current_python": "NOT_RUN",
+  "full_current_browser": "NOT_RUN",
+  "human_A01_A09": "NOT_RUN",
+  "physical_value": "UNKNOWN",
+  "beta_decision": "NO_GO",
+  "limitations": [
+    "No participant research, real provider, physical, operational or adoption result collected.",
+    "Selected case counts overlap and do not establish complete workflows.",
+    "Historical full baseline and retained failures remain preserved; original pointer cause UNKNOWN."
+  ],
+  "document_hashes": {
+    "docs/PERSONAS-OPERATIONS.md": "eed6f320b145c67ed7412707e77a897e01115d145b5d72cf2949b33aa20af89a",
+    "docs/USER-NEEDS-ADOPTION.md": "d591ce6e633cd2f1d71be85d12fd5dc997c0348e9330a12e68c65381bfe44d65",
+    "docs/BUILD-STATUS.md": "52207450293952d3c9ef7b616e77ca0b7f927641024db8279a3e868a6b6cad62",
+    "docs/TEST-PLAN.md": "554ea38a04de57891c9bbfd2867dfecb5412edbcc4c9d76007ff5bddb8e9414e",
+    "docs/templates/BETA-SESSION-RECORD.md": "e7b698ead2652c5e5fb22ec59f261fcbe6110578300c75fdf64b7ca7fb6f9dbc"
+  },
+  "checks": [
+    {
+      "name": "Nine defined responsibility profiles",
+      "status": "PASS"
+    },
+    {
+      "name": "78 complete numbered operations",
+      "status": "PASS"
+    },
+    {
+      "name": "All 26 workflow contracts retained",
+      "status": "PASS"
+    },
+    {
+      "name": "All 58 technical acceptance scopes retained",
+      "status": "PASS"
+    },
+    {
+      "name": "All nine human scenario families retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Affected people and account-free concern journey retained",
+      "status": "PASS"
+    },
+    {
+      "name": "Complete maintenance continuation and honest completion boundary",
+      "status": "PASS"
+    },
+    {
+      "name": "Exact canonical case/phase/JUnit/origin/SDK/source checks",
+      "status": "PASS"
+    },
+    {
+      "name": "Original timed-out trial retained at original bounds",
+      "status": "PASS"
+    },
+    {
+      "name": "Source unchanged by documentation improvements",
+      "status": "PASS"
+    }
+  ],
+  "retained_timeout": {
+    "status": "FAIL",
+    "exit_code": 124,
+    "limit_seconds": 120,
+    "cause": "UNKNOWN",
+    "receipt": "adoption-maintenance-canonical-oct16-process.json"
+  },
+  "documentation_validation": {
+    "exit_code": 0,
+    "status": "PASS",
+    "checks": 30,
+    "inputs": 31,
+    "failures": []
+  }
+}

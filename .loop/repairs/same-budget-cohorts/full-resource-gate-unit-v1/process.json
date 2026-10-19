@@ -1,0 +1,38 @@
+{
+  "started_at": "2026-10-17T14:24:03.233309+00:00",
+  "ended_at": "2026-10-17T14:24:04.568586+00:00",
+  "command": [
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\test_resource_admission.py",
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\test_full_resource_gate.py",
+    "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\full-resource-gate-unit-v1\\tests.xml"
+  ],
+  "exit_code": 0,
+  "cases": 18,
+  "scope": "stub test admission/lifecycle only; no application, browser or provider workload",
+  "subject": [
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\resource_admission.py",
+      "sha256": "bdec7d7c16896304a4fd135397342d88a4b4199845151c3d49d065b5e12b58a3"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\test_resource_admission.py",
+      "sha256": "2ac730e5b358dad7b7d419a9a1f24c562acf29570c92a853137abde229ea4635"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\full_resource_gate.py",
+      "sha256": "851506f358b37242264e373cb4a06f239e75f2eaa8f154780a92c61d09e10e46"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\test_full_resource_gate.py",
+      "sha256": "395c79f995e597596a6384fcd4f053fcadcea3beb3e3126fef6cfe6cd44030ba"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "metadata-label-history exact guarded transfer only",
+  "recorded_at": "2026-10-16T04:08:51.579673+00:00",
+  "changes": [
+    {
+      "path": "services/api/proofpack/review/labels.py",
+      "before_sha256": "205c28d0b279639f65fe5c8a8fc9a1a2c29be7ac8312270c67237d12a9a09dd1",
+      "candidate_sha256": "791e6618af5ad4581977f89aec8a44dc1923087b01028aa39753ff1f9a2a8cb1"
+    },
+    {
+      "path": "services/api/proofpack/evidence/label_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "9a9e5d95af7bca953ee04e1f22be7cf8af653dbc283a684cbda6e5c1375ab972"
+    },
+    {
+      "path": "tests/unit/test_capture_lineage.py",
+      "before_sha256": "ad8bb203cb94d2eec111d18f5a946a5b728ecddf0f986eda784539fcba7a833b",
+      "candidate_sha256": "62c233b160c46b2badbe5f04d27a7d7945a95430783946d6156c5948f04bee30"
+    },
+    {
+      "path": "tests/unit/test_label_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "c80a6d4ce3c33ed82a68f94c01592bfffb639d97b3dedf4ae505772c7971ea0b"
+    },
+    {
+      "path": "tests/integration/test_label_lineage_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "ce246358b2d946bb69f6225558b56db38e816220e763fa6bef5ed1f5211fd3c4"
+    }
+  ],
+  "origin_inputs": 595,
+  "result_inputs": 598,
+  "canonical_matches_candidate": true,
+  "verification": "PENDING_CANONICAL_REGRESSION",
+  "prior_full_run": "FAIL; 122 cases unaccepted; retained unchanged",
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

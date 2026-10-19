@@ -1,0 +1,19 @@
+{
+  "status": "TERMINAL_FAIL_RECONCILED",
+  "session_id": null,
+  "pid": 4528,
+  "observed_at": "2026-10-17T14:28:12.117383+00:00",
+  "runner_sha256": "0cce2eb61f433c24abba18f8490e5ce9358e6764c355ecb8f0f5c9cf56bcb31e",
+  "plan": "full-v2-plan.json",
+  "terminal_receipt": "full-v2-process.json",
+  "scope": "all4559 current cases;36x875; no full-product/provider/human acceptance",
+  "last_confirmed_live_at": "2026-10-17T15:05:41.069641+00:00",
+  "last_tool_observation_chunk": "cdb1b1",
+  "last_observed_running_cohorts": [
+    9
+  ],
+  "runner_reported_completed_cohorts": 8,
+  "former_session_id": 98585,
+  "ended_at": "2026-10-17T15:31:08.472793+00:00",
+  "verification": "full-v2-terminal-verification.json"
+}

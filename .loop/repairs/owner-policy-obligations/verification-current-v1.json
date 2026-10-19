@@ -1,0 +1,65 @@
+{
+  "recorded_at": "2026-10-18T19:14:38.702415+00:00",
+  "subject_id": "working-tree-manifest-sha256:2085f3aafb550c1a806cf8a5a92ae2ca885f8fb505ed89b53901e4a42168f5cb",
+  "source_inputs": 824,
+  "status": "PASS_SCOPED_LOCAL_CANDIDATES_INDEPENDENT_ORACLE_REVIEW_PENDING",
+  "source_cases": 381,
+  "source_phases": 1143,
+  "installed_cases": 362,
+  "installed_phases": 1086,
+  "source_only_node_cases": 19,
+  "groups": [
+    {
+      "label": "owner-policy-feature-v1",
+      "source_cases": 59,
+      "installed_cases": 40,
+      "installed_same_selected_nodeids": true
+    },
+    {
+      "label": "owner-policy-legacy-a-v1",
+      "source_cases": 196,
+      "installed_cases": 196,
+      "installed_same_selected_nodeids": true
+    },
+    {
+      "label": "owner-policy-legacy-b-v1",
+      "source_cases": 126,
+      "installed_cases": 126,
+      "installed_same_selected_nodeids": true
+    }
+  ],
+  "browser_cases": 48,
+  "browser_scope": "Actual final built UI/default Chrome/intercepted synthetic API;5new/34maintenance/9recovery; not provider/store/human proof",
+  "SDK_sends": 0,
+  "full_collection_cases": 6250,
+  "collection_execution_phases": 0,
+  "full_current_execution": "NOT_RUN",
+  "wheel_sha256": "13719fc34294c75f6930568b6881eefcf70659462c131bdc1a487db48e8faf4f",
+  "wheel_members": 161,
+  "frontend_build_exit": 0,
+  "frontend_chunk_kB": 549.8,
+  "chunk_warning_preserved": true,
+  "bundle_files": 41,
+  "actual_dependency_wheels": 32,
+  "bundle_AWS_target": "SYNTHETIC / candidate Python3.12.15 / actual native NOT_RUN",
+  "PO_T01": "PENDING_INDEPENDENT_REVIEW",
+  "CR_T01": "PENDING_INDEPENDENT_REVIEW",
+  "domain_fixture_changes": "Original3 functions/5cases AST unchanged, fixture corrected; whole file not identical",
+  "graph": {
+    "nodes": 2402,
+    "edges": 10333,
+    "communities": 88,
+    "scope": "Incremental API AST only; legacy IDs/method collisions/community labels; UI/test/script incomplete"
+  },
+  "formal_experience_scenarios": "3 NOT_RUN; structural valid with2draft/access warnings",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "remaining": [
+    "PO-T01/CR-T01/IJ-T01 independent replacement-oracle reviews pending; original failures not passed",
+    "D11 purposes/retention/requester rights/approvers unresolved; policy explanation is not an executable preview or cleanup grant",
+    "Complete classification/confirmation/cleanup/journal/restore/media/requester workflow still required",
+    "D07 actual account/region/budget/authority and actual native/host/provider/physical/human acceptance missing",
+    "All five features/nine personas/78operations/AP01-AP04/W01-W26/T01-T58 remain required; A01-A09 NOT_RUN and seven adoption gates UNKNOWN/BLOCKED",
+    "Earlier pointer/frame/Node forced-exit causes UNKNOWN; desktop awake/unlocked UNKNOWN"
+  ]
+}

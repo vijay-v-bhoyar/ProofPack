@@ -1,0 +1,64 @@
+<testsuites id="" name="" tests="15" failures="0" skipped="15" errors="0" time="0.14189200000000005">
+<testsuite name="operator.spec.ts" timestamp="2026-10-15T17:31:22.501Z" hostname="" tests="15" failures="0" skipped="15" time="0" errors="0">
+<testcase name="measured overlap reference stops camera and fresh checks remain separate from acknowledgment" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured not_flat reference stops camera and fresh checks remain separate from acknowledgment" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured reference with observation mismatch is withheld before download" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured reference with crop mismatch is withheld before download" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured reference with outside mismatch is withheld before download" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured reference with space mismatch is withheld before download" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured reference with duplicate mismatch is withheld before download" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured reference with dimensions download is never rendered" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured reference with denied download is never rendered" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured historical reference clears on offline" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured historical reference clears on hidden" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured historical reference clears on expiry" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured historical reference clears on clear" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured historical reference clears on restart" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+<testcase name="measured reference has text targets and keyboard controls at narrow zoom and forced colors" classname="operator.spec.ts">
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

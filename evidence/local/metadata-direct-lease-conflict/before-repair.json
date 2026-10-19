@@ -1,0 +1,25 @@
+{
+  "scope": "source-confirmed contract conflict before repair",
+  "recorded_at": "2026-10-15T23:32:31.584941+00:00",
+  "status": "CONFLICT",
+  "requirement": "already authorized cleanup finishes under valid service lease after requester logout; private response remains denied",
+  "conflicting_change": "final progress commit now adds current owner session checks and rows",
+  "full_run": "original handle 57608 still live; cohort 2 failure marker observed, terminal failure details not yet available",
+  "next_action": "wait for terminal run; preserve exact report; remove new final session dependency while retaining final lease/runtime/scope/asset fences; correct contradictory new test against existing authoritative contract",
+  "runtime_changed": false,
+  "beta_decision": "NO_GO",
+  "inputs": [
+    {
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "sha256": "2afef3b6b8a927ea0ecab6ddf6ca1d0b70e2fde0459d71a8d16024689e039963"
+    },
+    {
+      "path": "tests/integration/test_direct_event_lineage.py",
+      "sha256": "aea3c2f493f491eceeefaab449b1c2546d3b60d6febb750daadd4a6d9b8f5919"
+    },
+    {
+      "path": "tests/integration/test_erasure.py",
+      "sha256": "4f06d314c56bb8f114f4985f8ee152f130c017d66018c76129c69058bf982f5a"
+    }
+  ]
+}

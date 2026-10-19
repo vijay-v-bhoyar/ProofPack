@@ -1,0 +1,21 @@
+{
+  "scope": "two-file capture target stage after canonical full run is terminal",
+  "changes": [
+    {
+      "path": "services/api/proofpack/capture/publication.py",
+      "before_sha256": "9d55ed73f8529331c971358d4ef0b54bea5fe5504056d3de5baa082c9e4a299f",
+      "candidate_sha256": "28ff1c2c65a22620ba360e8cecfee855b66f1b587e4cd896d385a4c22e291ca7"
+    },
+    {
+      "path": "tests/integration/test_capture_intent_storage_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "f0570fd6862741120bb18e7cc162b6706b12d6ad592228c5f84af66dec1b4235"
+    }
+  ],
+  "guards": [
+    "Preserve canonical terminal source/output and verify the two original hashes.",
+    "Do not transfer while canonical handle 58784 remains live.",
+    "Refresh affected graph and verify integrated capture/original/export/source-lineage behavior.",
+    "Keep legacy unknown targets and complete ownership/cleanup/restore acceptance held."
+  ]
+}

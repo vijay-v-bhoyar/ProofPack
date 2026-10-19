@@ -1,0 +1,131 @@
+{
+  "recorded_at": "2026-10-15T05:27:27.189632+00:00",
+  "scope": "persona_adoption_improve_and_incomplete_comparison_reporting_local_only",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "scope_id": "adoption-incomplete-comparison-rates",
+  "primary_owner": "codex-product-build-loop",
+  "support": "user-first-product-adoption Improve; bounded agentic-product-assurance Change/Verify",
+  "subject_id": "bcc73a333cf419d9d6d56e48ab2befe08fad9d23aa19b64bfff5890a97a41a12",
+  "subject_inputs": [
+    {
+      "path": "services/api/proofpack/review/controlled.py",
+      "sha256": "b3b2a9477e910338475dba3301753eb34ea9e3d7cbabab8e822f3d5a6b0caa90"
+    },
+    {
+      "path": "tests/unit/test_controlled_runner.py",
+      "sha256": "0cdf65f117f440c3539702fc6a478f011d8f90d459bc9471e1c484bad06104ea"
+    },
+    {
+      "path": "tests/unit/test_controlled_contracts.py",
+      "sha256": "7e54f4185699117b9f088c7a958e59f3285285233ee5be9ba49b120344400310"
+    },
+    {
+      "path": "tests/unit/test_controlled_fixtures.py",
+      "sha256": "f74aaddfb6173fa61725298b42d6d11fb3c4003287ec66e7261baea8c98dd2dd"
+    },
+    {
+      "path": "services/api/proofpack/review/controlled_models.py",
+      "sha256": "625743d71191b83689d5113768726b2195c9a3c5adb5d66ed269202ebea157ce"
+    },
+    {
+      "path": "services/api/proofpack/vision/controlled_fixtures.py",
+      "sha256": "e6987dd7e1e0ac4cbe0d050028a3d8e2e70e96e853e263bd6828e95878ad735f"
+    },
+    {
+      "path": "scripts/evaluate_controlled.py",
+      "sha256": "3e1ab6238bc30a52fe6eb0eeec7f191c54bde6262307cbcafc5d9ae9926d47ec"
+    },
+    {
+      "path": "docs/controls.yaml",
+      "sha256": "f7ae3c22ebabc5940f970aa0699629d9982b8f898a339952e50952ddcca6a2a0"
+    },
+    {
+      "path": "fixtures/synthetic/controlled-v1/manifest.json",
+      "sha256": "0ec448504253b7065db51f1f5adb42fa66067b98653362624757fe136049a00b"
+    }
+  ],
+  "persona_count": 9,
+  "operation_count": 78,
+  "workflow_count": 26,
+  "technical_acceptance_scopes": 58,
+  "human_scenarios": "A01-A09 NOT_RUN",
+  "reporting_repair": "PASS_LOCAL",
+  "checks": {
+    "before_rate": {
+      "path": "evidence/local/controlled-partial-rates-before.xml",
+      "sha256": "e4e45ffe25ac891a3e81d0748407cf17be72735d77a035d0e3e42068b7952ba7",
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "restricted_batch": {
+      "path": "evidence/local/adoption-improve-controlled.xml",
+      "sha256": "a21335a1f2628a594d4802251e1eec27a9f5618fec8a8cb4c33a23411e425358",
+      "tests": 39,
+      "failures": 4,
+      "errors": 0,
+      "skipped": 0
+    },
+    "owned_batch": {
+      "path": "evidence/local/adoption-improve-controlled-owned.xml",
+      "sha256": "50c10438fbcf6d5bc8a87ac26a9b4e50106d1f4258c467fd1ee95fec3c1346c5",
+      "tests": 39,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "standalone_actual_experiment": {
+    "status": "HELD",
+    "artifact": "evidence/local/controlled-all-first.json",
+    "sha256": "e0c9cf7f4429b22a183f124d79c014ddaf1ff9d3f61a22c9af36943723d48cbd",
+    "repair": "NOT_COMPLETED"
+  },
+  "full_current_verification": "PENDING",
+  "beta_decision": "NO_GO",
+  "seven_pilot_gates": [
+    "UNKNOWN",
+    "UNKNOWN",
+    "BLOCKED",
+    "BLOCKED",
+    "BLOCKED",
+    "BLOCKED",
+    "BLOCKED"
+  ],
+  "claims_current_reuse": {
+    "C06": "HELD",
+    "C07": "HELD"
+  },
+  "independent_human_reviewer": null,
+  "limitations": [
+    "Authored synthetic fixtures and fake-worker reporting/journal checks; no human value or physical truth evidence.",
+    "Owned filesystem rerun addresses restricted journal writes, not the standalone worker failure.",
+    "No AWS/provider calls, deployment, spend, outreach, invitations or publication.",
+    "Graph extraction is navigation evidence with incomplete relationship coverage."
+  ],
+  "documentation": {
+    "status": "PASS",
+    "checks": 29,
+    "inputs": 31,
+    "receipt": "evidence/documentation-validation.json",
+    "sha256": "71b817d2505632a0ef8b0f70d488392f92e9839bdda2f265fa19bfd009429615",
+    "all_input_hashes_current": true
+  },
+  "fixtures": {
+    "status": "PASS",
+    "scope": "designer-authored synthetic bundle only",
+    "episodes": 144,
+    "setup_groups": 24,
+    "manifest_sha256": "0ec448504253b7065db51f1f5adb42fa66067b98653362624757fe136049a00b",
+    "physical_truth_verified": false
+  },
+  "graph": {
+    "status": "DEGRADED",
+    "nodes": 1275,
+    "edges": 5609,
+    "dangling_edges": 313,
+    "changed_symbol_found": true,
+    "scope": "code navigation only"
+  }
+}

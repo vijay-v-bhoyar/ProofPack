@@ -1,0 +1,23 @@
+{
+  "scope": "metadata-dataset-direct-lineage exact guarded transfer only",
+  "recorded_at": "2026-10-16T04:08:51.966401+00:00",
+  "changes": [
+    {
+      "path": "services/api/proofpack/review/manifests.py",
+      "before_sha256": "46563773e419e96ef18f9737412a7fe788550cacbc4c69ca602b53aa78fe59ad",
+      "candidate_sha256": "89677c5262f4cc0b8121f060eff79dbb65f067012c1c0414c312a790e1b210a3"
+    },
+    {
+      "path": "tests/integration/test_dataset_direct_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "88e53633d4a256a21c75843c7b2bacbd0ad0f4e75c3960425d8278969c5b976f"
+    }
+  ],
+  "origin_inputs": 598,
+  "result_inputs": 599,
+  "canonical_matches_candidate": true,
+  "verification": "PENDING_CANONICAL_REGRESSION",
+  "prior_full_run": "FAIL; 122 cases unaccepted; retained unchanged",
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

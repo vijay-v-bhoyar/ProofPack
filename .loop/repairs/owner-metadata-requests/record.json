@@ -1,0 +1,193 @@
+{
+  "id": "owner-metadata-requests",
+  "parent_goal": "proofpack-workflow-build",
+  "criteria": [
+    "MC-CORE-EXACT-RETRY"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "duplicate-before-source-review",
+      "criterion": "MC-CORE-EXACT-RETRY",
+      "category": "product",
+      "hypothesis": "An exact operation committed after initial lookup is incorrectly rejected by the later source precondition",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC-02 owner request lifecycle local model/store scope",
+          "revision": "360e6b538538231498a3de8a2ba7c7b0e4838372a5714cd4c342a5a8803a086d",
+          "configuration": "Synthetic identities/closed selectors; no SDK in models; explicit 20-second original operation deadline; no HTTP or cleanup authority"
+        },
+        "actor": "Codex local pytest runner, not independent human",
+        "at": "2026-10-16T18:39:20.832200+00:00",
+        "expires": "2026-10-17T18:46:17.727967+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_owner_metadata.py::test_duplicate_committing_between_lookup_and_source_review_is_reconciled",
+          "--junitxml=evidence/local/owner-metadata-interleaving-v1.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 2,
+        "output": {
+          "path": "owner-metadata-interleaving-v1.log",
+          "sha256": "ad7bb59c4ed1c627c492e7019e103024973cf72fee61f025608ad0137442f201"
+        },
+        "oracle": {
+          "path": "before-concurrent-readback/tests/unit/test_owner_metadata.py",
+          "sha256": "a48f2eea885fe2738f6a5408b7b0d7edc889d0efc17fa4084ceedfe09eff191e"
+        },
+        "artifacts": [
+          {
+            "path": "before-concurrent-readback/services/api/proofpack/evidence/owner_metadata.py",
+            "sha256": "6415c15a54dcf86dac76c907f547f1a955d60d164414b2691f55ff076aa8b82b"
+          },
+          {
+            "path": "before-concurrent-readback/tests/unit/test_owner_metadata.py",
+            "sha256": "a48f2eea885fe2738f6a5408b7b0d7edc889d0efc17fa4084ceedfe09eff191e"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "duplicate-before-source-review",
+      "owner": "Codex",
+      "diagnosis": "Read the exact matching durable operation once on stale preconditions; preserve different-intent conflict and read allowance",
+      "changes": [
+        {
+          "path": "verified-source/services/api/proofpack/evidence/owner_metadata.py",
+          "sha256": "15922672a9d89ae6a21791e27bf32a3bf4335abac3a79a74fde751d29761850f"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "duplicate-before-source-review",
+      "criteria": [
+        "MC-CORE-EXACT-RETRY"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC-02 owner request lifecycle local model/store scope",
+          "revision": "e74d2b98611e3e624e7189185a7ba4a63b8dfb8cd96dfae52fdb66ac17202271",
+          "configuration": "Synthetic identities/closed selectors; no SDK in models; explicit 20-second original operation deadline; no HTTP or cleanup authority"
+        },
+        "actor": "Codex local pytest runner, not independent human",
+        "at": "2026-10-16T18:40:13.919368+00:00",
+        "expires": "2026-10-17T18:46:17.727967+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_owner_metadata.py::test_duplicate_committing_between_lookup_and_source_review_is_reconciled",
+          "--junitxml=evidence/local/owner-metadata-interleaving-v2.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 2,
+        "output": {
+          "path": "owner-metadata-interleaving-v2.log",
+          "sha256": "0bf33857b202eddc9a5d497af87d16bb64360a99faa67d8868d497570f36f4b9"
+        },
+        "oracle": {
+          "path": "before-concurrent-readback/tests/unit/test_owner_metadata.py",
+          "sha256": "a48f2eea885fe2738f6a5408b7b0d7edc889d0efc17fa4084ceedfe09eff191e"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/owner_metadata.py",
+            "sha256": "15922672a9d89ae6a21791e27bf32a3bf4335abac3a79a74fde751d29761850f"
+          },
+          {
+            "path": "verified-source/tests/unit/test_owner_metadata.py",
+            "sha256": "a48f2eea885fe2738f6a5408b7b0d7edc889d0efc17fa4084ceedfe09eff191e"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC-02 owner request lifecycle local model/store scope",
+          "revision": "e74d2b98611e3e624e7189185a7ba4a63b8dfb8cd96dfae52fdb66ac17202271",
+          "configuration": "Synthetic identities/closed selectors; no SDK in models; explicit 20-second original operation deadline; no HTTP or cleanup authority"
+        },
+        "actor": "Codex local pytest runner, not independent human",
+        "at": "2026-10-16T18:40:25.692180+00:00",
+        "expires": "2026-10-17T18:46:17.727967+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_owner_metadata.py",
+          "tests/unit/test_privacy_admission.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_corpus_accounting.py",
+          "--junitxml=evidence/local/owner-metadata-model-v4.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 179,
+        "output": {
+          "path": "owner-metadata-model-v4.log",
+          "sha256": "451b624bc9fb9b39465d321dd56b1c36eee610c7bc0e7fb25ebfaf2d80270c0c"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_owner_metadata.py",
+          "sha256": "a48f2eea885fe2738f6a5408b7b0d7edc889d0efc17fa4084ceedfe09eff191e"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/owner_metadata.py",
+            "sha256": "15922672a9d89ae6a21791e27bf32a3bf4335abac3a79a74fde751d29761850f"
+          },
+          {
+            "path": "verified-source/tests/unit/test_owner_metadata.py",
+            "sha256": "a48f2eea885fe2738f6a5408b7b0d7edc889d0efc17fa4084ceedfe09eff191e"
+          }
+        ]
+      }
+    }
+  ]
+}

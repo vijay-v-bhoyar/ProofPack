@@ -1,0 +1,42 @@
+{
+  "status": "PASS_FOR_ISOLATED_DATASET_TRANSITIONS_ONLY",
+  "checks": {
+    "metadata-lineage-dataset-direct-first": {
+      "tests": 39,
+      "passing_phases": 117
+    },
+    "metadata-dataset-installed": {
+      "tests": 41,
+      "passing_phases": 123
+    },
+    "metadata-dataset-package": {
+      "tests": 433,
+      "passing_phases": 1299
+    }
+  },
+  "counts_overlap": true,
+  "source_inputs": 599,
+  "exact_backend_files": 112,
+  "exact_frontend_files": 3,
+  "installed_modules": 99,
+  "opencv_version": "5.0.0",
+  "changes": [
+    {
+      "path": "services/api/proofpack/review/manifests.py",
+      "before_sha256": "46563773e419e96ef18f9737412a7fe788550cacbc4c69ca602b53aa78fe59ad",
+      "candidate_sha256": "89677c5262f4cc0b8121f060eff79dbb65f067012c1c0414c312a790e1b210a3"
+    },
+    {
+      "path": "tests/integration/test_dataset_direct_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "88e53633d4a256a21c75843c7b2bacbd0ad0f4e75c3960425d8278969c5b976f"
+    }
+  ],
+  "canonical_matches_origin": true,
+  "upstream_matches_origin": true,
+  "graph_trace": "DEGRADED: canonical API graph excludes this isolated stage; direct writer/transaction/test trace used; refresh required before integration acceptance",
+  "integrated": false,
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "scope": "atomic terminal dataset writer lineage and final admission only; no full family, barrier, cleanup, provider or human acceptance"
+}

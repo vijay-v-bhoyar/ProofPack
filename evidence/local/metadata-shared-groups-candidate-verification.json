@@ -1,0 +1,61 @@
+{
+  "status": "PASS_FOR_ISOLATED_PROVIDED_SHARED_GROUP_HISTORY_ONLY",
+  "checks": {
+    "metadata-lineage-group-regression": {
+      "tests": 356,
+      "passing_phases": 1068
+    },
+    "metadata-group-package-v2": {
+      "tests": 648,
+      "passing_phases": 1944
+    },
+    "metadata-group-installed-v1": {
+      "tests": 356,
+      "passing_phases": 1068
+    }
+  },
+  "counts_overlap": true,
+  "source_inputs": 608,
+  "canonical_origin_inputs": 605,
+  "canonical_matches_origin": true,
+  "exact_backend_files": 115,
+  "exact_frontend_files": 3,
+  "installed_modules": 105,
+  "opencv_version": "5.0.0",
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/dataset_group_lineage.py",
+      "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+    },
+    {
+      "path": "tests/unit/test_dataset_group_lineage.py",
+      "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+    },
+    {
+      "path": "tests/integration/test_dataset_group_lineage_store.py",
+      "sha256": "86296f4c64b6f562e067541e740f603b7c73235cab4d093b956e5576f0e8a8ce"
+    }
+  ],
+  "integrated": false,
+  "original_failure_oracles_unchanged": true,
+  "native_cases": 12,
+  "retained_failures": [
+    "missing parser",
+    "ambiguous or malformed actor references accepted",
+    "valid unmaterialized request rejected"
+  ],
+  "retained_setup_failures": [
+    "nonexistent split enum",
+    "generated frontend omitted from source-only stage"
+  ],
+  "scope": "shared group generations, exact supplied creator/consumer/request/source history only; no ownership/current rights/authenticated approval/deletion authority",
+  "remaining": [
+    "complete inventory/barrier/read-set admission",
+    "idempotency and other copy families",
+    "durable journal/restore/cleanup job",
+    "owner review/receipts/communication",
+    "provider/physical/human acceptance"
+  ],
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

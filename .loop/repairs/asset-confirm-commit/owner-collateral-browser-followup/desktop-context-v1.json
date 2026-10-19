@@ -1,0 +1,19 @@
+{
+  "recorded_date": "2026-10-18",
+  "finding_id": "CB-F01",
+  "related_failure": "OP-F01",
+  "evidence_classification": "SELF_REPORTED",
+  "question": "Was your Windows desktop unlocked with the display awake during the owner-browser test?",
+  "answer_verbatim": "Not sure",
+  "desktop_unlocked_during_original_test": "UNKNOWN",
+  "display_awake_during_original_test": "UNKNOWN",
+  "causal_conclusion": "UNKNOWN",
+  "disposition": "OPEN; original browser failure and unreached journey remain unchanged",
+  "interpretation": "This answer establishes neither a desktop sleep or lock cause nor an application defect. It does not reconcile the original pointer stability timeout or the separate no-animation-frame diagnostic.",
+  "original_finding": "finding-v1.json",
+  "original_finding_preserved": true,
+  "new_test_execution": false,
+  "next_validation": "Record awake/unlocked state contemporaneously with any justified bounded diagnostic. Preserve original default Chrome, actions, assertions, deadlines and workload boundaries; an isolated diagnostic cannot accept the original failed workload.",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

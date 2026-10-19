@@ -1,0 +1,7 @@
+{
+  "observed_at": "2026-10-17T15:25:58.6538165Z",
+  "exact_owned_temp": "C:\\Users\\vijay\\AppData\\Local\\packages\\sandbox.{937cde4c-7be2-4db3-a10a-21379e36443a}\\AC\\Temp\\proofpack-dynamodb-check-utxud3dv",
+  "cleanup_status": "ALREADY_ABSENT",
+  "recursive_delete": false,
+  "owned_process_query": "b2efe9 found no matching diagnostic Python or project emulator processes"
+}

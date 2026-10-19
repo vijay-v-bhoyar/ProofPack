@@ -1,0 +1,258 @@
+{
+  "recorded_at": "2026-10-17T00:09:15.113784+00:00",
+  "audit_status": "COMPLETE",
+  "verification_status": "FAIL",
+  "scheduled_cases": 4147,
+  "whole_module_cohorts": 32,
+  "completed_cohorts": 32,
+  "accepted_complete_cohort_cases": 4005,
+  "accepted_passing_phases": 12015,
+  "verified_complete_cohort_local_sdk_sends": 747311,
+  "failed_cohorts": [
+    {
+      "cohort": 8,
+      "status": "FAIL",
+      "scheduled_cases": 142,
+      "exit_code": 1,
+      "database_cleanup_verified": true
+    }
+  ],
+  "issues": [
+    "cohort 7: nonzero or incomplete execution",
+    "cohort 7: failed, skipped, missing or duplicate phase: tests/integration/test_owner_review_browser.py::test_actual_configured_https_owner_review_uses_published_cv_history"
+  ],
+  "source_inputs": 683,
+  "source_unchanged_at_audit": true,
+  "completed_database_cleanup_verified": true,
+  "source_origin_receipts_verified": true,
+  "case_exclusions": [],
+  "cohorts": [
+    {
+      "cohort": 1,
+      "status": "PASS",
+      "scheduled_cases": 47,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 2,
+      "status": "PASS",
+      "scheduled_cases": 184,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 3,
+      "status": "PASS",
+      "scheduled_cases": 133,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 4,
+      "status": "PASS",
+      "scheduled_cases": 129,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 5,
+      "status": "PASS",
+      "scheduled_cases": 144,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 6,
+      "status": "PASS",
+      "scheduled_cases": 127,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 7,
+      "status": "PASS",
+      "scheduled_cases": 141,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 8,
+      "status": "FAIL",
+      "scheduled_cases": 142,
+      "exit_code": 1,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 9,
+      "status": "PASS",
+      "scheduled_cases": 150,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 10,
+      "status": "PASS",
+      "scheduled_cases": 138,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 11,
+      "status": "PASS",
+      "scheduled_cases": 55,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 12,
+      "status": "PASS",
+      "scheduled_cases": 116,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 13,
+      "status": "PASS",
+      "scheduled_cases": 144,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 14,
+      "status": "PASS",
+      "scheduled_cases": 139,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 15,
+      "status": "PASS",
+      "scheduled_cases": 147,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 16,
+      "status": "PASS",
+      "scheduled_cases": 150,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 17,
+      "status": "PASS",
+      "scheduled_cases": 105,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 18,
+      "status": "PASS",
+      "scheduled_cases": 140,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 19,
+      "status": "PASS",
+      "scheduled_cases": 117,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 20,
+      "status": "PASS",
+      "scheduled_cases": 147,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 21,
+      "status": "PASS",
+      "scheduled_cases": 146,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 22,
+      "status": "PASS",
+      "scheduled_cases": 112,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 23,
+      "status": "PASS",
+      "scheduled_cases": 136,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 24,
+      "status": "PASS",
+      "scheduled_cases": 132,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 25,
+      "status": "PASS",
+      "scheduled_cases": 143,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 26,
+      "status": "PASS",
+      "scheduled_cases": 135,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 27,
+      "status": "PASS",
+      "scheduled_cases": 119,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 28,
+      "status": "PASS",
+      "scheduled_cases": 132,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 29,
+      "status": "PASS",
+      "scheduled_cases": 119,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 30,
+      "status": "PASS",
+      "scheduled_cases": 111,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 31,
+      "status": "PASS",
+      "scheduled_cases": 124,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    },
+    {
+      "cohort": 32,
+      "status": "PASS",
+      "scheduled_cases": 143,
+      "exit_code": 0,
+      "database_cleanup_verified": true
+    }
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "scope": "all-current isolated Python regression, including synthetic configured HTTPS/browser fixtures; no complete-product, full browser-suite, actual provider, physical or human acceptance"
+}

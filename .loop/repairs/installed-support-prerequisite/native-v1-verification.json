@@ -1,0 +1,119 @@
+{
+  "recorded_at": "2026-10-17T16:01:10.810156+00:00",
+  "status": "PASS_INSTALLED_PRODUCER_AND_DECODER_ONLY",
+  "cases": 92,
+  "phases": 276,
+  "capture_records": 93,
+  "installed_modules": 136,
+  "local_sdk_sends": 19643,
+  "source_inputs": 709,
+  "backend_files": 141,
+  "frontend_files": 3,
+  "opencv_version": "5.0.0",
+  "blocked_sdk_sends": 0,
+  "decoder_cases": 1,
+  "source_unchanged": true,
+  "canonical_source_unchanged": true,
+  "database_terminated": true,
+  "database_state_removed": true,
+  "temporary_installation_removed": true,
+  "raw_evidence": [
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\native-v1-plan.json",
+      "sha256": "07b72ee77aba7dec0bfaec4969491ae3d1de71c8a7d0e6c300916d218de12394"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\native-v1-process.json",
+      "sha256": "99d68bb50f668c371ceb469be593037e70e0d38e57b1078304ccffddaf5c9e2d"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\native-v1.log",
+      "sha256": "a5058a748fd69b6c50f9ef90ead2d8d9e399930701b33e66152cc36c54d4ada7"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\process.json",
+      "sha256": "a0d8d6589f9d5de02a9096e8ae38438518ef9e8fb0da05cd094a3b27c492dc2b"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-ui-installed-contracts.provenance.json",
+      "sha256": "8e18bfe3aeccf80364e1a417a3364bdabff9a9135c45e054367a2b8b1c803a3f"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-ui-installed-contracts.json",
+      "sha256": "4b81e7da4161f41ed8383dbed79c7f65871a76009087046c86c7d81d45b5cf93"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\decoder-v1-process.json",
+      "sha256": "845c82d446b05f884457ccb20fb07f81f9943d2c8b4a157c3869db2d8caeeb8b"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\decoder-v1\\collection.json",
+      "sha256": "330bf035a64ce1614eac4ccd8fc10b4593b6416b6633e03127a944ff41017be2"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\decoder-v1\\execution.json",
+      "sha256": "978ef8ba48d8d1afdc4e8bed3d3d70b77e83024e0e4ef353ebe4b27f144ab13e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\decoder-v1\\tests.xml",
+      "sha256": "46af7d0f24f30367d1e16966afc2ad566940136470ac856be71ed3132c4b09e7"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\audit_native_v1.py",
+      "sha256": "5cac3089435bd80bfeae3681b41ed73ce120736901c17e8a68e1382a4168e764"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\collect-child.json",
+      "sha256": "f6a437ed6e5fb1b5756321c1d87ccbb58ba2dc6f84b8d25cb71f08c05f31f111"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\collect.log",
+      "sha256": "bd1dc770678cb878af1591cee891c3e62212ad8855e5f941cb9e9782aede45e8"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\collection.json",
+      "sha256": "569fd177dab3a42506771323b592753d287b81420791a5fe8ed946c8ac654a1e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\contracts.json",
+      "sha256": "4b81e7da4161f41ed8383dbed79c7f65871a76009087046c86c7d81d45b5cf93"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\dynamodb-local.json",
+      "sha256": "322ad708ad24cb12ac3325544c8809b40dc0f95a5e6e69c8e92a31110ec6abae"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\dynamodb-server.log",
+      "sha256": "53930f07cf35a4f1ab9f4fb6ed3d737f085d93a928b67a65942ccabd3faf5078"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\execution.json",
+      "sha256": "06f917ea07cc212c65c4a81dc2f5411e3766673cea216ba77e9bc31ecaeab20e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\install.log",
+      "sha256": "595bb27eda63cf317c6b92cdcd0be1e522e9a9e05c7d296328f7bd71e265087a"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\run-child.json",
+      "sha256": "c81e7ba4397838c9729db125df3482851b21a1dd8c9b5d7e05fe4e6217a75c09"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\run.log",
+      "sha256": "32eb9e69efcbd70f2bd55ad01346a533006f2dae4c21da82e156b7f52bbeba68"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\working\\evidence\\local\\support-capture-runs\\20261017T155842-1034762ce34e4d0ebf674027ef624e2a\\evidence\\local\\tests.xml",
+      "sha256": "e73b4e83d76c7f414a7108dd1cddbaf2213ed75e5bee920dc320bcd639a3d9c2"
+    }
+  ],
+  "limitations": [
+    "synthetic identities and data; owned local database",
+    "decoder test uses no browser interaction",
+    "new helper is not integrated into canonical source",
+    "full-v2 owner-browser failure remains open",
+    "no provider, physical, human or complete-workflow acceptance"
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Configured controlled candidate; not learned or approved",
+  "algorithm": "reason_priority_v1",
+  "priority": ["RECAPTURE", "PLACE_FLAT", "SEPARATE_REGION"]
+}

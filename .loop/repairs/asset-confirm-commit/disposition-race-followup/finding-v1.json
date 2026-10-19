@@ -1,0 +1,55 @@
+{
+  "recorded_at": "2026-10-18T04:56:25.158587+00:00",
+  "id": "DR-F01",
+  "status": "OBSERVED_NATIVE_FAILURE_CAUSE_PENDING_REPRODUCTION",
+  "source_inputs": 737,
+  "subject_id": "working-tree-manifest-sha256:db71e64e81bf3b7f277c29af0166d957b68f6378b810d1ceb6946b9ff2f7807a",
+  "full_process": "Still running exec session52797/controllerPID39932; do not restart or edit frozen inputs",
+  "cohort": 5,
+  "cases": 135,
+  "phases": 405,
+  "failed_call_phases": 1,
+  "failed_nodeid": "tests/integration/test_dispositions.py::test_concurrent_duplicate_creates_one_human_record",
+  "exception": "StoreConflict: current nonpending station work required",
+  "expected": "Both concurrent exact retries return the same original result, one immutable human record and one inspection revision advance",
+  "actual": "One caller raised before both results could be collected",
+  "hypothesis": "An initial idempotency miss may precede the other caller commit; the later inspection read sees the advanced revision and rejects before shared commit-time reconciliation. Interleaving not yet deterministically established.",
+  "file": "services/api/proofpack/stations/service.py",
+  "unchanged_source_sha256": "8dfeac7201011f7279ad09aed6141280447dc85400456bef119f0bb31826d7d8",
+  "source_boundary": "Synthetic identity/station/inspection/decision on owned local database. No real operator/harm/provider claim.",
+  "affected": "Existing P02 finish/recovery and P04 exception handoff, W11/W12; manual disposition must remain separate from machine approval",
+  "next_action": "After terminal evidence reconciliation and release of source freeze, add a deterministic writer-boundary probe plus genuine store and modeled regressions. Reconcile only a matching original replay with fresh operator authorization; retain stale/pending/foreign/role-loss/mismatched-body rejection. Never weaken the concurrent duplicate test or extend budgets.",
+  "original_artifacts": [
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-005.json",
+      "sha256": "e8f90bcce233288aa4ee0abf7d5a5be7783d5bc8b22d61ca7bc9320307058583"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-005.xml",
+      "sha256": "cc1e888792a1aaa1607453ef91cada8668d0e9024173815f6ce1585dc7e30faf"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-005.log",
+      "sha256": "facba8e196e6b73564b03a0150bba8341faee0b9059627a758d88b755d16f810"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-005.origins.json",
+      "sha256": "9838bf44865369472abe56e550c22c38b265d38de6ff27ffbd186cd7739032d2"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-005.json.sdk.json",
+      "sha256": "a9d22104070fa353bc590d26452b9a2130b3c7f0c6444bcf4a511353b2960f4c"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-005-database.json",
+      "sha256": "5643025a947811f7f27932ddf2009e7de321b3ba10a0758e711189c6126786ac"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-005-database.log",
+      "sha256": "1447759a3201c7c13cdbc2bf894a3beb664e22b3fc376db559e2a3e7ed745d2a"
+    }
+  ],
+  "runtime_changes_this_followup": false,
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

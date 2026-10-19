@@ -1,0 +1,72 @@
+{
+  "status": "PASS_FOR_STAGED_SUPPORT_FAMILY_ONLY",
+  "recorded_at": "2026-10-16T01:22:10.217529+00:00",
+  "checks": {
+    "metadata-lineage-support-final": {
+      "tests": 99,
+      "passing_phases": 297,
+      "exact_current_input_manifest": false
+    },
+    "metadata-support-installed": {
+      "tests": 100,
+      "passing_phases": 300,
+      "exact_current_input_manifest": false
+    },
+    "metadata-lineage-support-statuses": {
+      "tests": 36,
+      "passing_phases": 108,
+      "exact_current_input_manifest": true
+    },
+    "metadata-support-installed-statuses": {
+      "tests": 37,
+      "passing_phases": 111,
+      "exact_current_input_manifest": true
+    },
+    "metadata-support-package-final": {
+      "tests": 224,
+      "passing_phases": 672,
+      "exact_current_input_manifest": true
+    }
+  },
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/support_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "1f8f80e53fb85ec5b1c798c6b9592a4116488ade7f2b065e30882decdcc4ed28"
+    },
+    {
+      "path": "services/api/proofpack/stations/handoffs.py",
+      "before_sha256": "1ddcb9b4fb021ac9c6171bcc6b60112be297c29fe5ef2a2e38621f366c45a519",
+      "candidate_sha256": "b80f531ad016b18258ce91e562d60cde12289d9c302f8f305fd0ddcb7ca08982"
+    },
+    {
+      "path": "tests/integration/test_support_family_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "c6a62e0dc99b96ebc77954bd5d8e3db6003c1fdaaba2647a6f72efb1518ec360"
+    },
+    {
+      "path": "tests/unit/test_support_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "846e1e08d74a660caf5fe077a64e5dfe6be4f8ca779932da5816cfdfca2c0a4b"
+    }
+  ],
+  "canonical_source_unchanged": true,
+  "integrated": false,
+  "compatibility": "the two earlier adjacent runs precede only one appended parameterized status test; prior AST and all API bytes unchanged",
+  "all_statuses_exercised": [
+    "pending",
+    "accepted",
+    "declined",
+    "cancelled",
+    "superseded"
+  ],
+  "failed_original": "overflowing root revision; exact original retained and passing in installed execution",
+  "evaluator": "same Codex operator; not independent human review",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "limitations": [
+    "Counts overlap and include the original logical regression instance.",
+    "Support relationships only; no complete inventory/family closure, barrier, journal, cleanup admission/job/UI or external acceptance.",
+    "Ordinary expired delivery remains denied; parse-only expired integrity grants no read access or removal authority."
+  ]
+}

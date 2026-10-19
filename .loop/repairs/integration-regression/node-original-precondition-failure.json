@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-17T04:21:08.487446+00:00",
+  "scope": "explicit current canonical documentation-only identity reconciliation; original manifest retained",
+  "original_node_reproduction": "PRECONDITION_FAILED before pytest or Node execution; exit1 historical canonical-before.json mismatch",
+  "old_guard": "canonical-before.json",
+  "new_guard": "canonical-before-node-reproduction.json",
+  "changed_paths": [
+    "README.md"
+  ],
+  "old_readme_sha256": "2ad4a1f442a49318121ef2bdc22d64baa0f0b26369025502000a12e0a037d289",
+  "current_readme_sha256": "69c7da0845ee20b93d87392c7591876914eb4ebfcac8578f8ae1f81f1d264cc2",
+  "application_and_test_inputs_unchanged": true,
+  "current_canonical_inputs": 669,
+  "staged_reproduction_inputs": 707,
+  "staged_reproduction": "same frozen full-v2 subject; no file edits",
+  "baseline_migration_waiver": false,
+  "publication_or_release_authority": false,
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

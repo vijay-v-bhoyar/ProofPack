@@ -1,0 +1,455 @@
+{
+  "recorded_at": "2026-10-17T21:07:54.678378+00:00",
+  "scope": "offline modeled real auth/OAuth writers over the existing origin fixture; no real provider/business history or retention authority",
+  "counts": {
+    "AFFECTED": 7,
+    "SHARED": 0,
+    "CONTEXT": 11,
+    "UNRELATED": 0,
+    "UNRESOLVED": 24
+  },
+  "groups": [
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "bootstrap",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "revoke-sessions",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "invite",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "begin-transfer",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "accept-transfer",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "accept-invite",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "change-access",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "state",
+      "prefix": "access-head",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "state",
+      "prefix": "cookie",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 2
+    },
+    {
+      "table": "state",
+      "prefix": "idempotency",
+      "kind": "other",
+      "reason": "REPLAY_POLICY_REQUIRED",
+      "count": 6
+    },
+    {
+      "table": "state",
+      "prefix": "identity",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "state",
+      "prefix": "invitation",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "state",
+      "prefix": "oauth-flow",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "state",
+      "prefix": "oauth-quota",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "state",
+      "prefix": "owner-transfer",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "state",
+      "prefix": "session",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 2
+    },
+    {
+      "table": "state",
+      "prefix": "user",
+      "kind": "other",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    }
+  ],
+  "schemas": [
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "bootstrap",
+      "fields": [
+        "actor_id",
+        "at_ms",
+        "kind",
+        "receipt",
+        "resource_bindings"
+      ]
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "revoke-sessions",
+      "fields": [
+        "actor_scope",
+        "at_ms",
+        "kind",
+        "resource_bindings",
+        "session_id"
+      ]
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "invite",
+      "fields": [
+        "actor_scope",
+        "at_ms",
+        "kind",
+        "resource_bindings",
+        "session_id"
+      ]
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "begin-transfer",
+      "fields": [
+        "actor_scope",
+        "at_ms",
+        "kind",
+        "resource_bindings",
+        "session_id"
+      ]
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "accept-transfer",
+      "fields": [
+        "actor_scope",
+        "at_ms",
+        "kind",
+        "resource_bindings",
+        "session_id"
+      ]
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "accept-invite",
+      "fields": [
+        "actor_scope",
+        "at_ms",
+        "kind",
+        "resource_bindings",
+        "session_id"
+      ]
+    },
+    {
+      "table": "events",
+      "prefix": "access",
+      "kind": "change-access",
+      "fields": [
+        "actor_scope",
+        "at_ms",
+        "kind",
+        "resource_bindings",
+        "session_id"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "access-head",
+      "kind": "other",
+      "fields": [
+        "bootstrap_receipt",
+        "bootstrap_scope",
+        "bootstrap_user_id",
+        "enabled_user_ids",
+        "owner_ids",
+        "pending_invitation_ids",
+        "schema_version"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "cookie",
+      "kind": "other",
+      "fields": [
+        "session_id",
+        "user_id"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "cookie",
+      "kind": "other",
+      "fields": [
+        "session_id",
+        "user_id"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "idempotency",
+      "kind": "other",
+      "fields": [
+        "at_ms",
+        "body_hash",
+        "resource_bindings",
+        "result"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "idempotency",
+      "kind": "other",
+      "fields": [
+        "at_ms",
+        "body_hash",
+        "resource_bindings",
+        "result"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "idempotency",
+      "kind": "other",
+      "fields": [
+        "at_ms",
+        "body_hash",
+        "resource_bindings",
+        "result"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "idempotency",
+      "kind": "other",
+      "fields": [
+        "at_ms",
+        "body_hash",
+        "resource_bindings",
+        "result"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "idempotency",
+      "kind": "other",
+      "fields": [
+        "at_ms",
+        "body_hash",
+        "resource_bindings",
+        "result"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "idempotency",
+      "kind": "other",
+      "fields": [
+        "at_ms",
+        "body_hash",
+        "resource_bindings",
+        "result"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "identity",
+      "kind": "other",
+      "fields": [
+        "user_id"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "invitation",
+      "kind": "other",
+      "fields": [
+        "accepted_user_id",
+        "capability_hash",
+        "created_at_ms",
+        "created_by",
+        "delivery_status",
+        "expires_at_ms",
+        "history_schema_version",
+        "id",
+        "issuer",
+        "notice_sha256",
+        "notice_version",
+        "roles",
+        "status",
+        "target_email_hash",
+        "target_subject",
+        "ttl_seconds"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "oauth-flow",
+      "kind": "other",
+      "fields": [
+        "browser_hash",
+        "configuration",
+        "created_at_ms",
+        "expires_at_ms",
+        "invitation_id",
+        "require_mfa",
+        "status"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "oauth-quota",
+      "kind": "other",
+      "fields": [
+        "count",
+        "window_start_ms"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "owner-transfer",
+      "kind": "other",
+      "fields": [
+        "expires_at_ms",
+        "id",
+        "source_id",
+        "source_version",
+        "status",
+        "target_id",
+        "target_version"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "session",
+      "kind": "other",
+      "fields": [
+        "access_version",
+        "active",
+        "auth_time_ms",
+        "created_at_ms",
+        "csrf_hash",
+        "display_name",
+        "email_hash",
+        "expires_at_ms",
+        "id",
+        "issuer",
+        "mfa_verified",
+        "restricted_invitation_id",
+        "session_epoch",
+        "subject",
+        "user_id"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "session",
+      "kind": "other",
+      "fields": [
+        "access_version",
+        "active",
+        "auth_time_ms",
+        "created_at_ms",
+        "csrf_hash",
+        "display_name",
+        "email_hash",
+        "expires_at_ms",
+        "id",
+        "issuer",
+        "mfa_verified",
+        "restricted_invitation_id",
+        "session_epoch",
+        "subject",
+        "user_id"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "user",
+      "kind": "other",
+      "fields": [
+        "access_version",
+        "created_at_ms",
+        "display_name",
+        "email_hash",
+        "enabled",
+        "id",
+        "improvement_reuse",
+        "invited",
+        "issuer",
+        "last_mfa_ms",
+        "notice_acknowledged_at_ms",
+        "notice_sha256",
+        "notice_version",
+        "publicity_reuse",
+        "roles",
+        "session_epoch",
+        "subject"
+      ]
+    }
+  ],
+  "sdk_attempts": 0,
+  "read_mutated_model": false,
+  "app_source_changes": false
+}

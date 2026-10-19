@@ -1,0 +1,197 @@
+{
+  "id": "purpose-history",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "MC15-purpose-history",
+    "MC15-independent-bounds"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "missing-purpose-history",
+      "criterion": "MC15-purpose-history",
+      "category": "product",
+      "hypothesis": "No validator reconciles the complete supplied purpose creation/withdrawal/noop history and exact replay bodies.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC15 private supplied purpose history and independent execution bounds; no family ownership or held-reader acceptance",
+          "revision": "8f12dad45bea733532f7eb24abe820715a634a12a394f22d0230d3bc83c91597",
+          "configuration": "isolated SDK-denied purpose/access writer models; exact original execution bounds; no rights certification or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:30:56.806999+00:00",
+        "expires": "2026-10-24T01:35:59.240314+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_purpose_history.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-history\\candidate\\evidence\\local\\purpose-history-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 66,
+        "output": {
+          "path": "candidate/evidence/local/purpose-history-before.log",
+          "sha256": "973ca71b3a5b5fb95db2b93ac0995440592d91357ed7341f6826b54d418391d2"
+        },
+        "oracle": {
+          "path": "original-purpose-history.py",
+          "sha256": "93dbe816818479526fc1e1ddc01fa5036e3873fea710af5c0d09109f306a977b"
+        },
+        "artifacts": [
+          {
+            "path": "original-purpose-history.py",
+            "sha256": "93dbe816818479526fc1e1ddc01fa5036e3873fea710af5c0d09109f306a977b"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "missing-purpose-history",
+      "owner": "Codex",
+      "diagnosis": "Add exact operation-specific purpose/access/replay provenance with original limits; hold ambiguous pairs, never grant ownership.",
+      "changes": [
+        {
+          "path": "verified-source/services/api/proofpack/evidence/purpose_history.py",
+          "sha256": "d42426f2d2aa20f2f3a852e0fabd04761538fd0c70f109d421aa3284406fafd7"
+        },
+        {
+          "path": "verified-source/tests/unit/test_purpose_history.py",
+          "sha256": "47b1d0a435fae3916518e61c55654afaf3211f65f651689cdb99b4f6caee4b1c"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-purpose-history",
+      "criteria": [
+        "MC15-purpose-history",
+        "MC15-independent-bounds"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC15 private supplied purpose history and independent execution bounds; no family ownership or held-reader acceptance",
+          "revision": "e4f2e3901e890c43609fa687104e9f60c0b9ed73cb72d5cd0569d1fc04c89173",
+          "configuration": "isolated SDK-denied purpose/access writer models; exact original execution bounds; no rights certification or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:34:44.864408+00:00",
+        "expires": "2026-10-24T01:35:59.249204+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-history\\original-purpose-history.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-history\\candidate\\evidence\\local\\purpose-original-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 66,
+        "output": {
+          "path": "candidate/evidence/local/purpose-original-final.log",
+          "sha256": "0eb947fc959321f0655bb9fb17b2b0eee664d54e991e84c2a6242897241cbeba"
+        },
+        "oracle": {
+          "path": "original-purpose-history.py",
+          "sha256": "93dbe816818479526fc1e1ddc01fa5036e3873fea710af5c0d09109f306a977b"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/purpose_history.py",
+            "sha256": "d42426f2d2aa20f2f3a852e0fabd04761538fd0c70f109d421aa3284406fafd7"
+          },
+          {
+            "path": "original-purpose-history.py",
+            "sha256": "93dbe816818479526fc1e1ddc01fa5036e3873fea710af5c0d09109f306a977b"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC15 private supplied purpose history and independent execution bounds; no family ownership or held-reader acceptance",
+          "revision": "e4f2e3901e890c43609fa687104e9f60c0b9ed73cb72d5cd0569d1fc04c89173",
+          "configuration": "isolated SDK-denied purpose/access writer models; exact original execution bounds; no rights certification or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:33:34.572396+00:00",
+        "expires": "2026-10-24T01:35:59.251205+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_purpose_history.py",
+          "tests/unit/test_original_permissions.py",
+          "tests/unit/test_replay_copy_lineage.py",
+          "tests/unit/test_runtime_context.py",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_held_corpus.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-history\\candidate\\evidence\\local\\purpose-history-v2.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 290,
+        "output": {
+          "path": "candidate/evidence/local/purpose-history-v2.log",
+          "sha256": "c47c1e6ca84e2ca2d04a8548451cdb2ac9fc72ccc6b33450914fb75d937b1846"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_purpose_history.py",
+          "sha256": "47b1d0a435fae3916518e61c55654afaf3211f65f651689cdb99b4f6caee4b1c"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/purpose_history.py",
+            "sha256": "d42426f2d2aa20f2f3a852e0fabd04761538fd0c70f109d421aa3284406fafd7"
+          },
+          {
+            "path": "verified-source/tests/unit/test_purpose_history.py",
+            "sha256": "47b1d0a435fae3916518e61c55654afaf3211f65f651689cdb99b4f6caee4b1c"
+          }
+        ]
+      }
+    }
+  ]
+}

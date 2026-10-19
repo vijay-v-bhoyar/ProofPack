@@ -1,0 +1,86 @@
+{
+  "recorded_at": "2026-10-18T20:24:34.689569+00:00",
+  "subject_id": "working-tree-manifest-sha256:7c9bf95ecdfba6856bfdc32d9a26ed41fe39b6b23eb6ec9106dbf708065fa20e",
+  "source_inputs": 829,
+  "status": "SHARED_VALIDATION_PREREQUISITE_VERIFIED_COMPLETE_HISTORY_CONSUMER_NOT_IMPLEMENTED",
+  "changed": [
+    "services/api/proofpack/evidence/held_corpus.py",
+    "services/api/proofpack/evidence/owner_metadata.py"
+  ],
+  "added": [
+    "services/api/proofpack/evidence/inspection_scope.py",
+    "services/api/proofpack/evidence/metadata_request_contract.py",
+    "tests/unit/test_metadata_request_contract.py"
+  ],
+  "original_existing_test_files_unchanged": true,
+  "other_owner_methods_AST_unchanged": true,
+  "shared_request_body_mechanical_AST_equivalence": true,
+  "canonical_scope_AST_equivalence": true,
+  "groups": [
+    {
+      "group": "core",
+      "cases": 119,
+      "source_phases": 357,
+      "installed_phases": 357,
+      "same_nodeids": true
+    },
+    {
+      "group": "boundaries",
+      "cases": 155,
+      "source_phases": 465,
+      "installed_phases": 465,
+      "same_nodeids": true
+    }
+  ],
+  "source_cases": 274,
+  "source_phases": 822,
+  "installed_cases": 274,
+  "installed_phases": 822,
+  "SDK_sends": 0,
+  "original_new_test_run": "117PASS/2FAIL wrong operation-field path; preserved",
+  "MH_T01": "Two corrected new field-path candidate cases; independent review PENDING, not original unchanged pass",
+  "collection_cases": 6321,
+  "collection_execution_phases": 0,
+  "full_current_execution": "NOT_RUN",
+  "wheel_sha256": "5587e403b0b8ab0b2ef77ff680537fd38dab0f47d487747766796175eebcde53",
+  "runtime_members": 163,
+  "backend_members": 160,
+  "web_members": 3,
+  "frontend_unchanged": true,
+  "canonical_wheel_updated": true,
+  "previous_handoff": "Historical CD bundle, not refreshed for current wheel; do not deploy as current",
+  "native_current": "NOT_RUN; prior WA native receipts remain at their original subjects",
+  "graph": {
+    "nodes": 2409,
+    "edges": 10385,
+    "communities": 95,
+    "new_module_nodes": {
+      "services/api/proofpack/evidence/inspection_scope.py": [
+        "proofpack_evidence_inspection_scope_inspectionscope",
+        "proofpack_evidence_inspection_scope_inspection_scope",
+        "proofpack_evidence_inspection_scope_scope_sha256",
+        "proofpack_evidence_inspection_scope",
+        "proofpack_evidence_inspection_scope_rationale_1"
+      ],
+      "services/api/proofpack/evidence/metadata_request_contract.py": [
+        "proofpack_evidence_metadata_request_contract_request_key",
+        "proofpack_evidence_metadata_request_contract_version",
+        "proofpack_evidence_metadata_request_contract_operation",
+        "proofpack_evidence_metadata_request_contract_validate_request",
+        "proofpack_evidence_metadata_request_contract",
+        "proofpack_evidence_metadata_request_contract_rationale_1"
+      ]
+    },
+    "duplicate_node_ids": 0,
+    "missing_endpoints": 0,
+    "exact_duplicate_edges": 0,
+    "limitations": "AST navigation only; legacy IDs/method collisions/community labels remain; no full UI/test semantics"
+  },
+  "complete_metadata_history_consumer": "PLANNED_NOT_IMPLEMENTED",
+  "next": "Validate full history/events/quota and integrate explicit versioned private held-reader/accounting consumer under original saved contract",
+  "D11": "Actual purposes/retention/rights/approver input pending; no default or consent inferred",
+  "human_scenarios": "A01-A09 NOT_RUN",
+  "adoption_gates": "All seven UNKNOWN/BLOCKED",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

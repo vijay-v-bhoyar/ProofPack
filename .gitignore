@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.hypothesis/
+*.pyc
+*.egg-info/
+node_modules/
+apps/web/dist/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+.runtime/
+dist/
+build/
+graphify-out/
+.playwright-mcp/
+proofpack.host.private.json
+proofpack.keys.private.json
+
+# Local execution workspaces, dependency bundles and raw diagnostic captures.
+# Referenced, reviewed evidence files may be explicitly tracked for reproducibility.
+.loop/
+evidence/local/
+artifacts/devpost/publication-*
+artifacts/devpost/*.png
+*.pem
+*.key

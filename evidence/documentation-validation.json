@@ -1,0 +1,355 @@
+{
+  "scope": "documentation_structure_only",
+  "status": "PASS",
+  "recorded_at": "2026-10-19T13:01:49.493390+00:00",
+  "command": "python docs/contracts/validate_documentation.py",
+  "exit_code": 0,
+  "tools": {
+    "PyYAML": "6.0.3",
+    "jsonschema": "4.26.0"
+  },
+  "checks": [
+    {
+      "name": "Evidence schema",
+      "status": "PASS",
+      "detail": "Planned ledger conforms to Draft 2020-12."
+    },
+    {
+      "name": "Reject unsupported PASS",
+      "status": "PASS",
+      "detail": "A status-only PASS with missing runtime proof must fail validation."
+    },
+    {
+      "name": "Honest release state",
+      "status": "PASS",
+      "detail": "Product evidence remains unexecuted; documentation cannot authorize beta."
+    },
+    {
+      "name": "Inventory counts",
+      "status": "PASS",
+      "detail": "Expected 18 tasks, 20 requirements, 58 planned tests and 16 evidence records."
+    },
+    {
+      "name": "Backlog references",
+      "status": "PASS",
+      "detail": "Dependencies and requirement/test/evidence references resolve."
+    },
+    {
+      "name": "Acyclic dependency graph",
+      "status": "PASS",
+      "detail": [
+        "PP01",
+        "PP02",
+        "PP03",
+        "PP04",
+        "PP12",
+        "PP05",
+        "PP06",
+        "PP16",
+        "PP07",
+        "PP09",
+        "PP08",
+        "PP10",
+        "PP11",
+        "PP13",
+        "PP14",
+        "PP15",
+        "PP17",
+        "PP18"
+      ]
+    },
+    {
+      "name": "Requirement traceability",
+      "status": "PASS",
+      "detail": "Every product requirement maps to planned tasks, tests and evidence."
+    },
+    {
+      "name": "Trace task ownership",
+      "status": "PASS",
+      "detail": "Every traced task includes that requirement in its acceptance metadata."
+    },
+    {
+      "name": "Evidence requirement bindings",
+      "status": "PASS",
+      "detail": "Ledger bindings match canonical requirement traceability."
+    },
+    {
+      "name": "Effort consistency",
+      "status": "PASS",
+      "detail": "Canonical task estimates total 124\u2013194 hours including optional COOL work."
+    },
+    {
+      "name": "Test coverage inventory",
+      "status": "PASS",
+      "detail": "Every planned test has a backlog owner task; this does not mean tests ran."
+    },
+    {
+      "name": "Five feature specifications",
+      "status": "PASS",
+      "detail": "All five features have specifications."
+    },
+    {
+      "name": "Confirmed beta boundary",
+      "status": "PASS",
+      "detail": "One business; no invented spending ceiling or authorization."
+    },
+    {
+      "name": "Bounded proposed controls",
+      "status": "PASS",
+      "detail": "Structural control relationships only; timing and safety require runtime validation."
+    },
+    {
+      "name": "Local documentation links",
+      "status": "PASS",
+      "detail": "884 local links resolve; receipt is created by this run."
+    },
+    {
+      "name": "Superseded files removed",
+      "status": "PASS",
+      "detail": "Earlier iterations and duplicate planning representations are absent."
+    },
+    {
+      "name": "No obsolete document references",
+      "status": "PASS",
+      "detail": "Retained Markdown references only current document owners."
+    },
+    {
+      "name": "Missing reviews remain explicit",
+      "status": "PASS",
+      "detail": "Missing AI Red Team findings and product-loop receipts are not converted into executed evidence."
+    },
+    {
+      "name": "Persona workflow table continuity",
+      "status": "PASS",
+      "detail": "All numbered operations render in one contiguous correctly headed table per persona."
+    },
+    {
+      "name": "Persona and workflow inventory",
+      "status": "PASS",
+      "detail": "Nine defined personas, 78 operations and 26 workflow contracts."
+    },
+    {
+      "name": "Every persona operation mapped",
+      "status": "PASS",
+      "detail": "Every actual numbered operation has a valid responsibility/workflow mapping."
+    },
+    {
+      "name": "Workflow references and test coverage",
+      "status": "PASS",
+      "detail": "Every workflow has valid personas/tests/evidence; all 58 tests are covered, none reported executed."
+    },
+    {
+      "name": "Persona operation study seed",
+      "status": "PASS",
+      "detail": "All 78 operations match canonical labels/workflows/tests; four result layers remain NOT_RUN with no invented evidence or accountable person."
+    },
+    {
+      "name": "Planned versus actual evidence coverage",
+      "status": "PASS",
+      "detail": "Evidence plans bind valid workflows/personas/tests; actual results/manifests remain absent."
+    },
+    {
+      "name": "Boundary contracts documented",
+      "status": "PASS",
+      "detail": "Previously missing lifecycle endpoints and authority heads have explicit contracts."
+    },
+    {
+      "name": "Single scoped adoption gate decision",
+      "status": "PASS",
+      "detail": "One complete external-pilot gate table, unique gate identities, valid decisions and explicit evidence/duties; rehearsal is a separate scope."
+    },
+    {
+      "name": "Canonical child scenario identity",
+      "status": "PASS",
+      "detail": "Child scenarios have one canonical definition across adoption and test-plan tables; references may repeat."
+    },
+    {
+      "name": "Affected non-user journey coverage",
+      "status": "PASS",
+      "detail": "Four existing groups resolve duties/workflows and canonical scenarios; study applicability, independent result layers and accepting people remain unassessed."
+    },
+    {
+      "name": "Reject omitted group and invented affected-person PASS",
+      "status": "PASS",
+      "detail": "Negative controls reject missing coverage, unsupported study PASS and unresolved scenario references."
+    },
+    {
+      "name": "Adoption finding provenance",
+      "status": "PASS",
+      "detail": "Findings retain classified source/context, applicability and next validation; no human evidence inferred."
+    },
+    {
+      "name": "Need and scenario traceability",
+      "status": "PASS",
+      "detail": "Nine needs resolve findings/workflows/requirements/scenarios; nine planned scenarios resolve personas/needs/tests."
+    },
+    {
+      "name": "Persona evaluation and exit coverage",
+      "status": "PASS",
+      "detail": "Each persona has entry, completion/safe exit, evaluation scenarios and an unresolved research obligation."
+    },
+    {
+      "name": "Final workspace hygiene",
+      "status": "PASS",
+      "detail": "No temporary audit construction files remain."
+    },
+    {
+      "name": "Persona implementation gaps and evidence",
+      "status": "PASS",
+      "detail": "Every persona distinguishes local support, remaining work and actual completion evidence."
+    }
+  ],
+  "application_tests": "NOT_RUN",
+  "beta_decision": "NO_GO",
+  "limitations": [
+    "No application, cloud, physical, user or performance testing was performed.",
+    "External link content is outside this structural validator.",
+    "Schema conformance cannot establish evidence authenticity or release approval."
+  ],
+  "inputs": [
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "e540a0f4ccc116c262deaa06c7e68144a79ed615ce282689d90acd89999973da"
+    },
+    {
+      "path": "BACKLOG.md",
+      "sha256": "4661ba43826ad99928346dbe7370e167bd6ba0ef8078fa40fff19a3937886fe4"
+    },
+    {
+      "path": "devpost-submission.md",
+      "sha256": "80bdfdea6efbfec0d5b70d5bfa0fb8776b98822584d3ed64adaaac9552a766c8"
+    },
+    {
+      "path": "docs/AGENT-DESIGN.md",
+      "sha256": "b3f9a048f755210ca0559cbba572333441cbeb3adad6481c87ada41e27e34d40"
+    },
+    {
+      "path": "docs/AWS-DEPLOYMENT.md",
+      "sha256": "5276bcb731830665f63b5ab6b1f64c351025606860c6f903f0a75fdf61dba14a"
+    },
+    {
+      "path": "docs/BETA-READINESS.md",
+      "sha256": "d2278c0f526e57d271b2b46b6580c02f84fdb986a539b2002f6e505189c831bb"
+    },
+    {
+      "path": "docs/BETA-USER-GUIDE.md",
+      "sha256": "eafd8f98830045ce69dae7c0bbacdf89e66dcd6ec528b6b7445b40fbfe64faea"
+    },
+    {
+      "path": "docs/BUILD-STATUS.md",
+      "sha256": "5d2b59683630a02beaaae8a6250155dab5d82fd878f491de1d9d03f0264c72d3"
+    },
+    {
+      "path": "docs/contracts/evidence.schema.json",
+      "sha256": "f552882f482f912f572cd25ca41fbec1b08917dbaacc0dabb6812ad245512179"
+    },
+    {
+      "path": "docs/contracts/validate_documentation.py",
+      "sha256": "bda7e85cdc44cba3711ea826f8da4d45a09f114b4edcfa6b39341e4e949e5c96"
+    },
+    {
+      "path": "docs/controls.yaml",
+      "sha256": "b0e1d53f9a9abdc72628317ebc4f44e5fd2c64691f47071270ae7102435cb7dc"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "ecfe7ac005654a87705dd224b9708c6093d51180d66025e781a1de025103dbcf"
+    },
+    {
+      "path": "docs/DEVPOST-SUBMISSION.md",
+      "sha256": "1b0c4330be69d5c3bb42394b0c4ee53fbee931589f51d8318b26cff2a0d7b270"
+    },
+    {
+      "path": "docs/FEATURE-SPECS.md",
+      "sha256": "46dac9bee2ee68e215935c47c64a985625eeebf77efe8a64d5bca8d9044cf5ce"
+    },
+    {
+      "path": "docs/HACKATHON-EVIDENCE.md",
+      "sha256": "83d0393d4ea4a46d792db0869f04a502ee810a2523762d933f675b5da5f0c644"
+    },
+    {
+      "path": "docs/OPENCV-PIPELINE.md",
+      "sha256": "5ecb9f12d6206e0795c11ff7d0eb87db78f340dd30f45e3132e41879a06daf04"
+    },
+    {
+      "path": "docs/OPERATIONS.md",
+      "sha256": "874cd5cc0e8897b1a911d1ec186f9a48d672dee8e5074dbf3747b1948069e296"
+    },
+    {
+      "path": "docs/PERSONAS-OPERATIONS.md",
+      "sha256": "0dfb08c0282c82fc19fb4ae6ef8048643fb08d5e47e3fad0d79cc4f04d32807f"
+    },
+    {
+      "path": "docs/SECURITY-PRIVACY.md",
+      "sha256": "c16eb8daa3edf939dca710a78202ccf6adef95d4efc6e7ce1e0050ad6aa8e299"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "sha256": "8abc3d71edc1c8b482ca78062d6b0b80bcdf2c0bb7c554dc95a7128fc438f955"
+    },
+    {
+      "path": "docs/STATE-DATA-API.md",
+      "sha256": "2e0ce6bc077a12ce868199918f342de7eac71b3c4f04ca1583cdc6ab50eb28c2"
+    },
+    {
+      "path": "docs/submission/TECHNICAL-REPORT.md",
+      "sha256": "d3bedd54442be7d5b04d52ac7be80395122ac05cfba4abd0351ef4901f2c0a74"
+    },
+    {
+      "path": "docs/templates/BETA-SESSION-RECORD.md",
+      "sha256": "16b427e2e0c76bc7355168563e7eb47dc757319cc04df50dce32f55f6e666337"
+    },
+    {
+      "path": "docs/templates/DEMO-SCRIPT.md",
+      "sha256": "996b2b0fc8ba2c6fd1bc9b8eb504a3ff397018bc48a12f8fbb79b46f78ad8a11"
+    },
+    {
+      "path": "docs/templates/OWNER-REVIEW-LIMITS.example.json",
+      "sha256": "e22890b0215c6f276f4fe9e310addd634ed15f833824f87c94eeac54528acece"
+    },
+    {
+      "path": "docs/templates/PERSONA-OPERATION-EVIDENCE.csv",
+      "sha256": "f55b70e22df56f2981291c0bc8b1b9e362c8084a6a716133afc9366851745722"
+    },
+    {
+      "path": "docs/templates/TECHNICAL-REPORT.md",
+      "sha256": "6c2da094f5571dd57e2b6046d7b306e1cab38343d6100284b9a95a8520ef90e5"
+    },
+    {
+      "path": "docs/TEST-PLAN.md",
+      "sha256": "996e0b27c941776dfa30e6367a8e934a2f18ba1b4b79dcdd7012024f63151f36"
+    },
+    {
+      "path": "docs/USER-NEEDS-ADOPTION.md",
+      "sha256": "493be94a845c195d1064ebdbbd0ee6ff4d7e94cda71188609dd8eb40f9b045c0"
+    },
+    {
+      "path": "docs/UX-ACCESSIBILITY.md",
+      "sha256": "211aa0b34b16ba36a2401a5ee49ddbd468ee26060291e4703b261ef0f5cb0d7c"
+    },
+    {
+      "path": "docs/WORKFLOW-COVERAGE.md",
+      "sha256": "abf382e4b26bb7889a97c035210a28b90d3a2f84da79382c3d2a42284569a418"
+    },
+    {
+      "path": "evidence/index.json",
+      "sha256": "e0416868b76ffe021a1681cefefa384542e88b33d835f82fc2496ccb4eeb01f4"
+    },
+    {
+      "path": "IMPLEMENTATION-PLAN.md",
+      "sha256": "04281757c7288620f970cbde7b9072179b47d48531d6271aef6ca38e7b40043a"
+    },
+    {
+      "path": "PRD.md",
+      "sha256": "b2198dee43410eb005b0401224c5b64195b099ac7656e639da7e0df452637cdc"
+    },
+    {
+      "path": "README.md",
+      "sha256": "1096964ab57f61b7a614d472ef0c0917c80b670d296b99a2d60ac28543490982"
+    },
+    {
+      "path": "VISION.md",
+      "sha256": "3e0e68f0525848e7b6a726119919107372814fb6510a405df078c6ad0ade193c"
+    }
+  ]
+}

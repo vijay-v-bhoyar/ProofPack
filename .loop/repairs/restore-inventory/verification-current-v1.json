@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-10-18T10:32:09.401696+00:00",
+  "subject_id": "working-tree-manifest-sha256:541a12d1f68c5bbacc47a3f7973a4483706e6160aa1300f143d22256ba9193ee",
+  "status": "PASS_SCOPED_COMPONENT_WITH_RETAINED_INCOMPLETE_WRAPPERS",
+  "source_inputs": 753,
+  "source_focused_cases": 181,
+  "installed_cases": 301,
+  "installed_phases": 903,
+  "native_cases": 49,
+  "native_phases": 147,
+  "new_unit_cases": 30,
+  "new_native_cases": 7,
+  "all37_new_cases_exercised": true,
+  "extended_source_observation": {
+    "original_run_exit_code": 1,
+    "original_run": "INCOMPLETE_OBSERVER_CAP",
+    "completed_phase_triplets": 249,
+    "unconfirmed_case_rerun_in_suffix": 1,
+    "suffix_cases": 52,
+    "suffix_phases": 156,
+    "source_cases_with_complete_triplets_across_runs": 301,
+    "original_aggregate_SDK_and_origin_receipts": "MISSING; do not infer zero external sends or a clean original PASS"
+  },
+  "collection": {
+    "cases": 5470,
+    "phases": 0,
+    "subprocess_exit_code": 0,
+    "original_wrapper_exit_code": 1,
+    "reason": "copied literal old count8768; independent actual inventory audit verifies5433old+37new",
+    "repeated_collection": false
+  },
+  "full_current_execution": "NOT_RUN",
+  "local_sdk_sends": 2197,
+  "native_external_sdk_sends": 0,
+  "installed_http_sends": 0,
+  "wheel_sha256": "9c2c2ae396cabe761e4133195436ddb9b9bc67f4e8ef02a5824ef1e28c0efd83",
+  "graph_nodes": 2260,
+  "graph_edges": 9808,
+  "cleanup_verified": true,
+  "scope": "RI01-RI06 private read-only reconciliation; not complete restore release/cleanup/requester fulfillment",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

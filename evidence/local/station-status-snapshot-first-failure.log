@@ -1,0 +1,34 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+_______ test_station_status_final_snapshot_rechecks_originating_session _______
+
+world = (<proofpack.auth.service.AccessService object at 0x000001ACDABE1070>, <proofpack.evidence.repository.DynamoRepository ..., access_revision=1, session_id='cc741bb6-c3ca-4d68-a744-c654ce760df6', session_expires_at=4600.0, mfa_verified=True)))
+recipe = Recipe(recipe_id='demo', revision=1, name='Synthetic one of each', kit_sku='demo', constraints=(Constraint(constraint_...sset_ids=('synthetic-reference',), calibration_profile_id='synthetic-mat', data_origin=<Origin.SYNTHETIC: 'synthetic'>)
+
+    def test_station_status_final_snapshot_rechecks_originating_session(world,recipe):
+        stations,enrolled,created,operator,credentials,content=station_world(world,recipe)
+        acquire_station(stations,operator,enrolled[0]);started=start_station(stations,operator,enrolled[0],created)
+        repo=world[1];original=repo.snapshot;revoked=False
+        def snapshot(keys):
+            nonlocal revoked
+            rows=original(keys)
+            if not revoked and POLICY in keys and inspection_key(started['inspection_id']) in keys:
+                revoked=True;world[0].logout(credentials.cookie,credentials.csrf)
+            return rows
+        repo.snapshot=snapshot
+>       assert stations.inspection(world[5],started['inspection_id'])['effective_state']=='INVALIDATED'
+E       AssertionError: assert 'CREATED' == 'INVALIDATED'
+E         
+E         - INVALIDATED
+E         + CREATED
+
+tests\integration\test_access_lifecycle.py:299: AssertionError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_access_lifecycle.py::test_station_status_final_snapshot_rechecks_originating_session
+1 failed, 128 deselected, 1 warning in 3.47s

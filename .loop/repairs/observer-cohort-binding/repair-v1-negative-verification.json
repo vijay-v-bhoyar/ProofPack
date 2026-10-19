@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-10-18T10:04:45.638483+00:00",
+  "status": "FAILED147_DIAGNOSTIC_RECONCILED_ONLY",
+  "source_inputs": 750,
+  "cases": 147,
+  "phases": 441,
+  "passed_cases": 146,
+  "failed_cases": 1,
+  "failed_calls": [
+    "tests/integration/test_public_asset_store.py::test_configured_https_browser_owner_flow_uses_real_local_store_and_auth"
+  ],
+  "actual_exit_code": 1,
+  "local_sdk_sends": 95564,
+  "external_sdk_sends": 0,
+  "database_cleanup_verified": true,
+  "source_and_diagnostic_inputs_unchanged": true,
+  "observer_copy": {
+    "logical_sha256": "081020c0a49a6ae09c2686edc521e8b7ffda10e1fd95ae84f8271c728e9f7bc5",
+    "copy_sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419",
+    "copy_encoding": "UTF-8 without BOM; exact CRLF text-write serialization"
+  },
+  "observer_cohort_guard_passed_and_all147_executed": true,
+  "failure_message": "TimeoutError: locator.check: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('I acknowledge interruption of ordinary work; this hold erases nothing.')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"checkbox\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+  "dom_visibility": "visible",
+  "keyboard_diagnostic_checked": true,
+  "keyboard_diagnostic_is_not_pass": true,
+  "cause": "UNKNOWN",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

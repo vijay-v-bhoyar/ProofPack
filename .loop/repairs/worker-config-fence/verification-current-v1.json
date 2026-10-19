@@ -1,0 +1,58 @@
+{
+  "recorded_at": "2026-10-18T18:53:03.824296+00:00",
+  "subject_id": "working-tree-manifest-sha256:7a70753cf99520b58ea9bc649720c5a70fb296a17c1d3fdb72dff0feab1dfca2",
+  "source_inputs": 819,
+  "status": "PASS_SCOPED_LOCAL_WORKER_CONFIG_AND_ERROR_LIFETIME",
+  "source_cases": 158,
+  "source_phases": 474,
+  "installed_cases": 158,
+  "installed_phases": 474,
+  "groups": [
+    {
+      "label": "worker-config-final-v2",
+      "cases": 105,
+      "phases": 315,
+      "installed_same_nodeids": true
+    },
+    {
+      "label": "worker-config-factory-v2",
+      "cases": 53,
+      "phases": 159,
+      "installed_same_nodeids": true
+    }
+  ],
+  "all_original_oracles_unchanged": true,
+  "baseline": {
+    "config_failed": 18,
+    "config_passed": 3,
+    "error_failed": 2,
+    "error_passed": 6
+  },
+  "source_and_installed_SDK_sends": 0,
+  "wheel_sha256": "0d5c383932d22120660023b9fe68dee4d4f73b6301ce93cd547759018ee2da7a",
+  "wheel_members": 161,
+  "backend_files": 158,
+  "frontend_files": 3,
+  "frontend_unchanged_from_CR": true,
+  "browser_current": "NOT_RERUN_INTERNAL_WORKER_CHANGE",
+  "full_collection_cases": 6191,
+  "collection_execution_phases": 0,
+  "full_current_execution": "NOT_RUN",
+  "bundle_files": 41,
+  "actual_dependency_wheels": 32,
+  "bundle_target": "SYNTHETIC AWS / candidate Python3.12.15; no ARM install",
+  "graph": {
+    "nodes": 2398,
+    "edges": 10321,
+    "communities": 97,
+    "scope": "Incremental API AST only; legacy IDs/method collisions/community labels; no UI/test/script semantic completeness"
+  },
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "remaining": [
+    "Full privacy classification/owner confirmation/cleanup/media/requester/restore workflows incomplete; D11 retention/rights unresolved",
+    "D07 actual account/region/budget and authorized deployment/host/native/provider/physical proof missing",
+    "CR-T01 and IJ-T01 independent oracle reviews pending; earlier browser pointer/frame and Node forced-exit causes UNKNOWN",
+    "All five features/nine personas/78operations/AP01-AP04/W01-W26/T01-T58 remain required; A01-A09 NOT_RUN and seven adoption gates UNKNOWN/BLOCKED"
+  ]
+}

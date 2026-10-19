@@ -1,0 +1,998 @@
+{
+  "id": "ownership-classification",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "MC13-private-classification",
+    "MC13-reader-return-binding",
+    "MC13-packaged-model-protocol",
+    "MC13-duplicate-oracle-review",
+    "MC13-combined-work-allowance"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "missing-private-classification",
+      "criterion": "MC13-private-classification",
+      "category": "product",
+      "hypothesis": "No held-reader operation can produce the documented accepted private classification.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "435d9206f707690cd7cbd175c5a27fd68edb50976462bee8f9518ccb3fbeba37",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:28:43.161427+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py::test_complete_supported_server_corpus_has_frozen_non_authorizing_classification",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "candidate/evidence/local/classification-before.log",
+          "sha256": "4a7b1b80d289f80a87191f382f2dbe5382e49ca0dd7396d2eaa5232b9a18bcef"
+        },
+        "oracle": {
+          "path": "original-classification.py",
+          "sha256": "ba18c6c22516a95d7fa7c0e63bab8835ad0a509b3422201679dba716e3079eb4"
+        },
+        "artifacts": [
+          {
+            "path": "before-implementation-held.py",
+            "sha256": "6a163597e10e6d30f0e17a0c4a694153593c3a8c6e8ff009eab7d0fae44d4e06"
+          },
+          {
+            "path": "original-classification.py",
+            "sha256": "ba18c6c22516a95d7fa7c0e63bab8835ad0a509b3422201679dba716e3079eb4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "missing-private-classification",
+      "owner": "P06 Codex local delivery",
+      "diagnosis": "Implement fresh bounded accounting/classification, explicit context retention, no accepted shared/unresolved/marker result and original held-reader source/resource/deadline fences; final artifacts include return hardening.",
+      "changes": [
+        {
+          "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+          "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+        },
+        {
+          "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+          "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-private-classification",
+      "criteria": [
+        "MC13-private-classification"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:38:40.558591+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_collateral_scope.py",
+          "tests/unit/test_owner_collateral_review.py",
+          "tests/unit/test_owner_accounting_review.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification.py::test_complete_supported_server_corpus_has_frozen_non_authorizing_classification",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification-return.py::test_reader_does_not_deliver_forged_cleanup_authority",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\duplicate-fixture-diagnostic.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 259,
+        "output": {
+          "path": "candidate/evidence/local/classification-final.log",
+          "sha256": "81c778b67272ccd8ecb48bb2e1c41383d27e231fce0a355afe144c36d158fc80"
+        },
+        "oracle": {
+          "path": "original-classification.py",
+          "sha256": "ba18c6c22516a95d7fa7c0e63bab8835ad0a509b3422201679dba716e3079eb4"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+          },
+          {
+            "path": "original-classification.py",
+            "sha256": "ba18c6c22516a95d7fa7c0e63bab8835ad0a509b3422201679dba716e3079eb4"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:38:40.558591+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_collateral_scope.py",
+          "tests/unit/test_owner_collateral_review.py",
+          "tests/unit/test_owner_accounting_review.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification.py::test_complete_supported_server_corpus_has_frozen_non_authorizing_classification",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification-return.py::test_reader_does_not_deliver_forged_cleanup_authority",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\duplicate-fixture-diagnostic.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 259,
+        "output": {
+          "path": "candidate/evidence/local/classification-final.log",
+          "sha256": "81c778b67272ccd8ecb48bb2e1c41383d27e231fce0a355afe144c36d158fc80"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+          },
+          {
+            "path": "verified-source/tests/unit/test_ownership_classification.py",
+            "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "duplicate-fixture-noop",
+      "criterion": "MC13-duplicate-oracle-review",
+      "category": "test",
+      "hypothesis": "The duplicate fault replaces the first affected entry with itself, so the original oracle demands rejection of unchanged valid data. Original41passes/1failure retained; separate source diagnostic confirms no-op.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "a5965419d97ebad5c4418fb93f1fca94cd093ea5ad6bd9a7701a84d102cd6ca7",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:30:48.961941+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-v1.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 42,
+        "output": {
+          "path": "candidate/evidence/local/classification-v1.log",
+          "sha256": "12a331cbb95d67baacd11ff31263f71043f42d0e32535bf2b0cc0fd9acdae31f"
+        },
+        "oracle": {
+          "path": "before-duplicate-fixture.py",
+          "sha256": "ba18c6c22516a95d7fa7c0e63bab8835ad0a509b3422201679dba716e3079eb4"
+        },
+        "artifacts": [
+          {
+            "path": "before-duplicate-fixture.py",
+            "sha256": "ba18c6c22516a95d7fa7c0e63bab8835ad0a509b3422201679dba716e3079eb4"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "duplicate-fixture-noop",
+      "owner": "P06 Codex local test-fixture correction; no independent human",
+      "diagnosis": "Keep the same HeldCorpusHeld assertion, explicitly replace the second distinct record with the first and retain old fault/output. Current fixture/source diagnostic proves actual duplicate corruption; no runtime refusal of valid data was added.",
+      "changes": [
+        {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        }
+      ]
+    },
+    {
+      "kind": "help",
+      "failure_id": "duplicate-fixture-noop",
+      "owner": "P06 separate oracle review; named independent reviewer unassigned",
+      "question": "Review the preserved no-op fault and stronger replacement against the classification duplicate-denial contract; original invalid fault is not a product rejection requirement.",
+      "needs": "oracle-review.json, original classification-v1 failure, before-duplicate-fixture.py, exact source-derived no-op/corruption diagnostic and current passing corrected case. Portable helper has no automatic oracle-waiver path.",
+      "wake_condition": "A separately reviewed replacement/retirement decision is available; retain this original failure rather than changing valid runtime behavior to reject its no-op."
+    },
+    {
+      "kind": "failure",
+      "id": "forged-classification-return",
+      "criterion": "MC13-reader-return-binding",
+      "category": "product",
+      "hypothesis": "A correctly typed private classification with forged cleanup authority is delivered because the outer reader checks only its concrete type. This is a private invariant fault, not an observed public exploit.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "787e13d558f151b2e268cd13559fefc640f84333bade6eff28d989ea17baf253",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:32:41.301922+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py::test_reader_does_not_deliver_forged_cleanup_authority",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-return-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "candidate/evidence/local/classification-return-before.log",
+          "sha256": "93984b84d1c8c0a82da73596c3de055c95ab5183bf97243c4a390af96c0e3a76"
+        },
+        "oracle": {
+          "path": "original-classification-return.py",
+          "sha256": "501c74d71ae938422cc041bddfc57fe2e2c958e717394e3e90db83a0be4411b8"
+        },
+        "artifacts": [
+          {
+            "path": "before-return-binding.py",
+            "sha256": "a4b8d1bb2b0762c771ec0dd1307016de8cc8ae0f42ca7b2c7d513ce22f4ef7da"
+          },
+          {
+            "path": "original-classification-return.py",
+            "sha256": "501c74d71ae938422cc041bddfc57fe2e2c958e717394e3e90db83a0be4411b8"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "forged-classification-return",
+      "owner": "P06 Codex local delivery",
+      "diagnosis": "Validate original policy/scope/inventory/accounting bindings, strict complete counts, bounds, relationships and all non-authorizing flags before final delivery.",
+      "changes": [
+        {
+          "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+          "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "forged-classification-return",
+      "criteria": [
+        "MC13-reader-return-binding"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:38:40.558591+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_collateral_scope.py",
+          "tests/unit/test_owner_collateral_review.py",
+          "tests/unit/test_owner_accounting_review.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification.py::test_complete_supported_server_corpus_has_frozen_non_authorizing_classification",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification-return.py::test_reader_does_not_deliver_forged_cleanup_authority",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\duplicate-fixture-diagnostic.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 259,
+        "output": {
+          "path": "candidate/evidence/local/classification-final.log",
+          "sha256": "81c778b67272ccd8ecb48bb2e1c41383d27e231fce0a355afe144c36d158fc80"
+        },
+        "oracle": {
+          "path": "original-classification-return.py",
+          "sha256": "501c74d71ae938422cc041bddfc57fe2e2c958e717394e3e90db83a0be4411b8"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+          },
+          {
+            "path": "original-classification-return.py",
+            "sha256": "501c74d71ae938422cc041bddfc57fe2e2c958e717394e3e90db83a0be4411b8"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:38:40.558591+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_collateral_scope.py",
+          "tests/unit/test_owner_collateral_review.py",
+          "tests/unit/test_owner_accounting_review.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification.py::test_complete_supported_server_corpus_has_frozen_non_authorizing_classification",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification-return.py::test_reader_does_not_deliver_forged_cleanup_authority",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\duplicate-fixture-diagnostic.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 259,
+        "output": {
+          "path": "candidate/evidence/local/classification-final.log",
+          "sha256": "81c778b67272ccd8ecb48bb2e1c41383d27e231fce0a355afe144c36d158fc80"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+          },
+          {
+            "path": "verified-source/tests/unit/test_ownership_classification.py",
+            "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "installed-receipt-path",
+      "criterion": "MC13-packaged-model-protocol",
+      "category": "test",
+      "hypothesis": "Owned evidence guard rejects the runner destination before test bodies; correct only runner receipt paths.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority. Actual wrapper failure observed in tool exit; v2 child code0 does not accept wrapper."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:40:11.334451+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\run_package.py"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "package-runner-failures.json",
+          "sha256": "5283c3c397eec458e66020d7adfe50326162cb3170781cdd03d64d938aab4ea7"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        },
+        "artifacts": [
+          {
+            "path": "run_package.py",
+            "sha256": "65ca8fee9b19bcc913e5000d0a63cf42480257e2e93368009a9340fbd2581371"
+          },
+          {
+            "path": "verified-source/tests/unit/test_ownership_classification.py",
+            "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "installed-receipt-path",
+      "owner": "P06 Codex local verification runner",
+      "diagnosis": "Keep original guards/oracles/profiles; use owned local receipt paths and final-line JSON parsing, with exceptions/drift/cleanup reflected in actual wrapper exit. Preserve v1/v2 attempts and use distinct v3 outputs.",
+      "changes": [
+        {
+          "path": "run_package_v3.py",
+          "sha256": "560b50c6b1a8e91101da7176c88fbd9186b382170ccdcbbbe288e2a23536fea8"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "installed-receipt-path",
+      "criteria": [
+        "MC13-packaged-model-protocol"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:41:55.394786+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\run_package_v3.py"
+        ],
+        "exit_code": 0,
+        "assertions": 60,
+        "output": {
+          "path": "package-v3-verification.json",
+          "sha256": "785e7d4677bc6e4d769caf4a0e976a5732ee4f9a6fb344648f8e120996bdc98c"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        },
+        "artifacts": [
+          {
+            "path": "run_package_v3.py",
+            "sha256": "560b50c6b1a8e91101da7176c88fbd9186b382170ccdcbbbe288e2a23536fea8"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+          },
+          {
+            "path": "verified-source/tests/unit/test_ownership_classification.py",
+            "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:41:55.394786+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\run_package_v3.py"
+        ],
+        "exit_code": 0,
+        "assertions": 60,
+        "output": {
+          "path": "package-v3-verification.json",
+          "sha256": "785e7d4677bc6e4d769caf4a0e976a5732ee4f9a6fb344648f8e120996bdc98c"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        },
+        "artifacts": [
+          {
+            "path": "run_package_v3.py",
+            "sha256": "560b50c6b1a8e91101da7176c88fbd9186b382170ccdcbbbe288e2a23536fea8"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+          },
+          {
+            "path": "verified-source/tests/unit/test_ownership_classification.py",
+            "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "installed-summary-parser",
+      "criterion": "MC13-packaged-model-protocol",
+      "category": "test",
+      "hypothesis": "All60 child tests pass but wrapper parses entire pytest output as one JSON object and exits1; propagate wrapper exceptions and parse the final summary line.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority. Actual wrapper failure observed in tool exit; v2 child code0 does not accept wrapper."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:40:51.581707+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\run_package_v2.py"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "package-runner-failures.json",
+          "sha256": "5283c3c397eec458e66020d7adfe50326162cb3170781cdd03d64d938aab4ea7"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        },
+        "artifacts": [
+          {
+            "path": "run_package_v2.py",
+            "sha256": "a01cd77ef4e9c0e5b2469c06095c7984a682fe7d1fedc6ac8e528d74ae6c5db2"
+          },
+          {
+            "path": "verified-source/tests/unit/test_ownership_classification.py",
+            "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "installed-summary-parser",
+      "owner": "P06 Codex local verification runner",
+      "diagnosis": "Keep original guards/oracles/profiles; use owned local receipt paths and final-line JSON parsing, with exceptions/drift/cleanup reflected in actual wrapper exit. Preserve v1/v2 attempts and use distinct v3 outputs.",
+      "changes": [
+        {
+          "path": "run_package_v3.py",
+          "sha256": "560b50c6b1a8e91101da7176c88fbd9186b382170ccdcbbbe288e2a23536fea8"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "installed-summary-parser",
+      "criteria": [
+        "MC13-packaged-model-protocol"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:41:55.394786+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\run_package_v3.py"
+        ],
+        "exit_code": 0,
+        "assertions": 60,
+        "output": {
+          "path": "package-v3-verification.json",
+          "sha256": "785e7d4677bc6e4d769caf4a0e976a5732ee4f9a6fb344648f8e120996bdc98c"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        },
+        "artifacts": [
+          {
+            "path": "run_package_v3.py",
+            "sha256": "560b50c6b1a8e91101da7176c88fbd9186b382170ccdcbbbe288e2a23536fea8"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+          },
+          {
+            "path": "verified-source/tests/unit/test_ownership_classification.py",
+            "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "8cf125874b629032c132e83f4b89190c9b7d397c934ed4dfe98d8013f8bc3040",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex local runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:41:55.394786+00:00",
+        "expires": "2026-10-18T00:45:52.374122+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\run_package_v3.py"
+        ],
+        "exit_code": 0,
+        "assertions": 60,
+        "output": {
+          "path": "package-v3-verification.json",
+          "sha256": "785e7d4677bc6e4d769caf4a0e976a5732ee4f9a6fb344648f8e120996bdc98c"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_ownership_classification.py",
+          "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+        },
+        "artifacts": [
+          {
+            "path": "run_package_v3.py",
+            "sha256": "560b50c6b1a8e91101da7176c88fbd9186b382170ccdcbbbe288e2a23536fea8"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "6df9a644d2044dabc2154c11d278c02108532c059efe01b236786e39c54d4676"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+          },
+          {
+            "path": "verified-source/tests/unit/test_ownership_classification.py",
+            "sha256": "aadd302fc69fa0a4372c2ba6a9296627d3bb9ee3f37ad2e973ed23d9153978ad"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "renewed-accounting-work-allowance",
+      "criterion": "MC13-combined-work-allowance",
+      "category": "product",
+      "hypothesis": "Accounting is delegated173work units after10inventory units already consumed. This violates the combined remaining allowance; no accepted over-budget classification or actual CPU overrun is claimed.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "02a5836b6fcb785816016422dcea38edefe2d16d21f830602da9dbcb833bc8ff",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex current modeled runner/source audit; no independent human",
+        "at": "2026-10-17T00:51:04.307708+00:00",
+        "expires": "2026-10-18T00:57:56.182543+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py::test_accounting_cannot_receive_work_already_spent_on_inventory",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-work-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "candidate/evidence/local/classification-work-before.log",
+          "sha256": "4d45ea846fe4016f4b7bcd619ba17f742dbd3c94a1de6338f1db14f84396a91f"
+        },
+        "oracle": {
+          "path": "original-work-allowance.py",
+          "sha256": "cb922aff18397500ac3ad018989e6347d7aaefcca02b607cdcf6248eb4d63453"
+        },
+        "artifacts": [
+          {
+            "path": "before-work-allowance.py",
+            "sha256": "4d33d2f33b3744dbc0491d911ed67eb54b5df9fee9457b190021d53233ccea87"
+          },
+          {
+            "path": "original-work-allowance.py",
+            "sha256": "cb922aff18397500ac3ad018989e6347d7aaefcca02b607cdcf6248eb4d63453"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "renewed-accounting-work-allowance",
+      "owner": "P06 Codex local delivery",
+      "diagnosis": "Compute remaining_work before accounting, hold if exhausted and tighten accounting max_work to remaining allowance. Preserve original positive/boundary behavior and deadlines.",
+      "changes": [
+        {
+          "path": "verified-work-source/services/api/proofpack/evidence/ownership_classification.py",
+          "sha256": "b22dc847497e13e66f410c395012e24b88fb69886125e18ba0b8fea2160584bf"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "renewed-accounting-work-allowance",
+      "criteria": [
+        "MC13-combined-work-allowance"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "559b0920d03dd6a72968a271333afebac568a18f5af0f363ec574840f6efd067",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex current modeled runner/source audit; no independent human",
+        "at": "2026-10-17T00:52:26.605301+00:00",
+        "expires": "2026-10-18T00:57:56.209139+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_collateral_scope.py",
+          "tests/unit/test_owner_collateral_review.py",
+          "tests/unit/test_owner_accounting_review.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification.py::test_complete_supported_server_corpus_has_frozen_non_authorizing_classification",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification-return.py::test_reader_does_not_deliver_forged_cleanup_authority",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\duplicate-fixture-diagnostic.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-work-allowance.py::test_accounting_cannot_receive_work_already_spent_on_inventory",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-work-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 261,
+        "output": {
+          "path": "candidate/evidence/local/classification-work-final.log",
+          "sha256": "8cc36e821b66e5242f1af581b29b5f31a37dd31a54ba0874ed921e068e11dd71"
+        },
+        "oracle": {
+          "path": "original-work-allowance.py",
+          "sha256": "cb922aff18397500ac3ad018989e6347d7aaefcca02b607cdcf6248eb4d63453"
+        },
+        "artifacts": [
+          {
+            "path": "verified-work-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "b22dc847497e13e66f410c395012e24b88fb69886125e18ba0b8fea2160584bf"
+          },
+          {
+            "path": "original-work-allowance.py",
+            "sha256": "cb922aff18397500ac3ad018989e6347d7aaefcca02b607cdcf6248eb4d63453"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC13 private complete classification and held-reader binding; not whole requester/cleanup acceptance",
+          "revision": "559b0920d03dd6a72968a271333afebac568a18f5af0f363ec574840f6efd067",
+          "configuration": "696-input isolated SDK-denied modeled protocols, private actual-local-store held cases and offline installed-only model suite; original120s model/600s native bounds; no new public endpoint or destructive/real-provider/human authority."
+        },
+        "actor": "Codex current modeled runner/source audit; no independent human",
+        "at": "2026-10-17T00:52:26.605301+00:00",
+        "expires": "2026-10-18T00:57:56.210139+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_collateral_scope.py",
+          "tests/unit/test_owner_collateral_review.py",
+          "tests/unit/test_owner_accounting_review.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification.py::test_complete_supported_server_corpus_has_frozen_non_authorizing_classification",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-classification-return.py::test_reader_does_not_deliver_forged_cleanup_authority",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\duplicate-fixture-diagnostic.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\original-work-allowance.py::test_accounting_cannot_receive_work_already_spent_on_inventory",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\ownership-classification\\candidate\\evidence\\local\\classification-work-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 261,
+        "output": {
+          "path": "candidate/evidence/local/classification-work-final.log",
+          "sha256": "8cc36e821b66e5242f1af581b29b5f31a37dd31a54ba0874ed921e068e11dd71"
+        },
+        "oracle": {
+          "path": "verified-work-source/tests/unit/test_ownership_classification.py",
+          "sha256": "cb922aff18397500ac3ad018989e6347d7aaefcca02b607cdcf6248eb4d63453"
+        },
+        "artifacts": [
+          {
+            "path": "verified-work-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "b22dc847497e13e66f410c395012e24b88fb69886125e18ba0b8fea2160584bf"
+          },
+          {
+            "path": "verified-work-source/tests/unit/test_ownership_classification.py",
+            "sha256": "cb922aff18397500ac3ad018989e6347d7aaefcca02b607cdcf6248eb4d63453"
+          }
+        ]
+      }
+    }
+  ]
+}

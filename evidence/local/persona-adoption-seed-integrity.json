@@ -1,0 +1,65 @@
+{
+  "scope": "documentation_seed_contract_only",
+  "status": "PASS",
+  "cases": [
+    {
+      "case": "unchanged_seed",
+      "expected_accepted": true,
+      "actual_accepted": true,
+      "status": "PASS"
+    },
+    {
+      "case": "missing_operation",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "duplicate_operation",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "wrong_label",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "wrong_workflow",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "wrong_tests",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "invented_human_pass",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "invented_assignee",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "changed_schema",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    }
+  ],
+  "temporary_fixture_removed": true,
+  "application_tests": "NOT_RUN",
+  "human_assessment": "NOT_RUN",
+  "beta_decision": "NO_GO",
+  "validator_sha256": "1be14768b7104dabbe071b0f95ad3e19243def5482ece7cc2608c122b433d948"
+}

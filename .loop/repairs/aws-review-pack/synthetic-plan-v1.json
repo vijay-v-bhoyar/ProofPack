@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "account_id": "000000000000",
+  "region": "us-east-1",
+  "stack_slug": "synthetic-review",
+  "deployment": "synthetic-deployment",
+  "environment": "synthetic_demo",
+  "app_origin": "https://proofpack.example.invalid",
+  "certificate_arn": "arn:aws:acm:us-east-1:000000000000:certificate/00000000-0000-4000-8000-000000000001",
+  "ami_id": "ami-00000000000000000",
+  "ami_evidence_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "artifact_sha256": "63ec384c6081e008dd1586cb53cbd316299f9323af8b677883acdc9cc4138681",
+  "instance_type": "c8g.large",
+  "vpc_cidr": "10.24.0.0/16",
+  "public_a_cidr": "10.24.0.0/24",
+  "public_b_cidr": "10.24.1.0/24",
+  "private_cidr": "10.24.2.0/24",
+  "az_a": "us-east-1a",
+  "az_b": "us-east-1b",
+  "allowed_client_cidr": "203.0.113.0/24",
+  "cloudtrail_arn": "arn:aws:cloudtrail:us-east-1:000000000000:trail/synthetic",
+  "log_retention_days": 14,
+  "root_volume_gib": 30,
+  "service_memory_bytes": 2147483648,
+  "service_stop_seconds": 60,
+  "region_reason": "Synthetic comparison only; no real target or pricing evidence.",
+  "costs": {
+    "currency": "USD",
+    "as_of": "2026-10-18",
+    "basis": "Synthetic fake dollars only; include idle ALB/NAT/IP and all retained resources.",
+    "evidence_urls": {
+      "us-east-1": "https://calculator.aws/#/estimate?id=synthetic-us-east-1",
+      "us-east-2": "https://calculator.aws/#/estimate?id=synthetic-us-east-2"
+    },
+    "regions": {
+      "us-east-1": {
+        "compute": "1.00",
+        "ebs_snapshots": "1.00",
+        "alb": "1.00",
+        "nat": "1.00",
+        "public_ipv4": "1.00",
+        "dynamodb": "1.00",
+        "s3": "1.00",
+        "cognito": "1.00",
+        "kms": "1.00",
+        "logs_monitoring": "1.00",
+        "cloudtrail": "1.00",
+        "secrets": "1.00",
+        "transfer": "1.00"
+      },
+      "us-east-2": {
+        "compute": "2.00",
+        "ebs_snapshots": "1.00",
+        "alb": "1.00",
+        "nat": "1.00",
+        "public_ipv4": "1.00",
+        "dynamodb": "1.00",
+        "s3": "1.00",
+        "cognito": "1.00",
+        "kms": "1.00",
+        "logs_monitoring": "1.00",
+        "cloudtrail": "1.00",
+        "secrets": "1.00",
+        "transfer": "1.00"
+      }
+    },
+    "spend_limit_usd": "100.00"
+  }
+}

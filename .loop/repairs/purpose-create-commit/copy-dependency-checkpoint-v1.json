@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-10-18T02:56:35.790634+00:00",
+  "status": "PASS_SOURCE_COPY_CHECKPOINT_ONLY_FULL_PENDING",
+  "finding": "Post-run verifier module omitted from original runtime manifest; no changed verifier bytes observed. Supplemental guard binds it before terminal auditor use without changing original run, assertions, deadlines or manifest.",
+  "historical_verifier_sha256": "7978e901faaf957b87cc584446c3d17c1f963a5183f3c97a7a64e51d606b7a7f",
+  "logical_browser_sha256": "081020c0a49a6ae09c2686edc521e8b7ffda10e1fd95ae84f8271c728e9f7bc5",
+  "binding": {
+    "logical_sha256": "081020c0a49a6ae09c2686edc521e8b7ffda10e1fd95ae84f8271c728e9f7bc5",
+    "copy_sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419",
+    "copy_encoding": "UTF-8 without BOM; exact CRLF text-write serialization"
+  },
+  "terminal_guard_sha256": "ef3c287c15b2b43833011e22d7c325d06a1b3924ff07e58741b41263e77a9796",
+  "limitation": "Created after native browser case; not a before-launch runtime freeze receipt",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "historical_full_audit": {
+    "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\configured-auth-review-candidate\\full-composite-v1-verification.json",
+    "sha256": "e83540c4dad6b14be59527875a8bc107519f5cb8edee83ccd974575490c3e24b"
+  },
+  "verifier": {
+    "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-create-commit\\owner_copy_contract.py",
+    "sha256": "7978e901faaf957b87cc584446c3d17c1f963a5183f3c97a7a64e51d606b7a7f"
+  },
+  "observer_input": {
+    "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-create-commit\\owner-observation-input.json",
+    "sha256": "c789e59d13f4b985c45fb837cba6abc6a8a8091721d886ca909767ce3984cce5"
+  },
+  "diagnostic_copy": {
+    "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\evidence\\local\\purpose-create-commit-continuation-v2\\evidence\\local\\python-cohort-010.owner-observation.js",
+    "sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419"
+  }
+}

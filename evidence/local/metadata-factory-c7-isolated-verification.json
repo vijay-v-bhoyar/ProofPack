@@ -1,0 +1,17 @@
+{
+  "status": "PASS_UNDER_ISOLATED_CONDITIONS",
+  "recorded_at": "2026-10-16T11:58:26.915254+00:00",
+  "cases": 1,
+  "phases": 3,
+  "source_unchanged": true,
+  "local_sdk_sends": 903,
+  "blocked_sdk_sends": 0,
+  "database_cleanup_verified": true,
+  "worker_wall_ms": 750,
+  "original_test_oracle_unchanged": true,
+  "original_full_failure_not_cleared": true,
+  "cause": "UNKNOWN",
+  "next": "Same142-case cohort replay86661 active; no competing DB/vision workload",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

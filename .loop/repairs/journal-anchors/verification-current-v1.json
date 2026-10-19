@@ -1,0 +1,31 @@
+{
+  "status": "PASS_SCOPED_LOCAL_ONLY",
+  "subject_id": "working-tree-manifest-sha256:8d21f197d362bda69bdff25ab6ee93edbac84c893c8530b0ca95f67b39b3a626",
+  "source_inputs": 750,
+  "backend_files": 148,
+  "frontend_assets": 3,
+  "wheel_sha256": "ea4b0a02dbf99c65b8b70e78be3f0d1f6c362a56356bac98bc95fdfad83a4665",
+  "checks": {
+    "source_current": true,
+    "source_exact_pass": true,
+    "installed_exact_pass": true,
+    "native_exact_pass": true,
+    "same_installed_cases": true,
+    "all58_new_cases_exercised": true,
+    "installed_clean": true,
+    "native_clean": true,
+    "collection5350_prefix_retained": true,
+    "package_projection": true
+  },
+  "source_cases": 161,
+  "installed_same_cases": 161,
+  "native_cases": 31,
+  "new_unique_unit_cases": 50,
+  "new_unique_native_cases": 8,
+  "native_local_sdk_sends": 1190,
+  "external_sdk_sends": 0,
+  "full5408_execution": "NOT_RUN",
+  "scope": "Sealed intent history from explicit genesis through trusted checkpoint; no pre-enrollment/global completeness, primary erase, restore or IAM authority",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

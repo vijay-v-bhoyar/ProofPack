@@ -1,0 +1,112 @@
+....F...FF.............................................................. [ 24%]
+........................................................................ [ 49%]
+........................................................................ [ 74%]
+........................................................................ [ 99%]
+..                                                                       [100%]
+================================== FAILURES ===================================
+_________ test_signed_oauth_flow_creates_only_existing_member_session _________
+
+world = (<proofpack.auth.service.AccessService object at 0x0000026BD3470080>, <proofpack.evidence.repository.DynamoRepository ..., access_revision=1, session_id='81ec70e7-3f29-44a0-8d00-38d5eade14a9', session_expires_at=4600.0, mfa_verified=True)))
+oauth_signing_key = <cryptography.hazmat.bindings._rust.openssl.rsa.RSAPrivateKey object at 0x0000026BD346BA30>
+
+    def test_signed_oauth_flow_creates_only_existing_member_session(world,oauth_signing_key):
+        service,repo,clock,uid,*_=world;signin,start,query,calls=signed_provider(world,oauth_signing_key)
+        credentials=signin.complete(state=query['state'],browser_cookie=start.browser_cookie,code='synthetic-code')
+        actor=service.resolve(credentials.cookie)
+>       assert actor.principal.subject==uid and actor.principal.mfa_verified
+E       AssertionError: assert ('owner' == 'a86167c3-bca...-b3564407617a'
+E         
+E         - a86167c3-bca5-4f3c-bfa2-b3564407617a
+E         + owner)
+
+tests\integration\test_access_lifecycle.py:75: AssertionError
+_____ test_signed_invitee_remains_restricted_until_notice_and_acceptance ______
+
+world = (<proofpack.auth.service.AccessService object at 0x0000026BD39147A0>, <proofpack.evidence.repository.DynamoRepository ..., access_revision=1, session_id='b7390ffe-5e4e-4701-9739-e27d5035e313', session_expires_at=4600.0, mfa_verified=True)))
+oauth_signing_key = <cryptography.hazmat.bindings._rust.openssl.rsa.RSAPrivateKey object at 0x0000026BD346BA30>
+
+    def test_signed_invitee_remains_restricted_until_notice_and_acceptance(world,oauth_signing_key):
+        service,repo,clock,uid,credentials,owner=world
+        invitation=service.create_invitation(owner,target_subject='invitee',target_email='invitee@example.invalid',
+            roles=(Role.OPERATOR,),ttl_seconds=60,idempotency_key='signed-invitation')
+        signin,start,query,calls=signed_provider(world,oauth_signing_key,subject='invitee',invitation_id=invitation['id'])
+        restricted=signin.complete(state=query['state'],browser_cookie=start.browser_cookie,code='synthetic-code')
+        assert restricted.restricted
+        with pytest.raises(Denied):service.resolve(restricted.cookie)
+        actor=service.resolve(restricted.cookie,allow_invitee=True)
+>       assert service.read_invitation(actor,invitation['id'])['status']=='pending'
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       TypeError: AccessService.read_invitation() takes 2 positional arguments but 3 were given
+
+tests\integration\test_access_lifecycle.py:111: TypeError
+___________ test_signed_disabled_identity_cannot_create_new_session ___________
+
+world = (<proofpack.auth.service.AccessService object at 0x0000026BD34C7A40>, <proofpack.evidence.repository.DynamoRepository ..., access_revision=1, session_id='6cd99c84-8381-4adb-b4bd-ce8a198257dd', session_expires_at=4600.0, mfa_verified=True)))
+oauth_signing_key = <cryptography.hazmat.bindings._rust.openssl.rsa.RSAPrivateKey object at 0x0000026BD346BA30>
+
+    def test_signed_disabled_identity_cannot_create_new_session(world,oauth_signing_key):
+        service,repo,clock,uid,credentials,owner=world
+        target,_,actor,*_=invite_and_join(world)
+>       service.change_access(owner,user_id=target,roles=(Role.OPERATOR,),enabled=False,
+            expected_version=actor.member.data['access_version'],idempotency_key='disable-before-provider-login')
+
+tests\integration\test_access_lifecycle.py:117: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+services\api\proofpack\auth\service.py:518: in change_access
+    idem,body_hash,replay=self._idempotency(actor,'change-access',idempotency_key,body)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+services\api\proofpack\auth\service.py:307: in _idempotency
+    body_hash=digest(json.dumps(body,sort_keys=True,separators=(',',':'),allow_nan=False))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py:238: in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py:200: in encode
+    chunks = self.iterencode(o, _one_shot=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py:258: in iterencode
+    return _iterencode(o, 0)
+           ^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <json.encoder.JSONEncoder object at 0x0000026BD34EB950>, o = Decimal('1')
+
+    def default(self, o):
+        """Implement this method in a subclass such that it returns
+        a serializable object for ``o``, or calls the base implementation
+        (to raise a ``TypeError``).
+    
+        For example, to support arbitrary iterators, you could
+        implement default like this::
+    
+            def default(self, o):
+                try:
+                    iterable = iter(o)
+                except TypeError:
+                    pass
+                else:
+                    return list(iterable)
+                # Let the base class default method raise the TypeError
+                return super().default(o)
+    
+        """
+>       raise TypeError(f'Object of type {o.__class__.__name__} '
+                        f'is not JSON serializable')
+E       TypeError: Object of type Decimal is not JSON serializable
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py:180: TypeError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/unit/test_cognito.py::test_weak_rsa_signing_key_is_dependency_failure
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\jwt\api_jwt.py:149: InsecureKeyLengthWarning: The RSA key is 1024 bits long, which is below the minimum recommended size of 2048 bits. See NIST SP 800-131A.
+    return self._jws.encode(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_access_lifecycle.py::test_signed_oauth_flow_creates_only_existing_member_session
+FAILED tests/integration/test_access_lifecycle.py::test_signed_invitee_remains_restricted_until_notice_and_acceptance
+FAILED tests/integration/test_access_lifecycle.py::test_signed_disabled_identity_cannot_create_new_session
+3 failed, 287 passed, 2 warnings in 34.10s

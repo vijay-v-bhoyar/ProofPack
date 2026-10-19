@@ -1,0 +1,31 @@
+{
+  "scope": "four-file capture-family stage after canonical full run is terminal",
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/capture_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "41b53c54fdde4f1ead156f5560e26147a2e502d249c0298233a610d8863ba71e"
+    },
+    {
+      "path": "services/api/proofpack/evidence/originals.py",
+      "before_sha256": "fd1bac619213ccbba9b3063f86da1de61278dff432aaae5c91550e8501939cc2",
+      "candidate_sha256": "14790a2928dcc9f7825a0da5fb8a27d3f3a2b50d69a33dc2a292f413b5d5bf82"
+    },
+    {
+      "path": "tests/unit/test_capture_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "ad8bb203cb94d2eec111d18f5a946a5b728ecddf0f986eda784539fcba7a833b"
+    },
+    {
+      "path": "tests/integration/test_capture_family_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "414156274ec34b84326946b412cd51bd705ef6863acfcb6221fa54dd607913d4"
+    }
+  ],
+  "guards": [
+    "Do not transfer while canonical full handle 66017 is live; preserve its terminal source/output.",
+    "Check original/candidate hashes, preserve all failures/oracles and refresh affected graph.",
+    "Run integrated capture, original/default access, export and other affected checks.",
+    "Full inventory/barrier/read-set/remaining family/journal/owner/provider/human acceptance stays separate."
+  ]
+}

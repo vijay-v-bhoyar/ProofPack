@@ -1,0 +1,186 @@
+{
+  "recorded_at": "2026-10-17T15:49:21.714680+00:00",
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "cases": 132,
+  "phases": 396,
+  "journal_records": 530,
+  "journal_elapsed_seconds": 323.593,
+  "phase_total_seconds": 321.64551970000775,
+  "modules": {
+    "tests/integration/test_owner_collateral_browser.py": {
+      "cases": 1,
+      "setup": 2.963322199999311,
+      "call": 41.52071460000025,
+      "teardown": 0.0651372000002084
+    },
+    "tests/integration/test_owner_control_store.py": {
+      "cases": 6,
+      "setup": 0.41051709999919694,
+      "call": 2.632287299999007,
+      "teardown": 0.041628200000559445
+    },
+    "tests/integration/test_owner_metadata_store.py": {
+      "cases": 10,
+      "setup": 0.621073700002853,
+      "call": 2.9679415999999037,
+      "teardown": 0.04010000000198488
+    },
+    "tests/integration/test_owner_review_browser.py": {
+      "cases": 1,
+      "setup": 1.5834867000003214,
+      "call": 7.068072299999585,
+      "teardown": 0.0330549999998766
+    },
+    "tests/integration/test_ownership_classification_store.py": {
+      "cases": 3,
+      "setup": 4.403072100000827,
+      "call": 9.093573700000888,
+      "teardown": 0.03249649999997928
+    },
+    "tests/integration/test_partition_inventory_store.py": {
+      "cases": 4,
+      "setup": 0.03823309999825142,
+      "call": 0.18314489999829675,
+      "teardown": 0.03517500000089058
+    },
+    "tests/integration/test_policy_activation.py": {
+      "cases": 31,
+      "setup": 6.477828600000066,
+      "call": 7.1490825999972,
+      "teardown": 0.036766800007171696
+    },
+    "tests/integration/test_policy_candidates.py": {
+      "cases": 18,
+      "setup": 2.930866700002298,
+      "call": 3.7220416000000114,
+      "teardown": 0.027613600006588968
+    },
+    "tests/integration/test_policy_comparison_metadata.py": {
+      "cases": 1,
+      "setup": 3.6347344999994675,
+      "call": 0.12494819999847095,
+      "teardown": 0.028415400000085356
+    },
+    "tests/integration/test_policy_delivery.py": {
+      "cases": 9,
+      "setup": 4.179568800002016,
+      "call": 35.322061300001224,
+      "teardown": 0.03336510000008275
+    },
+    "tests/integration/test_policy_factory_flow.py": {
+      "cases": 1,
+      "setup": 0.05319640000016079,
+      "call": 18.896934300000794,
+      "teardown": 0.026796699999977136
+    },
+    "tests/integration/test_policy_golden.py": {
+      "cases": 1,
+      "setup": 0.00019219999921915587,
+      "call": 5.630862900001375,
+      "teardown": 0.00017669999942881986
+    },
+    "tests/integration/test_policy_qualification.py": {
+      "cases": 7,
+      "setup": 6.670684799995797,
+      "call": 97.92562129999897,
+      "teardown": 0.03526450000026671
+    },
+    "tests/integration/test_policy_rollback.py": {
+      "cases": 1,
+      "setup": 0.44183259999954316,
+      "call": 31.258989199999633,
+      "teardown": 0.027846700000736746
+    },
+    "tests/integration/test_policy_workbench_metadata.py": {
+      "cases": 8,
+      "setup": 1.5642393000016455,
+      "call": 1.606038099998841,
+      "teardown": 0.02980099999695085
+    },
+    "tests/integration/test_privacy_admission_store.py": {
+      "cases": 8,
+      "setup": 1.702662900001087,
+      "call": 1.1818577999983972,
+      "teardown": 0.04078970000045956
+    },
+    "tests/integration/test_public_asset_store.py": {
+      "cases": 7,
+      "setup": 0.291107800003374,
+      "call": 3.618514199997662,
+      "teardown": 0.029763199998342316
+    },
+    "tests/integration/test_purpose_context_store.py": {
+      "cases": 3,
+      "setup": 3.4015384000013,
+      "call": 7.569502899999861,
+      "teardown": 0.029170600000725244
+    },
+    "tests/integration/test_purpose_history_store.py": {
+      "cases": 7,
+      "setup": 0.31849400000101014,
+      "call": 1.0553513999984716,
+      "teardown": 0.02853549999963434
+    },
+    "tests/integration/test_qualification_authority.py": {
+      "cases": 5,
+      "setup": 0.7474568999987241,
+      "call": 0.032767999999123276,
+      "teardown": 0.02920529999937571
+    }
+  },
+  "local_sdk_sends": 69784,
+  "blocked_sends": 0,
+  "configured_owner_flow_and_cleanup_pass": true,
+  "observation_source_exactly_reversible": true,
+  "failure_only_frame_gpu_probes_triggered": false,
+  "cause": "UNKNOWN; failure did not recur without preceding8 full-run workload",
+  "original_full_failure": "RETAINED; neither isolated control is an application repair or waiver",
+  "raw_evidence": [
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\native-owner-click\\native-owner-click-observed-v2-process.json",
+      "sha256": "0e758ce2dc1dd29a4196da1c5ebe999318005e068927998a8ea2f1f676585ca7"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\execution.json",
+      "sha256": "3a5bfd90581fa7ac9224bb144b1bb120ddcbe39f727fce88581320a327561a7c"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\tests.xml",
+      "sha256": "0ba2337a26cfe750f612dbdb7de514663d2facb935d2f8fb0d3e050078fdb0ee"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\tests.log",
+      "sha256": "d2e02758a9b83782ce6fd6bb42e12c76fe7d33c810a63ebdfeb17767764a914d"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\execution.json.sdk.json",
+      "sha256": "414e951ad3bdd5a35896e45fe77790db445b75fef60c0b85c6f8d61db6dc36b8"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\origins.json",
+      "sha256": "90269d1f2f2486f806456f55fea3ba2770025eab5d3ffe0c4b444b3eafbcd1b0"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\configured-https-browser.json",
+      "sha256": "7324e99464fc3a064856797475e36d69d1a78f6237301aa8fab8ddcd9988745e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\observed-browser.js",
+      "sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\native-owner-click-observed-v2-database.json",
+      "sha256": "4f7693f7f03af4b2e33fce881aa1736398276a2d6d686bc9baeb924c2aae4c5e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\native-owner-click-observed-v2\\evidence\\local\\native-owner-click-observed-v2-database.log",
+      "sha256": "673526e000358c012515d3708f44925fec5d082635296875e71020473c1f224a"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\integration-regression\\native-owner-click-observed-v2-phases.jsonl",
+      "sha256": "255ff1fa8b6f650e3ced0bd1bfe8ef5c71faa223fe70b6e8e3dffaa00b169c6a"
+    }
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

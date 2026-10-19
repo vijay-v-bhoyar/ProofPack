@@ -1,0 +1,64 @@
+{
+  "recorded_at": "2026-10-18T16:47:25.201290+00:00",
+  "subject_id": "working-tree-manifest-sha256:87715cf34d334848b15fa1e7c46bd74e170d3f68f3d8bc4fbca90ac979f0d0e8",
+  "source_inputs": 803,
+  "status": "PASS_LOCAL_OFFLINE_REVIEW_TOOL_ONLY",
+  "source_cases": 65,
+  "source_phases": 195,
+  "source_process": "evidence/local/fresh-enrollment-models-aws-review-current-v1/process.json",
+  "source_process_sha256": "39d651ce3b267816cca2685d138cbebd4ce19d1c0527ec9f8a50e60a6800f16e",
+  "source_unchanged": true,
+  "local_sdk_sends": 0,
+  "external_sdk_sends": 0,
+  "full_collection_cases": 6008,
+  "collection_execution_phases": 0,
+  "full_current_suite": "NOT_RUN",
+  "collection_process": "evidence/local/aws-review-collection-v1/process.json",
+  "collection_process_sha256": "e6264ece8808885d42632b9294587edb3bad2c7bc875e3544b10a233ca7d2266",
+  "original_oracles": "53 original feature + 6 boundaries + 6 CLI cases byte-identical to their preserved original versions",
+  "added_source_inputs": [
+    "scripts/prepare_aws_review.py",
+    "tests/unit/test_aws_review_boundaries.py",
+    "tests/unit/test_aws_review_cli.py",
+    "tests/unit/test_aws_review_pack.py"
+  ],
+  "all_prior799_source_inputs_unchanged": true,
+  "installed_tool_execution": "NOT_APPLICABLE_REPOSITORY_TOOL_NOT_IN_APP_WHEEL",
+  "runtime_member_compatibility": {
+    "members": 161,
+    "wheel_sha256": "63ec384c6081e008dd1586cb53cbd316299f9323af8b677883acdc9cc4138681",
+    "actual_comparison_receipt": ".loop/repairs/aws-review-pack/synthetic-cli-v1-process.json",
+    "prior310_source_and_same310_installed": "RETAINED_AT_799_SUBJECT_NOT_FRESH_803_EXECUTION"
+  },
+  "actual_cli": {
+    "files": 6,
+    "resources": 39,
+    "outputs": 15,
+    "template_bytes": 44251,
+    "exit_code": 0,
+    "all_payload_digests_match": true,
+    "pricing": "SYNTHETIC_NOT_REAL_QUOTES"
+  },
+  "graph": {
+    "scope": "API only; scripts/tests/infra not indexed",
+    "nodes": 2390,
+    "edges": 10294,
+    "refresh": "API unchanged; existing API index retained; direct source/reference DAG tests used for tool"
+  },
+  "provider_schema_validation": "NOT_RUN_CFN_LINT_UNAVAILABLE",
+  "iam_simulation": "NOT_RUN",
+  "update_support": "NONE_CREATE_ONLY_DRAFT",
+  "authority": "NONE",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "human_A01_A09": "NOT_RUN",
+  "native_current": "NOT_RUN_MEMORY_HELD",
+  "retained_open": [
+    "D07/D11",
+    "actual costs/target/AMI/root/ARM/TLS/SG/provider/IAM/host/private-log duties",
+    "source-bound install/recovery/teardown and full current execution",
+    "IJ-T01 independent replacement-oracle review",
+    "earlier browser adverse causes UNKNOWN",
+    "all five features/9personas/78operations and whole workflow/physical/human acceptance"
+  ]
+}

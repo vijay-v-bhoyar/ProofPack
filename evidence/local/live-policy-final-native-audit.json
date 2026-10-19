@@ -1,0 +1,254 @@
+{
+  "status": "PASS",
+  "scope": "17 selected changed/adjacent Python modules only",
+  "recorded_at": "2026-10-15T11:40:48.508604+00:00",
+  "source_inputs": 529,
+  "source_unchanged": true,
+  "cases": 499,
+  "passed_phases": 1497,
+  "inventory_exact": true,
+  "independent_junit_identity_match": true,
+  "batches": [
+    {
+      "group": "core",
+      "cases": 205,
+      "phases": 615,
+      "exit_code": 0,
+      "database_terminated": true,
+      "database_state_removed": true,
+      "database_log_hash_matched": true
+    },
+    {
+      "group": "asset-reads",
+      "cases": 25,
+      "phases": 75,
+      "exit_code": 0,
+      "database_terminated": true,
+      "database_state_removed": true,
+      "database_log_hash_matched": true
+    },
+    {
+      "group": "labels",
+      "cases": 22,
+      "phases": 66,
+      "exit_code": 0,
+      "database_terminated": true,
+      "database_state_removed": true,
+      "database_log_hash_matched": true
+    },
+    {
+      "group": "originals",
+      "cases": 32,
+      "phases": 96,
+      "exit_code": 0,
+      "database_terminated": true,
+      "database_state_removed": true,
+      "database_log_hash_matched": true
+    },
+    {
+      "group": "manifests",
+      "cases": 29,
+      "phases": 87,
+      "exit_code": 0,
+      "database_terminated": true,
+      "database_state_removed": true,
+      "database_log_hash_matched": true
+    },
+    {
+      "group": "vision",
+      "cases": 24,
+      "phases": 72,
+      "exit_code": 0,
+      "database_terminated": true,
+      "database_state_removed": true,
+      "database_log_hash_matched": true
+    },
+    {
+      "group": "qualification",
+      "cases": 61,
+      "phases": 183,
+      "exit_code": 0,
+      "database_terminated": true,
+      "database_state_removed": true,
+      "database_log_hash_matched": true
+    },
+    {
+      "group": "delivery",
+      "cases": 101,
+      "phases": 303,
+      "exit_code": 0,
+      "database_terminated": true,
+      "database_state_removed": true,
+      "database_log_hash_matched": true
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "evidence/local/live-policy-final-core.log",
+      "sha256": "6d13417bd0a1a3dc640e24b6b66b68a5462479bf9763ecc54b5643301b177fa2"
+    },
+    {
+      "path": "evidence/local/live-policy-final-core.xml",
+      "sha256": "bf3c3deb2724c4155c13d22ffbeb7e11e24a391085a6813fbec6badb70e3c2c0"
+    },
+    {
+      "path": "evidence/local/live-policy-final-core-process.json",
+      "sha256": "3172f1062c36b4e7c54e03cab5e5270d4dd3a52ad1441a211c095fd6e8fe72ad"
+    },
+    {
+      "path": "evidence/local/live-policy-final-core-database.json",
+      "sha256": "393206685a9ae0c53d47fd5fee223bc1bdf6fe2c215e22bd22d665566927803f"
+    },
+    {
+      "path": "evidence/local/live-policy-final-core-database.log",
+      "sha256": "fe76fdb4fc1ca22a35fea659bb36ff8eb8096807ea3e96fd4ef5561b46c9391f"
+    },
+    {
+      "path": "evidence/local/live-policy-final-asset-reads.log",
+      "sha256": "d42dcbd64ac819e4906039b1ce6c137849145a20343a7655c194c6b077eb117e"
+    },
+    {
+      "path": "evidence/local/live-policy-final-asset-reads.xml",
+      "sha256": "42b813e7ff50ba796c0d458fd61b49de2a62e1563a4ac33f94267935ac653bbc"
+    },
+    {
+      "path": "evidence/local/live-policy-final-asset-reads-process.json",
+      "sha256": "3889a8b769501ae9687c61436a93cbc0a023d5844e42db38ebd2ca3a8ffe0f28"
+    },
+    {
+      "path": "evidence/local/live-policy-final-asset-reads-database.json",
+      "sha256": "6e5a94d20b79552e34b51c27ee089903a6371a76ab8bf33c2607215a6e92c49b"
+    },
+    {
+      "path": "evidence/local/live-policy-final-asset-reads-database.log",
+      "sha256": "76dd14c1f3ecaa351dba89bc2298e06483639f7c94c59a39c32b02f04404225b"
+    },
+    {
+      "path": "evidence/local/live-policy-final-labels.log",
+      "sha256": "d8a9cac074b7bc4d8b9c35baee4598a84f0fe9ef070c2e8661c16835983649d4"
+    },
+    {
+      "path": "evidence/local/live-policy-final-labels.xml",
+      "sha256": "a1900e1a68632782db61d8f751892143a247e3aef28cfc7c0f8d917ec36f461a"
+    },
+    {
+      "path": "evidence/local/live-policy-final-labels-process.json",
+      "sha256": "9ec4aa078b833e716dbccecd224a5662d805ef9b7d89dd357735a522016f852f"
+    },
+    {
+      "path": "evidence/local/live-policy-final-labels-database.json",
+      "sha256": "f3dd0ac40b51e6f5289b9e7603b10363898ed7bfaf582453bd0d03141125422b"
+    },
+    {
+      "path": "evidence/local/live-policy-final-labels-database.log",
+      "sha256": "0eb9d0c4a0304c2126b423f3a9cb89cb486d74e399302d1e5a53aa3b73148626"
+    },
+    {
+      "path": "evidence/local/live-policy-final-originals.log",
+      "sha256": "cb0c31ffdf8f3ba1884a561458217903cbba9b4b7c4309bd44adeaabe515766e"
+    },
+    {
+      "path": "evidence/local/live-policy-final-originals.xml",
+      "sha256": "484c91461b8ea5a508076fef7f1cdb16d7e68730530565f695dc49c299a329cc"
+    },
+    {
+      "path": "evidence/local/live-policy-final-originals-process.json",
+      "sha256": "0d073111edd86db1be4a3232a0487ca4e1bdd32c5635da6935feb855da12d13b"
+    },
+    {
+      "path": "evidence/local/live-policy-final-originals-database.json",
+      "sha256": "cacefd500d23b0d939d4f4d41eb4aad5d8dc321c0cab1d2dd78a7899798b3584"
+    },
+    {
+      "path": "evidence/local/live-policy-final-originals-database.log",
+      "sha256": "7676fc9ba37d23e549f52218a0b84e7fad4d457d88dad1cc24973334c7464ab7"
+    },
+    {
+      "path": "evidence/local/live-policy-final-manifests.log",
+      "sha256": "f6dafa899156db6c1c327da757b751187fe4c054ef9d73e31f0644a3dc657891"
+    },
+    {
+      "path": "evidence/local/live-policy-final-manifests.xml",
+      "sha256": "c91a689b4aa68a0f8b92d7da00526c7afd0bc17d97067085f69262b323bc7f60"
+    },
+    {
+      "path": "evidence/local/live-policy-final-manifests-process.json",
+      "sha256": "268e8894adad628a35f5dfdb2e6eea07957bd0b8a6580eedc88dfe20153d3925"
+    },
+    {
+      "path": "evidence/local/live-policy-final-manifests-database.json",
+      "sha256": "de77e3ddfcd99c8ba5782d15c849c7a5a74e5aa27c897a4031db01c60a3dd21e"
+    },
+    {
+      "path": "evidence/local/live-policy-final-manifests-database.log",
+      "sha256": "ca1f17ff7c6469c2b82c195be9238ff9dff43451ab51d14b0bc7617c8e64576a"
+    },
+    {
+      "path": "evidence/local/live-policy-final-vision.log",
+      "sha256": "0539596587a81b7e45d0d5dd9c1c7045ed3224cd7933e8c11a4f43ed272a7413"
+    },
+    {
+      "path": "evidence/local/live-policy-final-vision.xml",
+      "sha256": "d98b9f9ffb19881b18ee7d06bdb736e98edb9cfe361264bf7b8e249ff1bd8841"
+    },
+    {
+      "path": "evidence/local/live-policy-final-vision-process.json",
+      "sha256": "828bdb4ea14fe50e2bc4092217c69d85627c272f92c99c96749b84836cf24435"
+    },
+    {
+      "path": "evidence/local/live-policy-final-vision-database.json",
+      "sha256": "8ae8326889462ec6a6f875739d5d9f91a8db186571a44e90d0e9ed4e5411e4aa"
+    },
+    {
+      "path": "evidence/local/live-policy-final-vision-database.log",
+      "sha256": "0c31560d0b1f1a0afcffe65035f553d49120d17b81cdd30ede4730e291f6c05b"
+    },
+    {
+      "path": "evidence/local/live-policy-final-qualification.log",
+      "sha256": "0b352f601ac3b915dd78505edf530346f04cd348eebb7df58c3077de3d6d8ae5"
+    },
+    {
+      "path": "evidence/local/live-policy-final-qualification.xml",
+      "sha256": "6e069ae88d3533c0d21bd0a601dc2b0700b7d2c9625e11c494f0e6dbff094662"
+    },
+    {
+      "path": "evidence/local/live-policy-final-qualification-process.json",
+      "sha256": "afe81bfb3e106adc5cbafa99abf95e6c6826fc027c2f6b490ce3e048ac823e4c"
+    },
+    {
+      "path": "evidence/local/live-policy-final-qualification-database.json",
+      "sha256": "66408854cf4b3a416b32a74b5348e7fd938f6b3b82afe07ad9776ed800094e60"
+    },
+    {
+      "path": "evidence/local/live-policy-final-qualification-database.log",
+      "sha256": "6a33a9a58cb6306e02f5fb874c93ce565857a75494f438719dfcc8cef87c2002"
+    },
+    {
+      "path": "evidence/local/live-policy-final-delivery.log",
+      "sha256": "e82fad8939021a2c07575b67b51eea553e23091e1d3eb481a1fdc3917c23b1a9"
+    },
+    {
+      "path": "evidence/local/live-policy-final-delivery.xml",
+      "sha256": "8006789bdd9bbfcf4cd9424e690934eeb274549e6aeb167287838ebc2ffd2743"
+    },
+    {
+      "path": "evidence/local/live-policy-final-delivery-process.json",
+      "sha256": "c99b4d32643b362faec82b028c73d6ed2ac5450919419e473c2181ee3f0b58bc"
+    },
+    {
+      "path": "evidence/local/live-policy-final-delivery-database.json",
+      "sha256": "43b0263f7572d2177ab0dfa6f344c034670d61275709e0bcab95c07b47ae844b"
+    },
+    {
+      "path": "evidence/local/live-policy-final-delivery-database.log",
+      "sha256": "a45fa606750cb61754129d754518ff2f6b8e3571e77ac2002b8624144618e1c6"
+    }
+  ],
+  "beta_decision": "NO_GO",
+  "limitations": [
+    "Not full current-product verification or complete T/W/A acceptance.",
+    "Synthetic operating assurance/identities/rights; S3 and STS intercepted.",
+    "No physical, independent, provider, hosted, operational or human acceptance.",
+    "Prior combined 600-second timeout remains preserved; no cause or permanent fix inferred."
+  ]
+}

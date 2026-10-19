@@ -1,0 +1,20 @@
+{
+  "status": "PASS_FOR_SELECTED_CANONICAL_OPTIONAL_PERMISSION_HISTORY_ONLY",
+  "canonical_native_cases": 371,
+  "canonical_native_passing_phases": 1113,
+  "exact_source_installed_cases": 371,
+  "exact_source_package_cases": 501,
+  "counts_overlap": true,
+  "source_inputs": 602,
+  "exact_backend_files": 113,
+  "exact_frontend_files": 3,
+  "installed_modules": 103,
+  "opencv_version": "5.0.0",
+  "all_selected_cleanup_verified": true,
+  "graph_status": "DEGRADED_NAVIGATION_ONLY",
+  "prior_599_subject": "335-case integration and exact 122-case cohort diagnostic remain historical/compatibility evidence; only three new files differ",
+  "full_current_python_gate": "NOT_RUN",
+  "scope": "preview/grant/head/withdrawal history prerequisite only; full source/global-authority/dataset/inventory/barrier/journal/cleanup/provider/human acceptance remains open",
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

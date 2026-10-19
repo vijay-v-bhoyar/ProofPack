@@ -1,0 +1,10 @@
+{
+  "default_exit_code": 1,
+  "software_exit_code": 0,
+  "source_inputs": 692,
+  "case_and_timing_bounds_unchanged": true,
+  "default_failures_cleared": false,
+  "causal_driver_fix": "UNKNOWN",
+  "decision": "One paired comparison supports profile-associated frame starvation on this host; no product or driver cause proved. Software profile is diagnostic only.",
+  "default_error": "TimeoutError: locator.check: Timeout 5000ms exceeded.\n"
+}

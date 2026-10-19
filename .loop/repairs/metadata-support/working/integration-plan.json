@@ -1,0 +1,31 @@
+{
+  "scope": "four-file support-family stage after canonical full run is terminal",
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/support_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "1f8f80e53fb85ec5b1c798c6b9592a4116488ade7f2b065e30882decdcc4ed28"
+    },
+    {
+      "path": "services/api/proofpack/stations/handoffs.py",
+      "before_sha256": "1ddcb9b4fb021ac9c6171bcc6b60112be297c29fe5ef2a2e38621f366c45a519",
+      "candidate_sha256": "b80f531ad016b18258ce91e562d60cde12289d9c302f8f305fd0ddcb7ca08982"
+    },
+    {
+      "path": "tests/integration/test_support_family_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "c6a62e0dc99b96ebc77954bd5d8e3db6003c1fdaaba2647a6f72efb1518ec360"
+    },
+    {
+      "path": "tests/unit/test_support_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "846e1e08d74a660caf5fe077a64e5dfe6be4f8ca779932da5816cfdfca2c0a4b"
+    }
+  ],
+  "guards": [
+    "Preserve the terminal original canonical run and verify all four original hashes before transfer.",
+    "Do not change source while handle 58784 remains live.",
+    "Refresh affected graph and run current integrated support/ordinary read/export checks.",
+    "Complete all other family/barrier/journal/owner workflow obligations before W20 or beta acceptance."
+  ]
+}

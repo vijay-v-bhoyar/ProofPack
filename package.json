@@ -1,0 +1,12 @@
+{
+  "name": "proofpack-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["apps/web"],
+  "devDependencies": {"@playwright/test": "1.64.0"},
+  "scripts": {
+    "build": "npm run build --workspace=proofpack-web",
+    "typecheck": "npm run typecheck --workspace=proofpack-web",
+    "test:e2e": "playwright test --config=apps/web/playwright.config.ts"
+  }
+}

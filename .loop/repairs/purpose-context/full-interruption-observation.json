@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-10-17T02:48:14.038403+00:00",
+  "tool_session_id": 95919,
+  "tool_status": "UNKNOWN_PROCESS_ID",
+  "terminal_receipt_present": false,
+  "os_process_query": "exact purpose-context path among python/java/node; read-only elevated query returned zero matches",
+  "classification": "INCOMPLETE_INTERRUPTED_OR_LOST",
+  "exit_code": "UNKNOWN",
+  "completed_cohorts": 2,
+  "verified_cases": 231,
+  "partial_cohort": 3,
+  "partial_errors_observed": true,
+  "third_cohort_cleanup": "UNVERIFIED",
+  "restart_performed": false,
+  "next_action": "separate single-case reproduction on exact 707-input copy; original run retained",
+  "parent_complete": false
+}

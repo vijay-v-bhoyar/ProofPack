@@ -1,0 +1,69 @@
+{
+  "scope": "storage prerequisite and package proof; parent workflows incomplete",
+  "recorded_at": "2026-10-15T21:44:03.890817+00:00",
+  "status": "PARTIAL",
+  "subject": {
+    "product": "ProofPack",
+    "target": "owned local emulator and offline wheel; no provider, physical or human acceptance",
+    "revision": "f75e44a91fd729ae0f27d9ebb32b486834b1fc0e9310dd80672d65ba1d19350a",
+    "configuration": "unchanged local storage limits; controls 8ce375fb8e0b4d5a99d1bd24f0084716c5dd9e299deff176012d846113ec512f"
+  },
+  "run_id": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "scope_id": "metadata-payload-erasure",
+  "assurance_modes": {
+    "Change": "resumed existing documented contract",
+    "Verify": "IN_PROGRESS"
+  },
+  "principles": {
+    "P01": "APPLICABLE: deterministic storage operation, no model/autonomy added",
+    "P02": "UNCHANGED: no UI; full owner cleanup journey missing",
+    "P03": "APPLICABLE: strict marker shape/scope; malformed and transplanted inputs denied",
+    "P04": "APPLICABLE: exact revision, atomic replacement, bounded transaction/read contract",
+    "P05": "APPLICABLE: internal operation only; higher-level owner/MFA scope remains missing",
+    "P06": "APPLICABLE: irreversible payload loss; reviewed scope and independent restore journal remain missing",
+    "P07": "APPLICABLE: stale repeat conflicts; marker status supports reconciliation but complete job missing",
+    "P08": "APPLICABLE: original symbol unchanged; native/JUnit/package checks; same operator, not independent human",
+    "P09": "APPLICABLE: full regression in progress; complete metadata/API/browser journey not implemented",
+    "P10": "APPLICABLE: original 100-item bounds retained; no end-to-end capacity/load claim"
+  },
+  "focused_native": {
+    "passed": 51,
+    "phases": 153,
+    "database_cleanup": true
+  },
+  "installed_types_and_stub_contracts": {
+    "passed": 29,
+    "phases": 87,
+    "overlaps_native": true,
+    "exact_backend_files": 105,
+    "exact_frontend_files": 3,
+    "loaded_modules": 7,
+    "sdk_transport": "PROHIBITED"
+  },
+  "original_oracle_symbol_unchanged": true,
+  "literal_archived_file_replay": "NOT_RUN",
+  "serialized_condition_pin": "Explicitly changed from old condition to stronger marker-denial contract; old failed run retained",
+  "full_suite_status_at_observation": "IN_PROGRESS",
+  "completed_cohorts": [
+    {
+      "ordinal": 1,
+      "status": "PASS",
+      "tests": 230
+    },
+    {
+      "ordinal": 2,
+      "status": "PASS",
+      "tests": 223
+    }
+  ],
+  "repair_criterion": "PENDING until original archived oracle/integrated verification acceptance",
+  "parent_complete": false,
+  "authority": "none",
+  "beta_decision": "NO_GO",
+  "remaining": [
+    "Complete discovery/review/confirmation and read-write-worker barrier",
+    "Durable job and unknown-result reconciliation, independent restore journal and writer compatibility",
+    "Owner screens, receipts, communication, offboarding/orphan lifecycle",
+    "Current integrated/configured, actual provider, physical and human evidence"
+  ]
+}

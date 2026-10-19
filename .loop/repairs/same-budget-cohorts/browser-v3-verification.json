@@ -1,0 +1,372 @@
+{
+  "recorded_at": "2026-10-17T14:27:09.311089+00:00",
+  "status": "PASS_BROWSER_FIXTURE_SCOPE_ONLY",
+  "expected_cases": 395,
+  "whole_file_cases_accepted": 395,
+  "unaccepted_cases": 0,
+  "files": 16,
+  "failed_files": [],
+  "all_owned_servers_terminated": true,
+  "coverage_errors": [],
+  "source_assets_node_dependency_metadata_reconciled": true,
+  "profile": {
+    "channel": "chrome",
+    "workers": 1,
+    "fullyParallel": false,
+    "retry_override": "NONE",
+    "assertion_timeout_override": "NONE",
+    "renderer_flags": "NONE",
+    "whole_file_process_bound_seconds": 120
+  },
+  "case_exclusions": [],
+  "boundary": "owned unconfigured actual frontend plus declared API/browser fixtures; no configured provider, physical or human acceptance",
+  "auditor_sha256": "d65193dce7f50f5ac93e4619b0495ab02c48c982c7cfbe871eb195f6e0bd7bee",
+  "raw_evidence": [
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\browser-v3-process.json",
+      "sha256": "6038e89e738cd31512b1f1a6ec29c74091c9fd273f3dfe6322f83a3ab6640ec8"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\browser-v3-plan.json",
+      "sha256": "a4086f7f65d7b4f0ef2a1eabc550bd9f0d9444050e64bce6db77d6f24dad3245"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-suite.json",
+      "sha256": "5716338b464e2c46207f2136838dd6fd917bf67cdc77ac04fd10c67ed72a7b1d"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\collection.json",
+      "sha256": "7fb2e788701f61f604ff11d155c634b291a2c021a4adeb3ecdff5deec9c5542c"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\collection.log",
+      "sha256": "14ab1cd5c8ea475afb6c0d72440cbff08cf3233c78ef58f440bc32254e82b98f"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-001.server.json",
+      "sha256": "cab334c383d80bbf2f593a4cbdfd14cb19a1d83932a4734265e5d8e265525e69"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-001.server.log",
+      "sha256": "3ce0e49fca7a6b94a333ddb165191d6afb0268484bbf6e79735fa8e81abdef19"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-001.log",
+      "sha256": "90769692ada07728119186a43bd7e0f403fce03e02c9709b12a93a08a40c8a19"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-001.json",
+      "sha256": "5eda6a1bcb9debdd3e80089520fdad46d89da57fbf6c4004cc9d03c1a0842d0a"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-001.xml",
+      "sha256": "9ef70e8362881c9c9f5d3a838b7d6aafb428d1275ca556fc1d95ec25ef7d6a37"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-002.server.json",
+      "sha256": "370227b5fef96df5483aa939515d5a525a567b1a5e103e50eb64b2b24fec3e9d"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-002.server.log",
+      "sha256": "9b405fb301757b5fe7e1da4c8f61cd0d46a5183efff503102ba791cd900e18af"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-002.log",
+      "sha256": "e6c7dc3118d7d1d7d8e3cef5aa7a115901fd6d96446f1bc0c194821ed44e2f43"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-002.json",
+      "sha256": "adf20de888c417dd829683e148c45923c83e45d624afece5940ff32857fe4a7e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-002.xml",
+      "sha256": "b15f4b93ae31fb91919c11c8db5455a9c1a1b48c14654a31dcf99b49afac0785"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-003.server.json",
+      "sha256": "fb081a8bdadfde7f25ea02367c93a8760a868f640e28617778489c2f97179500"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-003.server.log",
+      "sha256": "ffb2b01c92be95898ec27f56adf75b9845ea626294e7db7983db1c2c056f9a90"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-003.log",
+      "sha256": "5458a5ed8dc871c7c8fbb29c0ab3ad594dd377f5ad4b134f559e496b011da92f"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-003.json",
+      "sha256": "34fddbe9b29367b7f4edd21df2386018691bb2ab9d4a20a5975b9dfc8fa01c19"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-003.xml",
+      "sha256": "e2790716ffa6d7fabcae0936710b2aa512c87336033d746a9d4ec319701515de"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-004.server.json",
+      "sha256": "644cb197007132c51c141048e06951ce8a53f1195023f7ffcbcfebbf96cf8194"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-004.server.log",
+      "sha256": "0b697c1c47abfd5fa2cfda837caa69855c3c3a38d9af7bf66e15313b10e0223a"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-004.log",
+      "sha256": "2fd8af8e5fc09998f8a640805a2693f19563bd66c42b93dca2f56d6a555f5ef4"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-004.json",
+      "sha256": "bc5b0b210779c8cb7fcb88cbdf821e6a499f28e50d1cefc5c468611c9ec32bba"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-004.xml",
+      "sha256": "889b5a2e5a27d6b9e9c959d14574286741145aaedce67d37c6c47bc57a91fd5e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-005.server.json",
+      "sha256": "99a7d16f8d330332d1f4668c6759a693bc56129e0909a1e659781144ef14f5cf"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-005.server.log",
+      "sha256": "a35c2fe8377e5ac5b08a006011d93c873747fe8de623c7db1fbc078856680350"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-005.log",
+      "sha256": "1aa783a11fdb6369691372b6001211568cd87768691269747fc041a8359494a4"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-005.json",
+      "sha256": "a2d543bd53ba81a2c37d891093bf76c12ea66e1b878d4856f224476c3e071e52"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-005.xml",
+      "sha256": "0cc3478f50b05e5074254c0f93d42b41a2cf222e66dd330bfe6e208c2ef2b3ee"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-006.server.json",
+      "sha256": "63bd8c4d3b2839d8bb3f87e9849529efea4ac1451f5982620eb0496bbec0b269"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-006.server.log",
+      "sha256": "a835735d550d3c060b44831c6923646ff680e35554527d2041043c69d1c81822"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-006.log",
+      "sha256": "a29f8ddd9b09f0bf12c0260772e092121e80c4682c9f7bcd19e26789953f1335"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-006.json",
+      "sha256": "11d3d129a7bf8300d2bfe477ada9659a4d5752b5857e8a6b473bcfaa415f9632"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-006.xml",
+      "sha256": "0d02d7c23372a4d5b08b2cd65349fa73a8d985775739c180d961554eaa8cb1de"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-007.server.json",
+      "sha256": "5b97d4f4c91a08626928d80596978290ad090e4a39ceffa2d866651472e19a1c"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-007.server.log",
+      "sha256": "139d841de403270c1f0c2d812cc473e26a35be21b02d4f9e0f63d5c9921d0da4"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-007.log",
+      "sha256": "f0857a9ac951733aab81a71eea6d3b9825e6765ff8f2c6421594edc90de92671"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-007.json",
+      "sha256": "c8917d315f7a4d5aad2d5b08a1463f4067dbeeda57f9ee1b2c1bdb3d3bac6cda"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-007.xml",
+      "sha256": "06f1ad7c0deb0c51630a843a0791894b58527d585697b117d594a425988b25cb"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-008.server.json",
+      "sha256": "c2c3ed29aeed982cc6a8dcba7c41d71f752461810028fed8ef1b217a8c7e2293"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-008.server.log",
+      "sha256": "884ccfe15c89ce9499690abfa983352913491a9423c6d14f0b1e1d039a8e9fb0"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-008.log",
+      "sha256": "d042ce695ac44b24738117cb9f967572d31eb1283d2c94bf75fceae3daac9012"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-008.json",
+      "sha256": "4ccb1b9ff247e51da4920a2f0ebed079944f9096feaf3d0ac1074e3102ff5dae"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-008.xml",
+      "sha256": "083c95d5aaeae992fce6e5261794c07a457c332d97eefb26e4b112e6471ac95b"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-009.server.json",
+      "sha256": "07e4513838c2e41c928d5848dce27ca43d5f2a3591b85d3accb51f83c3ae27a8"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-009.server.log",
+      "sha256": "cc1aada55a3af96d90645db0eec314a1dc193dc19a35d68c7166bbd82efe4bd9"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-009.log",
+      "sha256": "fd84516f398b1cb92776ce1ac1cef14b44c848f34698d5fc491020d960304064"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-009.json",
+      "sha256": "e055fe8c753a36512c198b595a27a5a9f6376b4d6d4a2e2daf1f4bc7fe4ecc95"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-009.xml",
+      "sha256": "68c48424e11fd101a56b5cb41054dbcb6821a60770f267082ca72396d6ab27e8"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-010.server.json",
+      "sha256": "26b159349daa145d02e842cce4d90d291bf32093c01d0a7abacc988ba152ad81"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-010.server.log",
+      "sha256": "516a21b53ff2a55c1722e8f5232ccd4a18c7c9447a154c67603cbb08ffcf2d94"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-010.log",
+      "sha256": "03a09539b2318242c9d281e6593ecac8f69c49de24bcd237283b666861240b0b"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-010.json",
+      "sha256": "21b52c5e54f195852ddb66168ff0ec001d4c25011ed92927a4fbce3761465be0"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-010.xml",
+      "sha256": "75e0155a6355645fb5e3d99fce92bcc6cf9b7bad3eeba7c749b973733ac94e1b"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-011.server.json",
+      "sha256": "9923d363be38e3293548a7d752f6dc913372bd316e61e4917708902067bb4fe1"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-011.server.log",
+      "sha256": "122f40206818b42f326efac2be87396392a35e02423690e8c14b0fa53621c511"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-011.log",
+      "sha256": "1b3e6c6ff251845dc4228aba296fae850ae05f367659c67a6dc8bc90c57eb05e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-011.json",
+      "sha256": "f79e0206e26e57cea08c5b397cc9e0b081d2bbda435c8100a34a0be13f47a148"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-011.xml",
+      "sha256": "ba87e2f599c0a9e27c07d1aa7693b6877f91f1abf33080191c54fd21e5ac7260"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-012.server.json",
+      "sha256": "36a51edb7f18e0b68eb1174a4daf0db02dd559eff36f4a93af1ef361f0488fc6"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-012.server.log",
+      "sha256": "56898a7f4c725bc843dd955e62c36ed3b24c1d278de8f4ee99aa51e67458e247"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-012.log",
+      "sha256": "86fda0b46de513820cca88a879dd6688a1ee537fa6705db002d4f268bdb3e87c"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-012.json",
+      "sha256": "abbdc7508198b149ad358ad21523e46a5a8d378ce87ea033c97383843bf146de"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-012.xml",
+      "sha256": "0260f69f25f63cb47a53df71dcaac1109ee6b8a234d8a8a6fe4f98ff47bff55f"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-013.server.json",
+      "sha256": "0adc2b611ecced7b0ef271c98bb5e9cdc6ab985e9c62d8078a70d0126356bbba"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-013.server.log",
+      "sha256": "e26bca3c3ca9176d441b7e7bd356b828bfc9cd8443f71e54f1c18b878b649755"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-013.log",
+      "sha256": "2ae6bf015212ee609e7fba6b6765015d3af07790bc0f65991793843176042785"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-013.json",
+      "sha256": "3a19fc53aa152a8bf531a39230e4fca4e57aa6ec67061b64e20d3dfc078cc8b1"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-013.xml",
+      "sha256": "e4d66deb89078b6c0b8397b3890d12b4f388c80d9dc451b219a2c0b0d5602397"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-014.server.json",
+      "sha256": "1ae46019804e976be2b2527be90b047b3ea01937f98a0b733a218e3c18fc667e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-014.server.log",
+      "sha256": "5873d1816d07ab7d22b2b7741250eae4f825e7f895bf386cb462ad0084cfca6d"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-014.log",
+      "sha256": "cb665f30e4e8920b42ef8b75a91a667358b2259aada04fda5303e77f56a55139"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-014.json",
+      "sha256": "3a28de0a1d53565981f869c107c112f1068a84e3559b251bc013811beb702370"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-014.xml",
+      "sha256": "a06623b92939fde976e645f64b97ecff194ffe9783185453a0fa6f34e06f2266"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-015.server.json",
+      "sha256": "024fb565980796763dde44229e581c6ecd263038fdb94935c1463157dfdc6a78"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-015.server.log",
+      "sha256": "3c16e8caa8ea7cfd06fb4550a38224e987ddc3e57b8abf8ef6ac3ff79c66b3fd"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-015.log",
+      "sha256": "c0d79341b12eb134fa2d6070966d3c6edf52cd6aee8fa1f5701add517e95a3d9"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-015.json",
+      "sha256": "9897261914d3c7b9bfdb92529974457e0ad3560030676a8e3d8e825acc4ef1e9"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-015.xml",
+      "sha256": "1bff7f8c41d68741f1808fd8daa23a3ad085b249e2671309460b4b9ce56755e7"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-016.server.json",
+      "sha256": "d9eaa751373b470aeba813d3d5ff28244fb05a355c83cc1fc47fde9cf191792a"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-016.server.log",
+      "sha256": "9f41e5f79d058337357dd8720182edb5a0eaa0768545ceb1575bf8ce36babd3f"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-016.log",
+      "sha256": "1ad10fa076793ff55ef8dcf7530390508591c7f16e8c7b4082f87cd11514c73f"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-016.json",
+      "sha256": "d7d5c343243c74e650d5e4ef4ee0110fd96b1c0dff9d5cf0a700062d4a060100"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-runs\\20261017T142202-ac4881c58ca8\\cohort-016.xml",
+      "sha256": "e92b0f0fdcdc6ec2b440adb8c85b321fe8e9bacfedd2b2286dfd69c74b45ef12"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\browser-tests.xml",
+      "sha256": "55614c4646265c64dbe1a9db29b3d3d227c5b1f7fad131fc0803e6fabe07de34"
+    }
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

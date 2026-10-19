@@ -1,0 +1,139 @@
+{
+  "recorded_at": "2026-10-17T06:21:26.657626+00:00",
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "scope": "exact full command, 134 original cases and900s plus passive journal; no preceding-suite workload",
+  "cases": 134,
+  "phases": 402,
+  "journal_records": 538,
+  "journal_elapsed_seconds": 724.968,
+  "phase_total_seconds": 723.3841385999804,
+  "modules": {
+    "tests/integration/test_active_policy.py": {
+      "cases": 23,
+      "setup": 164.31113169999844,
+      "call": 59.090197999996235,
+      "teardown": 0.09178069999870786
+    },
+    "tests/integration/test_admission_factory_store.py": {
+      "cases": 6,
+      "setup": 0.06551680000120541,
+      "call": 2.2347238000020297,
+      "teardown": 0.02023699999881501
+    },
+    "tests/integration/test_application.py": {
+      "cases": 1,
+      "setup": 0.00015759999951114878,
+      "call": 0.1732153000011749,
+      "teardown": 0.00016539999887754675
+    },
+    "tests/integration/test_approved_policy_read.py": {
+      "cases": 16,
+      "setup": 136.3547192999995,
+      "call": 6.955741000001581,
+      "teardown": 0.19885529999737628
+    },
+    "tests/integration/test_asset_reads.py": {
+      "cases": 25,
+      "setup": 40.43793489999916,
+      "call": 6.70765449999999,
+      "teardown": 0.15852459999769053
+    },
+    "tests/integration/test_browser_timeout_retention_store.py": {
+      "cases": 1,
+      "setup": 1.0976893000006385,
+      "call": 61.879435800001374,
+      "teardown": 0.02114350000010745
+    },
+    "tests/integration/test_calibrations.py": {
+      "cases": 35,
+      "setup": 43.41219159999855,
+      "call": 50.12199669999427,
+      "teardown": 0.08449840000139375
+    },
+    "tests/integration/test_camera_to_verifier.py": {
+      "cases": 1,
+      "setup": 0.00023669999973208178,
+      "call": 0.7004282999987481,
+      "teardown": 0.0003440999989834381
+    },
+    "tests/integration/test_candidate_rollback.py": {
+      "cases": 1,
+      "setup": 5.029284700000062,
+      "call": 94.7985650999999,
+      "teardown": 0.1093524999996589
+    },
+    "tests/integration/test_capture_family_store.py": {
+      "cases": 12,
+      "setup": 13.692331599999306,
+      "call": 12.21322809999765,
+      "teardown": 0.04748280000058003
+    },
+    "tests/integration/test_capture_intent_storage_lineage.py": {
+      "cases": 8,
+      "setup": 8.192699699999139,
+      "call": 3.44691309999871,
+      "teardown": 0.035071800000878284
+    },
+    "tests/integration/test_collateral_scope_store.py": {
+      "cases": 5,
+      "setup": 4.560819700000138,
+      "call": 7.120221600001969,
+      "teardown": 0.019647599998279475
+    }
+  },
+  "local_sdk_sends": 153728,
+  "blocked_sends": 0,
+  "confined_loaded_modules": 137,
+  "source_snapshot_frontend_node_reconciled": true,
+  "canonical_source_unchanged_runner_reported": true,
+  "database_terminated": true,
+  "database_state_removed": true,
+  "cleanup_boundary": "fresh owned lifecycle receipt and daemon hash; no independent probe of redacted temporary path",
+  "original_full_timeout_cause": "UNKNOWN; isolated diagnostic cannot clear the failed full run",
+  "auditor_sha256": "72f96aea7d4b81ba6e257b235d4461e30a4d989c76baa1b76c63145c9307e9f3",
+  "raw_evidence": [
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\integration-regression\\exact-full-cohort003-v1-process.json",
+      "sha256": "2e0333ad1efb03c028e952eae7eda8262ae553c0028307b73d4413595fcf5423"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\integration-regression\\exact-full-cohort003-v1-phases.jsonl",
+      "sha256": "e85903e01a1850776e71a60944a545c9acc1d47861a342c173c76499ad220210"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\accumulated-current\\full-v3-process.json",
+      "sha256": "a677be447cfa9cb4a898b6187bc5f5fe2c6dbe588fb5f25a3ea21683c1d53b25"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\accumulated-current\\candidate\\evidence\\local\\exact-full-cohort003-v1\\evidence\\local\\exact-full-cohort003-v1-execution.json",
+      "sha256": "b6baa46d8c024cb5e852ce1cd17b0b32bdddb5319b2c3f9fcf6750fb725f68f2"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\accumulated-current\\candidate\\evidence\\local\\exact-full-cohort003-v1\\evidence\\local\\exact-full-cohort003-v1.xml",
+      "sha256": "4cdedd701a431685c31e51ca1db748c8ff951d8fd4a0e98305bdaec981964d71"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\accumulated-current\\candidate\\evidence\\local\\exact-full-cohort003-v1\\evidence\\local\\exact-full-cohort003-v1.log",
+      "sha256": "4bd53625313eb602d38e3750b53894c48c99ff1cd9ad24b2faab63efb2ff99d2"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\accumulated-current\\candidate\\evidence\\local\\exact-full-cohort003-v1\\evidence\\local\\exact-full-cohort003-v1-origins.json",
+      "sha256": "d177ba8dc637bc7571c6c9391cf5d317f065de74f7eef78082ce0c59479223bd"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\accumulated-current\\candidate\\evidence\\local\\exact-full-cohort003-v1\\evidence\\local\\exact-full-cohort003-v1-execution.json.sdk.json",
+      "sha256": "ba1bf62d82f38eca82ae6b45d809107152e8acd06cce32cbd3bb5ca064251a25"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\accumulated-current\\candidate\\evidence\\local\\exact-full-cohort003-v1\\evidence\\local\\exact-full-cohort003-v1-database.json",
+      "sha256": "d532537aa1bc9b927aeb107a0bfe8b6c225146e575c52b801d239a70794019d5"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\accumulated-current\\candidate\\evidence\\local\\exact-full-cohort003-v1\\evidence\\local\\exact-full-cohort003-v1-database.log",
+      "sha256": "7d9bacb512c920ba7989cfa6694559a0e17648e82e731b914fc1d236f0629688"
+    }
+  ],
+  "complete_suite_or_workflow_acceptance": false,
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

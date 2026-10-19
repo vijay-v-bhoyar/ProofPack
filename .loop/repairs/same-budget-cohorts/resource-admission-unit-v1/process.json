@@ -1,0 +1,18 @@
+{
+  "command": [
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\test_resource_admission.py",
+    "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\resource-admission-unit-v1\\tests.xml"
+  ],
+  "exit_code": 0,
+  "started_at": "2026-10-17T14:01:29.972664+00:00",
+  "ended_at": "2026-10-17T14:01:31.294357+00:00",
+  "scope": "local test-memory-admission boundaries only; no application/provider/human checks"
+}

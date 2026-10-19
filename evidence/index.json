@@ -1,0 +1,938 @@
+{
+  "schema_version": 1,
+  "release_decision": "NO_GO",
+  "records": [
+    {
+      "id": "E01",
+      "title": "Recipe and calibration qualification",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R01",
+        "R02",
+        "R03",
+        "R06",
+        "R10",
+        "R12",
+        "R13",
+        "R14",
+        "R15"
+      ],
+      "planned_test_ids": [
+        "T01",
+        "T02",
+        "T03",
+        "T06",
+        "T35",
+        "T36",
+        "T37",
+        "T41"
+      ],
+      "planned_workflow_ids": [
+        "W05",
+        "W06",
+        "W07",
+        "W20",
+        "W23"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E02",
+      "title": "OpenCV runtime proof",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R04",
+        "R17"
+      ],
+      "planned_test_ids": [
+        "T04",
+        "T24",
+        "T26"
+      ],
+      "planned_workflow_ids": [
+        "W02",
+        "W08",
+        "W24"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P05",
+        "P06",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E03",
+      "title": "AWS execution receipt",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R04",
+        "R09",
+        "R10",
+        "R14",
+        "R15",
+        "R17",
+        "R18"
+      ],
+      "planned_test_ids": [
+        "T04",
+        "T24",
+        "T25",
+        "T31",
+        "T38",
+        "T46",
+        "T54"
+      ],
+      "planned_workflow_ids": [
+        "W02",
+        "W07",
+        "W10",
+        "W17",
+        "W19",
+        "W24"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E04",
+      "title": "Agent workflow proof",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R07",
+        "R08",
+        "R10",
+        "R11",
+        "R16",
+        "R17",
+        "R18",
+        "R20"
+      ],
+      "planned_test_ids": [
+        "T08",
+        "T09",
+        "T10",
+        "T45",
+        "T49",
+        "T50"
+      ],
+      "planned_workflow_ids": [
+        "W09",
+        "W11",
+        "W24"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E05",
+      "title": "Verifier proof",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R01",
+        "R02",
+        "R03",
+        "R05",
+        "R06",
+        "R07",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R14",
+        "R15",
+        "R17",
+        "R18"
+      ],
+      "planned_test_ids": [
+        "T02",
+        "T07",
+        "T09",
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T19",
+        "T34",
+        "T36",
+        "T37",
+        "T38",
+        "T44",
+        "T45",
+        "T46",
+        "T47",
+        "T48",
+        "T51",
+        "T53"
+      ],
+      "planned_workflow_ids": [
+        "W04",
+        "W06",
+        "W07",
+        "W08",
+        "W09",
+        "W10",
+        "W12",
+        "W16",
+        "W18",
+        "W21",
+        "W24"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E06",
+      "title": "Evidence integrity and export",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R08",
+        "R10",
+        "R11",
+        "R14",
+        "R15",
+        "R16",
+        "R18",
+        "R20"
+      ],
+      "planned_test_ids": [
+        "T15",
+        "T16",
+        "T39",
+        "T40",
+        "T50",
+        "T51",
+        "T52"
+      ],
+      "planned_workflow_ids": [
+        "W11",
+        "W12",
+        "W13",
+        "W14",
+        "W22",
+        "W25"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E07",
+      "title": "Evaluation report",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R05",
+        "R06",
+        "R07",
+        "R09",
+        "R12",
+        "R13",
+        "R16",
+        "R20"
+      ],
+      "planned_test_ids": [
+        "T03",
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T17",
+        "T18",
+        "T29",
+        "T42",
+        "T44",
+        "T56"
+      ],
+      "planned_workflow_ids": [
+        "W01",
+        "W08",
+        "W15",
+        "W16",
+        "W23",
+        "W24",
+        "W25"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E08",
+      "title": "Learning and revision experiment",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R01",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R18",
+        "R20"
+      ],
+      "planned_test_ids": [
+        "T17",
+        "T18",
+        "T19",
+        "T41",
+        "T42",
+        "T43"
+      ],
+      "planned_workflow_ids": [
+        "W15",
+        "W16",
+        "W20"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P03",
+        "P05",
+        "P06",
+        "P07",
+        "P08"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E09",
+      "title": "Security and privacy review",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R01",
+        "R03",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "planned_test_ids": [
+        "T10",
+        "T20",
+        "T21",
+        "T22",
+        "T23",
+        "T26",
+        "T31",
+        "T32",
+        "T33",
+        "T34",
+        "T35",
+        "T37",
+        "T39",
+        "T40",
+        "T41",
+        "T43",
+        "T48",
+        "T52",
+        "T53",
+        "T54",
+        "T55",
+        "T57",
+        "T58"
+      ],
+      "planned_workflow_ids": [
+        "W02",
+        "W03",
+        "W04",
+        "W05",
+        "W07",
+        "W09",
+        "W10",
+        "W13",
+        "W14",
+        "W15",
+        "W16",
+        "W17",
+        "W18",
+        "W19",
+        "W20",
+        "W21",
+        "W22",
+        "W24",
+        "W26"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E10",
+      "title": "Optional COOL benchmark",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [],
+      "planned_test_ids": [
+        "T04",
+        "T18",
+        "T24",
+        "T25"
+      ],
+      "planned_workflow_ids": [
+        "W17",
+        "W24"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E11",
+      "title": "UX and accessibility",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R05",
+        "R06",
+        "R08",
+        "R11",
+        "R14",
+        "R16",
+        "R20"
+      ],
+      "planned_test_ids": [
+        "T14",
+        "T27",
+        "T50",
+        "T56",
+        "T58"
+      ],
+      "planned_workflow_ids": [
+        "W11",
+        "W23",
+        "W24",
+        "W25",
+        "W26"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E12",
+      "title": "Operations and recovery",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R13",
+        "R14",
+        "R15",
+        "R17",
+        "R18"
+      ],
+      "planned_test_ids": [
+        "T23",
+        "T28",
+        "T33",
+        "T38",
+        "T40",
+        "T43",
+        "T47",
+        "T49",
+        "T53",
+        "T54",
+        "T55"
+      ],
+      "planned_workflow_ids": [
+        "W02",
+        "W10",
+        "W12",
+        "W14",
+        "W16",
+        "W17",
+        "W18",
+        "W19",
+        "W20",
+        "W21",
+        "W22"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E13",
+      "title": "Physical operator pilot",
+      "status": "BLOCKED",
+      "scope": "physical_pilot",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "No access to physical kits or packing operators."
+      ],
+      "requirements": [
+        "R01",
+        "R02",
+        "R03",
+        "R05",
+        "R06",
+        "R08",
+        "R09",
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R16",
+        "R20"
+      ],
+      "planned_test_ids": [
+        "T05",
+        "T29",
+        "T36",
+        "T42",
+        "T44",
+        "T50",
+        "T56",
+        "T58"
+      ],
+      "planned_workflow_ids": [
+        "W01",
+        "W06",
+        "W08",
+        "W11",
+        "W15",
+        "W18",
+        "W20",
+        "W23",
+        "W25",
+        "W26"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E14",
+      "title": "Cost estimate and measurement",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R08",
+        "R14",
+        "R15",
+        "R17",
+        "R18"
+      ],
+      "planned_test_ids": [
+        "T25",
+        "T49",
+        "T55"
+      ],
+      "planned_workflow_ids": [
+        "W02",
+        "W09",
+        "W17",
+        "W22"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E15",
+      "title": "Submission and judge access",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R14",
+        "R15",
+        "R19"
+      ],
+      "planned_test_ids": [
+        "T30",
+        "T57"
+      ],
+      "planned_workflow_ids": [
+        "W14",
+        "W24",
+        "W26"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P07",
+        "P08",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    },
+    {
+      "id": "E16",
+      "title": "Rights and eligibility register",
+      "status": "NOT_RUN",
+      "scope": "planned",
+      "data_origin": "none",
+      "code_sha": null,
+      "artifact_sha256": null,
+      "controls_sha256": null,
+      "environment": null,
+      "recorded_at": null,
+      "command": null,
+      "exit_code": null,
+      "artifacts": [],
+      "reviewer": null,
+      "limitations": [
+        "Planning record only; no runtime or outcome evidence collected."
+      ],
+      "requirements": [
+        "R14",
+        "R15",
+        "R19"
+      ],
+      "planned_test_ids": [
+        "T30",
+        "T57"
+      ],
+      "planned_workflow_ids": [
+        "W24"
+      ],
+      "planned_persona_ids": [
+        "P01",
+        "P05",
+        "P06",
+        "P09"
+      ],
+      "test_results": [],
+      "coverage_manifest_sha256": null
+    }
+  ]
+}

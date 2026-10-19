@@ -1,0 +1,21 @@
+{
+  "status": "PASS_UNDER_REPLAY_CONDITIONS",
+  "recorded_at": "2026-10-16T12:07:31.434212+00:00",
+  "cases": 142,
+  "recorded_phases": 426,
+  "original_case_order_and_command_preserved": true,
+  "source_inputs": 626,
+  "source_unchanged": true,
+  "cohort_bound_seconds": 900,
+  "worker_wall_ms": 750,
+  "case_exclusions": [],
+  "database_cleanup_verified": true,
+  "local_sdk_sends": 180251,
+  "blocked_sdk_sends": 0,
+  "failures": [],
+  "original_full_failure_retained": true,
+  "original_full_gate": "FAIL",
+  "cause": "UNKNOWN; a replay result alone is not a causal diagnosis or product fix",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

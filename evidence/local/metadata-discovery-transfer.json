@@ -1,0 +1,244 @@
+{
+  "status": "GUARDED_TRANSFER_COMPLETE_NOT_FULL_WORKFLOW_ACCEPTANCE",
+  "origin_inputs": 608,
+  "canonical_inputs": 614,
+  "transferred": [
+    {
+      "path": "services/api/proofpack/evidence/inventory.py",
+      "sha256": "f0e9a07f76eb39525f85dfb05e28f65f820c365945359905c9b02c49c6b44d75"
+    },
+    {
+      "path": "services/api/proofpack/evidence/replay_lineage.py",
+      "sha256": "584bf9f44fa7ac9765d8adb92de4fd5565714910b86759f120575a305470ad38"
+    },
+    {
+      "path": "services/api/proofpack/evidence/repository.py",
+      "sha256": "5300169eb399a3178f4b253f1073754dc36d3b76380810e6e55f28cd6ff003df"
+    },
+    {
+      "path": "tests/integration/test_inventory_readset_store.py",
+      "sha256": "805c71d6782afed3fad06fc64c4d41197a34437abf7ce706a8658ee3647ed7d9"
+    },
+    {
+      "path": "tests/integration/test_replay_copy_lineage_store.py",
+      "sha256": "92bbd132ef41688f7021395c3d1d8cef407cf4130ce09a9def7e8f897cb884ec"
+    },
+    {
+      "path": "tests/unit/test_discovery_combined.py",
+      "sha256": "3bcccfc05ab713cd65a3caefd2d8c1dd0a19bca43f407dba2b22550124a90b0c"
+    },
+    {
+      "path": "tests/unit/test_inventory_readset.py",
+      "sha256": "60fe1e44e3b04f3412745920107b47348163167f01c8bdc3b316e17ece67cae9"
+    },
+    {
+      "path": "tests/unit/test_replay_copy_lineage.py",
+      "sha256": "a5d400a12d3ab4c79c710b0796eac57b77c2399fdfe81235fa70a36dd6351b76"
+    }
+  ],
+  "source_matches_installed_candidate": true,
+  "prior_source_inputs_preserved": 608,
+  "preserved_receipt_hashes": [
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-client-before-execution.json",
+      "sha256": "69a0b8e34a157ad8f0c30c80646587483c9cd0e68be83b29214934a4c2ebb3e5"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-client-before-process.json",
+      "sha256": "eef6534ba29c2a8bb74975253002421b17bfe4fc3944dadf632a08a13b53d306"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-client-before-v2-execution.json",
+      "sha256": "282ee85aeb41f9fe68918786f92d9ded55e69caf1da57dc4d5d00f049c7f4dfe"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-client-before-v2-process.json",
+      "sha256": "b291ef0664a3949a0763f8a31e44b9b56046f235e8c41af44f89210235ed0ba9"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-client-before-v2.log",
+      "sha256": "4f744a51d42fcd6155a8ff3703e627fa4f2617f88caa39a19ea1024cc277e810"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-client-before-v2.xml",
+      "sha256": "421bdfe8ec95115e279530455dee0ba71058ff807780e5871549e066bea845b7"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-client-before.log",
+      "sha256": "9a1d2b9a6fd2aae01e67da8a4465e56fa6b3dcc50be528dfcbedb86fb8b765a7"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-client-before.xml",
+      "sha256": "727b931e6e6de5260cf6441ae2cd073b68a98cd2d5c3f3e9f06ab60630522921"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-installed-v1-child.json",
+      "sha256": "b39f90f9bd4896bf99d836d9a40a9a6f168dc4537d8d52e0fc4e9da128a932b2"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-installed-v1-database.json",
+      "sha256": "afc827f16f3355a422e43bfa14ecbc4823910b3ceb4c5bea65cbc094764e6c36"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-installed-v1-database.log",
+      "sha256": "3cbe90bb47370df1a1e9318b0fa1457d278220e1c7d9f51312b51ce81a3f6453"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-installed-v1-execution.json",
+      "sha256": "7eaa73ccb65d6e1df0f0ad1903a952911275b2832c688f153e246b3583f32ad3"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-installed-v1-install.log",
+      "sha256": "1a59eaab6fc13383aa5da387ef0ad8fd78180e70cfdbf1054a82c0055c0559db"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-installed-v1-process.json",
+      "sha256": "f91a49809112a7c9de855c64bf912921a1479615804826438e11262954131658"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-installed-v1.log",
+      "sha256": "97f62104905d1941c6d2f7f48e474e2693dacd5e49decd1a007ddbb02bd9cc07"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-installed-v1.xml",
+      "sha256": "d460bce02e7951f9e437b2c56239b272d78c597dc6f2f20b921c2d2f6d8e726b"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-native-collection-execution.json",
+      "sha256": "b50e5dfb75947c904f615f0a2c6b4ecf4911c8acf3e8cc6731a6c63c72f3d819"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-native-collection-process.json",
+      "sha256": "8b02083cd791a80f66667beff28c6f6dc8aa9cbcf9504fbe74b23e2084482978"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-native-collection.log",
+      "sha256": "afadbb84a39dd4efe7ec6a070a52ef7d7d4687fe8affe7a96aecc11353e62eda"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-native-collection.xml",
+      "sha256": "c0f9ddebd6e2e0c1a17ebbd30faf525f562e0dafce5a07034ac7ea65f4d6f04d"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-package-v1-build.log",
+      "sha256": "d683d6cf955523f54fd348614f8116ccca9c85b657065f256cbcbe3de32be77f"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-package-v1-child.json",
+      "sha256": "c782325c66eb8b0e8fc6ad7d39db78aa5187ceeebe0ffd40e42f4eea16170d64"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-package-v1-execution.json",
+      "sha256": "5e05211e3020efae92923ad111d9b4b22a89ad61aa3d2e735b49c6b489e6cb0f"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-package-v1-install.log",
+      "sha256": "1a59eaab6fc13383aa5da387ef0ad8fd78180e70cfdbf1054a82c0055c0559db"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-package-v1-process.json",
+      "sha256": "5604fae158bd1ec044f8b657d8ac872a3cb8dbb19142314ccd2c282e061d41b8"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-package-v1.log",
+      "sha256": "cc9312e424f128992516eb5cc74e287f649e1fd45053d5a69223b48ec3626852"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-package-v1.xml",
+      "sha256": "6e6276599dd014b4b0c1323b64c108ae054d1b0487cd1821e4d1eeca8bf08f8f"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-selected-collection-execution.json",
+      "sha256": "038d9137e4de2790357e5d20082b981d69b7a14b8c85d85cdeda1c18775d25ea"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-selected-collection-process.json",
+      "sha256": "c6a35ce542f4f59354cd3795d38b0f726b2247df1649a82b81894406d721a0c7"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-selected-collection.log",
+      "sha256": "60b22f3d4702b4e74eb398c6daa09fee7c2a779d5fcb6b6fd1f71b0369aed163"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-selected-collection.xml",
+      "sha256": "b7dad76e6042b61b0eb6b839d87755531cacdb23e137190edd8f69827fdf2c06"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-v1-execution.json",
+      "sha256": "543c58c10d54db64306df61abe8fc443511e3d01807f0c8debf23dbe2725060b"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-v1-process.json",
+      "sha256": "5b5ac94c4cc46d339894980ac8d6a73e76cb74ac44bb12411cfa87c260e101ca"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-v1.log",
+      "sha256": "e14e227c054f5757b7ff3fb681b627db16d749b5d76122b2bf5c0b377158fdfd"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-combined-v1.xml",
+      "sha256": "3db498fe6fe9c9c2cc5a01ec3e180021208a61c7ae45e28e8a4477a093a7051e"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-lineage-combined-native-database.json",
+      "sha256": "5facebd6cfebe01ad42a248ea85c235e697f23d8aa75903277d7031eaba30fe1"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-lineage-combined-native-database.log",
+      "sha256": "ece3952d92f6219465cbb88f77477145e3b33a4676c9404897e3d12e62b88b9f"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-lineage-combined-native-execution.json",
+      "sha256": "87101c7d7554df8a077640d7bb75c1d9f1dc6a133a91275f9f53c16cac386c3f"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-lineage-combined-native-execution.json.sdk.json",
+      "sha256": "3049502f422a0f37fc963fbf529b10b356fc6bfa8951a5fd97be5ab41d82b13d"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-lineage-combined-native-process.json",
+      "sha256": "b84b137ab113049e74861e05b2d2b014e384ab610664ed6f60656bf7bb0fdae0"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-lineage-combined-native.log",
+      "sha256": "e8dc9f11708f3b861319e828372fa3e64a0926ed36c179c35d0c50944d2c8d9f"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/working/evidence/local/metadata-lineage-combined-native.xml",
+      "sha256": "07d1790f0eacb7dba84c8c56f9cd760cd3ebe419e19acc18e5e87efe1e5bfcbd"
+    },
+    {
+      "source": "evidence/local/metadata-discovery-candidate-verification.json",
+      "sha256": "d01291a9161fe46385446025e13def446fb5235e0516a73765c93654a8540571"
+    },
+    {
+      "source": "evidence/local/metadata-discovery-combined-verification.json",
+      "sha256": "8cb805b21430d08c6ca372708dc2ca863d63b6ac17753a8827fa834324fb8b13"
+    },
+    {
+      "source": "evidence/local/metadata-shared-groups-full-terminal-verification.json",
+      "sha256": "75b34743b799b70de10b532a360cfa72a1978c5a1b10faf824a3ae25a866f90e"
+    },
+    {
+      "source": "evidence/local/metadata-shared-groups-full-process.json",
+      "sha256": "8c610c04619fc6fbd9064686cadd747ef42466f0a82ae8719fbf63b9b4cf9df9"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/record.json",
+      "sha256": "0d018b168632593ac6ac978a4da76aced91d1960d584ce816bfdfd498c4872d3"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/subject.json",
+      "sha256": "d01f595d4ed574b84f789c9dca94639263a84e626c715bbb0d248a62a4479fc9"
+    },
+    {
+      "source": ".loop/repairs/metadata-discovery-combined/ledger-4.json",
+      "sha256": "1ff109eb4723fd9c6f272ad4d87a19d4cf2abe335687111e867b208bfdc7fe6d"
+    }
+  ],
+  "backup": ".loop/repairs/metadata-discovery-combined/integration-baseline",
+  "prior_full_regression_now_historical": true,
+  "canonical_selected_verification": "PENDING",
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

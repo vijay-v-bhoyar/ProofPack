@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-10-18T06:30:48.313662+00:00",
+  "status": "PASS_CURRENT_CAMERA_COMPLETION_REPAIR_SCOPE_ONLY",
+  "subject_id": "working-tree-manifest-sha256:dc4fb3dffbc61397e42b8e95428c8c1a7573c0ea9ad148597fdfc5daddf64ed3",
+  "source_inputs": 740,
+  "finding": "CF01",
+  "new_unit_cases": 21,
+  "related_unit_cases_including_same21": 57,
+  "installed_support_cases": 92,
+  "installed_support_phases": 276,
+  "public_returns": 93,
+  "native_local_sdk_sends": 19424,
+  "external_sends": 0,
+  "browser_cases": 399,
+  "browser_files": 16,
+  "all_owned_resources_cleaned": true,
+  "wheel_sha256": "1d702b98db70c078337a193c356f3c87741351d1ff393cf349e26d153cb6f20d",
+  "backend_files": 146,
+  "frontend_assets": 3,
+  "complete_python_collection": 5278,
+  "complete_python_execution": "NOT_RUN",
+  "remaining": [
+    "Original OP-F01/OP-F02/CB-F01 browser causes UNKNOWN",
+    "Complete5278 regression NOT_RUN",
+    "Full metadata/D11/provider/physical/human workflows unfinished"
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

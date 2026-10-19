@@ -1,0 +1,8 @@
+{
+  "all_original_function_assertion_asts_unchanged": true,
+  "race_oracle_byte_identical": true,
+  "independent_review": false,
+  "transport_change": "Explicit JSON header and ByteStream match existing test_cognito framing; no production reader change.",
+  "http_change": "Supply exact existing fenced runtime/admission/resource-owner dependencies; no removed fence or weakened validation.",
+  "initial_baseline_limit": "Original25 missing-module failures retained. Original eager-response fixture cannot pass its signed-transport cases unchanged; do not claim whole-file unchanged acceptance or independent replacement approval."
+}

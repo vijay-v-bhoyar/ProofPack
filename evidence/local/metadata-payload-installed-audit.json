@@ -1,0 +1,31 @@
+{
+  "scope": "exact-payload-erasure-storage criterion only",
+  "status": "PASS_FOR_STATED_SCOPE",
+  "recorded_at": "2026-10-15T21:47:58.339640+00:00",
+  "subject": {
+    "product": "ProofPack",
+    "target": "owned local emulator and offline wheel; no provider, physical or human acceptance",
+    "revision": "f75e44a91fd729ae0f27d9ebb32b486834b1fc0e9310dd80672d65ba1d19350a",
+    "configuration": "unchanged local storage limits; controls 8ce375fb8e0b4d5a99d1bd24f0084716c5dd9e299deff176012d846113ec512f"
+  },
+  "installed_cases": 52,
+  "phases": 156,
+  "logical_cases": 51,
+  "literal_archived_oracle": "PASS unchanged; one overlapping logical case",
+  "loaded_installed_modules": 95,
+  "local_sdk_sends": 142,
+  "external_sdk_sends": "PROHIBITED",
+  "database_receipts_isolated": true,
+  "cleanup": true,
+  "current_source_and_snapshot_bytes_match": true,
+  "full_suite_status": "IN_PROGRESS",
+  "parent_complete": false,
+  "authority": "none",
+  "beta_decision": "NO_GO",
+  "limitations": [
+    "Same operator; no independent human assurance.",
+    "No full metadata cleanup service/API/UI or restore journal.",
+    "Full regression remains separately pending; this does not accept all affected workflows.",
+    "No actual provider, physical specimens, operators or operational deletion."
+  ]
+}

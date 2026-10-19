@@ -1,0 +1,1450 @@
+{
+  "id": "metadata-dataset-groups",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "W20.shared-dataset-group-pure-contract",
+    "W20.shared-dataset-group-actor-refs",
+    "W20.shared-dataset-group-native-installed"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "missing-shared-group-parser",
+      "criterion": "W20.shared-dataset-group-pure-contract",
+      "category": "product",
+      "hypothesis": "Implement bounded supplied group creation/declassification pairing, raw dataset/source revalidation, shared dependencies and immutable outputs.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "c38c43a257a416fc1c113f0db7c8e274c97831d1ac94b5c4f9a917ad3aff0ac3",
+          "configuration": "two group generations; exact typed source/actor references; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:45:12.902504+00:00",
+        "expires": "2026-10-17T06:45:12.902504+00:00",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-q",
+          "tests/unit/test_dataset_group_lineage.py",
+          "--junitxml=../group-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "group-before.log",
+          "sha256": "f7e7744e5c310198f011d7c9c14458ae0fe6632b698316903f9c567f2bda21d1"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "missing-shared-group-parser",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Implement bounded supplied group creation/declassification pairing, raw dataset/source revalidation, shared dependencies and immutable outputs.",
+      "changes": [
+        {
+          "path": "group-history-v1/services/api/proofpack/evidence/dataset_group_lineage.py",
+          "sha256": "d00759411b503c05f1c9acf1d0a70fb65ceb6b7544b1431c7d50b7ec67cb028b"
+        },
+        {
+          "path": "group-history-v1/tests/unit/test_dataset_group_lineage.py",
+          "sha256": "345cd2b4a0edb822e96cfa0769d5413cd8698dcfff9057a7eaaa3bb1b87bdce6"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-shared-group-parser",
+      "criteria": [
+        "W20.shared-dataset-group-pure-contract"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "db4eb786ab45fb0f328fb3f564909092c49369c9b6cc3db89cb88e3fd84640f4",
+          "configuration": "two group generations; exact typed source/actor references; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:45:12.902504+00:00",
+        "expires": "2026-10-17T06:45:12.902504+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-actors-and-sharing-fixed",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 337,
+        "output": {
+          "path": "working/evidence/local/metadata-group-actors-and-sharing-fixed.log",
+          "sha256": "8903effca4c0813b043bfdb140f68672b50e2e0d38674d2839ba4bbc4d204d7a"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v1/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "d00759411b503c05f1c9acf1d0a70fb65ceb6b7544b1431c7d50b7ec67cb028b"
+          },
+          {
+            "path": "group-history-v1/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "345cd2b4a0edb822e96cfa0769d5413cd8698dcfff9057a7eaaa3bb1b87bdce6"
+          },
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "db4eb786ab45fb0f328fb3f564909092c49369c9b6cc3db89cb88e3fd84640f4",
+          "configuration": "two group generations; exact typed source/actor references; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:45:12.902504+00:00",
+        "expires": "2026-10-17T06:45:12.902504+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-actors-and-sharing-fixed",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 337,
+        "output": {
+          "path": "working/evidence/local/metadata-group-actors-and-sharing-fixed.log",
+          "sha256": "8903effca4c0813b043bfdb140f68672b50e2e0d38674d2839ba4bbc4d204d7a"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v1/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "d00759411b503c05f1c9acf1d0a70fb65ceb6b7544b1431c7d50b7ec67cb028b"
+          },
+          {
+            "path": "group-history-v1/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "345cd2b4a0edb822e96cfa0769d5413cd8698dcfff9057a7eaaa3bb1b87bdce6"
+          },
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "ambiguous-or-malformed-declassification-actor",
+      "criterion": "W20.shared-dataset-group-actor-refs",
+      "category": "product",
+      "hypothesis": "Require exactly one canonical acting user UUID reference with the recorded session; preserve runtime/DATA/group checks without claiming authenticated historical owner approval.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "2e03341e267e8a72689dd595c90c4084be84e7518d21ea5e81476d8e29ad0821",
+          "configuration": "two group generations; exact typed source/actor references; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:45:12.902504+00:00",
+        "expires": "2026-10-17T06:45:12.902504+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-actor-before",
+          "tests/unit/test_dataset_group_lineage.py::test_declassification_actor_requires_one_canonical_user_reference"
+        ],
+        "exit_code": 1,
+        "assertions": 2,
+        "output": {
+          "path": "working/evidence/local/metadata-group-actor-before.log",
+          "sha256": "a35ce400efa61eac357d6140759bfdece34492557b50e5bf295134ac493a7f1a"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "before/group-before-actor-refs.py",
+            "sha256": "7251109722e192f0c690111b0a26f7837011cd1393c7ab6790521eb631d5bd2f"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "ambiguous-or-malformed-declassification-actor",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Require exactly one canonical acting user UUID reference with the recorded session; preserve runtime/DATA/group checks without claiming authenticated historical owner approval.",
+      "changes": [
+        {
+          "path": "group-history-v1/services/api/proofpack/evidence/dataset_group_lineage.py",
+          "sha256": "d00759411b503c05f1c9acf1d0a70fb65ceb6b7544b1431c7d50b7ec67cb028b"
+        },
+        {
+          "path": "group-history-v1/tests/unit/test_dataset_group_lineage.py",
+          "sha256": "345cd2b4a0edb822e96cfa0769d5413cd8698dcfff9057a7eaaa3bb1b87bdce6"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "ambiguous-or-malformed-declassification-actor",
+      "criteria": [
+        "W20.shared-dataset-group-actor-refs"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "db4eb786ab45fb0f328fb3f564909092c49369c9b6cc3db89cb88e3fd84640f4",
+          "configuration": "two group generations; exact typed source/actor references; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:45:12.902504+00:00",
+        "expires": "2026-10-17T06:45:12.902504+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-actors-and-sharing-fixed",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 337,
+        "output": {
+          "path": "working/evidence/local/metadata-group-actors-and-sharing-fixed.log",
+          "sha256": "8903effca4c0813b043bfdb140f68672b50e2e0d38674d2839ba4bbc4d204d7a"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v1/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "d00759411b503c05f1c9acf1d0a70fb65ceb6b7544b1431c7d50b7ec67cb028b"
+          },
+          {
+            "path": "group-history-v1/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "345cd2b4a0edb822e96cfa0769d5413cd8698dcfff9057a7eaaa3bb1b87bdce6"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "db4eb786ab45fb0f328fb3f564909092c49369c9b6cc3db89cb88e3fd84640f4",
+          "configuration": "two group generations; exact typed source/actor references; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:45:12.902504+00:00",
+        "expires": "2026-10-17T06:45:12.902504+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-actors-and-sharing-fixed",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 337,
+        "output": {
+          "path": "working/evidence/local/metadata-group-actors-and-sharing-fixed.log",
+          "sha256": "8903effca4c0813b043bfdb140f68672b50e2e0d38674d2839ba4bbc4d204d7a"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v1/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "d00759411b503c05f1c9acf1d0a70fb65ceb6b7544b1431c7d50b7ec67cb028b"
+          },
+          {
+            "path": "group-history-v1/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "345cd2b4a0edb822e96cfa0769d5413cd8698dcfff9057a7eaaa3bb1b87bdce6"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "missing-shared-group-parser",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Retain supplied-history/actor constraints on the current request-intent implementation; all three group categories and original oracles are verified together.",
+      "changes": [
+        {
+          "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+          "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+        },
+        {
+          "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+          "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-shared-group-parser",
+      "criteria": [
+        "W20.shared-dataset-group-pure-contract"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "aae5301b876f7540adc7330bb9ffe1d71681d9503863bbadfd15bf93bf93809e",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:01:24.786527+00:00",
+        "expires": "2026-10-17T07:01:24.786527+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-complete-pure-v2",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-complete-pure-v2.log",
+          "sha256": "8ff48f83fd1183e2d354156a0f467e139b12e675a4723abb5515a5583aff2e4e"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "aae5301b876f7540adc7330bb9ffe1d71681d9503863bbadfd15bf93bf93809e",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:01:24.786527+00:00",
+        "expires": "2026-10-17T07:01:24.786527+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-complete-pure-v2",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-complete-pure-v2.log",
+          "sha256": "8ff48f83fd1183e2d354156a0f467e139b12e675a4723abb5515a5583aff2e4e"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "ambiguous-or-malformed-declassification-actor",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Retain supplied-history/actor constraints on the current request-intent implementation; all three group categories and original oracles are verified together.",
+      "changes": [
+        {
+          "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+          "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+        },
+        {
+          "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+          "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "ambiguous-or-malformed-declassification-actor",
+      "criteria": [
+        "W20.shared-dataset-group-actor-refs"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "aae5301b876f7540adc7330bb9ffe1d71681d9503863bbadfd15bf93bf93809e",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:01:24.786527+00:00",
+        "expires": "2026-10-17T07:01:24.786527+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-complete-pure-v2",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-complete-pure-v2.log",
+          "sha256": "8ff48f83fd1183e2d354156a0f467e139b12e675a4723abb5515a5583aff2e4e"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "aae5301b876f7540adc7330bb9ffe1d71681d9503863bbadfd15bf93bf93809e",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:01:24.786527+00:00",
+        "expires": "2026-10-17T07:01:24.786527+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-complete-pure-v2",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-complete-pure-v2.log",
+          "sha256": "8ff48f83fd1183e2d354156a0f467e139b12e675a4723abb5515a5583aff2e4e"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "unmaterialized-selected-label-cannot-link-to-existing-group",
+      "criterion": "W20.shared-dataset-group-pure-contract",
+      "category": "product",
+      "hypothesis": "The first parser requires a copied group row and rejects a valid queued dataset whose exact requested label supplies the association.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "1aaa20ea9176a54930e130dc5cde3cb5ac553cc275de8e8fe04d97a297e1e656",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:01:24.786527+00:00",
+        "expires": "2026-10-17T07:01:24.786527+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-request-before",
+          "tests/unit/test_dataset_group_lineage.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "working/evidence/local/metadata-group-request-before.log",
+          "sha256": "24f79deb24f922cd29fd9460e05d53159dd49f34c703388e3e278741af5e7f77"
+        },
+        "oracle": {
+          "path": "before/original-group-request-oracle.py",
+          "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+        },
+        "artifacts": [
+          {
+            "path": "before/group-before-request-intents.py",
+            "sha256": "d00759411b503c05f1c9acf1d0a70fb65ceb6b7544b1431c7d50b7ec67cb028b"
+          },
+          {
+            "path": "before/original-group-request-oracle.py",
+            "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "unmaterialized-selected-label-cannot-link-to-existing-group",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Revalidate raw datasets first, derive requested group links only from admitted immutable label targets, forward unresolved intents without invented hashes and still require the original creator.",
+      "changes": [
+        {
+          "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+          "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+        },
+        {
+          "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+          "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "unmaterialized-selected-label-cannot-link-to-existing-group",
+      "criteria": [
+        "W20.shared-dataset-group-pure-contract"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "aae5301b876f7540adc7330bb9ffe1d71681d9503863bbadfd15bf93bf93809e",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:01:24.786527+00:00",
+        "expires": "2026-10-17T07:01:24.786527+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-complete-pure-v2",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-complete-pure-v2.log",
+          "sha256": "8ff48f83fd1183e2d354156a0f467e139b12e675a4723abb5515a5583aff2e4e"
+        },
+        "oracle": {
+          "path": "before/original-group-request-oracle.py",
+          "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-request-oracle.py",
+            "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "aae5301b876f7540adc7330bb9ffe1d71681d9503863bbadfd15bf93bf93809e",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:01:24.786527+00:00",
+        "expires": "2026-10-17T07:01:24.786527+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-complete-pure-v2",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-complete-pure-v2.log",
+          "sha256": "8ff48f83fd1183e2d354156a0f467e139b12e675a4723abb5515a5583aff2e4e"
+        },
+        "oracle": {
+          "path": "before/original-group-request-oracle.py",
+          "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-request-oracle.py",
+            "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-shared-group-parser",
+      "criteria": [
+        "W20.shared-dataset-group-pure-contract"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:12:48.230375+00:00",
+        "expires": "2026-10-17T07:12:48.230375+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-native-prepared-pure",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-native-prepared-pure.log",
+          "sha256": "09c16832e28c095e63d6bc7ccf68f7af4c921fe0df5db3251d7df9db96c377c6"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:12:48.230375+00:00",
+        "expires": "2026-10-17T07:12:48.230375+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-native-prepared-pure",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-native-prepared-pure.log",
+          "sha256": "09c16832e28c095e63d6bc7ccf68f7af4c921fe0df5db3251d7df9db96c377c6"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "verify",
+      "failure_id": "ambiguous-or-malformed-declassification-actor",
+      "criteria": [
+        "W20.shared-dataset-group-actor-refs"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:12:48.230375+00:00",
+        "expires": "2026-10-17T07:12:48.230375+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-native-prepared-pure",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-native-prepared-pure.log",
+          "sha256": "09c16832e28c095e63d6bc7ccf68f7af4c921fe0df5db3251d7df9db96c377c6"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:12:48.230375+00:00",
+        "expires": "2026-10-17T07:12:48.230375+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-native-prepared-pure",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-native-prepared-pure.log",
+          "sha256": "09c16832e28c095e63d6bc7ccf68f7af4c921fe0df5db3251d7df9db96c377c6"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "verify",
+      "failure_id": "unmaterialized-selected-label-cannot-link-to-existing-group",
+      "criteria": [
+        "W20.shared-dataset-group-pure-contract"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:12:48.230375+00:00",
+        "expires": "2026-10-17T07:12:48.230375+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-native-prepared-pure",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-native-prepared-pure.log",
+          "sha256": "09c16832e28c095e63d6bc7ccf68f7af4c921fe0df5db3251d7df9db96c377c6"
+        },
+        "oracle": {
+          "path": "before/original-group-request-oracle.py",
+          "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-request-oracle.py",
+            "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated supplied shared-group parser; native/aggregate verification pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "two generations, exact actor/source refs and preserved unmaterialized request intents; pure verification only"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:12:48.230375+00:00",
+        "expires": "2026-10-17T07:12:48.230375+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in shared-group pure verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\nraise SystemExit(pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',*sys.argv[3:],'--junitxml='+str(root/'evidence/local'/ (sys.argv[2]+'.xml'))]))\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "metadata-group-native-prepared-pure",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py"
+        ],
+        "exit_code": 0,
+        "assertions": 344,
+        "output": {
+          "path": "working/evidence/local/metadata-group-native-prepared-pure.log",
+          "sha256": "09c16832e28c095e63d6bc7ccf68f7af4c921fe0df5db3251d7df9db96c377c6"
+        },
+        "oracle": {
+          "path": "before/original-group-request-oracle.py",
+          "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "before/original-group-request-oracle.py",
+            "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-shared-group-parser",
+      "criteria": [
+        "W20.shared-dataset-group-pure-contract",
+        "W20.shared-dataset-group-native-installed"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied shared-group history; aggregate cleanup remains pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "a45f0f5ada4403e4a4214b8ff1b8820992502459dd924d4b61d6dd19727b4c93"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:24:07.735215+00:00",
+        "expires": "2026-10-17T07:24:07.735215+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_group_lineage_store.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working\\evidence\\local\\metadata-lineage-group-regression.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 356,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-group-regression.log",
+          "sha256": "c9479af5485d3b268a22d0525f0bf5b41195f0314574ebcd1c65549dbe05559a"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "group-native-v1/tests/integration/test_dataset_group_lineage_store.py",
+            "sha256": "86296f4c64b6f562e067541e740f603b7c73235cab4d093b956e5576f0e8a8ce"
+          },
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied shared-group history; aggregate cleanup remains pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "a45f0f5ada4403e4a4214b8ff1b8820992502459dd924d4b61d6dd19727b4c93"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:24:07.735215+00:00",
+        "expires": "2026-10-17T07:24:07.735215+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib,json,os\nfrom urllib.parse import urlsplit\nsite=pathlib.Path(sys.argv[1]).resolve();root=pathlib.Path(sys.argv[2]).resolve();endpoint=urlsplit(sys.argv[3])\nsys.path[:0]=[str(site),str(root/'tests/integration'),str(root/'scripts'),str(root/'tests/unit'),str(root/'.loop/repairs/metadata-payload-erasure')]\nimport botocore.httpsession\nsend=botocore.httpsession.URLLib3Session.send\ncalls=[]\ndef local_only(self,request):\n    target=urlsplit(request.url)\n    assert (target.scheme,target.hostname,target.port)==(endpoint.scheme,endpoint.hostname,endpoint.port),'external SDK send prohibited'\n    calls.append(True)\n    return send(self,request)\nbotocore.httpsession.URLLib3Session.send=local_only\nimport pytest\ncode=pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',\n    str(root/'tests/unit/test_dataset_group_lineage.py'),\n    str(root/'tests/unit/test_dataset_lineage.py'),\n    str(root/'tests/unit/test_label_lineage.py'),\n    str(root/'tests/unit/test_improvement_lineage.py'),\n    str(root/'tests/unit/test_resource_lineage_reader.py'),\n    str(root/'tests/integration/test_dataset_group_lineage_store.py'),\n    str(root/'../before/original-group-creation-oracle.py'),\n    str(root/'../before/original-group-actor-oracles.py')+'::test_declassification_actor_requires_one_canonical_user_reference',\n    str(root/'../before/original-group-request-oracle.py')+'::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents',\n    '--junitxml='+str(root/'evidence/local/metadata-group-installed-v1.xml')])\nmodules=[]\nfor name,module in tuple(sys.modules.items()):\n    if name=='proofpack' or name.startswith('proofpack.'):\n        filename=getattr(module,'__file__',None)\n        if filename:\n            path=pathlib.Path(filename).resolve();assert path.is_relative_to(site),(name,str(path))\n            modules.append({'name':name,'path':path.relative_to(site).as_posix()})\nassert calls,'owned local database must actually be used'\nimport cv2\nassert cv2.__version__.split('.')[0]=='5','OpenCV 5 required for the synthetic media fixture'\n(root/'evidence/local/metadata-group-installed-v1-child.json').write_text(json.dumps({'exit_code':code,\n    'installed_modules':modules,'local_sdk_sends':len(calls),'external_sdk_sends':'PROHIBITED','opencv_version':cv2.__version__,\n    'oracle':'provided shared-group/raw dataset history, actual declassification/consumer/request paths and literal original oracles; includes overlaps'},indent=2)+'\\n',encoding='utf-8')\nraise SystemExit(code)\n",
+          "C:\\Users\\vijay\\AppData\\Local\\Temp\\proofpack-erasure-installed-b38ua6g4\\site",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "http://127.0.0.1:50455"
+        ],
+        "exit_code": 0,
+        "assertions": 356,
+        "output": {
+          "path": "working/evidence/local/metadata-group-installed-v1.log",
+          "sha256": "dc0e6d0d22f28cd9c809fd235a4436dc7e7cd1a271e10d91cbd2f966d4b4d255"
+        },
+        "oracle": {
+          "path": "before/original-group-creation-oracle.py",
+          "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "group-native-v1/tests/integration/test_dataset_group_lineage_store.py",
+            "sha256": "86296f4c64b6f562e067541e740f603b7c73235cab4d093b956e5576f0e8a8ce"
+          },
+          {
+            "path": "before/original-group-creation-oracle.py",
+            "sha256": "67f91d841760698670dff3954f418e005e80f6bd7414fd1afd0106b405301d15"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "verify",
+      "failure_id": "ambiguous-or-malformed-declassification-actor",
+      "criteria": [
+        "W20.shared-dataset-group-actor-refs",
+        "W20.shared-dataset-group-native-installed"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied shared-group history; aggregate cleanup remains pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "a45f0f5ada4403e4a4214b8ff1b8820992502459dd924d4b61d6dd19727b4c93"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:24:07.735215+00:00",
+        "expires": "2026-10-17T07:24:07.735215+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_group_lineage_store.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working\\evidence\\local\\metadata-lineage-group-regression.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 356,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-group-regression.log",
+          "sha256": "c9479af5485d3b268a22d0525f0bf5b41195f0314574ebcd1c65549dbe05559a"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "group-native-v1/tests/integration/test_dataset_group_lineage_store.py",
+            "sha256": "86296f4c64b6f562e067541e740f603b7c73235cab4d093b956e5576f0e8a8ce"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied shared-group history; aggregate cleanup remains pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "a45f0f5ada4403e4a4214b8ff1b8820992502459dd924d4b61d6dd19727b4c93"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:24:07.735215+00:00",
+        "expires": "2026-10-17T07:24:07.735215+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib,json,os\nfrom urllib.parse import urlsplit\nsite=pathlib.Path(sys.argv[1]).resolve();root=pathlib.Path(sys.argv[2]).resolve();endpoint=urlsplit(sys.argv[3])\nsys.path[:0]=[str(site),str(root/'tests/integration'),str(root/'scripts'),str(root/'tests/unit'),str(root/'.loop/repairs/metadata-payload-erasure')]\nimport botocore.httpsession\nsend=botocore.httpsession.URLLib3Session.send\ncalls=[]\ndef local_only(self,request):\n    target=urlsplit(request.url)\n    assert (target.scheme,target.hostname,target.port)==(endpoint.scheme,endpoint.hostname,endpoint.port),'external SDK send prohibited'\n    calls.append(True)\n    return send(self,request)\nbotocore.httpsession.URLLib3Session.send=local_only\nimport pytest\ncode=pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',\n    str(root/'tests/unit/test_dataset_group_lineage.py'),\n    str(root/'tests/unit/test_dataset_lineage.py'),\n    str(root/'tests/unit/test_label_lineage.py'),\n    str(root/'tests/unit/test_improvement_lineage.py'),\n    str(root/'tests/unit/test_resource_lineage_reader.py'),\n    str(root/'tests/integration/test_dataset_group_lineage_store.py'),\n    str(root/'../before/original-group-creation-oracle.py'),\n    str(root/'../before/original-group-actor-oracles.py')+'::test_declassification_actor_requires_one_canonical_user_reference',\n    str(root/'../before/original-group-request-oracle.py')+'::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents',\n    '--junitxml='+str(root/'evidence/local/metadata-group-installed-v1.xml')])\nmodules=[]\nfor name,module in tuple(sys.modules.items()):\n    if name=='proofpack' or name.startswith('proofpack.'):\n        filename=getattr(module,'__file__',None)\n        if filename:\n            path=pathlib.Path(filename).resolve();assert path.is_relative_to(site),(name,str(path))\n            modules.append({'name':name,'path':path.relative_to(site).as_posix()})\nassert calls,'owned local database must actually be used'\nimport cv2\nassert cv2.__version__.split('.')[0]=='5','OpenCV 5 required for the synthetic media fixture'\n(root/'evidence/local/metadata-group-installed-v1-child.json').write_text(json.dumps({'exit_code':code,\n    'installed_modules':modules,'local_sdk_sends':len(calls),'external_sdk_sends':'PROHIBITED','opencv_version':cv2.__version__,\n    'oracle':'provided shared-group/raw dataset history, actual declassification/consumer/request paths and literal original oracles; includes overlaps'},indent=2)+'\\n',encoding='utf-8')\nraise SystemExit(code)\n",
+          "C:\\Users\\vijay\\AppData\\Local\\Temp\\proofpack-erasure-installed-b38ua6g4\\site",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "http://127.0.0.1:50455"
+        ],
+        "exit_code": 0,
+        "assertions": 356,
+        "output": {
+          "path": "working/evidence/local/metadata-group-installed-v1.log",
+          "sha256": "dc0e6d0d22f28cd9c809fd235a4436dc7e7cd1a271e10d91cbd2f966d4b4d255"
+        },
+        "oracle": {
+          "path": "before/original-group-actor-oracles.py",
+          "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "group-native-v1/tests/integration/test_dataset_group_lineage_store.py",
+            "sha256": "86296f4c64b6f562e067541e740f603b7c73235cab4d093b956e5576f0e8a8ce"
+          },
+          {
+            "path": "before/original-group-actor-oracles.py",
+            "sha256": "7ca354e00d21574c9cd8e07fe65021caf73370fa57502946877e68363454da56"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "verify",
+      "failure_id": "unmaterialized-selected-label-cannot-link-to-existing-group",
+      "criteria": [
+        "W20.shared-dataset-group-pure-contract",
+        "W20.shared-dataset-group-native-installed"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied shared-group history; aggregate cleanup remains pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "a45f0f5ada4403e4a4214b8ff1b8820992502459dd924d4b61d6dd19727b4c93"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:24:07.735215+00:00",
+        "expires": "2026-10-17T07:24:07.735215+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_group_lineage.py",
+          "../before/original-group-creation-oracle.py",
+          "../before/original-group-actor-oracles.py::test_declassification_actor_requires_one_canonical_user_reference",
+          "../before/original-group-request-oracle.py::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_group_lineage_store.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working\\evidence\\local\\metadata-lineage-group-regression.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 356,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-group-regression.log",
+          "sha256": "c9479af5485d3b268a22d0525f0bf5b41195f0314574ebcd1c65549dbe05559a"
+        },
+        "oracle": {
+          "path": "before/original-group-request-oracle.py",
+          "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "group-native-v1/tests/integration/test_dataset_group_lineage_store.py",
+            "sha256": "86296f4c64b6f562e067541e740f603b7c73235cab4d093b956e5576f0e8a8ce"
+          },
+          {
+            "path": "before/original-group-request-oracle.py",
+            "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied shared-group history; aggregate cleanup remains pending",
+          "revision": "8fb365049b5cc41d7d69469d5ba48354547f5c53b97677333166f11d6fc60319",
+          "configuration": "a45f0f5ada4403e4a4214b8ff1b8820992502459dd924d4b61d6dd19727b4c93"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T07:24:07.735215+00:00",
+        "expires": "2026-10-17T07:24:07.735215+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib,json,os\nfrom urllib.parse import urlsplit\nsite=pathlib.Path(sys.argv[1]).resolve();root=pathlib.Path(sys.argv[2]).resolve();endpoint=urlsplit(sys.argv[3])\nsys.path[:0]=[str(site),str(root/'tests/integration'),str(root/'scripts'),str(root/'tests/unit'),str(root/'.loop/repairs/metadata-payload-erasure')]\nimport botocore.httpsession\nsend=botocore.httpsession.URLLib3Session.send\ncalls=[]\ndef local_only(self,request):\n    target=urlsplit(request.url)\n    assert (target.scheme,target.hostname,target.port)==(endpoint.scheme,endpoint.hostname,endpoint.port),'external SDK send prohibited'\n    calls.append(True)\n    return send(self,request)\nbotocore.httpsession.URLLib3Session.send=local_only\nimport pytest\ncode=pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=','-p','pytest_evidence',\n    str(root/'tests/unit/test_dataset_group_lineage.py'),\n    str(root/'tests/unit/test_dataset_lineage.py'),\n    str(root/'tests/unit/test_label_lineage.py'),\n    str(root/'tests/unit/test_improvement_lineage.py'),\n    str(root/'tests/unit/test_resource_lineage_reader.py'),\n    str(root/'tests/integration/test_dataset_group_lineage_store.py'),\n    str(root/'../before/original-group-creation-oracle.py'),\n    str(root/'../before/original-group-actor-oracles.py')+'::test_declassification_actor_requires_one_canonical_user_reference',\n    str(root/'../before/original-group-request-oracle.py')+'::test_unmaterialized_label_request_retains_its_group_link_and_unresolved_intents',\n    '--junitxml='+str(root/'evidence/local/metadata-group-installed-v1.xml')])\nmodules=[]\nfor name,module in tuple(sys.modules.items()):\n    if name=='proofpack' or name.startswith('proofpack.'):\n        filename=getattr(module,'__file__',None)\n        if filename:\n            path=pathlib.Path(filename).resolve();assert path.is_relative_to(site),(name,str(path))\n            modules.append({'name':name,'path':path.relative_to(site).as_posix()})\nassert calls,'owned local database must actually be used'\nimport cv2\nassert cv2.__version__.split('.')[0]=='5','OpenCV 5 required for the synthetic media fixture'\n(root/'evidence/local/metadata-group-installed-v1-child.json').write_text(json.dumps({'exit_code':code,\n    'installed_modules':modules,'local_sdk_sends':len(calls),'external_sdk_sends':'PROHIBITED','opencv_version':cv2.__version__,\n    'oracle':'provided shared-group/raw dataset history, actual declassification/consumer/request paths and literal original oracles; includes overlaps'},indent=2)+'\\n',encoding='utf-8')\nraise SystemExit(code)\n",
+          "C:\\Users\\vijay\\AppData\\Local\\Temp\\proofpack-erasure-installed-b38ua6g4\\site",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-groups\\working",
+          "http://127.0.0.1:50455"
+        ],
+        "exit_code": 0,
+        "assertions": 356,
+        "output": {
+          "path": "working/evidence/local/metadata-group-installed-v1.log",
+          "sha256": "dc0e6d0d22f28cd9c809fd235a4436dc7e7cd1a271e10d91cbd2f966d4b4d255"
+        },
+        "oracle": {
+          "path": "before/original-group-request-oracle.py",
+          "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+        },
+        "artifacts": [
+          {
+            "path": "group-history-v2/services/api/proofpack/evidence/dataset_group_lineage.py",
+            "sha256": "cb1274df3706fc33a8fca5a5c81917e6d67b4e2b98a6834c4a92ff7749eb8543"
+          },
+          {
+            "path": "group-history-v2/tests/unit/test_dataset_group_lineage.py",
+            "sha256": "dfa8b8e77a479e15137d63d31d10b7331273db7e2937916e2c1a243e9ecf781f"
+          },
+          {
+            "path": "group-native-v1/tests/integration/test_dataset_group_lineage_store.py",
+            "sha256": "86296f4c64b6f562e067541e740f603b7c73235cab4d093b956e5576f0e8a8ce"
+          },
+          {
+            "path": "before/original-group-request-oracle.py",
+            "sha256": "08eb1ab9fde3ee4cf782dc40beacde6d56e35e6651c7af651c8b2c9e4e3b4b53"
+          }
+        ]
+      }
+    }
+  ]
+}

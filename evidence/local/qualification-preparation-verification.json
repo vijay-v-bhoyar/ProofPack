@@ -1,0 +1,217 @@
+{
+  "status": "PASS_LOCAL_COMPONENT",
+  "recorded_at": "2026-10-15T06:57:35.947284+00:00",
+  "scope": "durable qualification-preparation service core and replay report-lifetime/delivery/signature fences only",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "primary_owner": "codex-product-build-loop",
+  "support": "agentic-product-assurance Change/Verify",
+  "subject_inputs": [
+    {
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "sha256": "ec134a3ca53072f62176d16bffbb06cdaec39faee899084e5453f76f3f9755f1"
+    },
+    {
+      "path": "services/api/proofpack/review/vision_replay.py",
+      "sha256": "5b805c797725025a5974e50052ddbd0b633e641d3acd1e6fbae63dbb21aca4cf"
+    },
+    {
+      "path": "services/api/proofpack/review/evaluations.py",
+      "sha256": "7632a4890a14b6e72d2a58f166b2cd41e37a1d44fbb08de569fa918f04b5e3fa"
+    },
+    {
+      "path": "services/api/proofpack/evidence/job_authority.py",
+      "sha256": "ce9b87bb1e14bfbbde8143043b37b829c14f969ac2e2f1302023811075693086"
+    },
+    {
+      "path": "services/api/proofpack/planner/contract_registry.py",
+      "sha256": "ea43531327c20fcd48dacdee346c68f71f218eb500b3032f4d0f1f2407f05c42"
+    },
+    {
+      "path": "services/api/proofpack/planner/contract_suite.py",
+      "sha256": "e247a18b9047c2a348b582120e090d29af60e2c89766bc1567c3045f613916ce"
+    },
+    {
+      "path": "tests/integration/test_qualification_preparation.py",
+      "sha256": "3c8a6b813648bb809107b0c1c30966ead71882d17515c927b4a0f74f2b416c40"
+    },
+    {
+      "path": "tests/integration/test_vision_replay.py",
+      "sha256": "8494c2cea6e23ac60cdef874cab4cb6485e5b471306d3b37992e8e4286264da1"
+    },
+    {
+      "path": "tests/unit/test_qualification_preparation_models.py",
+      "sha256": "1b009251b270c42cc613c57478c1b41eef4101c4c4ec5c72ec9f17718fbf3a50"
+    },
+    {
+      "path": "docs/controls.yaml",
+      "sha256": "9074402e7899f26fa7143e9603c48cbbdc2d323201b929e79d3f103384cb5a1c"
+    }
+  ],
+  "results": {
+    "preparation_before": {
+      "path": "evidence/local/qualification-preparation-first.xml",
+      "sha256": "7b83edbfda2cfef98b1c861d11986b2f3ea01f34bc7c76ee1e348080ce896c44",
+      "tests": 6,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "lifetime_before": {
+      "path": "evidence/local/vision-report-lifetime-before.xml",
+      "sha256": "32029d82906723d20ddbfadf4218efe5ab2b4ebc220cf4a03b6332f106d2a77a",
+      "tests": 2,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "delivery_before": {
+      "path": "evidence/local/qualification-preparation-lifetime-repaired.xml",
+      "sha256": "4e4613bc82cc9936847f683841eb098b8f859777b464af33b21c465b76e2c2ab",
+      "tests": 10,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "scope_before": {
+      "path": "evidence/local/qualification-preparation-scope-before.xml",
+      "sha256": "3160392ab6fe6a80bf104d0d0abce7ce18a00d06c6f53ca2e6d6bbf052002daa",
+      "tests": 22,
+      "failures": 6,
+      "errors": 0,
+      "skipped": 0
+    },
+    "models_repaired": {
+      "path": "evidence/local/qualification-preparation-models-final.xml",
+      "sha256": "c4abab500b4fc04df2ee1d9079f2d2e4871e0011624dc8fac06f0ca1613c141e",
+      "tests": 22,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "compatibility": {
+      "path": "evidence/local/qualification-preparation-core-final.xml",
+      "sha256": "b2922837ec4735363eacd81d40d7de2ee9cfb3700f0afa4dabb82016d607772c",
+      "tests": 108,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0
+    },
+    "lifecycle_final": {
+      "path": "evidence/local/qualification-preparation-lifecycle-final.xml",
+      "sha256": "4fb8bba19bc5a916bc912172f3d15a61a2c5a7f9b26a58130aaf8544fbddab91",
+      "tests": 28,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "compatibility_batch_status": "FAIL: 107 passed and one invalid retirement identifier fixture; retained, not a clean full run",
+  "corrected_input": "synthetic-preparation-retired; all original lifecycle assertions retained",
+  "complete_lifecycle": {
+    "software_contract_cases": 170,
+    "source_evaluation_entries": 1,
+    "planned_and_committed_steps": 171,
+    "service_reconstruction_mid_job": true,
+    "every_page_checked": true,
+    "synthetic_clock_used": true,
+    "active_policy_unchanged": true,
+    "retirement_tested": true
+  },
+  "source_lifetime_repair": "Separate original source/session/dataset/report expiry from the unchanged execution/commit window; retain original final case guard. New reports only, no renewal of old jobs/reports.",
+  "execution_limits_changed": false,
+  "full_current_verification": "NOT_RUN",
+  "http_routes": "NOT_INSTALLED",
+  "automatic_dispatch": "NOT_INSTALLED",
+  "workbench": "NOT_INSTALLED",
+  "cleanup": [
+    {
+      "receipt": {
+        "path": "evidence/local/qualification-preparation-first-database.json",
+        "sha256": "0814b1d07e84c59d059f20178acc40470b04eb26b9e05a485f5fe0e18ff6ad2d"
+      },
+      "log": {
+        "path": "evidence/local/qualification-preparation-first-database.log",
+        "sha256": "1f9cd8ded4975d69ee6a9383ff04a885c01dc33ee53aebf360f1150da16a31a5"
+      },
+      "owned_state_removed": true
+    },
+    {
+      "receipt": {
+        "path": "evidence/local/vision-report-lifetime-before-database.json",
+        "sha256": "d153c1bc12d0293b6215619e94e99f9f9af1bb033d1a801a9120faef00bf9f02"
+      },
+      "log": {
+        "path": "evidence/local/vision-report-lifetime-before-database.log",
+        "sha256": "cb530a6a2db2427bf42c4b9e6247c2543a0723ec64ef0569f0b4604d5391cfc6"
+      },
+      "owned_state_removed": true
+    },
+    {
+      "receipt": {
+        "path": "evidence/local/qualification-preparation-lifetime-repaired-database.json",
+        "sha256": "57f87f35e451c60899daa43846f4205318c0295c7b8ceab032e8deb343c307ba"
+      },
+      "log": {
+        "path": "evidence/local/qualification-preparation-lifetime-repaired-database.log",
+        "sha256": "d948c9c6f4fedfbd2b4b8b2a96fdf775416b28fe5ab4bf2cb522eba84cb197b6"
+      },
+      "owned_state_removed": true
+    },
+    {
+      "receipt": {
+        "path": "evidence/local/qualification-preparation-core-final-database.json",
+        "sha256": "339679e0be7264326e5bbe3538b0b6e6a5f2324f0707801ca06bbbe6cf7e07e2"
+      },
+      "log": {
+        "path": "evidence/local/qualification-preparation-core-final-database.log",
+        "sha256": "12a58b8dfc1ae6a3ad30b9c5a5e010f37d3a9a0556c61dbd126cb080276f0159"
+      },
+      "owned_state_removed": true
+    },
+    {
+      "receipt": {
+        "path": "evidence/local/qualification-preparation-lifecycle-final-database.json",
+        "sha256": "18fc2301d8a31c6ce3b3dcff438cd1e6a72339906c209857259314a547d71d62"
+      },
+      "log": {
+        "path": "evidence/local/qualification-preparation-lifecycle-final-database.log",
+        "sha256": "40ee386485c14439dcc4ae093eae7ef2c1c582e3cc023be97233aa25d5a16cc1"
+      },
+      "owned_state_removed": true
+    }
+  ],
+  "qualification_eligible": false,
+  "promotion_eligible": false,
+  "physical_truth_verified": false,
+  "human_evaluation": "NOT_RUN",
+  "aws_live": "NOT_RUN",
+  "full_product_complete": false,
+  "beta_decision": "NO_GO",
+  "authority": "none",
+  "limitations": [
+    "Native local CV and DynamoDB sources; generated images, synthetic identity and intercepted S3.",
+    "Synthetic clock/fixtures prove transitions and persistence, not real operational latency, physical truth or user value.",
+    "Completed preparation remains not qualified; independent qualification, owner activation/rollback and full user workflows remain incomplete."
+  ],
+  "documentation_refresh": {
+    "status": "PASS",
+    "checks": 29,
+    "inputs": 31,
+    "path": "evidence/documentation-validation.json",
+    "sha256": "bf10fa5e3e17c4f1efbd196f0064815aa6b4dbed33ddee246d9d83e599c49ca9"
+  },
+  "graph": {
+    "status": "DEGRADED",
+    "nodes": 1330,
+    "edges": 5881,
+    "dangling_edges": 331,
+    "scope": "navigation only; partial relationship coverage"
+  },
+  "snapshot": {
+    "path": "evidence/local/qualification-preparation-core-snapshot.zip",
+    "sha256": "2942f73ba59425ec8346a1dcf59ac3e1f31079e8c5ea85bc4ad7766ebde700b0",
+    "files": 80
+  },
+  "fixture_correction_only": true,
+  "python_version": "3.12.3"
+}

@@ -1,0 +1,120 @@
+{
+  "scope": "documentation structure and evaluation protocol only",
+  "status": "PASS",
+  "personas": {
+    "P01": 10,
+    "P02": 10,
+    "P03": 10,
+    "P04": 8,
+    "P05": 8,
+    "P06": 8,
+    "P07": 8,
+    "P08": 8,
+    "P09": 8
+  },
+  "operations": 78,
+  "checks": [
+    {
+      "name": "P01 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "P02 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "P03 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "P04 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "P05 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "P06 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "P07 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "P08 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "P09 complete sequence with action and result/handoff",
+      "status": "PASS"
+    },
+    {
+      "name": "Nine canonical profiles and 78 operations",
+      "status": "PASS"
+    },
+    {
+      "name": "26 workflow contracts",
+      "status": "PASS"
+    },
+    {
+      "name": "58 technical acceptance scopes",
+      "status": "PASS"
+    },
+    {
+      "name": "All nine primary human scenarios remain unrun",
+      "status": "PASS"
+    },
+    {
+      "name": "Operation protocol linked by persona and adoption documents",
+      "status": "PASS"
+    },
+    {
+      "name": "New human scenario remains unrun",
+      "status": "PASS"
+    },
+    {
+      "name": "Operation protocol distinguishes four evaluation layers",
+      "status": "PASS"
+    },
+    {
+      "name": "Exclusion, incomplete evidence and handoff protections",
+      "status": "PASS"
+    },
+    {
+      "name": "Current adoption summary avoids mutable build counts",
+      "status": "PASS"
+    },
+    {
+      "name": "Original document snapshots preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "Changed documentation has no trailing whitespace",
+      "status": "PASS"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "docs/PERSONAS-OPERATIONS.md",
+      "sha256": "f1563c5d5450fc7fd7302513f871953365fdac39941b1bb3b027e8935e464c55"
+    },
+    {
+      "path": "docs/USER-NEEDS-ADOPTION.md",
+      "sha256": "a66d3ac8b13de838c71119c5419eb3506ba9b7b552e1e78900829e363450ad3f"
+    },
+    {
+      "path": "docs/TEST-PLAN.md",
+      "sha256": "16b67b1dca4ddbb53103cc9b831886b921f0066221dbb7292e03612cf69295fa"
+    },
+    {
+      "path": "docs/templates/BETA-SESSION-RECORD.md",
+      "sha256": "d21261dc7665d2c7e3e11a1236e831f583bcc42b5652f7543bfdf40fc012dbb6"
+    }
+  ],
+  "application_tests": "NOT_RUN",
+  "participant_tests": "NOT_RUN",
+  "beta_decision": "NO_GO",
+  "recorded_at": "2026-10-16T10:05:47.126590+00:00"
+}

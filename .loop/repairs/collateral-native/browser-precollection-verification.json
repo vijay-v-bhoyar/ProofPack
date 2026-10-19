@@ -1,0 +1,2497 @@
+{
+  "recorded_at": "2026-10-16T23:11:12.225003+00:00",
+  "scope": "browser collection only",
+  "exit_code": 0,
+  "cases": 349,
+  "whole_file_cohorts": 14,
+  "profile": {
+    "rootDir": "C:/Users/vijay/OneDrive/Documents/ChatGPT/AWS OpenCV/.loop/repairs/collateral-native/candidate/tests/e2e",
+    "workers": 1,
+    "fullyParallel": false,
+    "globalTimeout": 0,
+    "shard": null,
+    "projects": [
+      {
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/vijay/OneDrive/Documents/ChatGPT/AWS OpenCV/.loop/repairs/collateral-native/candidate/tests/e2e",
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "testIgnore": [],
+        "retries": 0,
+        "repeatEach": 1,
+        "timeout": 30000
+      }
+    ]
+  },
+  "case_inventory": [
+    {
+      "id": "f0d0d146c5a2b942e5f6-e9fbe506926dc968aadb::",
+      "file": "approved-policy.spec.ts",
+      "title": "operator can inspect only a minimized approved record without a write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-9b58bc4d86a584c9648f::",
+      "file": "approved-policy.spec.ts",
+      "title": "owner can inspect only a minimized approved record without a write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-76786b0a451ab8e99065::",
+      "file": "approved-policy.spec.ts",
+      "title": "reviewer can inspect only a minimized approved record without a write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-1d0c255561138e3a7fb2::",
+      "file": "approved-policy.spec.ts",
+      "title": "withholds wrong-id response instead of showing current approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-4f405de3b53343cd6c72::",
+      "file": "approved-policy.spec.ts",
+      "title": "withholds wrong-revision response instead of showing current approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-696dc4ec947fcfb80d83::",
+      "file": "approved-policy.spec.ts",
+      "title": "withholds enablement response instead of showing current approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-530fa8a492c479c48d04::",
+      "file": "approved-policy.spec.ts",
+      "title": "withholds private response instead of showing current approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-9e9ead05dae523581bf4::",
+      "file": "approved-policy.spec.ts",
+      "title": "withdraws the current indication on edit",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-0119887e08bdd896a40e::",
+      "file": "approved-policy.spec.ts",
+      "title": "withdraws the current indication on offline",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-7f3a9e82ff151f643450::",
+      "file": "approved-policy.spec.ts",
+      "title": "withdraws the current indication on expiry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-92189b5be61b2aaa206d::",
+      "file": "approved-policy.spec.ts",
+      "title": "withdraws the current indication on failed-read",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-9d749ec57a6557d8453b::",
+      "file": "approved-policy.spec.ts",
+      "title": "held and absent installed records offer manual checking without inspection authority",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "f0d0d146c5a2b942e5f6-7c9d8f8a0d2fe83f07a0::",
+      "file": "approved-policy.spec.ts",
+      "title": "approved selection works with keyboard, zoom and forced colors",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-36de0a040a6c06f36fa7::",
+      "file": "erasure.spec.ts",
+      "title": "owner reviews exact asset then performs bounded cleanup without a full-erasure claim",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-0c7b50841bd03cad0fc4::",
+      "file": "erasure.spec.ts",
+      "title": "lost preview retries exactly the original request after possible commit",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-d17fde58eeeac17153ee::",
+      "file": "erasure.spec.ts",
+      "title": "lost confirm retries exactly the original request after possible commit",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-fee98110c34b76585795::",
+      "file": "erasure.spec.ts",
+      "title": "lost advance retries exactly the original request after possible commit",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-e565bb601d4871d1e416::",
+      "file": "erasure.spec.ts",
+      "title": "rejects badDigest rather than accepting misleading cleanup evidence",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-dd06098d2a8c33cfb653::",
+      "file": "erasure.spec.ts",
+      "title": "rejects wrongScope rather than accepting misleading cleanup evidence",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-9d8c1b454003ff79f229::",
+      "file": "erasure.spec.ts",
+      "title": "rejects fullErasure rather than accepting misleading cleanup evidence",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-1b2ceb4a9c4a4bfb49ae::",
+      "file": "erasure.spec.ts",
+      "title": "expired and interrupted review cannot approve assets and selection edits clear acknowledgment",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-d0bdcdab09d54b0a113b::",
+      "file": "erasure.spec.ts",
+      "title": "lost confirmation can be recovered by preview readback after leaving the panel",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-6201d8843da0d2653421::",
+      "file": "erasure.spec.ts",
+      "title": "storage target mismatch permits progress read but blocks cleanup steps",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-aadfd5cdde165dedb464::",
+      "file": "erasure.spec.ts",
+      "title": "reviewer has no owner cleanup controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-f45554f4b7c76c216570::",
+      "file": "erasure.spec.ts",
+      "title": "operator has no owner cleanup controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-202ed10fdeb752e1923f::",
+      "file": "erasure.spec.ts",
+      "title": "delayed preview cannot renew an expired review from its response time",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-91a63e0a401c54d8239a::",
+      "file": "erasure.spec.ts",
+      "title": "active lease exposes progress but requires a fresh job read before another step",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "0de16c2925c693d555eb-6c9a661051e9fc855a00::",
+      "file": "erasure.spec.ts",
+      "title": "cleanup selection and exact approval are keyboard accessible at narrow desktop width",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-a2b8cc403df34991120f::",
+      "file": "evidence.spec.ts",
+      "title": "original discovery preserves fresh metadata review and scoped image rights true",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-05147f027c4b042b30f6::",
+      "file": "evidence.spec.ts",
+      "title": "original discovery preserves fresh metadata review and scoped image rights false",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-3b32e0efdc6ce3ccdf1a::",
+      "file": "evidence.spec.ts",
+      "title": "original discovery rejects duplicate catalog entries before offering an image",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-6e0f4c8d6985da8a5f43::",
+      "file": "evidence.spec.ts",
+      "title": "reviewer verifies bytes and sees a historical preview that clears on navigation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-6ea54a286c6b76c8c1af::",
+      "file": "evidence.spec.ts",
+      "title": "owner metadata does not grant another operator image bytes",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-20793b23f1ecaea0000e::",
+      "file": "evidence.spec.ts",
+      "title": "evidence revoke never displays an image",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-5cc32631f456bc9ce4e9::",
+      "file": "evidence.spec.ts",
+      "title": "evidence corrupt never displays an image",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-7e2a7c6781702e59ccad::",
+      "file": "evidence.spec.ts",
+      "title": "evidence mismatch never displays an image",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-d99a46dc576600bb153b::",
+      "file": "evidence.spec.ts",
+      "title": "latest inspection lookup discovers the asset without knowing its ID",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-d108635aeca11a4785fa::",
+      "file": "evidence.spec.ts",
+      "title": "expiry clears historical bytes and forces fresh metadata",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-f45fd5312fd75e5ec5e8::",
+      "file": "evidence.spec.ts",
+      "title": "historical evidence is cleared when offline without automatic refetch",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "72c23c329750e5cf3a24-081a604e2bb7edb957ee::",
+      "file": "evidence.spec.ts",
+      "title": "historical evidence is cleared when hidden without automatic refetch",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-6a93a135edf4cb51b1be::",
+      "file": "exports.spec.ts",
+      "title": "operator prepares historical manifest, explicitly fetches and forgets verified ZIP",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-ef88053dcfce11e18160::",
+      "file": "exports.spec.ts",
+      "title": "uncertain export create preserves exact request and version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-e67d9bd8e33867dbcb2f::",
+      "file": "exports.spec.ts",
+      "title": "uncertain export advance preserves exact request and version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-5cce35d7b56fcc9b2ca4::",
+      "file": "exports.spec.ts",
+      "title": "uncertain export ticket preserves exact request and version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-3ed8c3dd88a70b2cdcfe::",
+      "file": "exports.spec.ts",
+      "title": "lost create is discoverable by inspection after leaving local intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-fedede655806531a295b::",
+      "file": "exports.spec.ts",
+      "title": "cancel requires acknowledgment and prevents another ticket",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-1e95b4b0b40f12626165::",
+      "file": "exports.spec.ts",
+      "title": "rejects badArchive without saving or silently replaying a consumed ticket",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-642ca9978a68ee14db0d::",
+      "file": "exports.spec.ts",
+      "title": "rejects oversized without saving or silently replaying a consumed ticket",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-cb9c77261fee3b291114::",
+      "file": "exports.spec.ts",
+      "title": "rejects unavailable without saving or silently replaying a consumed ticket",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-9722df1afa67ecf9d513::",
+      "file": "exports.spec.ts",
+      "title": "hidden page forgets a prepared local copy and ticket",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-15b982522b25696130a3::",
+      "file": "exports.spec.ts",
+      "title": "owner-only account does not acquire export/media authority",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-e5d29fe4b310b910032f::",
+      "file": "exports.spec.ts",
+      "title": "mismatched current-approval response remains unconfirmed rather than accepted",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-9f94020794eff3c591b9::",
+      "file": "exports.spec.ts",
+      "title": "reading creation scope clears an older job approval before acknowledging a new action",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "ae50ed5fee567417f9bd-54b38ede73392db19e06::",
+      "file": "exports.spec.ts",
+      "title": "export controls support keyboard selection and narrow desktop layout",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "6b60d0cacd30be8ae473-abe64ddde68da70b9f7f::",
+      "file": "foundation.spec.ts",
+      "title": "unconfigured service gives an honest safe starting point",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "6b60d0cacd30be8ae473-4386f257001d2d7ab828::",
+      "file": "foundation.spec.ts",
+      "title": "transport failure offers retry without starting capture",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "965b3f5121283ab1d302-6ab7bcabbcd9839e5a03::",
+      "file": "input-diagnostic.spec.ts",
+      "title": "diagnostic: keyboard dispatch works on an independent static document",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-b391dc33bfef851fcdde::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner creates, reads and cancels without a cleanup or enable action",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-a2693d9e4205df5296aa::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "unknown create preserves exact identity across reload and original retry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-55905b39ba1e61fd96ca::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "withholds erased write response and retains original intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-024ea7264417d8a2f1d4::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "withholds fulfilled write response and retains original intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-4b76a8b120437c2952dd::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "withholds scope write response and retains original intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-e8674b96e25a2a6ef65a::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "ordinary member has no owner controls or private context request",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-7ca865b5f5ce12ec317d::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "stale MFA clears usable owner state and offers fixed sign-in recovery",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-f6e27cb4cf5a87ac301b::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "active work keeps cancellation disabled and does not clear registry entries",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-72d045f9da34df23c2e9::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "duplicate scope is rejected before any original write is sent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-891bbc5c7b284c72ee57::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "keyboard entry, narrow zoom and pending scope remain readable",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-40b9cc0ceed961b6403e::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "unread stored recovery blocks silent exit and reveals no original private scope",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-1b2fe8e02012962fcbb5::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "context retries only the failed safe read after prior control release",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-df22ac9710fd76cfb84b::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "persistent busy stops at three reads without usable creation authority",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-06abdb8645e9e4e25905::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "late hidden context cannot restore a private review",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-ff9c85a1f7c33dd04ff2::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "interrupted committed write keeps original scope until explicit retry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-9bbe929ffcee4fb44b39::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner explicitly reads exact non-authorizing historical accounting once",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-5b12c98edd72ab3aaffa::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner accounting withholds denied and never auto retries",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-eddac4364fef65d027b1::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner accounting withholds held and never auto retries",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-4a7eeb8a2e4af491deb7::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner accounting withholds scope and never auto retries",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-4d5ba9d198427f42fa10::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner accounting withholds version and never auto retries",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-f9ca2de770f0c4297f2d::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner accounting withholds authority and never auto retries",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-a75a2dd8caab9a3cca90::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner accounting withholds extra and never auto retries",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-a074549a6afe62a79774::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "owner accounting withholds sum and never auto retries",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-760eba3b6505e1670e50::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "offline interruption withdraws historical accounting and usable owner state",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-b76569e8befdc568460c::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "fresh request status is required before a second explicit accounting read",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-c95d7968faba7b9ff514::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "cancellation withdraws accounting and offers no review or inspection resumption",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-89f96e7f4b5b739aa7a1::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "late accounting cannot restore after hidden",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-df9e5febfd1b84eb2f26::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "late accounting cannot restore after navigation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-f5ffb5c2a68af52dba4f::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "timed out accounting stays withheld until fresh status and a new explicit read",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "62db42deff09d5f945e2-c1029f3c3cd9fead459e::",
+      "file": "metadata-maintenance.spec.ts",
+      "title": "unconfirmed creation exposes no historical accounting control",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-6b5a94c0f0185dc357d5::",
+      "file": "operator.spec.ts",
+      "title": "measured overlap reference stops camera and fresh checks remain separate from acknowledgment",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-a2cf8615c06d03d7c5a0::",
+      "file": "operator.spec.ts",
+      "title": "measured not_flat reference stops camera and fresh checks remain separate from acknowledgment",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-5e12b9c101b15fb725ef::",
+      "file": "operator.spec.ts",
+      "title": "measured reference with observation mismatch is withheld before download",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-c17cb9c5f04289e098a5::",
+      "file": "operator.spec.ts",
+      "title": "measured reference with crop mismatch is withheld before download",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-5043d6f19981d8b8b97f::",
+      "file": "operator.spec.ts",
+      "title": "measured reference with outside mismatch is withheld before download",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-77cb0e5a2c38b97fc60f::",
+      "file": "operator.spec.ts",
+      "title": "measured reference with space mismatch is withheld before download",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-1908bfd2b28135339aa7::",
+      "file": "operator.spec.ts",
+      "title": "measured reference with duplicate mismatch is withheld before download",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-93c2b18e6331bdff9670::",
+      "file": "operator.spec.ts",
+      "title": "measured reference with dimensions download is never rendered",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-c8f6f4f539384cde5588::",
+      "file": "operator.spec.ts",
+      "title": "measured reference with denied download is never rendered",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-d92d6b57616b1219b1af::",
+      "file": "operator.spec.ts",
+      "title": "measured historical reference clears on offline",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-8aef1a9693d2e637c251::",
+      "file": "operator.spec.ts",
+      "title": "measured historical reference clears on hidden",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-4cc93863efa7a66710d1::",
+      "file": "operator.spec.ts",
+      "title": "measured historical reference clears on expiry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-8d37ec09569adda5b926::",
+      "file": "operator.spec.ts",
+      "title": "measured historical reference clears on clear",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-e58a2a0fc537cf89cfa4::",
+      "file": "operator.spec.ts",
+      "title": "measured historical reference clears on restart",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-e40e26cdc69d27e8233e::",
+      "file": "operator.spec.ts",
+      "title": "measured reference has text targets and keyboard controls at narrow zoom and forced colors",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-c616305e7a84d4d97400::",
+      "file": "operator.spec.ts",
+      "title": "original selection is one attempt only and interruption clears the next choice",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-1857f6fc1f8d1b32a5ca::",
+      "file": "operator.spec.ts",
+      "title": "original selection without a matching permit acknowledgment stops before image upload",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-6113ec056d591e72798d::",
+      "file": "operator.spec.ts",
+      "title": "entering same-inspection support stops the camera and seeds no automatic request",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-33684f1c8f1f59cedef9::",
+      "file": "operator.spec.ts",
+      "title": "switching to review stops the camera and preserves the open inspection",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-505d65482fd4fcc939d3::",
+      "file": "operator.spec.ts",
+      "title": "camera playback timeout releases startup without uploading or trusting late playback",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-1d48f539d0fb1f21aeb8::",
+      "file": "operator.spec.ts",
+      "title": "pending camera playback is cancelable by stop",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-cf7df4603b00e4223b2e::",
+      "file": "operator.spec.ts",
+      "title": "pending camera playback is cancelable by hidden",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-4a53cb4073d7cb188cba::",
+      "file": "operator.spec.ts",
+      "title": "operator completes a fixture kit, then stops, closes, releases and signs out",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-2e7998151cf41aba09d2::",
+      "file": "operator.spec.ts",
+      "title": "correction acknowledgment never becomes approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-e788ed81637938c3e4ec::",
+      "file": "operator.spec.ts",
+      "title": "owner-only account does not receive operator controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-65d7d81031d52714dc4d::",
+      "file": "operator.spec.ts",
+      "title": "permission denial and missing geometry block capture without replacing work",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-fd7bfcbcbd0f593cd245::",
+      "file": "operator.spec.ts",
+      "title": "late pass response cannot renew a lease and offline logout remains unconfirmed",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-a820eb6213472bd357eb::",
+      "file": "operator.spec.ts",
+      "title": "hidden page clears approval and stops the fixture stream",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-e6c222eb647fb2b262c0::",
+      "file": "operator.spec.ts",
+      "title": "changed preview clears current approval before a delayed new result",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-14898cb71329bf26f69b::",
+      "file": "operator.spec.ts",
+      "title": "camera loss and failed transport stop capture without a replacement inspection",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-6c4ba3a08a1a30cc7e0d::",
+      "file": "operator.spec.ts",
+      "title": "keyboard can select and acquire a station with visible focus",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-5be2d3f077a5e18fe6e0::",
+      "file": "operator.spec.ts",
+      "title": "uploaded JPEG uses enrolled dimensions and excludes pixels outside centered crop",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-225c75cb1f390b499752::",
+      "file": "operator.spec.ts",
+      "title": "occupied station requires explicit handoff acknowledgment and reason",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-5da6d4c270eff71c9974::",
+      "file": "operator.spec.ts",
+      "title": "a denied correction stops preview and changed grants cannot restart the camera",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-ccbb24a498e2a787faf7::",
+      "file": "operator.spec.ts",
+      "title": "stop cancels a pending permission wait and closes a late camera grant",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-1bbc8dbb63c12b42e6c1::",
+      "file": "operator.spec.ts",
+      "title": "missing geometry preserves status and supports close; keyboard, zoom and contrast layout",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-7f4860f3508e631cbcec::",
+      "file": "operator.spec.ts",
+      "title": "operator opens latest retained evidence with camera stopped and the same inspection preserved",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-951b6af1b612894b591a::",
+      "file": "operator.spec.ts",
+      "title": "operator records separate human handling, stops capture and reads immutable history",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-40f2be3a9cfa75531c0d::",
+      "file": "operator.spec.ts",
+      "title": "human acceptance requires an explicit full-kit check and corrections remain human history",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-d839856c60b806851e18::",
+      "file": "operator.spec.ts",
+      "title": "lost human-decision confirmation freezes intent and retries without another effect",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-f3269892186378223dc7::",
+      "file": "operator.spec.ts",
+      "title": "denied human-decision write does not show a successful decision or machine approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "078afe649bee3f2d7b39-c2fcc41a250dbae1d78b::",
+      "file": "operator.spec.ts",
+      "title": "mismatched human confirmation remains uncertain and never displays success",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-f62a2680c929e3d6c3a6::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "reviewer completes qualification creation read step phases and all software pages without activation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-9a7901bc21f575cccc60::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "prepared candidate derives exact source and immutable preparation rather than editable assurance",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-bd212533ff0b616745ae::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification preserves exact retry after qualification",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-97b1b894c7bb39d5962c::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification preserves exact retry after malformed",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-8b567c67e51b53baed1b::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "operator has no reviewer qualification creation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-836dec8d18323764d000::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner has no reviewer qualification creation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-e2ad742e37ea435663ce::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner aggregates and combined nonoriginal grants never expose source detail controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-1be89ece9b3c8951cdef::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification rejects malformed counts without another write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-e9e5b6c7616ad5466f2e::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification rejects malformed flag without another write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-12ccc8647c192a3bffc7::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification rejects malformed registry without another write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-3cdba7e0caef4ba75f52::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification rejects malformed prep without another write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-5f16d676ca5b896f349b::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification exposes rejected cases and explicit retirement without claiming physical validity",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-19193df11241094bb17e::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification cancellation remains explicit and original selectors do not submit work",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-88b61e0bb8135aee3164::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "malformed qualification phase clears authority",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-c22afe61ae46329c6069::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner bootstrap binds exact versions and inspects historical provenance",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-857cbf86064081d23b57::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner promote binds exact versions and inspects historical provenance",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-6e3dacb5187d885428a3::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner rollback binds exact versions and inspects historical provenance",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-4c1e3f805c9ab6c61ab5::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "activation rejects held before any transition",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-32d857096af7fa3ddafe::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "activation rejects counts before any transition",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-1ce31f6a855caf3446b6::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "activation rejects purpose before any transition",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-a441a37c93cf15dddbc2::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "activation rejects digest before any transition",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-350b501d59c92ccf9b3f::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "activation rejects stale before any transition",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-d5f9eee798430efc0f55::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "activation lost reply keeps exact decision and key through investigation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-e042ad607ebefb8815c9::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "activation receipt reply keeps exact decision and key through investigation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-10612a90573515443492::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "reviewer cannot access activation and owner handoff makes no transition",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-30651a87f1b901fbe3c4::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner can read exact predecessor selectors without qualifying or activating",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-409bc370d244c3947937::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "editing or interrupting owner preview clears acknowledgment and is keyboard reachable",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-65cb1257153645dce790::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification creation authority expires without a write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-10b3f5a28241d20c6e50::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner activation authority expires without a transition",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-4e510e2329b5b0cf2441::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "failed owner reread invalidates an already acknowledged preview",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-516a92eef6b76c0fa43c::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "default rollback qualification freezes the exact owner handoff and old revision",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-6e378026ce4f922b8f30::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "prepared rollback carries original evaluation purpose and exposes all phases",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-74dca846ebf3040af0d7::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "active lease blocks stepping but keeps authorized cancellation available",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-00bcfa9bc1997c5cec64::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner cancels aggregate work without acquiring original reviewer access",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-a521a5bc77dae8dd0a35::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "software pagination rejects a repeated prior case rather than hiding failures",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-d0f3b461ae3a73c0a6be::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "legacy unrecorded state cannot settle a new activation and explicit finish makes no second write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-1f19c784c5eba521c38a::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "owner role loss prevents the transition and still permits informed sign out",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-53ae17c5e0e0c3a4cc11::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "refunded qualification reply remains unconfirmed instead of granting a fresh budget",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-65d31fcfe16fadb57a43::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "rollback image comparison carries the exact predecessor purpose without a console",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-dc870ac3656fb053bfc7::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "completed image handoff reaches preparation qualification and explicit owner rollback",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "416260cc17d3c33c840d-5c46d0eb0dcff8b06a77::",
+      "file": "policy-lifecycle.spec.ts",
+      "title": "qualification and owner decisions remain readable with keyboard zoom and forced colors",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-891a6d8fc82f8f921fd7::",
+      "file": "preparation.spec.ts",
+      "title": "reviewer prepares exact image source, discovers original job and advances with a refreshed version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-d9b88091e11143f5f4ef::",
+      "file": "preparation.spec.ts",
+      "title": "uncertain preparation creation preserves one unchanged intent across discovery and hidden review",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-069ab4b713c248286fdf::",
+      "file": "preparation.spec.ts",
+      "title": "complete preparation retains software failure, reads every bounded page and retires explicitly",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-06efcbbe9c85deeee582::",
+      "file": "preparation.spec.ts",
+      "title": "owner sees aggregate preparation only and may cancel unresolved work",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-78b3e3a73e8758b404f5::",
+      "file": "preparation.spec.ts",
+      "title": "owner can inspect complete aggregate counts without reviewer entries or source intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-c740fab22d1a86c8f592::",
+      "file": "preparation.spec.ts",
+      "title": "uncertain manual step retries its original target, version, body and key",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-b096dccad1050fff58f6::",
+      "file": "preparation.spec.ts",
+      "title": "operator receives no preparation navigation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-30e9a39326a23e4150eb::",
+      "file": "preparation.spec.ts",
+      "title": "decision-only source cannot prepare qualification",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-6ebb3d4181e7ec03e1ef::",
+      "file": "preparation.spec.ts",
+      "title": "preparation rejects misleading or unavailable report: held",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-6d6eead9f10cecc3e7d5::",
+      "file": "preparation.spec.ts",
+      "title": "preparation rejects misleading or unavailable report: badFlag",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-d467cb41ce71c15ab493::",
+      "file": "preparation.spec.ts",
+      "title": "preparation rejects misleading or unavailable report: badCounts",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-ca508d39603838440c99::",
+      "file": "preparation.spec.ts",
+      "title": "preparation clears reviewed input authority: expiry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-0db5d6146600c642e2b2::",
+      "file": "preparation.spec.ts",
+      "title": "preparation clears reviewed input authority: hidden",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-902320e3b70b9364d825::",
+      "file": "preparation.spec.ts",
+      "title": "preparation clears reviewed input authority: offline",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-f8959a24d8658981d3c0::",
+      "file": "preparation.spec.ts",
+      "title": "delayed preparation entries cannot restore hidden report authority",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "47ff6f7eed4fa2ee7144-7ffd3c6807f0c934d0a4::",
+      "file": "preparation.spec.ts",
+      "title": "wrong source entry clears preparation counts and entries without a new write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-40ce82f997e1a082e9df::",
+      "file": "support-contract.spec.ts",
+      "title": "accepts exact pending, held and accepted historical records with separate eligibility",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-58673a8216454d296fe1::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects private extra field",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-bcd00d1c65852b6f6980::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects unbounded validity",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-9600cde5d12c11b7f0ed::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects no validity",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-4617fe58a9d9e71f2752::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects fractional version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-fc67750e8247aec97a52::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects invalid digest",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-b9bb8321af2012b53b37::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects string eligibility",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-38a07e3238df09414063::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects ineligible current flag",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-6a4c03678ec36890e5ca::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects wrong post revision",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-3c6bfbb4f626757f656b::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects same sender recipient",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-cee1a29b8043fa963735::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects invalid station epoch",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-3066ef2cdb4ccf9c273b::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects unbounded name",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-b1153511a275768feaac::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects invalid kit",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-7075d17b8c2ff8e0cd7e::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects overlong lifetime",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-93e1e988d7a99323d0a9::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects invalid source id",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-7f111009ecbca96933ae::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects machine approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-84c8d015b47f7ed2ac77::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects capture transfer",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-239d68105b7e06ac3673::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects decision on pending",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-4f7184a8976a1fe7985a::",
+      "file": "support-contract.spec.ts",
+      "title": "detail rejects missing field",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-a89bd3e510a6fae2f5e7::",
+      "file": "support-contract.spec.ts",
+      "title": "an accepted decision must bind the designated reviewer and recorded status",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-3134bd22ab0976cae259::",
+      "file": "support-contract.spec.ts",
+      "title": "accepts bounded historical inbox and exact no-request read without authority",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-2ecfe69672a67b538b6e::",
+      "file": "support-contract.spec.ts",
+      "title": "inbox rejects duplicate requests",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-63ad43251a71c11bb947::",
+      "file": "support-contract.spec.ts",
+      "title": "inbox rejects 21 requests",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-1e5c6fd791cb205a0000::",
+      "file": "support-contract.spec.ts",
+      "title": "inbox rejects foreign cursor",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-0628230264ceb97d1b79::",
+      "file": "support-contract.spec.ts",
+      "title": "inbox rejects capability claim",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-7bbc6962c6e3fec1a79a::",
+      "file": "support-contract.spec.ts",
+      "title": "inbox rejects renewed lifetime",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-47b3962a92b87902c140::",
+      "file": "support-contract.spec.ts",
+      "title": "inbox rejects invalid scope",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-5fa7fe4d262df4b1c950::",
+      "file": "support-contract.spec.ts",
+      "title": "inbox rejects current approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "30a0b73788af9e9fddea-a55767064c06c876bb55::",
+      "file": "support-contract.spec.ts",
+      "title": "inbox rejects unknown status",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-ce566ceb8ae61550f63b::",
+      "file": "support-handoff.spec.ts",
+      "title": "reviewer can discover a stopped support request and separately acknowledge review responsibility",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-eb155f86732113cb7c9f::",
+      "file": "support-handoff.spec.ts",
+      "title": "owner grant alone exposes no support action and operator has no reviewer inbox",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-3e1b46505e97670ca7c8::",
+      "file": "support-handoff.spec.ts",
+      "title": "operator prepares fresh stopped same-inspection context before a designated request",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-b5f6be4c8d5f68ac5f99::",
+      "file": "support-handoff.spec.ts",
+      "title": "unowned station cannot be prepared or used to request support",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-df7024e0fe1b264d28e4::",
+      "file": "support-handoff.spec.ts",
+      "title": "no recorded request does not imply accepted responsibility",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-50413bfa15e5939df74b::",
+      "file": "support-handoff.spec.ts",
+      "title": "rejects private context without an eligible action",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-9bbdb4ab348d061dd2ae::",
+      "file": "support-handoff.spec.ts",
+      "title": "rejects approval context without an eligible action",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-084291ae35c035546c9c::",
+      "file": "support-handoff.spec.ts",
+      "title": "rejects wrong-inspection context without an eligible action",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-9a7c725c56965ff4adf7::",
+      "file": "support-handoff.spec.ts",
+      "title": "rejects wrong-decision-actor context without an eligible action",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-eac195b957233a74db0a::",
+      "file": "support-handoff.spec.ts",
+      "title": "withdraws response eligibility on held",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-39d0c0fcaaa336499a18::",
+      "file": "support-handoff.spec.ts",
+      "title": "withdraws response eligibility on expiry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-1659b3b8464f01e1c993::",
+      "file": "support-handoff.spec.ts",
+      "title": "withdraws response eligibility on offline",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-a215d7ccaee400a4d860::",
+      "file": "support-handoff.spec.ts",
+      "title": "withdraws response eligibility on failed-read",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-b6651c0ec6675c12fafb::",
+      "file": "support-handoff.spec.ts",
+      "title": "withdraws response eligibility on role-loss",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-fd7baaf7a34f7cdb132e::",
+      "file": "support-handoff.spec.ts",
+      "title": "preserves exact uncertain response intent through lost",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-4100fe5304df292c6289::",
+      "file": "support-handoff.spec.ts",
+      "title": "preserves exact uncertain response intent through mismatch",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-5844563e8479329c0468::",
+      "file": "support-handoff.spec.ts",
+      "title": "unknown response requires acknowledged departure without canceling the server effect",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-5d3f1b0a0d6a2c27cb50::",
+      "file": "support-handoff.spec.ts",
+      "title": "decline is a separate acknowledged response with no accepted assignment",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-2fe655b9ba80ebe2747d::",
+      "file": "support-handoff.spec.ts",
+      "title": "original sender can cancel a freshly read pending record",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-86e835103843fa5c53d3::",
+      "file": "support-handoff.spec.ts",
+      "title": "accepted reviewer can request a separately acknowledged successor without implying acceptance",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-45805dc9316a635e2028::",
+      "file": "support-handoff.spec.ts",
+      "title": "support controls remain reachable with keyboard, narrow zoom and forced colors",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-c6ab2f1cb1f3f207f4c5::",
+      "file": "support-handoff.spec.ts",
+      "title": "a slow authorization refresh cannot submit after the original detail window expires",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-5c97b6c88a4a63b8e233::",
+      "file": "support-handoff.spec.ts",
+      "title": "inbox pagination replaces a bounded historical page and rejects a nonadvancing cursor",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-13ef0d40871eb8767da4::",
+      "file": "support-handoff.spec.ts",
+      "title": "an acknowledged departure discards local retry details without another server write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "d060a8e15e3bfffa4e22-811c6af6c831b8e06f43::",
+      "file": "support-handoff.spec.ts",
+      "title": "expired initial preparation explains why a fresh preparation is required",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "4fea484c6156ff1d0ff3-5fb538c05d8b87d04a54::",
+      "file": "support-installed-contract.spec.ts",
+      "title": "frontend decodes actual installed handoff detail, inbox and no-request contracts",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-72d1fe969f7ea1908343::",
+      "file": "workbench.spec.ts",
+      "title": "unconfirmed policy navigation requires an informed exit and can preserve exact retry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ebdef250dd5281b324fc::",
+      "file": "workbench.spec.ts",
+      "title": "flat-reference enrollment requires finite ordered bounds and saves only an inactive revision",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-a9d64c27611d5e5dd169::",
+      "file": "workbench.spec.ts",
+      "title": "flat-reference removal omits the optional field from the saved recipe",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-872594ab0cd0ad43c08b::",
+      "file": "workbench.spec.ts",
+      "title": "flat-reference edit invalidates the previous qualification review",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-289386f0d46837ef39df::",
+      "file": "workbench.spec.ts",
+      "title": "flat-reference configuration is read-only for a reviewer",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-6b654cc5351a765b1cd5::",
+      "file": "workbench.spec.ts",
+      "title": "restricted invitee reviews notice and explicitly accepts without a camera or implicit optional reuse",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-e9d8dde9ccdf613ffc09::",
+      "file": "workbench.spec.ts",
+      "title": "invitation decline needs no capability or notice acknowledgment",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ed95d08770c5c122868e::",
+      "file": "workbench.spec.ts",
+      "title": "owner invitation is NOT_SENT and capability is masked, ephemeral and explicitly forgotten",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-151ffe24dcb5913ea2c9::",
+      "file": "workbench.spec.ts",
+      "title": "access edits and ownership initiation bind the reviewed account version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-796fb4a36590f6bb5f93::",
+      "file": "workbench.spec.ts",
+      "title": "bound successor explicitly accepts then must sign in afresh",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-2a7841b0a13b69d28dd1::",
+      "file": "workbench.spec.ts",
+      "title": "reviewer can inspect failed qualification but cannot edit, approve or administer",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-45b65e740eaae46bc413::",
+      "file": "workbench.spec.ts",
+      "title": "owner reviews a qualified immutable draft and explicit approval is version bound",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-da28a009f0f8f30b4121::",
+      "file": "workbench.spec.ts",
+      "title": "editing clears qualification review and saving remains an inactive revision",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-bc56cfae559620d7022e::",
+      "file": "workbench.spec.ts",
+      "title": "invalid counts block draft save and failed qualifications block owner approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-b9d72251febe42070518::",
+      "file": "workbench.spec.ts",
+      "title": "runtime review cannot enable until explicit confirmation; writes bind the control version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-018c090305cd7f1e4e4d::",
+      "file": "workbench.spec.ts",
+      "title": "delayed readiness cannot renew its request-start expiry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-6536928685d072a3bdbb::",
+      "file": "workbench.spec.ts",
+      "title": "unconfirmed sign-out removes privileged controls and allows explicit retry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-49199351ee1731a8acff::",
+      "file": "workbench.spec.ts",
+      "title": "owner MFA denial exposes reauthentication rather than successful administration",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ea463024a00da0ec417f::",
+      "file": "workbench.spec.ts",
+      "title": "notice failure never prevents a voluntary invitation decline",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-d986432829c954a22a48::",
+      "file": "workbench.spec.ts",
+      "title": "changed notice clears acknowledgement and capability without accepting stale terms",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-3bdc5cffd2d59ee8d539::",
+      "file": "workbench.spec.ts",
+      "title": "failed readiness checks and mismatched qualifications cannot become browser approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-241c438ebe5681880628::",
+      "file": "workbench.spec.ts",
+      "title": "changed grants between review and approval prevent the write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-af23de2c76c2f2c24b93::",
+      "file": "workbench.spec.ts",
+      "title": "interrupted delayed review cannot return as valid and navigation waits for its outcome",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-263dade71ee46947ce68::",
+      "file": "workbench.spec.ts",
+      "title": "owner retirement and invitation revocation use the reviewed resource versions",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-92768948257ace893e06::",
+      "file": "workbench.spec.ts",
+      "title": "explicit unchanged retry reuses its in-memory idempotency key after an unconfirmed create",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ce9b56ad4af1a2ffe27b::",
+      "file": "workbench.spec.ts",
+      "title": "workbench supports keyboard navigation, zoom and forced colors without horizontal loss",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-34656a9df903db2bd4b5::",
+      "file": "workbench.spec.ts",
+      "title": "original retention notice is separate, defaults off and clears after scope edits",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-1c11f38158ad050d8f20::",
+      "file": "workbench.spec.ts",
+      "title": "original retention attestation binds its notice and uncertain retries preserve exact intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ab8598df40f755cacf06::",
+      "file": "workbench.spec.ts",
+      "title": "owner records operational purpose and explicitly previews/stores reference without certifying physical truth",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-1002755dab4cf9e7090c::",
+      "file": "workbench.spec.ts",
+      "title": "uncertain purpose retry freezes expiry and reuses its original operation key",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-5207d8c4372a42c62620::",
+      "file": "workbench.spec.ts",
+      "title": "uncertain reference retry retains source and key until explicit same-body retry succeeds",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-09a7006af9a4ffe0b571::",
+      "file": "workbench.spec.ts",
+      "title": "purpose withdrawal clears upload authority and reviewer has metadata-only access",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-3d9f56358786ccbe4eb8::",
+      "file": "workbench.spec.ts",
+      "title": "reviewer lists purposes and reads scoped reference metadata without upload or purpose writes",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ec7dba2442032bc7b74b::",
+      "file": "workbench.spec.ts",
+      "title": "owner enrolls a draft, reviews actual-case report, explicitly approves and retires calibration",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-8163ca2c28287c44c243::",
+      "file": "workbench.spec.ts",
+      "title": "failed calibration report cannot become owner approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-a21dc40ba62515ac4170::",
+      "file": "workbench.spec.ts",
+      "title": "physical declaration and successful geometry keep approval held for reviewed physical evidence",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-27fe09e29f19c9f5b08f::",
+      "file": "workbench.spec.ts",
+      "title": "uncertain enrollment retries the original body and operation key without another setup",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-bc32ed51939ac35c86ef::",
+      "file": "workbench.spec.ts",
+      "title": "pending enrollment blocks another run and recovers through the original job",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-d8cdd6a15b6ff0376461::",
+      "file": "workbench.spec.ts",
+      "title": "reviewer reads calibration metadata but cannot enroll, qualify, approve or retire",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-3461bc44b580ed7ae7e5::",
+      "file": "workbench.spec.ts",
+      "title": "editing calibration settings clears the previous qualification preview and approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-75b1440e6f1e22cdc175::",
+      "file": "workbench.spec.ts",
+      "title": "reviewer records an operational label and appends a correction without claiming independent truth",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-1c6920b573b1ab66fc52::",
+      "file": "workbench.spec.ts",
+      "title": "owner can inspect label source metadata but requires a separate reviewer grant to label",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-27fb5b09c5ee6c09801e::",
+      "file": "workbench.spec.ts",
+      "title": "unknown label write freezes intent and retries the same payload and key",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-e16f52c91bfd8b075519::",
+      "file": "workbench.spec.ts",
+      "title": "expired label source review blocks saving and edited tuple clears review context",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-3fb9a14c41c3209b26ac::",
+      "file": "workbench.spec.ts",
+      "title": "mismatched label source context is rejected before any write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-97cb1a1a913f7b0e52b1::",
+      "file": "workbench.spec.ts",
+      "title": "owner measures recipe cases, reads the report and separately reviews the refreshed draft",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-128535adb11cbbfbd8d9::",
+      "file": "workbench.spec.ts",
+      "title": "uncertain recipe qualification freezes its original case intent and never starts another run",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-c572f94cdcfad6944e30::",
+      "file": "workbench.spec.ts",
+      "title": "physical recipe diagnostic success stays held and cannot become owner approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-a847bb3eed686f944deb::",
+      "file": "workbench.spec.ts",
+      "title": "failed recipe cases stay inspectable and mismatched reports never offer approval review",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-7f0fe2731660ca9bec1a::",
+      "file": "workbench.spec.ts",
+      "title": "mismatched recipe report revision is rejected before it can be used",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-c8de90f289819db8cec3::",
+      "file": "workbench.spec.ts",
+      "title": "pending recipe qualification supports explicit job reads without automatic resubmission",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-aab9ea541a80e0074022::",
+      "file": "workbench.spec.ts",
+      "title": "hidden recipe report clears its use-for-review control without rerunning cases",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-45827048c797ce8945f0::",
+      "file": "workbench.spec.ts",
+      "title": "superseded recipe report stays inspectable but cannot offer current approval",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-be879995ef254c9ef4e8::",
+      "file": "workbench.spec.ts",
+      "title": "reviewer reads measured recipe reports without case submission or approval controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-71356aae2167c53bdb9b::",
+      "file": "workbench.spec.ts",
+      "title": "owner explicitly reads minimized maintenance snapshot: running",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-e9cd0b11c092179d94d4::",
+      "file": "workbench.spec.ts",
+      "title": "owner explicitly reads minimized maintenance snapshot: disabled",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-4f493198cae0dff787f6::",
+      "file": "workbench.spec.ts",
+      "title": "owner explicitly reads minimized maintenance snapshot: drain_failed",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-cb42ca14f45228be804a::",
+      "file": "workbench.spec.ts",
+      "title": "malformed maintenance refresh clears the previous snapshot without writes",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-99965d9cb6507e5ccf56::",
+      "file": "workbench.spec.ts",
+      "title": "owner reviews separate optional scope and explicitly confirms then withdraws",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-d133c0c1f37cda135840::",
+      "file": "workbench.spec.ts",
+      "title": "reviewer reads optional permission without owner grant controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-0d5af110cefbc2c0c81b::",
+      "file": "workbench.spec.ts",
+      "title": "operator has no optional-permission administration controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-a7b2fd1fc5c7311eaeba::",
+      "file": "workbench.spec.ts",
+      "title": "unconfirmed optional grant retries the immutable scope version key and expiry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-9753f1cc82dc68c64190::",
+      "file": "workbench.spec.ts",
+      "title": "lost confirmation recovers through exact preview without another grant intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-d28824d084de2c844545::",
+      "file": "workbench.spec.ts",
+      "title": "optional permission review cannot renew after expired",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ed014c79b1615097a060::",
+      "file": "workbench.spec.ts",
+      "title": "optional permission review cannot renew after delayed",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-7c42ef2fc8c98f38f072::",
+      "file": "workbench.spec.ts",
+      "title": "optional permission review cannot renew after hidden",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-2892ff88ae8540f0beb5::",
+      "file": "workbench.spec.ts",
+      "title": "unrelated withdrawn permission cannot resolve an uncertain withdrawal",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-b68903e6ee5d71b9148e::",
+      "file": "workbench.spec.ts",
+      "title": "reviewer creates and prepares a diagnostic dataset then reads audited example metadata",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-45529ba0bb8a21781582::",
+      "file": "workbench.spec.ts",
+      "title": "owner dataset status never inherits reviewer creation or example controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-324fa555b5b048de5d79::",
+      "file": "workbench.spec.ts",
+      "title": "uncertain dataset create preserves exact body key and version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-1c2d4190a07cda3ff372::",
+      "file": "workbench.spec.ts",
+      "title": "uncertain dataset advance preserves exact body key and version",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-cc555604209e7a8f8fac::",
+      "file": "workbench.spec.ts",
+      "title": "dataset plans expose every selection through pagination and frozen use needs separate acknowledgment",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-d2071eb3b1ef33d1e09b::",
+      "file": "workbench.spec.ts",
+      "title": "dataset declassification acknowledgment cannot approve retirement and clears stale receipt display",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-6484575b6a793401491c::",
+      "file": "workbench.spec.ts",
+      "title": "dataset manifest mismatch blocks example display",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-c8cbba5e8cc0741eb16b::",
+      "file": "workbench.spec.ts",
+      "title": "derived review metadata permission is a distinct default-off owner choice",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ce16213f2af73495acee::",
+      "file": "workbench.spec.ts",
+      "title": "policy reviewer saves an inactive draft and appends an exact-version revision",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-db7fb2ce47a39b1232d4::",
+      "file": "workbench.spec.ts",
+      "title": "policy duplicate priorities and edited targets cannot approve a write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-c8342a4633f7827e5c1a::",
+      "file": "workbench.spec.ts",
+      "title": "policy lost creation freezes intent through unrelated read and unchanged retry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-bc8fcf7a1544acd0ac47::",
+      "file": "workbench.spec.ts",
+      "title": "policy lost revision preserves original version and body",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-802915a1586a782016e0::",
+      "file": "workbench.spec.ts",
+      "title": "policy owner reviews candidate metadata without gaining reviewer or activation controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-a6e290b83d907dcfe271::",
+      "file": "workbench.spec.ts",
+      "title": "policy unsupported activation reply stays unconfirmed and exit performs no new write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-a1d39ad2f95a086ee0cd::",
+      "file": "workbench.spec.ts",
+      "title": "operator does not acquire policy candidate access from workbench navigation",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-4ee40819bb096fb940d2::",
+      "file": "workbench.spec.ts",
+      "title": "original-image comparison requires separate approval and binds exact source candidate inputs",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-985bcca89fb771db4b36::",
+      "file": "workbench.spec.ts",
+      "title": "original-image comparison candidate edit withdraws both approvals",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-af1fa23d78b21cfdbf48::",
+      "file": "workbench.spec.ts",
+      "title": "original-image comparison lost create preserves exact recipe binding and retry intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-cad88e67f2e12dfbcce2::",
+      "file": "workbench.spec.ts",
+      "title": "original-image comparison unavailable capability blocks create",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-3a61009856742727717a::",
+      "file": "workbench.spec.ts",
+      "title": "original-image comparison withholds inconsistent pixel summary counts",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-73a481fda62d887cc269::",
+      "file": "workbench.spec.ts",
+      "title": "original-image comparison withholds malformed measurement provenance",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-73bf97858a4df840c7f3::",
+      "file": "workbench.spec.ts",
+      "title": "original-image comparison unobservable frames remain unknown",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-8067410d09628c71114d::",
+      "file": "workbench.spec.ts",
+      "title": "original-image comparison owner sees metadata without reviewer source controls",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-e360e6c5f1e6a34402b3::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison reviewer creates exact diagnostics and sees unknown outcomes after one step",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-8eb337537f6a06534846::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison frozen review is distinct and edited inputs withdraw acknowledgment",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-6a2b68dc3d5bdaf8b945::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison lost create retains exact intent through unrelated readback",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-1db60fd8c61c7b9a3544::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison lost step preserves original key version and body",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-4ef64d732c209cee9116::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison owner sees aggregate diagnostics and retires without reviewer access",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-bd7b90b7ff6e70f7a38b::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison withdraws reviewed input on offline",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-6dd02ac1b1c745535cee::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison withdraws reviewed input on hidden",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-811556021af13f8d1b3a::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison withdraws reviewed input on expiry",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-832fd436be43bf997800::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison rejects inconsistent summary counts and mismatched page hashes",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-1b63d16a54782c22e5ba::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison mismatched example page is withheld",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-35a47d74398ab2287b56::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison uncertain safe exit performs no new write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-851f621c7a8bd6354c3b::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison controls do not appear for an operator-only account",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-e409cf7f7fcb29d6efca::",
+      "file": "workbench.spec.ts",
+      "title": "historical comparison example delivery cannot renew the original summary deadline",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-9307574ddb8f2fd8dde1::",
+      "file": "workbench.spec.ts",
+      "title": "workbench guarded departure covers malformed replies without sending another write",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-8e10958d29bae0955b37::",
+      "file": "workbench.spec.ts",
+      "title": "workbench guarded return preserves the panel until the user explicitly leaves",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-6ab85175eb77c7b237fe::",
+      "file": "workbench.spec.ts",
+      "title": "workbench guarded sign out remains available after an informed no-retry exit",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-a03d2c2505ff0fa13fb3::",
+      "file": "workbench.spec.ts",
+      "title": "workbench guarded navigation clears after the panel explicitly finishes its unresolved intent",
+      "project": "",
+      "timeout": 30000
+    },
+    {
+      "id": "921e070f285a8b470d11-ac3d00cfbd96d3f23eba::",
+      "file": "workbench.spec.ts",
+      "title": "workbench guarded navigation includes an implicit invitation transport failure",
+      "project": "",
+      "timeout": 30000
+    }
+  ],
+  "fixture_correction": "Process-local NODE_PATH points to existing locked canonical frontend dependencies. No live candidate or global environment changed.",
+  "react_version": "19.3.0",
+  "candidate_source_unchanged": true,
+  "browser_tests_executed": 0,
+  "original_precollection": "FAIL missing React retained in browser-precollection.json",
+  "original_installed_pointer_failure": "OPEN cause UNKNOWN; not addressed by dependency resolution",
+  "full_python_handle": 8009,
+  "full_browser": "NOT_RUN; complete driver requires Python terminal audit PASS",
+  "inputs": [
+    {
+      "path": ".loop/repairs/collateral-native/browser-precollection.json",
+      "sha256": "28d24fd45c32f5939e639fddad247496f4325caa09b9b91a75e5cd451a792f9c"
+    },
+    {
+      "path": ".loop/repairs/collateral-native/browser-precollection-v2.json",
+      "sha256": "5fead2d9b5b41505b93c333d9aae187457af15e7bc86c6582e5f938ddf0356b0"
+    },
+    {
+      "path": ".loop/repairs/collateral-native/run_full_browser_v1.py",
+      "sha256": "d6c4917f1b819e7ba4f49c27fec9d73510d19e0c073c73c5acab724f151df26b"
+    }
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

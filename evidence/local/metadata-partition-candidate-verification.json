@@ -1,0 +1,54 @@
+{
+  "status": "PASS_FOR_STAGED_PARTITION_READER_ONLY",
+  "recorded_at": "2026-10-16T00:00:21.279608+00:00",
+  "scope": "one bounded deployment partition page, not complete discovery or cleanup",
+  "checks": {
+    "metadata-lineage-partition-oracle": {
+      "tests": 97,
+      "passing_phases": 291
+    },
+    "metadata-partition-installed": {
+      "tests": 201,
+      "passing_phases": 603
+    },
+    "metadata-partition-package": {
+      "tests": 158,
+      "passing_phases": 474
+    }
+  },
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/repository.py",
+      "before_sha256": "216a9c6f065b21ffb6928b53b69b0f2c6c24ebe4f65815299062b1f4cd409937",
+      "candidate_sha256": "ce7327986ecc7f63b56f73d27f77da04bc52ff2ac17c6c0ff6427d28edc87530"
+    },
+    {
+      "path": "tests/contract/test_partition_inventory.py",
+      "before_sha256": null,
+      "candidate_sha256": "f2d6bc9e71ecca4ac2daf7335eb6fa1429cecfeb09ae5c8f38df7f57958ed1fb"
+    },
+    {
+      "path": "tests/integration/test_partition_inventory_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "f32ecd358e8154349d4d487cfedbd317fbde409808196b91d51f25cf20cc5820"
+    }
+  ],
+  "main_source_unchanged": true,
+  "base_candidate_unchanged": true,
+  "original_oracle_sha256": "a8af66d26a30efeeccfd3667aee87fcb6b4c34ead80ef741decf79c7848dcf95",
+  "native_local_sdk_sends": 157,
+  "installed_local_sdk_sends": 8490,
+  "installed_modules": 99,
+  "wheel_sha256": "9b703b5b162668d37514682dd4f2a59a0709ea05fb29d298eaf3085c8078921a",
+  "integrated": false,
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "evaluator": "same Codex operator; not independent human review",
+  "protocol_reference": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_Query.html",
+  "limitations": [
+    "Counts overlap and include archived-oracle instances.",
+    "Page consistency does not establish a partition-wide atomic snapshot or complete closure.",
+    "No family policy, barrier, finite full-scan job, restore journal, cleanup API/UI or real data removal.",
+    "No real AWS, physical, human, commercial or release acceptance."
+  ]
+}

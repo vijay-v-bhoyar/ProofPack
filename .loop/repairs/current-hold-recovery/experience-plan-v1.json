@@ -1,0 +1,605 @@
+{
+  "schema_version": "1.0",
+  "product": {
+    "id": "ProofPack",
+    "name": "ProofPack",
+    "version": "working-tree-manifest-sha256:e925aebb4fe7ef5bd9cf4f0fe70f74d3fbf893a77498426225c6875cfede7d89",
+    "description": "Single-business invited-operator webcam inspector; current-hold recovery reassessment only"
+  },
+  "scope": {
+    "mode": "reassess",
+    "synthetic": true,
+    "authorization": "read_only",
+    "boundary": "Planning/independent-acceptance handoff only. Existing authorized delivery runs local regressions separately; this suite is not claimed executed.",
+    "scope_status": "draft",
+    "source_code_access": true,
+    "owners": {
+      "product": "P01 duty, actual assignee unknown",
+      "qa": "P06 independent acceptance pending; Codex local delivery",
+      "research": "P08 actual assignee unknown",
+      "release": "P01 actual decision and target authority absent"
+    },
+    "access_gaps": [
+      "No recruited human participants/kit operators or actual provider/host proof",
+      "CR-T01 two replacement HTTP oracles need independent review"
+    ],
+    "exclusions": [
+      "No new persona/grant; canonical nine personas/78operations unchanged",
+      "No actual research/contact/deployment/spend/erasure/fulfillment authorized"
+    ]
+  },
+  "evidence": [
+    {
+      "id": "CR-E01",
+      "kind": "documented_requirement",
+      "reference": "docs/PERSONAS-OPERATIONS.md; docs/WORKFLOW-COVERAGE.md",
+      "statement": "Existing P01/P07 interrupted recovery and truthful remaining-obligation duties, W19/W20/W22 and A06/A07",
+      "freshness": "current",
+      "confidence": "supported"
+    },
+    {
+      "id": "CR-E02",
+      "kind": "documented_requirement",
+      "reference": ".loop/repairs/current-hold-recovery/contract.md; oracle-review/CR-T01.md",
+      "statement": "CR01-CR08 exact current read contract and unresolved independent replacement review",
+      "freshness": "current",
+      "confidence": "provisional"
+    }
+  ],
+  "users": [
+    {
+      "id": "P01",
+      "name": "Business owner",
+      "family": "accountable",
+      "status": "provisional",
+      "goals": [
+        "Recover accurate pending state and preserve outstanding duties"
+      ],
+      "permissions": [
+        "Fresh enabled owner with MFA for app recovery; no grant inferred from this plan"
+      ],
+      "evidence_ids": [
+        "CR-E01"
+      ],
+      "research_gaps": [
+        "No actual participant needs/understanding/value evidence"
+      ]
+    },
+    {
+      "id": "P07",
+      "name": "Data/privacy steward",
+      "family": "collaborator",
+      "status": "provisional",
+      "goals": [
+        "Recover accurate pending state and preserve outstanding duties"
+      ],
+      "permissions": [
+        "Existing private business handoff; no new app role"
+      ],
+      "evidence_ids": [
+        "CR-E01"
+      ],
+      "research_gaps": [
+        "No actual participant needs/understanding/value evidence"
+      ]
+    },
+    {
+      "id": "P05",
+      "name": "Service administrator",
+      "family": "operator_maintainer",
+      "status": "provisional",
+      "goals": [
+        "Recover accurate pending state and preserve outstanding duties"
+      ],
+      "permissions": [
+        "Actual approved host actions separately; no owner permission inferred"
+      ],
+      "evidence_ids": [
+        "CR-E01"
+      ],
+      "research_gaps": [
+        "No actual participant needs/understanding/value evidence"
+      ]
+    },
+    {
+      "id": "P06",
+      "name": "Maintainer/test engineer",
+      "family": "builder",
+      "status": "provisional",
+      "goals": [
+        "Recover accurate pending state and preserve outstanding duties"
+      ],
+      "permissions": [
+        "Dedicated synthetic local test identities only; no production owner grant"
+      ],
+      "evidence_ids": [
+        "CR-E01"
+      ],
+      "research_gaps": [
+        "No actual participant needs/understanding/value evidence"
+      ]
+    },
+    {
+      "id": "P02",
+      "name": "Packing operator for this owner-only operation",
+      "family": "excluded_former",
+      "status": "excluded",
+      "goals": [
+        "Avoid exposure to owner private metadata"
+      ],
+      "permissions": [],
+      "evidence_ids": [
+        "CR-E01"
+      ],
+      "research_gaps": [
+        "Full P02 canonical workflows remain required"
+      ],
+      "exclusion_reason": "No owner grant; this scoped operation is excluded, not the persona from the product"
+    }
+  ],
+  "profiles": [
+    {
+      "id": "CR-B01",
+      "name": "Recoverable state priority",
+      "user_ids": [
+        "P01"
+      ],
+      "kind": "priority",
+      "statement": "May prioritize recovery without repeated opaque-ID copying; this is a hypothesis",
+      "context": "Lost tab/reference or interrupted connection",
+      "status": "hypothesis",
+      "evidence_ids": [
+        "CR-E01"
+      ],
+      "test_effect": "Observe ability to find current read and distinguish pending/reconciled/fulfilled without coaching"
+    }
+  ],
+  "needs": [
+    {
+      "id": "N01",
+      "user_ids": [
+        "P01",
+        "P05",
+        "P06"
+      ],
+      "statement": "Recover accurate current owner state under existing authority",
+      "priority": "P1",
+      "status": "hypothesis",
+      "evidence_ids": [
+        "CR-E01"
+      ],
+      "owner": "P01/P07 duty holders unassigned"
+    },
+    {
+      "id": "N07",
+      "user_ids": [
+        "P01",
+        "P07"
+      ],
+      "statement": "Preserve truthful remaining obligations and uncertain original intent",
+      "priority": "P1",
+      "status": "hypothesis",
+      "evidence_ids": [
+        "CR-E01"
+      ],
+      "owner": "P01/P07 duty holders unassigned"
+    }
+  ],
+  "journeys": [
+    {
+      "id": "W20",
+      "name": "Interrupted current metadata hold recovery variant; related W19/W22",
+      "user_ids": [
+        "P01",
+        "P07",
+        "P05",
+        "P06"
+      ],
+      "need_ids": [
+        "N01",
+        "N07"
+      ],
+      "stages": [
+        "Authenticate authorized owner",
+        "Find current recovery without saved ID",
+        "Read exact snapshot or no-held-at-this-read",
+        "Preserve original intent/remaining duties",
+        "Use separate explicit cancellation/review/manual handoff or exit"
+      ],
+      "handoffs": [
+        "P01 communicates only authorized status through existing private P07/P05 channel; no notification sent"
+      ],
+      "baseline": "Retained opaque reference or accepted manual service handoff",
+      "outcome": "Accurate scoped current read with no false completion or hidden write",
+      "owner": "P01 actual assignee unknown"
+    }
+  ],
+  "controls": [
+    {
+      "id": "CR-C1",
+      "name": "Fresh owner/MFA and no new permissions",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    },
+    {
+      "id": "CR-C2",
+      "name": "Exact current gate/row/version and final authority binding",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    },
+    {
+      "id": "CR-C3",
+      "name": "Mandatory bounded control registration/release and unknown completion hold",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    },
+    {
+      "id": "CR-C4",
+      "name": "No false reconciliation/fulfillment, preserve pending intent",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    },
+    {
+      "id": "CR-C5",
+      "name": "Discoverable pointer/keyboard/narrow recovery and accurate failure context",
+      "protected_user_ids": [
+        "P01",
+        "P07",
+        "P02"
+      ],
+      "required": true,
+      "critical": true,
+      "owner": "P06 verification, P01/P07 actual acceptance pending",
+      "verification_method": "Source-bound deterministic/trace checks plus separate actual human/operational proof"
+    }
+  ],
+  "tests": [
+    {
+      "id": "CR-TECH01",
+      "title": "Owner/control correctness under interruption",
+      "primary_user_id": "P06",
+      "related_user_ids": [
+        "P01",
+        "P07",
+        "P05"
+      ],
+      "profile_ids": [],
+      "need_ids": [
+        "N01",
+        "N07"
+      ],
+      "journey_id": "W20",
+      "control_ids": [
+        "CR-C1",
+        "CR-C2",
+        "CR-C3",
+        "CR-C4",
+        "CR-C5"
+      ],
+      "priority": "P1",
+      "kind": "technical",
+      "starting_conditions": [
+        "Original CR contract and exact candidate subject",
+        "Synthetic fixture for technical work; actual recruited/consented participants required for human study"
+      ],
+      "permissions": [
+        "Owner API requires actual fresh owner authority; local fixtures are not production approval"
+      ],
+      "fixtures": [
+        "Synthetic current/open/unknown-write/denial/abort states; no real private data"
+      ],
+      "task": "Recover the current status after losing the original request reference and determine what remains to be done.",
+      "steps": [
+        "Read current state through exact owner entry",
+        "Check held/open and relevant denials/interruption",
+        "Verify preserved intent/data/ownership and remaining duty; do not auto-write"
+      ],
+      "expected_experience": [
+        "Recovery is available without guessing UUIDs; accurate uncertainty and separate actions remain visible"
+      ],
+      "expected_outcome": [
+        "Exact authorized current snapshot or honest absence/hold, with original uncertainty and duties preserved"
+      ],
+      "prohibited_outcomes": [
+        "Unregistered work, non-owner disclosure, scope substitution, automatic cancellation or false completion",
+        "Counting synthetic/automated behavior as human understanding"
+      ],
+      "reference_evidence_ids": [
+        "CR-E01",
+        "CR-E02"
+      ],
+      "oracle_status": "unresolved",
+      "verification_methods": [
+        "deterministic",
+        "trace_inspection"
+      ],
+      "assertions": [
+        "Existing fresh-owner, version, registration, response and no-business-write boundaries hold",
+        "Read cannot reconcile unknown writes, erase or fulfill; pending intent remains",
+        "Human understanding/value assessed separately; all original failures retained"
+      ],
+      "required_access": [
+        "Scoped authorized fixture/source/browser for local checks; actual safe participant setting and independent acceptance still absent"
+      ],
+      "evidence_to_capture": [
+        "Exact source/fixture/identity and all trials",
+        "Redacted outcome, help/effort/error/recovery and remaining obligations"
+      ],
+      "cleanup": "Stop scoped fixtures; preserve evidence; no actual data deletion or remote cleanup.",
+      "stop_conditions": [
+        "Any unapproved actual identity/data/destination or consequential action",
+        "Original assigned bound reached or outcome cannot be verified"
+      ],
+      "budget": {
+        "max_actions": 20,
+        "max_minutes": 20,
+        "max_model_calls": 0
+      },
+      "trial_plan": {
+        "required_runs": 1,
+        "reason": "Proposed planning placeholder, not a claimed adequate human sample or authorized execution budget"
+      },
+      "execution": {
+        "status": "not_run",
+        "provenance": "none",
+        "completed_trials": 0,
+        "failed_trials": 0,
+        "evidence_refs": [],
+        "reason": "Formal independent/human acceptance handoff not executed; local delivery regression receipts tracked separately",
+        "build_version": "working-tree-manifest-sha256:e925aebb4fe7ef5bd9cf4f0fe70f74d3fbf893a77498426225c6875cfede7d89",
+        "freshness": "unknown"
+      },
+      "ownership": {
+        "executor": "Existing authorized delivery for local checks; actual research/QA owner unassigned",
+        "reviewer": "P06 independent technical oracle/P08 research review pending"
+      }
+    },
+    {
+      "id": "CR-MECH01",
+      "title": "Rendered current recovery and truthful pending controls",
+      "primary_user_id": "P01",
+      "related_user_ids": [
+        "P07",
+        "P05",
+        "P06"
+      ],
+      "profile_ids": [],
+      "need_ids": [
+        "N01",
+        "N07"
+      ],
+      "journey_id": "W20",
+      "control_ids": [
+        "CR-C1",
+        "CR-C2",
+        "CR-C3",
+        "CR-C4",
+        "CR-C5"
+      ],
+      "priority": "P1",
+      "kind": "regression",
+      "starting_conditions": [
+        "Original CR contract and exact candidate subject",
+        "Synthetic fixture for technical work; actual recruited/consented participants required for human study"
+      ],
+      "permissions": [
+        "Owner API requires actual fresh owner authority; local fixtures are not production approval"
+      ],
+      "fixtures": [
+        "Synthetic current/open/unknown-write/denial/abort states; no real private data"
+      ],
+      "task": "Recover the current status after losing the original request reference and determine what remains to be done.",
+      "steps": [
+        "Read current state through exact owner entry",
+        "Check held/open and relevant denials/interruption",
+        "Verify preserved intent/data/ownership and remaining duty; do not auto-write"
+      ],
+      "expected_experience": [
+        "Recovery is available without guessing UUIDs; accurate uncertainty and separate actions remain visible"
+      ],
+      "expected_outcome": [
+        "Exact authorized current snapshot or honest absence/hold, with original uncertainty and duties preserved"
+      ],
+      "prohibited_outcomes": [
+        "Unregistered work, non-owner disclosure, scope substitution, automatic cancellation or false completion",
+        "Counting synthetic/automated behavior as human understanding"
+      ],
+      "reference_evidence_ids": [
+        "CR-E01",
+        "CR-E02"
+      ],
+      "oracle_status": "proposed",
+      "verification_methods": [
+        "deterministic"
+      ],
+      "assertions": [
+        "Existing fresh-owner, version, registration, response and no-business-write boundaries hold",
+        "Read cannot reconcile unknown writes, erase or fulfill; pending intent remains",
+        "Human understanding/value assessed separately; all original failures retained"
+      ],
+      "required_access": [
+        "Scoped authorized fixture/source/browser for local checks; actual safe participant setting and independent acceptance still absent"
+      ],
+      "evidence_to_capture": [
+        "Exact source/fixture/identity and all trials",
+        "Redacted outcome, help/effort/error/recovery and remaining obligations"
+      ],
+      "cleanup": "Stop scoped fixtures; preserve evidence; no actual data deletion or remote cleanup.",
+      "stop_conditions": [
+        "Any unapproved actual identity/data/destination or consequential action",
+        "Original assigned bound reached or outcome cannot be verified"
+      ],
+      "budget": {
+        "max_actions": 20,
+        "max_minutes": 20,
+        "max_model_calls": 0
+      },
+      "trial_plan": {
+        "required_runs": 1,
+        "reason": "Proposed planning placeholder, not a claimed adequate human sample or authorized execution budget"
+      },
+      "execution": {
+        "status": "not_run",
+        "provenance": "none",
+        "completed_trials": 0,
+        "failed_trials": 0,
+        "evidence_refs": [],
+        "reason": "Formal independent/human acceptance handoff not executed; local delivery regression receipts tracked separately",
+        "build_version": "working-tree-manifest-sha256:e925aebb4fe7ef5bd9cf4f0fe70f74d3fbf893a77498426225c6875cfede7d89",
+        "freshness": "unknown"
+      },
+      "ownership": {
+        "executor": "Existing authorized delivery for local checks; actual research/QA owner unassigned",
+        "reviewer": "P06 independent technical oracle/P08 research review pending"
+      }
+    },
+    {
+      "id": "CR-HUMAN01",
+      "title": "Uncoached recovery and remaining-duty understanding",
+      "primary_user_id": "P01",
+      "related_user_ids": [
+        "P07",
+        "P05",
+        "P06"
+      ],
+      "profile_ids": [
+        "CR-B01"
+      ],
+      "need_ids": [
+        "N01",
+        "N07"
+      ],
+      "journey_id": "W20",
+      "control_ids": [
+        "CR-C1",
+        "CR-C2",
+        "CR-C3",
+        "CR-C4",
+        "CR-C5"
+      ],
+      "priority": "P1",
+      "kind": "human_research",
+      "starting_conditions": [
+        "Original CR contract and exact candidate subject",
+        "Synthetic fixture for technical work; actual recruited/consented participants required for human study"
+      ],
+      "permissions": [
+        "Owner API requires actual fresh owner authority; local fixtures are not production approval"
+      ],
+      "fixtures": [
+        "Synthetic current/open/unknown-write/denial/abort states; no real private data"
+      ],
+      "task": "Recover the current status after losing the original request reference and determine what remains to be done.",
+      "steps": [],
+      "expected_experience": [
+        "Recovery is available without guessing UUIDs; accurate uncertainty and separate actions remain visible"
+      ],
+      "expected_outcome": [
+        "Exact authorized current snapshot or honest absence/hold, with original uncertainty and duties preserved"
+      ],
+      "prohibited_outcomes": [
+        "Unregistered work, non-owner disclosure, scope substitution, automatic cancellation or false completion",
+        "Counting synthetic/automated behavior as human understanding"
+      ],
+      "reference_evidence_ids": [
+        "CR-E01",
+        "CR-E02"
+      ],
+      "oracle_status": "proposed",
+      "verification_methods": [
+        "human_observation",
+        "domain_review"
+      ],
+      "assertions": [
+        "Existing fresh-owner, version, registration, response and no-business-write boundaries hold",
+        "Read cannot reconcile unknown writes, erase or fulfill; pending intent remains",
+        "Human understanding/value assessed separately; all original failures retained"
+      ],
+      "required_access": [
+        "Scoped authorized fixture/source/browser for local checks; actual safe participant setting and independent acceptance still absent"
+      ],
+      "evidence_to_capture": [
+        "Exact source/fixture/identity and all trials",
+        "Redacted outcome, help/effort/error/recovery and remaining obligations"
+      ],
+      "cleanup": "Stop scoped fixtures; preserve evidence; no actual data deletion or remote cleanup.",
+      "stop_conditions": [
+        "Any unapproved actual identity/data/destination or consequential action",
+        "Original assigned bound reached or outcome cannot be verified"
+      ],
+      "budget": {
+        "max_actions": 20,
+        "max_minutes": 20,
+        "max_model_calls": 0
+      },
+      "trial_plan": {
+        "required_runs": 1,
+        "reason": "Proposed planning placeholder, not a claimed adequate human sample or authorized execution budget"
+      },
+      "execution": {
+        "status": "not_run",
+        "provenance": "none",
+        "completed_trials": 0,
+        "failed_trials": 0,
+        "evidence_refs": [],
+        "reason": "Formal independent/human acceptance handoff not executed; local delivery regression receipts tracked separately",
+        "build_version": "working-tree-manifest-sha256:e925aebb4fe7ef5bd9cf4f0fe70f74d3fbf893a77498426225c6875cfede7d89",
+        "freshness": "unknown"
+      },
+      "ownership": {
+        "executor": "Existing authorized delivery for local checks; actual research/QA owner unassigned",
+        "reviewer": "P06 independent technical oracle/P08 research review pending"
+      }
+    }
+  ],
+  "decisions": [
+    {
+      "id": "CR-D01",
+      "summary": "Independently review CR-T01 mandatory-registry candidate expectations; no self-waiver",
+      "owner": "P06 unassigned",
+      "status": "open",
+      "affected_ids": [
+        "CR-TECH01",
+        "CR-C3"
+      ]
+    },
+    {
+      "id": "CR-D02",
+      "summary": "Obtain actual human comprehension/effort/voluntary-use and operational/provider evidence before acceptance",
+      "owner": "P01/P08 unassigned",
+      "status": "open",
+      "affected_ids": [
+        "CR-HUMAN01",
+        "W20"
+      ]
+    }
+  ]
+}

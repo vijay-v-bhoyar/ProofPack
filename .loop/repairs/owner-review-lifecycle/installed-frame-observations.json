@@ -1,0 +1,183 @@
+{
+  "status": "OBSERVED_FAILURES",
+  "records": [
+    {
+      "stem": "review-lifecycle-installed-v1",
+      "exit_code": 1,
+      "source_unchanged": true,
+      "cleanups_verified": true,
+      "observed_error": "TimeoutError: locator.check: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('I acknowledge interruption of ordinary work; this hold erases nothing.')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"checkbox\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+      "dom": {
+        "visibility": "visible",
+        "busy": "false",
+        "viewport": [
+          1280,
+          720,
+          493
+        ],
+        "checkboxes": [
+          {
+            "disabled": false,
+            "checked": false,
+            "rect": [
+              115,
+              457.28125,
+              22,
+              22
+            ],
+            "display": "block",
+            "visibility": "visible",
+            "pointer": "auto"
+          }
+        ]
+      },
+      "png": false,
+      "keyboard_diagnostic": {
+        "checked": true
+      },
+      "original_case_accepted": false,
+      "log_sha256": "72611a5a6f413853ba9841fce69a5406ec302ef2d76edb57bf736ea5eee5120c"
+    },
+    {
+      "stem": "review-frame-diagnostic-v1",
+      "exit_code": 1,
+      "source_unchanged": true,
+      "cleanups_verified": true,
+      "observed_error": "TimeoutError: locator.check: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('I acknowledge interruption of ordinary work; this hold erases nothing.')\u001b[22m\n\u001b[2m    - locator resolved to <input type=\"checkbox\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n",
+      "dom": {
+        "passive": {
+          "at": 5823.5999999940395,
+          "state": {
+            "raf": [
+              380.7999999821186,
+              398.89999997615814,
+              400.2999999821186,
+              406.69999998807907,
+              416
+            ],
+            "timers": [
+              208.89999997615814,
+              310.89999997615814,
+              411.5,
+              508.7999999821186,
+              620.6999999880791,
+              713.1999999880791,
+              812.1999999880791,
+              915.3999999761581,
+              1012.7999999821186,
+              1118.3999999761581,
+              1210.7999999821186,
+              1318.5,
+              1411.699999988079,
+              1522.199999988079,
+              1615.699999988079,
+              1709.3999999761581,
+              1819.2999999821186,
+              1912.7999999821186,
+              2020.2999999821186,
+              2113.899999976158,
+              2223,
+              2316.5,
+              2410.699999988079,
+              2519.2999999821186,
+              2613.899999976158,
+              2722.2999999821186,
+              2815.7999999821186,
+              2909.5,
+              3018.899999976158,
+              3111.5,
+              3219,
+              3311.899999976158,
+              3420.699999988079,
+              3514.2999999821186,
+              3608.7999999821186,
+              3717.199999988079,
+              3809.699999988079,
+              3918.199999988079,
+              4011.899999976158,
+              4119.799999982119,
+              4213.0999999940395,
+              4321.899999976158,
+              4416.299999982119,
+              4510.299999982119,
+              4619,
+              4713.5,
+              4822,
+              4915.5999999940395,
+              5009,
+              5118.5999999940395,
+              5210.899999976158,
+              5319.399999976158,
+              5412.299999982119,
+              5521.299999982119,
+              5614.899999976158,
+              5723.5999999940395,
+              5817.199999988079
+            ],
+            "visibility": [
+              {
+                "at": 107.89999997615814,
+                "value": "visible"
+              }
+            ],
+            "began": 107.89999997615814
+          }
+        },
+        "visibility": "visible",
+        "busy": "false",
+        "viewport": [
+          1280,
+          720,
+          493
+        ],
+        "checkboxes": [
+          {
+            "disabled": false,
+            "checked": false,
+            "rect": [
+              115,
+              457.28125,
+              22,
+              22
+            ],
+            "display": "block",
+            "visibility": "visible",
+            "pointer": "auto"
+          }
+        ]
+      },
+      "png": false,
+      "keyboard_diagnostic": {
+        "checked": true
+      },
+      "original_case_accepted": false,
+      "log_sha256": "64c22bf694fdbfc4b81c3b5e3f8b2d1f4b3f20999cbce49fab7aa4c2c8b5161c",
+      "frame_summary": {
+        "raf_callbacks": 5,
+        "frame_callback_age_ms": 5407.5999999940395,
+        "timer_samples": 57,
+        "maximum_recorded_timer_gap_ms": 111.90000000596046,
+        "visibility": [
+          {
+            "at": 107.89999997615814,
+            "value": "visible"
+          }
+        ]
+      }
+    }
+  ],
+  "cause": "UNKNOWN",
+  "parent_complete": false,
+  "original_installed": "FAIL unchanged",
+  "limits": "Passive and post-failure keyboard observations are not acceptance oracles and do not authorize force, timeout/profile change or repeated original retries.",
+  "foreground_diagnostic": {
+    "exit_code": 0,
+    "cases": 1,
+    "original_assertions_retained": true,
+    "foreground_experiment": "NOT_RUN: original case passed before post-failure branch; no foreground action executed",
+    "observation_limit": "Success counters describe the final reloaded signed-out document, not the earlier checkbox stage",
+    "original_installed_accepted": false,
+    "cleanups_verified": true,
+    "process_sha256": "b0b50c3b42a6e0f6c0d02e8cbf8de729537c90637f01da36ce528ffca2365faf"
+  }
+}

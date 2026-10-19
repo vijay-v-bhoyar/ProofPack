@@ -1,0 +1,101 @@
+.............................F.......................................... [ 13%]
+........................................................................ [ 27%]
+........................................................................ [ 41%]
+........................................................................ [ 55%]
+........................................................................ [ 69%]
+........................................................................ [ 82%]
+........................................................................ [ 96%]
+.................                                                        [100%]
+================================== FAILURES ===================================
+_________ test_idempotent_admission_concurrency_never_consumes_twice __________
+
+world = (<proofpack.auth.service.AccessService object at 0x000002379CD02270>, <proofpack.evidence.repository.DynamoRepository ..., access_revision=1, session_id='7066cee2-971f-4380-bd64-b73a683a0f03', session_expires_at=4600.0, mfa_verified=True)))
+recipe = Recipe(recipe_id='demo', revision=1, name='Synthetic one of each', kit_sku='demo', constraints=(Constraint(constraint_...sset_ids=('synthetic-reference',), calibration_profile_id='synthetic-mat', data_origin=<Origin.SYNTHETIC: 'synthetic'>)
+
+    def test_idempotent_admission_concurrency_never_consumes_twice(world,recipe):
+        capture,started,operator,credentials,clock=capture_world(world,recipe)
+        permit=capture_permit(capture,started,operator)
+        args={'inspection_id':started['inspection_id'],'expected_version':permit['inspection_state_version'],
+            'permit_id':permit['permit_id'],'nonce':permit['nonce'],'sequence':permit['sequence'],'payload':b'synthetic trusted internal bytes',
+            'content_type':'image/png','idempotency_key':'same-upload'}
+        barrier=Barrier(2)
+        def race():
+            barrier.wait()
+            try:return capture.admit(operator,**args)
+            except StoreConflict:return None
+>       with ThreadPoolExecutor(max_workers=2) as pool:results=list(pool.map(lambda _:race(),range(2)))
+                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\integration\test_access_lifecycle.py:398: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py:619: in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py:317: in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py:58: in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\integration\test_access_lifecycle.py:398: in <lambda>
+    with ThreadPoolExecutor(max_workers=2) as pool:results=list(pool.map(lambda _:race(),range(2)))
+                                                                                  ^^^^^^
+tests\integration\test_access_lifecycle.py:396: in race
+    try:return capture.admit(operator,**args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <proofpack.capture.service.CaptureService object at 0x000002379C9DE9F0>
+actor = Actor(cookie=Row(key=Key(table='state', resource='cookie#6873c830748cc4c6fc017726fd4b7e6cba38cea76f53a4fec9eee231e4c70..., access_revision=1, session_id='8de5b6c6-3772-468a-bcee-f272272b5e3c', session_expires_at=4600.0, mfa_verified=False))
+inspection_id = '52eac0c1-933a-47cd-88e3-c863ec39cd90', expected_version = 2
+permit_id = '08cce95c-983b-4d23-9b5d-25903f318bf4'
+nonce = 'ToMnMvBISDkw4hse4AcRmb9qZ_C8q9_XGKzyEJGDBp0', sequence = 1
+payload = b'synthetic trusted internal bytes', idempotency_key = 'same-upload'
+content_type = 'image/png'
+
+    def admit(self,actor,*,inspection_id,expected_version,permit_id,nonce,sequence,payload,idempotency_key=None,content_type=None):
+        """Internal byte admission; caller must still decode/store/verify or fail work."""
+        if (type(expected_version) is not int or expected_version<1 or type(sequence) is not int or sequence<1
+                or not isinstance(payload,bytes) or not 0<len(payload)<=2097152
+                or not isinstance(nonce,str) or not re.fullmatch(r'[A-Za-z0-9_-]{43}',nonce)):
+            raise ValueError('bounded capture bytes/identity required')
+        actor=self.access._fresh(actor,Role.OPERATOR)
+        idem=None;body_hash=None
+        if idempotency_key is not None:
+            if content_type not in {'image/jpeg','image/png'}:raise ValueError('declared image type required')
+            idem,body_hash,replay=self.access._idempotency(actor,'observation-upload:'+inspection_id,idempotency_key,
+                {'inspection_id':inspection_id,'expected_version':expected_version,'permit_id':permit_id,'nonce_sha256':digest(nonce),
+                 'sequence':sequence,'source_sha256':hashlib.sha256(payload).hexdigest(),'byte_length':len(payload),'content_type':content_type})
+            if replay is not None:return self._replayed_admission(actor,inspection_id,replay.data['result'])
+        actor,work,authority,deadline=self._authority(actor,inspection_id)
+        key=permit_key(permit_id);row=self.repository.snapshot((key,))[key];tick=self.tick()
+        if work.revision!=expected_version or work.data.get('pending_permit_id')!=permit_id:raise StoreConflict('capture permit is not current')
+        if (row is None or row.data['status']!='issued' or row.data['inspection_id']!=inspection_id
+                or row.data['station_epoch']!=work.data['station_epoch']
+                or row.data['runtime_instance_id']!=work.data['runtime_instance_id'] or row.data['runtime_epoch']!=work.data['runtime_epoch']
+                or row.data['sequence']!=sequence or sequence!=integer(work.data['latest_input_sequence'])+1
+                or not hmac.compare_digest(row.data['nonce_sha256'],digest(nonce))
+                or not row.data['issued_tick_ns']<=tick<min(row.data['expires_tick_ns'],row.data['observation_deadline_tick_ns'])
+>               or self.access.now()>=deadline):raise Denied('valid fresh one-use capture permit required')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               proofpack.auth.policy.Denied: valid fresh one-use capture permit required
+
+services\api\proofpack\capture\service.py:132: Denied
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/unit/test_cognito.py::test_weak_rsa_signing_key_is_dependency_failure
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\jwt\api_jwt.py:149: InsecureKeyLengthWarning: The RSA key is 1024 bits long, which is below the minimum recommended size of 2048 bits. See NIST SP 800-131A.
+    return self._jws.encode(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_access_lifecycle.py::test_idempotent_admission_concurrency_never_consumes_twice
+1 failed, 520 passed, 2 warnings in 149.24s (0:02:29)

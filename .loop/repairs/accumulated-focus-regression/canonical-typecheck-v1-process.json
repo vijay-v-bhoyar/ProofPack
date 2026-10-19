@@ -1,0 +1,17 @@
+{
+  "started_at": "2026-10-17T19:01:00.862882+00:00",
+  "ended_at": "2026-10-17T19:01:06.673726+00:00",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.EXE",
+    "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "--prefix",
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web",
+    "run",
+    "typecheck"
+  ],
+  "exit_code": 0,
+  "source_unchanged": true,
+  "frontend_artifacts_unchanged": true,
+  "log_sha256": "771ce8c692b1c675f65957ba4d0bdc35b2514293d57ddda11e902f666fc5130a",
+  "scope": "fresh canonical frontend typecheck only; exact tested build artifacts retained"
+}

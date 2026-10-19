@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-10-17T23:43:18.310994+00:00",
+  "status": "PASS_COMPLETE_COLLECTION_ONLY",
+  "source_inputs": 730,
+  "python_cases": 5133,
+  "phases": 0,
+  "preserved_prior_python_cases_in_order": 5018,
+  "added_python_cases": 115,
+  "added_by_module": {
+    "tests/integration/test_configured_owner_auth_review.py": 5,
+    "tests/integration/test_owner_auth_review_browser.py": 1,
+    "tests/integration/test_owner_auth_review_store.py": 4,
+    "tests/unit/test_owner_auth_review_client.py": 14,
+    "tests/unit/test_owner_auth_review_factory.py": 1,
+    "tests/unit/test_owner_auth_review_host.py": 75,
+    "tests/unit/test_owner_auth_review_response.py": 15
+  },
+  "sdk_attempts": 0,
+  "transport_attempts": 0,
+  "browser_case_parity": {
+    "prior_cases_preserved_in_order_by_file_title_project_timeout": 395,
+    "current_cases": 399,
+    "added_cases": 4,
+    "same_profile": true
+  },
+  "full_current_execution": "NOT_RUN",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

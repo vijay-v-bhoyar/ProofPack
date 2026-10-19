@@ -1,0 +1,58 @@
+........................................................................ [ 18%]
+....................................F................................... [ 37%]
+........................................................................ [ 56%]
+........................................................................ [ 75%]
+........................................................................ [ 94%]
+......................                                                   [100%]
+================================== FAILURES ===================================
+_____ test_user_pagination_is_scoped_signed_and_contains_disabled_members _____
+
+world = (<proofpack.auth.service.AccessService object at 0x000001AC67F7E450>, <proofpack.evidence.repository.DynamoRepository ..., access_revision=1, session_id='eac3a789-d189-4972-8523-67c2cd31419d', session_expires_at=4600.0, mfa_verified=True)))
+
+    def test_user_pagination_is_scoped_signed_and_contains_disabled_members(world):
+        service,repo,clock,uid,credentials,owner=world
+        member,_,_,_,_=invite_and_join(world)
+        first=service.list_users(owner,limit=1)
+        assert len(first['users'])==1 and first['next_cursor']
+        second=service.list_users(owner,limit=1,cursor=first['next_cursor'])
+        assert {first['users'][0]['id'],second['users'][0]['id']}=={uid,member}
+>       with pytest.raises(Denied):service.list_users(owner,cursor=first['next_cursor'][:-1]+'!')
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\integration\test_access_lifecycle.py:1012: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+services\api\proofpack\auth\service.py:365: in list_users
+    result,next_cursor=self._resource_page(actor,prefix='user#',purpose='user-cursor',serialize=self.public_user,limit=limit,cursor=cursor)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <proofpack.auth.service.AccessService object at 0x000001AC67F7E450>
+actor = Actor(cookie=Row(key=Key(table='state', resource='cookie#950905efb1a147c315fda18b379c974cecee4a67ffbb56f4f6d616f3890b2...e, access_revision=1, session_id='eac3a789-d189-4972-8523-67c2cd31419d', session_expires_at=4600.0, mfa_verified=True))
+prefix = 'user#', purpose = 'user-cursor'
+serialize = <function AccessService.public_user at 0x000001AC4031C220>
+limit = 100
+cursor = 'eyJzY29wZSI6Ijc1ZTk3M2NkZWY5YWFlYTA5YTFiOTVkZTZmYzIxNWU3ZWE2MGQzYjdhNjE5NGRhMDVmOTYyOTg1YzUwMjc5ZGIiLCJwcmVmaXgiOiJ1c...RhLWRjZDYtNGNkNS1iMDk3LTcwY2ZmOWI2MzI0MyIsImV4cGlyZXNfYXRfbXMiOjE2MDAwMDB9.asbFz12Yb_8MpVg-jzGSuOT0z76pkbIYa002uxQ6at!'
+
+    def _resource_page(self,actor,*,prefix,purpose,serialize,limit,cursor):
+        actor=self._fresh(actor,Role.OWNER)
+        start=None
+        if cursor is not None:
+            if (not isinstance(cursor,str) or len(cursor)>2048
+                    or not re.fullmatch(r'[A-Za-z0-9_-]+\.[A-Za-z0-9_-]{43}',cursor)):
+>               raise ValueError('invalid user cursor')
+E               ValueError: invalid user cursor
+
+services\api\proofpack\auth\service.py:345: ValueError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/unit/test_cognito.py::test_weak_rsa_signing_key_is_dependency_failure
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\jwt\api_jwt.py:149: InsecureKeyLengthWarning: The RSA key is 1024 bits long, which is below the minimum recommended size of 2048 bits. See NIST SP 800-131A.
+    return self._jws.encode(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_access_lifecycle.py::test_user_pagination_is_scoped_signed_and_contains_disabled_members
+1 failed, 381 passed, 2 warnings in 33.66s

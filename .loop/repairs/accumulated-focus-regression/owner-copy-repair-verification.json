@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-10-17T18:26:05.853320+00:00",
+  "status": "PASS_AUDITOR_REPRESENTATION_REPAIR_ONLY",
+  "original_failure": "owner-cohort-audit-first-failure.json",
+  "original_auditors": [
+    "audit_owner_cohort.before-newline-fix.py",
+    "audit_full_v1.before-newline-fix.py"
+  ],
+  "change": "Require exact frozen logical-program hash and exact Windows CRLF diagnostic-copy bytes separately; native node -e program/actions/assertions, running candidate and limits unchanged",
+  "unit_command": ".venv/Scripts/python.exe -X utf8 .loop/repairs/accumulated-focus-regression/test_owner_copy_contract.py",
+  "unit_exit_code_observed": 0,
+  "unit_cases": 10,
+  "unit_scope": "copy serialization integrity only; no app/native/browser workload",
+  "terminal_model_cases": 16,
+  "actual_live_refusal_exit_code": 2,
+  "current_cohort_cases": 132,
+  "current_cohort_phases": 396,
+  "current_local_sdk_sends": 69772,
+  "fixed_inputs": [
+    {
+      "path": "owner_copy_contract.py",
+      "sha256": "7978e901faaf957b87cc584446c3d17c1f963a5183f3c97a7a64e51d606b7a7f"
+    },
+    {
+      "path": "test_owner_copy_contract.py",
+      "sha256": "de6624712e3a6b52458044637d72a488b379d469613cf38bbb3e59cfe8b049d5"
+    },
+    {
+      "path": "audit_owner_cohort.py",
+      "sha256": "2e5196134868702f3951ac9f7ebe07b0a9bc4ab867ea1121c476d8d673c87847"
+    },
+    {
+      "path": "audit_full_v1.py",
+      "sha256": "cd5e85eb7423dee23da3f1a35aa16fb5176162aaf0b8f7202d7389b425db162c"
+    },
+    {
+      "path": "probe_terminal_audit.py",
+      "sha256": "e323038ee1a9d5dfa0af4ee3fa72d0f726cda8286c55b48a836693358ded3316"
+    }
+  ],
+  "terminal_probe_receipt_sha256": "a2d3816870d5f78b93dc77696156c47d2676d6220888be1529aa15ba4182f80a",
+  "cohort_receipt_sha256": "d056106f6230457b1d5623befdc55f26204c39d1174a873ec63c659314354239",
+  "full_current_regression": "PENDING",
+  "original_native_failure_cause": "UNKNOWN",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

@@ -1,0 +1,127 @@
+{
+  "scope": "persona_adoption_documentation_and_policy_ui_only",
+  "status": "PASS",
+  "recorded_at": "2026-10-14T23:34:06.719874+00:00",
+  "mode": "user-first-product-adoption Improve",
+  "inventory": {
+    "personas": 9,
+    "operations": 78,
+    "workflows": 26,
+    "technical_acceptance_scopes": 58,
+    "human_scenarios": 9,
+    "new_planned_comparison_child_cases": 7
+  },
+  "checks": [
+    {
+      "command": "npm.cmd run build",
+      "exit_code": 0,
+      "result": "PASS",
+      "includes": "TypeScript noEmit and Vite build"
+    },
+    {
+      "command": "python docs/contracts/validate_documentation.py",
+      "exit_code": 0,
+      "result": "PASS",
+      "checks": 29,
+      "inputs": 31
+    },
+    {
+      "command": "playwright test --config=apps/web/playwright.config.ts tests/e2e/workbench.spec.ts --grep policy --reporter=list",
+      "exit_code": 0,
+      "result": "PASS",
+      "passed": 7,
+      "scope": "synthetic API fixtures in default Chrome; exact built frontend on owned loopback server"
+    }
+  ],
+  "startup_attempts": [
+    {
+      "result": "FAIL",
+      "scope": "server readiness before any browser test",
+      "receipt": "evidence/local/persona-adoption-startup-first.json",
+      "log": "evidence/local/persona-adoption-startup-first.log",
+      "cause": "UNKNOWN; server log empty; startup limit unchanged"
+    },
+    {
+      "result": "PASS",
+      "scope": "subsequent execution with owned loopback/Chrome permission",
+      "receipt": "evidence/local/browser-server.json",
+      "cleanup": "server terminated; exact index hash matched"
+    }
+  ],
+  "evidence_layers": {
+    "task_outcome": "synthetic proposal task only; actual packing value NOT_RUN",
+    "experience_mechanisms": "seven focused rendered policy scenarios PASS",
+    "human_experience": "NOT_RUN",
+    "technical_assurance": "frontend build and document structure plus focused browser fixtures only"
+  },
+  "full_suite": "NOT_RUN_FOR_CURRENT_CHANGED_SUBJECT",
+  "unfinished_evaluation_backend": "NOT_VERIFIED_BY_THIS_REVIEW",
+  "new_comparison_child_cases": "NOT_RUN",
+  "full_workflow_acceptance": "INCOMPLETE",
+  "beta_decision": "NO_GO",
+  "unresolved": [
+    "Historical full-driver browser failure retained; navigation and camera intermittency unresolved",
+    "No actual packing operators, physical kits, independent evaluator or human study",
+    "No actual AWS/provider/deployment/operational acceptance",
+    "No claim of replay availability, independent qualification, causal advantage, faster packing or beta readiness"
+  ],
+  "authority": "Local documentation and scoped UI correction only; no contact, invitations, spend, cloud mutation or publication",
+  "inputs_recorded_after_execution": [
+    {
+      "path": "docs/PERSONAS-OPERATIONS.md",
+      "sha256": "54f33b5ff4ca157c903a2cd4f99d3d1b6c5321b1e40e7a4d2d807feba6010f7f"
+    },
+    {
+      "path": "docs/USER-NEEDS-ADOPTION.md",
+      "sha256": "d0243c67eb3e7e5d16afd327bb79c93bd39457b6612a2498aa0522507e97f2fe"
+    },
+    {
+      "path": "docs/BETA-USER-GUIDE.md",
+      "sha256": "09a1bd44972d7597314ff1c4eb84c1fa1a3563158621d63dbadd72525766235d"
+    },
+    {
+      "path": "docs/templates/BETA-SESSION-RECORD.md",
+      "sha256": "2d100c60249a65740b3f322000ab8177adef25a15c5bba992d8684d2b111a0b4"
+    },
+    {
+      "path": "docs/TEST-PLAN.md",
+      "sha256": "db234ce42d2eae2cbffb7cb149b10d09c1b05ab1912945cee62123aab8374214"
+    },
+    {
+      "path": "docs/BUILD-STATUS.md",
+      "sha256": "c5d72fc51b5c96d8ec31cceb63f390b9b07fd10d32d387210fe2364bd8907376"
+    },
+    {
+      "path": "apps/web/src/PolicyPanel.tsx",
+      "sha256": "bf62af3d708f0c3670901f2c80b7b15b9999bacc79819ce8a8e20804170a8f15"
+    },
+    {
+      "path": "tests/e2e/workbench.spec.ts",
+      "sha256": "5d1da8189324572ce0051f26412d71d9a3a4a8c3f383da1e2a0f4937e0e43311"
+    },
+    {
+      "path": "apps/web/dist/index.html",
+      "sha256": "a3a0e4d7a7583f62dd56736deb876b0c8b48e5a4585e83fa6ec9d0f3e73c7cf8"
+    },
+    {
+      "path": "evidence/documentation-validation.json",
+      "sha256": "d9dfd1f5432d6c73792f47e2de0754a69a9749d2276ceb9d19c19423788fc4cf"
+    },
+    {
+      "path": "evidence/local/persona-adoption-policy-browser.log",
+      "sha256": "c1314b974fcd160a56fc1909dec61829afd9d92f802d963a2d1955e94c33d0b6"
+    },
+    {
+      "path": "evidence/local/persona-adoption-startup-first.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/local/persona-adoption-startup-first.json",
+      "sha256": "aea46583a3ae85d657d7fca3edecc29e7b5a4f5e94598cd4eb7e76b526847afa"
+    },
+    {
+      "path": "evidence/local/browser-server.json",
+      "sha256": "d7d889576fef8f1f9d6908af4c06eaf99d34000e7375d5658b313e0c812ca70f"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-15T04:01:02.165595+00:00",
+  "status": "FAIL",
+  "sources": 343,
+  "unchanged_sources": true,
+  "failed_checks": [
+    "unit-tests",
+    "browser-tests"
+  ],
+  "archive": "evidence\\local\\vision-replay-first-full-failed.zip",
+  "archive_sha256": "4fa918946beb28438897f6ddac94807f8d7630f60d11c245270e569e205cbdd2",
+  "archive_scope": "Mutable canonical artifacts and exact tested sources; previous ZIPs separately retained with recorded hashes.",
+  "python": "1372 passed; one setup error: local emulator five-second read timeout",
+  "browser": "Four complete-file cohorts PASS; foundation FAIL, operator/workbench incomplete/FAIL. No complete 168-case proof.",
+  "causes": "Unresolved; no production/app fix claimed.",
+  "beta_decision": "NO_GO",
+  "goal": "ACTIVE"
+}

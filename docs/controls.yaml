@@ -1,0 +1,273 @@
+schema_version: 1
+status: proposed_not_runtime_verified
+updated_at: '2026-10-14'
+deployment:
+  organization_count: 1
+  max_invited_accounts: 5
+  max_concurrent_stations: 2
+  region_candidate: us-east-1
+  comparison_region: us-east-2
+  spending_limit_usd: null
+  spending_authorized: false
+  external_beta_authorized: false
+auth:
+  session_ttl_seconds: 3600
+  invitation_ttl_seconds: 86400
+  oauth_flow_ttl_seconds: 300
+  oauth_login_starts_per_minute: 30
+  oauth_callback_attempts_per_minute: 60
+  ownership_transfer_ttl_seconds: 600
+  mfa_grant_max_age_seconds: 600
+capture:
+  original_capture_default: false
+  original_capture_max_attempts_per_inspection: 3
+  original_capture_max_bytes: 2097152
+  original_capture_retention_ceiling_ms: 604800000
+  playback_start_timeout_ms: 750
+  camera_permission_wait_cancelable: true
+  analyzed_frames_per_second: 2
+  observation_requests_per_second_per_station: 3
+  control_requests_per_second_per_station: 8
+  max_pending_frames_per_station: 1
+  max_upload_bytes: 2097152
+  max_decoded_pixels: 2000000
+  capture_permit_ttl_ms: 2000
+  max_observation_age_ms: 1000
+  current_result_lease_ms: 1500
+  stable_observation_count: 3
+  stable_observation_span_ms: 1000
+  findings_p95_target_ms: 500
+planner:
+  max_corrective_requests: 2
+  max_model_requests_per_inspection: 2
+  max_concurrent_planner_calls_per_station: 1
+  timeout_ms: 3000
+  max_input_tokens: 4096
+  max_output_tokens: 256
+  default_mode: deterministic_policy
+  llm_mode_requires_live_evaluation: true
+  model_id: null
+  deployment_model_requests_limit: null
+  inference_allowance_expires_at: null
+  approved_cost_basis: null
+handoffs:
+  max_requests_per_inspection: 4
+  lifetime_ms: 3600000
+  reads_per_minute: 60
+  read_window_ms: 5000
+  page_size: 20
+vision_worker:
+  max_processes: 2
+  memory_mb: 512
+  cpu_seconds: 30
+  wall_ms: 750
+  startup_ms: 5000
+  max_input_bytes: 2097152
+  max_metadata_bytes: 65536
+  max_reply_bytes: 262144
+  max_contours: 4096
+  max_candidates: 30
+  pixel_delta: 12
+  max_changed_pixels: 0
+privacy:
+  transient_frame_buffer_max_seconds: 10
+  selected_frame_retention_days: 7
+  metadata_retention_days: 30
+  export_link_ttl_seconds: 60
+  delete_live_target_hours: 24
+  backup_expiry_target_days: 35
+operations:
+  restore_rpo_target_hours: 24
+  restore_rto_target_hours: 4
+  proposed_support: supervised_scheduled_sessions
+
+maintenance_driver:
+  explicit_configuration_required: true
+  max_threads_per_application: 1
+  poll_ms_min: 250
+  poll_ms_max: 60000
+  page_size_min: 1
+  page_size_max: 25
+  steps_per_minute_min: 1
+  steps_per_minute_max: 120
+  drain_ms_min: 1000
+  drain_ms_max: 60000
+
+improvement_permission:
+  explicit_separate_notice_required: true
+  improvement_use_default: false
+  publicity_granted: false
+  max_assets_per_review: 16
+  max_lifetime_ms_ceiling: 31536000000
+  writes_per_minute_ceiling_per_kind: 100
+  review_ms_ceiling: 60000
+  max_dependency_rows: 90
+
+dataset_manifest:
+  explicit_configuration_required: true
+  max_examples_ceiling: 1000
+  max_request_json_bytes: 262144
+  json_receive_timeout_seconds: 5
+  examples_per_step: 1
+  max_dependency_rows_per_commit: 90
+  example_page_size_ceiling: 20
+  jobs_per_minute_ceiling: 20
+  step_attempts_per_minute_ceiling: 120
+  lifetime_ms_ceiling: 3600000
+  lease_ms_ceiling: 60000
+  total_reserved_steps_ceiling: 10000
+  reads_per_minute_ceiling: 120
+  independent_benchmark_qualified_default: false
+
+policy_catalog:
+  explicit_configuration_required: true
+  writes_per_minute_ceiling: 100
+  reads_per_minute_ceiling: 120
+  max_revisions_ceiling: 1000
+  page_size_ceiling: 20
+  max_request_json_bytes: 8192
+  installed_algorithm: reason_priority_v1
+  draft_write_activates_policy: false
+
+historical_evaluation:
+  explicit_configuration_required: true
+  installed_runner: decision_replay_v1
+  max_request_json_bytes: 8192
+  max_examples_ceiling: 1000
+  examples_per_step: 1
+  max_dependency_rows_per_commit: 90
+  page_size_ceiling: 20
+  jobs_per_minute_min: 1
+  jobs_per_minute_ceiling: 20
+  step_attempts_per_minute_min: 1
+  step_attempts_per_minute_ceiling: 120
+  reads_per_minute_min: 1
+  reads_per_minute_ceiling: 120
+  lifetime_ms_min: 1000
+  lifetime_ms_ceiling: 3600000
+  lease_ms_min: 1000
+  lease_ms_ceiling: 60000
+  total_reserved_steps_min: 1
+  total_reserved_steps_ceiling: 10000
+  original_budget_must_cover_examples: true
+  counterfactual_outcomes_measured: false
+  independent_benchmark_qualified_default: false
+  promotion_eligible_default: false
+  operator_effort_measured_default: false
+
+vision_replay:
+  installed_runner: vision_replay_v1
+  original_frames_per_case_ceiling: 2
+  measurements_per_case_ceiling: 4
+  case_window_ms_default: 15000
+  case_window_ms_ceiling: 60000
+  report_content_bytes_ceiling: 32768
+  original_geometry_snapshot_required: true
+  shared_diagnostic_worker_pool: true
+  live_state_writes: false
+  physical_truth_verified_default: false
+  promotion_eligible_default: false
+
+controlled_baselines:
+  max_episodes: 144
+  arms: 4
+  max_response_states_per_episode: 13
+  max_actions_per_arm: 2
+  max_observations_per_arm: 3
+  max_measurements_per_episode: 12
+  max_measurements_per_run: 1728
+  max_case_ms: 15000
+  max_run_ms: 600000
+  max_case_report_bytes: 131072
+  max_run_report_bytes: 33554432
+  max_manifest_bytes: 1048576
+  max_candidate_bytes: 8192
+  max_json_depth: 32
+
+policy_contract_suite:
+  runner: policy_contract_suite_v1
+  max_cases: 256
+  max_duration_ms: 15000
+  max_case_report_bytes: 8192
+  max_report_bytes: 1048576
+  qualification_eligible: false
+  promotion_eligible: false
+  physical_truth_verified: false
+
+policy_qualification_preparation:
+  explicit_configuration_required: true
+  jobs_per_minute_min: 1
+  jobs_per_minute_ceiling: 20
+  step_attempts_per_minute_min: 1
+  step_attempts_per_minute_ceiling: 120
+  reads_per_minute_min: 1
+  reads_per_minute_ceiling: 120
+  lifetime_ms_min: 1000
+  lifetime_ms_ceiling: 3600000
+  lease_ms_min: 1000
+  lease_ms_ceiling: 60000
+  total_reserved_steps_min: 1
+  total_reserved_steps_ceiling: 10000
+  max_source_examples: 1000
+  max_request_bytes: 8192
+  max_report_header_bytes: 32768
+  page_size_ceiling: 20
+  qualification_eligible: false
+  promotion_eligible: false
+
+policy_activation:
+  explicit_configuration_required: true
+  trusted_qualification_reader_required: true
+  initial_environment: synthetic_demo
+  writes_per_minute_min: 1
+  writes_per_minute_ceiling: 20
+  reads_per_minute_min: 1
+  reads_per_minute_ceiling: 120
+  review_window_ms_min: 1000
+  review_window_ms_ceiling: 60000
+  qualification_dependency_rows_ceiling: 80
+  transaction_actions_ceiling: 100
+  inspections_disabled_on_transition: true
+  beta_activation_available: false
+
+policy_golden:
+  runner: policy_golden_v1
+  cases: 12
+  max_case_ms: 15000
+  max_case_report_bytes: 32768
+  generated_image_bytes_ceiling: 2097152
+  purpose: synthetic_demo_qualification_only
+  independent_benchmark_qualified: false
+  physical_truth_verified: false
+
+policy_qualification:
+  explicit_configuration_required: true
+  initial_environment: synthetic_demo
+  max_source_examples: 1000
+  max_preparation_page_entries: 20
+  max_case_report_bytes: 32768
+  max_report_header_bytes: 32768
+  jobs_per_minute_ceiling: 20
+  step_attempts_per_minute_ceiling: 120
+  reads_per_minute_ceiling: 120
+  lifetime_ms_ceiling: 3600000
+  lease_ms_ceiling: 60000
+  max_steps_ceiling: 10000
+  max_reserved_cases_ceiling: 10000
+  software_page_cases_ceiling: 20
+  software_page_bytes_ceiling: 196608
+  beta_qualification_available: false
+  end_operations_per_minute_ceiling: 20
+
+web:
+  frozen_public_asset_max_count: 8
+  frozen_index_max_bytes: 32768
+  frozen_public_package_max_bytes: 4194304
+
+metadata_ui:
+  operation_deadline_ms: 7000
+  read_max_attempts: 3
+  read_retry_delay_ms: 100
+  original_intent_max_characters: 8192
+  recovery_storage: tab_scoped_session_storage
+  stores_credentials: false

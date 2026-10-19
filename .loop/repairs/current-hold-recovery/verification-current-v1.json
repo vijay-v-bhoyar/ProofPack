@@ -1,0 +1,95 @@
+{
+  "recorded_at": "2026-10-18T18:38:40.852699+00:00",
+  "subject_id": "working-tree-manifest-sha256:76b26e35371693f03528101c6807bcb64ea1d7bcec845ea94e83826997465516",
+  "source_inputs": 817,
+  "status": "PASS_SCOPED_LOCAL_CANDIDATES_INDEPENDENT_HTTP_REVIEW_PENDING",
+  "source_cases": 351,
+  "source_phases": 1053,
+  "source_groups": [
+    {
+      "path": "evidence/local/fresh-enrollment-models-current-hold-final-feature-v1",
+      "cases": 51,
+      "phases": 153,
+      "whole_source_revision": "working-tree-manifest-sha256:76b26e35371693f03528101c6807bcb64ea1d7bcec845ea94e83826997465516",
+      "differences_from_final": []
+    },
+    {
+      "path": "evidence/local/fresh-enrollment-models-current-hold-adjacent-v1",
+      "cases": 123,
+      "phases": 369,
+      "whole_source_revision": "working-tree-manifest-sha256:5e3c44fd7024bdb1f84d80f32a4e7c50d53717fed4a646ad9d381b5152988e56",
+      "differences_from_final": [
+        "tests/unit/test_current_hold_recovery.py",
+        "tests/unit/test_host_install_bundle.py"
+      ]
+    },
+    {
+      "path": "evidence/local/fresh-enrollment-models-current-hold-host-v2",
+      "cases": 74,
+      "phases": 222,
+      "whole_source_revision": "working-tree-manifest-sha256:5e3c44fd7024bdb1f84d80f32a4e7c50d53717fed4a646ad9d381b5152988e56",
+      "differences_from_final": [
+        "tests/unit/test_current_hold_recovery.py",
+        "tests/unit/test_host_install_bundle.py"
+      ]
+    },
+    {
+      "path": "evidence/local/fresh-enrollment-models-current-hold-package-builder-v1",
+      "cases": 46,
+      "phases": 138,
+      "whole_source_revision": "working-tree-manifest-sha256:e925aebb4fe7ef5bd9cf4f0fe70f74d3fbf893a77498426225c6875cfede7d89",
+      "differences_from_final": [
+        "tests/unit/test_current_hold_recovery.py"
+      ]
+    },
+    {
+      "path": "evidence/local/fresh-enrollment-models-current-hold-package-runtime-v1",
+      "cases": 32,
+      "phases": 96,
+      "whole_source_revision": "working-tree-manifest-sha256:e925aebb4fe7ef5bd9cf4f0fe70f74d3fbf893a77498426225c6875cfede7d89",
+      "differences_from_final": [
+        "tests/unit/test_current_hold_recovery.py"
+      ]
+    },
+    {
+      "path": "evidence/local/fresh-enrollment-models-current-hold-package-target-v1",
+      "cases": 25,
+      "phases": 75,
+      "whole_source_revision": "working-tree-manifest-sha256:e925aebb4fe7ef5bd9cf4f0fe70f74d3fbf893a77498426225c6875cfede7d89",
+      "differences_from_final": [
+        "tests/unit/test_current_hold_recovery.py"
+      ]
+    }
+  ],
+  "scope": "Compatible app/runtime subjects across separately frozen S1/S2/S3 groups; not one fresh351-case whole-source execution",
+  "installed_cases": 35,
+  "installed_phases": 105,
+  "installed_scope": "35 API/domain cases from isolated installed app wheel using ambient Windows dependencies and modeled store; source-only Node parser cases excluded; CR-T01 two HTTP candidates pending independent review; no ARM/provider/human proof",
+  "browser_cases": 43,
+  "browser_scope": "Default Chrome actual built UI with intercepted synthetic API; earlier causes not closed",
+  "collection_only_cases": 6162,
+  "collection_execution_phases": 0,
+  "full_current_execution": "NOT_RUN",
+  "wheel_sha256": "cbb838c5ec0e0a1fa88d9756cc4681ce0754651b2401a39fcc7a7db3ad2d5dc9",
+  "wheel_members": 161,
+  "bundle_files": 41,
+  "all_bundle_hashes_current": true,
+  "original_domain_functions_unchanged": 10,
+  "original_domain_cases_preserved": 17,
+  "app_runtime_identical_across_final_groups": true,
+  "CR_T01": "PENDING_INDEPENDENT_REVIEW",
+  "graph": {
+    "nodes": 2397,
+    "edges": 10316,
+    "communities": 96,
+    "scope": "Incremental API AST only; legacy IDs/community labels; UI/test/script incomplete"
+  },
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "remaining": [
+    "CR-T01 and IJ-T01 independent replacement-oracle review pending",
+    "Earlier default-browser pointer/frame causes UNKNOWN; desktop awake/unlocked UNKNOWN",
+    "Full current suite execution NOT_RUN; full privacy/requester/media/cleanup/recovery and all five features incomplete",
+    "D07/D11 decisions, native ARM/host/provider/physical and human evidence absent; beta NO_GO"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "scope": "diagnostic for one actual local synthetic CV/owner-request history; not complete business coverage or permission to relabel unknowns",
+  "unresolved_records": 63,
+  "groups": [
+    {
+      "table": "events",
+      "known_prefix": "access",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 13
+    },
+    {
+      "table": "events",
+      "known_prefix": "runtime",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 2
+    },
+    {
+      "table": "state",
+      "known_prefix": "UNRECOGNIZED_PREFIX",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 24
+    },
+    {
+      "table": "state",
+      "known_prefix": "asset",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 1
+    },
+    {
+      "table": "state",
+      "known_prefix": "idempotency",
+      "reason": "REPLAY_POLICY_REQUIRED",
+      "records": 12
+    },
+    {
+      "table": "state",
+      "known_prefix": "invitation",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 1
+    },
+    {
+      "table": "state",
+      "known_prefix": "metadata-request",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 1
+    },
+    {
+      "table": "state",
+      "known_prefix": "purpose",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 3
+    },
+    {
+      "table": "state",
+      "known_prefix": "recipe",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 1
+    },
+    {
+      "table": "state",
+      "known_prefix": "session",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 3
+    },
+    {
+      "table": "state",
+      "known_prefix": "user",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "records": 2
+    }
+  ],
+  "raw_keys_ids_payloads_retained": false,
+  "classification_accepted": false,
+  "parent_complete": false
+}

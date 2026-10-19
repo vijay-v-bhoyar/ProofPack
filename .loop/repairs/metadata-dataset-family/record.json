@@ -1,0 +1,964 @@
+{
+  "id": "metadata-dataset-family",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "W20.dataset-family",
+    "W20.dataset-family.equal-time-history"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 16,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "equal-time-withdrawal-rejects-prior-copy",
+      "criterion": "W20.dataset-family.equal-time-history",
+      "category": "product",
+      "hypothesis": "The parser folds immutable expiry and later withdrawal into one strict upper bound.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated dataset-history parser; complete family remains pending",
+          "revision": "304c710895042abfb37664a8291167f4ee6e24eecb0643f39c4ffb86b2cabd75",
+          "configuration": "exclusive immutable expiry; exact historical versions; inclusive later change time"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T05:53:23.411165+00:00",
+        "expires": "2026-10-17T05:53:23.411165+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/integration/test_dataset_lineage_store.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "tests/integration/test_dataset_lineage_store.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-time-tie-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 2,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-time-tie-before.log",
+          "sha256": "f44dd4b6f53db99c57f981780deb687799c0e25e74656838f8c9d93028fd06a7"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "before/lineage-before-revocation-time-tie.py",
+            "sha256": "793c34fb77dbc67ca72bd62fa7cbce2addeef4f123363087e567f301601d1d86"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "equal-time-withdrawal-rejects-prior-copy",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Separate strict immutable expiry from inclusive recorded change cutoff; retain exact historical version/hash checks and reject later timestamps.",
+      "changes": [
+        {
+          "path": "dataset-equal-time-v1/services/api/proofpack/evidence/dataset_lineage.py",
+          "sha256": "fd8d349607acc2ad5ad1c2e0fdd2d0169446bfae6787ab29c34087de882b4134"
+        },
+        {
+          "path": "dataset-equal-time-v1/tests/unit/test_dataset_lineage.py",
+          "sha256": "7852a962de3a7d5eb43f65d4fbed09663eb2e3a792305e273d9c2c1c2d03dd99"
+        },
+        {
+          "path": "dataset-equal-time-v1/tests/integration/test_dataset_lineage_store.py",
+          "sha256": "4527465f7a54cf06773ff3e6f26681af7ca428b42c48d83c3fca42726f640a7c"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "equal-time-withdrawal-rejects-prior-copy",
+      "criteria": [
+        "W20.dataset-family.equal-time-history"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated dataset-history parser; complete family remains pending",
+          "revision": "8a6888162242d2389366fa9cedd29f3092a38b3e2b5b47118f6412ca4c66c296",
+          "configuration": "exclusive immutable expiry; exact historical versions; inclusive later change time"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T05:53:23.411165+00:00",
+        "expires": "2026-10-17T05:53:23.411165+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-regression-v2.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 342,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-regression-v2.log",
+          "sha256": "de469b2c31e20d7219cfc41c40549e1971c1158eb3f767389b2c50129ba244a5"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-equal-time-v1/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "fd8d349607acc2ad5ad1c2e0fdd2d0169446bfae6787ab29c34087de882b4134"
+          },
+          {
+            "path": "dataset-equal-time-v1/tests/unit/test_dataset_lineage.py",
+            "sha256": "7852a962de3a7d5eb43f65d4fbed09663eb2e3a792305e273d9c2c1c2d03dd99"
+          },
+          {
+            "path": "dataset-equal-time-v1/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4527465f7a54cf06773ff3e6f26681af7ca428b42c48d83c3fca42726f640a7c"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated dataset-history parser; complete family remains pending",
+          "revision": "8a6888162242d2389366fa9cedd29f3092a38b3e2b5b47118f6412ca4c66c296",
+          "configuration": "exclusive immutable expiry; exact historical versions; inclusive later change time"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T05:53:23.411165+00:00",
+        "expires": "2026-10-17T05:53:23.411165+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-regression-v2.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 342,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-regression-v2.log",
+          "sha256": "de469b2c31e20d7219cfc41c40549e1971c1158eb3f767389b2c50129ba244a5"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-equal-time-v1/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "fd8d349607acc2ad5ad1c2e0fdd2d0169446bfae6787ab29c34087de882b4134"
+          },
+          {
+            "path": "dataset-equal-time-v1/tests/unit/test_dataset_lineage.py",
+            "sha256": "7852a962de3a7d5eb43f65d4fbed09663eb2e3a792305e273d9c2c1c2d03dd99"
+          },
+          {
+            "path": "dataset-equal-time-v1/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4527465f7a54cf06773ff3e6f26681af7ca428b42c48d83c3fca42726f640a7c"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "equal-time-declassification-rejects-prior-history",
+      "criterion": "W20.dataset-family.equal-time-history",
+      "category": "product",
+      "hypothesis": "The parser rejects exact historical group versions when later declassification shares their millisecond.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated dataset-history parser; complete family remains pending",
+          "revision": "304c710895042abfb37664a8291167f4ee6e24eecb0643f39c4ffb86b2cabd75",
+          "configuration": "exclusive immutable expiry; exact historical versions; inclusive later change time"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T05:53:23.411165+00:00",
+        "expires": "2026-10-17T05:53:23.411165+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/integration/test_dataset_lineage_store.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "tests/integration/test_dataset_lineage_store.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-time-tie-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 2,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-time-tie-before.log",
+          "sha256": "f44dd4b6f53db99c57f981780deb687799c0e25e74656838f8c9d93028fd06a7"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "before/lineage-before-revocation-time-tie.py",
+            "sha256": "793c34fb77dbc67ca72bd62fa7cbce2addeef4f123363087e567f301601d1d86"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "equal-time-declassification-rejects-prior-history",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Separate strict immutable expiry from inclusive recorded change cutoff; retain exact historical version/hash checks and reject later timestamps.",
+      "changes": [
+        {
+          "path": "dataset-equal-time-v1/services/api/proofpack/evidence/dataset_lineage.py",
+          "sha256": "fd8d349607acc2ad5ad1c2e0fdd2d0169446bfae6787ab29c34087de882b4134"
+        },
+        {
+          "path": "dataset-equal-time-v1/tests/unit/test_dataset_lineage.py",
+          "sha256": "7852a962de3a7d5eb43f65d4fbed09663eb2e3a792305e273d9c2c1c2d03dd99"
+        },
+        {
+          "path": "dataset-equal-time-v1/tests/integration/test_dataset_lineage_store.py",
+          "sha256": "4527465f7a54cf06773ff3e6f26681af7ca428b42c48d83c3fca42726f640a7c"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "equal-time-declassification-rejects-prior-history",
+      "criteria": [
+        "W20.dataset-family.equal-time-history"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated dataset-history parser; complete family remains pending",
+          "revision": "8a6888162242d2389366fa9cedd29f3092a38b3e2b5b47118f6412ca4c66c296",
+          "configuration": "exclusive immutable expiry; exact historical versions; inclusive later change time"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T05:53:23.411165+00:00",
+        "expires": "2026-10-17T05:53:23.411165+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-regression-v2.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 342,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-regression-v2.log",
+          "sha256": "de469b2c31e20d7219cfc41c40549e1971c1158eb3f767389b2c50129ba244a5"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-equal-time-v1/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "fd8d349607acc2ad5ad1c2e0fdd2d0169446bfae6787ab29c34087de882b4134"
+          },
+          {
+            "path": "dataset-equal-time-v1/tests/unit/test_dataset_lineage.py",
+            "sha256": "7852a962de3a7d5eb43f65d4fbed09663eb2e3a792305e273d9c2c1c2d03dd99"
+          },
+          {
+            "path": "dataset-equal-time-v1/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4527465f7a54cf06773ff3e6f26681af7ca428b42c48d83c3fca42726f640a7c"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated dataset-history parser; complete family remains pending",
+          "revision": "8a6888162242d2389366fa9cedd29f3092a38b3e2b5b47118f6412ca4c66c296",
+          "configuration": "exclusive immutable expiry; exact historical versions; inclusive later change time"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T05:53:23.411165+00:00",
+        "expires": "2026-10-17T05:53:23.411165+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-regression-v2.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 342,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-regression-v2.log",
+          "sha256": "de469b2c31e20d7219cfc41c40549e1971c1158eb3f767389b2c50129ba244a5"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-equal-time-v1/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "fd8d349607acc2ad5ad1c2e0fdd2d0169446bfae6787ab29c34087de882b4134"
+          },
+          {
+            "path": "dataset-equal-time-v1/tests/unit/test_dataset_lineage.py",
+            "sha256": "7852a962de3a7d5eb43f65d4fbed09663eb2e3a792305e273d9c2c1c2d03dd99"
+          },
+          {
+            "path": "dataset-equal-time-v1/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4527465f7a54cf06773ff3e6f26681af7ca428b42c48d83c3fca42726f640a7c"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "equal-time-withdrawal-rejects-prior-copy",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Retain inclusive historical change cutoff and strict expiry on the current complete provided-family candidate; expanded source/capacity/consumer tests and job-window repair are verified together.",
+      "changes": [
+        {
+          "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+          "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+        },
+        {
+          "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+          "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+        },
+        {
+          "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+          "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "equal-time-withdrawal-rejects-prior-copy",
+      "criteria": [
+        "W20.dataset-family.equal-time-history"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied dataset-history parser; aggregate cleanup remains pending",
+          "revision": "04390c5fe3be7fda8150fd99b1d9ba5e337a2eb8398e653d65dd1d408a29fd16",
+          "configuration": "immutable job/source windows; exact copied histories; bounded complete supplied families"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:21:12.486097+00:00",
+        "expires": "2026-10-17T06:21:12.486097+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "../before/original-job-event-window-oracles.py::test_admission_and_commit_audits_cannot_precede_job_or_reach_original_expiry",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-complete-native.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 360,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-complete-native.log",
+          "sha256": "d4f3700cb0fc56c9309e0e5c1e9cb2af355bf5084b1e15ee10e1dc82286d9411"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+          },
+          {
+            "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          },
+          {
+            "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied dataset-history parser; aggregate cleanup remains pending",
+          "revision": "04390c5fe3be7fda8150fd99b1d9ba5e337a2eb8398e653d65dd1d408a29fd16",
+          "configuration": "immutable job/source windows; exact copied histories; bounded complete supplied families"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:21:12.486097+00:00",
+        "expires": "2026-10-17T06:21:12.486097+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "../before/original-job-event-window-oracles.py::test_admission_and_commit_audits_cannot_precede_job_or_reach_original_expiry",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-complete-native.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 360,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-complete-native.log",
+          "sha256": "d4f3700cb0fc56c9309e0e5c1e9cb2af355bf5084b1e15ee10e1dc82286d9411"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+          },
+          {
+            "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          },
+          {
+            "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "equal-time-declassification-rejects-prior-history",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Retain inclusive historical change cutoff and strict expiry on the current complete provided-family candidate; expanded source/capacity/consumer tests and job-window repair are verified together.",
+      "changes": [
+        {
+          "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+          "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+        },
+        {
+          "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+          "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+        },
+        {
+          "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+          "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "equal-time-declassification-rejects-prior-history",
+      "criteria": [
+        "W20.dataset-family.equal-time-history"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied dataset-history parser; aggregate cleanup remains pending",
+          "revision": "04390c5fe3be7fda8150fd99b1d9ba5e337a2eb8398e653d65dd1d408a29fd16",
+          "configuration": "immutable job/source windows; exact copied histories; bounded complete supplied families"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:21:12.486097+00:00",
+        "expires": "2026-10-17T06:21:12.486097+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "../before/original-job-event-window-oracles.py::test_admission_and_commit_audits_cannot_precede_job_or_reach_original_expiry",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-complete-native.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 360,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-complete-native.log",
+          "sha256": "d4f3700cb0fc56c9309e0e5c1e9cb2af355bf5084b1e15ee10e1dc82286d9411"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+          },
+          {
+            "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          },
+          {
+            "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied dataset-history parser; aggregate cleanup remains pending",
+          "revision": "04390c5fe3be7fda8150fd99b1d9ba5e337a2eb8398e653d65dd1d408a29fd16",
+          "configuration": "immutable job/source windows; exact copied histories; bounded complete supplied families"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:21:12.486097+00:00",
+        "expires": "2026-10-17T06:21:12.486097+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "../before/original-job-event-window-oracles.py::test_admission_and_commit_audits_cannot_precede_job_or_reach_original_expiry",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-complete-native.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 360,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-complete-native.log",
+          "sha256": "d4f3700cb0fc56c9309e0e5c1e9cb2af355bf5084b1e15ee10e1dc82286d9411"
+        },
+        "oracle": {
+          "path": "before/original-revocation-time-store-oracles.py",
+          "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+          },
+          {
+            "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          },
+          {
+            "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+          },
+          {
+            "path": "before/original-revocation-time-store-oracles.py",
+            "sha256": "20bc269e0f0155b2524139ff46dc748f44fd3a4f41032e94bae7622b7c9ee9ac"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "creation-reservation-and-failure-audits-outside-original-job-window",
+      "criterion": "W20.dataset-family",
+      "category": "product",
+      "hypothesis": "Six impossible creation/reservation/source-failure audit times were accepted before creation or at expiry.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied dataset-history parser; aggregate cleanup remains pending",
+          "revision": "c7604ca5aa41ad99115a04332b5cca9b564248a2089701c1ae6c27f802531175",
+          "configuration": "immutable job/source windows; exact copied histories; bounded complete supplied families"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:21:12.486097+00:00",
+        "expires": "2026-10-17T06:21:12.486097+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-I",
+          "-c",
+          "\nimport sys,pathlib,json\nroot=pathlib.Path(sys.argv[1]).resolve()\nsys.path[:0]=[str(root/'services/api'),str(root/'tests/unit'),str(root/'scripts')]\nimport botocore.httpsession\ndef denied(*args,**kwargs):raise AssertionError('SDK transport forbidden in pure dataset-family verification')\nbotocore.httpsession.URLLib3Session.send=denied\nimport pytest\ncode=pytest.main(['-c',str(root/'pyproject.toml'),'--rootdir',str(root.parent),'-q','-o','pythonpath=',\n '-p','pytest_evidence',str(root/'tests/unit/test_dataset_lineage.py'),str(root/'tests/unit/test_label_lineage.py'),\n str(root/'tests/unit/test_improvement_lineage.py'),str(root/'tests/unit/test_resource_lineage_reader.py'),\n str(root/'../before/original-queued-oracle.py'),\n str(root/'../before/original-copy-window-budget-oracles.py')+'::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window',\n str(root/'../before/original-copy-window-budget-oracles.py')+'::test_budget_failure_cannot_be_invented_without_any_reserved_step',\n '--junitxml='+str(root/'evidence/local/metadata-dataset-family-event-window-before.xml')])\nraise SystemExit(code)\n",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working"
+        ],
+        "exit_code": 1,
+        "assertions": 6,
+        "output": {
+          "path": "working/evidence/local/metadata-dataset-family-event-window-before.log",
+          "sha256": "7fa670dc612507a2e760cb2a3e955b6aa806b5031ef35a576b8817735c9fddce"
+        },
+        "oracle": {
+          "path": "before/original-job-event-window-oracles.py",
+          "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+        },
+        "artifacts": [
+          {
+            "path": "before/lineage-before-job-event-window.py",
+            "sha256": "fd8d349607acc2ad5ad1c2e0fdd2d0169446bfae6787ab29c34087de882b4134"
+          },
+          {
+            "path": "before/original-job-event-window-oracles.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "creation-reservation-and-failure-audits-outside-original-job-window",
+      "owner": "Codex delivery owner",
+      "diagnosis": "Enforce the original immutable job window on creation/reservation/direct transitions while preserving historical end and metadata-read contracts; verify full supplied sources, capacity and real consumers.",
+      "changes": [
+        {
+          "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+          "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+        },
+        {
+          "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+          "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+        },
+        {
+          "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+          "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "creation-reservation-and-failure-audits-outside-original-job-window",
+      "criteria": [
+        "W20.dataset-family"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied dataset-history parser; aggregate cleanup remains pending",
+          "revision": "04390c5fe3be7fda8150fd99b1d9ba5e337a2eb8398e653d65dd1d408a29fd16",
+          "configuration": "immutable job/source windows; exact copied histories; bounded complete supplied families"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:21:12.486097+00:00",
+        "expires": "2026-10-17T06:21:12.486097+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "../before/original-job-event-window-oracles.py::test_admission_and_commit_audits_cannot_precede_job_or_reach_original_expiry",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-complete-native.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 360,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-complete-native.log",
+          "sha256": "d4f3700cb0fc56c9309e0e5c1e9cb2af355bf5084b1e15ee10e1dc82286d9411"
+        },
+        "oracle": {
+          "path": "before/original-job-event-window-oracles.py",
+          "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+          },
+          {
+            "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          },
+          {
+            "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+          },
+          {
+            "path": "before/original-job-event-window-oracles.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "isolated complete supplied dataset-history parser; aggregate cleanup remains pending",
+          "revision": "04390c5fe3be7fda8150fd99b1d9ba5e337a2eb8398e653d65dd1d408a29fd16",
+          "configuration": "immutable job/source windows; exact copied histories; bounded complete supplied families"
+        },
+        "actor": "Codex local operator; not independent human review",
+        "at": "2026-10-16T06:21:12.486097+00:00",
+        "expires": "2026-10-17T06:21:12.486097+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-c",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\pyproject.toml",
+          "--rootdir",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "tests/unit/test_dataset_lineage.py",
+          "tests/unit/test_label_lineage.py",
+          "tests/unit/test_improvement_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/integration/test_dataset_lineage_store.py",
+          "tests/integration/test_manifests.py",
+          "../before/original-queued-oracle.py",
+          "../before/original-copy-window-budget-oracles.py::test_copy_commit_cannot_precede_job_or_outlive_its_optional_source_window",
+          "../before/original-copy-window-budget-oracles.py::test_budget_failure_cannot_be_invented_without_any_reserved_step",
+          "../before/original-access-reference-oracles.py::test_access_audit_cannot_claim_unreconciled_job_or_actor_references",
+          "../before/original-access-window-oracles.py::test_example_access_needs_its_actual_completed_version_and_original_window",
+          "../before/original-storage-integer-oracles.py::test_stored_integral_decimal_metadata_has_the_same_family_as_python_integer_fixtures",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_withdrawal_preserves_the_causally_prior_copy",
+          "../before/original-revocation-time-store-oracles.py::test_same_millisecond_declassification_preserves_frozen_history",
+          "../before/original-job-event-window-oracles.py::test_admission_and_commit_audits_cannot_precede_job_or_reach_original_expiry",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\metadata-dataset-family\\working\\evidence\\local\\metadata-lineage-dataset-family-complete-native.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 360,
+        "output": {
+          "path": "working/evidence/local/metadata-lineage-dataset-family-complete-native.log",
+          "sha256": "d4f3700cb0fc56c9309e0e5c1e9cb2af355bf5084b1e15ee10e1dc82286d9411"
+        },
+        "oracle": {
+          "path": "before/original-job-event-window-oracles.py",
+          "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+        },
+        "artifacts": [
+          {
+            "path": "dataset-family-v2/services/api/proofpack/evidence/dataset_lineage.py",
+            "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+          },
+          {
+            "path": "dataset-family-v2/tests/unit/test_dataset_lineage.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          },
+          {
+            "path": "dataset-family-v2/tests/integration/test_dataset_lineage_store.py",
+            "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+          },
+          {
+            "path": "before/original-job-event-window-oracles.py",
+            "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+          }
+        ]
+      }
+    }
+  ]
+}

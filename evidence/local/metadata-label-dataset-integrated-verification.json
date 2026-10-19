@@ -1,0 +1,19 @@
+{
+  "status": "PASS_FOR_SELECTED_INTEGRATED_LABEL_DATASET_SCOPE",
+  "canonical_native_cases": 335,
+  "canonical_native_passing_phases": 1005,
+  "exact_source_installed_cases": 41,
+  "exact_source_package_cases": 433,
+  "counts_overlap": true,
+  "source_inputs": 599,
+  "exact_backend_files": 112,
+  "exact_frontend_files": 3,
+  "older_label_installed_cases": 294,
+  "older_label_installed_boundary": "598-input subject; differs only by the two dataset files; compatibility evidence only",
+  "all_selected_cleanup_verified": true,
+  "graph_status": "DEGRADED_NAVIGATION_ONLY",
+  "full_python_gate": "FAIL_ON_PRIOR_595_INPUT_SUBJECT; full-current run not yet performed",
+  "scope": "selected label/dataset history/writer/final-admission prerequisites only; full inventory/barrier/journal/cleanup/provider/physical/human workflows remain open",
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

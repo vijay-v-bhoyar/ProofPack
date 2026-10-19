@@ -1,0 +1,50 @@
+{
+  "recorded_at": "2026-10-17T05:51:04.061449+00:00",
+  "status": "PASS_SELECTED_COHORT_ONLY",
+  "scope": "full-v3 original146-case cohort8; includes original default-Chrome collateral pointer assertion; complete full suite remains unaccepted",
+  "cases": 146,
+  "phases": 438,
+  "required_regression_nodeid": "tests/integration/test_owner_collateral_browser.py::test_configured_https_collateral_scope_has_no_action_authority",
+  "source707_and_frozen_snapshot_match_at_review": true,
+  "frontend_artifacts_match": true,
+  "loaded_modules": 137,
+  "local_sdk_sends": 55495,
+  "blocked_sends": 0,
+  "database_terminated": true,
+  "database_state_removed": true,
+  "cleanup_boundary": "owned lifecycle receipt and matching daemon log; redacted state location is not an independently probed path",
+  "original_case_assertions_time_limits_renderer": "UNCHANGED",
+  "earlier_pointer_failure_cause": "UNKNOWN; no causal product or renderer repair established",
+  "raw_evidence": [
+    {
+      "path": "evidence/local/accumulated-full-v3/evidence/local/python-cohort-008.log",
+      "sha256": "28350d06d43844432c1af1ee0dbd2301ea6a881b1475c585c93618fe497d147c"
+    },
+    {
+      "path": "evidence/local/accumulated-full-v3/evidence/local/python-cohort-008.json",
+      "sha256": "f174f7cdbedccd3484d8e7cec3deded0dd995f03c965befbe1aeb1464ab018e9"
+    },
+    {
+      "path": "evidence/local/accumulated-full-v3/evidence/local/python-cohort-008.xml",
+      "sha256": "3357eda2f0675e650b454bd6abdc1947f1a4cc77e6949ca296068465351b22f5"
+    },
+    {
+      "path": "evidence/local/accumulated-full-v3/evidence/local/python-cohort-008.origins.json",
+      "sha256": "3c8f9ce3e61aca70db410b81934f09541ecd1423cd03955dd0c2318c9de90a6c"
+    },
+    {
+      "path": "evidence/local/accumulated-full-v3/evidence/local/python-cohort-008.json.sdk.json",
+      "sha256": "3e217b7bc4972e5e387ce0d068d4f69068a8bc36661908476ab56631b32258ad"
+    },
+    {
+      "path": "evidence/local/accumulated-full-v3/evidence/local/python-cohort-008-database.json",
+      "sha256": "c9aca7f9a808071699585ebaf82d9ebccb0fd4e043e97055d16108116212115f"
+    },
+    {
+      "path": "evidence/local/accumulated-full-v3/evidence/local/python-cohort-008-database.log",
+      "sha256": "5885e0683f32e25218e50b71ab1c84cbf014640b5cf1986493a382b80db0bd00"
+    }
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

@@ -1,0 +1,114 @@
+{
+  "recorded_at": "2026-10-16T22:34:09.784664+00:00",
+  "status": "DIAGNOSTIC_COMPLETE",
+  "diagnostic_cases_passed": 4,
+  "observations": [
+    {
+      "title": "operator completes a fixture kit, then stops, closes, releases and signs out",
+      "visibility": "visible",
+      "focus": true,
+      "raf_samples": 200,
+      "max_recorded_raf_gap_ms": 22.599999994039536,
+      "timer_samples": 25,
+      "max_recorded_timer_gap_ms": 110.5,
+      "visibility_events": [
+        {
+          "at": 16.599999994039536,
+          "state": "visible"
+        }
+      ],
+      "path": ".loop/repairs/browser-frame-diagnosis/observation-92257fb6bc5544758cc3_163d72a2bbc4781349ad.json",
+      "sha256": "e89eb7604dddc5abcb367753180dad4b7359c5097e1be35018e559466ba27d86"
+    },
+    {
+      "title": "owner records operational purpose and explicitly previews/stores reference without certifying physical truth",
+      "visibility": "visible",
+      "focus": true,
+      "raf_samples": 96,
+      "max_recorded_raf_gap_ms": 43.5,
+      "timer_samples": 7,
+      "max_recorded_timer_gap_ms": 109.39999997615814,
+      "visibility_events": [
+        {
+          "at": 13.700000017881393,
+          "state": "visible"
+        }
+      ],
+      "path": ".loop/repairs/browser-frame-diagnosis/observation-92257fb6bc5544758cc3_778428fe6dd4133c47e0.json",
+      "sha256": "4a536d45f09ef20dd7c5691e732649a33494716a42c8bb81725f63040f6cc81c"
+    },
+    {
+      "title": "operator can inspect only a minimized approved record without a write",
+      "visibility": "visible",
+      "focus": true,
+      "raf_samples": 21,
+      "max_recorded_raf_gap_ms": 11117.09999999404,
+      "timer_samples": 117,
+      "max_recorded_timer_gap_ms": 152.19999998807907,
+      "visibility_events": [
+        {
+          "at": 21.69999998807907,
+          "state": "visible"
+        }
+      ],
+      "path": ".loop/repairs/browser-frame-diagnosis/observation-92257fb6bc5544758cc3_d0068acbc4868f2f9418.json",
+      "sha256": "f62af259765a6ee19e8a21572fc79af0d05c27240f3aaf50f30c4828c77d8db2"
+    },
+    {
+      "title": "owner reviews exact asset then performs bounded cleanup without a full-erasure claim",
+      "visibility": "visible",
+      "focus": true,
+      "raf_samples": 56,
+      "max_recorded_raf_gap_ms": 496.30000001192093,
+      "timer_samples": 10,
+      "max_recorded_timer_gap_ms": 109.90000000596046,
+      "visibility_events": [
+        {
+          "at": 12.599999994039536,
+          "state": "visible"
+        }
+      ],
+      "path": ".loop/repairs/browser-frame-diagnosis/observation-92257fb6bc5544758cc3_e6e90cdc13f88c8634f5.json",
+      "sha256": "394be7753b658c17c504ffb0bcb36e05f8757a5284bc98a378fa92b7e310261b"
+    }
+  ],
+  "canonical_source_unchanged": true,
+  "canonical_source_inputs": 669,
+  "owned_server_terminated": true,
+  "interpretation": "Observed a long animation-frame scheduling gap while timers continued on a visible focused page. Cause UNKNOWN. Observation hooks may affect scheduling; four-case replay is not a full-suite repair or acceptance.",
+  "original_full_browser": "FAIL remains retained",
+  "workbench_new_detail": "Retained original trace contains a case timeout in synchronous canvas toDataURL page.evaluate before the outer file termination. Partial cohort logs remain unaccepted.",
+  "startup_diagnostics": "Sandbox startup failed with no child log; preserved. Original title anchors selected zero cases; collection selector corrected before diagnostic execution. Both retained.",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "inputs": [
+    {
+      "path": ".loop/repairs/browser-frame-diagnosis/diagnostic.spec.ts",
+      "sha256": "2be5ad1aa0d86fbf0f2591622a4f4a8e38bb1ba7f7e5b1591387545d111df81f"
+    },
+    {
+      "path": ".loop/repairs/browser-frame-diagnosis/playwright.config.ts",
+      "sha256": "41d11ca582771973b26a0a80037f6ad37f6079fff45a330acac3e5eb464d4a22"
+    },
+    {
+      "path": ".loop/repairs/browser-frame-diagnosis/results.json",
+      "sha256": "2cad5cc52be5ba933264e4a66e6e7a0a36ee657ae4942496ef8f9d3a7e2f85e6"
+    },
+    {
+      "path": ".loop/repairs/browser-frame-diagnosis/results.xml",
+      "sha256": "995706a7b7c5c51e0c1cf44c0189e3bdf545325a41da060d52af4ef5b5f732ca"
+    },
+    {
+      "path": ".loop/repairs/browser-frame-diagnosis/retained-trace-review.json",
+      "sha256": "20f86070f4f95d2e8d7991733a862b8a6005a7e43a3cc0bf13e21a5b48775f6f"
+    },
+    {
+      "path": ".loop/repairs/browser-frame-diagnosis/process.json",
+      "sha256": "b5a0a3afd1af26ee52afd9453700b52f36e60dda670dc1e6fe7d8e24d2d70f59"
+    },
+    {
+      "path": ".loop/repairs/browser-frame-diagnosis/browser-server.json",
+      "sha256": "b5a8abe7dff7e2860ccd59904e5e579198f6fdf7d4dae4999a9fb3293a5440a5"
+    }
+  ]
+}

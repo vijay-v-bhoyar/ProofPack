@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-10-17T19:39:48.938308+00:00",
+  "nodes": 2134,
+  "edges": 9276,
+  "api_files": 143,
+  "graph_sha256": "8e1cf8a8f6116b8157d6f450c73ee036b038d2bb8a00f27ebf2831d8b56162ab",
+  "scope": "API-only structural navigation; private/dynamic/legacy-ID and query truncation limits; no semantic/security/release proof"
+}

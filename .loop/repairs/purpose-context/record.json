@@ -1,0 +1,437 @@
+{
+  "id": "purpose-context",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "MC16-held-purpose-binding",
+    "MC16-return-boundary",
+    "MC16-combined-work"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "missing-held-purpose-consumer",
+      "criterion": "MC16-held-purpose-binding",
+      "category": "product",
+      "hypothesis": "No explicit held purpose accounting/classification operations consume complete purpose/use history.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC16 private held referenced purpose interpretation with v3 accounting/classification; no public cleanup acceptance",
+          "revision": "407da9722364c47f0ea12f5c094b79fbaa2dab9379cf36edc95da2d5076018c0",
+          "configuration": "isolated SDK-denied modeled protocols; original finite bounds; no rights, scope expansion or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:40:38.202692+00:00",
+        "expires": "2026-10-24T01:58:26.539429+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_purpose_context.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\candidate\\evidence\\local\\purpose-context-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 28,
+        "output": {
+          "path": "candidate/evidence/local/purpose-context-before.log",
+          "sha256": "6b33ae41537a97ba6f67c3ba20c30823e20cb10cff7f1c8cf26a9e0ea2f473be"
+        },
+        "oracle": {
+          "path": "original-purpose-context.py",
+          "sha256": "634d2e0f2a70364183d531c6be4f71d7f4feebe9bd1d5c3cf3bdf30c62d6aed0"
+        },
+        "artifacts": [
+          {
+            "path": "original-purpose-context.py",
+            "sha256": "634d2e0f2a70364183d531c6be4f71d7f4feebe9bd1d5c3cf3bdf30c62d6aed0"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "missing-held-purpose-consumer",
+      "owner": "Codex",
+      "diagnosis": "Add fresh original purpose selection/history bindings, v3 accounting/classification and shared work/resource/final reconciliation fences. Initial oracle also has an independently demonstrated foreign-deployment fixture; do not make invalid old inputs pass or silently migrate its oracle.",
+      "changes": [
+        {
+          "path": "verified-source/services/api/proofpack/evidence/purpose_corpus.py",
+          "sha256": "6ef0505c8d52c257340af46ebf690e57e92ca712b7bab5a308f39dabfcbee543"
+        },
+        {
+          "path": "verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+          "sha256": "c58cf692b81daf50ebd1d884dfc0c6e6283db226e68511a47572dac38f101404"
+        },
+        {
+          "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+          "sha256": "cb724d870c414a5f314f7bfc1829f9cd85577bff24d8c2d6223bfc50ef4abcd1"
+        },
+        {
+          "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+          "sha256": "f101ff971ad9af5fd6da477529a0917cfd3da13b3d421175a3a7dbb3669bb777"
+        },
+        {
+          "path": "verified-source/tests/unit/test_purpose_context.py",
+          "sha256": "b2168ecc03bb7b790c999789695d2c2f8788055d97891c7299304c8084c6a66b"
+        }
+      ]
+    },
+    {
+      "kind": "failure",
+      "id": "typed-family-return-shape",
+      "criterion": "MC16-return-boundary",
+      "category": "product",
+      "hypothesis": "A malformed typed purpose family must return HeldCorpusHeld rather than escape through AttributeError.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC16 private held referenced purpose interpretation with v3 accounting/classification; no public cleanup acceptance",
+          "revision": "987e29a14e7bdce2e4b61970ed136f1e98aa1b55b811ad95cc6fe22c93076a91",
+          "configuration": "isolated SDK-denied modeled protocols; original finite bounds; no rights, scope expansion or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:45:25.192585+00:00",
+        "expires": "2026-10-24T01:58:26.558950+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_purpose_context.py::test_private_return_requires_exact_non_authorizing_bound_shape",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\candidate\\evidence\\local\\purpose-return-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 9,
+        "output": {
+          "path": "candidate/evidence/local/purpose-return-before.log",
+          "sha256": "95057ea5e8c466185cc9e840ed97c201342b6f2e4b92621eeff8155028d12613"
+        },
+        "oracle": {
+          "path": "original-purpose-return.py",
+          "sha256": "90b0957bddf05090a970ed7fca503fe473a2ee8350178a78005a1b2613a66ae5"
+        },
+        "artifacts": [
+          {
+            "path": "original-purpose-return.py",
+            "sha256": "90b0957bddf05090a970ed7fca503fe473a2ee8350178a78005a1b2613a66ae5"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "typed-family-return-shape",
+      "owner": "Codex",
+      "diagnosis": "Validate nested family/reference/dependency types, flags, positive metadata and complete family digests before field traversal.",
+      "changes": [
+        {
+          "path": "verified-source/services/api/proofpack/evidence/purpose_corpus.py",
+          "sha256": "6ef0505c8d52c257340af46ebf690e57e92ca712b7bab5a308f39dabfcbee543"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "typed-family-return-shape",
+      "criteria": [
+        "MC16-return-boundary",
+        "MC16-combined-work"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC16 private held referenced purpose interpretation with v3 accounting/classification; no public cleanup acceptance",
+          "revision": "3d2212948d6833276f6fe94b9296f16c773488ed98e429d04a3ca79853f9b7d3",
+          "configuration": "isolated SDK-denied modeled protocols; original finite bounds; no rights, scope expansion or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:55:31.656957+00:00",
+        "expires": "2026-10-24T01:58:26.561949+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\original-purpose-return.py::test_private_return_requires_exact_non_authorizing_bound_shape",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\test_fixture_diagnostics.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\candidate\\evidence\\local\\purpose-return-original-current.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 11,
+        "output": {
+          "path": "candidate/evidence/local/purpose-return-original-current.log",
+          "sha256": "5233d6c14b74d8039abf1f586e1c47f00a48e484b80b7c5818029b56b72f2bc0"
+        },
+        "oracle": {
+          "path": "original-purpose-return.py",
+          "sha256": "90b0957bddf05090a970ed7fca503fe473a2ee8350178a78005a1b2613a66ae5"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/purpose_corpus.py",
+            "sha256": "6ef0505c8d52c257340af46ebf690e57e92ca712b7bab5a308f39dabfcbee543"
+          },
+          {
+            "path": "original-purpose-return.py",
+            "sha256": "90b0957bddf05090a970ed7fca503fe473a2ee8350178a78005a1b2613a66ae5"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC16 private held referenced purpose interpretation with v3 accounting/classification; no public cleanup acceptance",
+          "revision": "3d2212948d6833276f6fe94b9296f16c773488ed98e429d04a3ca79853f9b7d3",
+          "configuration": "isolated SDK-denied modeled protocols; original finite bounds; no rights, scope expansion or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:54:41.929694+00:00",
+        "expires": "2026-10-24T01:58:26.563950+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_purpose_context.py",
+          "tests/unit/test_runtime_context.py",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_purpose_history.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\candidate\\evidence\\local\\purpose-context-final-v3.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 314,
+        "output": {
+          "path": "candidate/evidence/local/purpose-context-final-v3.log",
+          "sha256": "1512f822ad92b35316d161ce23507d3fa0cf9bf463f11a9d9da73f61880aad69"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_purpose_context.py",
+          "sha256": "b2168ecc03bb7b790c999789695d2c2f8788055d97891c7299304c8084c6a66b"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/purpose_corpus.py",
+            "sha256": "6ef0505c8d52c257340af46ebf690e57e92ca712b7bab5a308f39dabfcbee543"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "c58cf692b81daf50ebd1d884dfc0c6e6283db226e68511a47572dac38f101404"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "cb724d870c414a5f314f7bfc1829f9cd85577bff24d8c2d6223bfc50ef4abcd1"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "f101ff971ad9af5fd6da477529a0917cfd3da13b3d421175a3a7dbb3669bb777"
+          },
+          {
+            "path": "verified-source/tests/unit/test_purpose_context.py",
+            "sha256": "b2168ecc03bb7b790c999789695d2c2f8788055d97891c7299304c8084c6a66b"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-held-purpose-consumer",
+      "criteria": [
+        "MC16-held-purpose-binding"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC16 private held referenced purpose interpretation with v3 accounting/classification; no public cleanup acceptance",
+          "revision": "3d2212948d6833276f6fe94b9296f16c773488ed98e429d04a3ca79853f9b7d3",
+          "configuration": "isolated SDK-denied modeled protocols; original finite bounds; no rights, scope expansion or cleanup authority"
+        },
+        "actor": "Codex local runner with explicit corrected fixture deployment; no independent human",
+        "at": "2026-10-17T02:01:32.882828+00:00",
+        "expires": "2026-10-24T02:02:34.107329+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-p",
+          "original_fixture_target",
+          "-q",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\original-purpose-context.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\candidate\\evidence\\local\\original-target-correction.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 28,
+        "output": {
+          "path": "candidate/evidence/local/original-target-correction.log",
+          "sha256": "55c704d4bf7238393a1baf0b96c7ff10143bb226ec79a2d35bb8267e8d37ce0e"
+        },
+        "oracle": {
+          "path": "original-purpose-context.py",
+          "sha256": "634d2e0f2a70364183d531c6be4f71d7f4feebe9bd1d5c3cf3bdf30c62d6aed0"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/purpose_corpus.py",
+            "sha256": "6ef0505c8d52c257340af46ebf690e57e92ca712b7bab5a308f39dabfcbee543"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "c58cf692b81daf50ebd1d884dfc0c6e6283db226e68511a47572dac38f101404"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "cb724d870c414a5f314f7bfc1829f9cd85577bff24d8c2d6223bfc50ef4abcd1"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "f101ff971ad9af5fd6da477529a0917cfd3da13b3d421175a3a7dbb3669bb777"
+          },
+          {
+            "path": "verified-source/tests/unit/test_purpose_context.py",
+            "sha256": "b2168ecc03bb7b790c999789695d2c2f8788055d97891c7299304c8084c6a66b"
+          },
+          {
+            "path": "original_fixture_target.py",
+            "sha256": "2e9d7036215453d8eff19b452319cd888b074d7dc86b79272963fe6f8dbd95c0"
+          },
+          {
+            "path": "original-purpose-context.py",
+            "sha256": "634d2e0f2a70364183d531c6be4f71d7f4feebe9bd1d5c3cf3bdf30c62d6aed0"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC16 private held referenced purpose interpretation with v3 accounting/classification; no public cleanup acceptance",
+          "revision": "3d2212948d6833276f6fe94b9296f16c773488ed98e429d04a3ca79853f9b7d3",
+          "configuration": "isolated SDK-denied modeled protocols; original finite bounds; no rights, scope expansion or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:54:41.929694+00:00",
+        "expires": "2026-10-24T01:58:26.563950+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_purpose_context.py",
+          "tests/unit/test_runtime_context.py",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_purpose_history.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\candidate\\evidence\\local\\purpose-context-final-v3.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 314,
+        "output": {
+          "path": "candidate/evidence/local/purpose-context-final-v3.log",
+          "sha256": "1512f822ad92b35316d161ce23507d3fa0cf9bf463f11a9d9da73f61880aad69"
+        },
+        "oracle": {
+          "path": "verified-source/tests/unit/test_purpose_context.py",
+          "sha256": "b2168ecc03bb7b790c999789695d2c2f8788055d97891c7299304c8084c6a66b"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/services/api/proofpack/evidence/purpose_corpus.py",
+            "sha256": "6ef0505c8d52c257340af46ebf690e57e92ca712b7bab5a308f39dabfcbee543"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "c58cf692b81daf50ebd1d884dfc0c6e6283db226e68511a47572dac38f101404"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "cb724d870c414a5f314f7bfc1829f9cd85577bff24d8c2d6223bfc50ef4abcd1"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "f101ff971ad9af5fd6da477529a0917cfd3da13b3d421175a3a7dbb3669bb777"
+          },
+          {
+            "path": "verified-source/tests/unit/test_purpose_context.py",
+            "sha256": "b2168ecc03bb7b790c999789695d2c2f8788055d97891c7299304c8084c6a66b"
+          }
+        ]
+      }
+    }
+  ]
+}

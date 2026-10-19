@@ -1,0 +1,693 @@
+{
+  "id": "runtime-maintenance-context",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "MC14-startup-provenance",
+    "MC14-held-context-v2"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "missing-startup-provenance",
+      "criterion": "MC14-startup-provenance",
+      "category": "product",
+      "hypothesis": "The original 53-case writer-derived startup provenance contract has no runtime_lineage implementation.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "91b1517f6b24ecfe9e325256e65fbf2e176b1db27954d0e0f110854a641513d3",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:12:24.559036+00:00",
+        "expires": "2026-10-24T01:16:26.522865+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_runtime_lineage.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-lineage-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 53,
+        "output": {
+          "path": "candidate/evidence/local/runtime-lineage-before.log",
+          "sha256": "8e30121cb4e3e7b27142e131b6d0f2c293ea011be9f6204e9f9419ae3fe7c5c8"
+        },
+        "oracle": {
+          "path": "original-runtime-lineage.py",
+          "sha256": "0b5ff0fb9c2cb6a2cc4bce54e0c067235a923fb892ab0876a2391d2d240d6f83"
+        },
+        "artifacts": [
+          {
+            "path": "original-runtime-lineage.py",
+            "sha256": "0b5ff0fb9c2cb6a2cc4bce54e0c067235a923fb892ab0876a2391d2d240d6f83"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "missing-startup-provenance",
+      "owner": "Codex",
+      "diagnosis": "Implement closed original-write provenance with separate clock samples; no current-head inference.",
+      "changes": [
+        {
+          "path": "verified-source/services/api/proofpack/evidence/runtime_lineage.py",
+          "sha256": "d148ef098fc89b662fd90664f5237558b755f7d983fbc6919cfa8122c8df0a5b"
+        },
+        {
+          "path": "verified-source/tests/unit/test_runtime_lineage.py",
+          "sha256": "67cd1f9aafc2e2b37518bd24265e4f3ff31f96461b1b4954bb115f0013e34595"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-startup-provenance",
+      "criteria": [
+        "MC14-startup-provenance"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "2efcf3a74dc5933a59a7df6bea698eeeb054524ca8745697a90d0f79f2829b97",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:24:19.918254+00:00",
+        "expires": "2026-10-24T01:26:11.226065+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-runtime-context.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-missing-source-context.py::test_missing_old_creation_does_not_bypass_known_schema_checks",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-runtime-lineage.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-context-original-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 74,
+        "output": {
+          "path": "candidate/evidence/local/runtime-context-original-final.log",
+          "sha256": "d84ad5608246a96975d3fc268f02e762adf0282cde8e07995837c5f4fb01be4e"
+        },
+        "oracle": {
+          "path": "original-runtime-lineage.py",
+          "sha256": "0b5ff0fb9c2cb6a2cc4bce54e0c067235a923fb892ab0876a2391d2d240d6f83"
+        },
+        "artifacts": [
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/runtime_context.py",
+            "sha256": "b39828cb004cfa7f70a858da14ecab9cb03234467f9c9646b4c115685660032b"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "7116454021de4fdd1fb08aa6adc18076bd25af0098780d478eaa4e74fd901220"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "929449b27f0452ac4c7c7b21d4fa86661261988d1c77b4d9edebbcb9d056c1b4"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "1beffebdcfdcf4ac05f6d702576f3be1ddd53c784d809621ac44c25e0e1d0449"
+          },
+          {
+            "path": "original-runtime-lineage.py",
+            "sha256": "0b5ff0fb9c2cb6a2cc4bce54e0c067235a923fb892ab0876a2391d2d240d6f83"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "2efcf3a74dc5933a59a7df6bea698eeeb054524ca8745697a90d0f79f2829b97",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:23:26.010559+00:00",
+        "expires": "2026-10-24T01:26:11.223064+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_runtime_context.py",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_runtime_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/unit/test_resource_bindings.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-context-v3.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 351,
+        "output": {
+          "path": "candidate/evidence/local/runtime-context-v3.log",
+          "sha256": "ee4d10a683fdabbcfe08cbc0a2145820c732c5ecb14e510244e8050687642db7"
+        },
+        "oracle": {
+          "path": "context-verified-source/tests/unit/test_runtime_context.py",
+          "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+        },
+        "artifacts": [
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/runtime_context.py",
+            "sha256": "b39828cb004cfa7f70a858da14ecab9cb03234467f9c9646b4c115685660032b"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "7116454021de4fdd1fb08aa6adc18076bd25af0098780d478eaa4e74fd901220"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "929449b27f0452ac4c7c7b21d4fa86661261988d1c77b4d9edebbcb9d056c1b4"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "1beffebdcfdcf4ac05f6d702576f3be1ddd53c784d809621ac44c25e0e1d0449"
+          },
+          {
+            "path": "context-verified-source/tests/unit/test_runtime_context.py",
+            "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/runtime_lineage.py",
+            "sha256": "d148ef098fc89b662fd90664f5237558b755f7d983fbc6919cfa8122c8df0a5b"
+          },
+          {
+            "path": "verified-source/tests/unit/test_runtime_lineage.py",
+            "sha256": "67cd1f9aafc2e2b37518bd24265e4f3ff31f96461b1b4954bb115f0013e34595"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "missing-held-runtime-context",
+      "criterion": "MC14-held-context-v2",
+      "category": "product",
+      "hypothesis": "Implement freshly derived complete raw/inventory/drain/scope context; opt-in v2 accounting/classification and combined work; preserve v1.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "83e44f9c8b1288c3a7e3fe18e6960de14db40c1029870e8566b17f25a9c0f2de",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:18:28.892938+00:00",
+        "expires": "2026-10-24T01:26:11.234587+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_runtime_context.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-context-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 17,
+        "output": {
+          "path": "candidate/evidence/local/runtime-context-before.log",
+          "sha256": "8f42bbfcf8e99d06a7f2f7c20106f4e6d4610fcbc3536cd806ee0d11b3c05b4f"
+        },
+        "oracle": {
+          "path": "original-runtime-context.py",
+          "sha256": "fca1c320c2d77ce9b78b096c134a94ff430ebbcc698e09dbb2c80458588fc826"
+        },
+        "artifacts": [
+          {
+            "path": "original-runtime-context.py",
+            "sha256": "fca1c320c2d77ce9b78b096c134a94ff430ebbcc698e09dbb2c80458588fc826"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "missing-held-runtime-context",
+      "owner": "Codex",
+      "diagnosis": "Implement freshly derived complete raw/inventory/drain/scope context; opt-in v2 accounting/classification and combined work; preserve v1.",
+      "changes": [
+        {
+          "path": "context-verified-source/services/api/proofpack/evidence/runtime_context.py",
+          "sha256": "b39828cb004cfa7f70a858da14ecab9cb03234467f9c9646b4c115685660032b"
+        },
+        {
+          "path": "context-verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+          "sha256": "7116454021de4fdd1fb08aa6adc18076bd25af0098780d478eaa4e74fd901220"
+        },
+        {
+          "path": "context-verified-source/services/api/proofpack/evidence/held_corpus.py",
+          "sha256": "929449b27f0452ac4c7c7b21d4fa86661261988d1c77b4d9edebbcb9d056c1b4"
+        },
+        {
+          "path": "context-verified-source/services/api/proofpack/evidence/ownership_classification.py",
+          "sha256": "1beffebdcfdcf4ac05f6d702576f3be1ddd53c784d809621ac44c25e0e1d0449"
+        },
+        {
+          "path": "context-verified-source/tests/unit/test_runtime_context.py",
+          "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-held-runtime-context",
+      "criteria": [
+        "MC14-held-context-v2"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "2efcf3a74dc5933a59a7df6bea698eeeb054524ca8745697a90d0f79f2829b97",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:24:19.918254+00:00",
+        "expires": "2026-10-24T01:26:11.237585+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-runtime-context.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-missing-source-context.py::test_missing_old_creation_does_not_bypass_known_schema_checks",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-runtime-lineage.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-context-original-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 74,
+        "output": {
+          "path": "candidate/evidence/local/runtime-context-original-final.log",
+          "sha256": "d84ad5608246a96975d3fc268f02e762adf0282cde8e07995837c5f4fb01be4e"
+        },
+        "oracle": {
+          "path": "original-runtime-context.py",
+          "sha256": "fca1c320c2d77ce9b78b096c134a94ff430ebbcc698e09dbb2c80458588fc826"
+        },
+        "artifacts": [
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/runtime_context.py",
+            "sha256": "b39828cb004cfa7f70a858da14ecab9cb03234467f9c9646b4c115685660032b"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "7116454021de4fdd1fb08aa6adc18076bd25af0098780d478eaa4e74fd901220"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "929449b27f0452ac4c7c7b21d4fa86661261988d1c77b4d9edebbcb9d056c1b4"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "1beffebdcfdcf4ac05f6d702576f3be1ddd53c784d809621ac44c25e0e1d0449"
+          },
+          {
+            "path": "original-runtime-context.py",
+            "sha256": "fca1c320c2d77ce9b78b096c134a94ff430ebbcc698e09dbb2c80458588fc826"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "2efcf3a74dc5933a59a7df6bea698eeeb054524ca8745697a90d0f79f2829b97",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:23:26.010559+00:00",
+        "expires": "2026-10-24T01:26:11.223064+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_runtime_context.py",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_runtime_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/unit/test_resource_bindings.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-context-v3.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 351,
+        "output": {
+          "path": "candidate/evidence/local/runtime-context-v3.log",
+          "sha256": "ee4d10a683fdabbcfe08cbc0a2145820c732c5ecb14e510244e8050687642db7"
+        },
+        "oracle": {
+          "path": "context-verified-source/tests/unit/test_runtime_context.py",
+          "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+        },
+        "artifacts": [
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/runtime_context.py",
+            "sha256": "b39828cb004cfa7f70a858da14ecab9cb03234467f9c9646b4c115685660032b"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "7116454021de4fdd1fb08aa6adc18076bd25af0098780d478eaa4e74fd901220"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "929449b27f0452ac4c7c7b21d4fa86661261988d1c77b4d9edebbcb9d056c1b4"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "1beffebdcfdcf4ac05f6d702576f3be1ddd53c784d809621ac44c25e0e1d0449"
+          },
+          {
+            "path": "context-verified-source/tests/unit/test_runtime_context.py",
+            "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/runtime_lineage.py",
+            "sha256": "d148ef098fc89b662fd90664f5237558b755f7d983fbc6919cfa8122c8df0a5b"
+          },
+          {
+            "path": "verified-source/tests/unit/test_runtime_lineage.py",
+            "sha256": "67cd1f9aafc2e2b37518bd24265e4f3ff31f96461b1b4954bb115f0013e34595"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "missing-snapshot-schema-bypass",
+      "criterion": "MC14-held-context-v2",
+      "category": "product",
+      "hypothesis": "Validate matched startup event/marker schema and transaction peers before the missing-original-snapshot fallback.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "573a9b03215ea2966885f3b17012c8fe8104df7baaf3679a8e45b1bd21aafa1f",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:22:44.437635+00:00",
+        "expires": "2026-10-24T01:26:11.246099+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_runtime_context.py::test_missing_old_creation_does_not_bypass_known_schema_checks",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-context-missing-source-before.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 4,
+        "output": {
+          "path": "candidate/evidence/local/runtime-context-missing-source-before.log",
+          "sha256": "64cf4c5bfdf27b00c0c5f08216166b71a0556ed98d907ddd104fe30d8cce54ca"
+        },
+        "oracle": {
+          "path": "original-missing-source-context.py",
+          "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+        },
+        "artifacts": [
+          {
+            "path": "original-missing-source-context.py",
+            "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "missing-snapshot-schema-bypass",
+      "owner": "Codex",
+      "diagnosis": "Validate matched startup event/marker schema and transaction peers before the missing-original-snapshot fallback.",
+      "changes": [
+        {
+          "path": "context-verified-source/services/api/proofpack/evidence/runtime_context.py",
+          "sha256": "b39828cb004cfa7f70a858da14ecab9cb03234467f9c9646b4c115685660032b"
+        },
+        {
+          "path": "context-verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+          "sha256": "7116454021de4fdd1fb08aa6adc18076bd25af0098780d478eaa4e74fd901220"
+        },
+        {
+          "path": "context-verified-source/services/api/proofpack/evidence/held_corpus.py",
+          "sha256": "929449b27f0452ac4c7c7b21d4fa86661261988d1c77b4d9edebbcb9d056c1b4"
+        },
+        {
+          "path": "context-verified-source/services/api/proofpack/evidence/ownership_classification.py",
+          "sha256": "1beffebdcfdcf4ac05f6d702576f3be1ddd53c784d809621ac44c25e0e1d0449"
+        },
+        {
+          "path": "context-verified-source/tests/unit/test_runtime_context.py",
+          "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "missing-snapshot-schema-bypass",
+      "criteria": [
+        "MC14-held-context-v2"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "2efcf3a74dc5933a59a7df6bea698eeeb054524ca8745697a90d0f79f2829b97",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:24:19.918254+00:00",
+        "expires": "2026-10-24T01:26:11.249101+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-runtime-context.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-missing-source-context.py::test_missing_old_creation_does_not_bypass_known_schema_checks",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\original-runtime-lineage.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-context-original-final.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 74,
+        "output": {
+          "path": "candidate/evidence/local/runtime-context-original-final.log",
+          "sha256": "d84ad5608246a96975d3fc268f02e762adf0282cde8e07995837c5f4fb01be4e"
+        },
+        "oracle": {
+          "path": "original-missing-source-context.py",
+          "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+        },
+        "artifacts": [
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/runtime_context.py",
+            "sha256": "b39828cb004cfa7f70a858da14ecab9cb03234467f9c9646b4c115685660032b"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "7116454021de4fdd1fb08aa6adc18076bd25af0098780d478eaa4e74fd901220"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "929449b27f0452ac4c7c7b21d4fa86661261988d1c77b4d9edebbcb9d056c1b4"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "1beffebdcfdcf4ac05f6d702576f3be1ddd53c784d809621ac44c25e0e1d0449"
+          },
+          {
+            "path": "original-missing-source-context.py",
+            "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "private runtime startup provenance prerequisite; complete runtime context remains open",
+          "revision": "2efcf3a74dc5933a59a7df6bea698eeeb054524ca8745697a90d0f79f2829b97",
+          "configuration": "isolated SDK-denied modeled storage; original absolute limits; no retained-current or cleanup authority"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T01:23:26.010559+00:00",
+        "expires": "2026-10-24T01:26:11.223064+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_runtime_context.py",
+          "tests/unit/test_ownership_classification.py",
+          "tests/unit/test_corpus_accounting.py",
+          "tests/unit/test_held_corpus.py",
+          "tests/unit/test_runtime_lineage.py",
+          "tests/unit/test_resource_lineage_reader.py",
+          "tests/unit/test_resource_bindings.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\runtime-maintenance-context\\candidate\\evidence\\local\\runtime-context-v3.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 351,
+        "output": {
+          "path": "candidate/evidence/local/runtime-context-v3.log",
+          "sha256": "ee4d10a683fdabbcfe08cbc0a2145820c732c5ecb14e510244e8050687642db7"
+        },
+        "oracle": {
+          "path": "context-verified-source/tests/unit/test_runtime_context.py",
+          "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+        },
+        "artifacts": [
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/runtime_context.py",
+            "sha256": "b39828cb004cfa7f70a858da14ecab9cb03234467f9c9646b4c115685660032b"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/corpus_accounting.py",
+            "sha256": "7116454021de4fdd1fb08aa6adc18076bd25af0098780d478eaa4e74fd901220"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/held_corpus.py",
+            "sha256": "929449b27f0452ac4c7c7b21d4fa86661261988d1c77b4d9edebbcb9d056c1b4"
+          },
+          {
+            "path": "context-verified-source/services/api/proofpack/evidence/ownership_classification.py",
+            "sha256": "1beffebdcfdcf4ac05f6d702576f3be1ddd53c784d809621ac44c25e0e1d0449"
+          },
+          {
+            "path": "context-verified-source/tests/unit/test_runtime_context.py",
+            "sha256": "4e0849885ff258174fbc1af58c85a176410ebf5fec91d1a696870d125abdce3f"
+          },
+          {
+            "path": "verified-source/services/api/proofpack/evidence/runtime_lineage.py",
+            "sha256": "d148ef098fc89b662fd90664f5237558b755f7d983fbc6919cfa8122c8df0a5b"
+          },
+          {
+            "path": "verified-source/tests/unit/test_runtime_lineage.py",
+            "sha256": "67cd1f9aafc2e2b37518bd24265e4f3ff31f96461b1b4954bb115f0013e34595"
+          }
+        ]
+      }
+    }
+  ]
+}

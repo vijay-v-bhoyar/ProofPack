@@ -1,0 +1,24 @@
+{
+  "started_at": "2026-10-17T19:13:37.708207+00:00",
+  "ended_at": "2026-10-17T19:13:46.264027+00:00",
+  "command": [
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "pytest_evidence",
+    "tests/unit/test_auth_head_integrity.py",
+    "tests/unit/test_auth.py",
+    "tests/unit/test_access_context.py",
+    "tests/unit/test_access_context_return.py",
+    "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\evidence\\local\\auth-head-integrity-green\\tests.xml"
+  ],
+  "exit_code": 0,
+  "cases": 172,
+  "phases": 516,
+  "test_oracle_unchanged": true,
+  "scope": "current source model/role/origin adjacency only; no actual-store/provider or complete privacy acceptance"
+}

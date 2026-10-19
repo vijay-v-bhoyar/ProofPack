@@ -1,0 +1,46 @@
+{
+  "at": "2026-10-17T04:26:01.917299+00:00",
+  "status": "FAIL_RECONCILED",
+  "scope": "terminal full4550-case attempt on unchanged staged707 input subject; no complete-suite or canonical acceptance",
+  "process_exit_code": 1,
+  "full_collected_cases": 4550,
+  "cohorts": 35,
+  "completed_case_results": 4416,
+  "reported_passing_cases": 4414,
+  "failed_case_results": 2,
+  "unaccepted_interrupted_cases": 134,
+  "complete_phases": 13248,
+  "passing_whole_cohort_cases": 4158,
+  "failed_cohorts": [
+    {
+      "cohort": 3,
+      "exit_code": 124
+    },
+    {
+      "cohort": 8,
+      "exit_code": 1
+    },
+    {
+      "cohort": 22,
+      "exit_code": 1
+    }
+  ],
+  "failed_nodeids": [
+    "tests/integration/test_owner_collateral_browser.py::test_configured_https_collateral_scope_has_no_action_authority",
+    "tests/unit/test_metadata_client.py::test_actual_typescript_guards[read_denied]"
+  ],
+  "accounting_errors_reconciled": 140,
+  "source_snapshot_and_frontend_unchanged": true,
+  "database_cleanups_reconciled": 35,
+  "sdk_and_import_receipts_available": 34,
+  "known_local_sdk_sends": 660077,
+  "blocked_sends_in_available_receipts": 0,
+  "missing_transport_and_import_finalization_cohorts": [
+    3
+  ],
+  "transport_acceptance": "INCOMPLETE for interrupted cohort3; do not infer zero sends or loaded origins from missing receipts",
+  "suite_receipt_sha256": "882aeff824217fc493ab10dabdfb9b81354ae57684a1b6e52935ab488ae05edd",
+  "process_receipt_sha256": "7c4c3212263a9de042a05b25335d31e354bb202fbf9a3a62e2c546a4c71ff06f",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

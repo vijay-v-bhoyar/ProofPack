@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "scope": "local produced-byte/accounting audit; same Codex operator, no independent human assessment",
+  "recorded_at": "2026-10-15T05:31:45.270774+00:00",
+  "run_id": "20261015T053018-c1703ca2b1d0",
+  "report_sha256": "049e2df6678357088b891a3f366710918b484a5ab1cab70044a90dd6b2670222",
+  "episodes": 144,
+  "arms": 4,
+  "tracking_contexts": 576,
+  "setup_groups": 24,
+  "measurements": 882,
+  "outcomes": {
+    "single_frame_v1": {
+      "correct_satisfaction": 24,
+      "correct_rejection": 48,
+      "incorrect_satisfaction": 0,
+      "incorrect_rejection": 6,
+      "unresolved": 66,
+      "technical_failure": 0,
+      "not_run": 0
+    },
+    "fixed_recapture_v1": {
+      "correct_satisfaction": 30,
+      "correct_rejection": 48,
+      "incorrect_satisfaction": 0,
+      "incorrect_rejection": 0,
+      "unresolved": 66,
+      "technical_failure": 0,
+      "not_run": 0
+    },
+    "rule_priority_v1": {
+      "correct_satisfaction": 30,
+      "correct_rejection": 48,
+      "incorrect_satisfaction": 0,
+      "incorrect_rejection": 0,
+      "unresolved": 66,
+      "technical_failure": 0,
+      "not_run": 0
+    },
+    "candidate_priority_v1": {
+      "correct_satisfaction": 30,
+      "correct_rejection": 48,
+      "incorrect_satisfaction": 0,
+      "incorrect_rejection": 0,
+      "unresolved": 66,
+      "technical_failure": 0,
+      "not_run": 0
+    }
+  },
+  "physical_truth_verified": false,
+  "promotion_eligible": false,
+  "beta_decision": "NO_GO"
+}

@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-10-17T06:48:15.328183+00:00",
+  "status": "STOPPED_INTERRUPTED_NO_TERMINAL_RESULT",
+  "session_id": null,
+  "expected_cases": 4559,
+  "source_inputs": 707,
+  "cohort_limit": 36,
+  "cohort_timeout_seconds": 875,
+  "cohort_process_budget": 31500,
+  "collection_timeout_seconds": 120,
+  "node_assertions_order_original4550_and_new9": "PRESERVED",
+  "runner": "run_full_v1.py",
+  "runner_sha256": "a41d25150318da5270c74254e5c0e333c5e785216b65e4ccc93f2abde75a6f3f",
+  "auditor": "audit_full.py",
+  "auditor_syntax": "PASS_AST_PARSE",
+  "next_action": "reproduce exact142-case cohort8 with original875s and passive phase journal after current resource admission; no whole-suite restart or acceptance from partial results",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "former_session_id": 85587,
+  "interruption_verification": "interrupted-full-v1/verification.json"
+}

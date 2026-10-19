@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-10-17T14:56:48.963721+00:00",
+  "scope": "reproduce prototype late-source-change false PASS using stub process/database lifecycle; no native/app execution",
+  "command": [
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\final-source-repro\\tests\\unit\\test_support_capture.py::test_producer_lifecycle_and_failed_publication_with_stub_processes[source_changed]",
+    "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\final-source-red\\tests.xml",
+    "--basetemp=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\installed-support-prerequisite\\final-source-red\\tmp"
+  ],
+  "actual_exit_code": 1,
+  "expected_exit_code": 1,
+  "status": "DEFECT_REPRODUCED",
+  "helper_sha256": "526704abd53905be4a482e857667ff2a2ec74f9b5f1fe53cb3bb24fc7a950cdb",
+  "oracle_sha256": "d0aeda8559ea7c4b22e27acdbb2b6b4dde71851d2cc2a59ef3f704af9d3c334d",
+  "current_oracle_identical": true,
+  "post_fix_regression": "unit-v3/process.json",
+  "parent_complete": false
+}

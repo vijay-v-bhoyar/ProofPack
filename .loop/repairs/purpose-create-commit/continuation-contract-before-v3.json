@@ -1,0 +1,49 @@
+{
+  "status": "PREPARED_AFTER_ZERO_NEW_WORK_HOLD",
+  "subject_inputs": 732,
+  "full_cases": 5149,
+  "original_collection_inherited_once": true,
+  "retained_cohorts": 8,
+  "retained_cases": 987,
+  "retained_phases": 2961,
+  "remaining_cohorts": 33,
+  "remaining_cases": 4162,
+  "original_timeout_seconds": 768,
+  "prefix_allocated_seconds": 6144,
+  "remaining_allocated_seconds": 25344,
+  "total_allocated_seconds": 31488,
+  "original_ceiling_seconds": 31500,
+  "no_completed_prefix_execution": true,
+  "no_new_collection": true,
+  "no_case_oracle_changes": true,
+  "prefix_audit_sha256": "27204f7f13378105a8307105496235313f15e2a417fd02d427c03eca5b6b4c80",
+  "controller_assertions": 62,
+  "auditor_assertions": 112,
+  "files": [
+    {
+      "path": "continue_full_v2.py",
+      "sha256": "d59ad189da084a6ae1bc6dc094a0deb47320ca11ab9767c64cd21fd2c7646858"
+    },
+    {
+      "path": "audit_full_composite_v2.py",
+      "sha256": "c82ac8a325d0455380663e4d9983368f503345694ef343d9839818a92e9fdc81"
+    },
+    {
+      "path": "prefix_inheritance_v1.py",
+      "sha256": "072c6565d2afdc540cbac1a69d4cbc6e60b19d10ce2e0b99c68ea9039e822f36"
+    },
+    {
+      "path": "full_continuation_claims.py",
+      "sha256": "44ee1a694884b92ffc74189c61c80bd211083e5775cef5532b0259de759dc1c3"
+    }
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "current_expected_phases": 15447,
+  "continuation_unit_tests": 8,
+  "claim_unit_tests": 5,
+  "phase_binding_correction": "pre-execution expected phase constant updated from historical15399 to current5149x3=15447; no case or phase omitted",
+  "version": "continuation-v2",
+  "prior_hold_audit_sha256": "2ec59004b1f7571f55feb2c6aab9a387a17fb201d7cdba2a79b800abec02f900",
+  "no_allowances_consumed_in_prior_continuation": true
+}

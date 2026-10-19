@@ -1,0 +1,76 @@
+{
+  "status": "PASS_FOR_ISOLATED_CANDIDATE_ONLY",
+  "recorded_at": "2026-10-16T00:00:22.053561+00:00",
+  "scope": "lease repair, stored provenance decoder, selected native/installed regressions and exact package bytes",
+  "checks": {
+    "metadata-lineage-candidate-final": {
+      "tests": 126,
+      "passing_phases": 378
+    },
+    "metadata-candidate-installed": {
+      "tests": 133,
+      "passing_phases": 399
+    },
+    "metadata-candidate-package-final": {
+      "tests": 117,
+      "passing_phases": 351
+    }
+  },
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "before_sha256": "2afef3b6b8a927ea0ecab6ddf6ca1d0b70e2fde0459d71a8d16024689e039963",
+      "candidate_sha256": "c802e5e3a6622cf4288679fa7656bc0b89d780e51d598dc650d02c9176a8e0bd"
+    },
+    {
+      "path": "services/api/proofpack/evidence/resource_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "dfb83fb4dd0f790e554f632b5c65fd1e5b825dd009322dc8600837eade0ae0ed"
+    },
+    {
+      "path": "tests/integration/test_direct_event_lineage.py",
+      "before_sha256": "aea3c2f493f491eceeefaab449b1c2546d3b60d6febb750daadd4a6d9b8f5919",
+      "candidate_sha256": "902660c9db329c5c2de5ff896d8ad436e68c4cf9c810e03f97ba4196ab10b753"
+    },
+    {
+      "path": "tests/integration/test_stored_lineage_reader.py",
+      "before_sha256": null,
+      "candidate_sha256": "399a58b163b6c3945448cf7abc6604501a717b56cfcab114c105e0b5877ba92e"
+    },
+    {
+      "path": "tests/unit/test_resource_lineage_reader.py",
+      "before_sha256": null,
+      "candidate_sha256": "86a38eced44db949526d6a5bde706956a6519dc7994d7741b174ac44593c237c"
+    }
+  ],
+  "main_source_matches_origin": true,
+  "unchanged_original_erasure_oracle": "4f06d314c56bb8f114f4985f8ee152f130c017d66018c76129c69058bf982f5a",
+  "native_local_sdk_sends": 6463,
+  "installed_local_sdk_sends": 8333,
+  "installed_modules": 99,
+  "opencv_version": "5.0.0",
+  "wheel_sha256": "adf96c8e2bf4c73034db896d6ed9ba55911220b74aa53f07467d11f0deed8875",
+  "integrated": false,
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "evaluator": "same Codex operator; not independent human review",
+  "assurance": {
+    "mode": "Change/Verify; selected candidate boundary only",
+    "P01": "APPLICABLE: pure decoder adds no provider or new authority",
+    "P02": "UNCHANGED: no user-facing journey delivered",
+    "P03": "APPLICABLE: strict stored schema, foreign/malformed/legacy holds",
+    "P04": "APPLICABLE: preserve established service lease versus private-read contract",
+    "P05": "APPLICABLE: initial fresh claim and private response checks preserved",
+    "P06": "APPLICABLE: exact destructive job lease, scope and target remain fenced",
+    "P07": "UNCHANGED: no added job/replay identity, renewal or operation quota",
+    "P08": "APPLICABLE: unchanged original erasure/oracles plus hostile reader cases",
+    "P09": "APPLICABLE: selected local paths pass; complete privacy workflow NOT_RUN",
+    "P10": "APPLICABLE: bounded references/bytes and unchanged transaction ceiling; no throughput claim"
+  },
+  "limitations": [
+    "Candidate is not integrated while the original canonical full suite remains live.",
+    "Counts overlap and do not establish full current-product regression acceptance.",
+    "No family ownership adapters, complete discovery, privacy barrier or restore journal is delivered.",
+    "No real AWS, physical, human, commercial or release acceptance."
+  ]
+}

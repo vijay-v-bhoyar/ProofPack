@@ -1,0 +1,44 @@
+{
+  "scope": "source review for missing complete-cleanup lineage; no runtime or deletion evidence",
+  "recorded_at": "2026-10-15T21:55:08.999991+00:00",
+  "classification": "OBSERVED_SOURCE_GAP",
+  "finding": "Shared idempotency records lack explicit typed resource linkage; indirect inspection descendants need validated family adapters.",
+  "source_checks": {
+    "idempotency_writer": "AccessService._record; replay data body_hash/result/at_ms",
+    "indirect_media": "capture.publication: observation_id on assets/object intents/actions",
+    "label_copy": "review.labels: source_context.inspection_id in immutable revision",
+    "dataset_copy": "review.manifests: dataset_id/content label_id/source asset references",
+    "support_copy": "stations.handoffs: main request and recipient inbox reference"
+  },
+  "required_next_change": "Versioned bounded typed lineage at shared and direct writers, with atomic linkage and legacy-unknown hold; then complete family discovery/maintenance workflow.",
+  "runtime_changes_this_review": "NONE",
+  "new_runtime_tests": "NOT_RUN",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "inputs": [
+    {
+      "path": "services/api/proofpack/auth/service.py",
+      "sha256": "e08bf6f6778ffc47f6bc5851e2a0c09dcb45dd852a3349a8756be16498e91a32"
+    },
+    {
+      "path": "services/api/proofpack/capture/service.py",
+      "sha256": "819008e9ea0b15f55e2a1f60eaee2caadc7827ef67e03a055441ea28396e997b"
+    },
+    {
+      "path": "services/api/proofpack/capture/publication.py",
+      "sha256": "e21875c6f0bc56386d6b318ae9b45f5a4c5884edad2e19d3898299f13a5f8972"
+    },
+    {
+      "path": "services/api/proofpack/review/labels.py",
+      "sha256": "205c28d0b279639f65fe5c8a8fc9a1a2c29be7ac8312270c67237d12a9a09dd1"
+    },
+    {
+      "path": "services/api/proofpack/review/manifests.py",
+      "sha256": "9bcd886e782f9d28ccf09b0d7164d0a4bcb36ece13f10ead277aa6b5318b9411"
+    },
+    {
+      "path": "services/api/proofpack/stations/handoffs.py",
+      "sha256": "1ddcb9b4fb021ac9c6171bcc6b60112be297c29fe5ef2a2e38621f366c45a519"
+    }
+  ]
+}

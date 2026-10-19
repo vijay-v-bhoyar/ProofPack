@@ -1,0 +1,17 @@
+{
+  "status": "PASS_FOR_STRUCTURAL_NAVIGATION_ONLY",
+  "source_inputs": 614,
+  "graph_sha256": "1fa06e72f82056071bab7215b7e25c571c59fc0a21d8e285e097d6679b3e29fb",
+  "nodes": 1733,
+  "edges": 7398,
+  "communities": 79,
+  "replay_nodes": 16,
+  "duplicate_node_ids": 0,
+  "missing_endpoints": 0,
+  "limitations": [
+    "API-only extraction",
+    "legacy node IDs",
+    "bounded queries can truncate",
+    "navigation only; no semantic/security/release assurance"
+  ]
+}

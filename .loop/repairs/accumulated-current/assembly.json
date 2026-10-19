@@ -1,0 +1,52 @@
+{
+  "at": "2026-10-17T05:03:18.400683+00:00",
+  "status": "PASS_ASSEMBLY_ONLY",
+  "scope": "isolated staged-runtime plus verified fixture lifecycle and current README; not canonical integration or full acceptance",
+  "source_inputs": 707,
+  "backend_files": 141,
+  "frontend_artifacts": [
+    {
+      "path": "apps/web/dist/assets/index-B8e0Gu7N.css",
+      "sha256": "55390364942cc3ade7fd307a5d8ab780620eb7643966ce472e5a3b55f35a3740"
+    },
+    {
+      "path": "apps/web/dist/assets/index-D2a10GKn.js",
+      "sha256": "f3231c7ae6d56c858c97b9add46f6fa426c67af5c703fa2bf8834f0e40f3d7f7"
+    },
+    {
+      "path": "apps/web/dist/index.html",
+      "sha256": "5b81e08b49a4c63d6af1525863b2b8651449e6cd0e0892708a0760531bb15e0b"
+    }
+  ],
+  "changed_from_failed_full_v2": [
+    "README.md",
+    "tests/unit/test_metadata_client.py"
+  ],
+  "changed_from_verified_node_child": [
+    "README.md"
+  ],
+  "application_runtime_bytes_unchanged": true,
+  "canonical_inputs": 669,
+  "canonical_runtime_differs_from_staged": true,
+  "source_manifest_sha256": "bcde0f2e252335857f4d355c6bb50f9315ebd113c9bb8044ea6d32b303c2126a",
+  "node_child_proof": "../node-exit-lifecycle/verification-current.json",
+  "raw_failure_history": "../purpose-context/full-v2-terminal-verification.json",
+  "readme_identity_reconciliation": "../integration-regression/node-original-precondition-failure.json",
+  "verification_contract": {
+    "full_inventory_expected": 4550,
+    "original_whole_module_target": 150,
+    "original_cohort_timeout_seconds": 900,
+    "original_collection_timeout_seconds": 120,
+    "assertions_and_default_renderer": "UNCHANGED",
+    "case_exclusions": []
+  },
+  "required_next": [
+    "fresh selected112 cases on this subject",
+    "offline wheel and installed124 checks",
+    "complete Python and required default-browser verification",
+    "source-compatible integration audit before runtime transfer"
+  ],
+  "primary_owner": "codex-product-build-loop",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

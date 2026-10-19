@@ -1,0 +1,301 @@
+{
+  "recorded_at": "2026-10-18T06:11:55.917984+00:00",
+  "status": "FAILED_RUN_RECONCILED_ONLY",
+  "application_result": "FAIL",
+  "cases": 399,
+  "passed": 398,
+  "failed": [
+    {
+      "file": "operator.spec.ts",
+      "title": "operator completes a fixture kit, then stops, closes, releases and signs out",
+      "status": "failed"
+    }
+  ],
+  "files": 16,
+  "all_owned_servers_terminated": true,
+  "cause": "UNKNOWN",
+  "finding": "OP-F01",
+  "original_assertion_timeout_ms": 5000,
+  "normal_completion_accepted": false,
+  "human_acceptance": "NOT_RUN",
+  "beta_decision": "NO_GO",
+  "limitations": [
+    "Existing fixture results only; no new browser execution.",
+    "Safe invalidation does not pass the failed completion assertion.",
+    "Original positive collector remains FAIL and unchanged."
+  ],
+  "inputs": [
+    {
+      "path": "evidence/local/persona-adoption-oct18-reconciliation/browser-suite.failed-original.json",
+      "sha256": "31521d5e03617052f9cdb1f466912622136573ce5d93871e3afa777688396cfc"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-001.json",
+      "sha256": "a85703d920640dd83f9a0ea0a02459bc73098dfd66b96a299e7bd3bf9c90a1df"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-001.xml",
+      "sha256": "b9b9a1ac0898bb79b6b56ea9a46e6bd34b1b88103b1af0233dde580498684aac"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-001.log",
+      "sha256": "779f1b0592f3daba0ce0d20ab31cd067fd5f38fbceb38ace81be540d27731059"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-001.server.json",
+      "sha256": "63407293b39c60a6323b392c59f6dbd263efcb061e62c5960a4576a736b2a869"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-002.json",
+      "sha256": "9ddd63e50a197f6f9aab513b3425f83e4db2fcf50bcdcd6ff4a83c3ad70fadfd"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-002.xml",
+      "sha256": "467b6acf88d5976440d3fd320f2504e539a771cd0d1d84624cd3b5fa441faed8"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-002.log",
+      "sha256": "0d980f281340c8cf1fd23a82c965ffb47ae56383df3004098b5ebd8b440e79f9"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-002.server.json",
+      "sha256": "7238e81e034e8aa7f20a5d3dd928207b2f9cfa1fb565e7db17dded3db27bda36"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-003.json",
+      "sha256": "77502e173fd32aff9f011dd054ee3ef2ce7b1f799a8458250f601e07899c6c02"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-003.xml",
+      "sha256": "011175d54751297e463d8aac3e015810d8810b295541e782ccc7676f86df0cc6"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-003.log",
+      "sha256": "450b3fc212fa37ada16408afa9e2981e400b40a0dff23240cc607be858604b2c"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-003.server.json",
+      "sha256": "c0698f45e9601a11691ad98533b59cfef8f023b751fd0dd1abbb0813e4b7cb93"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-004.json",
+      "sha256": "611f80ebc8eb50b17dbae4dd5b3041391ec7783e57651907678fd65b2a276d98"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-004.xml",
+      "sha256": "51e724b30644e8e8e29fd18bea73fd03157b0ed4136c99e26c41d27a38669d1d"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-004.log",
+      "sha256": "99eb38f78e595d0de23af8de92f6553780ddd8af4a8e27e38d82af8c3799c092"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-004.server.json",
+      "sha256": "9276475901a5b37a101c0c8160878273714f3c24fc2f3ec5a5141e915aeb4b86"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-005.json",
+      "sha256": "c448b40f674fbef0a62db79548f6ad026ae280bb2cccf01ed63cf704def090ea"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-005.xml",
+      "sha256": "59b6f866078837b7f43a3be16537728228425ea11792a1112c679e3547575084"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-005.log",
+      "sha256": "d1180ec39c16faa7e7920ffec97494afe6c12086b3ad9f5d7dab289e33f268d1"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-005.server.json",
+      "sha256": "1aee69b4711d701f98c031bfb5d6ec6a9ac33fd0916880f7179749dddada7c9d"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-006.json",
+      "sha256": "47958d5566e5862d1b326ac791eab39173f37b968e67d21bb731f60c8e2d05db"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-006.xml",
+      "sha256": "127698ae976c80d948662be7b8d64c818563d7de76f2280efdba947415a1d515"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-006.log",
+      "sha256": "19006184ad0572c1d13c562df5af617e0793430673620d4f2c45431693ed4f62"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-006.server.json",
+      "sha256": "283d591cedc13b93c1b8c18f5a860b90e225b19dda077462069f595b611d46cb"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-007.json",
+      "sha256": "3e0ad6c7048b96171eca307b4ff7836eed24f9c89457b6f0fa4162fefd64cca7"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-007.xml",
+      "sha256": "367c4015966b60325644590e504644723b3baaf406eb217a7467d19a202d8e62"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-007.log",
+      "sha256": "159b7898d7cfb1ed8888106bc47235fcb7c0a6971627479e9eae273db2bbfc95"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-007.server.json",
+      "sha256": "af47832f4048aeab8e9d3e42beff1a6e9f53a24949fbacb943f3be48943297d0"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-008.json",
+      "sha256": "795e3785edf1946d07e17613016211866b89c6b0bf206d9b5a522c7e178b6af3"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-008.xml",
+      "sha256": "ad697a33c2f0acc7874206248b98c05be27a8bd1e4c87ba34f7258a38d539c63"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-008.log",
+      "sha256": "8109f778e8126a643d976d0d5ac23bcaee813e412f3b9ee4b3358e54fcf6de1c"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-008.server.json",
+      "sha256": "f79d03db029ba391acac12bc6e615beb209610e4757c3d7f5e36b13e8682a79f"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-009.json",
+      "sha256": "7f6a9686fc6f2b1c2ebdd804251859a8753e67dcea4a9646ff20e9799fc92171"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-009.xml",
+      "sha256": "124fd85acd88735e9daf4e4512c0caed4ebf01f65f3d1b28616b2608eccdb2c0"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-009.log",
+      "sha256": "0c16977a78085c883f5b049f6dffd1a9b76b00dd22c7ed575713c89c15ae6f4d"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-009.server.json",
+      "sha256": "043a685ef1f32bf9f1157cd13261e711d2c7a5b643ae4b73b7c0836ed1118d3d"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-010.json",
+      "sha256": "4b6e9d80b57071aacc55f4ebae98784634a8901d4869c3cfa76cc6a0d87b3e17"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-010.xml",
+      "sha256": "4124d87aa61dd4a5e1ef4507467b970bc291057f0abf8d61db192edeb42790d6"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-010.log",
+      "sha256": "b614345981790703510259a2b3b015c3840fdc45a73ebd6dfc19305a539a57a3"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-010.server.json",
+      "sha256": "5a3af29a8aa99ec81bc63bc5df406029ab9b2a9b376bebf213beb43a84b752a7"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-011.json",
+      "sha256": "c8cc83ba236a576b06c0a8968a1e5868d0d7074cb382beb578c45a2f94dff6d0"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-011.xml",
+      "sha256": "b00f491c2a81743e58170f4043805a6f32d637c0e4453cb7e4dfde5ef830b704"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-011.log",
+      "sha256": "d358ceaa440710908374e1690045b47208b1024442ee13d1184aac84bb947021"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-011.server.json",
+      "sha256": "5173dc8333af707a0ea605b9df9e009b82eabb240755966a35bbb07d1e6831e1"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-012.json",
+      "sha256": "711f656915da65cf51e5bfe9c79dacdeb267ee5ef1adab5201a50c6ec60c87fa"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-012.xml",
+      "sha256": "8468bd79b07de3744c71a1470e2b7d91e5ccdf65546d575769998cb74ec15c37"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-012.log",
+      "sha256": "6c8ed34cbaca1f8df42e8071008055e13f217144271bb0b328fbec0f97192644"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-012.server.json",
+      "sha256": "0caae8ee09bacc489abaac40eaec11bd060cd583e7b1482f1dcb526f413fa391"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-013.json",
+      "sha256": "c82fedce3a05eceb45b84bd7b49571fcb349428075a1ced9c5edcdd98e7b9933"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-013.xml",
+      "sha256": "02dcf8f594bc8fc477b9d01af251e35236a34e2bd748cf68a83eca3da9c819d6"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-013.log",
+      "sha256": "ddf3adbc9ce78ddfaaec07f61d52dcf43b66788cd8f318f54f5eabd23fbe269e"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-013.server.json",
+      "sha256": "8a51e2c5d6c4b72e53910b810e8953305ca5f007ff776392c7adbdec0f588f67"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-014.json",
+      "sha256": "bbae1987e7ceee914edd0dea99137083ae37d22ded40f03af8c32ffafd79673e"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-014.xml",
+      "sha256": "9fbf0ec722049396bc28ce95d0a4bd1574d5f835454d7af022ac6e2e3efbe098"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-014.log",
+      "sha256": "2e547f87b38b1afa43a95565759a0d09eafbdf40f5ff666d317301ff7deae2af"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-014.server.json",
+      "sha256": "b68b69b7b3476f6284fbb99a6b0f9c03c7017e3cb0dbe09fff8793d7b8959a6c"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-015.json",
+      "sha256": "a17582e54a6794df83502e7bfc27a579f7118507922b8eb4abefbfd50376291a"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-015.xml",
+      "sha256": "c99a5c66eb201f5854c1223ab6ff0a9547720718548ea70962fef216ca9e875f"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-015.log",
+      "sha256": "74d0bdc6ce817e1f1ddbebbba25740802e3ff71c59d44e38dc07b2c6ca642b60"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-015.server.json",
+      "sha256": "08310b5d485dc51d71e65dec3af35a50f424c11c0dac6293dd44eaf11955143d"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-016.json",
+      "sha256": "93a80661b3eb32cd597d93b1857ea5ae7d7a92f7377e71fa3227d42fcf51b657"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-016.xml",
+      "sha256": "aeb606fe0c200db412ea49d40fc584164c5abac4474b4ff98a2767a477c42bd5"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-016.log",
+      "sha256": "50af0e5b913eaf69e62591b432d39e54e08a8189cc32239e9ac26f0797a6b423"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-016.server.json",
+      "sha256": "8ce0002bfc5299928472c75a293de72f201d1a2d18953c05a0acb8b98dd96947"
+    },
+    {
+      "path": ".loop/repairs/disposition-duplicate-replay/canonical-browser-v1-process.json",
+      "sha256": "e281a7342ef0e59b3be77395ac627a5d2022813b1e73d4a99c2eced59315203d"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-010-artifacts/operator-operator-complete-b9de6-oses-releases-and-signs-out/error-context.md",
+      "sha256": "55bbb8b5a1651d7d45e6e9b3194e8da8128fb03980ff9fc90b209f7323523e3d"
+    },
+    {
+      "path": "evidence/local/browser-runs/20261018T055634-eb2e3b927722/cohort-010-artifacts/operator-operator-complete-b9de6-oses-releases-and-signs-out/trace.zip",
+      "sha256": "2514edd21e164ccd9d6e8d1b44c46dfd058f5b90a56f0121818835a1342cb7e0"
+    }
+  ]
+}

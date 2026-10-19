@@ -1,0 +1,18 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "2ad4a1f442a49318121ef2bdc22d64baa0f0b26369025502000a12e0a037d289"
+  },
+  {
+    "path": "docs/PERSONAS-OPERATIONS.md",
+    "sha256": "f5c1889cd9eff9e3970f70a23afe2306704bd08c1a66d8f74bcbef999728586b"
+  },
+  {
+    "path": "docs/USER-NEEDS-ADOPTION.md",
+    "sha256": "a599223d0b0e732aa2552b35d57ce8ae6148f82e71e9f96fdee6aa10a728d791"
+  },
+  {
+    "path": "evidence/documentation-validation.json",
+    "sha256": "7f28b4b6465f7e8afdd0f73b915d2fd8abcea48b25d65b5c427eda277a6aef56"
+  }
+]

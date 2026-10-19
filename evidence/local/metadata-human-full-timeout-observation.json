@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-16T04:00:27.876946+00:00",
+  "scope": "retained timeout progress boundary only; not completed test or causal diagnosis",
+  "full_run_handle": 9077,
+  "full_run_status": "LIVE_CONFIRMED_BY_WRITE_STDIN",
+  "cohort": 3,
+  "collected": 122,
+  "child_report_phase": "COLLECTED",
+  "child_exit_code": null,
+  "progress_symbols": 101,
+  "candidate_next_node": "tests/integration/test_candidate_rollback.py::test_candidate_rollback_revalidates_actual_image_preparation_and_consumed_source_chain[qualification_compatible-synthetic_demo]",
+  "artifacts": [
+    {
+      "path": "evidence/local/metadata-human-full-timeout-observation/python-cohort-003.log",
+      "sha256": "0625667e9b98691c62299312b6ad62a23dc997bb51fc358c240236f915d3f46e"
+    },
+    {
+      "path": "evidence/local/metadata-human-full-timeout-observation/python-cohort-003.json",
+      "sha256": "f68b1b157cf3f579fcf8c4e45e6a2f763c301ea3238a8a1a408948be0fd1feb4"
+    },
+    {
+      "path": "evidence/local/metadata-human-full-timeout-observation/python-cohort-003-database.json",
+      "sha256": "a2b9132131d8b41fb7d27bfa2f2a912ff11a40f4371b3f3df9695dec07e3a0e8"
+    },
+    {
+      "path": "evidence/local/metadata-human-full-timeout-observation/python-cohort-003-database.log",
+      "sha256": "bb9062ddf6f7200d3e23500a18fdc9a9bfdd9d7548c52e232e700b9385a1203e"
+    }
+  ],
+  "next_action": "After current full/installed runs terminate, exercise the exact boundary case with diagnostic progress on its original source and unchanged deadline; inspect clean-resource evidence before changing scheduler or product.",
+  "limitations": [
+    "Dots do not prove complete setup/call/teardown acceptance.",
+    "Collected order plus progress suggests a boundary, not the cause of the timeout.",
+    "No current whole-product PASS or excluded-node acceptance."
+  ],
+  "beta_decision": "NO_GO"
+}

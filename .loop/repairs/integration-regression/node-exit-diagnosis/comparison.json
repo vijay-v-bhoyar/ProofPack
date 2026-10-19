@@ -1,0 +1,68 @@
+{
+  "at": "2026-10-17T04:24:05.677460+00:00",
+  "scope": "controlled diagnostic of native Node shutdown; no application or oracle source edits",
+  "summary": {
+    "original_guard": [
+      {
+        "exit_code": 3221226505,
+        "native_closing_assertion": true
+      },
+      {
+        "exit_code": 3221226505,
+        "native_closing_assertion": true
+      },
+      {
+        "exit_code": 3221226505,
+        "native_closing_assertion": true
+      }
+    ],
+    "natural_guard": [
+      {
+        "exit_code": 0,
+        "native_closing_assertion": false
+      },
+      {
+        "exit_code": 0,
+        "native_closing_assertion": false
+      },
+      {
+        "exit_code": 0,
+        "native_closing_assertion": false
+      }
+    ],
+    "forced_import": [
+      {
+        "exit_code": 3221226505,
+        "native_closing_assertion": true
+      },
+      {
+        "exit_code": 3221226505,
+        "native_closing_assertion": true
+      },
+      {
+        "exit_code": 3221226505,
+        "native_closing_assertion": true
+      }
+    ],
+    "natural_import": [
+      {
+        "exit_code": 0,
+        "native_closing_assertion": false
+      },
+      {
+        "exit_code": 0,
+        "native_closing_assertion": false
+      },
+      {
+        "exit_code": 0,
+        "native_closing_assertion": false
+      }
+    ]
+  },
+  "source_unchanged": true,
+  "all_guard_assertions_preserved": true,
+  "sdk_calls": 0,
+  "product_repair": "NOT_APPLIED",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "scope": "current local controlled-baseline implementation and full local component verification only",
+  "recorded_at": "2026-10-15T05:57:36.468880+00:00",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "sources_unchanged_during_run": true,
+  "sources": 501,
+  "python_cases": 1428,
+  "python_phases": 4284,
+  "browser_cases": 168,
+  "local_gates": 12,
+  "wheel_backend_modules": 88,
+  "wheel_frontend_files": 3,
+  "canonical_artifacts": 788,
+  "verification": {
+    "path": "evidence/local/verification.json",
+    "sha256": "db69b46c7c2138743277438e76f987cf80f71e65deaaf83db11d09be3609d573"
+  },
+  "byte_coverage_audit": {
+    "path": "evidence/local/controlled-independent-audit.json",
+    "sha256": "61a78513ab616ec563d2c7ae4c05295a29ee66a923e820e00ce64351ee5f7208"
+  },
+  "accounting_audit": {
+    "path": "evidence/local/controlled-baselines-current-accounting-audit.json",
+    "sha256": "5a4c8c8206a717fef72f54562e42d74ab49c0e58bb304c04ebe0a04071276a16"
+  },
+  "actual_experiment": {
+    "path": "evidence/local/controlled-baselines.json",
+    "sha256": "78a299c241e2099b073461bcf71728b2bc4bddae9b35c6ac644ef8838e0aae65"
+  },
+  "frozen_sources": {
+    "path": "evidence/local/controlled-frozen-source.json",
+    "sha256": "ed86af7ba9f0746ed645313570d902a0d0382022a107168cfe611409acd784d2"
+  },
+  "archive": {
+    "path": "evidence\\local\\controlled-current-artifacts-final.zip",
+    "sha256": "1f9f7d4a571e9a91a78e239b46916df72010a26908f0534ce4dad6c4440ae0f1"
+  },
+  "run_id": "20261015T055055-589591bbfc18",
+  "episodes": 144,
+  "arms": 4,
+  "measurements": 882,
+  "candidate_advantage_proved": false,
+  "physical_truth_verified": false,
+  "independent_benchmark_qualified": false,
+  "promotion_eligible": false,
+  "operator_effort_measured": false,
+  "full_product_complete": false,
+  "full_workflows": "NOT_RUN",
+  "human_evaluation": "NOT_RUN",
+  "aws_live": "NOT_RUN",
+  "beta_decision": "NO_GO",
+  "authority": "none",
+  "independence": "Separate source/coverage/byte/accounting checkers run by the same Codex operator; not independent human or provider assurance.",
+  "preserved_failures": [
+    {
+      "path": "evidence/local/controlled-all-first.json",
+      "sha256": "e0c9cf7f4429b22a183f124d79c014ddaf1ff9d3f61a22c9af36943723d48cbd"
+    },
+    {
+      "path": "evidence/local/controlled-bootstrap-before.xml",
+      "sha256": "e2e92b7c045844dc09cc48997f3bdc8021ca38196ed1a068ae3fb9eeb7bf819c"
+    },
+    {
+      "path": "evidence/local/controlled-partial-rates-before.xml",
+      "sha256": "e4e45ffe25ac891a3e81d0748407cf17be72735d77a035d0e3e42068b7952ba7"
+    },
+    {
+      "path": "evidence/local/adoption-improve-controlled.xml",
+      "sha256": "a21335a1f2628a594d4802251e1eec27a9f5618fec8a8cb4c33a23411e425358"
+    }
+  ],
+  "limitations": [
+    "Authored synthetic response model and 24 synthetic groups; no independent physical/operator generalization or causal correction effect.",
+    "Candidate/fixed/rule outcomes and action counts tie; no learned/adaptive benefit claim.",
+    "Earlier startup, transport and browser intermittency remain preserved; this run does not establish universal causal repair.",
+    "PP10 qualification/promotion/rollback, complete privacy/recovery and actual provider/physical/human acceptance remain incomplete."
+  ],
+  "final_documentation_refresh": {
+    "status": "PASS",
+    "scope": "documentation_structure_only",
+    "checks": 29,
+    "inputs": 31,
+    "receipt": "evidence/documentation-validation.json",
+    "receipt_sha256": "742eaa751dd8aaaebd8404f202188db433e0e61f67ed9667313d46790b2c4109",
+    "snapshot": ".loop/repairs/controlled-run-audit/final-documents.zip",
+    "snapshot_sha256": "9156703d4bc20ae3fed99c15004e47e3237a486edc8fddce02ce67220c5f1ab6",
+    "runtime_sources_unchanged": true
+  }
+}

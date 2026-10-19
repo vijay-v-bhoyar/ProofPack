@@ -1,0 +1,53 @@
+{
+  "status": "PASS_FOR_STAGED_ORIGINAL_CROP_METADATA_ONLY",
+  "checks": {
+    "metadata-lineage-original-metadata": {
+      "tests": 117,
+      "passing_phases": 351
+    },
+    "metadata-original-installed": {
+      "tests": 117,
+      "passing_phases": 351
+    },
+    "metadata-original-package-final": {
+      "tests": 157,
+      "passing_phases": 471
+    },
+    "metadata-original-literal-correct": {
+      "tests": 9,
+      "passing_phases": 27
+    }
+  },
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/originals.py",
+      "before_sha256": "2e1548eae557fb2969ed3fe4b9e21908d4919a60f9189f6f202b1674e5c08504",
+      "candidate_sha256": "fd1bac619213ccbba9b3063f86da1de61278dff432aaae5c91550e8501939cc2"
+    },
+    {
+      "path": "tests/unit/test_original_metadata_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "316574a4b28d39e62186cdd8b81bcbafac64237f5f03da80f480eea4fd0cae50"
+    },
+    {
+      "path": "tests/integration/test_original_metadata_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "4e3ee067966b181ba15747e7aae9f67d8fbcfd9355c18bc74b2e3df8538c409c"
+    }
+  ],
+  "canonical_unchanged": true,
+  "integrated": false,
+  "installed_modules": 97,
+  "opencv_version": "5.0.0",
+  "wheel_sha256": "d7c63bcfb43f911d45ab98a2684ac89eeea7875bcfc28e28d054a60cea2b2620",
+  "scope": "private source/lifecycle parsing and selected actual-store denial only; no full media family/provider/removal authority",
+  "retained_failures": [
+    "wrong-root initial import",
+    "strict-enum fixture",
+    "absent mode product baseline",
+    "missing frontend build artifact",
+    "literal oracle target selected old canonical module"
+  ],
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

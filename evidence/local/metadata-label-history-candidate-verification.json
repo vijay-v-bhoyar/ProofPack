@@ -1,0 +1,60 @@
+{
+  "status": "PASS_FOR_ISOLATED_LABEL_CANDIDATE_ONLY",
+  "checks": {
+    "metadata-lineage-label-history-final": {
+      "tests": 294,
+      "passing_phases": 882
+    },
+    "metadata-label-installed-final": {
+      "tests": 294,
+      "passing_phases": 882
+    },
+    "metadata-label-package-final": {
+      "tests": 415,
+      "passing_phases": 1245
+    }
+  },
+  "counts_overlap": true,
+  "source_inputs": 598,
+  "exact_backend_files": 112,
+  "exact_frontend_files": 3,
+  "installed_modules": 101,
+  "opencv_version": "5.0.0",
+  "wheel_sha256": "23ec788c5b1baf6ebd33714c1d34b6b7f950be2f41c09bb30b19152b0c0b2c06",
+  "changes": [
+    {
+      "path": "services/api/proofpack/review/labels.py",
+      "before_sha256": "205c28d0b279639f65fe5c8a8fc9a1a2c29be7ac8312270c67237d12a9a09dd1",
+      "candidate_sha256": "791e6618af5ad4581977f89aec8a44dc1923087b01028aa39753ff1f9a2a8cb1"
+    },
+    {
+      "path": "services/api/proofpack/evidence/label_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "9a9e5d95af7bca953ee04e1f22be7cf8af653dbc283a684cbda6e5c1375ab972"
+    },
+    {
+      "path": "tests/unit/test_capture_lineage.py",
+      "before_sha256": "ad8bb203cb94d2eec111d18f5a946a5b728ecddf0f986eda784539fcba7a833b",
+      "candidate_sha256": "62c233b160c46b2badbe5f04d27a7d7945a95430783946d6156c5948f04bee30"
+    },
+    {
+      "path": "tests/unit/test_label_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "c80a6d4ce3c33ed82a68f94c01592bfffb639d97b3dedf4ae505772c7971ea0b"
+    },
+    {
+      "path": "tests/integration/test_label_lineage_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "ce246358b2d946bb69f6225558b56db38e816220e763fa6bef5ed1f5211fd3c4"
+    }
+  ],
+  "canonical_matches_origin": true,
+  "integrated": false,
+  "retained_failures": [
+    "late-expiry committed label",
+    "mismatched stored recipe identity accepted",
+    "empty-label fixture requested forbidden empty snapshot"
+  ],
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

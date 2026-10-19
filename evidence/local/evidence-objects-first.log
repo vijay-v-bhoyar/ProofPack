@@ -1,0 +1,73 @@
+F..............FFF.....                                                  [100%]
+================================== FAILURES ===================================
+_____ test_versioned_conditional_encrypted_write_head_and_exact_byte_read _____
+
+    def test_versioned_conditional_encrypted_write_head_and_exact_byte_read():
+        store,stub=world();payload,receipt,put,ack,head=fixture(store)
+        params={**store._params(receipt.asset_id,receipt.version_id),'ChecksumMode':'ENABLED'}
+        stub.add_response('put_object',ack,put);stub.add_response('head_object',head,params)
+        body=StreamingBody(io.BytesIO(payload),len(payload))
+        stub.add_response('get_object',{**head,'Body':body},params)
+        with stub:
+            actual=store.put(asset_id=receipt.asset_id,payload=payload,content_type='image/png',context_sha256='a'*64)
+            assert actual==receipt and receipt.key not in repr(receipt) and receipt.version_id not in repr(receipt)
+            assert store.get(actual)==payload
+>       assert body.closed
+E       assert False
+E        +  where False = <botocore.response.StreamingBody object at 0x000002844C7DF1C0>.closed
+
+tests\unit\test_evidence_objects.py:50: AssertionError
+_________ test_reads_validate_bytes_and_always_close_body[wrong-hash] _________
+
+bytes_mode = 'wrong-hash'
+
+    @pytest.mark.parametrize('bytes_mode',['wrong-hash','oversized','truncated'])
+    def test_reads_validate_bytes_and_always_close_body(bytes_mode):
+        store,stub=world();payload,receipt,put,ack,head=fixture(store)
+        data={'wrong-hash':b'x'*len(payload),'oversized':payload+b'extra','truncated':payload[:-1]}[bytes_mode]
+        body=StreamingBody(io.BytesIO(data),len(data))
+        stub.add_response('get_object',{**head,'Body':body},{**store._params(receipt.asset_id,receipt.version_id),'ChecksumMode':'ENABLED'})
+        with stub,pytest.raises(StoreUnavailable):store.get(receipt)
+>       assert body.closed
+E       assert False
+E        +  where False = <botocore.response.StreamingBody object at 0x000002844C90A200>.closed
+
+tests\unit\test_evidence_objects.py:90: AssertionError
+_________ test_reads_validate_bytes_and_always_close_body[oversized] __________
+
+bytes_mode = 'oversized'
+
+    @pytest.mark.parametrize('bytes_mode',['wrong-hash','oversized','truncated'])
+    def test_reads_validate_bytes_and_always_close_body(bytes_mode):
+        store,stub=world();payload,receipt,put,ack,head=fixture(store)
+        data={'wrong-hash':b'x'*len(payload),'oversized':payload+b'extra','truncated':payload[:-1]}[bytes_mode]
+        body=StreamingBody(io.BytesIO(data),len(data))
+        stub.add_response('get_object',{**head,'Body':body},{**store._params(receipt.asset_id,receipt.version_id),'ChecksumMode':'ENABLED'})
+        with stub,pytest.raises(StoreUnavailable):store.get(receipt)
+>       assert body.closed
+E       assert False
+E        +  where False = <botocore.response.StreamingBody object at 0x000002844D953460>.closed
+
+tests\unit\test_evidence_objects.py:90: AssertionError
+_________ test_reads_validate_bytes_and_always_close_body[truncated] __________
+
+bytes_mode = 'truncated'
+
+    @pytest.mark.parametrize('bytes_mode',['wrong-hash','oversized','truncated'])
+    def test_reads_validate_bytes_and_always_close_body(bytes_mode):
+        store,stub=world();payload,receipt,put,ack,head=fixture(store)
+        data={'wrong-hash':b'x'*len(payload),'oversized':payload+b'extra','truncated':payload[:-1]}[bytes_mode]
+        body=StreamingBody(io.BytesIO(data),len(data))
+        stub.add_response('get_object',{**head,'Body':body},{**store._params(receipt.asset_id,receipt.version_id),'ChecksumMode':'ENABLED'})
+        with stub,pytest.raises(StoreUnavailable):store.get(receipt)
+>       assert body.closed
+E       assert False
+E        +  where False = <botocore.response.StreamingBody object at 0x000002844C952200>.closed
+
+tests\unit\test_evidence_objects.py:90: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/unit/test_evidence_objects.py::test_versioned_conditional_encrypted_write_head_and_exact_byte_read
+FAILED tests/unit/test_evidence_objects.py::test_reads_validate_bytes_and_always_close_body[wrong-hash]
+FAILED tests/unit/test_evidence_objects.py::test_reads_validate_bytes_and_always_close_body[oversized]
+FAILED tests/unit/test_evidence_objects.py::test_reads_validate_bytes_and_always_close_body[truncated]
+4 failed, 19 passed in 4.47s

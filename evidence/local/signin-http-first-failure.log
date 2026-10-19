@@ -1,0 +1,35 @@
+............................................................F........... [ 22%]
+........................................................................ [ 45%]
+........................................................................ [ 67%]
+........................................................................ [ 90%]
+..............................                                           [100%]
+================================== FAILURES ===================================
+____ test_http_requires_session_origin_csrf_idempotency_and_explicit_roles ____
+
+world = (<proofpack.auth.service.AccessService object at 0x000001744CDA0FB0>, <proofpack.evidence.repository.DynamoRepository ..., access_revision=1, session_id='def62064-7c99-4c94-8136-ac9a56382c6b', session_expires_at=4600.0, mfa_verified=True)))
+
+    def test_http_requires_session_origin_csrf_idempotency_and_explicit_roles(world):
+        service,repo,clock,uid,credentials,owner=world
+        app=create_app(access_service=service,app_origin='https://proofpack.test')
+        with TestClient(app,base_url='https://proofpack.test') as client:
+            assert client.get('/api/v1/me').status_code==401
+>           assert client.post('/api/v1/auth/login',json={'subject':'owner','mfa_verified':True}).status_code==404
+E           AssertionError: assert 405 == 404
+E            +  where 405 = <Response [405 Method Not Allowed]>.status_code
+E            +    where <Response [405 Method Not Allowed]> = post('/api/v1/auth/login', json={'subject': 'owner', 'mfa_verified': True})
+E            +      where post = <starlette.testclient.TestClient object at 0x000001744CD6D400>.post
+
+tests\integration\test_access_lifecycle.py:590: AssertionError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/unit/test_cognito.py::test_weak_rsa_signing_key_is_dependency_failure
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\jwt\api_jwt.py:149: InsecureKeyLengthWarning: The RSA key is 1024 bits long, which is below the minimum recommended size of 2048 bits. See NIST SP 800-131A.
+    return self._jws.encode(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_access_lifecycle.py::test_http_requires_session_origin_csrf_idempotency_and_explicit_roles
+1 failed, 317 passed, 2 warnings in 31.71s

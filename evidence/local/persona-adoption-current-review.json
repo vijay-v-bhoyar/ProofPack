@@ -1,0 +1,256 @@
+{
+  "recorded_at": "2026-10-19T12:09:29.544308+00:00",
+  "mode": "Improve",
+  "scope": "NR same six model cases plus exact three resumed native cases; PA-F83/PA-I83 revalidated, profiles reused",
+  "status": "SIX_MODEL_AND_PACKAGE_PLUS_THREE_SELECTED_NATIVE_CASES_PASS_FULL_GOAL_UNACCEPTED",
+  "subject_sha256": "07574788f8ba4383a6f35e47f27748edfd0a39838a4b1759f9f237891156a2e1",
+  "persona_count": 9,
+  "operation_count": 78,
+  "affected_groups": 4,
+  "workflow_count": 26,
+  "technical_acceptance_scopes": 58,
+  "profiles": {
+    "P01": {
+      "definition": "Business owner and release decision-maker",
+      "operations": 10
+    },
+    "P02": {
+      "definition": "Packing operator",
+      "operations": 10
+    },
+    "P03": {
+      "definition": "Quality reviewer and qualification specialist",
+      "operations": 10
+    },
+    "P04": {
+      "definition": "Shift supervisor and incident coordinator",
+      "operations": 8
+    },
+    "P05": {
+      "definition": "AWS and service operations administrator",
+      "operations": 8
+    },
+    "P06": {
+      "definition": "Product maintainer and test engineer",
+      "operations": 8
+    },
+    "P07": {
+      "definition": "Data and privacy steward",
+      "operations": 8
+    },
+    "P08": {
+      "definition": "Independent pilot evaluator",
+      "operations": 8
+    },
+    "P09": {
+      "definition": "Hackathon judge and demonstration evaluator",
+      "operations": 8
+    }
+  },
+  "process_receipt": ".loop/repairs/metadata-native-rollover/verification-current-v4.json",
+  "process_receipt_sha256": "87e6fec36c74aeb52798b7b91c6b6043fb128b2b61614571140a7dc6bbda9038",
+  "tests": {
+    "source_model_cases": 6,
+    "source_model_phases": 18,
+    "installed_model_cases": 6,
+    "installed_model_phases": 18,
+    "same_model_nodeids": true,
+    "native_cases": 3,
+    "native_phases": 9,
+    "native_status": "PASS_SELECTED_NATIVE_ONLY",
+    "native_execution_attempts": 1,
+    "native_nodeids_and_producer_bytes_unchanged": true,
+    "native_local_SDK_HTTP_sends": 6132,
+    "external_SDK_HTTP_sends": 0,
+    "model_SDK_HTTP_sends": 0,
+    "database_terminated": true,
+    "database_state_removed": true,
+    "native_memory_admission": {
+      "observed_at": "2026-10-19T12:02:51.330241+00:00",
+      "reading_succeeded": true,
+      "method": "Windows GlobalMemoryStatusEx",
+      "available_physical_bytes": 579203072,
+      "available_commit_bytes": 19691249664,
+      "total_physical_bytes": 16858472448,
+      "total_commit_bytes": 68398080000,
+      "decision": "ADMIT_LOCAL_DIAGNOSTIC"
+    },
+    "native_cumulative_collection_seconds": 6.327999999994063,
+    "native_collection_bound_seconds": 120,
+    "native_resumption_collection_bound_seconds": 117,
+    "native_execution_seconds": 21.203000000008615,
+    "native_execution_bound_seconds": 300,
+    "earlier_hold_preserved": true,
+    "original_fixture_failure_preserved": true,
+    "original_final_safety_assertions_preserved": true,
+    "collection_only_cases": 6539,
+    "collection_execution_phases": 0,
+    "full_current_suite": "NOT_RUN",
+    "runtime_wheel_sha256": "043da736b118f72ce03e7a979a31a6266f0d6cff41f411eccded62d4cb50bff3",
+    "runtime_members": 164,
+    "new_build": false,
+    "retained_compatible_evidence": "OV6645source/592installed/54browser at original838-input subject; not newly executed on840-input test-only subject",
+    "native_scope": "Owned DynamoDB Local, actual local Windows CV publication, synthetic trusted identity, intercepted S3; real v6 owner domain review/explanation, stored quota rollover, late phantom-source hold. No protected-positive/IAM/Cognito/live AWS/ARM/physical-kit/human acceptance.",
+    "native_arm_installation": "NOT_RUN",
+    "hosted_provider": "NOT_RUN",
+    "human_A01_A09": "NOT_RUN"
+  },
+  "documentation_validation": {
+    "status": "PASS",
+    "checks": 34,
+    "inputs": 33,
+    "receipt": "evidence/documentation-validation.json",
+    "sha256": "090a21aff42b0fa20cd53152eb04ec7ff8f273c0794b7caeb1a34ffa5017ec28"
+  },
+  "human_scenarios": "A01-A09 NOT_RUN",
+  "beta_decision": "NO_GO",
+  "parent_complete": false,
+  "graph": {
+    "nodes": 2427,
+    "edges": 10497,
+    "communities": 87,
+    "duplicate_node_ids": 0,
+    "missing_endpoints": 0,
+    "exact_duplicate_edges": 0,
+    "limitations": "AST navigation; legacy IDs/method collisions/community labels remain; client/tests not fully indexed"
+  },
+  "findings": [
+    "PA-F83 OBSERVED historical memory hold retained; fresh changed admission later met original floors",
+    "PA-F83 original fixture correctly hit earlier authentication denial; genuine older login tests maintenance guard without weakening assertions"
+  ],
+  "improvements": [
+    "PA-I83 six current source/package clock/quota/retry cases, preserving both denial boundaries",
+    "PA-I83 one exact three-case native resumption passed actual local storage/CV-fixture review, persisted rollover and late-source rejection with verified cleanup and no external SDK sends"
+  ],
+  "changed_documents": [
+    "docs/BUILD-STATUS.md",
+    "docs/TEST-PLAN.md",
+    "docs/OPERATIONS.md",
+    "docs/USER-NEEDS-ADOPTION.md",
+    "docs/PERSONAS-OPERATIONS.md",
+    "BACKLOG.md"
+  ],
+  "remaining": [
+    "Independent v6 classification and full privacy processing against actual D11 decisions",
+    "Actual D07 deployment authority and native ARM/live provider/physical/operating/human proof; deployment handoff refresh",
+    "Actual D11 purposes/retention/rights/approver input pending; no inferred answer or consent",
+    "Actual D07 account/region/budget/domain/action authority missing",
+    "PO-T01/CR-T01/IJ-T01/NR-T01/MH-T01 remain pending independent review",
+    "Actual kits/operators/accountable operating assignments/human acceptance; old browser/Node causes UNKNOWN"
+  ],
+  "current_source_manifest_still_matches": true,
+  "inputs": [
+    {
+      "path": "docs/PERSONAS-OPERATIONS.md",
+      "sha256": "0dfb08c0282c82fc19fb4ae6ef8048643fb08d5e47e3fad0d79cc4f04d32807f"
+    },
+    {
+      "path": "docs/USER-NEEDS-ADOPTION.md",
+      "sha256": "493be94a845c195d1064ebdbbd0ee6ff4d7e94cda71188609dd8eb40f9b045c0"
+    },
+    {
+      "path": "docs/BUILD-STATUS.md",
+      "sha256": "5d2b59683630a02beaaae8a6250155dab5d82fd878f491de1d9d03f0264c72d3"
+    },
+    {
+      "path": "docs/TEST-PLAN.md",
+      "sha256": "996e0b27c941776dfa30e6367a8e934a2f18ba1b4b79dcdd7012024f63151f36"
+    },
+    {
+      "path": "docs/AWS-DEPLOYMENT.md",
+      "sha256": "5276bcb731830665f63b5ab6b1f64c351025606860c6f903f0a75fdf61dba14a"
+    },
+    {
+      "path": "docs/BETA-USER-GUIDE.md",
+      "sha256": "eafd8f98830045ce69dae7c0bbacdf89e66dcd6ec528b6b7445b40fbfe64faea"
+    },
+    {
+      "path": "docs/templates/BETA-SESSION-RECORD.md",
+      "sha256": "16b427e2e0c76bc7355168563e7eb47dc757319cc04df50dce32f55f6e666337"
+    },
+    {
+      "path": "docs/STATE-DATA-API.md",
+      "sha256": "2e0ce6bc077a12ce868199918f342de7eac71b3c4f04ca1583cdc6ab50eb28c2"
+    },
+    {
+      "path": "docs/OPERATIONS.md",
+      "sha256": "874cd5cc0e8897b1a911d1ec186f9a48d672dee8e5074dbf3747b1948069e296"
+    },
+    {
+      "path": "README.md",
+      "sha256": "f341b2b61ba522bd3b45a47346a82b3c00915d3913bbaebfc09a38dd440ff1d1"
+    },
+    {
+      "path": "docs/WORKFLOW-COVERAGE.md",
+      "sha256": "abf382e4b26bb7889a97c035210a28b90d3a2f84da79382c3d2a42284569a418"
+    },
+    {
+      "path": "docs/templates/PERSONA-OPERATION-EVIDENCE.csv",
+      "sha256": "f55b70e22df56f2981291c0bc8b1b9e362c8084a6a716133afc9366851745722"
+    },
+    {
+      "path": "docs/contracts/validate_documentation.py",
+      "sha256": "bda7e85cdc44cba3711ea826f8da4d45a09f114b4edcfa6b39341e4e949e5c96"
+    },
+    {
+      "path": "BACKLOG.md",
+      "sha256": "4661ba43826ad99928346dbe7370e167bd6ba0ef8078fa40fff19a3937886fe4"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "ecfe7ac005654a87705dd224b9708c6093d51180d66025e781a1de025103dbcf"
+    },
+    {
+      "path": ".loop/repairs/workflow-completion-audit/verification-current-v1.json",
+      "sha256": "b3bd99c328f17da8dde49ab4240bb80810897ce23c66d44748b1af08e23b4639"
+    },
+    {
+      "path": ".loop/repairs/workflow-completion-audit/next-metadata-history-contract-v1.md",
+      "sha256": "27d521007582cb5bdbb8fa474c5ed9169b7416b3d1b620169270ce743e6f618a"
+    },
+    {
+      "path": ".loop/repairs/metadata-request-history/verification-current-v1.json",
+      "sha256": "b25d8de621ab93a56bcc86575f9814ddcaa1d59a3af6e8eafbc5526b6a2c8d44"
+    },
+    {
+      "path": ".loop/repairs/metadata-history-consumer/verification-current-v2.json",
+      "sha256": "270c0bca862399e424e8205208667ed9d059393573f6f335b1f2c0b1a93bde3d"
+    },
+    {
+      "path": ".loop/repairs/owner-metadata-v6/verification-current-v1.json",
+      "sha256": "ee45643234660c4591d7d617ef775cc0e0c3b8f0d6483478609ba4dcd3389d2e"
+    },
+    {
+      "path": ".loop/repairs/metadata-native-rollover/verification-current-v3.json",
+      "sha256": "a7c2f439e7a0843a94063c921af387a0476bf18fd1d9c33e4cbb567435cce2af"
+    },
+    {
+      "path": ".loop/repairs/metadata-native-rollover/memory-revalidation-client-20261019-v4.json",
+      "sha256": "1dbfeab7fa3120f96f1e7146c6ead9618bc8154e0dfeafd32563aeaddbf0a971"
+    },
+    {
+      "path": ".loop/repairs/metadata-native-rollover/verification-current-v4.json",
+      "sha256": "87e6fec36c74aeb52798b7b91c6b6043fb128b2b61614571140a7dc6bbda9038"
+    },
+    {
+      "path": ".loop/repairs/metadata-native-rollover/native-resume-v4-process.json",
+      "sha256": "15f2712523b2b388858436f16384476ff07595aad141fa99e2c1bdfadccf6658"
+    }
+  ],
+  "evaluation_layers": {
+    "task_outcome": "Actual business/privacy/requester outcome NOT_RUN; supported local component paths only",
+    "experience_mechanisms": "No new UI test; unchanged OV6 mechanisms retained at original838-input subject",
+    "human_experience": "UNKNOWN; no actual comprehension, effort, adoption, repeat use or benefit measured",
+    "technical_assurance": "Six source/same six installed model cases plus three actual local-store/CV-fixture cases; no full/native ARM/live provider/physical/human acceptance"
+  },
+  "adoption_gates": "All seven UNKNOWN/BLOCKED; no gate READY",
+  "reassessment_limits": "Same technical scope revalidated after an actual resource-condition change. Old hold/failure evidence preserved; runtime unchanged, no full/privacy/hosted/human acceptance inferred.",
+  "customer_understanding": {
+    "psychology": "HYPOTHESIS: understand provenance versus policy/authority and zero-count limits; neutral A07-V6 comprehension test NOT_RUN",
+    "emotion": "UNKNOWN",
+    "behavior": "OBSERVED model quota/retry/clock invariants; actual accountable owner discussion and repeat use UNKNOWN",
+    "environment": "SELF_REPORTED one business/desktop webcam/no kits/operators; OBSERVED historical memory hold then fresh original-floor admission and successful bounded local-store run; not a general capacity guarantee; desktop awake/unlocked UNKNOWN",
+    "support": "Actual duties/assignees and accepted private handoff UNKNOWN",
+    "AI": "Deterministic structural counts; never inferred rights/ownership/retention"
+  }
+}

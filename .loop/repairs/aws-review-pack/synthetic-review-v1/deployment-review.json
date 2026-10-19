@@ -1,0 +1,59 @@
+{
+  "ami_root_device_verified": false,
+  "application_started": false,
+  "aws_resources_created": false,
+  "beta_decision": "NO_GO",
+  "change_set_kind": "CREATE_ONLY_DRAFT",
+  "declared_ami_evidence_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "declared_artifact_sha256": "63ec384c6081e008dd1586cb53cbd316299f9323af8b677883acdc9cc4138681",
+  "deploy_authorized": false,
+  "existing_audit_trail": "arn:aws:cloudtrail:us-east-1:000000000000:trail/synthetic",
+  "iam_simulation": "NOT_RUN",
+  "limits": [
+    "Wrong account/region makes every resource/output conditional false for creation; an empty stack is not successful deployment. Changing conditions in an existing stack can delete resources, so updates are unsupported.",
+    "Only the declared arm64 AMI layout with root device /dev/xvda is supported; its actual identity/layout/encryption/dependencies are not verified.",
+    "One private host and one NAT are not high availability; idle/retained resources still cost money.",
+    "Retain/deletion protection prevents automatic teardown; it is not a D11 retention or erasure policy.",
+    "IAM cannot prove quarantine or enforce exact conditional bootstrap contents; app cannot write journal.",
+    "Service draft is disabled, has no automatic retries and does not guarantee successful drain/physical stop."
+  ],
+  "prices_and_evidence": "CALLER_DECLARED_NOT_VERIFIED",
+  "provider_schema_validation": "NOT_RUN",
+  "region_reason": "Synthetic comparison only; no real target or pricing evidence.",
+  "required_before_apply": [
+    "Actual account/region/change-set authority, IAM review and cost/budget/alert recipient approval",
+    "AMI owner/arm64/root device/dependencies/patches/license and Graviton availability proof",
+    "Certificate/domain/TLS policy, subnet availability and exclusive ALB-SG ingress proof",
+    "Provider code/PKCE/native MFA and actual initial owner/notice approval; pool settings do not attest MFA",
+    "Actual existing CloudTrail regional coverage and private log/data/config/key retention D11",
+    "CloudFormation schema validation, IAM simulation and exact reviewed CREATE change set; this draft cannot safely update an existing stack",
+    "Separate reviewed host installer/config/key delivery; no UserData or auto service startup",
+    "Quarantine/role transition, original enrollment packet and external candidate approval; creation IDs must be read",
+    "Full restore/erasure writer roles and actual recovery/cleanup/requester/media coordinator remain incomplete"
+  ],
+  "required_capabilities": [
+    "CAPABILITY_IAM"
+  ],
+  "runtime_inputs": {
+    "ingress": {
+      "mode": "alb",
+      "trusted_proxy_cidrs": [
+        "10.24.0.0/24",
+        "10.24.1.0/24"
+      ]
+    },
+    "operation_purpose_id": null
+  },
+  "schema_version": 1,
+  "status": "PREPARED_REVIEW_DRAFT",
+  "supported_ami_root_device": "/dev/xvda",
+  "target": {
+    "account_id": "000000000000",
+    "app_origin": "https://proofpack.example.invalid",
+    "deployment": "synthetic-deployment",
+    "environment": "synthetic_demo",
+    "region": "us-east-1",
+    "stack_slug": "synthetic-review"
+  },
+  "updates_supported": false
+}

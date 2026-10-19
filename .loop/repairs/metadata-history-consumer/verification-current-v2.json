@@ -1,0 +1,93 @@
+{
+  "recorded_at": "2026-10-18T20:50:06.623241+00:00",
+  "subject_id": "working-tree-manifest-sha256:22e056e05467503447cf4811b9bcc48ca68007221f2bd66f9b86f32e45925d59",
+  "source_inputs": 833,
+  "status": "SUPPORTED_PRIVATE_METADATA_HISTORY_AND_V6_ACCOUNTING_VERIFIED_LOCAL",
+  "changed": [
+    "services/api/proofpack/evidence/corpus_accounting.py",
+    "services/api/proofpack/evidence/held_corpus.py"
+  ],
+  "added": [
+    "services/api/proofpack/evidence/metadata_history.py",
+    "tests/unit/test_metadata_history_consumption.py",
+    "tests/unit/test_metadata_history_declarations.py",
+    "tests/unit/test_metadata_history_edges.py"
+  ],
+  "groups": [
+    {
+      "group": "core",
+      "cases": 199,
+      "source_phases": 597,
+      "installed_phases": 597,
+      "same_nodeids": true
+    },
+    {
+      "group": "context",
+      "cases": 225,
+      "source_phases": 675,
+      "installed_phases": 675,
+      "same_nodeids": true
+    },
+    {
+      "group": "legacy",
+      "cases": 117,
+      "source_phases": 351,
+      "installed_phases": 351,
+      "same_nodeids": true
+    }
+  ],
+  "source_cases": 541,
+  "source_phases": 1623,
+  "installed_cases": 541,
+  "installed_phases": 1623,
+  "preexisting_test_files_unchanged": true,
+  "callback_62_and_declaration_2_oracle_files_unchanged": true,
+  "SDK_HTTP_sends": 0,
+  "original_product_failures": [
+    "62 cases:6FAIL/56PASS final callback substitution",
+    "2 cases:2FAIL gate/runtime declarations"
+  ],
+  "fixture_failures_preserved": [
+    "12 cases1FAIL/11PASS missing configured notice",
+    "12 cases1FAIL/11PASS omitted documented reauthentication"
+  ],
+  "fixture_repair": "Provision synthetic notice at construction; genuine acceptance and fresh sign-ins; final assertions preserved",
+  "collection_cases": 6401,
+  "collection_execution_phases": 0,
+  "full_current_execution": "NOT_RUN",
+  "wheel_sha256": "75efa70039fdd27b47e551a1be37758fd3088b3e889481d96c2abfb88e70662a",
+  "runtime_members": 164,
+  "backend_members": 161,
+  "web_members": 3,
+  "frontend_unchanged": true,
+  "canonical_wheel_updated": true,
+  "installed_receipts": "Exact v2-source-bound copies; parent-basename collision documented in installed-receipt-name-reconciliation-v2.json; earlier partial parent summaries not counted",
+  "graph": {
+    "nodes": 2422,
+    "edges": 10476,
+    "communities": 96,
+    "duplicate_node_ids": 0,
+    "missing_endpoints": 0,
+    "exact_duplicate_edges": 0,
+    "limitations": "AST navigation only; legacy IDs/method collisions/community labels and incomplete UI/test semantics remain"
+  },
+  "v1_v5_defaults": "UNCHANGED",
+  "v6": "Private explicit opt-in accounting; no v6 ownership classification or public host/review/client opt-in yet",
+  "supported_history": "Entire held inventory; shared request parser; exact create/cancel/result/audit/binding/actor references; quota revision chain; original deadlines/configuration/drain/source reconciliation",
+  "policy": "Root copied selectors retain METADATA_RETENTION_POLICY_REQUIRED; opaque/shared records never acquire inspection-content membership",
+  "scope_limits": "Finite local fault injection; not arbitrary in-process code immunity, historical authorization, all possible time/rollover transitions, or actual store/provider proof",
+  "next": [
+    "Wire explicit v6 opt-in through configured owner review/host/client, preserving old defaults",
+    "Independent classification and full preview/confirmation/conditional cleanup/job/effect/journal/restore/media/requester paths",
+    "Current native-store integration and quota minute-rollover execution",
+    "Refresh deployment bundle for current wheel before any actual candidate installation"
+  ],
+  "D11": "Actual purposes/retention/rights/approver unanswered; no invented policy/consent",
+  "D07": "Actual target/budget/domain/action authority unresolved",
+  "old_reviews": "PO-T01/CR-T01/IJ-T01/NR-T01/MH-T01 remain pending independent review",
+  "native_current": "NOT_RUN",
+  "human_scenarios": "A01-A09 NOT_RUN",
+  "adoption_gates": "All seven UNKNOWN/BLOCKED",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

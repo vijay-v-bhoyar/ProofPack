@@ -1,0 +1,57 @@
+{
+  "recorded_at": "2026-10-17T14:10:04.943084+00:00",
+  "status": "LOCAL_DEPENDENCY_VIEW_PREPARATION",
+  "original_failure": "browser-v1 FAIL before collection; react missing from candidate module resolution",
+  "original_suite": ".loop\\repairs\\same-budget-cohorts\\browser-v1-suite.json",
+  "original_suite_sha256": "2ed1364bb4490e3a90616177c4ef62cdb2720de98fb92d0265713c55cd97c428",
+  "root_view_creation": "initial sandbox Access is denied; exact junction creation succeeded after scoped escalation",
+  "web_dependency_target": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web\\node_modules",
+  "installed_package_checks": [
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "package_json": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web\\node_modules\\react\\package.json",
+      "sha256": "6e003e4e9ed25afa7fdd55613f8aa877cefa9b359d9c13f81ee704030248e24e"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "package_json": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web\\node_modules\\react-dom\\package.json",
+      "sha256": "136d4af63de473392ea79d6a21932b0ed9eb37fe518ce70f4621250f3d79e9bb"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "package_json": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web\\node_modules\\@types\\react\\package.json",
+      "sha256": "505c0df4cd73d6a02c946bd9b81451584bd9c83ea72d75cff9b826efceaa19c2"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "package_json": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web\\node_modules\\@types\\react-dom\\package.json",
+      "sha256": "4a2052bb362c34f1d39cfe0818b6fe01a9f988b609e8b7e4832aff7dbf2f7180"
+    },
+    {
+      "name": "typescript",
+      "version": "7.0.2",
+      "package_json": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web\\node_modules\\typescript\\package.json",
+      "sha256": "3722b30210616a13a3213ded11575ba6b2dbab10c32a5ef67afca8513e27017e"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.4",
+      "package_json": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web\\node_modules\\vite\\package.json",
+      "sha256": "260a0a7a96a35e1b657480014c0f3b592b70061e42099edefc8fe97972f05fd4"
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.2",
+      "package_json": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\apps\\web\\node_modules\\@vitejs\\plugin-react\\package.json",
+      "sha256": "b40248af3bd75adf396d903d042c09ca4f585dcdd9460d51eeeeb83c01a48643"
+    }
+  ],
+  "dependency_installation_or_update": false,
+  "source_or_test_change": false,
+  "case_exclusions": [],
+  "parent_complete": false
+}

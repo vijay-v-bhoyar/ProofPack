@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-18T01:17:28.329269+00:00",
+  "command": [
+    ".venv/Scripts/python.exe",
+    "-X",
+    "utf8",
+    ".loop/repairs/configured-auth-review-candidate/audit_full_composite_v1.py"
+  ],
+  "exit_code": 0,
+  "actual_tool_chunk": "77adf2",
+  "controller_terminal_tool_chunk": "3e628a",
+  "controller_session": 14643,
+  "controller_pid": 31076,
+  "controller_exit_code": 0,
+  "log": "full-composite-v1-audit.log",
+  "log_sha256": "e83540c4dad6b14be59527875a8bc107519f5cb8edee83ccd974575490c3e24b",
+  "verification_sha256": "e83540c4dad6b14be59527875a8bc107519f5cb8edee83ccd974575490c3e24b",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

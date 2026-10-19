@@ -1,0 +1,326 @@
+{
+  "status": "PASS",
+  "scope": "local original-frame comparison integration and verification-harness repair only",
+  "recorded_at": "2026-10-15T04:41:22.118188+00:00",
+  "primary_owner": "codex-product-build-loop via codex-request-router",
+  "support": "agentic-product-assurance Change/Verify; no release authority",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "goal_status": "ACTIVE",
+  "full_product": "PARTIAL",
+  "beta_decision": "NO_GO",
+  "sources": 344,
+  "sources_unchanged": true,
+  "python_cases": 1382,
+  "python_phase_outcomes": 4146,
+  "python_cohorts": 6,
+  "browser_cases": 168,
+  "browser_cohorts": 7,
+  "all_ten_local_gates": "PASS",
+  "worker": "actual local OpenCV 5",
+  "database": "actual owned DynamoDB Local; OS-temp state removed for all six cohorts",
+  "storage": "intercepted S3 SDK calls, not live AWS",
+  "identity_and_browser_data": "synthetic trusted identity and API/camera fixtures; not actual provider or users",
+  "wheel_backend_modules": 85,
+  "wheel_frontend_files": 3,
+  "canonical_artifacts_hash_checked": 601,
+  "snapshot_limit": "Prior immutable ZIPs remain separately retained and hash-verified; they are not recursively duplicated in this snapshot.",
+  "graph": {
+    "status": "DEGRADED",
+    "nodes": 1239,
+    "links": 5468,
+    "dangling": 300,
+    "use": "API navigation only; source/tests authoritative"
+  },
+  "unresolved": [
+    "Prior full-run local-emulator read timeout; no cause proved fixed.",
+    "Prior default-Chrome input/renderer stalls; current complete pass is recovery, not causal repair.",
+    "Earlier intermittent five-second OpenCV startup miss remains unresolved.",
+    "Independent physical truth, golden/regression/safety qualification and promotion/rollback incomplete.",
+    "Complete privacy/orphan/metadata/backup/restore and operational workflows incomplete.",
+    "Authorized actual AWS target, spend, provider/host/recovery proof and human A01-A09 acceptance remain missing."
+  ],
+  "next_local_scope": "PP11 controlled four-baseline contract is documented but its controls and implementation are not installed.",
+  "documentation_refresh": {
+    "status": "PASS",
+    "checks": 29,
+    "inputs": 31,
+    "recorded_at": "2026-10-15T04:45:13.722951+00:00",
+    "scope": "structure and references only; refreshed after code/package checkpoint"
+  },
+  "artifacts": [
+    {
+      "role": "current_complete",
+      "path": "evidence/local/verification.json",
+      "sha256": "258bad01ae734279e98c1b6bf379f95e1b4ac7c93dc9d0ebd09cb0761d80cf0b"
+    },
+    {
+      "role": "current_complete",
+      "path": "evidence/local/python-suite.json",
+      "sha256": "45c9b13d6b0fc66c565023ee959b9743f932237b8755c5d14c46c3612c3c8875"
+    },
+    {
+      "role": "current_complete",
+      "path": "evidence/local/browser-suite.json",
+      "sha256": "a778618edfb37770ae5631cade1ee3c080e796b41910a39a52ea5b9b0d36b383"
+    },
+    {
+      "role": "current_complete",
+      "path": "evidence/local/installed-wheel.json",
+      "sha256": "940eed7bedfbeeafdfc7f1e94e879becfc6c7799dfab4f8facd06a290450a09e"
+    },
+    {
+      "role": "current_complete",
+      "path": "evidence/local/vision-replay-isolated-frozen-source.json",
+      "sha256": "bcb197481e33f4c1c2ac5a1375ba6594a0ebd66d41915e0d021661d6e50db594"
+    },
+    {
+      "role": "separate_byte_audit",
+      "path": "evidence/local/vision-replay-independent-audit.json",
+      "sha256": "eba3b6d7c0f8d56d13cb520213a39eae156bfe4e644a163dd8a9219ba577db9a"
+    },
+    {
+      "role": "separate_byte_audit",
+      "path": ".loop/repairs/vision-source-fence/audit_full.py",
+      "sha256": "1d95f347170c628491359f067612898df175ec14389f52977832df423f775d48"
+    },
+    {
+      "role": "current_snapshot",
+      "path": "evidence/local/vision-replay-current-artifacts.zip",
+      "sha256": "b463099835b332e11186a9e1e84cafae3616d3fb560880f998324de0b3a528e8"
+    },
+    {
+      "role": "retained_failed_full_run",
+      "path": "evidence/local/vision-replay-first-full-failed.json",
+      "sha256": "ab2516556e65e631b1c9b8e771d8634b190edf2fbdadb97a406030f061037ab8"
+    },
+    {
+      "role": "retained_failed_full_run",
+      "path": "evidence/local/vision-replay-first-full-failed.zip",
+      "sha256": "4fa918946beb28438897f6ddac94807f8d7630f60d11c245270e569e205cbdd2"
+    },
+    {
+      "role": "retained_diagnostic_not_fix",
+      "path": "evidence/local/vision-input-control.json",
+      "sha256": "c2fdb61ee3008903e01d68e8c16fb06a26f4f02d5f991f6cbfd73df535c0aeca"
+    },
+    {
+      "role": "retained_diagnostic_not_fix",
+      "path": "evidence/local/vision-input-control.log",
+      "sha256": "d3672f7235a462db8e57dbadc747c3b0a0116119bb090db2a3c0329452226c68"
+    },
+    {
+      "role": "controls_registry",
+      "path": "docs/controls.yaml",
+      "sha256": "7cff26d22b3cacccc5fa9279c907d7d48b51d730efe0babd737a2d34970b1157"
+    },
+    {
+      "role": "local_repair_evidence",
+      "path": ".loop/repairs/vision-source-fence/record.json",
+      "sha256": "9e61535ef5d12d718201252e6d95a9961a6061355f7c87b7b00bc70beb64c5c0"
+    },
+    {
+      "role": "local_repair_evidence",
+      "path": ".loop/repairs/vision-source-fence/subject.json",
+      "sha256": "52e7a56291eab651517577283f554dfffcc0f631a1ad8a5dffac0fa63ee96288"
+    },
+    {
+      "role": "local_repair_evidence",
+      "path": ".loop/repairs/vision-source-fence/parent-acceptance.json",
+      "sha256": "03629647d21a506fca5997fad92e3dbb3addf2e5066e2abde1bbd6ee2a4f1f8f"
+    },
+    {
+      "role": "local_repair_evidence",
+      "path": ".loop/repairs/local-verification-io/record.json",
+      "sha256": "65f238651a40c1e4e39b33f7bfb58a888c3b2e4d66b577aaa5b100723e4475ef"
+    },
+    {
+      "role": "local_repair_evidence",
+      "path": ".loop/repairs/local-verification-io/subject.json",
+      "sha256": "a541cb427f6bfffc11e1150427ec4b5788e53b9e81dc099e1ea542416e5d63b6"
+    },
+    {
+      "role": "local_repair_evidence",
+      "path": ".loop/repairs/local-verification-io/parent-acceptance.json",
+      "sha256": "44ec7f2d2f13b3bc6d1289cbae4bed5fe4153d7d42a4325373cb45fc9ac4650d"
+    },
+    {
+      "role": "final_documentation_refresh",
+      "path": "evidence/documentation-validation.json",
+      "sha256": "125ebd020874214a20581cfc6a5e72e47e8f58e67f0538a9c98c145477c057df"
+    },
+    {
+      "role": "final_documentation_refresh",
+      "path": ".loop/repairs/vision-source-fence/final-documentation-validation.json",
+      "sha256": "125ebd020874214a20581cfc6a5e72e47e8f58e67f0538a9c98c145477c057df"
+    },
+    {
+      "role": "final_documentation_snapshot",
+      "path": ".loop/repairs/vision-source-fence/final-documents.zip",
+      "sha256": "a9de3a56fabd38c95e561eec84568fa331bdcd5893234fe9ab0b6727f65b39cd"
+    }
+  ],
+  "package_byte_audit_scope": "Backend Python modules and built frontend bytes; project Markdown/status was refreshed separately after packaging.",
+  "assurance_handoff": {
+    "run_id": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+    "scope_id": "PP10.original_frame_replay_and_local_verification",
+    "subject_id": "f65b63252fd6926404a5c35e88a8ad442518148ea07a3169a088d5605d2bc93b",
+    "modes": [
+      "Change",
+      "Verify"
+    ],
+    "primary_owner": "codex-product-build-loop via codex-request-router",
+    "release_authority": "none",
+    "applicability": {
+      "P01": "APPLICABLE",
+      "P02": "APPLICABLE",
+      "P03": "APPLICABLE",
+      "P04": "APPLICABLE",
+      "P05": "APPLICABLE",
+      "P06": "APPLICABLE",
+      "P07": "APPLICABLE",
+      "P08": "APPLICABLE",
+      "P09": "APPLICABLE",
+      "P10": "APPLICABLE"
+    },
+    "controls_verified_locally": [
+      "shared existing job/services/registry; explicit disabled-by-default capability",
+      "distinct action/pixel modes and acknowledgments; no human-comprehension inference",
+      "exact source geometry/recipe/dataset/rights and final snapshots",
+      "strict schemas and canonical numeric JSON persistence",
+      "original-reviewer detail access; owner metadata does not grant raw images",
+      "no live activation; explicit cancellation/retirement and original nonrefundable budgets",
+      "frozen same-intent retry and version checks",
+      "retained failure oracles, exact coverage and separate same-operator byte audit",
+      "actual local CV/database and synthetic browser fault/recovery checks",
+      "bounded frames/calls/worker capacity/deadlines/report bytes and owned test cleanup"
+    ],
+    "limitations": "Local controls only. Independent human truth, real provider/host capacity and complete-role live reliability are NOT_RUN/BLOCKED; not release or full-product assurance."
+  },
+  "document_inputs": [
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "e540a0f4ccc116c262deaa06c7e68144a79ed615ce282689d90acd89999973da"
+    },
+    {
+      "path": "BACKLOG.md",
+      "sha256": "d82c8bdbdf676548b9d47930e395ece404930d39a13751ab2c890b2c0b8b5398"
+    },
+    {
+      "path": "docs/AGENT-DESIGN.md",
+      "sha256": "b3f9a048f755210ca0559cbba572333441cbeb3adad6481c87ada41e27e34d40"
+    },
+    {
+      "path": "docs/AWS-DEPLOYMENT.md",
+      "sha256": "4c3844cb6a75d66f54440776eaceff9ac1e2c6f39a95883574decd0c84a8c446"
+    },
+    {
+      "path": "docs/BETA-READINESS.md",
+      "sha256": "a496b0bcc2d04889b9f5054a8ba9b0d4aab921dd92785a67696e00ae0dd9d0c5"
+    },
+    {
+      "path": "docs/BETA-USER-GUIDE.md",
+      "sha256": "46490f00798ec5ba87b4a99c9debf49b7ae4f0f528095477dcaedf2624fcd6b5"
+    },
+    {
+      "path": "docs/BUILD-STATUS.md",
+      "sha256": "dac0f8b651cb64b7a5ff89563516530ded90372534437f3f18bb06e557a61c7b"
+    },
+    {
+      "path": "docs/contracts/evidence.schema.json",
+      "sha256": "f552882f482f912f572cd25ca41fbec1b08917dbaacc0dabb6812ad245512179"
+    },
+    {
+      "path": "docs/contracts/validate_documentation.py",
+      "sha256": "3b0c416e2a8e566a66998c366b9566f9fc25562e09e3106e7082e339296fbd3e"
+    },
+    {
+      "path": "docs/controls.yaml",
+      "sha256": "7cff26d22b3cacccc5fa9279c907d7d48b51d730efe0babd737a2d34970b1157"
+    },
+    {
+      "path": "docs/DECISIONS.md",
+      "sha256": "cc5795546d2220a1b1bd8bb70eb89dd1755b1a14f1c39f797919015728fce117"
+    },
+    {
+      "path": "docs/FEATURE-SPECS.md",
+      "sha256": "4aebfcaa6461616784c2f5617e527e1f09ac1d1e89a6afb40cc21d0065df6e43"
+    },
+    {
+      "path": "docs/HACKATHON-EVIDENCE.md",
+      "sha256": "83d0393d4ea4a46d792db0869f04a502ee810a2523762d933f675b5da5f0c644"
+    },
+    {
+      "path": "docs/OPENCV-PIPELINE.md",
+      "sha256": "44d76024cd2098e0accedc9fadd3859ec5f95610808c4feed5c82308a947ea7e"
+    },
+    {
+      "path": "docs/OPERATIONS.md",
+      "sha256": "13541c4d96c9184137482610a9af6740cd8e136c50102a58e69c72b2892b1434"
+    },
+    {
+      "path": "docs/PERSONAS-OPERATIONS.md",
+      "sha256": "49408ff1cb9791eaf28e64d9d419a32f4eb3e158c129f8966d7331263b8e1a0d"
+    },
+    {
+      "path": "docs/SECURITY-PRIVACY.md",
+      "sha256": "50f8f80399675c81614a35427eb159111dcdbb4f40dd521393fd0f9f8ad461ee"
+    },
+    {
+      "path": "docs/SOURCES.md",
+      "sha256": "9c3e3e2b70250c9b92bcadfc3014e44b92c9606d7d78848f4a76639b0cb51cd6"
+    },
+    {
+      "path": "docs/STATE-DATA-API.md",
+      "sha256": "c32b43aa652908e5bc59f90dd6070d00edb27fbe455efc33b002dd90b3401ca9"
+    },
+    {
+      "path": "docs/templates/BETA-SESSION-RECORD.md",
+      "sha256": "aa0e3ba8f6d24ee47d52ea748332aa9e0589c7588b6bc91f029290ba9fe403cf"
+    },
+    {
+      "path": "docs/templates/DEMO-SCRIPT.md",
+      "sha256": "996b2b0fc8ba2c6fd1bc9b8eb504a3ff397018bc48a12f8fbb79b46f78ad8a11"
+    },
+    {
+      "path": "docs/templates/TECHNICAL-REPORT.md",
+      "sha256": "6c2da094f5571dd57e2b6046d7b306e1cab38343d6100284b9a95a8520ef90e5"
+    },
+    {
+      "path": "docs/TEST-PLAN.md",
+      "sha256": "08610dcbae655eaee699a9bfa195f8d70cb3eb8d9095518b8b7a916ab8b59d27"
+    },
+    {
+      "path": "docs/USER-NEEDS-ADOPTION.md",
+      "sha256": "86fc92dee4d497fde39a832e1cbb7e8ac8554c7eec702dcabd4493f4abb5bf6f"
+    },
+    {
+      "path": "docs/UX-ACCESSIBILITY.md",
+      "sha256": "211aa0b34b16ba36a2401a5ee49ddbd468ee26060291e4703b261ef0f5cb0d7c"
+    },
+    {
+      "path": "docs/WORKFLOW-COVERAGE.md",
+      "sha256": "33cb6e004d243e2e0cc7a72d858df057b86fe4299d9d9d18d2a257af2b6ef53d"
+    },
+    {
+      "path": "evidence/index.json",
+      "sha256": "e0416868b76ffe021a1681cefefa384542e88b33d835f82fc2496ccb4eeb01f4"
+    },
+    {
+      "path": "IMPLEMENTATION-PLAN.md",
+      "sha256": "04281757c7288620f970cbde7b9072179b47d48531d6271aef6ca38e7b40043a"
+    },
+    {
+      "path": "PRD.md",
+      "sha256": "b2198dee43410eb005b0401224c5b64195b099ac7656e639da7e0df452637cdc"
+    },
+    {
+      "path": "README.md",
+      "sha256": "66dc7a42e9e54b11cfe68043e3068a5c54132ab640b58e64e5977dd048367b2a"
+    },
+    {
+      "path": "VISION.md",
+      "sha256": "3e0e68f0525848e7b6a726119919107372814fb6510a405df078c6ad0ade193c"
+    }
+  ],
+  "finalized_at": "2026-10-15T04:46:41.529933+00:00"
+}

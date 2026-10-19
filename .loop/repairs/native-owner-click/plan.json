@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-17T15:19:45.200181+00:00",
+  "mode": "DIAGNOSE; no application or oracle repair asserted",
+  "failure": ".loop\\repairs\\same-budget-cohorts\\full-v2-cohort9-failure.json",
+  "subject": "../same-budget-cohorts/candidate; full-v2 frozen707",
+  "observed_failure": "configured HTTPS owner Read owner status pointer actionability times out before an observed owner API call",
+  "cause": "UNKNOWN",
+  "controls": {
+    "original_cohort_cases": 132,
+    "cohort_timeout_seconds": 875,
+    "native_browser_watchdog_seconds": 60,
+    "pointer_timeout_ms": 5000,
+    "baseline_attempts": 1,
+    "instrumented_attempts": 1,
+    "extra_observation_only_on_failure": true,
+    "frame_observation_ms": 500,
+    "node_observation_cap_ms": 1000,
+    "gpu_observation_cap_ms": 1000,
+    "renderer_or_force_click_changes": false
+  },
+  "next_execution": [
+    "wait for full-v2 actual terminal receipt and cleanup",
+    "replay exact unchanged132-case cohort9 once with fresh owned database/output and passive phase journal",
+    "replay same132 once with bounded on-failure frame/geometry/page-console/GPU metadata; preserve all original assertions and status"
+  ],
+  "differences_disclosed": "fresh paths/database and absent whole-suite preceding8 workload; extra failure-only observation overhead in diagnostic; no pass accepts earlier failure",
+  "driver_metadata": "../same-budget-cohorts/cohort9-display-metadata.json; OK status is not frame/rendering proof",
+  "native_execution": "v1 STARTUP_ABORTED_NO_TEST_EVIDENCE; v2 NOT_RUN",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "preparation_observation": "aborted-preparation.json",
+  "preparation_correction": "negative no-launch test now uses immutable empty-parent fixture, not changing live state",
+  "baseline_version": "v2",
+  "observed_version": "v2",
+  "native_case_runs_per_mode": 1,
+  "maximum_baseline_startup_attempts": 2
+}

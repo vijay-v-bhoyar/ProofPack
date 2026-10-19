@@ -1,0 +1,1 @@
+{"status": "PARENT_REVIEW_READY", "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4", "verified_criteria": ["FE-F01-verified", "FE-F02-verified", "FE-F03-verified"], "unmet_criteria": [], "pending_failures": [], "attempts": 3, "repair_attempts": 3, "help": [], "parent_complete": false, "authority": "none", "evidence_scope": "local structural binding"}

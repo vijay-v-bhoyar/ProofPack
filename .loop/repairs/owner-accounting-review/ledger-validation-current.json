@@ -1,0 +1,28 @@
+{
+  "command": [
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+    "-B",
+    "C:\\Users\\vijay\\.codex\\skills\\codex-product-build-loop\\scripts\\repair_ledger.py",
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-accounting-review\\record.json",
+    "--subject",
+    "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-accounting-review\\current-subject.json"
+  ],
+  "exit_code": 0,
+  "result": {
+    "status": "PARENT_REVIEW_READY",
+    "parent_goal": "proofpack-workflow-build",
+    "verified_criteria": [
+      "MC-05.authenticated-held-review"
+    ],
+    "unmet_criteria": [],
+    "pending_failures": [],
+    "attempts": 3,
+    "repair_attempts": 5,
+    "help": [],
+    "parent_complete": false,
+    "authority": "none",
+    "evidence_scope": "local structural binding"
+  },
+  "record_sha256": "ef399923c02238a79356ef5d9c84410ee6613068428beb90b3d108266bcd9c9b",
+  "subject_sha256": "297bc462f7bce3025e7166fb41f6f258eca273a5ab3ac52b0330885716c6f8a2"
+}

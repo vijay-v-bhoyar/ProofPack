@@ -1,0 +1,328 @@
+{
+  "id": "owner-collateral-ui",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "MC12-configured-native-collateral-journey"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "native-interruption-checkbox",
+      "criterion": "MC12-configured-native-collateral-journey",
+      "category": "unknown",
+      "hypothesis": "The configured native browser cannot complete ordinary pointer acknowledgment before proposal; visible enabled control and later diagnostic keyboard response do not establish a root cause.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC12 owner collateral rendered and configured-native journey",
+          "revision": "92a550e3ee010bc32e8b19ef0d73224dbaa05f36bff10fa0a34710c75bd93e18",
+          "configuration": "691-input isolated candidate; default Chrome, same 5-second native actionability/60-second browser and 600-second native cohort limits; owned local DynamoDB, synthetic CV/identity, intercepted STS/S3; no provider or human authority"
+        },
+        "actor": "Codex local configured runner and separate source/phase audit; no independent human",
+        "at": "2026-10-16T23:57:11.269003+00:00",
+        "expires": "2026-10-17T23:59:04.562525+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "tests/integration/test_configured_owner_collateral.py",
+          "tests/integration/test_owner_collateral_browser.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\candidate\\evidence\\local\\collateral-ui-native-v1\\evidence\\local\\collateral-ui-native-v1.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "candidate/evidence/local/collateral-ui-native-v1/evidence/local/collateral-ui-native-v1.log",
+          "sha256": "471b7d16f60276c2f4e6bd96cda5bf0616eaa209af6df2696404d53823337c74"
+        },
+        "oracle": {
+          "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+          "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+            "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+          },
+          {
+            "path": "verified-source/tests/integration/test_owner_review_browser.py",
+            "sha256": "9b6f5b73a5d1757ab7be2ccfc4d6ff80faecbe52dbb6cbd218a82be0bca77df5"
+          },
+          {
+            "path": "verified-source/apps/web/src/MetadataPanel.tsx",
+            "sha256": "26f731b7cac00553e8aeca9d702973fb031d1bbb354cc655a1aecf819839a219"
+          },
+          {
+            "path": "verified-source/apps/web/src/metadataRequests.ts",
+            "sha256": "adfb3bf988dff7c45a8f6beb918dd36c41504c81674ceff506c8574a8e9266e3"
+          },
+          {
+            "path": "verified-source/apps/web/src/ownerCollateralScope.ts",
+            "sha256": "ddad9e4fed6ef69b27a7b290af9ecc93afa1e3c9d59f645c9f5ad956cb12a2f1"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "help",
+      "failure_id": "native-interruption-checkbox",
+      "owner": "P06 local renderer/execution-context diagnosis; actual independent operator unassigned",
+      "question": "Determine the cause of stalled native pointer stability without changing the original default Chrome/actionability/whole-case limits or bypassing the ordinary workflow.",
+      "needs": "Retained native failure and source snapshot, earlier MC09 frame/timer and foreground diagnostic outcomes, and scoped successful intercepted browser cohorts. Do not repeat unchanged probes or claim keyboard diagnostic as acceptance.",
+      "wake_condition": "A distinct causal hypothesis with a controlled diagnostic is ready, or external runtime evidence identifies the execution-context fault; continue independent product implementation while retained acceptance remains open."
+    },
+    {
+      "kind": "failure",
+      "id": "foreground-does-not-resume-frames",
+      "criterion": "MC12-configured-native-collateral-journey",
+      "category": "unknown",
+      "hypothesis": "Post-failure foregrounding might restore frame delivery. Observed counterevidence: original native pointer click fails, visible/focused page retains seven frame callbacks across the 265ms observation while timers advance. Cause remains unknown; no causal repair or acceptance.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC12 owner collateral rendered and configured-native journey",
+          "revision": "92a550e3ee010bc32e8b19ef0d73224dbaa05f36bff10fa0a34710c75bd93e18",
+          "configuration": "691-input isolated candidate; default Chrome, same 5-second native actionability/60-second browser and 600-second native cohort limits; owned local DynamoDB, synthetic CV/identity, intercepted STS/S3; no provider or human authority; DIAGNOSTIC_ONLY passive frame/timer instrumentation and post-failure foreground probe, not original-case acceptance"
+        },
+        "actor": "Codex bounded local diagnostic; no independent human",
+        "at": "2026-10-17T00:01:51.192792+00:00",
+        "expires": "2026-10-18T00:05:35.329000+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "tests/integration/test_owner_collateral_browser.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\candidate\\evidence\\local\\collateral-foreground-v1\\evidence\\local\\collateral-foreground-v1.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "candidate/evidence/local/collateral-foreground-v1/evidence/local/collateral-foreground-v1.log",
+          "sha256": "b1c9b38fc457c4b8688478c9474fb214154245455ab84a82ea409104bc095525"
+        },
+        "oracle": {
+          "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+          "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+            "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+          },
+          {
+            "path": "verified-source/tests/integration/test_owner_review_browser.py",
+            "sha256": "9b6f5b73a5d1757ab7be2ccfc4d6ff80faecbe52dbb6cbd218a82be0bca77df5"
+          },
+          {
+            "path": "collateral_frame_probe.py",
+            "sha256": "59bb5060b29774c9edba6329aabdea8f547a65ae443075bf2e55a706419ad233"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "blank-comparison-child-timeout",
+      "criterion": "MC12-configured-native-collateral-journey",
+      "category": "unknown",
+      "hypothesis": "Default browser/blank comparison exceeded the unchanged60s child bound; no final comparison admitted. Its captured-output loss motivates the separate retention correction.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC12 owner collateral rendered and configured-native journey",
+          "revision": "92a550e3ee010bc32e8b19ef0d73224dbaa05f36bff10fa0a34710c75bd93e18",
+          "configuration": "DIAGNOSTIC_ONLY: passive frame/timer observations and post-failure isolated blank-page and browser SystemInfo comparison; original failure retained, unchanged pointer/whole-case limits; no acceptance or causal fix; original5s actionability/60s browser bounds; owned local DynamoDB and synthetic CV/identity, no actual provider/physical/human proof"
+        },
+        "actor": "Codex bounded local diagnostic; no independent human",
+        "at": "2026-10-17T00:05:06.015065+00:00",
+        "expires": "2026-10-18T00:13:06.156779+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "tests/integration/test_owner_collateral_browser.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\candidate\\evidence\\local\\collateral-blank-v1\\evidence\\local\\collateral-blank-v1.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "candidate/evidence/local/collateral-blank-v1/evidence/local/collateral-blank-v1.log",
+          "sha256": "185110948133c7484fc4d03b75923fe2247f63e39b44573a848319d4918f4841"
+        },
+        "oracle": {
+          "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+          "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+            "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+          },
+          {
+            "path": "verified-source/tests/integration/test_owner_review_browser.py",
+            "sha256": "9b6f5b73a5d1757ab7be2ccfc4d6ff80faecbe52dbb6cbd218a82be0bca77df5"
+          },
+          {
+            "path": "collateral_blank_probe.py",
+            "sha256": "ea002680e2788cee9626a0f92219f0490001d3990ea84dc8e8b1a1f194923a3e"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "blank-page-frame-starvation",
+      "criterion": "MC12-configured-native-collateral-journey",
+      "category": "unknown",
+      "hypothesis": "Default app page pointer action fails; captured post-failure blank page receives0 frame callbacks with6 timer callbacks over316ms. Symptom extends beyond app page; cause UNKNOWN.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC12 owner collateral rendered and configured-native journey",
+          "revision": "b43342627e154df8b84211b35ccf05b56e57f6f91933bd670c3327cfe86a8f80",
+          "configuration": "DIAGNOSTIC_ONLY: passive frame/timer observations and post-failure isolated blank-page and browser SystemInfo comparison; original failure retained, unchanged pointer/whole-case limits; no acceptance or causal fix; original5s actionability/60s browser bounds; owned local DynamoDB and synthetic CV/identity, no actual provider/physical/human proof"
+        },
+        "actor": "Codex bounded local diagnostic; no independent human",
+        "at": "2026-10-17T00:09:19.888753+00:00",
+        "expires": "2026-10-18T00:13:06.196291+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "tests/integration/test_owner_collateral_browser.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\candidate\\evidence\\local\\collateral-blank-output-v2\\evidence\\local\\collateral-blank-output-v2.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "candidate/evidence/local/collateral-blank-output-v2/evidence/local/collateral-blank-output-v2.log",
+          "sha256": "debd8680bd0905758ab26c0b40b74dc38fc1d8c98c662c26d3cd5a68b72f8d59"
+        },
+        "oracle": {
+          "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+          "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+            "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+          },
+          {
+            "path": "timeout-output-source/tests/integration/test_owner_review_browser.py",
+            "sha256": "d87bcae4bab79fe9c0834af406530fb48836c6217e5d4a930c52bf8b26920417"
+          },
+          {
+            "path": "collateral_blank_output_probe.py",
+            "sha256": "59a906b335a8d7d3b5554329ebbf712846ac244db63c74e833cafa832b7d0b5d"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "failure",
+      "id": "paired-default-renderer-stall",
+      "criterion": "MC12-configured-native-collateral-journey",
+      "category": "unknown",
+      "hypothesis": "Paired default-renderer control fails ordinary checkbox stability while software-profile diagnostic passes at the same source/assertions/bounds. This supports profile association, not a proven GPU/driver cause; do not accept software profile as default.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "MC12 owner collateral rendered and configured-native journey",
+          "revision": "b43342627e154df8b84211b35ccf05b56e57f6f91933bd670c3327cfe86a8f80",
+          "configuration": "692-input isolated candidate, same application/runtime bytes as691; default Chrome and original5-second actionability/60-second child bounds. Current native observations have explicit passive/post-failure diagnostic instrumentation; software profile is non-accepting. No provider or human authority."
+        },
+        "actor": "Codex paired local diagnostic; no independent human",
+        "at": "2026-10-17T00:12:34.705876+00:00",
+        "expires": "2026-10-18T00:14:47.770017+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "tests/integration/test_owner_collateral_browser.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\candidate\\evidence\\local\\collateral-default-pair-v1\\evidence\\local\\collateral-default-pair-v1.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "candidate/evidence/local/collateral-default-pair-v1/evidence/local/collateral-default-pair-v1.log",
+          "sha256": "2ee31620367e9ed479deea4176de12e9d218b1d57b3d41662a248506748b241c"
+        },
+        "oracle": {
+          "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+          "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+        },
+        "artifacts": [
+          {
+            "path": "verified-source/tests/integration/test_owner_collateral_browser.py",
+            "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+          },
+          {
+            "path": "timeout-output-source/tests/integration/test_owner_review_browser.py",
+            "sha256": "d87bcae4bab79fe9c0834af406530fb48836c6217e5d4a930c52bf8b26920417"
+          },
+          {
+            "path": "collateral_frame_probe.py",
+            "sha256": "59bb5060b29774c9edba6329aabdea8f547a65ae443075bf2e55a706419ad233"
+          }
+        ]
+      }
+    }
+  ]
+}

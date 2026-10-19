@@ -1,0 +1,236 @@
+{
+  "status": "GUARDED_TRANSFER_COMPLETE_NOT_FULL_WORKFLOW_ACCEPTANCE",
+  "origin_inputs": 621,
+  "canonical_inputs": 626,
+  "transferred": [
+    {
+      "path": "services/api/proofpack/app.py",
+      "sha256": "421c705d90a47b11e90a80b4074cd6e65f1e57e779071f95585361c1e754e967"
+    },
+    {
+      "path": "services/api/proofpack/evidence/privacy_admission.py",
+      "sha256": "a3d607b8211b4e36b538e65626cf47a5ce282946b9b1ade4ee623d2abbee2e8b"
+    },
+    {
+      "path": "services/api/proofpack/evidence/privacy_http.py",
+      "sha256": "26085a3f32b29547c7ca5c6e02bbb9d82f8228b8f826e6d93faabbf7bae8ec89"
+    },
+    {
+      "path": "services/api/proofpack/evidence/privacy_workers.py",
+      "sha256": "8860aca15b4ca7d77bd2d5e739199085e0e5e4a03ab630482eadb8e202636b51"
+    },
+    {
+      "path": "services/api/proofpack/runtime/composition.py",
+      "sha256": "21599a5cbd9e6943bfb3be396c1fe6dec20cbd69a6cfbbdbda2060cb908c8cd8"
+    },
+    {
+      "path": "services/api/proofpack/runtime/host.py",
+      "sha256": "29c29b1174b7e14b235472c53878a9b6786c3a2b5b73cb86be6f644dd3f73380"
+    },
+    {
+      "path": "services/api/proofpack/runtime/maintenance.py",
+      "sha256": "6171f93e5b6a759c1b71ad445b49733d769794ef3c24ba71f3be0b359f71260d"
+    },
+    {
+      "path": "services/api/proofpack/runtime/ownership.py",
+      "sha256": "0bb8ad8a14f9734df2acc3858dd0d819bd6d031d03ac4310dc199e4a92f6d68c"
+    },
+    {
+      "path": "tests/integration/test_admission_factory_store.py",
+      "sha256": "0f46389a3df497350c929d52835f398f0a6632120e542183399999cee8380c3f"
+    },
+    {
+      "path": "tests/integration/test_composition.py",
+      "sha256": "f0c1af0702af0eaf347e0f9599bd9dcd5b0dc4b815e038337593af3eca805190"
+    },
+    {
+      "path": "tests/unit/test_admission_factory_contract.py",
+      "sha256": "755f2e98dcc4a53d41cee4367dadbf86fd57382ebed18790a5d95d649244a32f"
+    },
+    {
+      "path": "tests/unit/test_admission_factory_wiring.py",
+      "sha256": "23a5798bd7643cfc4d2c8f4e117d7d56881b7401e655ff86e03d5d8c48d7c24a"
+    },
+    {
+      "path": "tests/unit/test_admission_resource_lifetimes.py",
+      "sha256": "61887912ee4db6c82ab169c516d32543b7692d14b60b83e4469f7681d316f458"
+    }
+  ],
+  "source_matches_installed_candidate": true,
+  "prior_source_inputs_preserved": 621,
+  "preserved_receipt_hashes": [
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1-build.log",
+      "sha256": "51ee304c6ccc94d38c47013af6572472cfb4b3edd474d5853b8390f8b39c25cd"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1-child.json",
+      "sha256": "40e111f3e21d5bc960e0f4667a05d6443c3e86a543349df9cca0e6bccbae0c5d"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1-database.json",
+      "sha256": "2816a51923ce5e5e70096ace60b41fce7dc33f7e0a784ef8ec349adfc010c615"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1-database.log",
+      "sha256": "d61846f7ce15db87dbcce45b73877cdc5109eb54361c77465db27c5310572e46"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1-execution.json",
+      "sha256": "675bc11f1044e057f4387aef6d9f3954f86a64fd74e6e8e86396f3e20f1fa4b1"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1-install.log",
+      "sha256": "9888f8ee44453a2e790ba6244fab29f14697605d719dcf4b9e767177e20f0c49"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1-process.json",
+      "sha256": "da9d48ab45a7cd5480f14cfba0adadf9686a957edea06df216257c36671a2a3b"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1.log",
+      "sha256": "3a23b036a7259db7a74f8089a04865e32612aa047d6832745be1682825b95963"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-factory-installed-v1.xml",
+      "sha256": "6b443cf275db3eb3e80f6b631ac36dfa1e89284824c2ef49affafb875f0aecbd"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v1-database.json",
+      "sha256": "85464869e94b07c54cb4c3a89d2e380360dc0a280c3e97ea6a721504dea3bc0c"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v1-database.log",
+      "sha256": "72544808f197441db49eb018b42d3e7eaa17140df8ddcb31134d15e8cae8ce56"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v1-execution.json",
+      "sha256": "e1584230f181f8bf2c31b75237bc3d9f90c44303b3f83b30f7bab4f687dbba89"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v1-execution.json.sdk.json",
+      "sha256": "381a8a42efbf31a201e2d1889d629e6fa700125decac9ce9e81d36ccdbdc8f6a"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v1-process.json",
+      "sha256": "d268768cf6a2e5c0a35da3c30eb9dddbc5493da7ef7e5686bb9cbf3783b08c84"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v1.log",
+      "sha256": "006dd33ceaf3fe2960b84db58f0c9d6f991836062cb6e71476c5e457aaa63194"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v1.xml",
+      "sha256": "464bc4e0d2cb1b993b6856968e129b89d4a29fa4dfa995776ed1a1d8d9d8e502"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v2-database.json",
+      "sha256": "5fd201ecaf2db3415b90c89533a40bc3e9f742658db33f80debfb982b42ededf"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v2-database.log",
+      "sha256": "94da4bb422281fae02c263cf3c7eda28e6ec0869c88821614b10a969ba514158"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v2-execution.json",
+      "sha256": "4eeba6551ea82a5f3c73f2fcbad45a3195e1cb80accfe210be1550bbaa9bbb3c"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v2-execution.json.sdk.json",
+      "sha256": "c8ae552f0bf661cd8b1d2416eb06ec63f4c88f3b53b36ca2889eb28e3f5bb5a6"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v2-process.json",
+      "sha256": "32d2ecb6d5ca8e6a8bb6921366c730a82758add74d03179bb99ee85d8260acb0"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v2.log",
+      "sha256": "893d2fab446cede8403ae2dbb83272c96c6a5e21a0278707f2e2ffe91452af1a"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-native-v2.xml",
+      "sha256": "f2bebf6b1922abcf4b2301ac9e7da3ea918e9b9cecfa4c92069531680174c121"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-original-lifecycle-v1-database.json",
+      "sha256": "fc867f38b72b7ddd333ad5e4387654e738dc5df5e29648909d933f5c4c3b921f"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-original-lifecycle-v1-database.log",
+      "sha256": "bf26c5eff4fd3f02769facc6c5e0a50e580a26500e4a0ad8783680f333e693cd"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-original-lifecycle-v1-execution.json",
+      "sha256": "e422b9ba7afda0bcb5d16ef384db32bef5da5b62e1a8b067997c46926b78ce60"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-original-lifecycle-v1-execution.json.sdk.json",
+      "sha256": "4f170dd10c977a2eb0c22cee869892757344540c0018607829bf52169955c0d6"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-original-lifecycle-v1-process.json",
+      "sha256": "9ab1845dcb97e2fee7f425c5183de7614b0fc97de3168ac797bc31fba3abe15f"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-original-lifecycle-v1.log",
+      "sha256": "d6046f5b2701b91a9ec58ce352fdbae4d6900ae7911f8ee150475bf97c126f5d"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/working/evidence/local/metadata-lineage-factory-original-lifecycle-v1.xml",
+      "sha256": "7c8c2785c4c847bc7b8f2a1e118ab6ada0e4816b6efea8d9108709e743f0a8fb"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/record.json",
+      "sha256": "b9daaf860e83b2ba29dc6a188aac341c89327e8e2e465d4038ef436643238012"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/subject.json",
+      "sha256": "cf1f7f931a75043ab3ec2c4011f2d6456525a42e3089b800e0318c816eb93eb0"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/ledger-event-11.json",
+      "sha256": "79c53986002bdbaf2e531d9eca413c1c8e13e8ef9da10a9e62f17e6908bd1851"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/candidate-native-verification.json",
+      "sha256": "9bf0ce05b8a5340a6bb91d7897b15ab464cd1fb3a29cd1a55ad8c3ef56b955a8"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/model-verification.json",
+      "sha256": "00938bd1b6e86a92569ecb15c002150f7c01b69af139c5e22765e39b3c22342f"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/package-verification.json",
+      "sha256": "6ee89e79cefc3c53d9a3ecc1430744cece76b1e7af02eaebfeb26634c883297e"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/model-cancel-verification.json",
+      "sha256": "2cd620f89f073fb4266575e2acc6cd44fdc464f600d438f0bf6e70b9ec3f8f70"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/package-cancel-verification.json",
+      "sha256": "bf65abae0006abfaf5d3ba6d89b5bc6f22b350848b804ac7f2c1880b6ccd4d0d"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/original-current-verification.json",
+      "sha256": "bb8f1b2daa884c975d131ee326cc03afe74ffe37d2c11b04f18c924ae1f13908"
+    },
+    {
+      "source": ".loop/repairs/metadata-admission-factory/execution-history.json",
+      "sha256": "818de4b0522a1ad01f5e81fb8daa3e0a61275a9ce76c2ea007006f2bdc92bb67"
+    },
+    {
+      "source": "evidence/local/metadata-admission-full-terminal-verification.json",
+      "sha256": "5763bb58e93049ccd2e5c0fb514e1016cd977e0a688f69cd04587c7aa53b7d5b"
+    },
+    {
+      "source": "evidence/local/metadata-admission-full-process.json",
+      "sha256": "8b8556156e25925c2becfba7f6d124660cc52b7040c3fac0cc0891236ba64c01"
+    }
+  ],
+  "backup": ".loop/repairs/metadata-admission-factory/integration-baseline",
+  "prior_full_regression_now_historical": true,
+  "canonical_selected_verification": "PENDING",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

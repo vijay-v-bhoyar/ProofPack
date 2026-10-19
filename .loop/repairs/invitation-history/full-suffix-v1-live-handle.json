@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-10-17T20:53:01.230864+00:00",
+  "session_id": 51975,
+  "pid": 52408,
+  "status": "TERMINAL_PASS_EXECUTED_SUFFIX_ONLY",
+  "scope": "original cohorts10..38 only; prefix1..9 separately verified and not rerun",
+  "source_inputs": 720,
+  "original_full_cases": 4919,
+  "prefix_cases": 1124,
+  "suffix_cases": 3795,
+  "per_cohort_seconds": 828,
+  "remaining_allocated_seconds": 24012,
+  "original_allocated_seconds": 31464,
+  "original_ceiling_seconds": 31500,
+  "resume": "Controller is terminal. Do not poll or restart it. Complete local regression is reconciled; continue remaining product implementation from the verified720-input baseline.",
+  "tool_exit_code": 0,
+  "process_receipt_exit_code": 0,
+  "ended_at": "2026-10-17T21:04:51.147518+00:00",
+  "composite_verification": "full-composite-v1-verification.json"
+}

@@ -1,0 +1,48 @@
+{
+  "recorded_at": "2026-10-18T05:31:22.149744+00:00",
+  "status": "FAILED_PREFIX_RECONCILED_FULL_HELD",
+  "scope": "Postlaunch diagnostic accounting, not frozen positive acceptance or software PASS",
+  "original_positive_auditor": "Unchanged; actual tool404053 exit1 retained in positive-audit-rejection-v1.log",
+  "original_tool_terminal_exit": 1,
+  "controller_receipt_exit": 2,
+  "completed_cohorts": 35,
+  "cases": 4490,
+  "phases": 13470,
+  "passed_cases": 4488,
+  "failed_cases": 2,
+  "failed_nodes": [
+    "tests/integration/test_dispositions.py::test_concurrent_duplicate_creates_one_human_record",
+    "tests/integration/test_owner_collateral_browser.py::test_configured_https_collateral_scope_has_no_action_authority"
+  ],
+  "local_sdk_sends": 840647,
+  "external_sdk_sends": 0,
+  "all_completed_databases_terminated": true,
+  "all_completed_database_state_removed": true,
+  "source_runtime_package_inputs_unchanged": true,
+  "unexecuted_cohorts": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "unexecuted_cases": 755,
+  "unclaimed_allowances": 7,
+  "remaining_seconds": 5250,
+  "original_total_seconds": 31500,
+  "held_before_new_database_and_claim": true,
+  "collection_reused_without_new_process": true,
+  "original_plan_sha256": "5dbd343b21ccad7292bff8f12e203a8dc888942f57d778aeb9721ed118c78d88",
+  "original_process_sha256": "8388df3de4595db9be89df81cee0265d42309928355b8515dfb950a52ca7adea",
+  "original_suite_sha256": "fdd0e70db0c34be4b085938b58fa024d28a2e9856bf9d027f8b54a1f82fb646c",
+  "copy_binding": {
+    "logical_sha256": "081020c0a49a6ae09c2686edc521e8b7ffda10e1fd95ae84f8271c728e9f7bc5",
+    "copy_sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419",
+    "copy_encoding": "UTF-8 without BOM; exact CRLF text-write serialization"
+  },
+  "source_frozen": true,
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

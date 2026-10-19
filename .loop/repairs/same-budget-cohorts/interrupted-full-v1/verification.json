@@ -1,0 +1,251 @@
+{
+  "recorded_at": "2026-10-17T13:51:42.246955+00:00",
+  "status": "INTERRUPTED_NO_TERMINAL_RESULT",
+  "scope": "stopped full-v1 attempt; no complete-suite acceptance or inferred exit code",
+  "lost_session": 85587,
+  "runner_and_project_emulator_absent_at_observation": true,
+  "host_boot_after_attempt": true,
+  "os_observation_sha256": "5e59fc2aaedb197821795e5bf895143ff37d0241c035ea04914f0206f4fd0189",
+  "parent_exit_code": "UNKNOWN",
+  "parent_loss_cause": "UNKNOWN; later host boot proves prior process is stopped, not why it originally exited",
+  "completed_whole_cohorts": 7,
+  "scoped_passing_cases": 856,
+  "scoped_passing_phases": 2568,
+  "known_local_sdk_sends_in_completed_cohorts": 499063,
+  "blocked_sends_in_available_completed_receipts": 0,
+  "interrupted_cohort": 8,
+  "interrupted_collected_cases": 142,
+  "interrupted_completed_results_accepted": 0,
+  "unstarted_cohorts": 28,
+  "total_unaccepted_cases": 3703,
+  "interrupted_transport_import_and_cleanup": "UNKNOWN; final receipts missing; stale global database receipt belongs to preceding cohort",
+  "emulator_failure_observed": "native JVM allocation failure; crash report shows zero available pagefile/commit at that time",
+  "crash_original_path": "C:\\Users\\vijay\\AppData\\Local\\Temp\\proofpack-dynamodb-check-myxbooju\\hs_err_pid43436.log",
+  "crash_original_sha256": "96011609c1c7b5035ab13c50232d0593d22ee35326eede487131bcea1a5fa519",
+  "sanitized_copy": "jvm-native-memory.sanitized.log",
+  "sanitized_lines_omitted": 30,
+  "original_state_and_crash_directory": "RETAINED; no deletion or process termination performed",
+  "source707_snapshot_and_assets_match_at_observation": true,
+  "node_runtime_current_matches_plan": true,
+  "raw_evidence": [
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-001.json",
+      "sha256": "30448807a69b6c0f052381edd981aedb87aff459c8f261a44301d42db5096f35"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-001.xml",
+      "sha256": "3998e60fb45b47539331be695b22a393b7631e7f5655574b1af8c6b47f09d10f"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-001.log",
+      "sha256": "adfc9359929812944cb0ef1337993ea44a88cc21255ab73a2cbcd49e25c8ff72"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-001.origins.json",
+      "sha256": "f1c0cf08a2be68aa61a4ed955a72d4c0759b17c530d005be8457f9ec2e4f2599"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-001.json.sdk.json",
+      "sha256": "f181cf790174e714e7295de77b9cd257d926ba75062d556011638ba49422abd0"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-001-database.json",
+      "sha256": "086bb122e23d4f1169f1990e64716cd93983bfee3a3a877d82ea15e0ff827547"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-001-database.log",
+      "sha256": "3aa5abade8c0270dfe4b5d85aafe706cb6d16e8c8bbd8c975d6964fa7427c167"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-002.json",
+      "sha256": "e604acfbfab86642d81deb09725954849c42fc7f91c5ebb8d90a632841345597"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-002.xml",
+      "sha256": "770f50f9798aabfc7c3236994a8d4c527035551334587778449c677b677aad44"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-002.log",
+      "sha256": "ccce389ee69ca2acacdafd127f6aa292c7be61ad05df78d2c7486b2dca31f900"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-002.origins.json",
+      "sha256": "cd91e11890c0f654dead81453664759acbfc796087de411c395a45fd24a23a0b"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-002.json.sdk.json",
+      "sha256": "694e4fe4c5f5a17086d0f41dbbb79bbb5c2a81fc92d39ad81f8f91dc59e66fbd"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-002-database.json",
+      "sha256": "e52d67177a7375bef4e050db944a1e55339785085ea78de0792bc1085696ee8d"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-002-database.log",
+      "sha256": "1407e7b7eb630c38fcc4908dd382501fc567fc317fdb519307bef16eb4aa9d07"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-003.json",
+      "sha256": "0dfdc2b46854d178e934437fe98e36aced99fac4ac2dff86d1a533e4a0d85ce2"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-003.xml",
+      "sha256": "89020f3eb5f373c6cc161ed229e474b3de6e85a312eef66b14489633b1900f0d"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-003.log",
+      "sha256": "96d940f42da7f7a8819be680edee091dd0223a05b1e29dc1af38b32031244d27"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-003.origins.json",
+      "sha256": "6fd9376f969a8003e76b141093f3f387e6c0396b2365ad24709ff421b90b7738"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-003.json.sdk.json",
+      "sha256": "a975475a7ded51c90b7b2eef0658b298c41c9f14039c0f028471fdb547e07500"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-003-database.json",
+      "sha256": "b641e4c9f4da7b930b9c3ba5ad870d2721139ec1ad9fc9fac391ee39004fcc33"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-003-database.log",
+      "sha256": "1a4e931cba9b8c0bde342bee3bdf18734498306683afef8d3496d0fdd2e4e87d"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-004.json",
+      "sha256": "a754d2dba4b7d3cc8896a5a2b2f923cb20e857708beccd0419ef75bd15f63b44"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-004.xml",
+      "sha256": "7bad417176d9b2f4dabe18c1b8de9fab1b7459995dbcffeb76c80549a4cd4747"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-004.log",
+      "sha256": "7fc373bbdefc40bf25747652788384c313ae76225fba7220292c7b50479eace6"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-004.origins.json",
+      "sha256": "c02749bf8a8e0e26abfd1aa5d7d9e26b60e1e0691b21b5656a610601751535c9"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-004.json.sdk.json",
+      "sha256": "a07f51a1c195e4b5feb3e590b750d3697caf0f076b854ca7e22e5223cecfd2c3"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-004-database.json",
+      "sha256": "b54aeda61f928c028029a8b522238de6ff79fcbbc647bd6d3d658b5c21ff4b22"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-004-database.log",
+      "sha256": "df19d7b8529810235ea6ca2fbfd90fe4f85b7e35e07f37299df641398548abaf"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-005.json",
+      "sha256": "18c5494c72f0d1b154b365ce10caf1eb12c912e3c34f9b5389deb1ad4ed5124c"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-005.xml",
+      "sha256": "04fc4731ee34eeffbe061e71192ebe65bba416b044d565ee6ecc2d943e002591"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-005.log",
+      "sha256": "30f2eb88d595709537c28a182665fa7b5ab1444981baa12c85c6eed1e2b6e073"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-005.origins.json",
+      "sha256": "ed04c8aed3a548231a92c0d96608312d8136968c85f6445210f293d6a0be61c5"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-005.json.sdk.json",
+      "sha256": "2e982b6bbc4dd986c1782b542844bffc1c6ee30359570fc633a6dd354a5202b6"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-005-database.json",
+      "sha256": "5e76a7d4d0ed29c06601b16b9408f1f021209d0843dd43f1bc6919680013bba6"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-005-database.log",
+      "sha256": "3001867fbe9d6b656cfe19bbd775d0c7f132305fa12d659a7a10b9f05ec9f847"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-006.json",
+      "sha256": "506d5beca4581e9c095c48826dee811f6516af0fee7ef59d61bb18bf125d9242"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-006.xml",
+      "sha256": "041fd8b81a0d05ededd90e73328b406982f00cafdc1a47de3fc7b44916a2229a"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-006.log",
+      "sha256": "21bb5f8fcbdb9661f4d2b18787af3a0522574edd2be2e10ca8a838d61a55057c"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-006.origins.json",
+      "sha256": "2fd0a3d8b21b427af97aca08ca37ac1ecf65bef4a0e277f926073f3f227410f3"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-006.json.sdk.json",
+      "sha256": "e7ac7545f83fb74a64e3bb562eebe4221c6810c5fb56a54b25aad360cc0c21fe"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-006-database.json",
+      "sha256": "3f639917dfbfc8b88546eb222a7d65154f516cfe435fcd7c93e5313fd3d8d708"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-006-database.log",
+      "sha256": "0513a75d3b2bb908a0520b6741a810cf7d9674f1daa5ae8f8e4471703ed98e93"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-007.json",
+      "sha256": "7841380425ba76a056f94db26e46ecaac75eb84a6ef558fb3211b593a1dff5bc"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-007.xml",
+      "sha256": "e4746cb2bacf1550dfe22808d91113b2556c6be819d1690d70663f864489809c"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-007.log",
+      "sha256": "c2339b69b060d335f1aaa4427dfd1f37c1094d10059bebde42c4fee0252adda9"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-007.origins.json",
+      "sha256": "ed04c8aed3a548231a92c0d96608312d8136968c85f6445210f293d6a0be61c5"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-007.json.sdk.json",
+      "sha256": "b46bfe838fd8b28240a915fcb8eedc43172876f51a12e0b177004e6a66b87a7c"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-007-database.json",
+      "sha256": "a9e1f20ba8006d9e6d5dc2b27aeedc4b65bdc73892398feba42c882cef896e72"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-007-database.log",
+      "sha256": "969614212eeca3240aed32f1945c7363d498948f791a398a0aa13e783d7b90e4"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-suite.json",
+      "sha256": "e0b44aad0cc33fc459d2793798f795267fa898451b470ca7a9da5964b77cf707"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-008.json",
+      "sha256": "7f02205e26f44cd6e8e779982737b3ec37a78775c26a8e2cf36e9650d0a95c3f"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/python-cohort-008.log",
+      "sha256": "8ed860156197c77f3c7a4d15154b2879f37bdd839e4c64c794f9597ecf61ec55"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/dynamodb-server.log",
+      "sha256": "ae854e0ced387d21a178384591f5505c83701d183d13092723ed76f3ec0e11fd"
+    },
+    {
+      "path": "evidence/local/same-budget-full-v1/evidence/local/dynamodb-local.json",
+      "sha256": "a9e1f20ba8006d9e6d5dc2b27aeedc4b65bdc73892398feba42c882cef896e72"
+    }
+  ],
+  "next_action": "reproduce exact142-case cohort8 with original875s and passive phase journal after current resource admission; no whole-suite restart or acceptance from partial results",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

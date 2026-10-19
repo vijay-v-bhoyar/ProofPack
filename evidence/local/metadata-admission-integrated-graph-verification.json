@@ -1,0 +1,21 @@
+{
+  "status": "PASS_FOR_STRUCTURAL_NAVIGATION_ONLY",
+  "source_inputs": 621,
+  "graph_sha256": "a49d904aeb790014f707e6f06ad5b90522c50c6fa10cddb585ae1020a65e048e",
+  "nodes": 1781,
+  "edges": 7574,
+  "communities": 85,
+  "admission_nodes": {
+    "privacy_admission": 33,
+    "privacy_http": 7,
+    "privacy_workers": 7
+  },
+  "duplicate_node_ids": 0,
+  "missing_endpoints": 0,
+  "limitations": [
+    "API-only extraction",
+    "legacy node identifiers",
+    "bounded query truncation",
+    "navigation structure only; no semantic, security or release proof"
+  ]
+}

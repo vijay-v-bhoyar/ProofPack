@@ -1,0 +1,77 @@
+{
+  "scope": "documentation_gate_contract_only",
+  "recorded_at": "2026-10-17T13:59:30.071638+00:00",
+  "status": "PASS",
+  "method": "Execute exact AST function definitions from current validator against in-memory isolated text fixtures; canonical inputs unchanged.",
+  "validator_sha256": "2ffd52c7973f7e8edd85528fc7a150d020e2ea66683e6a615a6c8a4349e59cc2",
+  "adoption_document_sha256": "97d454bd1fef3f517761ba77f362c6bcb6f2bb9d60dd3b6de83a8725c42afef0",
+  "cases": [
+    {
+      "case": "canonical",
+      "expected_accepted": true,
+      "actual_accepted": true,
+      "status": "PASS"
+    },
+    {
+      "case": "missing_gate",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "duplicate_gate",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "duplicate_heading",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "duplicate_table_elsewhere",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "invalid_result_label",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "missing_evidence",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "missing_duty",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "missing_section",
+      "expected_accepted": false,
+      "actual_accepted": false,
+      "status": "PASS"
+    },
+    {
+      "case": "valid_conditional_label_only",
+      "expected_accepted": true,
+      "actual_accepted": true,
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Structure and labels only; no gate truth, product readiness, provider, physical or human-use evidence.",
+    "CONDITIONAL is a valid schema label, not permission or evidence for this pilot."
+  ],
+  "application_tests": "NOT_RUN",
+  "human_assessments": "NOT_RUN",
+  "beta_decision": "NO_GO"
+}

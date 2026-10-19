@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-10-17T18:40:14.882375+00:00",
+  "status": "PASS_CANONICAL_API_NAVIGATION_ONLY",
+  "nodes": 2119,
+  "edges": 9219,
+  "api_source_files": 142,
+  "sourceless_metadata_nodes": 268,
+  "unique_ids": true,
+  "valid_endpoints": true,
+  "no_self_loops": true,
+  "no_exact_duplicate_edges": true,
+  "graph_sha256": "6b4cffbe3a03059fe73badefdb259bc6c718982c6ef778c2d91bdb9a258e3a46",
+  "schema_edge_key": "links",
+  "scope_limitations": [
+    "API only; frontend and private/dynamic/legacy symbol query limitations remain",
+    "Structural navigation does not prove semantic/security/release or human truth"
+  ]
+}

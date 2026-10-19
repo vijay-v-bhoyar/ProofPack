@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-10-16T00:09:27.959148+00:00",
+  "scope": "guarded transfer after terminal failed original verification; not final acceptance",
+  "original_terminal_exit_code": 1,
+  "stages": [
+    ".loop\\repairs\\metadata-resource-lineage\\lease-repair-candidate",
+    ".loop\\repairs\\metadata-discovery\\working",
+    ".loop\\repairs\\metadata-inventory\\working"
+  ],
+  "inventory_delta": [
+    {
+      "path": "services/api/proofpack/evidence/inventory.py",
+      "sha256": "cc914e7ac39036d29ffd3307ce474b867014de87a72eb847a3ef14e60771c57b"
+    },
+    {
+      "path": "tests/integration/test_inventory_store.py",
+      "sha256": "2e3f32366322a54e89f332e6770249adfc35468e543524a1cf7252c97ae5c469"
+    },
+    {
+      "path": "tests/unit/test_inventory_pass.py",
+      "sha256": "bb6b27b7d449a2f9c3a1d4e22209a8eeead1741ab61f85e889d59f643bd10f4a"
+    }
+  ],
+  "status": "TRANSFERRED_NOT_YET_INTEGRATED_VERIFIED",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

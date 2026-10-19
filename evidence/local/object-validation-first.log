@@ -1,0 +1,262 @@
+...........FFF.                                                          [100%]
+================================== FAILURES ===================================
+______ test_validate_rejects_malformed_receipts_before_storage[changes1] ______
+
+self = <proofpack.evidence.objects.EvidenceObjects object at 0x0000021281948C50>
+receipt = ObjectReceipt(asset_id='2ef37157-104c-478b-a327-0c0929dec6b3', source_sha256='6165aa6e11df10d5027d649d9557a251dfbcb30010d6cdf7e52746389d9bcc63', context_sha256='not-a-digest', byte_length=32, content_type='image/png')
+
+    def validate(self,receipt:ObjectReceipt):
+        if (not isinstance(receipt,ObjectReceipt) or receipt.key!=self.key(receipt.asset_id)
+                or type(receipt.byte_length) is not int or not 0<receipt.byte_length<=2097152):
+            raise ValueError('owned bounded evidence receipt required')
+        try:
+>           head=self.client.head_object(**self._params(receipt.asset_id,receipt.version_id),ChecksumMode='ENABLED')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+services\api\proofpack\evidence\objects.py:133: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\botocore\client.py:606: in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\context.py:123: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\client.py:1035: in _make_api_call
+    api_params = self._emit_api_params(
+.venv\Lib\site-packages\botocore\client.py:1154: in _emit_api_params
+    self.meta.events.emit(
+.venv\Lib\site-packages\botocore\hooks.py:412: in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\hooks.py:256: in emit
+    return self._emit(event_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\hooks.py:239: in _emit
+    response = handler(**kwargs)
+               ^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\stub.py:395: in _assert_expected_params
+    self._assert_expected_call_order(model, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <botocore.stub.Stubber object at 0x00000212819489E0>
+model = OperationModel(name=HeadObject)
+params = {'Bucket': 'proofpack-synthetic-test', 'Key': 'deployments/synthetic-test/frames/2ef37157-104c-478b-a327-0c0929dec6b3', 'ExpectedBucketOwner': '000000000000', 'VersionId': 'synthetic-version', ...}
+
+    def _assert_expected_call_order(self, model, params):
+        if not self._queue:
+>           raise UnStubbedResponseError(
+                operation_name=model.name,
+                reason=(
+                    'Unexpected API Call: A call was made but no additional '
+                    'calls expected. Either the API Call was not stubbed or '
+                    'it was called multiple times.'
+                ),
+            )
+E           botocore.exceptions.UnStubbedResponseError: Error getting response stub for operation HeadObject: Unexpected API Call: A call was made but no additional calls expected. Either the API Call was not stubbed or it was called multiple times.
+
+.venv\Lib\site-packages\botocore\stub.py:363: UnStubbedResponseError
+
+The above exception was the direct cause of the following exception:
+
+changes = {'context_sha256': 'not-a-digest'}
+
+    @pytest.mark.parametrize('changes',[{'key':'other-deployment/private'},{'context_sha256':'not-a-digest'},
+        {'content_type':'text/plain'},{'source_sha256':'not-a-digest'},{'byte_length':True}])
+    def test_validate_rejects_malformed_receipts_before_storage(changes):
+        store,stub=world();payload,receipt,put,ack,head=fixture(store)
+>       with stub,pytest.raises(ValueError):store.validate(replace(receipt,**changes))
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\unit\test_evidence_objects.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <proofpack.evidence.objects.EvidenceObjects object at 0x0000021281948C50>
+receipt = ObjectReceipt(asset_id='2ef37157-104c-478b-a327-0c0929dec6b3', source_sha256='6165aa6e11df10d5027d649d9557a251dfbcb30010d6cdf7e52746389d9bcc63', context_sha256='not-a-digest', byte_length=32, content_type='image/png')
+
+    def validate(self,receipt:ObjectReceipt):
+        if (not isinstance(receipt,ObjectReceipt) or receipt.key!=self.key(receipt.asset_id)
+                or type(receipt.byte_length) is not int or not 0<receipt.byte_length<=2097152):
+            raise ValueError('owned bounded evidence receipt required')
+        try:
+            head=self.client.head_object(**self._params(receipt.asset_id,receipt.version_id),ChecksumMode='ENABLED')
+            self._metadata(head,receipt)
+>       except (ClientError,BotoCoreError) as exc:raise StoreUnavailable('evidence object unavailable') from exc
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       proofpack.evidence.repository.StoreUnavailable: evidence object unavailable
+
+services\api\proofpack\evidence\objects.py:135: StoreUnavailable
+______ test_validate_rejects_malformed_receipts_before_storage[changes2] ______
+
+self = <proofpack.evidence.objects.EvidenceObjects object at 0x0000021281A5A480>
+receipt = ObjectReceipt(asset_id='d6051d95-647e-42fe-8b46-45f73b203cd4', source_sha256='6165aa6e11df10d5027d649d9557a251dfbcb300...t_sha256='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', byte_length=32, content_type='text/plain')
+
+    def validate(self,receipt:ObjectReceipt):
+        if (not isinstance(receipt,ObjectReceipt) or receipt.key!=self.key(receipt.asset_id)
+                or type(receipt.byte_length) is not int or not 0<receipt.byte_length<=2097152):
+            raise ValueError('owned bounded evidence receipt required')
+        try:
+>           head=self.client.head_object(**self._params(receipt.asset_id,receipt.version_id),ChecksumMode='ENABLED')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+services\api\proofpack\evidence\objects.py:133: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\botocore\client.py:606: in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\context.py:123: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\client.py:1035: in _make_api_call
+    api_params = self._emit_api_params(
+.venv\Lib\site-packages\botocore\client.py:1154: in _emit_api_params
+    self.meta.events.emit(
+.venv\Lib\site-packages\botocore\hooks.py:412: in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\hooks.py:256: in emit
+    return self._emit(event_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\hooks.py:239: in _emit
+    response = handler(**kwargs)
+               ^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\stub.py:395: in _assert_expected_params
+    self._assert_expected_call_order(model, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <botocore.stub.Stubber object at 0x0000021281A5A6F0>
+model = OperationModel(name=HeadObject)
+params = {'Bucket': 'proofpack-synthetic-test', 'Key': 'deployments/synthetic-test/frames/d6051d95-647e-42fe-8b46-45f73b203cd4', 'ExpectedBucketOwner': '000000000000', 'VersionId': 'synthetic-version', ...}
+
+    def _assert_expected_call_order(self, model, params):
+        if not self._queue:
+>           raise UnStubbedResponseError(
+                operation_name=model.name,
+                reason=(
+                    'Unexpected API Call: A call was made but no additional '
+                    'calls expected. Either the API Call was not stubbed or '
+                    'it was called multiple times.'
+                ),
+            )
+E           botocore.exceptions.UnStubbedResponseError: Error getting response stub for operation HeadObject: Unexpected API Call: A call was made but no additional calls expected. Either the API Call was not stubbed or it was called multiple times.
+
+.venv\Lib\site-packages\botocore\stub.py:363: UnStubbedResponseError
+
+The above exception was the direct cause of the following exception:
+
+changes = {'content_type': 'text/plain'}
+
+    @pytest.mark.parametrize('changes',[{'key':'other-deployment/private'},{'context_sha256':'not-a-digest'},
+        {'content_type':'text/plain'},{'source_sha256':'not-a-digest'},{'byte_length':True}])
+    def test_validate_rejects_malformed_receipts_before_storage(changes):
+        store,stub=world();payload,receipt,put,ack,head=fixture(store)
+>       with stub,pytest.raises(ValueError):store.validate(replace(receipt,**changes))
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\unit\test_evidence_objects.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <proofpack.evidence.objects.EvidenceObjects object at 0x0000021281A5A480>
+receipt = ObjectReceipt(asset_id='d6051d95-647e-42fe-8b46-45f73b203cd4', source_sha256='6165aa6e11df10d5027d649d9557a251dfbcb300...t_sha256='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', byte_length=32, content_type='text/plain')
+
+    def validate(self,receipt:ObjectReceipt):
+        if (not isinstance(receipt,ObjectReceipt) or receipt.key!=self.key(receipt.asset_id)
+                or type(receipt.byte_length) is not int or not 0<receipt.byte_length<=2097152):
+            raise ValueError('owned bounded evidence receipt required')
+        try:
+            head=self.client.head_object(**self._params(receipt.asset_id,receipt.version_id),ChecksumMode='ENABLED')
+            self._metadata(head,receipt)
+>       except (ClientError,BotoCoreError) as exc:raise StoreUnavailable('evidence object unavailable') from exc
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       proofpack.evidence.repository.StoreUnavailable: evidence object unavailable
+
+services\api\proofpack\evidence\objects.py:135: StoreUnavailable
+______ test_validate_rejects_malformed_receipts_before_storage[changes3] ______
+
+self = <proofpack.evidence.objects.EvidenceObjects object at 0x00000212819A2540>
+receipt = ObjectReceipt(asset_id='3d5c390e-4c44-4180-a0ab-a3ebcd74317b', source_sha256='not-a-digest', context_sha256='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', byte_length=32, content_type='image/png')
+
+    def validate(self,receipt:ObjectReceipt):
+        if (not isinstance(receipt,ObjectReceipt) or receipt.key!=self.key(receipt.asset_id)
+                or type(receipt.byte_length) is not int or not 0<receipt.byte_length<=2097152):
+            raise ValueError('owned bounded evidence receipt required')
+        try:
+>           head=self.client.head_object(**self._params(receipt.asset_id,receipt.version_id),ChecksumMode='ENABLED')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+services\api\proofpack\evidence\objects.py:133: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+.venv\Lib\site-packages\botocore\client.py:606: in _api_call
+    return self._make_api_call(operation_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\context.py:123: in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\client.py:1035: in _make_api_call
+    api_params = self._emit_api_params(
+.venv\Lib\site-packages\botocore\client.py:1154: in _emit_api_params
+    self.meta.events.emit(
+.venv\Lib\site-packages\botocore\hooks.py:412: in emit
+    return self._emitter.emit(aliased_event_name, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\hooks.py:256: in emit
+    return self._emit(event_name, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\hooks.py:239: in _emit
+    response = handler(**kwargs)
+               ^^^^^^^^^^^^^^^^^
+.venv\Lib\site-packages\botocore\stub.py:395: in _assert_expected_params
+    self._assert_expected_call_order(model, params)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <botocore.stub.Stubber object at 0x0000021281A92600>
+model = OperationModel(name=HeadObject)
+params = {'Bucket': 'proofpack-synthetic-test', 'Key': 'deployments/synthetic-test/frames/3d5c390e-4c44-4180-a0ab-a3ebcd74317b', 'ExpectedBucketOwner': '000000000000', 'VersionId': 'synthetic-version', ...}
+
+    def _assert_expected_call_order(self, model, params):
+        if not self._queue:
+>           raise UnStubbedResponseError(
+                operation_name=model.name,
+                reason=(
+                    'Unexpected API Call: A call was made but no additional '
+                    'calls expected. Either the API Call was not stubbed or '
+                    'it was called multiple times.'
+                ),
+            )
+E           botocore.exceptions.UnStubbedResponseError: Error getting response stub for operation HeadObject: Unexpected API Call: A call was made but no additional calls expected. Either the API Call was not stubbed or it was called multiple times.
+
+.venv\Lib\site-packages\botocore\stub.py:363: UnStubbedResponseError
+
+The above exception was the direct cause of the following exception:
+
+changes = {'source_sha256': 'not-a-digest'}
+
+    @pytest.mark.parametrize('changes',[{'key':'other-deployment/private'},{'context_sha256':'not-a-digest'},
+        {'content_type':'text/plain'},{'source_sha256':'not-a-digest'},{'byte_length':True}])
+    def test_validate_rejects_malformed_receipts_before_storage(changes):
+        store,stub=world();payload,receipt,put,ack,head=fixture(store)
+>       with stub,pytest.raises(ValueError):store.validate(replace(receipt,**changes))
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\unit\test_evidence_objects.py:121: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <proofpack.evidence.objects.EvidenceObjects object at 0x00000212819A2540>
+receipt = ObjectReceipt(asset_id='3d5c390e-4c44-4180-a0ab-a3ebcd74317b', source_sha256='not-a-digest', context_sha256='aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', byte_length=32, content_type='image/png')
+
+    def validate(self,receipt:ObjectReceipt):
+        if (not isinstance(receipt,ObjectReceipt) or receipt.key!=self.key(receipt.asset_id)
+                or type(receipt.byte_length) is not int or not 0<receipt.byte_length<=2097152):
+            raise ValueError('owned bounded evidence receipt required')
+        try:
+            head=self.client.head_object(**self._params(receipt.asset_id,receipt.version_id),ChecksumMode='ENABLED')
+            self._metadata(head,receipt)
+>       except (ClientError,BotoCoreError) as exc:raise StoreUnavailable('evidence object unavailable') from exc
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       proofpack.evidence.repository.StoreUnavailable: evidence object unavailable
+
+services\api\proofpack\evidence\objects.py:135: StoreUnavailable
+=========================== short test summary info ===========================
+FAILED tests/unit/test_evidence_objects.py::test_validate_rejects_malformed_receipts_before_storage[changes1]
+FAILED tests/unit/test_evidence_objects.py::test_validate_rejects_malformed_receipts_before_storage[changes2]
+FAILED tests/unit/test_evidence_objects.py::test_validate_rejects_malformed_receipts_before_storage[changes3]
+3 failed, 12 passed, 20 deselected in 3.50s

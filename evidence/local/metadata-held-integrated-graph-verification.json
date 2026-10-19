@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "canonical API navigation only",
+  "nodes": 1813,
+  "edges": 7687,
+  "communities": 68,
+  "graph_sha256": "0ecafb034d545240a15c2e7eff04d4f42e1423870ec8fdc247d490a6c433fed1",
+  "limitations": [
+    "API only",
+    "legacy IDs",
+    "bounded/truncated earlier queries",
+    "no new semantic labels",
+    "not behavior/security/release proof"
+  ]
+}

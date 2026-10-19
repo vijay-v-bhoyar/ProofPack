@@ -1,0 +1,66 @@
+{
+  "recorded_at": "2026-10-17T15:14:38.776161+00:00",
+  "status": "FAIL_RETAINED_DIAGNOSIS_PENDING",
+  "scope": "one failed configured native HTTPS browser call in full-v2 cohort9; no app/environment root cause established",
+  "failed_event": {
+    "nodeid": "tests/integration/test_public_asset_store.py::test_configured_https_browser_owner_flow_uses_real_local_store_and_auth",
+    "phase": "call",
+    "outcome": "failed",
+    "duration_seconds": 40.756374000000505
+  },
+  "completed_inventory": 132,
+  "reported_case_counts": {
+    "passed": 131,
+    "failed": 1
+  },
+  "batch_exit_code": 1,
+  "original_click_timeout_ms": 5000,
+  "original_browser_fixture_bound_seconds": 60,
+  "cohort_timeout_seconds": 875,
+  "observed": "element resolves but stable/visible/enabled actionability wait times out; recorded network contains static assets and readiness only; screenshot unavailable",
+  "server_database_cleanup_boundary": "cohort emulator terminated/state removed; configured application/drain success receipt absent because test failed",
+  "fixture_sha256": "fc365884762d1e5f5ea79a009f2a1cf991a2846b7217ff58cabe8d0d7d9e2f83",
+  "browser_source_sha256": "ac56d1a482e468e3e6689b0ae4d60e051c6b0c324bf21484975bb074a6d8620c",
+  "chrome_path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+  "chrome_sha256": "6ee912e7c8f37aa1dad65c977c035676b4d238868c97ef9f897fd742dffe3810",
+  "chrome_reported_file_product_version": "155.0.8059.82",
+  "hypotheses": [
+    "frame delivery/compositor or scheduling stall",
+    "DOM geometry/actionability instability; source CSS contains no button animation"
+  ],
+  "cause": "UNKNOWN",
+  "next_action": "after full-v2 terminal, reproduce original unchanged single case then add bounded passive frame/geometry/debug observations without force clicks, renderer flags or relaxed timeouts",
+  "native_diagnostic_execution": "NOT_RUN",
+  "raw_evidence": [
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\same-budget-full-v2\\evidence\\local\\cohort9-click-failure\\python-cohort-009-database.json",
+      "sha256": "bed8832181eeb37e93ff501e1488597601b3e9c9aafc30b76f69dc1262cb18f6"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\same-budget-full-v2\\evidence\\local\\cohort9-click-failure\\python-cohort-009-database.log",
+      "sha256": "3202118ccb414c3a4f00df283d3cdb63100c141c904c7adc7bf83b4721d3b028"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\same-budget-full-v2\\evidence\\local\\cohort9-click-failure\\python-cohort-009.json",
+      "sha256": "c6bdee5a901c11d7229834dc32a51fddd06d239f19c0d0f08ad0c64a1de50a59"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\same-budget-full-v2\\evidence\\local\\cohort9-click-failure\\python-cohort-009.json.sdk.json",
+      "sha256": "b737c398728c6198d09f279a19df61a78402f9cc3812261b9691133fda7a80d2"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\same-budget-full-v2\\evidence\\local\\cohort9-click-failure\\python-cohort-009.log",
+      "sha256": "838ba44618907b8e787106a69395c10cefcb189aed3ff9736bc53433467ef9e2"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\same-budget-full-v2\\evidence\\local\\cohort9-click-failure\\python-cohort-009.origins.json",
+      "sha256": "d765e98ba101a09e31017cd13ec6df865c4ab7165baa8fafdf5b9d105344963a"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\same-budget-full-v2\\evidence\\local\\cohort9-click-failure\\python-cohort-009.xml",
+      "sha256": "5462d82472b3170a314e0f4972fd2b953ea3f34a94e42d88059eb173b8a96383"
+    }
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

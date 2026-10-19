@@ -1,0 +1,187 @@
+{
+  "id": "browser-timeout-drain",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "BTO02-native-timeout-output-and-cleanup"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "windows-buffered-output-lost",
+      "criterion": "BTO02-native-timeout-output-and-cleanup",
+      "category": "test",
+      "hypothesis": "The Windows Popen reader has not joined when communicate raises; TimeoutExpired.output is empty despite emitted stdout. Saving that exception before cleanup loses diagnostic output.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "BTO02 original native timeout output retention and cleanup; substituted child, not Chrome acceptance",
+          "revision": "c42c8294956bf881820389d875e587b9bbbca1cacf9a5aaecc2b4f0263f5cd72",
+          "configuration": "693-input local configured HTTPS/DynamoDB and synthetic CV/identity fixture, only Node child substituted with owned Python emitter; unchanged60s timeout,10s tree termination and shared10s wait/drain cleanup;600s cohort. No provider/physical/human acceptance."
+        },
+        "actor": "Codex local fault runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:18:08.591140+00:00",
+        "expires": "2026-10-18T00:24:14.182952+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "tests/integration/test_browser_timeout_retention_store.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\candidate\\evidence\\local\\timeout-retention-native-v1\\evidence\\local\\timeout-retention-native-v1.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "evidence/before.log",
+          "sha256": "4309a012542e9da817044fa1c7e3fa3603dbfe46d72d9b3f8913ec1054e520fd"
+        },
+        "oracle": {
+          "path": "original.py",
+          "sha256": "381772bbe61b38be2850c5517de08de996e0dc5058a3b7303a1ab7055a932628"
+        },
+        "artifacts": [
+          {
+            "path": "before/test_owner_review_browser.py",
+            "sha256": "d87bcae4bab79fe9c0834af406530fb48836c6217e5d4a930c52bf8b26920417"
+          },
+          {
+            "path": "original.py",
+            "sha256": "381772bbe61b38be2850c5517de08de996e0dc5058a3b7303a1ab7055a932628"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "windows-buffered-output-lost",
+      "owner": "P06 Codex local delivery; no independent approval",
+      "diagnosis": "Terminate original owned tree and wait as before, then communicate using only the remaining original10s cleanup budget. Retain drained stdout, never resend stdin/overwrite evidence, and raise the same60s failure.",
+      "changes": [
+        {
+          "path": "after/test_owner_review_browser.py",
+          "sha256": "589eb067075b7ed0da7fa757add454790fbb416f8427bc4232247c7ef31f4a91"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "windows-buffered-output-lost",
+      "criteria": [
+        "BTO02-native-timeout-output-and-cleanup"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "BTO02 original native timeout output retention and cleanup; substituted child, not Chrome acceptance",
+          "revision": "34881c6e911a3c7fc0111edfbbb6221b6eee16c785d56d60bf120703a9602b00",
+          "configuration": "693-input local configured HTTPS/DynamoDB and synthetic CV/identity fixture, only Node child substituted with owned Python emitter; unchanged60s timeout,10s tree termination and shared10s wait/drain cleanup;600s cohort. No provider/physical/human acceptance."
+        },
+        "actor": "Codex local fault runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:20:26.173692+00:00",
+        "expires": "2026-10-18T00:24:14.212501+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-q",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "tests/integration/test_browser_timeout_retention_store.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\candidate\\evidence\\local\\timeout-retention-native-v2\\evidence\\local\\timeout-retention-native-v2.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 1,
+        "output": {
+          "path": "evidence/after.log",
+          "sha256": "01f324f870238e33114ddfd1872dd9253f26e560a0df854816c20ba867fb4ca5"
+        },
+        "oracle": {
+          "path": "original.py",
+          "sha256": "381772bbe61b38be2850c5517de08de996e0dc5058a3b7303a1ab7055a932628"
+        },
+        "artifacts": [
+          {
+            "path": "after/test_owner_review_browser.py",
+            "sha256": "589eb067075b7ed0da7fa757add454790fbb416f8427bc4232247c7ef31f4a91"
+          },
+          {
+            "path": "original.py",
+            "sha256": "381772bbe61b38be2850c5517de08de996e0dc5058a3b7303a1ab7055a932628"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "BTO02 original native timeout output retention and cleanup; substituted child, not Chrome acceptance",
+          "revision": "34881c6e911a3c7fc0111edfbbb6221b6eee16c785d56d60bf120703a9602b00",
+          "configuration": "693-input local configured HTTPS/DynamoDB and synthetic CV/identity fixture, only Node child substituted with owned Python emitter; unchanged60s timeout,10s tree termination and shared10s wait/drain cleanup;600s cohort. No provider/physical/human acceptance."
+        },
+        "actor": "Codex local fault runner and separate source/phase audit; no independent human",
+        "at": "2026-10-17T00:19:37.131868+00:00",
+        "expires": "2026-10-18T00:24:14.214495+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_browser_timeout_output.py",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\original-timeout-output.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\owner-collateral-ui\\candidate\\evidence\\local\\timeout-drain-units.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 10,
+        "output": {
+          "path": "evidence/regression.log",
+          "sha256": "f38d3e51671887e03160321c373ee3eb90626bf709000f5989dfbcd3d069190b"
+        },
+        "oracle": {
+          "path": "after/test_browser_timeout_output.py",
+          "sha256": "9a05214a3e6b0cfaee7885e5d9629eed76d52776283507c7cd80307c2b8d5d0e"
+        },
+        "artifacts": [
+          {
+            "path": "after/test_owner_review_browser.py",
+            "sha256": "589eb067075b7ed0da7fa757add454790fbb416f8427bc4232247c7ef31f4a91"
+          },
+          {
+            "path": "after/test_browser_timeout_output.py",
+            "sha256": "9a05214a3e6b0cfaee7885e5d9629eed76d52776283507c7cd80307c2b8d5d0e"
+          }
+        ]
+      }
+    }
+  ]
+}

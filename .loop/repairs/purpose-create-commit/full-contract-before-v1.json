@@ -1,0 +1,64 @@
+{
+  "recorded_at": "2026-10-18T01:49:28.504179+00:00",
+  "status": "READY_FOR_FULL_LAUNCH",
+  "source_inputs": 732,
+  "current_cases": 5149,
+  "phases_expected": 15447,
+  "original5133_preserved": true,
+  "new_cases": 16,
+  "cohorts": 41,
+  "timeout_each": 768,
+  "allocated_process_seconds": 31488,
+  "aggregate_ceiling": 31500,
+  "original_per_cohort_ceiling": 900,
+  "collection_timeout": 120,
+  "exclusions": [],
+  "case_and_profile_changes": "only current subject/input/version/output-path bindings; all original positive assertions retained",
+  "helper_bindings": [
+    {
+      "name": "resource_admission.py",
+      "sha256": "bdec7d7c16896304a4fd135397342d88a4b4199845151c3d49d065b5e12b58a3",
+      "copied_byte_identically_from": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\configured-auth-review-candidate\\resource_admission.py"
+    },
+    {
+      "name": "full_resource_gate.py",
+      "sha256": "851506f358b37242264e373cb4a06f239e75f2eaa8f154780a92c61d09e10e46",
+      "copied_byte_identically_from": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\configured-auth-review-candidate\\full_resource_gate.py"
+    },
+    {
+      "name": "full_owner_failure_probe.py",
+      "sha256": "1a35576cce8ec5bcfbd2b5004072b1004ca3cc3f601f4fd900c70c545ee3fb60",
+      "copied_byte_identically_from": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\configured-auth-review-candidate\\full_owner_failure_probe.py"
+    },
+    {
+      "name": "owner_copy_contract.py",
+      "sha256": "7978e901faaf957b87cc584446c3d17c1f963a5183f3c97a7a64e51d606b7a7f",
+      "copied_byte_identically_from": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\configured-auth-review-candidate\\owner_copy_contract.py"
+    }
+  ],
+  "controller_and_auditor": {
+    "run_full_v1.py": {
+      "original_assertions_retained": 42,
+      "origin_sha256": "8348c7cdcc23d35392e3e0617577ed35fbea7811d1aa9f22080361dea681201e",
+      "sha256": "ea873652845e444a3596cf3820aeec9cc695fc73e295d86bdabaef75451bcc8a"
+    },
+    "audit_full_v1.py": {
+      "original_assertions_retained": 80,
+      "origin_sha256": "307be47a4ef713fed3b742d1df81ad657702c20f76e504beef32e61f649b8c77",
+      "sha256": "0564226960f1692a2b83fd41652d3cc41db376b711af08539775c886b912c726"
+    }
+  },
+  "owner_observation_cohort": 10,
+  "owner_cohort_cases": 147,
+  "owner_logical_program": "unchanged, original actions/assertions; expected cohort list matches the new actual plan",
+  "freeze": "source/runtime inputs must stay fixed after full launch; browser prerequisite must be terminal and audited first",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "ready_at": "2026-10-18T01:54:45.254498+00:00",
+  "prerequisite_bindings": {
+    "support_verification_sha256": "d62c72b73f5b8b1ccf02766823429866e0f2f363b3b6601636cb965bfa396ab7",
+    "browser_verification_sha256": "65bb39f07fdb5a500166db210ac42dca346c78274f0727c988a032403dffc86f",
+    "browser_all399_identities_and_profile_unchanged": true
+  },
+  "positive_auditor_refusal_requirement": "After a live plan exists, auditor must return2 until terminal receipt. No live evidence can be accepted as full PASS."
+}

@@ -1,0 +1,130 @@
+{
+  "recorded_at": "2026-10-15T11:24:17.203021+00:00",
+  "mode": "Improve",
+  "scope": "persona_and_adoption_documentation_followthrough",
+  "status": "PASS",
+  "personas": 9,
+  "operations": 78,
+  "application_tests": "NOT_RUN",
+  "human_tests": "NOT_RUN",
+  "beta_decision": "NO_GO",
+  "changes": [
+    "docs/PERSONAS-OPERATIONS.md",
+    "docs/USER-NEEDS-ADOPTION.md",
+    "docs/TEST-PLAN.md",
+    "docs/BETA-USER-GUIDE.md",
+    "docs/templates/BETA-SESSION-RECORD.md"
+  ],
+  "findings": [
+    "U82",
+    "U83"
+  ],
+  "improvements": [
+    "I80",
+    "I81"
+  ],
+  "limitations": [
+    "No participant, physical-kit, provider, deployment, spending, contact or publication action.",
+    "Concurrent build verification is separate; no whole-product acceptance asserted."
+  ],
+  "completed_at": "2026-10-15T11:25:27.034539+00:00",
+  "validation": {
+    "documentation_checks": 29,
+    "documentation_inputs": 31,
+    "persona_operation_counts": {
+      "P01": 10,
+      "P02": 10,
+      "P03": 10,
+      "P04": 8,
+      "P05": 8,
+      "P06": 8,
+      "P07": 8,
+      "P08": 8,
+      "P09": 8
+    },
+    "workflow_contracts": 26,
+    "canonical_tests": 58,
+    "unique_findings": 83,
+    "new_child_cases": [
+      "A05-L1",
+      "A06-L1"
+    ],
+    "all_human_results": "NOT_RUN",
+    "checks": [
+      "Contiguous persona operations and exact inventory",
+      "Canonical validator: role/workflow/test/evidence/need/scenario mappings and local links",
+      "Unique finding identifiers",
+      "New child cases linked to test plan and session record",
+      "Contradictory current-scope statements removed",
+      "Factory missing-reader statement verified in source",
+      "All validator input hashes independently reconciled"
+    ]
+  },
+  "artifacts": [
+    {
+      "path": "docs/PERSONAS-OPERATIONS.md",
+      "sha256": "6ad7d7845cbc7055ba055a43b60c8dbe92e37a0553b9ce0e9882bfdfe57a4074"
+    },
+    {
+      "path": "docs/USER-NEEDS-ADOPTION.md",
+      "sha256": "68a7ae64f60bf68cd5facabf8a9972a94ed6289de3794f6523fdf26ed28f2970"
+    },
+    {
+      "path": "docs/TEST-PLAN.md",
+      "sha256": "a03d9450b17b7cde997b58b62bcb6e1ce36b493c6abe49cfa16888978911d378"
+    },
+    {
+      "path": "docs/BETA-USER-GUIDE.md",
+      "sha256": "e979da6dc30ccb96a01851acbd98cbe765f5da25964086349a78b9a9f2b96f20"
+    },
+    {
+      "path": "docs/templates/BETA-SESSION-RECORD.md",
+      "sha256": "2a67c23bf98e0221421db45381d8bfd8af61372c61623ee52be5b1e06daa220a"
+    },
+    {
+      "path": "evidence/documentation-validation.json",
+      "sha256": "c343f2acaf5f4438beaa99f0fc7592716008ecbd94995050b4391ff89bec4563"
+    }
+  ],
+  "source_observations": [
+    {
+      "path": "services/api/proofpack/runtime/composition.py",
+      "sha256": "0e44b73c94df0bfe92853212f8fa16b5974c44d9611604517605173cacf9861b"
+    },
+    {
+      "path": "services/api/proofpack/stations/service.py",
+      "sha256": "8dfeac7201011f7279ad09aed6141280447dc85400456bef119f0bb31826d7d8"
+    },
+    {
+      "path": "services/api/proofpack/capture/publication.py",
+      "sha256": "fbc1004b3bb078dec8c7a3559b256f3fd3f90de17fef1af31824f10c7339f9a9"
+    }
+  ],
+  "preserved_before": [
+    {
+      "path": "evidence/local/persona-adoption-followthrough/docs__BETA-USER-GUIDE.md.before",
+      "sha256": "70e472601e1cbc51be2b7452830e6dbabc5ce4df548f83149a8ab4797a6cd54e"
+    },
+    {
+      "path": "evidence/local/persona-adoption-followthrough/docs__PERSONAS-OPERATIONS.md.before",
+      "sha256": "34aa58efd4ffbf65646782ab4feb9022e9ea4ff196d517c38a81c837ca88a7e2"
+    },
+    {
+      "path": "evidence/local/persona-adoption-followthrough/docs__templates__BETA-SESSION-RECORD.md.before",
+      "sha256": "5371983ee226ee025315e8773c25dd36b26a426949cedd96beaab9be9030ff34"
+    },
+    {
+      "path": "evidence/local/persona-adoption-followthrough/docs__TEST-PLAN.md.before",
+      "sha256": "a41ae9eb5acd3bb5014ae1d25fa331383514a072ed940d52deb3b7110bfa5335"
+    },
+    {
+      "path": "evidence/local/persona-adoption-followthrough/docs__USER-NEEDS-ADOPTION.md.before",
+      "sha256": "efd9935ddc14d07a8f6a963aeb006860613c1e31fc753957fb16676c343e8b31"
+    }
+  ],
+  "audit_harness_failure": {
+    "path": "evidence/local/persona-adoption-followthrough/audit-first-failure.json",
+    "sha256": "f12adc97350925e6db9e2cb2f637ca4e8aa21960b9bd2e56086f5a14faa54865"
+  },
+  "decision": "Documentation improvements accepted within this review scope; external beta NO_GO. Full product build, target, physical and human acceptance remain incomplete."
+}

@@ -1,0 +1,46 @@
+{
+  "recorded_at": "2026-10-17T14:43:10.558252+00:00",
+  "status": "NATIVE_PRODUCER_AND_ORIGINAL_DECODER_PASS_ISOLATED_ONLY",
+  "mode": "P06 verification/release workflow repair",
+  "observed_gap": "normal project verifier does not produce support-ui-installed-contracts.json before a browser test requires it",
+  "evidence": "../same-budget-cohorts/browser-v2-verification.json; 394/395 passed, one absent prerequisite",
+  "parent_source": "../same-budget-cohorts/candidate; frozen full-v2 remains untouched",
+  "required_behavior": [
+    "verify wheel backend/assets against current source before offline install",
+    "collect and run all six current installed capture target modules; the project factory module is byte-identical to the preserved original oracle",
+    "fake credentials and exact owned endpoint; installed-only origins; all phases/JUnit/capture provenance; bounded cleanup",
+    "publish current capture only after complete valid outcomes; retain prior capture and all failed outputs",
+    "normal --browser verifier generates this prerequisite and holds dependent browser launch when it fails"
+  ],
+  "limits": {
+    "pip_install_seconds": 45,
+    "collection_seconds": 45,
+    "native_test_seconds": 120,
+    "new_composite_check_seconds": 300,
+    "existing_checks_and_native_full_budget": "UNCHANGED"
+  },
+  "mutation_boundary": "working copy only; no candidate/canonical edits or competing native/browser tests during full-v2",
+  "native_full_and_browser_execution": "92 installed cases/276 phases and unchanged one-case decoder PASS; no new full suite or browser interaction",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "unit_verification": "unit-v3/process.json",
+  "unit_cases": 41,
+  "archive_verification": "real-wheel-preflight.json",
+  "native_installed_and_browser_execution": "92 installed cases/276 phases and unchanged one-case decoder PASS; no new full suite or browser interaction",
+  "pre_native_review": {
+    "supported_risk": "parent emulator startup could inherit proxies while only the child environment cleared them; new producer has not executed natively",
+    "correction": "clear parent proxy variables and add direct compiled-child-hook stub checks; native verification remains pending",
+    "prior_unit_source_preservation": "known edits reversed and full bytes verified against immutable unit-v1 subject hashes",
+    "snapshot_first_attempt": "tool cff8b8 exit1: Windows path separators in receipt keys; normalized for lookup, no test/app executed or oracle changed"
+  },
+  "late_source_defect": {
+    "original": "final-source-red/process.json",
+    "actual_original_exit_code": 1,
+    "corrected_regression": "unit-v3/process.json",
+    "oracle_unchanged_between_red_and_green": true,
+    "scope": "prototype maintainer lifecycle on pure stubs; actual native still NOT_RUN"
+  },
+  "native_verification": "native-v1-verification.json",
+  "source_projection": "709 current inputs; 706 original inputs identical, verifier changed, two new files; no canonical transfer",
+  "next_parent_obligation": "Integrate this tooling with the eventual accepted product candidate and verify normal full maintainer workflow. Full-v2 owner-browser failure and complete user workflows remain open."
+}

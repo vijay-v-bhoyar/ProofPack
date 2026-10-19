@@ -1,0 +1,313 @@
+{
+  "scope": "completed native cohorts 1 through 9 only",
+  "recorded_at": "2026-10-15T22:05:17.578736+00:00",
+  "status": "PASS_FOR_COMPLETED_COHORTS",
+  "cases": 1996,
+  "phases": 5988,
+  "cohorts": [
+    {
+      "ordinal": 1,
+      "cases": 230,
+      "phases": 690,
+      "database_cleanup": true,
+      "local_sdk_sends": 102481,
+      "blocked_sdk_sends": 0
+    },
+    {
+      "ordinal": 2,
+      "cases": 223,
+      "phases": 669,
+      "database_cleanup": true,
+      "local_sdk_sends": 142817,
+      "blocked_sdk_sends": 0
+    },
+    {
+      "ordinal": 3,
+      "cases": 244,
+      "phases": 732,
+      "database_cleanup": true,
+      "local_sdk_sends": 143019,
+      "blocked_sdk_sends": 0
+    },
+    {
+      "ordinal": 4,
+      "cases": 228,
+      "phases": 684,
+      "database_cleanup": true,
+      "local_sdk_sends": 233755,
+      "blocked_sdk_sends": 0
+    },
+    {
+      "ordinal": 5,
+      "cases": 246,
+      "phases": 738,
+      "database_cleanup": true,
+      "local_sdk_sends": 30659,
+      "blocked_sdk_sends": 0
+    },
+    {
+      "ordinal": 6,
+      "cases": 208,
+      "phases": 624,
+      "database_cleanup": true,
+      "local_sdk_sends": 0,
+      "blocked_sdk_sends": 0
+    },
+    {
+      "ordinal": 7,
+      "cases": 228,
+      "phases": 684,
+      "database_cleanup": true,
+      "local_sdk_sends": 0,
+      "blocked_sdk_sends": 0
+    },
+    {
+      "ordinal": 8,
+      "cases": 244,
+      "phases": 732,
+      "database_cleanup": true,
+      "local_sdk_sends": 0,
+      "blocked_sdk_sends": 0
+    },
+    {
+      "ordinal": 9,
+      "cases": 145,
+      "phases": 435,
+      "database_cleanup": true,
+      "local_sdk_sends": 0,
+      "blocked_sdk_sends": 0
+    }
+  ],
+  "local_sdk_sends": 652731,
+  "exact_inventory_and_phase_outcomes": true,
+  "source_current_matches_focused_subject": true,
+  "original_full_process_source_guard": "PENDING until original full process terminates",
+  "whole_suite_status_at_observation": "PASS",
+  "artifacts": [
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-001.json",
+      "sha256": "b871f86e098115bb0558cd855f80fa6ce762d26518a1d7cd24bc2f89161bf0fd"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-001.json.sdk.json",
+      "sha256": "482b4d6247f9b1ff608c0727f9df492506d614a1e75001c9f162aa1711fcefc8"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-001.xml",
+      "sha256": "0389fb2bdf361e15413717d5f57e63d5c18fd2aaf92722e0d833bba392ae41c0"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-001.log",
+      "sha256": "8059e0effd1e7debd9d32a7357b788865ff77c61f74e38926a2de0853bf3ea67"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-001-database.json",
+      "sha256": "509851ada70853a26ca066c37a63e76251b95498c19306f5190a2fdc91bddc41"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-001-database.log",
+      "sha256": "83b863b93faae20264a74a71bc93791d16fd04bce87b279f856dd79c4e7ab2d0"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-002.json",
+      "sha256": "f8d57ac152c713661768715ada9bcc32ad905c878b278dad0b7cb47bd576f76d"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-002.json.sdk.json",
+      "sha256": "1220f557da53497eb145ac4859101dc587e0e2863071e07f919097ffbf556f97"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-002.xml",
+      "sha256": "3e3e3a756c4e11a5c5ddf1cd6ef9fb0bdb89cb04743fb4b81bbc051496d5ef98"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-002.log",
+      "sha256": "b891b665225340959945c2403a28c154d65c82ba6bb8a04fd4853c4aac721109"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-002-database.json",
+      "sha256": "c565de50780347266140d2d6280a9f04fd508c34a6981a13d3ced1f1b7f70fdb"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-002-database.log",
+      "sha256": "a32c74ec7dbb2ed6eb954b40528c585ed28a7e8b4b3956024632470dcd2b6000"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-003.json",
+      "sha256": "a95ca1e21d0764ec681171a8d39a8c81faacac28bb94e302e9b7297459544ebf"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-003.json.sdk.json",
+      "sha256": "5d1d8cab008f9bec62b4101d36447959824dbc180e8ad8e62327ec8e3cd1c137"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-003.xml",
+      "sha256": "8cbf7b28f64da1654118eadde53cd351b6201c34aa708b12589e96bcc6193eb1"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-003.log",
+      "sha256": "5c550db1be0789b130e735f962a091b702780e1ece967bc27242f91efd901812"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-003-database.json",
+      "sha256": "b085494164ae87fc1713402042f61aa72a7e9438fec2ccdb9f10082df6cf7dce"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-003-database.log",
+      "sha256": "bc78a43334b7ddf7f9a45b474044b3312874dc9f573a55e1e0324b9fc378f547"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-004.json",
+      "sha256": "f600bb48d0b27e29c3dab73b45e2d2018a672c03ca468c51f8d31e92c3bf14f6"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-004.json.sdk.json",
+      "sha256": "6440a7c9c342a3b6e73dfbfefee97e6c8c7e56e539ffbfcd6a15d7b5ecbb9561"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-004.xml",
+      "sha256": "57395753d1d5ffacd1eacd7e7c402f593d5ec00d3afc4c82ca3d67d1461ebd40"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-004.log",
+      "sha256": "67fa33255318901f605ba5eefe48106edc5b394bbc68e5e277912b545a3dc6c1"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-004-database.json",
+      "sha256": "440535132eefd2a20df8e30edff252546ccfb25ae8f9a0abc62d21157204d9a8"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-004-database.log",
+      "sha256": "8d7d5e4828a7ac5f0ad4962c78aac27d7248a42d79d368725f12bc6e4d2ad1bc"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-005.json",
+      "sha256": "22d262f467ac39d472e8f5582abd8f727cc426426a18bb512c8afc456332bfbc"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-005.json.sdk.json",
+      "sha256": "b9d20c8abca31385ea3272499bba2ed4e49eea33eade4d0107127a05e45659c6"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-005.xml",
+      "sha256": "61ba2f89d897f2f8f61535ed07a867ee4b5da6305a1fbcb465b5e9d4db4f5877"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-005.log",
+      "sha256": "a94ca90219eb925e9989c328678a4fdb233a54c2d5718016b00c48ee83631cbb"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-005-database.json",
+      "sha256": "74d0a94eada9e485af3376b6aca609a3aefaad22637e09891409a05f7d3a8ded"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-005-database.log",
+      "sha256": "fadee17d82a70a7bf733f70ef21ec79c1aa4e0073db7fecbc267d099e4c2673a"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-006.json",
+      "sha256": "38e74422d4ad81af5583585308941bb78882daffb0f8403ab6c21ad884c4c2d1"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-006.json.sdk.json",
+      "sha256": "f181cf790174e714e7295de77b9cd257d926ba75062d556011638ba49422abd0"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-006.xml",
+      "sha256": "2c9e3ce216cb20ccb9b464274b49b8584d888dcbdc3d08470fe80b2677e26c98"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-006.log",
+      "sha256": "4544bb4d0c8058205e7427aa72cbf471d4fdd48990dcc9284705c0f03f6ef95c"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-006-database.json",
+      "sha256": "06a79fa0ac1946d03c7d845c4d9b1e630324eaf3136c01fec6e1c652e1ac43eb"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-006-database.log",
+      "sha256": "d3c1c286eac87c2de2b3defe36a97238b950b8b8c39923526a17b0155896c449"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-007.json",
+      "sha256": "9165d06916fbca7bebe69484ee3c21fc37d92f9cbcaeeb0edf4850b5102916ed"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-007.json.sdk.json",
+      "sha256": "f181cf790174e714e7295de77b9cd257d926ba75062d556011638ba49422abd0"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-007.xml",
+      "sha256": "5980b779afca53d8db677abdd5b66e19c236eb32b876f4d1649361cd094c31b8"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-007.log",
+      "sha256": "84efdf6bf123a25d4c01ba72f6023a4f44d42daa72e246e9e138aa226262f318"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-007-database.json",
+      "sha256": "7a15baaae4864eec17964d148b0b20474c37f67eb20e7a3b12ee3d34dbb8f6be"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-007-database.log",
+      "sha256": "1b74d499e7405f42a870e5acd71b4083766a18a56be4b79b2761439d3ef5c0ab"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-008.json",
+      "sha256": "58156ae54ebb9705603d059b81570c92de562781065a8a3091931241f5f7c900"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-008.json.sdk.json",
+      "sha256": "f181cf790174e714e7295de77b9cd257d926ba75062d556011638ba49422abd0"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-008.xml",
+      "sha256": "d1d5520c7d3e266325b722aaf2d37d209dbb680fef80eaf9ec146c821f6ffdff"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-008.log",
+      "sha256": "24878a616b182232e1f073e34cdb2da51f0933c2e481a25fcca9b62291ae9084"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-008-database.json",
+      "sha256": "fc50e27453063c5206b99c8159bac9fbcc8c8fab991dc0272dde6888cdc668b8"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-008-database.log",
+      "sha256": "9305bea09e9f3872474f9456d6ddd93321a5ccc4f112763a9c27e6392c8369a3"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-009.json",
+      "sha256": "9a6cda6ff41b18fd65451ae150bdcb71de40f12330a2e53acf0919955ce74205"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-009.json.sdk.json",
+      "sha256": "f181cf790174e714e7295de77b9cd257d926ba75062d556011638ba49422abd0"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-009.xml",
+      "sha256": "5aa872d7c91484d554a7ea724681a6c9a0eddb66758aa8235fc8346b7e5e1679"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-009.log",
+      "sha256": "697e0f9d682aa4a01040376389500b6e90dc653512ac6eaf2c8bc96fb4c3b318"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-009-database.json",
+      "sha256": "53af7662f37fa8b014a9dc55ca1e9552e5fa91fbde1b08a31a9f72d68f893513"
+    },
+    {
+      "path": ".loop/repairs/metadata-payload-erasure/full-native-cohorts/python-cohort-009-database.log",
+      "sha256": "9b2e6978389a51bb30a7d263a4cb84e9279f1bedb25259d0c14ab04d0b111d83"
+    }
+  ],
+  "parent_complete": false,
+  "authority": "none",
+  "beta_decision": "NO_GO",
+  "limitations": [
+    "SDK transport guard is not a universal network isolation claim.",
+    "Only the completed named cohorts were audited; no whole-product or full-suite acceptance.",
+    "New out-of-tree lineage oracle is a separately retained FAIL and is not in this inventory.",
+    "Same Codex operator; no independent human, provider, physical or operational proof."
+  ]
+}

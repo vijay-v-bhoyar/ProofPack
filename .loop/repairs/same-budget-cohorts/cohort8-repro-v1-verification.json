@@ -1,0 +1,120 @@
+{
+  "recorded_at": "2026-10-17T14:08:10.015092+00:00",
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "scope": "142 original cohort8 cases, exact flags/order and875s plus passive journal; no preceding-suite workload",
+  "cases": 142,
+  "phases": 426,
+  "journal_records": 570,
+  "journal_elapsed_seconds": 369.093,
+  "phase_total_seconds": 366.92747689999624,
+  "modules": {
+    "tests/integration/test_maintenance.py": {
+      "cases": 23,
+      "setup": 8.307454899999357,
+      "call": 6.191098999998758,
+      "teardown": 0.050553399998989335
+    },
+    "tests/integration/test_manifests.py": {
+      "cases": 29,
+      "setup": 69.8681262999994,
+      "call": 146.75002849999873,
+      "teardown": 0.23698570000260588
+    },
+    "tests/integration/test_measured_correction_reference.py": {
+      "cases": 24,
+      "setup": 23.443481399999655,
+      "call": 27.182050599999457,
+      "teardown": 0.14244990000179314
+    },
+    "tests/integration/test_metadata_payload_erasure.py": {
+      "cases": 22,
+      "setup": 0.051891499999783264,
+      "call": 0.7882760000011331,
+      "teardown": 0.028651700001319114
+    },
+    "tests/integration/test_original_frames.py": {
+      "cases": 32,
+      "setup": 32.841127899999265,
+      "call": 23.459767899997587,
+      "teardown": 0.16559209999832092
+    },
+    "tests/integration/test_original_metadata_store.py": {
+      "cases": 4,
+      "setup": 4.010117200000877,
+      "call": 2.7572983999989447,
+      "teardown": 0.05024790000015855
+    },
+    "tests/integration/test_owner_accounting_review_store.py": {
+      "cases": 8,
+      "setup": 7.9884179999999105,
+      "call": 12.586359100000209,
+      "teardown": 0.02749949999997625
+    }
+  },
+  "local_sdk_sends": 127480,
+  "blocked_sends": 0,
+  "confined_loaded_modules": 133,
+  "source_snapshot_frontend_node_reconciled": true,
+  "canonical_source_reconciled": true,
+  "memory_admission": {
+    "observed_at": "2026-10-17T14:01:45.982542+00:00",
+    "reading_succeeded": true,
+    "method": "Windows GlobalMemoryStatusEx",
+    "available_physical_bytes": 1716260864,
+    "available_commit_bytes": 36415156224,
+    "total_physical_bytes": 16858472448,
+    "total_commit_bytes": 68398080000,
+    "decision": "ADMIT_LOCAL_DIAGNOSTIC"
+  },
+  "database_terminated": true,
+  "database_state_removed": true,
+  "cleanup_boundary": "fresh owned lifecycle receipt and daemon hash; no independent probe of redacted temporary path",
+  "original_full_interruption_cause": "parent loss UNKNOWN; JVM native allocation/zero available commit observed",
+  "auditor_sha256": "64698689d0f670191e8f31b38094c9a54cac181f5be8d5e6e0b28ac7c5e70d13",
+  "phase_helper_sha256": "72f96aea7d4b81ba6e257b235d4461e30a4d989c76baa1b76c63145c9307e9f3",
+  "raw_evidence": [
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\cohort8-repro-v1-process.json",
+      "sha256": "792ad67d9a7d66f7560865baadb3b417e1bc2ca8a74a10cc49dd59f404f9aaa7"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\integration-regression\\cohort8-repro-v1-phases.jsonl",
+      "sha256": "b48a5d0a1b5f18c0cf3d6de4cf19dc86388d882c53f13026928297e99bf7e75b"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\full-v1-plan.json",
+      "sha256": "4d6d4ada90d1e717739080a3c3d4561a350dcaf238bec8657390967a87e8f60e"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\cohort8-repro-v1\\evidence\\local\\cohort8-repro-v1-execution.json",
+      "sha256": "5a1702d8700c48c791365de5ddc0095dc3137801f4b1395ec868c1d7f567fe36"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\cohort8-repro-v1\\evidence\\local\\cohort8-repro-v1.xml",
+      "sha256": "ac97b624a26cc3952ffdb927b4e4a7b74a2ef731c15a3370a928d33ff0e8d94c"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\cohort8-repro-v1\\evidence\\local\\cohort8-repro-v1.log",
+      "sha256": "b4f4afbcfbcf9eea4243e8cb068f5195da9e451966e859e88df1cde54347dbad"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\cohort8-repro-v1\\evidence\\local\\cohort8-repro-v1-origins.json",
+      "sha256": "74bf06af93dcb2c7c340059f1df4ad9bb067838de356dc589644625ec192dbc8"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\cohort8-repro-v1\\evidence\\local\\cohort8-repro-v1-execution.json.sdk.json",
+      "sha256": "87e03dbbe01f59d302d2c4cc6489d587d75b149ff99ee46a257711fb0dad79aa"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\cohort8-repro-v1\\evidence\\local\\cohort8-repro-v1-database.json",
+      "sha256": "570f4dbc213a2437295ce64b2fe6b90740f92d215e7ebe6d3b58126375c115dd"
+    },
+    {
+      "path": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\same-budget-cohorts\\candidate\\evidence\\local\\cohort8-repro-v1\\evidence\\local\\cohort8-repro-v1-database.log",
+      "sha256": "3c3b4eca25cb3e6f52ecc5616e4ba324cbd85dd4a1be75ed11e963a87c024591"
+    }
+  ],
+  "complete_suite_or_workflow_acceptance": false,
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

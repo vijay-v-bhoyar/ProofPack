@@ -1,0 +1,163 @@
+{
+  "recorded_at": "2026-10-18T03:10:44.699577+00:00",
+  "previous_goal_turn_classification": "PROGRESS:730-input full5133/15399/41 actual terminal audit passed; original holds retained; freeze released",
+  "current_goal_turn_classification": "PROGRESS: current full5149/15447/41 actual terminal composite audit0 and supplemental copy-dependency audit0; original holds/collection/8-prefix and33unused allowances preserved; source freeze released; parent scope remains incomplete",
+  "status": "HISTORICAL732_BASELINE_AFTER_JOURNAL_ADDITION",
+  "primary_owner": "codex-product-build-loop",
+  "support": "agentic-product-assurance Change/Verify",
+  "scope_id": "PP04-PP09-W05-W20-T41",
+  "subject_id": "working-tree-sha256:1173fb1c7d78d56f2a798df18b0d37220e1147978f2b805a0f4f531cc53c8852",
+  "source_inputs": 732,
+  "api_python_files": 145,
+  "source_frozen": false,
+  "active_verification_handles": [],
+  "verification_current": "verification-current-v1.json",
+  "registry": "subject-registry-v1.json",
+  "assurance": "assurance-current.json",
+  "repair_history": "repair-history-v1.json",
+  "full_current_cases": 5149,
+  "full_current_execution": "PASS_TERMINAL_COMPOSITE_5149_15447",
+  "baseline730_full_verification": "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\configured-auth-review-candidate\\full-composite-v1-verification.json",
+  "root_wheel_sha256": "69176ad05f13562afaa80ab7d502e2d9a87faaea59ba34f8f9f6cc5a4d872057",
+  "baseline_wheel_preserved": "baseline730-wheel.whl",
+  "frontend_changed": false,
+  "no_scope_reduction": "All nine personas/78 operations/AP01-AP04/W01-W26/T01-T58 retained; complete requester policy/classification/confirmation/cleanup/journal/restore/communication and provider/physical/human gates remain required",
+  "next_action": "Retained732-input full5149 audit remains historical; follow independent-erasure-journal/handoff-current.json for active735-input journal component and full parent scope. Do not poll terminal sessions or rerun old auditors against the updated root wheel.",
+  "execution_context": "Actual ASGI/local-emulator/browser and pip filesystem operations use allowed host context with fake AWS/profile/proxy scrubbing and original guards; all external SDK calls denied. Preserve original512MiB physical/2GiB commit admission. Sandbox metadata WinError5 source unchanged is retained; host+owned-temp build passes without an isolated causal claim.",
+  "external_dependencies": "D11 actual purpose/retention/data-owner values still unanswered/unassigned; no kits/operators; actual target/spend/provider/physical/human authority/evidence absent. Do not invent defaults or mark full beta ready.",
+  "queued_classification_hypothesis": ".loop/repairs/ownership-classification-digest-followup/assessment-before-reproduction.json",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "code_mutation_hold_during_prerequisites": false,
+  "support_verification": "canonical-support-v1-verification.json",
+  "support_cases": 92,
+  "support_phases": 276,
+  "support_returns": 93,
+  "support_local_sdk_sends": 19604,
+  "full_profile": "full-profile-v1.json",
+  "full_contract": "continuation-contract-before-v3.json",
+  "browser_verification": "canonical-browser-v1-verification.json",
+  "browser_cases": 399,
+  "browser_files": 16,
+  "browser_original_identities_retained": true,
+  "full_handle": "full-continuation-v2-live-handle.json",
+  "active_phase_observation": [],
+  "last_confirmation": "Exact session49931 terminal0 tool60dc4d; composite auditor actual0 tool8f21fe; supplemental auditor actual0 tool0ae6c0",
+  "documentation_validation": {
+    "status": "PASS",
+    "checks": 34,
+    "inputs": 33,
+    "receipt": "evidence/documentation-validation.json",
+    "sha256": "abcfae0f94d7a738c0d56ab12c070dc89d813300a1f2e4ebaf15880b31599b26",
+    "actual_tool_chunk": "3f0c8c"
+  },
+  "adoption_current_reconciliation": "evidence/local/persona-adoption-improve-current/review.json; PA-I41 current732 applicability; no persona/human acceptance",
+  "last_observed_at": "2026-10-18T03:10:44.699577+00:00",
+  "completed_cohorts": 41,
+  "completed_cases": 5149,
+  "active_cohorts": [],
+  "positive_auditor": "audit_full_composite_v2.py",
+  "original_terminal_holds": [
+    {
+      "process": "full-v1-process.json",
+      "status": "HOLD_RESOURCE_ADMISSION",
+      "controller_exit_code": 2,
+      "verification": "full-held-prefix-v1-verification.json",
+      "completed_cases": 987
+    },
+    {
+      "process": "full-continuation-v1-process.json",
+      "status": "HOLD_RESOURCE_ADMISSION",
+      "controller_receipt_exit_code": 2,
+      "shell_wrapper_exit_code": 1,
+      "verification": "full-continuation-v1-hold-verification.json",
+      "new_cases": 0,
+      "new_claims": 0
+    }
+  ],
+  "positive_live_refusal": {
+    "process": "full-continuation-v2-live-refusal-process.json",
+    "actual_auditor_exit_code": 2
+  },
+  "new_suffix_component_observations": "full-continuation-v2-completed-observations.jsonl",
+  "supplemental_terminal_guard": {
+    "checkpoint": "copy-dependency-checkpoint-v1.json",
+    "checkpoint_sha256": "af727bf8b4c51e8e9cd0a7588f506cb12a2ef8fda2eae616748552d0a7622c90",
+    "auditor": "audit_terminal_copy_dependency_v1.py",
+    "auditor_sha256": "ef3c287c15b2b43833011e22d7c325d06a1b3924ff07e58741b41263e77a9796",
+    "actual_live_refusal_exit_code": 2,
+    "result": "PASS_TERMINAL_POST_RUN_COPY_DEPENDENCY",
+    "actual_terminal_auditor_exit_code": 0
+  },
+  "native_owner_case_observation": {
+    "nodeid": "tests/integration/test_public_asset_store.py::test_configured_https_browser_owner_flow_uses_real_local_store_and_auth",
+    "status": "PASS_THREE_PHASES_ONLY_FULL_PENDING",
+    "phases": 3,
+    "diagnostic_copy_checkpoint": "copy-dependency-checkpoint-v1.json"
+  },
+  "completed_phases": 15447,
+  "full_verification": "full-composite-v2-verification.json",
+  "full_verification_sha256": "0f9a3fdb934097ae74c673beee5def9edc8df1740769a53bb63313f4076836f8",
+  "supplemental_verification": "terminal-copy-dependency-v1-verification.json",
+  "supplemental_verification_sha256": "496fb0f79c9d68d38a5d1594974c5f35f0fc65834b7f2e26fa527a5f910ed1a4",
+  "original_verified_prefix": [
+    {
+      "cohort": 1,
+      "cases": 52,
+      "phases": 156,
+      "status": "PASS_TERMINAL_PREFIX_AUDIT",
+      "verification": "full-held-prefix-v1-verification.json"
+    },
+    {
+      "cohort": 2,
+      "cases": 184,
+      "phases": 552,
+      "status": "PASS_TERMINAL_PREFIX_AUDIT",
+      "verification": "full-held-prefix-v1-verification.json"
+    },
+    {
+      "cohort": 3,
+      "cases": 77,
+      "phases": 231,
+      "status": "PASS_TERMINAL_PREFIX_AUDIT",
+      "verification": "full-held-prefix-v1-verification.json"
+    },
+    {
+      "cohort": 4,
+      "cases": 149,
+      "phases": 447,
+      "status": "PASS_TERMINAL_PREFIX_AUDIT",
+      "verification": "full-held-prefix-v1-verification.json"
+    },
+    {
+      "cohort": 5,
+      "cases": 140,
+      "phases": 420,
+      "status": "PASS_TERMINAL_PREFIX_AUDIT",
+      "verification": "full-held-prefix-v1-verification.json"
+    },
+    {
+      "cohort": 6,
+      "cases": 130,
+      "phases": 390,
+      "status": "PASS_TERMINAL_PREFIX_AUDIT",
+      "verification": "full-held-prefix-v1-verification.json"
+    },
+    {
+      "cohort": 7,
+      "cases": 147,
+      "phases": 441,
+      "status": "PASS_TERMINAL_PREFIX_AUDIT",
+      "verification": "full-held-prefix-v1-verification.json"
+    },
+    {
+      "cohort": 8,
+      "cases": 108,
+      "phases": 324,
+      "status": "PASS_TERMINAL_PREFIX_AUDIT",
+      "verification": "full-held-prefix-v1-verification.json"
+    }
+  ],
+  "future_full_preflight_requirement": "Include owner_copy_contract.py and every direct positive-auditor helper in the explicit before-launch frozen inputs. Preserve the supplemental after-browser/before-verifier checkpoint limitation for this completed run; do not rewrite its original manifest.",
+  "current_subject_handoff": ".loop/repairs/independent-erasure-journal/handoff-current.json"
+}

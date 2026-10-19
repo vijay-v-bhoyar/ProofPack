@@ -1,0 +1,56 @@
+{
+  "recorded_at": "2026-10-17T21:06:34.688923+00:00",
+  "scope": "offline modeled origin fixture, sanitized family/schema inventory only; not real business history or a new classifier",
+  "accounting_policy": "conservative-family-accounting-v4",
+  "counts": {
+    "AFFECTED": 7,
+    "SHARED": 0,
+    "CONTEXT": 11,
+    "UNRELATED": 0,
+    "UNRESOLVED": 2
+  },
+  "unresolved_groups": [
+    {
+      "table": "events",
+      "prefix": "access",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    },
+    {
+      "table": "state",
+      "prefix": "access-head",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "count": 1
+    }
+  ],
+  "schemas": [
+    {
+      "table": "events",
+      "prefix": "access",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "fields": [
+        "actor_id",
+        "at_ms",
+        "kind",
+        "receipt",
+        "resource_bindings"
+      ]
+    },
+    {
+      "table": "state",
+      "prefix": "access-head",
+      "reason": "UNSUPPORTED_FAMILY_POLICY",
+      "fields": [
+        "bootstrap_receipt",
+        "bootstrap_scope",
+        "bootstrap_user_id",
+        "enabled_user_ids",
+        "owner_ids",
+        "pending_invitation_ids",
+        "schema_version"
+      ]
+    }
+  ],
+  "sdk_attempts": 0,
+  "source_app_changes": false
+}

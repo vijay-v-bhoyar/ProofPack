@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-10-17T23:31:23.267128+00:00",
+  "status": "PASS_OFFLINE_INSTALLED_SELECTED_SCOPE_ONLY",
+  "cases": 553,
+  "phases": 1659,
+  "same_ordered_source_cases": true,
+  "source_inputs": 730,
+  "installed_modules": 139,
+  "all_origins_in_isolated_site": true,
+  "sdk_calls_blocked": 0,
+  "transport_sends_blocked": 0,
+  "temporary_site_and_install_directory_removed": true,
+  "source_and_wheel_unchanged": true,
+  "wheel_sha256": "d8f54aa4a4aa4ec0b5eff01bfa3ce6984c39a57432b7711109e306b3676ebbff",
+  "scope": "Installed backend model/config/factory/HTTP/Node contract checks; not native/provider/whole-product acceptance",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "raw_evidence": [
+    {
+      "path": ".loop\\repairs\\configured-auth-review-candidate\\installed-v1-process.json",
+      "sha256": "edf1a935b4db9e4b9ceb6b0007350d1c30d6be822bdf1631be7603b2718f2299"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-installed-v1\\execution.json",
+      "sha256": "34b51eadab63ae34ba59e7f2b453c78339173573444e299f27d73bafd999da10"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-installed-v1\\tests.xml",
+      "sha256": "008e29ae6d37cb33fb1868106e16620d21d4f47d14c01c59f87eabc5cf891c38"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-installed-v1\\child.json",
+      "sha256": "6192c54bcbe13efa7982be5c2eaa406f834f063785b3b21edc266cf78728a750"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-installed-v1\\units.log",
+      "sha256": "4a223cc0888c8b095d0310499463811f3890e222c970984ef71431eaba29fd81"
+    }
+  ]
+}

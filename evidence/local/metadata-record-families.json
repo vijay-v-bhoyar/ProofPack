@@ -1,0 +1,971 @@
+{
+  "scope": "structural key-prefix inventory only; not semantic erasure policy",
+  "references": [
+    {
+      "table": "state",
+      "prefix": "oauth-quota#",
+      "path": "services/api/proofpack/auth/oauth.py",
+      "line": 123
+    },
+    {
+      "table": "state",
+      "prefix": "oauth-flow#",
+      "path": "services/api/proofpack/auth/oauth.py",
+      "line": 179
+    },
+    {
+      "table": "state",
+      "prefix": "oauth-flow#",
+      "path": "services/api/proofpack/auth/oauth.py",
+      "line": 159
+    },
+    {
+      "table": "state",
+      "prefix": "access-head",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 19
+    },
+    {
+      "table": "state",
+      "prefix": "runtime",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 20
+    },
+    {
+      "table": "state",
+      "prefix": "identity#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 40
+    },
+    {
+      "table": "state",
+      "prefix": "user#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 46
+    },
+    {
+      "table": "state",
+      "prefix": "invitation#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 51
+    },
+    {
+      "table": "state",
+      "prefix": "session#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 266
+    },
+    {
+      "table": "state",
+      "prefix": "idempotency#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 307
+    },
+    {
+      "table": "state",
+      "prefix": "owner-transfer#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 348
+    },
+    {
+      "table": "state",
+      "prefix": "owner-transfer#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 617
+    },
+    {
+      "table": "state",
+      "prefix": "cookie#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 649
+    },
+    {
+      "table": "state",
+      "prefix": "session#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 651
+    },
+    {
+      "table": "state",
+      "prefix": "cookie#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 218
+    },
+    {
+      "table": "state",
+      "prefix": "session#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 219
+    },
+    {
+      "table": "state",
+      "prefix": "cookie#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 260
+    },
+    {
+      "table": "events",
+      "prefix": "access#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 318
+    },
+    {
+      "table": "events",
+      "prefix": "access#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 196
+    },
+    {
+      "table": "state",
+      "prefix": "owner-transfer#",
+      "path": "services/api/proofpack/auth/service.py",
+      "line": 612
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-active#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 58
+    },
+    {
+      "table": "state",
+      "prefix": "physical-calibration-assurance#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 25
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-dependencies#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 61
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-report#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 66
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 98
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 98
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 49
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 68
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/calibrations/dependencies.py",
+      "line": 68
+    },
+    {
+      "table": "state",
+      "prefix": "calibration#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 19
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-revision#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 22
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-active#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 23
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-report#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 24
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-job#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 25
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-quota#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 42
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 71
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-dependencies#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 327
+    },
+    {
+      "table": "events",
+      "prefix": "calibration#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 166
+    },
+    {
+      "table": "events",
+      "prefix": "calibration#",
+      "path": "services/api/proofpack/calibrations/service.py",
+      "line": 236
+    },
+    {
+      "table": "events",
+      "prefix": "capture#",
+      "path": "services/api/proofpack/capture/observations.py",
+      "line": 200
+    },
+    {
+      "table": "state",
+      "prefix": "action#",
+      "path": "services/api/proofpack/capture/publication.py",
+      "line": 27
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/capture/publication.py",
+      "line": 28
+    },
+    {
+      "table": "state",
+      "prefix": "object-intent#",
+      "path": "services/api/proofpack/capture/publication.py",
+      "line": 29
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/capture/publication.py",
+      "line": 36
+    },
+    {
+      "table": "events",
+      "prefix": "capture#",
+      "path": "services/api/proofpack/capture/publication.py",
+      "line": 221
+    },
+    {
+      "table": "state",
+      "prefix": "capture-permit#",
+      "path": "services/api/proofpack/capture/service.py",
+      "line": 20
+    },
+    {
+      "table": "state",
+      "prefix": "observation#",
+      "path": "services/api/proofpack/capture/service.py",
+      "line": 21
+    },
+    {
+      "table": "state",
+      "prefix": "upload-quota#",
+      "path": "services/api/proofpack/capture/service.py",
+      "line": 133
+    },
+    {
+      "table": "events",
+      "prefix": "capture#",
+      "path": "services/api/proofpack/capture/service.py",
+      "line": 206
+    },
+    {
+      "table": "state",
+      "prefix": "erasure-preview#",
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "line": 19
+    },
+    {
+      "table": "state",
+      "prefix": "maintenance-job#",
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "line": 20
+    },
+    {
+      "table": "state",
+      "prefix": "erasure-",
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "line": 43
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "line": 55
+    },
+    {
+      "table": "state",
+      "prefix": "asset-erasure#",
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "line": 143
+    },
+    {
+      "table": "events",
+      "prefix": "erasure#",
+      "path": "services/api/proofpack/evidence/erasure.py",
+      "line": 224
+    },
+    {
+      "table": "state",
+      "prefix": "export-manifest#",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 41
+    },
+    {
+      "table": "state",
+      "prefix": "export-ticket#",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 42
+    },
+    {
+      "table": "state",
+      "prefix": "export-",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 86
+    },
+    {
+      "table": "state",
+      "prefix": "observation#",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 100
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 292
+    },
+    {
+      "table": "events",
+      "prefix": "export#",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 423
+    },
+    {
+      "table": "state",
+      "prefix": "action#",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 374
+    },
+    {
+      "table": "events",
+      "prefix": "export#",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 473
+    },
+    {
+      "table": "events",
+      "prefix": "export#",
+      "path": "services/api/proofpack/evidence/exports.py",
+      "line": 496
+    },
+    {
+      "table": "state",
+      "prefix": "improvement-preview#",
+      "path": "services/api/proofpack/evidence/improvement.py",
+      "line": 56
+    },
+    {
+      "table": "state",
+      "prefix": "improvement-permission#",
+      "path": "services/api/proofpack/evidence/improvement.py",
+      "line": 57
+    },
+    {
+      "table": "state",
+      "prefix": "improvement-grant#",
+      "path": "services/api/proofpack/evidence/improvement.py",
+      "line": 58
+    },
+    {
+      "table": "state",
+      "prefix": "improvement-",
+      "path": "services/api/proofpack/evidence/improvement.py",
+      "line": 109
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/evidence/improvement.py",
+      "line": 87
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/evidence/purposes.py",
+      "line": 31
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/evidence/reads.py",
+      "line": 43
+    },
+    {
+      "table": "state",
+      "prefix": "asset-read-quota#",
+      "path": "services/api/proofpack/evidence/reads.py",
+      "line": 111
+    },
+    {
+      "table": "events",
+      "prefix": "asset-read#",
+      "path": "services/api/proofpack/evidence/reads.py",
+      "line": 117
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/evidence/reads.py",
+      "line": 57
+    },
+    {
+      "table": "state",
+      "prefix": "reference-intent#",
+      "path": "services/api/proofpack/evidence/references.py",
+      "line": 127
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/evidence/references.py",
+      "line": 181
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/evidence/references.py",
+      "line": 196
+    },
+    {
+      "table": "state",
+      "prefix": "reference-quota#",
+      "path": "services/api/proofpack/evidence/references.py",
+      "line": 68
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/evidence/references.py",
+      "line": 168
+    },
+    {
+      "table": "events",
+      "prefix": "reference#",
+      "path": "services/api/proofpack/evidence/references.py",
+      "line": 171
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification#",
+      "path": "services/api/proofpack/planner/activation.py",
+      "line": 25
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification-current#",
+      "path": "services/api/proofpack/planner/activation.py",
+      "line": 26
+    },
+    {
+      "table": "state",
+      "prefix": "policy-activation#",
+      "path": "services/api/proofpack/planner/activation.py",
+      "line": 27
+    },
+    {
+      "table": "state",
+      "prefix": "policy-activation-",
+      "path": "services/api/proofpack/planner/activation.py",
+      "line": 102
+    },
+    {
+      "table": "events",
+      "prefix": "active-policy-access#",
+      "path": "services/api/proofpack/planner/activation.py",
+      "line": 236
+    },
+    {
+      "table": "state",
+      "prefix": "policy-candidate#",
+      "path": "services/api/proofpack/planner/candidates.py",
+      "line": 48
+    },
+    {
+      "table": "state",
+      "prefix": "policy-revision#",
+      "path": "services/api/proofpack/planner/candidates.py",
+      "line": 49
+    },
+    {
+      "table": "state",
+      "prefix": "policy-",
+      "path": "services/api/proofpack/planner/candidates.py",
+      "line": 70
+    },
+    {
+      "table": "events",
+      "prefix": "policy-read#",
+      "path": "services/api/proofpack/planner/candidates.py",
+      "line": 120
+    },
+    {
+      "table": "state",
+      "prefix": "policy-catalog#",
+      "path": "services/api/proofpack/planner/candidates.py",
+      "line": 170
+    },
+    {
+      "table": "state",
+      "prefix": "policy-activation#",
+      "path": "services/api/proofpack/planner/rollback.py",
+      "line": 18
+    },
+    {
+      "table": "state",
+      "prefix": "recipe-qualification-job#",
+      "path": "services/api/proofpack/recipes/qualification.py",
+      "line": 21
+    },
+    {
+      "table": "state",
+      "prefix": "recipe-qualification-report#",
+      "path": "services/api/proofpack/recipes/qualification.py",
+      "line": 22
+    },
+    {
+      "table": "state",
+      "prefix": "recipe-qualification-quota#",
+      "path": "services/api/proofpack/recipes/qualification.py",
+      "line": 87
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/recipes/qualification.py",
+      "line": 115
+    },
+    {
+      "table": "events",
+      "prefix": "recipe-qualification#",
+      "path": "services/api/proofpack/recipes/qualification.py",
+      "line": 148
+    },
+    {
+      "table": "state",
+      "prefix": "recipe#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 17
+    },
+    {
+      "table": "state",
+      "prefix": "recipe-active#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 18
+    },
+    {
+      "table": "state",
+      "prefix": "recipe-qualification#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 20
+    },
+    {
+      "table": "state",
+      "prefix": "calibration-active#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 118
+    },
+    {
+      "table": "state",
+      "prefix": "recipe-qualification-report#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 119
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 157
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 157
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 129
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/recipes/service.py",
+      "line": 129
+    },
+    {
+      "table": "state",
+      "prefix": "evaluation-report#",
+      "path": "services/api/proofpack/review/evaluations.py",
+      "line": 20
+    },
+    {
+      "table": "state",
+      "prefix": "evaluation-example#",
+      "path": "services/api/proofpack/review/evaluations.py",
+      "line": 21
+    },
+    {
+      "table": "state",
+      "prefix": "evaluation-",
+      "path": "services/api/proofpack/review/evaluations.py",
+      "line": 44
+    },
+    {
+      "table": "state",
+      "prefix": "evaluation-catalog#",
+      "path": "services/api/proofpack/review/evaluations.py",
+      "line": 122
+    },
+    {
+      "table": "events",
+      "prefix": "evaluation-access#",
+      "path": "services/api/proofpack/review/evaluations.py",
+      "line": 280
+    },
+    {
+      "table": "state",
+      "prefix": "label#",
+      "path": "services/api/proofpack/review/labels.py",
+      "line": 61
+    },
+    {
+      "table": "state",
+      "prefix": "label-revision#",
+      "path": "services/api/proofpack/review/labels.py",
+      "line": 62
+    },
+    {
+      "table": "state",
+      "prefix": "label-quota#",
+      "path": "services/api/proofpack/review/labels.py",
+      "line": 193
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/review/labels.py",
+      "line": 106
+    },
+    {
+      "table": "state",
+      "prefix": "purpose#",
+      "path": "services/api/proofpack/review/labels.py",
+      "line": 108
+    },
+    {
+      "table": "state",
+      "prefix": "action#",
+      "path": "services/api/proofpack/review/labels.py",
+      "line": 90
+    },
+    {
+      "table": "state",
+      "prefix": "asset#",
+      "path": "services/api/proofpack/review/labels.py",
+      "line": 120
+    },
+    {
+      "table": "state",
+      "prefix": "action#",
+      "path": "services/api/proofpack/review/labels.py",
+      "line": 82
+    },
+    {
+      "table": "state",
+      "prefix": "dataset-manifest#",
+      "path": "services/api/proofpack/review/manifests.py",
+      "line": 77
+    },
+    {
+      "table": "state",
+      "prefix": "dataset-example#",
+      "path": "services/api/proofpack/review/manifests.py",
+      "line": 78
+    },
+    {
+      "table": "state",
+      "prefix": "dataset-group#",
+      "path": "services/api/proofpack/review/manifests.py",
+      "line": 79
+    },
+    {
+      "table": "state",
+      "prefix": "dataset-",
+      "path": "services/api/proofpack/review/manifests.py",
+      "line": 110
+    },
+    {
+      "table": "events",
+      "prefix": "dataset-access#",
+      "path": "services/api/proofpack/review/manifests.py",
+      "line": 333
+    },
+    {
+      "table": "state",
+      "prefix": "dataset-catalog#",
+      "path": "services/api/proofpack/review/manifests.py",
+      "line": 135
+    },
+    {
+      "table": "events",
+      "prefix": "dataset-declassification#",
+      "path": "services/api/proofpack/review/manifests.py",
+      "line": 416
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification-entry#",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 34
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification-software#",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 35
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification-software-page#",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 36
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification-golden#",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 37
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification-",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 168
+    },
+    {
+      "table": "events",
+      "prefix": "policy-qualification-read#",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 421
+    },
+    {
+      "table": "events",
+      "prefix": "policy-qualification-access#",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 461
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification-catalog#",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 199
+    },
+    {
+      "table": "state",
+      "prefix": "policy-qualification-user#",
+      "path": "services/api/proofpack/review/policy_qualification.py",
+      "line": 199
+    },
+    {
+      "table": "state",
+      "prefix": "qualification-preparation-entry#",
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "line": 40
+    },
+    {
+      "table": "state",
+      "prefix": "qualification-preparation-report#",
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "line": 41
+    },
+    {
+      "table": "state",
+      "prefix": "qualification-preparation-",
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "line": 101
+    },
+    {
+      "table": "state",
+      "prefix": "qualification-preparation-catalog#",
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "line": 130
+    },
+    {
+      "table": "state",
+      "prefix": "qualification-preparation-user#",
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "line": 131
+    },
+    {
+      "table": "events",
+      "prefix": "qualification-preparation-access#",
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "line": 221
+    },
+    {
+      "table": "events",
+      "prefix": "qualification-preparation-access#",
+      "path": "services/api/proofpack/review/qualification_preparation.py",
+      "line": 270
+    },
+    {
+      "table": "state",
+      "prefix": "data-authority",
+      "path": "services/api/proofpack/runtime/control.py",
+      "line": 17
+    },
+    {
+      "table": "state",
+      "prefix": "allocation",
+      "path": "services/api/proofpack/runtime/control.py",
+      "line": 18
+    },
+    {
+      "table": "state",
+      "prefix": "runtime-start#",
+      "path": "services/api/proofpack/runtime/control.py",
+      "line": 96
+    },
+    {
+      "table": "state",
+      "prefix": "readiness#",
+      "path": "services/api/proofpack/runtime/control.py",
+      "line": 254
+    },
+    {
+      "table": "state",
+      "prefix": "readiness-review#",
+      "path": "services/api/proofpack/runtime/control.py",
+      "line": 255
+    },
+    {
+      "table": "events",
+      "prefix": "runtime#",
+      "path": "services/api/proofpack/runtime/control.py",
+      "line": 126
+    },
+    {
+      "table": "state",
+      "prefix": "readiness#",
+      "path": "services/api/proofpack/runtime/control.py",
+      "line": 198
+    },
+    {
+      "table": "state",
+      "prefix": "readiness-review#",
+      "path": "services/api/proofpack/runtime/control.py",
+      "line": 199
+    },
+    {
+      "table": "state",
+      "prefix": "maintenance-step-quota",
+      "path": "services/api/proofpack/runtime/maintenance.py",
+      "line": 16
+    },
+    {
+      "table": "state",
+      "prefix": "maintenance-job#",
+      "path": "services/api/proofpack/runtime/maintenance.py",
+      "line": 85
+    },
+    {
+      "table": "state",
+      "prefix": "inspection-handoff#",
+      "path": "services/api/proofpack/stations/handoffs.py",
+      "line": 101
+    },
+    {
+      "table": "state",
+      "prefix": "handoff-inbox#",
+      "path": "services/api/proofpack/stations/handoffs.py",
+      "line": 102
+    },
+    {
+      "table": "state",
+      "prefix": "handoff-read-quota#",
+      "path": "services/api/proofpack/stations/handoffs.py",
+      "line": 267
+    },
+    {
+      "table": "state",
+      "prefix": "policy-active",
+      "path": "services/api/proofpack/stations/service.py",
+      "line": 18
+    },
+    {
+      "table": "state",
+      "prefix": "station#",
+      "path": "services/api/proofpack/stations/service.py",
+      "line": 25
+    },
+    {
+      "table": "state",
+      "prefix": "inspection#",
+      "path": "services/api/proofpack/stations/service.py",
+      "line": 26
+    },
+    {
+      "table": "state",
+      "prefix": "station-quota#",
+      "path": "services/api/proofpack/stations/service.py",
+      "line": 129
+    },
+    {
+      "table": "state",
+      "prefix": "human-disposition#",
+      "path": "services/api/proofpack/stations/service.py",
+      "line": 323
+    },
+    {
+      "table": "state",
+      "prefix": "session#",
+      "path": "services/api/proofpack/stations/service.py",
+      "line": 393
+    },
+    {
+      "table": "state",
+      "prefix": "human-disposition#",
+      "path": "services/api/proofpack/stations/service.py",
+      "line": 362
+    }
+  ]
+}

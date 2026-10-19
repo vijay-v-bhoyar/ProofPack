@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-18T03:07:16.722242+00:00",
+  "status": "PASS_TERMINAL_POST_RUN_COPY_DEPENDENCY",
+  "full_composite_sha256": "0f9a3fdb934097ae74c673beee5def9edc8df1740769a53bb63313f4076836f8",
+  "checkpoint_sha256": "af727bf8b4c51e8e9cd0a7588f506cb12a2ef8fda2eae616748552d0a7622c90",
+  "copy_verifier_sha256": "7978e901faaf957b87cc584446c3d17c1f963a5183f3c97a7a64e51d606b7a7f",
+  "binding": {
+    "logical_sha256": "081020c0a49a6ae09c2686edc521e8b7ffda10e1fd95ae84f8271c728e9f7bc5",
+    "copy_sha256": "dc8b67dcf13a568bc81dd54fc51027ce1e81490a884fca2be8ecbfef320ad419",
+    "copy_encoding": "UTF-8 without BOM; exact CRLF text-write serialization"
+  },
+  "scope": "supplemental unchanged post-run verifier dependency only; complete composite audit remains mandatory",
+  "limitation": "checkpoint after browser test execution, before terminal verifier use; no retroactive runtime-manifest claim",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

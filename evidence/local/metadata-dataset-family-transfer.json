@@ -1,0 +1,25 @@
+{
+  "status": "THREE_TESTED_FILES_TRANSFERRED",
+  "canonical_origin_inputs": 602,
+  "canonical_current_inputs": 605,
+  "canonical_equals_installed_candidate": true,
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/dataset_lineage.py",
+      "sha256": "60a6fee7dc425a6a1203bb0f61d2db3a8ea066966269dae34f04f92becb65112"
+    },
+    {
+      "path": "tests/unit/test_dataset_lineage.py",
+      "sha256": "a1d7505853cb4f7893cd5c101fb23c9364da45df415dd5f69cb5e7404698402e"
+    },
+    {
+      "path": "tests/integration/test_dataset_lineage_store.py",
+      "sha256": "4e5a7eaec8722dbae684120a220e06e31559c6931251ac62780de1da985f3082"
+    }
+  ],
+  "preserved_stage_receipt_hashes": 171,
+  "canonical_regression": "PENDING",
+  "aggregate_cleanup": "INCOMPLETE",
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

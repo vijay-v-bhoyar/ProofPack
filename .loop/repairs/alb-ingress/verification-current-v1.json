@@ -1,0 +1,100 @@
+{
+  "recorded_at": "2026-10-18T16:05:14.880140+00:00",
+  "subject_id": "working-tree-manifest-sha256:7b84841b2ff817a7b7b7cd04df705ba0bc0a37aa667833e42a4e09053a204af4",
+  "source_inputs": 799,
+  "status": "PASS_LOCAL_SELECTED_SOURCE_INSTALLED_NATIVE_HELD",
+  "groups": [
+    {
+      "group": "feature",
+      "cases": 79,
+      "phases": 237,
+      "source_process": "evidence/local/fresh-enrollment-models-alb-ingress-feature-current-v2/process.json",
+      "source_process_sha256": "10dc408973087949c4dfa72eb4aa661370bc19de25762a4d58b567c21e52c3db",
+      "installed_process": ".loop/repairs/alb-ingress/installed-feature-v1-process.json",
+      "installed_process_sha256": "6e042e7909c6e5acd1afd6b517c6d7330d3c3308629e90968e1d2a7fa1367f5a"
+    },
+    {
+      "group": "host",
+      "cases": 173,
+      "phases": 519,
+      "source_process": "evidence/local/fresh-enrollment-models-alb-ingress-host-current-v1/process.json",
+      "source_process_sha256": "96ddf6acd12c43abc4c318ae16e118f9c9ee5685969a8ff7d9ba5d91d6b7e8a7",
+      "installed_process": ".loop/repairs/alb-ingress/installed-host-v1-process.json",
+      "installed_process_sha256": "7fac55f8851f7dd54fe3898674a75fca8ed1443033776299e516a71a3a6b4925"
+    },
+    {
+      "group": "enrollment",
+      "cases": 58,
+      "phases": 174,
+      "source_process": "evidence/local/fresh-enrollment-models-alb-ingress-enrollment-current-v1/process.json",
+      "source_process_sha256": "9c914a2c74b63bbddf035a77c3904deddc3a7a87016601be220c5a73eed05250",
+      "installed_process": ".loop/repairs/alb-ingress/installed-enrollment-v1-process.json",
+      "installed_process_sha256": "6f1f6acc75a1627b5ef871ef9b101dcb3b771ff88005ed188a7e3b9b4758e1bc"
+    }
+  ],
+  "source_cases": 310,
+  "source_phases": 930,
+  "installed_same_cases": 310,
+  "installed_phases": 930,
+  "http_sdk_sends": 0,
+  "new_ingress_cases": 31,
+  "original_27_oracle_byte_identical": true,
+  "baseline": "10FAIL/17PASS; explicit ingress/config module absent; no actual cloud incident",
+  "actual_mechanism": "Installed Uvicorn Config.load; synthetic socket peers with actual internal HTTP scope and external HTTPS cookie jar; protected ASGI/model state and signed offline owner callback",
+  "postconditions": [
+    "trusted two-subnet OAuth and signed owner callback",
+    "untrusted/default/missing-proto/http/wrong-host denied",
+    "environment wildcard cannot broaden trust",
+    "new ingress invalidates prior prepared initial-release binding",
+    "fixed workers1/reloadFalse/access_logFalse; disabled readiness and lifecycle/client drain"
+  ],
+  "wheel_sha256": "63ec384c6081e008dd1586cb53cbd316299f9323af8b677883acdc9cc4138681",
+  "backend_files": 158,
+  "web_assets": 3,
+  "runtime_members_verified": 161,
+  "collection_cases": 5943,
+  "collection_phases": 0,
+  "full_current_suite": "NOT_RUN",
+  "native_cases_selected": 10,
+  "native_execution": "NOT_RUN_MEMORY_ADMISSION_HELD",
+  "native_execution_allowance_used_seconds": 0,
+  "admitted_precheck": {
+    "observed_at": "2026-10-18T16:02:15.425640+00:00",
+    "reading_succeeded": true,
+    "method": "Windows GlobalMemoryStatusEx",
+    "available_physical_bytes": 1473454080,
+    "available_commit_bytes": 13087039488,
+    "total_physical_bytes": 16858472448,
+    "total_commit_bytes": 68398080000,
+    "decision": "ADMIT_LOCAL_DIAGNOSTIC"
+  },
+  "held_internal_sample": {
+    "observed_at": "2026-10-18T16:02:50.518193+00:00",
+    "reading_succeeded": true,
+    "method": "Windows GlobalMemoryStatusEx",
+    "available_physical_bytes": 432357376,
+    "available_commit_bytes": 10788757504,
+    "total_physical_bytes": 16858472448,
+    "total_commit_bytes": 68398080000,
+    "decision": "HOLD_INSUFFICIENT_MEMORY"
+  },
+  "native_process": ".loop/repairs/first-owner/native-scope-v1-process.json",
+  "native_process_sha256": "0475034c9e90c5163a6853ff55cf4c9e0225b1d2c26242da42c3e62aa10fc4f5",
+  "native_database_started": false,
+  "graph_nodes": 2390,
+  "graph_edges": 10294,
+  "graph_limits": "API AST only; legacy IDs/community labels; no UI/test semantics",
+  "frontend_build": "Retained unchanged UI assets, verified in new wheel; no new frontend build or browser run",
+  "scope_limits": "Synthetic SDK state/role/creation IDs/approval and signed provider; actual local CV/installation/ASGI/Uvicorn. No actual ALB/SG/TLS/certificate/provider/IAM/host/physical/human acceptance.",
+  "remaining": [
+    "PP12 CloudFormation/cost/install/recovery/teardown review pack",
+    "actual target/TLS/proxy/SG/provider/private-log and D07/D11 decisions",
+    "native/full current suite",
+    "complete recovery/privacy/requester/media obligations",
+    "prior browser adverse causes and IJ-T01 original-oracle independent review",
+    "all five features/9personas/78operations whole workflow and human acceptance"
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "authority": "none"
+}

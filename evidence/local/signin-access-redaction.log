@@ -1,0 +1,8 @@
+INFO Started server process [62772]
+INFO Waiting for application startup.
+INFO Application startup complete.
+INFO Uvicorn running on http://127.0.0.1:54063 (Press CTRL+C to quit)
+INFO 127.0.0.1:54066 - "GET /health/live HTTP/1.1" 200
+INFO 127.0.0.1:54066 - "GET /api/v1/auth/callback HTTP/1.1" 503
+INFO 127.0.0.1:54066 - "GET /api/v1/auth/callback HTTP/1.1" 400
+INFO 127.0.0.1:54066 - "GET /api/v1/auth/unknown HTTP/1.1" 404

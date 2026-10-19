@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-10-18T10:04:45.638483+00:00",
+  "exec_session": 17074,
+  "pid": 20432,
+  "actual_exit_code": 1,
+  "all147_case_outcomes_accounted": true,
+  "native_database_cleanup_verified": true,
+  "source_input_fences_intact": true,
+  "source_freeze": "RELEASED_AFTER_FAILED_DIAGNOSTIC_RECONCILIATION",
+  "failure_remains_open": true,
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "installed_wheel_local_ASGI_only",
+  "index_sha256": "c7973b5bb3ae630e805c67128a6f9bb3577a1f56aa46aaaf115efa8d43eb3749",
+  "assets": [
+    {
+      "path": "assets/index-B1QTIicu.js",
+      "sha256": "eb40b80042a2a6ab33bc03f3ffa8d1fb6d4c5a68f6cb4ea7d211b29621266ea0"
+    },
+    {
+      "path": "assets/index-V_ND2R91.css",
+      "sha256": "c3e0e745d8b557f7f298b3b32b5d8c4fa26f0415bc500cb4c919e1fc62f6aa2a"
+    }
+  ],
+  "entrypoint": "proofpack.runtime.host:main",
+  "readiness": "DENIED",
+  "credential_discovery": "NOT_CALLED",
+  "wheel_sha256": "9b74d34b75e92e6fa3207b9362fd0f2f281b6a8ba37f9d9180d20b528a915fa3",
+  "wheel": ".runtime/dist/proofpack-0.1.0-py3-none-any.whl",
+  "beta_decision": "NO_GO"
+}

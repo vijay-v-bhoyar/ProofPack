@@ -1,0 +1,70 @@
+{
+  "status": "PASS_FOR_STAGED_CAPTURE_MEDIA_FAMILY_ONLY",
+  "checks": {
+    "metadata-lineage-capture-family-purpose-final": {
+      "tests": 213,
+      "passing_phases": 639
+    },
+    "metadata-capture-family-installed": {
+      "tests": 213,
+      "passing_phases": 639
+    },
+    "metadata-capture-family-package-final": {
+      "tests": 305,
+      "passing_phases": 915
+    }
+  },
+  "changes": [
+    {
+      "path": "services/api/proofpack/evidence/capture_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "41b53c54fdde4f1ead156f5560e26147a2e502d249c0298233a610d8863ba71e"
+    },
+    {
+      "path": "services/api/proofpack/evidence/originals.py",
+      "before_sha256": "fd1bac619213ccbba9b3063f86da1de61278dff432aaae5c91550e8501939cc2",
+      "candidate_sha256": "14790a2928dcc9f7825a0da5fb8a27d3f3a2b50d69a33dc2a292f413b5d5bf82"
+    },
+    {
+      "path": "tests/unit/test_capture_lineage.py",
+      "before_sha256": null,
+      "candidate_sha256": "ad8bb203cb94d2eec111d18f5a946a5b728ecddf0f986eda784539fcba7a833b"
+    },
+    {
+      "path": "tests/integration/test_capture_family_store.py",
+      "before_sha256": null,
+      "candidate_sha256": "414156274ec34b84326946b412cd51bd705ef6863acfcb6221fa54dd607913d4"
+    }
+  ],
+  "canonical_unchanged": true,
+  "integrated": false,
+  "source_inputs": 592,
+  "exact_backend_files": 110,
+  "exact_frontend_files": 3,
+  "installed_modules": 99,
+  "opencv_version": "5.0.0",
+  "original_oracles": {
+    "metadata-lineage-capture-family-purpose-final": {
+      "identifier": 9,
+      "purpose": 1
+    },
+    "metadata-capture-family-installed": {
+      "identifier": 9,
+      "purpose": 1
+    }
+  },
+  "oracle_identity": "unchanged-source collection binds exact function paths/hashes to both actual terminal inventories; collection alone is not execution",
+  "wheel_sha256": "d432828a40c2d66891d8782803c62ff6480f03c1edbae0a0cb292db44e45aab2",
+  "scope": "provided-family coherence, actual local writer records, partial media and shared private lifecycle only; no full cleanup/barrier/provider/legal/physical/human authority",
+  "retained_product_failures": [
+    "incorrect UUID assumption for existing Identifier",
+    "unbound purpose accepted on failed intent"
+  ],
+  "retained_setup_failures": [
+    "missing redirected-log directory prevented invocation",
+    "fixture cursor argument instead of start_resource",
+    "archived recipe fixture missing; parent bridge not discovered; explicit plugin required"
+  ],
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

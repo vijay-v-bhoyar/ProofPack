@@ -1,0 +1,73 @@
+{
+  "recorded_at": "2026-10-18T05:19:03.074429+00:00",
+  "id": "CB-F01",
+  "status": "OBSERVED_NATIVE_BROWSER_FAILURE_CAUSE_UNKNOWN",
+  "subject_id": "working-tree-manifest-sha256:db71e64e81bf3b7f277c29af0166d957b68f6378b810d1ceb6946b9ff2f7807a",
+  "source_inputs": 737,
+  "cohort": 9,
+  "cases": 146,
+  "phases": 438,
+  "failed_call_phases": 1,
+  "failed_nodeid": "tests/integration/test_owner_collateral_browser.py::test_configured_https_collateral_scope_has_no_action_authority",
+  "failure": "locator.check timed out at original5000ms while waiting for acknowledgment checkbox visible/enabled/stable; child exit1",
+  "observed_diagnostics": {
+    "dom": "Checkbox snapshot visible/enabled/unchecked with pointer:auto; page visible,busy:false",
+    "keyboard": "Subsequent failure-only keyboard probe reported checked:true; diagnostic only, original click/check still FAIL",
+    "responses": "Local root/assets200, readiness503, me200, metadata context503then200; no whole-journey completion established",
+    "png": false
+  },
+  "expected": "Original native configured HTTPS/DynamoDB/default-Chrome owner journey completes collateral proposal/accounting reads and cancellation with no cleanup action authority",
+  "unreached_scope": "Failure before complete requested journey; do not mark collateral UI/action-boundary acceptance passed",
+  "cause": "UNKNOWN; one DOM snapshot/keyboard diagnostic does not establish stable pointer interaction or distinguish product, renderer, host timing/focus, harness or other environment causes",
+  "authority": "Synthetic identity/CV/intercepted STS-S3 and owned local HTTPS/database only; no provider/physical/human proof",
+  "original_artifacts": [
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-009.json",
+      "sha256": "0944b3a487eed07971e1a9b2e87cbfb84b79b78c9624955ac56d68b2cda78f66"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-009.xml",
+      "sha256": "578ba8516df04cd74cad973c1aa935168d32e61e6c1c1c8dde35515350fb7ae1"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-009.log",
+      "sha256": "a40b64a9a4cad38fef59112cd2a1d6e5070748d0ee6a80cd795358c87397122a"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-009.origins.json",
+      "sha256": "398be9be430a7ea99a44f38b332f4839c728a4d90226095731bac7830ce95d9e"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-009.json.sdk.json",
+      "sha256": "dddd23af64808d3be986f448eea8f639f70baf9f755b67ded1b46ff8c1f58972"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-009-database.json",
+      "sha256": "712b12b124b147d7859bd535ce8ed0b2d19e46695f11007f950f4b5486286cf9"
+    },
+    {
+      "path": "evidence/local/asset-confirm-commit-full-v1/evidence/local/python-cohort-009-database.log",
+      "sha256": "79734c14c4283e8328bc2322797076078a32858a59f9c287b57c34c1c0efd6c5"
+    }
+  ],
+  "source_inputs_involved": [
+    {
+      "path": "tests/integration/test_owner_collateral_browser.py",
+      "sha256": "54c3874f2677450e2560f4a714dc41749e7cd981aaffbf4f6fabde01d537da6b"
+    },
+    {
+      "path": "tests/integration/test_owner_review_browser.py",
+      "sha256": "9382c38f261df06b27e76bd6d05b46c1194f7a32dd68c8a927ec7fc6a6d1c818"
+    },
+    {
+      "path": "tests/integration/test_public_asset_store.py",
+      "sha256": "fc365884762d1e5f5ea79a009f2a1cf991a2846b7217ff58cabe8d0d7d9e2f83"
+    }
+  ],
+  "next_action": "After current full terminal reconciliation, inspect and reproduce actual native input failure preserving original full-run preceding workload, default Chrome, program/actions/assertions/timeouts. Isolated checks may diagnose but cannot accept the original failed workload. Do not force check, substitute keyboard success, slow frames, change browser, increase deadlines or weaken assertions to obtain green. Any product/harness change requires explicit evidence and current-subject re-verification. Retain prior similar input failures as history, not a proven shared cause.",
+  "cleanup_limit": "Owned cohort database termination/state-removal receipts retained. No successful complete rendered journey or requester fulfillment/drain receipt is inferred for the failed case.",
+  "source_frozen": true,
+  "runtime_changes": false,
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

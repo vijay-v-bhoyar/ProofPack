@@ -1,0 +1,108 @@
+{
+  "recorded_at": "2026-10-18T20:15:00.797573+00:00",
+  "subject_id": "working-tree-manifest-sha256:15108419cd4e25fe2f57b035a9b762535ccda59da3f9aa06fd4b81341e99f882",
+  "source_inputs": 826,
+  "status": "AUDIT_RECONCILED_NATIVE_CANDIDATE_REVIEW_PENDING",
+  "changed_source_inputs": [
+    "tests/integration/test_first_owner_store.py"
+  ],
+  "runtime_and_web_unchanged_from_CD": true,
+  "test_change": "Only raw physical partition selector; all remaining test bytes preserved",
+  "native_runs": [
+    {
+      "label": "resume",
+      "receipt": {
+        "path": ".loop/repairs/workflow-completion-audit/native-resume-v1-process.json",
+        "sha256": "27110e58156700475a7c18da01800ed8c3580f8e7fdfa40225b999aa4fd35d55"
+      },
+      "cases": 10,
+      "phases": 30,
+      "passed": 9,
+      "failed": 1,
+      "elapsed_seconds": 5.484000000011292,
+      "execution_bound_seconds": 300,
+      "SDK_local": 129,
+      "SDK_external": 0,
+      "database_stopped_and_state_removed": true,
+      "nodeids": [
+        "tests/integration/test_first_owner_store.py::test_signed_setup_atomically_creates_one_owner_with_disabled_inspections_on_actual_store",
+        "tests/integration/test_first_owner_store.py::test_actual_store_lost_bootstrap_reply_reconciles_same_owner_without_second_effect",
+        "tests/integration/test_first_owner_store.py::test_expiry_during_actual_store_bootstrap_read_prevents_owner_transaction",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[resolve-boolean_schema]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[resolve-undeclared_field]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[resolve-missing_bootstrap]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[login-boolean_schema]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[login-undeclared_field]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[login-missing_bootstrap]",
+        "tests/integration/test_signin_logging.py::test_real_server_access_log_hides_callback_queries_even_on_denial"
+      ]
+    },
+    {
+      "label": "candidate",
+      "receipt": {
+        "path": ".loop/repairs/workflow-completion-audit/native-candidate-v1-process.json",
+        "sha256": "d7b6af7ff4b5a5bc61e4842907e8ff824b51f92a58c81e41630dde35eaf1f16f"
+      },
+      "cases": 10,
+      "phases": 30,
+      "passed": 10,
+      "failed": 0,
+      "elapsed_seconds": 5.5310000000026776,
+      "execution_bound_seconds": 294,
+      "SDK_local": 129,
+      "SDK_external": 0,
+      "database_stopped_and_state_removed": true,
+      "nodeids": [
+        "tests/integration/test_first_owner_store.py::test_signed_setup_atomically_creates_one_owner_with_disabled_inspections_on_actual_store",
+        "tests/integration/test_first_owner_store.py::test_actual_store_lost_bootstrap_reply_reconciles_same_owner_without_second_effect",
+        "tests/integration/test_first_owner_store.py::test_expiry_during_actual_store_bootstrap_read_prevents_owner_transaction",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[resolve-boolean_schema]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[resolve-undeclared_field]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[resolve-missing_bootstrap]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[login-boolean_schema]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[login-undeclared_field]",
+        "tests/integration/test_auth_head_integrity_store.py::test_invalid_stored_head_denies_actor_and_session_without_writes[login-missing_bootstrap]",
+        "tests/integration/test_signin_logging.py::test_real_server_access_log_hides_callback_queries_even_on_denial"
+      ]
+    }
+  ],
+  "aggregate_execution_seconds": 11.01500000001397,
+  "original_aggregate_bound_seconds": 300,
+  "NR_T01": "PENDING_INDEPENDENT_REVIEW",
+  "prior_466_source_and_466_installed": "Compatible retained CD evidence; not freshly executed on this test-corrected subject",
+  "collection_cases": 6296,
+  "collection_execution_phases": 0,
+  "full_current_execution": "NOT_RUN",
+  "requirements": 20,
+  "workflows": 26,
+  "test_scopes": 58,
+  "personas": 9,
+  "operations": 78,
+  "affected_groups": 4,
+  "route_registrations": 152,
+  "openapi_paths": 134,
+  "audit_limit": "Declared inventory and source/model gap diagnosis; no complete workflow acceptance",
+  "metadata_history_contract": "PLANNED_NOT_IMPLEMENTED",
+  "gap": {
+    "path": ".loop/repairs/workflow-completion-audit/metadata-gap-diagnosis-v1.json",
+    "sha256": "251f7a26193035ddb860f8d1a45cffc88991c107d511a8cde94b2d27e78d38ca"
+  },
+  "wheel": {
+    "path": ".loop/repairs/classification-accounting-digest/wheel-dist-v1/proofpack-0.1.0-py3-none-any.whl",
+    "sha256": "f11f1cbad57cf142568222698134f0e3b175ac9e4fcf860cb20feb1ca3d75b85"
+  },
+  "new_build": false,
+  "browser": "NOT_RERUN; original pointer/frame cause UNKNOWN; desktop awake/unlocked UNKNOWN",
+  "graph": "API unchanged; prior 2404 nodes/10352 edges/88 communities retained; tests not covered",
+  "remaining": [
+    "D07 actual deployment authority",
+    "D11 actual purposes/retention/rights/approver",
+    "Complete metadata history/accounting integration and downstream preview/confirmation/cleanup/journal/restore/media/requester",
+    "PO-T01/CR-T01/IJ-T01/NR-T01 independent review",
+    "Actual provider/native ARM/physical/operator/human evidence"
+  ],
+  "human_scenarios": "A01-A09 NOT_RUN",
+  "adoption_gates": "All seven UNKNOWN/BLOCKED",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

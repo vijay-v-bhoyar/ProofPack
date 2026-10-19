@@ -1,0 +1,223 @@
+{
+  "id": "node-exit-lifecycle",
+  "parent_goal": "01a1336f-7ef6-7811-a79a-d480e6c060f4",
+  "criteria": [
+    "NE01-original-functional-assertions-normal-completion"
+  ],
+  "mode": "IMPLEMENT",
+  "max_attempts": 8,
+  "events": [
+    {
+      "kind": "failure",
+      "id": "forced-native-node-exit",
+      "criterion": "NE01-original-functional-assertions-normal-completion",
+      "category": "test",
+      "hypothesis": "Immediate forced exit after native TypeScript import aborts the test process despite unchanged functional assertions; controlled import-only comparisons isolate the same shutdown behavior.",
+      "receipt": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "NE01 original metadata guard assertions with normal helper completion; no application change",
+          "revision": "8b8ba4b20b057772bc17d0eea21b00704fb322873afbc6185dcee8c8256da2ce",
+          "configuration": "Node v26.4.0; SDK forbidden; original20second Node and120second parent bounds; current helper and disclosed hash-bound archived-module lifecycle fixture profile"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T04:21:10.161025+00:00",
+        "expires": "2026-10-24T04:35:45.235689+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_metadata_client.py::test_actual_typescript_guards[read_denied]",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\purpose-context\\candidate\\evidence\\local\\node-read-denied-original-v2.xml"
+        ],
+        "exit_code": 1,
+        "assertions": 1,
+        "output": {
+          "path": "before-failure/node-read-denied-original-v2.log",
+          "sha256": "b102b564370386ad37cafdcf5ea715a1d11b22dd47740f2cb2210bbae6f8e256"
+        },
+        "oracle": {
+          "path": "original/tests/unit/test_metadata_client.py",
+          "sha256": "0f6266a125524d1692e4f501b5377d15c8c15bb9865377ef3cffaa835148312f"
+        },
+        "artifacts": [
+          {
+            "path": "original/tests/unit/test_metadata_client.py",
+            "sha256": "0f6266a125524d1692e4f501b5377d15c8c15bb9865377ef3cffaa835148312f"
+          },
+          {
+            "path": "original/apps/web/src/metadataRequests.ts",
+            "sha256": "adfb3bf988dff7c45a8f6beb918dd36c41504c81674ceff506c8574a8e9266e3"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "repair",
+      "failure_id": "forced-native-node-exit",
+      "owner": "Codex",
+      "diagnosis": "Fix fixture-only process lifecycle: normal completion and equivalent alternative branch; preserve every functional assertion, Node executable, timing bound and application byte. Explicit archive fixture profile admits the same corrected lifecycle only for its raw hash-bound module; no global interception or oracle waiver.",
+      "changes": [
+        {
+          "path": "candidate/tests/unit/test_metadata_client.py",
+          "sha256": "76d5a459a77133baa4b871c2d0a72ab74366ed718c9ac3ec81c3ea7cbc6407a8"
+        }
+      ]
+    },
+    {
+      "kind": "verify",
+      "failure_id": "forced-native-node-exit",
+      "criteria": [
+        "NE01-original-functional-assertions-normal-completion"
+      ],
+      "original": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "NE01 original metadata guard assertions with normal helper completion; no application change",
+          "revision": "8ab00943c25b0563b563e4b71d97d8c2bcd286fbf4b5866da8240045770c116b",
+          "configuration": "Node v26.4.0; SDK forbidden; original20second Node and120second parent bounds; current helper and disclosed hash-bound archived-module lifecycle fixture profile"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T04:29:19.848543+00:00",
+        "expires": "2026-10-24T04:35:45.235689+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\node-exit-lifecycle\\original\\tests\\unit\\test_metadata_client.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\node-exit-lifecycle\\candidate\\evidence\\local\\node-natural-original-profile-v1.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 32,
+        "output": {
+          "path": "candidate/evidence/local/node-natural-original-profile-v1.log",
+          "sha256": "c2a564da5452f3d027af15a8963f1ec3d9b7e356805c8b078539d4f05209d484"
+        },
+        "oracle": {
+          "path": "original/tests/unit/test_metadata_client.py",
+          "sha256": "0f6266a125524d1692e4f501b5377d15c8c15bb9865377ef3cffaa835148312f"
+        },
+        "artifacts": [
+          {
+            "path": "candidate/tests/unit/test_metadata_client.py",
+            "sha256": "76d5a459a77133baa4b871c2d0a72ab74366ed718c9ac3ec81c3ea7cbc6407a8"
+          },
+          {
+            "path": "original/tests/unit/test_metadata_client.py",
+            "sha256": "0f6266a125524d1692e4f501b5377d15c8c15bb9865377ef3cffaa835148312f"
+          },
+          {
+            "path": "original_exit_profile.py",
+            "sha256": "beefe2e79a8b826e407502b0f7bc90798d3b1c17853bb9b8ad156c977dbc5f36"
+          },
+          {
+            "path": "original/apps/web/src/metadataRequests.ts",
+            "sha256": "adfb3bf988dff7c45a8f6beb918dd36c41504c81674ceff506c8574a8e9266e3"
+          }
+        ]
+      },
+      "regression": {
+        "subject": {
+          "product": "ProofPack",
+          "target": "NE01 original metadata guard assertions with normal helper completion; no application change",
+          "revision": "8ab00943c25b0563b563e4b71d97d8c2bcd286fbf4b5866da8240045770c116b",
+          "configuration": "Node v26.4.0; SDK forbidden; original20second Node and120second parent bounds; current helper and disclosed hash-bound archived-module lifecycle fixture profile"
+        },
+        "actor": "Codex local runner; no independent human",
+        "at": "2026-10-17T04:29:58.235011+00:00",
+        "expires": "2026-10-24T04:35:45.235689+00:00",
+        "command": [
+          "C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.venv\\Scripts\\python.exe",
+          "-X",
+          "utf8",
+          "-m",
+          "pytest",
+          "-c",
+          "pyproject.toml",
+          "-o",
+          "pythonpath=services/api",
+          "-p",
+          "pytest_evidence",
+          "-p",
+          "corpus_origin_probe",
+          "-p",
+          "corpus_no_sdk",
+          "-q",
+          "tests/unit/test_measured_correction_cues.py",
+          "tests/unit/test_metadata_client.py",
+          "tests/unit/test_metadata_control.py",
+          "tests/unit/test_metadata_control_protocol.py",
+          "tests/unit/test_multipart.py",
+          "tests/unit/test_oauth.py",
+          "--junitxml=C:\\Users\\vijay\\OneDrive\\Documents\\ChatGPT\\AWS OpenCV\\.loop\\repairs\\node-exit-lifecycle\\candidate\\evidence\\local\\node-natural-cohort112-v1.xml"
+        ],
+        "exit_code": 0,
+        "assertions": 112,
+        "output": {
+          "path": "candidate/evidence/local/node-natural-cohort112-v1.log",
+          "sha256": "723d9c2f080a05e3fca69e8deb665118080852347d2a84bc1d09d40f2926162f"
+        },
+        "oracle": {
+          "path": "candidate/tests/unit/test_metadata_client.py",
+          "sha256": "76d5a459a77133baa4b871c2d0a72ab74366ed718c9ac3ec81c3ea7cbc6407a8"
+        },
+        "artifacts": [
+          {
+            "path": "candidate/tests/unit/test_measured_correction_cues.py",
+            "sha256": "8a56570aa100db646622fb3bf6dfde96d9a9784c5f65712c4dfdc4a44da3ee82"
+          },
+          {
+            "path": "candidate/tests/unit/test_metadata_client.py",
+            "sha256": "76d5a459a77133baa4b871c2d0a72ab74366ed718c9ac3ec81c3ea7cbc6407a8"
+          },
+          {
+            "path": "candidate/tests/unit/test_metadata_control.py",
+            "sha256": "0cf0001b010ce9f337461faf60b06c7d7b97f4015ccd0757e82300855f3ae765"
+          },
+          {
+            "path": "candidate/tests/unit/test_metadata_control_protocol.py",
+            "sha256": "25ecbacc6af523c9f7c247e52cc47f1c8d70fef9a63e85239e1e838a9255811a"
+          },
+          {
+            "path": "candidate/tests/unit/test_multipart.py",
+            "sha256": "857ebb85ab0b3d58229c933be1d40bea5903b264715840a15fe690b3d58e7631"
+          },
+          {
+            "path": "candidate/tests/unit/test_oauth.py",
+            "sha256": "e025d7bd4767b34b62fdd5b774e38017abcd92d9b9bcec519444175aad2fb7a5"
+          },
+          {
+            "path": "candidate/apps/web/src/metadataRequests.ts",
+            "sha256": "adfb3bf988dff7c45a8f6beb918dd36c41504c81674ceff506c8574a8e9266e3"
+          }
+        ]
+      }
+    }
+  ]
+}

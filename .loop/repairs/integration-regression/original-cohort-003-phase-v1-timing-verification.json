@@ -1,0 +1,147 @@
+{
+  "at": "2026-10-17T04:52:31.191499+00:00",
+  "status": "PASS_DIAGNOSTIC_ONLY",
+  "scope": "same134 original cases/source/oracles/900s bound; verbose and bounded passive journal; no product change or full acceptance",
+  "cases": 134,
+  "phases": 402,
+  "journal_records": 538,
+  "journal_sha256": "5488e286d9b8038542e80c0e98c6b609f8c62f2c79c57027999c444433ff43cf",
+  "pytest_seconds": 781.17,
+  "journal_elapsed_seconds": 781.25,
+  "phase_total_seconds": 779.3027820000098,
+  "modules": [
+    {
+      "module": "tests/integration/test_active_policy.py",
+      "cases": 23,
+      "setup_seconds": 172.681968400002,
+      "call_seconds": 59.19702060000054,
+      "teardown_seconds": 0.062399500004175934,
+      "total_seconds": 231.94138850000672
+    },
+    {
+      "module": "tests/integration/test_admission_factory_store.py",
+      "cases": 6,
+      "setup_seconds": 0.15752770000290184,
+      "call_seconds": 2.2071106000003056,
+      "teardown_seconds": 0.01962649999950372,
+      "total_seconds": 2.384264800002711
+    },
+    {
+      "module": "tests/integration/test_application.py",
+      "cases": 1,
+      "setup_seconds": 0.0001567999988765223,
+      "call_seconds": 0.15839889999915613,
+      "teardown_seconds": 0.00014539999938278925,
+      "total_seconds": 0.15870109999741544
+    },
+    {
+      "module": "tests/integration/test_approved_policy_read.py",
+      "cases": 16,
+      "setup_seconds": 136.4505498000035,
+      "call_seconds": 7.361860799994247,
+      "teardown_seconds": 0.16623209999852406,
+      "total_seconds": 143.97864269999627
+    },
+    {
+      "module": "tests/integration/test_asset_reads.py",
+      "cases": 25,
+      "setup_seconds": 43.35497690000375,
+      "call_seconds": 7.111728999996558,
+      "teardown_seconds": 0.16232180000042717,
+      "total_seconds": 50.629027700000734
+    },
+    {
+      "module": "tests/integration/test_browser_timeout_retention_store.py",
+      "cases": 1,
+      "setup_seconds": 0.9713294999983191,
+      "call_seconds": 61.67490150000049,
+      "teardown_seconds": 0.043295100000250386,
+      "total_seconds": 62.68952609999906
+    },
+    {
+      "module": "tests/integration/test_calibrations.py",
+      "cases": 35,
+      "setup_seconds": 53.826603700001215,
+      "call_seconds": 61.39530180000111,
+      "teardown_seconds": 0.08891310000035446,
+      "total_seconds": 115.31081860000268
+    },
+    {
+      "module": "tests/integration/test_camera_to_verifier.py",
+      "cases": 1,
+      "setup_seconds": 0.0002372999988438096,
+      "call_seconds": 0.5226977999991504,
+      "teardown_seconds": 0.00020340000082796905,
+      "total_seconds": 0.5231384999988222
+    },
+    {
+      "module": "tests/integration/test_candidate_rollback.py",
+      "cases": 1,
+      "setup_seconds": 2.942457799999829,
+      "call_seconds": 104.72852509999939,
+      "teardown_seconds": 0.09548139999969862,
+      "total_seconds": 107.76646429999892
+    },
+    {
+      "module": "tests/integration/test_capture_family_store.py",
+      "cases": 12,
+      "setup_seconds": 19.453740600003584,
+      "call_seconds": 15.603931999999986,
+      "teardown_seconds": 0.07425830000283895,
+      "total_seconds": 35.13193090000641
+    },
+    {
+      "module": "tests/integration/test_capture_intent_storage_lineage.py",
+      "cases": 8,
+      "setup_seconds": 9.64856850000433,
+      "call_seconds": 4.036747099997228,
+      "teardown_seconds": 0.03919289999976172,
+      "total_seconds": 13.72450850000132
+    },
+    {
+      "module": "tests/integration/test_collateral_scope_store.py",
+      "cases": 5,
+      "setup_seconds": 5.858789199999592,
+      "call_seconds": 9.184105999998792,
+      "teardown_seconds": 0.02147510000031616,
+      "total_seconds": 15.0643702999987
+    }
+  ],
+  "slowest_tests": [
+    {
+      "nodeid": "tests/integration/test_candidate_rollback.py::test_candidate_rollback_revalidates_actual_image_preparation_and_consumed_source_chain[qualification_compatible-synthetic_demo]",
+      "seconds": 107.76646429999892
+    },
+    {
+      "nodeid": "tests/integration/test_browser_timeout_retention_store.py::test_native_timeout_retains_partial_stdout_and_reaps_only_owned_child",
+      "seconds": 62.68952609999906
+    },
+    {
+      "nodeid": "tests/integration/test_active_policy.py::test_candidate_active_reader_revalidates_real_preparation_evaluation_permissions_and_original_reviewer[qualification_compatible-synthetic_demo]",
+      "seconds": 58.34631609999997
+    },
+    {
+      "nodeid": "tests/integration/test_approved_policy_read.py::test_owner_without_recent_mfa_can_read_only_member_approved_scope",
+      "seconds": 14.046240600000601
+    },
+    {
+      "nodeid": "tests/integration/test_active_policy.py::test_active_policy_rejects_stale_or_changed_authority[qualification_head]",
+      "seconds": 13.91003660000024
+    },
+    {
+      "nodeid": "tests/integration/test_active_policy.py::test_active_policy_rejects_stale_or_changed_authority[qualification_job]",
+      "seconds": 13.701066400000855
+    },
+    {
+      "nodeid": "tests/integration/test_approved_policy_read.py::test_approved_by_id_fences_changes_after_read_audit[data]",
+      "seconds": 11.329509600000165
+    },
+    {
+      "nodeid": "tests/integration/test_approved_policy_read.py::test_approved_by_id_fences_changes_after_read_audit[caller]",
+      "seconds": 10.844132300000638
+    }
+  ],
+  "interpretation": "genuine qualification fixture setup and multistep candidate/rollback work plus intentional timeout fault consume aggregate cohort time. Earlier full900s timeout cause remains UNKNOWN; this passing diagnostic and earlier770.98s pass do not establish a repair or clear full-v2 failure. Instrumentation adds work; no throughput/physical/human inference.",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

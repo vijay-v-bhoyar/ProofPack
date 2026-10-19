@@ -1,0 +1,162 @@
+{
+  "status": "GUARDED_TRANSFER_COMPLETE_NOT_FULL_WORKFLOW_ACCEPTANCE",
+  "origin_inputs": 626,
+  "canonical_inputs": 629,
+  "transferred": [
+    {
+      "path": "services/api/proofpack/evidence/held_inventory.py",
+      "sha256": "882631bda49d01bf0174efdf6e73900ada98049da765ba318e54c4d4d168f364"
+    },
+    {
+      "path": "tests/integration/test_held_inventory_store.py",
+      "sha256": "cec397f89a383784ac2ada18b05c11a4bc280010c9c3d956f15e82229e106ac6"
+    },
+    {
+      "path": "tests/unit/test_held_inventory.py",
+      "sha256": "05555f6b87cb7f9fea246333685048329c8362d599b3b73a317361232e176549"
+    }
+  ],
+  "source_matches_installed_candidate": true,
+  "prior_source_inputs_preserved": 626,
+  "preserved_receipt_hashes": [
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1-build.log",
+      "sha256": "8981009898019ffe8fb463cffe49a1abaccae6222dd674965caceeeed938b1ce"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1-child.json",
+      "sha256": "db430f0f660852f7ac9a9ca33aa585e8d97fa73680243b72fa41e4eb993d3658"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1-database.json",
+      "sha256": "f337c565bcff3d641660e3572c605c2291ef6b32c6ca7f7c7757b488ad7d74ce"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1-database.log",
+      "sha256": "eafec52431c17f9b2f8a05880d5a01f515fea2d59aebd51dbdebdca37b43f4f3"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1-execution.json",
+      "sha256": "9201304c97048e1a28e1ae6bab69f0f8c5c8b1faaaf4b261e34aceb55e9d7fe1"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1-install.log",
+      "sha256": "1d1562448dd112e53c71b3def884e4a59192291e975968b2110a94d21dc375f4"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1-process.json",
+      "sha256": "6ef57676667340c453051154d82e78063ec29e7ee6e58a753926e15621a6ab5d"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1.log",
+      "sha256": "ff6790507a5c28301cb3f14ce49635435faca6836061858d165dcbcfc7ba7114"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-held-inventory-installed-v1.xml",
+      "sha256": "32323fe83621b68979c8e4306e264fd2b1aba86aca8beed8bdde13cf9e9b8f9f"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-lineage-held-native-v1-database.json",
+      "sha256": "4337af6a04391388c899d6ba5d489c2d1b3526e5fbb7dfb441d2130b22764634"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-lineage-held-native-v1-database.log",
+      "sha256": "f2ec4bd50e3d2c838101c9f87e0fec3adfd425b357b0575aed1eccda19df1253"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-lineage-held-native-v1-execution.json",
+      "sha256": "23c51f2cda72ca2e7dca16d0d5d33211953b60d88e2d2e54b7c8bd4c14488e3c"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-lineage-held-native-v1-execution.json.sdk.json",
+      "sha256": "235234c039ce8d6190bea42cbb1c8e7d1a1bd7619351b9b4067973b44d53d72d"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-lineage-held-native-v1-process.json",
+      "sha256": "3f7fe964cd052f50be0687a13040d29d81db3d15bbd570a09f082204b4212014"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-lineage-held-native-v1.log",
+      "sha256": "e0c6f95cc282392971b5f14d7a6a8ba73760189f129310e8074d9fc6891c729c"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/working/evidence/local/metadata-lineage-held-native-v1.xml",
+      "sha256": "b62f437ceef4b581539b7ebc4c38cbf43313ef9184dae4a76976f666c062d3db"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/record.json",
+      "sha256": "c8b7fbcb5d9ac0df5b37d5de188869976558829d8272cb293352f948ecd3efdd"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/subject.json",
+      "sha256": "6a1e07ae3773017000ec07dc88cfabe3b13bcdb436395b72b6eeb0b425a723f7"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/ledger-native-03.json",
+      "sha256": "9a0cb93b07a3f65784fca85790879e7d69283858b9f965e097a47ee6c8e13e2d"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/candidate-native-verification.json",
+      "sha256": "6a6b052bbe4fc0eae6f73ab7b7223d63abd26b6050bedbd037a181ae6993bd81"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/model-verification.json",
+      "sha256": "ab18d98260bbcae6cbc4cc1a391a9a9f51ff0c10407c977d74299e9bad235006"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/package-verification.json",
+      "sha256": "9cc815098e2e0077f8a3f54859a9ff21e07b2ad461be82ee431929a609beb8ee"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/model-verification-v2.json",
+      "sha256": "9d01150fa947b6236f03721c9d36831467d2def2cfaf719279c7720263536450"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/package-verification-v2.json",
+      "sha256": "5bd0cae800a82b62dab8c084cc5428b02e86d06f3e81377e28628c870ba385e7"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/native-plan-v1.json",
+      "sha256": "61ce38bc12daa208cc714212d2c594c8aed9e5d68c3b5b78fe321c85a904c3fe"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/native-plan-v2.json",
+      "sha256": "f15c3812714a1ac094ad700c489dfaeb0c1f4f39f409cf44d7f5f3ffc17e8419"
+    },
+    {
+      "source": ".loop/repairs/metadata-held-inventory/assurance-handoff.json",
+      "sha256": "8a2ececf5943cd3e8698a8851f7062fc598ef3dd08e8723248dca985b27ef906"
+    },
+    {
+      "source": "evidence/local/metadata-factory-full-terminal-verification.json",
+      "sha256": "3b0981e925e088c8a20be9267a3bab136168dc1277d20486e2dce7a495ded71c"
+    },
+    {
+      "source": "evidence/local/metadata-factory-full-process.json",
+      "sha256": "737fc4e8686ca6d857a3459c38c28ccb784606280b0c98386f50b3537be1826a"
+    },
+    {
+      "source": "evidence/local/metadata-factory-c7-replay-verification.json",
+      "sha256": "a3ecb87a68b206b9015859a7286a8f781f5a14817ed9e279a2c773511200291c"
+    },
+    {
+      "source": "evidence/local/metadata-factory-c7-replay-process.json",
+      "sha256": "a589dc57af1c4c6f08d717ce24ac9d7ec9f586a5bae0b43ab311d5d6e9a229ae"
+    },
+    {
+      "source": "evidence/local/metadata-factory-cohort7-failure.json",
+      "sha256": "a0c46e3d0ae2d017ae5a84587718d5c94c55b54e84dafc66acd03b996ba8806f"
+    },
+    {
+      "source": "evidence/local/metadata-factory-c7-isolated-verification.json",
+      "sha256": "276a29869b7c146886437705b8ae00397b50cd4c42df78f22ce0d519872e4ff6"
+    }
+  ],
+  "backup": ".loop/repairs/metadata-held-inventory/integration-baseline",
+  "prior_full_regression_now_historical": true,
+  "parent_full_gate": "FAIL_RETAINED",
+  "original_vision_timeout_cause": "UNKNOWN",
+  "canonical_selected_verification": "PENDING",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

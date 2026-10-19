@@ -1,0 +1,124 @@
+{
+  "recorded_at": "2026-10-17T23:27:24.976851+00:00",
+  "status": "PASS_SELECTED_NATIVE_RENDERED_SCOPE_ONLY",
+  "cases": 17,
+  "phases": 51,
+  "source_inputs": 730,
+  "source_and_built_assets_unchanged": true,
+  "local_sdk_sends": 15553,
+  "blocked_external_sends": 0,
+  "databases_removed": 2,
+  "rendered_configured_v5_and_v1": "PASS; genuine local HTTPS/store/browser with synthetic identity/media, intercepted STS/S3 and test-only self-signed TLS bypass",
+  "server_tls_app_resource_cleanup_verified": true,
+  "native_bound_seconds_each": 851,
+  "collection_bound_seconds_each": 120,
+  "independence": "same Codex operator; no independent human/provider/physical acceptance",
+  "parent_complete": false,
+  "beta_decision": "NO_GO",
+  "raw_evidence": [
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http-collection.json",
+      "sha256": "acb459c2be2173f454428c67e9dd2618be3ab1f42ace1ced906a656eaf49b1c3"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http-collection.json.sdk.json",
+      "sha256": "f181cf790174e714e7295de77b9cd257d926ba75062d556011638ba49422abd0"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http-collection.log",
+      "sha256": "8634a3a9dfb13d97c6c24932c70c92d18e4471a627f18017d5c697304e4b369c"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http-collection.origins.json",
+      "sha256": "a96ac712c82678b21d820f5ce66c1198213f16775df21249c2ac566e32af0345"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http-database.json",
+      "sha256": "18bcf7b32c4cda51da2d4c95702a9664c5af0cf1b28ca5de8072479ce1d6d72b"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http-database.log",
+      "sha256": "209930dd89f64dc2117f4a8293822e258f2c5b18ec57f2363e082c9eaab6dd02"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http.json",
+      "sha256": "368f1f94d3f52ae872bbe8118b1206eade76a29421d3f2c511d96864645df648"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http.json.sdk.json",
+      "sha256": "78270c3b53a1f014400d8a653dc8da6334c4248850c5ebddbc89424158fb530a"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http.log",
+      "sha256": "619006bd99e1d494404643d327ab7523eea8d5b3d0c2647f5e52b6871765e389"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http.origins.json",
+      "sha256": "5468dd9caecf8914f6170f2fceba25a8571a85c172dc89d158260da1d2a88baf"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\auth-owner-http.xml",
+      "sha256": "7ef4b27db7c678c60db1a1d896226f4592f1a251fd6f204d711be750096eeb20"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\configured-auth-review-browser.json",
+      "sha256": "8c66423bff6f8da6115f6c1f10d9edd3f57f8c77bc553c96559db5d4c6fac06e"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\configured-review-browser.json",
+      "sha256": "7a3c736a322271e5176c806e1a7c0324d868c14304e12bb09430f99945e88e5f"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\dynamodb-local.json",
+      "sha256": "edaa0416fadd21107d804afade7c50b7f3d69d64dfa98f3be10540b2ff1e807e"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\dynamodb-server.log",
+      "sha256": "5f021839b19d3169d41013a479af089660eb338f9b900af883e973b5e3b8a8f1"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1-collection.json",
+      "sha256": "ecf08cd3180962ce08b6791d558b2c2983bb2f22f13a1d90a4bf25d1cf4941f5"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1-collection.json.sdk.json",
+      "sha256": "f181cf790174e714e7295de77b9cd257d926ba75062d556011638ba49422abd0"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1-collection.log",
+      "sha256": "315a6a21ea9eceedf3899cc3fdae672bdac00957dea805b1da3145fb44a8cdf0"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1-collection.origins.json",
+      "sha256": "86d22bd5575121eebc84ba6f10690fa8d6a75668ea9efc659057d92083c9e604"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1-database.json",
+      "sha256": "edaa0416fadd21107d804afade7c50b7f3d69d64dfa98f3be10540b2ff1e807e"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1-database.log",
+      "sha256": "5f021839b19d3169d41013a479af089660eb338f9b900af883e973b5e3b8a8f1"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1.json",
+      "sha256": "edb81b0b314f786ad25e3ed5d9d0c46ff450d4c7295aaa866f4b60e04f390ba4"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1.json.sdk.json",
+      "sha256": "4744ca5f7211b1e9d1da5d87a7792b2fff808564b1f3350a15442ce8e7f0779a"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1.log",
+      "sha256": "af885337c488db0dd59880a0461fbd073208d2d8a1655893d27ba10b2ddb0d5d"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1.origins.json",
+      "sha256": "4f8c96d3406e6226172ca248bc4997e663441f8beb1af46b2db934da67fec96f"
+    },
+    {
+      "path": "evidence\\local\\configured-auth-review-native-v1\\evidence\\local\\rendered-and-original-v1.xml",
+      "sha256": "8edf9ba20d7cc55d30a5c157c711bf0a986617cc8d675e113768089de8223a3a"
+    }
+  ]
+}

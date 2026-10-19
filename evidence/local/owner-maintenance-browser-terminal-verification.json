@@ -1,0 +1,59 @@
+{
+  "recorded_at": "2026-10-16T22:17:45.224705+00:00",
+  "audit_status": "COMPLETE_ATTEMPT_RECONCILED",
+  "verification_status": "FAIL",
+  "source_inputs": 669,
+  "source_unchanged": true,
+  "expected_cases": 334,
+  "whole_file_cohorts": 14,
+  "passing_files": 10,
+  "completed_reported_cases": 226,
+  "reported_passed_cases": 223,
+  "reported_failed_cases": 3,
+  "unreconciled_cases": 108,
+  "failures": [
+    {
+      "file": "approved-policy.spec.ts",
+      "passed": 12,
+      "failed": 1,
+      "report": "evidence/local/owner-maintenance-full-browser-v1/evidence/local/browser-runs/20261016T220108-977ac6805ac3/cohort-001.json",
+      "log": "evidence/local/owner-maintenance-full-browser-v1/evidence/local/browser-runs/20261016T220108-977ac6805ac3/cohort-001.log"
+    },
+    {
+      "file": "erasure.spec.ts",
+      "passed": 14,
+      "failed": 1,
+      "report": "evidence/local/owner-maintenance-full-browser-v1/evidence/local/browser-runs/20261016T220108-977ac6805ac3/cohort-002.json",
+      "log": "evidence/local/owner-maintenance-full-browser-v1/evidence/local/browser-runs/20261016T220108-977ac6805ac3/cohort-002.log"
+    },
+    {
+      "file": "operator.spec.ts",
+      "passed": 41,
+      "failed": 1,
+      "report": "evidence/local/owner-maintenance-full-browser-v1/evidence/local/browser-runs/20261016T220108-977ac6805ac3/cohort-008.json",
+      "log": "evidence/local/owner-maintenance-full-browser-v1/evidence/local/browser-runs/20261016T220108-977ac6805ac3/cohort-008.log"
+    }
+  ],
+  "missing_terminal_reports": [
+    {
+      "file": "workbench.spec.ts",
+      "expected_cases": 108,
+      "exit_code": 124,
+      "reason": "Original 120-second whole-file bound exhausted; no terminal JSON. Partial log is not reconciled case acceptance."
+    }
+  ],
+  "all_14_owned_servers_terminated": true,
+  "original_default_profile_and_bounds_retained": true,
+  "causes": [
+    "Approved-policy and erasure clicks stalled while awaiting visible/enabled/stable state; cause UNKNOWN.",
+    "Operator never reached current-pass heading; failure snapshot shows camera frames stopped/restore action; root cause UNKNOWN.",
+    "Workbench exhausted its 120-second whole-file bound. Do not infer per-case PASS from the partial list log."
+  ],
+  "scope": "Actual canonical bundle/default Chrome with synthetic intercepted APIs and an unconfigured owned server; no provider or human proof.",
+  "limits": [
+    "Three complete negative case reports and one incomplete file must be diagnosed; no retries, forced actions, exclusions or profile/bound changes accept them.",
+    "The 3810-case canonical Python PASS does not clear these browser failures or the known canonical admission-error contract gap."
+  ],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

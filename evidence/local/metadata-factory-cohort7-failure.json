@@ -1,0 +1,33 @@
+{
+  "status": "CONFIRMED_COHORT_FAILURE",
+  "recorded_at": "2026-10-16T11:39:47.796263+00:00",
+  "parent_process": "72455 live; whole run not terminal",
+  "cohort": 7,
+  "scheduled_cases": 142,
+  "complete_passing_cases": 141,
+  "failed_setup_cases": 1,
+  "recorded_phases": 425,
+  "failure": {
+    "nodeid": "tests/integration/test_labels.py::test_label_quota_exact_retry_and_no_retargeting",
+    "phase": "setup",
+    "mechanism": "VisionWorker.analyze connection poll hit unchanged worker_timeout; publication raised StoreUnavailable",
+    "configured_wall_ms": 750,
+    "configured_startup_ms": 5000,
+    "fixture": "publication_case observe(post_pass_removal) before quota test body",
+    "cause": "UNKNOWN; no causal source or environment diagnosis established"
+  },
+  "source_unchanged_from_621_full_pass": {
+    "services/api/proofpack/vision/worker.py": true,
+    "services/api/proofpack/capture/publication.py": true,
+    "tests/integration/test_labels.py": true,
+    "tests/integration/test_access_lifecycle.py": true
+  },
+  "local_sdk_sends": 179713,
+  "blocked_sdk_sends": 0,
+  "database_cleanup_verified": true,
+  "worker_deadline_changed": false,
+  "test_oracle_changed": false,
+  "next": "After full terminal cleanup audit, run the exact failed node once in a fresh owned cohort as an isolated diagnostic. A passing replay does not clear the original full failure or prove a causal fix.",
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

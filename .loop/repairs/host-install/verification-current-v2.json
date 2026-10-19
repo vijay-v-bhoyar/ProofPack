@@ -1,0 +1,106 @@
+{
+  "recorded_at": "2026-10-18T17:18:29.385344+00:00",
+  "subject_id": "working-tree-manifest-sha256:00fc45c0f7333bb993931c0af738c9e59ce0ef6baf51ef6704513065dc189fa5",
+  "source_inputs": 811,
+  "status": "PASS_LOCAL_OFFLINE_BUNDLE_AND_SYNTHETIC_INSTALL_MODELS_ONLY",
+  "source_cases": 78,
+  "source_phases": 234,
+  "groups": [
+    {
+      "group": "builder",
+      "cases": 46,
+      "phases": 138,
+      "process": "evidence/local/fresh-enrollment-models-host-install-builder-current-v1/process.json",
+      "process_sha256": "be8699474fa3726a73fb1a5d62ae1de6f1727ce565b9a6df3e8ddddf4fb299ac"
+    },
+    {
+      "group": "runtime",
+      "cases": 32,
+      "phases": 96,
+      "process": "evidence/local/fresh-enrollment-models-host-install-runtime-current-v1/process.json",
+      "process_sha256": "154b77d267cb3e15fd593a3a39af1e478b54476769e7c5cb5873909fd8e67e9a"
+    }
+  ],
+  "original_oracles": "ALL_SIX_CURRENT_FILES_BYTE_IDENTICAL_TO_RESPECTIVE_PRESERVED_ORIGINALS",
+  "original_fixture_correction": {
+    "original_failures": 5,
+    "test_function_AST": "UNCHANGED",
+    "scope": "Synthetic Windows ownership adapter; not actual Linux trust proof"
+  },
+  "local_sdk_sends": 0,
+  "external_sdk_sends": 0,
+  "full_collection_cases": 6086,
+  "collection_execution_phases": 0,
+  "collection_process": "evidence/local/host-install-collection-v2/process.json",
+  "collection_process_sha256": "86a1262ff39105e124299a7d567cd776d9d89b8d98766b2cfa5d9e34f79b2f5f",
+  "full_current_suite": "NOT_RUN",
+  "native_current": "NOT_RUN_MEMORY_HELD",
+  "native_arm_installation": "NOT_RUN",
+  "actual_cli": {
+    "builder_exit_code": 0,
+    "windows_installer_denial_exit_code": 2,
+    "files": 41,
+    "all_digests_match": true,
+    "dependencies": "FAKE_METADATA_AND_PAYLOADS_NOT_REAL_ARM_ARTIFACTS",
+    "orchestrator_exit_code": 1,
+    "recovery_exit_code": 0,
+    "scope": "Builder0/Windows refusal2 completed; helper inventory-path failure retained, outputs reconciled without rerunning either command",
+    "original_started_at": "UNKNOWN_AFTER_HELPER_POSTPROCESSING_FAILURE"
+  },
+  "manual_process": ".loop/repairs/host-install/manual-cli-v2-process.json",
+  "manual_process_sha256": "7e9a6e7cddde64afdaaca80036b9bf267290467a4b9278bacb4d723a14673b18",
+  "tool_packaging": "REPOSITORY_TOOLS_NOT_APP_WHEEL",
+  "runtime_members_verified": 161,
+  "all_prior803_inputs_unchanged": true,
+  "app_wheel_sha256": "63ec384c6081e008dd1586cb53cbd316299f9323af8b677883acdc9cc4138681",
+  "prior_runtime_evidence": "RETAINED_AT_PRIOR_SUBJECTS_NOT_FRESH_810_EXECUTION",
+  "graph": {
+    "nodes": 2390,
+    "edges": 10294,
+    "scope": "API only; unchanged backend; no scripts/tests/infra semantics"
+  },
+  "repair_records": [
+    "HI-F02-v2-record.json",
+    "HI-F03-v2-record.json",
+    "HI-F04-v2-record.json",
+    "HI-F05-v2-record.json",
+    "HI-F06-v2-record.json",
+    "HI-F07-v2-record.json"
+  ],
+  "limits": {
+    "collect_seconds": 60,
+    "execute_seconds": 120,
+    "installer_phase_seconds": [
+      60,
+      120,
+      30
+    ],
+    "no_bounds_or_assertions_relaxed": true
+  },
+  "parent_complete": false,
+  "authority": "NONE",
+  "human_A01_A09": "NOT_RUN",
+  "adoption_gates": "SEVEN_UNKNOWN_OR_BLOCKED",
+  "beta_decision": "NO_GO",
+  "remaining": [
+    "Actual compatible ARM wheels/provenance/AMI/CPython3.12/glibc and matching host service account/group",
+    "Authorized privileged/native installation and service/private config/key delivery/start",
+    "Actual AWS account/region/budget/quotes/D07/D11/provider/schema/IAM/TLS/SG/private logs",
+    "Source-bound recovery/teardown and complete privacy/requester/media work",
+    "Full current execution and held native suite; earlier browser causes UNKNOWN; IJ-T01 independent replacement-oracle review",
+    "All five features/nine personas/78operations/AP01-AP04/W01-W26/T01-T58 and physical/human acceptance"
+  ],
+  "ledger_validation": {
+    "path": ".loop/repairs/host-install/ledger-validation-v2.json",
+    "sha256": "925dc2b1d39c08eb60884d5ffd8f4d1ee0264141f679f05e0bd0381340765d04",
+    "status": "SIX_PARENT_REVIEW_READY_LOCAL_STRUCTURAL_ONLY",
+    "parent_complete": false,
+    "authority": "none"
+  },
+  "retained_810_execution": {
+    "cases": 74,
+    "wall_seconds": 111.88,
+    "bound_seconds": 120,
+    "scope": "Earlier 810-input subject only; narrow margin, not current-group or product performance proof"
+  }
+}

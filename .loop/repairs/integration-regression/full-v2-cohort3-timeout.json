@@ -1,0 +1,23 @@
+{
+  "scope": "retained full-v2 cohort3 timeout; diagnostic preparation only",
+  "status": "FAIL_TIMEOUT",
+  "exit_code": 124,
+  "bound_seconds": 900,
+  "expected_cases": 134,
+  "accepted_cases": 0,
+  "terminal_junit": "MISSING",
+  "phase_receipt": "COLLECTED; no terminal outcomes",
+  "database_terminated": true,
+  "database_state_removed": true,
+  "started_at": "2026-10-17T03:18:23.964992+00:00",
+  "ended_at": "2026-10-17T03:33:27.402144+00:00",
+  "log_sha256": "3e2351798b6c3e5efef4ba1e56f4f06db66da7ec7053883208bc8aee3e0e55c2",
+  "prior_exact_cohort": "134PASS in770.98s; original-cohort-003-profile-v2-verification.json",
+  "cause": "UNKNOWN; not established as application assertion defect",
+  "next_diagnostic": "same exact134cases/profile/900s; verbose and bounded passive phase journal; run only after full-v2 terminal to avoid competing test load",
+  "diagnostic_runner": "run_native_phase_profile.py",
+  "application_source_changes": [],
+  "oracle_changes": [],
+  "parent_complete": false,
+  "beta_decision": "NO_GO"
+}

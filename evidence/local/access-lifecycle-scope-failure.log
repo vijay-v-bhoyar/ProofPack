@@ -1,0 +1,35 @@
+....................F.                                                   [100%]
+================================== FAILURES ===================================
+_________ test_http_invitee_notice_and_metadata_scope_and_acceptance __________
+
+world = (<proofpack.auth.service.AccessService object at 0x000001B95868D610>, <proofpack.evidence.repository.DynamoRepository ..., access_revision=1, session_id='bba167ce-4f28-4730-8d2f-f4abb90f1242', session_expires_at=4600.0, mfa_verified=True)))
+
+    def test_http_invitee_notice_and_metadata_scope_and_acceptance(world):
+        service,repo,clock,uid,credentials,owner=world
+        first=service.create_invitation(owner,target_subject='p',target_email='p@example.invalid',roles=['operator'],ttl_seconds=60,idempotency_key='one')
+        second=service.create_invitation(owner,target_subject='q',target_email='q@example.invalid',roles=[],ttl_seconds=60,idempotency_key='two')
+        restricted=service.login(proof(clock,'p',mfa=False),invitation_id=first['id'])
+        with TestClient(create_app(access_service=service,app_origin='https://proofpack.test'),base_url='https://proofpack.test') as client:
+            client.cookies.set(COOKIE,restricted.cookie)
+            notice=client.get('/api/v1/auth/notice')
+            assert notice.status_code==200
+            metadata=client.get('/api/v1/invitations/'+first['id'])
+            assert metadata.status_code==200 and metadata.json()['state_version']==1
+            assert 'capability' not in metadata.json() and 'target_email_hash' not in metadata.json()
+            assert client.get('/api/v1/invitations/'+second['id']).status_code==403
+>           assert client.get('/api/v1/invitations').status_code==403
+E           AssertionError: assert 401 == 403
+E            +  where 401 = <Response [401 Unauthorized]>.status_code
+E            +    where <Response [401 Unauthorized]> = get('/api/v1/invitations')
+E            +      where get = <starlette.testclient.TestClient object at 0x000001B95865E720>.get
+
+tests\integration\test_access_lifecycle.py:320: AssertionError
+============================== warnings summary ===============================
+.venv\Lib\site-packages\fastapi\testclient.py:1
+  C:\Users\vijay\OneDrive\Documents\ChatGPT\AWS OpenCV\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ===========================
+FAILED tests/integration/test_access_lifecycle.py::test_http_invitee_notice_and_metadata_scope_and_acceptance
+1 failed, 21 passed, 1 warning in 4.77s

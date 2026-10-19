@@ -1,0 +1,19 @@
+{
+  "status": "PASS_FOR_EXACT_FAILED_COHORT_ON_CURRENT_SUBJECT",
+  "tests": 122,
+  "passing_phases": 366,
+  "original_case_inventory_exact": true,
+  "test_module_bytes_unchanged": true,
+  "cohort_timeout_seconds": 900,
+  "source_inputs": 599,
+  "source_unchanged": true,
+  "all_cleanup_verified": true,
+  "original_failure": "595-input whole-suite cohort timeout remains retained; cause UNKNOWN",
+  "limitations": [
+    "Current source is 599 inputs; runtime dependencies changed by seven guarded transferred files.",
+    "Same test bodies and case inventory do not prove the cause of the prior timeout.",
+    "Not a whole-current full-suite PASS or full workflow acceptance."
+  ],
+  "beta_decision": "NO_GO",
+  "parent_complete": false
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "completed failing cohort within still-running full regression; not terminal full audit",
+  "recorded_at": "2026-10-16T12:48:24.822086+00:00",
+  "cohort": 3,
+  "scheduled_cases": 128,
+  "bad_phases": [
+    {
+      "nodeid": "tests/integration/test_candidate_rollback.py::test_candidate_rollback_revalidates_actual_image_preparation_and_consumed_source_chain[qualification_compatible-synthetic_demo]",
+      "phase": "call",
+      "outcome": "failed",
+      "duration_seconds": 58.68627790000755
+    }
+  ],
+  "phases": 384,
+  "exit_code": 1,
+  "underlying_error": "botocore ReadTimeoutError against owned 127.0.0.1 DynamoDB endpoint; configured read timeout 5 seconds",
+  "product_error": "StoreUnavailable(repository transport unavailable)",
+  "cause": "UNKNOWN",
+  "local_sdk_sends": 121067,
+  "blocked_sdk_sends": 0,
+  "database_terminated": true,
+  "database_state_removed": true,
+  "parent_handle": 22424,
+  "parent_terminal_status": "NOT_AVAILABLE",
+  "deadlines_or_test_oracles_changed": false,
+  "candidate_integrated": false,
+  "receipts": [
+    {
+      "path": "evidence/local/metadata-held-full/evidence/local/python-cohort-003.json",
+      "sha256": "4bd208f43fb4f07e57ccfc1a67a1acbe51d2335c941e8fbe7468d34250edce50"
+    },
+    {
+      "path": "evidence/local/metadata-held-full/evidence/local/python-cohort-003.xml",
+      "sha256": "ac9e3ccb5da38f524d4db46a1c11eee5bb8c92858de3dea9f11f0ba953a4955f"
+    },
+    {
+      "path": "evidence/local/metadata-held-full/evidence/local/python-cohort-003.log",
+      "sha256": "626381ce3fcc354ec5632c9912c6e68cd4fd5ea46beb9f04fbda73eb710fd788"
+    },
+    {
+      "path": "evidence/local/metadata-held-full/evidence/local/python-cohort-003.json.sdk.json",
+      "sha256": "5f7349845d86b6a85ed0409f932eb7d6be4ac856373bd41440c76d2bdea7287a"
+    },
+    {
+      "path": "evidence/local/metadata-held-full/evidence/local/python-cohort-003-database.json",
+      "sha256": "48f05e6892571047609ff34e8f0ff3095b64bd5e5291401db888b887970b8243"
+    },
+    {
+      "path": "evidence/local/metadata-held-full/evidence/local/python-cohort-003-database.log",
+      "sha256": "09263be061d82885db53be175a43bef1b99125170effc01085af4ff6ef13b644"
+    }
+  ],
+  "beta_decision": "NO_GO"
+}

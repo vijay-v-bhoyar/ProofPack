@@ -1,0 +1,10 @@
+{
+  "status": "CORRECTION_SUPPORTED_BY_EXISTING_CANONICAL_CONTRACT",
+  "independent_human_review": false,
+  "source": "docs/STATE-DATA-API.md existing API error contract: 400 malformed/unknown fields; flat code/safe_message/request_id/retryable envelope.",
+  "canonical_app_source": "RequestValidationError handler uses 400 INVALID_REQUEST; error() emits the flat envelope.",
+  "original_run": "candidate/evidence/local/review-http-v1-process.json",
+  "failures": "Eight incorrect expected 422s and one incorrect nested error lookup; all nine requests were already rejected/minimized.",
+  "correction": "Expect exact 400 INVALID_REQUEST and flat METADATA_REVIEW_HELD at 503, with closed envelope and retryability checks. No invalid request may reach inventory.",
+  "unchanged": "31 cases, original deadlines, body/version/authority denial and no-inventory/no-leak requirements."
+}

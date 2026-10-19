@@ -1,0 +1,162 @@
+{
+  "recorded_at": "2026-10-15T17:28:52.796866+00:00",
+  "scope": "persona/adoption Improve documentation and selected unit verification only",
+  "skill": "user-first-product-adoption",
+  "mode": "Improve",
+  "personas": {
+    "P01": 10,
+    "P02": 10,
+    "P03": 10,
+    "P04": 8,
+    "P05": 8,
+    "P06": 8,
+    "P07": 8,
+    "P08": 8,
+    "P09": 8
+  },
+  "total_operations": 78,
+  "workflow_contracts": 26,
+  "executed_improvements": [
+    "I91: canonical correction journey and operator guidance",
+    "I92: acceptance children and blank neutral evaluation record",
+    "I93: whole-task comparison, actual dependencies and defer/decline conditions",
+    "README current assessment navigation and explicit stale-checkpoint boundary"
+  ],
+  "commands": [
+    {
+      "command": ".venv/Scripts/python.exe docs/contracts/validate_documentation.py",
+      "exit_code": 0,
+      "status": "PASS",
+      "checks": 30,
+      "inputs": 31
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m pytest tests/unit/test_measured_correction_cues.py tests/unit/test_correction_reference_geometry.py tests/unit/test_vision.py tests/unit/test_recipes.py -q --junitxml=evidence/local/persona-adoption-measured-unit.xml",
+      "exit_code": 0,
+      "status": "PASS",
+      "tests": 46,
+      "skips": 0
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "72d4a0df9ecc7919283f90b43637af06e19c62c86c4e681623b881b96475cd98"
+    },
+    {
+      "path": "docs/PERSONAS-OPERATIONS.md",
+      "sha256": "c947748e360dea02622ee0fd6e0862c8802f00e83808287aaf10bbe1c59b72d0"
+    },
+    {
+      "path": "docs/USER-NEEDS-ADOPTION.md",
+      "sha256": "bb1664982e564a9f53f8e158c32181b1746234419af7d2cb9d1805a1ba4b576c"
+    },
+    {
+      "path": "docs/TEST-PLAN.md",
+      "sha256": "ddb5fc4aa5fbcc406513340fcf2c66ec9b4aa0b9f682bf31465166487534bc79"
+    },
+    {
+      "path": "docs/BETA-USER-GUIDE.md",
+      "sha256": "1f7c05d8abed2acf3b9f2ee04c5ee5234d1b44fcb464be8ee491957e78e744bd"
+    },
+    {
+      "path": "docs/templates/BETA-SESSION-RECORD.md",
+      "sha256": "a65741726b892f5a2985242ae3e965b7c39c22f54cfde48feab09716f77e34a2"
+    },
+    {
+      "path": "docs/WORKFLOW-COVERAGE.md",
+      "sha256": "4ddab2d0cd44528edfebc4ceb13aed3b7e0d20b6babaf1a8afdab882757bf9ee"
+    },
+    {
+      "path": "docs/BUILD-STATUS.md",
+      "sha256": "4db7435ce951da821563c45eb43ccc0dd2e51619ba19f776b00aadee3591a7ef"
+    },
+    {
+      "path": "tests/unit/test_measured_correction_cues.py",
+      "sha256": "8a56570aa100db646622fb3bf6dfde96d9a9784c5f65712c4dfdc4a44da3ee82"
+    },
+    {
+      "path": "tests/unit/test_correction_reference_geometry.py",
+      "sha256": "6020215c231b13d758650d95bfc8ee70d4bacf84a0c5a67268514ad85711b4c7"
+    },
+    {
+      "path": "tests/unit/test_vision.py",
+      "sha256": "5980eb7784aa17d82a8643eb5572614cfdb349f3d370e3cd8bbc817b3883cd14"
+    },
+    {
+      "path": "tests/unit/test_recipes.py",
+      "sha256": "df095eda42d299cae67ba80cdeb35709f2d5db2b223090d9d73997e41ff5b62f"
+    },
+    {
+      "path": "evidence/documentation-validation.json",
+      "sha256": "b04b7e0090f24f4b211bee6ccaed75e210f25bd8e911813ce0d9aa1fdbbb2ec3"
+    },
+    {
+      "path": "evidence/local/persona-adoption-measured-docs.log",
+      "sha256": "c2ceb36f8d1bebbbd6368c60e0ad62f45897c0df416f6d942889a22b996dbf46"
+    },
+    {
+      "path": "evidence/local/persona-adoption-measured-unit.xml",
+      "sha256": "91dbc6d34906b554b478399a47bb18394e8c76b95dec5c92c0a931c6d68bdb88"
+    },
+    {
+      "path": "evidence/local/persona-adoption-measured-unit.log",
+      "sha256": "87c660f467f8bf1ab7d32cb864db51090378c1328eb2b342f1c6e7f3ef832ac8"
+    }
+  ],
+  "inspected_sources_after_unit_run": [
+    {
+      "path": "services/api/proofpack/vision/correction.py",
+      "sha256": "96d2d3c375b6c7cd33cba46cb187da5a2aba1074ec303d1e178fd74b37e98eb1"
+    },
+    {
+      "path": "services/api/proofpack/vision/pipeline.py",
+      "sha256": "8680f27badd9319f8b26568905e8b90a73ec1587de283e14041528aa056bc6eb"
+    },
+    {
+      "path": "services/api/proofpack/vision/worker_result.py",
+      "sha256": "dc6a88186b80f94c14274139461df702e8cd800eb0c365c78c563f2c80cd9441"
+    },
+    {
+      "path": "services/api/proofpack/recipes/models.py",
+      "sha256": "ed71d55136646969cbf2e97e9d41a9f90817268d930cef19545783302b036f98"
+    },
+    {
+      "path": "apps/web/src/correctionReference.ts",
+      "sha256": "aa5d63eee009802a892a349383fe825ae67011142acbd6fa67b95e9ba2149dd4"
+    },
+    {
+      "path": "apps/web/src/EvidencePanel.tsx",
+      "sha256": "854fa5e6b32a9fb3ab44b81c0442fa15634b9f53883517e53c1558e27a116de6"
+    },
+    {
+      "path": "apps/web/src/OperatorWorkspace.tsx",
+      "sha256": "e54c531388f67845ffc5cce279d7211e98e404210e2c7765a605ed3f1d96ce41"
+    }
+  ],
+  "human_scenarios": "A01-A09 NOT_RUN; A03-M1/A04-M1/A05-M1 all four combined layers NOT_RUN",
+  "external_pilot_gates": {
+    "understanding": "UNKNOWN",
+    "value": "UNKNOWN",
+    "experience": "BLOCKED",
+    "technical_assurance": "BLOCKED",
+    "demonstration": "BLOCKED",
+    "adoption": "BLOCKED",
+    "publication": "BLOCKED"
+  },
+  "beta": "NO_GO",
+  "runtime_changes_by_this_review": false,
+  "remaining": [
+    "Final current-source F3 rendered/configured integration and whole-product acceptance",
+    "Actual kits/operators and independent physical truth",
+    "Uncoached first/repeat task comprehension, accessibility and total burden",
+    "Named accepted supervision/support/privacy duties and authorized costed target",
+    "Frozen baseline, actual buyer thresholds, full attempt denominators and adoption decision"
+  ],
+  "limits": [
+    "No current full-runtime test claim or timing/reliability claim",
+    "Source hashes were collected after selected unit execution, not a before/after runtime manifest",
+    "No physical/human/provider evidence; no launch, deployment, spend, contact or publication",
+    "Existing unfinished runtime work is preserved and not claimed delivered"
+  ]
+}

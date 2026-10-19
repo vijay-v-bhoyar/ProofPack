@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "changed_functions": [
+    "station_world",
+    "synthetic_readiness",
+    "synthetic_recipe_qualification"
+  ],
+  "unchanged_test_functions": 129,
+  "before_sha256": "4650aed4d58d620ff04c066b43ef4299b050364e8adad6a94dbcc05b55b776f9",
+  "after_sha256": "952e508bbcd9c3011a02429cc690d4de515f8fcc03ff3691f8b892c12f1d85a0",
+  "scope": "AST equality proves test function/decorator assertions unchanged; does not execute every test or certify synthetic reports.",
+  "hash_domain": "exact source bytes; prior text-normalized hashes retained separately"
+}
