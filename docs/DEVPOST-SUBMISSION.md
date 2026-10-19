@@ -21,7 +21,7 @@ Observed through the authenticated browser because Devpost connector whoami and 
 | Built with | Python and OpenCV saved; additional implementation tags optional |
 | Video demo link | Required; actual public/unlisted YouTube/Vimeo URL missing |
 | File upload | Required; maximum 35 MB; report archive prepared locally. Browser upload blocked by extension file-access permission; not uploaded |
-| Repository URL | Created https://github.com/vijay-v-bhoyar/ProofPack as private; source pushed and URL saved to Devpost. Judge access remains pending |
+| Repository URL | Public: https://github.com/vijay-v-bhoyar/ProofPack; source pushed and URL saved to Devpost. Public visibility verified after email confirmation |
 | Testing instructions | Saved and re-opened to verify persistence; describes local checks and absent hosted access |
 | Working web endpoint | Optional form field, but published requirements demand endpoint OR arranged live screen-share; neither verified |
 | Sponsor / Special Prizes | Leave unselected until qualifying evidence is ready |
@@ -58,7 +58,7 @@ These are scoped reproduction instructions, not a claim that this clean-install 
 - Technical report: [current report](submission/TECHNICAL-REPORT.md), including an architecture diagram and claim limits.
 - Video: follow the existing [4:40 demo script](templates/DEMO-SCRIPT.md); show the team and actual application, label synthetic/recorded material, show a failure/invalidation, architecture and measured results. Do not present a storyboard as a working demo.
 - Screenshots needed: configured recipe/capture preview; targeted correction; stale-result invalidation; historical evidence; reviewer replay. Capture actual UI and label fixtures; no fabricated application screenshots.
-- Repository/source access: https://github.com/vijay-v-bhoyar/ProofPack was created private. The user authorized creating a repository and pushing the project; public/private choice remains pending. Grant judge access or explicitly choose public before final submission. No external collaborators were invited.
+- Repository/source access: https://github.com/vijay-v-bhoyar/ProofPack is public at the user's explicit request, verified through GitHub after email confirmation on October 19, 2026. No collaborator invitation is needed for source access. Application/demo access remains separate.
 - AWS: execute a meaningful component under separately resolved target/budget authority and attach a same-request execution receipt.
 - Evaluation: physical/operator benefit remains unmeasured; report denominators, baselines and failures when collected.
 - Agentic Vision: potential fit; attach an actual perception-to-action trace and evaluation before selecting both applicable award fields. COOL remains unclaimed without actual COOL/Arm workload evidence.

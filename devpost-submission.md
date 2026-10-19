@@ -46,4 +46,4 @@ Complete the remaining privacy and recovery workflows; execute and record the me
 
 ## Preparation and assets
 
-See [submission checklist](docs/DEVPOST-SUBMISSION.md) for actual form fields, testing instructions, video outline, screenshot shot list, eligibility questions and missing evidence. [Technical report](docs/submission/TECHNICAL-REPORT.md). No public demo or video link is available yet. [Repository](https://github.com/vijay-v-bhoyar/ProofPack) was created private; judge access remains required. The user requested leaving video blank. The local report archive is not uploaded because browser file access is disabled.
+See [submission checklist](docs/DEVPOST-SUBMISSION.md) for actual form fields, testing instructions, video outline, screenshot shot list, eligibility questions and missing evidence. [Technical report](docs/submission/TECHNICAL-REPORT.md). No public demo or video link is available yet. [Repository](https://github.com/vijay-v-bhoyar/ProofPack) is public; source access requires no invitation. The user requested leaving video blank. The local report archive is not uploaded because browser file access is disabled.

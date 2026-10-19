@@ -1,7 +1,7 @@
 {
   "scope": "documentation_structure_only",
   "status": "PASS",
-  "recorded_at": "2026-10-19T13:05:30.381750+00:00",
+  "recorded_at": "2026-10-19T13:10:31.162443+00:00",
   "command": "python docs/contracts/validate_documentation.py",
   "exit_code": 0,
   "tools": {
@@ -217,7 +217,7 @@
     },
     {
       "path": "devpost-submission.md",
-      "sha256": "80bdfdea6efbfec0d5b70d5bfa0fb8776b98822584d3ed64adaaac9552a766c8"
+      "sha256": "6b0ad119e040a98a5449534ded3cfd22a8c8bed45bcf5a08460ee356ee2f309c"
     },
     {
       "path": "docs/AGENT-DESIGN.md",
@@ -257,7 +257,7 @@
     },
     {
       "path": "docs/DEVPOST-SUBMISSION.md",
-      "sha256": "00a74e32a20ba6108a00981ded5b7f856965a3b2902d3dcab8f887844d564836"
+      "sha256": "3dc2f55e42964bb8bd8bd7055d9a923880ef0c690fb80bc785201b72460a4df9"
     },
     {
       "path": "docs/FEATURE-SPECS.md",
@@ -293,7 +293,7 @@
     },
     {
       "path": "docs/submission/TECHNICAL-REPORT.md",
-      "sha256": "d3bedd54442be7d5b04d52ac7be80395122ac05cfba4abd0351ef4901f2c0a74"
+      "sha256": "2f19866456d368a5d327853f044fc93bc84faac048b1e8a37d445208bd9fbe35"
     },
     {
       "path": "docs/templates/BETA-SESSION-RECORD.md",
