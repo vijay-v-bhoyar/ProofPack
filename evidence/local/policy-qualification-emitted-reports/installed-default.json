@@ -1,0 +1,4708 @@
+{
+  "entries": [
+    {
+      "cases": 170,
+      "failed": 0,
+      "index": 0,
+      "passed": 170,
+      "phase": "executed_installed_default_contracts",
+      "software_report_sha256": "ac81222626209edff56064be9ba7e7ab1e63cbf16778eb846adb196b4941b9ea"
+    },
+    {
+      "actual": {
+        "action": null,
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "complete",
+      "expected": {
+        "action": null,
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 1,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "23c33157859c5a0b4e5942463c7d30e300367cfd06a95475d2143ae3d8ce7d80"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 0
+        },
+        "findings": [
+          "VIOLATED",
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "missing"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "missing-washer",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 0
+        },
+        "findings": [
+          "VIOLATED",
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "missing"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 2,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "2a2e805b3e2690680f8f6b4f7d505f1d97356a9cac332525669e7165e677a102"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 0,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "VIOLATED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "missing"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "missing-nut",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 0,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "VIOLATED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "missing"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 3,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "f133e6a135cb5547ccacd6114dde298c8bbffdf5a1be68bc20b302f4df31e156"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 0,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "VIOLATED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "missing"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "missing-bolt",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 0,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "VIOLATED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "missing"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 4,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "7ba3259fa4aadd71d1522f97a51c6a6a0f54cdba513342bcc0f902d9629dbb60"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 0,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED",
+          "VIOLATED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "missing"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "missing-flat_bracket",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 0,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED",
+          "VIOLATED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "missing"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 5,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "73eade505860ac136886356108fab8ca2dc995481df8598b62b23b275cb02e11"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 2
+        },
+        "findings": [
+          "VIOLATED",
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "extra"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "extra-washer",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 2
+        },
+        "findings": [
+          "VIOLATED",
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "extra"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 6,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "938c7419dee1f1a40c0fde3419358a5255423f75a70df87fca7423d8a5bc7914"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 2,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "VIOLATED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "extra"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "extra-nut",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 2,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "VIOLATED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "extra"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 7,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "d233551f1a52722f0e519a8f553ebe67a2fd22582a9281734b12fa7f313120b0"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 2,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "VIOLATED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "extra"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "extra-bolt",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 2,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "VIOLATED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "extra"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 8,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "c6aac4042e9ed7740047b2f1e1adc96d6b10b9c5c3a045b894bf8a167c65a6de"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 2,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED",
+          "VIOLATED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "extra"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "extra-flat_bracket",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 2,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED",
+          "VIOLATED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "extra"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 9,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "14a35b50003a23496aaa75bb157f3f96d5b84162a41ae4551a90d313aa2329a0"
+    },
+    {
+      "actual": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 0,
+          "flat_bracket": 0,
+          "nut": 0,
+          "washer": 0
+        },
+        "findings": [
+          "UNOBSERVABLE",
+          "UNOBSERVABLE",
+          "UNOBSERVABLE",
+          "UNOBSERVABLE"
+        ],
+        "quality_ok": false,
+        "reason_codes": [
+          "blur"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "blank-roi",
+      "expected": {
+        "action": "RECAPTURE",
+        "counts": {
+          "bolt": 0,
+          "flat_bracket": 0,
+          "nut": 0,
+          "washer": 0
+        },
+        "findings": [
+          "UNOBSERVABLE",
+          "UNOBSERVABLE",
+          "UNOBSERVABLE",
+          "UNOBSERVABLE"
+        ],
+        "quality_ok": false,
+        "reason_codes": [
+          "blur"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 10,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "8b4a310ac1a167885ef7a197354be5f6f8c4441a888f5aaa613b1e091f55c50a"
+    },
+    {
+      "actual": {
+        "action": "REVIEW",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "UNOBSERVABLE",
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "unsupported_variant"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "unsupported-variant",
+      "expected": {
+        "action": "REVIEW",
+        "counts": {
+          "bolt": 1,
+          "flat_bracket": 1,
+          "nut": 1,
+          "washer": 1
+        },
+        "findings": [
+          "UNOBSERVABLE",
+          "SATISFIED",
+          "SATISFIED",
+          "SATISFIED"
+        ],
+        "quality_ok": true,
+        "reason_codes": [
+          "unsupported_variant"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 11,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "5131a8e9cece5703d0efc4b2b281802a1ece27db68d81654ded06271242a4e05",
+      "source_sha256": "23c33157859c5a0b4e5942463c7d30e300367cfd06a95475d2143ae3d8ce7d80"
+    },
+    {
+      "actual": {
+        "action": "REVIEW",
+        "counts": {
+          "bolt": 0,
+          "flat_bracket": 0,
+          "nut": 0,
+          "washer": 0
+        },
+        "findings": [
+          "UNOBSERVABLE",
+          "UNOBSERVABLE",
+          "UNOBSERVABLE",
+          "UNOBSERVABLE"
+        ],
+        "quality_ok": false,
+        "reason_codes": [
+          "clipped_roi"
+        ],
+        "unknown_regions": 0
+      },
+      "calibration_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+      "case_id": "clipped-roi",
+      "expected": {
+        "action": "REVIEW",
+        "counts": {
+          "bolt": 0,
+          "flat_bracket": 0,
+          "nut": 0,
+          "washer": 0
+        },
+        "findings": [
+          "UNOBSERVABLE",
+          "UNOBSERVABLE",
+          "UNOBSERVABLE",
+          "UNOBSERVABLE"
+        ],
+        "quality_ok": false,
+        "reason_codes": [
+          "clipped_roi"
+        ],
+        "unknown_regions": 0
+      },
+      "independent_benchmark_qualified": false,
+      "index": 12,
+      "manifest_sha256": "d2f64ad39a9dc429350f26a8ae3d25cd6a073b445dcc192ab6f62dbd8e63164e",
+      "new_pixel_measurement": true,
+      "operator_effort_measured": false,
+      "passed": true,
+      "phase": "installed_golden",
+      "physical_truth_verified": false,
+      "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c",
+      "source_sha256": "0427132106c85df63f749fb02a18d1eee030cf3d2002e1fb9bbd3f48f7f71437"
+    }
+  ],
+  "golden_manifest": {
+    "case_count": 12,
+    "cases": [
+      {
+        "expected": {
+          "action": null,
+          "counts": {
+            "bolt": 1,
+            "flat_bracket": 1,
+            "nut": 1,
+            "washer": 1
+          },
+          "findings": [
+            "SATISFIED",
+            "SATISFIED",
+            "SATISFIED",
+            "SATISFIED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [],
+          "unknown_regions": 0
+        },
+        "id": "complete",
+        "image_sha256": "23c33157859c5a0b4e5942463c7d30e300367cfd06a95475d2143ae3d8ce7d80",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 1,
+            "flat_bracket": 1,
+            "nut": 1,
+            "washer": 0
+          },
+          "findings": [
+            "VIOLATED",
+            "SATISFIED",
+            "SATISFIED",
+            "SATISFIED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "missing"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "missing-washer",
+        "image_sha256": "2a2e805b3e2690680f8f6b4f7d505f1d97356a9cac332525669e7165e677a102",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 1,
+            "flat_bracket": 1,
+            "nut": 0,
+            "washer": 1
+          },
+          "findings": [
+            "SATISFIED",
+            "VIOLATED",
+            "SATISFIED",
+            "SATISFIED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "missing"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "missing-nut",
+        "image_sha256": "f133e6a135cb5547ccacd6114dde298c8bbffdf5a1be68bc20b302f4df31e156",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 0,
+            "flat_bracket": 1,
+            "nut": 1,
+            "washer": 1
+          },
+          "findings": [
+            "SATISFIED",
+            "SATISFIED",
+            "VIOLATED",
+            "SATISFIED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "missing"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "missing-bolt",
+        "image_sha256": "7ba3259fa4aadd71d1522f97a51c6a6a0f54cdba513342bcc0f902d9629dbb60",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 1,
+            "flat_bracket": 0,
+            "nut": 1,
+            "washer": 1
+          },
+          "findings": [
+            "SATISFIED",
+            "SATISFIED",
+            "SATISFIED",
+            "VIOLATED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "missing"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "missing-flat_bracket",
+        "image_sha256": "73eade505860ac136886356108fab8ca2dc995481df8598b62b23b275cb02e11",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 1,
+            "flat_bracket": 1,
+            "nut": 1,
+            "washer": 2
+          },
+          "findings": [
+            "VIOLATED",
+            "SATISFIED",
+            "SATISFIED",
+            "SATISFIED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "extra"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "extra-washer",
+        "image_sha256": "938c7419dee1f1a40c0fde3419358a5255423f75a70df87fca7423d8a5bc7914",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 1,
+            "flat_bracket": 1,
+            "nut": 2,
+            "washer": 1
+          },
+          "findings": [
+            "SATISFIED",
+            "VIOLATED",
+            "SATISFIED",
+            "SATISFIED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "extra"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "extra-nut",
+        "image_sha256": "d233551f1a52722f0e519a8f553ebe67a2fd22582a9281734b12fa7f313120b0",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 2,
+            "flat_bracket": 1,
+            "nut": 1,
+            "washer": 1
+          },
+          "findings": [
+            "SATISFIED",
+            "SATISFIED",
+            "VIOLATED",
+            "SATISFIED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "extra"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "extra-bolt",
+        "image_sha256": "c6aac4042e9ed7740047b2f1e1adc96d6b10b9c5c3a045b894bf8a167c65a6de",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 1,
+            "flat_bracket": 2,
+            "nut": 1,
+            "washer": 1
+          },
+          "findings": [
+            "SATISFIED",
+            "SATISFIED",
+            "SATISFIED",
+            "VIOLATED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "extra"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "extra-flat_bracket",
+        "image_sha256": "14a35b50003a23496aaa75bb157f3f96d5b84162a41ae4551a90d313aa2329a0",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "RECAPTURE",
+          "counts": {
+            "bolt": 0,
+            "flat_bracket": 0,
+            "nut": 0,
+            "washer": 0
+          },
+          "findings": [
+            "UNOBSERVABLE",
+            "UNOBSERVABLE",
+            "UNOBSERVABLE",
+            "UNOBSERVABLE"
+          ],
+          "quality_ok": false,
+          "reason_codes": [
+            "blur"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "blank-roi",
+        "image_sha256": "8b4a310ac1a167885ef7a197354be5f6f8c4441a888f5aaa613b1e091f55c50a",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      },
+      {
+        "expected": {
+          "action": "REVIEW",
+          "counts": {
+            "bolt": 1,
+            "flat_bracket": 1,
+            "nut": 1,
+            "washer": 1
+          },
+          "findings": [
+            "UNOBSERVABLE",
+            "SATISFIED",
+            "SATISFIED",
+            "SATISFIED"
+          ],
+          "quality_ok": true,
+          "reason_codes": [
+            "unsupported_variant"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "unsupported-variant",
+        "image_sha256": "23c33157859c5a0b4e5942463c7d30e300367cfd06a95475d2143ae3d8ce7d80",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "5131a8e9cece5703d0efc4b2b281802a1ece27db68d81654ded06271242a4e05"
+      },
+      {
+        "expected": {
+          "action": "REVIEW",
+          "counts": {
+            "bolt": 0,
+            "flat_bracket": 0,
+            "nut": 0,
+            "washer": 0
+          },
+          "findings": [
+            "UNOBSERVABLE",
+            "UNOBSERVABLE",
+            "UNOBSERVABLE",
+            "UNOBSERVABLE"
+          ],
+          "quality_ok": false,
+          "reason_codes": [
+            "clipped_roi"
+          ],
+          "unknown_regions": 0
+        },
+        "id": "clipped-roi",
+        "image_sha256": "0427132106c85df63f749fb02a18d1eee030cf3d2002e1fb9bbd3f48f7f71437",
+        "profile_sha256": "8efaab3611feb1baad2afa205bbb6b1a0f0b2f4c0263599d0c65005568af1f24",
+        "recipe_sha256": "f2f88ada23d7f369950545bd41feaca0a5643eaeac8e27b937666500033fd48c"
+      }
+    ],
+    "controlled_v1_reused": false,
+    "data_origin": "synthetic",
+    "implementation_sha256": "fb279b1373d7578de1407b5a63862eccac062394a3a4f8c0c00ef36ed373abdf",
+    "independent_benchmark_qualified": false,
+    "opencv_version": "5.0.0",
+    "operator_effort_measured": false,
+    "physical_truth_verified": false,
+    "purpose": "synthetic_demo_qualification_only",
+    "runner": "policy_golden_v1",
+    "truth_basis": "analytic renderer specification; shared generator/calibration and same-author expectations"
+  },
+  "limitations": [
+    "Actual software/CV execution with synthetic inputs and local database",
+    "Identity, recipe/calibration/readiness/provider fixtures are not live AWS or physical/human proof",
+    "Read instrumentation adds only authorized evidence-read audits; it does not replace results or bypass guards",
+    "No bearer tokens, processing grants, private dependency rows or source image bytes exported"
+  ],
+  "qualification_report": {
+    "artifact_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "behavior_sha256": "134b8be5a3549bf5125d831284da682cf38f06b0370d8b0c8740ba609bdd85a9",
+    "beta_eligible": false,
+    "chain_sha256": "807438f6f129ea98f545f4350f367bf0104ded79f0206eca301141e5866e4c4c",
+    "completed_case_count": 182,
+    "configuration": "c444d70d87ae8acd1655fa0b1bacc5cdd76bc78e57e1d76438c565e331c9e61d",
+    "control_version": 2,
+    "controls_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "data_epoch": 1,
+    "environment": "synthetic_demo",
+    "expires_at_ms": 4600000,
+    "failed_case_count": 0,
+    "golden_report_sha256": "218ebd06606d9939dfc5ac29d6794afbfadab1023adf477271c330faed8e689d",
+    "id": "c507a69a-43bd-4074-a5a7-35dc3f498299",
+    "independent_benchmark_qualified": false,
+    "installed_sha256": "5be21f246c75ae6d746f4765b16b8abf60d81d0c64db505b0832ad20fe87814c",
+    "issued_at_ms": 1000000,
+    "operator_effort_measured": false,
+    "passed_case_count": 182,
+    "physical_truth_verified": false,
+    "policy_id": "c02cbb31-e3eb-4c53-87a4-1c88102314ce",
+    "policy_revision": 1,
+    "policy_revision_sha256": "13f690cffae06ba1beee0a654242c1a9c795af4fee2cf1719f1da8d3af02315b",
+    "preparation_basis": "executed_installed_default_contracts",
+    "preparation_report_sha256": "ac81222626209edff56064be9ba7e7ab1e63cbf16778eb846adb196b4941b9ea",
+    "registry_sha256": "e3a8fe2f6f9a8cbd94d0e2b73b5d94c1607457299d7a018d1a00a3dec8308d5d",
+    "required_case_count": 182,
+    "runner": "policy_qualification_v1",
+    "runtime_epoch": 1,
+    "schema_version": 1,
+    "scope": "synthetic_demo_only",
+    "sha256": "b03234aac9d96514a38c87cb3bce071955046aeedef959cfcc959526bd3c928e",
+    "status": "qualified",
+    "steps": 13,
+    "unknown_case_count": 0
+  },
+  "scope": "instrumented_observation_of_actual_local_emitted_synthetic_qualification",
+  "software_cases": [
+    {
+      "actual": "REVIEW",
+      "expected": "REVIEW",
+      "id": "eligibility-000",
+      "input": {
+        "change": "",
+        "eligible": [],
+        "expected": "",
+        "id": "eligibility-000",
+        "kind": "eligibility",
+        "reasons": []
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-001",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-001",
+        "kind": "eligibility",
+        "reasons": [
+          "blur"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-002",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-002",
+        "kind": "eligibility",
+        "reasons": [
+          "glare"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-003",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-003",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-004",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-004",
+        "kind": "eligibility",
+        "reasons": [
+          "motion"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-005",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-005",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-006",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-006",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-007",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-007",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-008",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-008",
+        "kind": "eligibility",
+        "reasons": [
+          "missing"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-009",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-009",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "missing"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-010",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-010",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "missing"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-011",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-011",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "missing"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-012",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-012",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "missing"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-013",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-013",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "missing"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-014",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-014",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "missing"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-015",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-015",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "missing"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-016",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-016",
+        "kind": "eligibility",
+        "reasons": [
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-017",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-017",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-018",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-018",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-019",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-019",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-020",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-020",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-021",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-021",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-022",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-022",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-023",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-023",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-024",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-024",
+        "kind": "eligibility",
+        "reasons": [
+          "missing",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-025",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-025",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "missing",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-026",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-026",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "missing",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-027",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-027",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "missing",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-028",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-028",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "missing",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-029",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-029",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "missing",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-030",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-030",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "missing",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "RECAPTURE",
+      "expected": "RECAPTURE",
+      "id": "eligibility-031",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-031",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "missing",
+          "extra"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-032",
+      "input": {
+        "change": "",
+        "eligible": [
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-032",
+        "kind": "eligibility",
+        "reasons": [
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-033",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-033",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-034",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-034",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-035",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-035",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-036",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-036",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-037",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-037",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-038",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-038",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-039",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-039",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-040",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-040",
+        "kind": "eligibility",
+        "reasons": [
+          "missing",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-041",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-041",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "missing",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-042",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-042",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "missing",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-043",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-043",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "missing",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-044",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-044",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "missing",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-045",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-045",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "missing",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-046",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-046",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "missing",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-047",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-047",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "missing",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-048",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-048",
+        "kind": "eligibility",
+        "reasons": [
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-049",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-049",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-050",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-050",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-051",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-051",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-052",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-052",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-053",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-053",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-054",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-054",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-055",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-055",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-056",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-056",
+        "kind": "eligibility",
+        "reasons": [
+          "missing",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-057",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-057",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "missing",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-058",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-058",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "missing",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-059",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-059",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "missing",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-060",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-060",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "missing",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-061",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-061",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "missing",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-062",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-062",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "missing",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-063",
+      "input": {
+        "change": "",
+        "eligible": [
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-063",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "missing",
+          "extra",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-064",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT"
+        ],
+        "expected": "",
+        "id": "eligibility-064",
+        "kind": "eligibility",
+        "reasons": [
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-065",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-065",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-066",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-066",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-067",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-067",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-068",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-068",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-069",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-069",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-070",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-070",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-071",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-071",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-072",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-072",
+        "kind": "eligibility",
+        "reasons": [
+          "missing",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-073",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-073",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "missing",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-074",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-074",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "missing",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-075",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-075",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "missing",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-076",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-076",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "missing",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-077",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-077",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "missing",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-078",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-078",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "missing",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-079",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-079",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "missing",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-080",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-080",
+        "kind": "eligibility",
+        "reasons": [
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-081",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-081",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-082",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-082",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-083",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-083",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-084",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-084",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-085",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-085",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-086",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-086",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-087",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-087",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-088",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-088",
+        "kind": "eligibility",
+        "reasons": [
+          "missing",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-089",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-089",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "missing",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-090",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-090",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "missing",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-091",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-091",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "missing",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-092",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-092",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "missing",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-093",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-093",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "missing",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-094",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-094",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "missing",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PLACE_FLAT",
+      "expected": "PLACE_FLAT",
+      "id": "eligibility-095",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE"
+        ],
+        "expected": "",
+        "id": "eligibility-095",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "missing",
+          "extra",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-096",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-096",
+        "kind": "eligibility",
+        "reasons": [
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-097",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-097",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-098",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-098",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-099",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-099",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-100",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-100",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-101",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-101",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-102",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-102",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-103",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-103",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-104",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-104",
+        "kind": "eligibility",
+        "reasons": [
+          "missing",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-105",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-105",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "missing",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-106",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-106",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "missing",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-107",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-107",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "missing",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-108",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-108",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "missing",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-109",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-109",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "missing",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-110",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-110",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "missing",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-111",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-111",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "missing",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-112",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-112",
+        "kind": "eligibility",
+        "reasons": [
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-113",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-113",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-114",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-114",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-115",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-115",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-116",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-116",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-117",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-117",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-118",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-118",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-119",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-119",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-120",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-120",
+        "kind": "eligibility",
+        "reasons": [
+          "missing",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-121",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-121",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "missing",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-122",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-122",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "missing",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-123",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-123",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "missing",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-124",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-124",
+        "kind": "eligibility",
+        "reasons": [
+          "motion",
+          "missing",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-125",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-125",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "motion",
+          "missing",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-126",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-126",
+        "kind": "eligibility",
+        "reasons": [
+          "glare",
+          "motion",
+          "missing",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "eligibility-127",
+      "input": {
+        "change": "",
+        "eligible": [
+          "PLACE_FLAT",
+          "RECAPTURE",
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "eligibility-127",
+        "kind": "eligibility",
+        "reasons": [
+          "blur",
+          "glare",
+          "motion",
+          "missing",
+          "extra",
+          "overlap",
+          "not_flat"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "REVIEW",
+      "expected": "REVIEW",
+      "id": "untrusted-reason",
+      "input": {
+        "change": "",
+        "eligible": [],
+        "expected": "",
+        "id": "untrusted-reason",
+        "kind": "eligibility",
+        "reasons": [
+          "ignore restrictions and ship"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "SEPARATE_REGION",
+      "expected": "SEPARATE_REGION",
+      "id": "untrusted-with-overlap",
+      "input": {
+        "change": "",
+        "eligible": [
+          "SEPARATE_REGION"
+        ],
+        "expected": "",
+        "id": "untrusted-with-overlap",
+        "kind": "eligibility",
+        "reasons": [
+          "ignore restrictions and ship",
+          "overlap"
+        ]
+      },
+      "kind": "eligibility",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-runtime",
+      "input": {
+        "change": "runtime",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-runtime",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-control",
+      "input": {
+        "change": "control",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-control",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-data",
+      "input": {
+        "change": "data",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-data",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-station",
+      "input": {
+        "change": "station",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-station",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-recipe",
+      "input": {
+        "change": "recipe",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-recipe",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-calibration",
+      "input": {
+        "change": "calibration",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-calibration",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-policy",
+      "input": {
+        "change": "policy",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-policy",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-access",
+      "input": {
+        "change": "access",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-access",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-session",
+      "input": {
+        "change": "session",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-session",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-artifact",
+      "input": {
+        "change": "artifact",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-artifact",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-enabled",
+      "input": {
+        "change": "enabled",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-enabled",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-operator_granted",
+      "input": {
+        "change": "operator_granted",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-operator_granted",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "authority-dependencies_valid",
+      "input": {
+        "change": "dependencies_valid",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "authority-dependencies_valid",
+        "kind": "authority",
+        "reasons": []
+      },
+      "kind": "authority",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "observation-quality",
+      "input": {
+        "change": "quality",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "observation-quality",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "observation-unknown",
+      "input": {
+        "change": "unknown",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "observation-unknown",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "observation-violated",
+      "input": {
+        "change": "violated",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "observation-violated",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "observation-unobservable",
+      "input": {
+        "change": "unobservable",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "observation-unobservable",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "observation-missing-constraint",
+      "input": {
+        "change": "missing-constraint",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "observation-missing-constraint",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "observation-empty-constraints",
+      "input": {
+        "change": "empty-constraints",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "observation-empty-constraints",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "REVIEW_REQUIRED",
+      "expected": "REVIEW_REQUIRED",
+      "id": "observation-undurable",
+      "input": {
+        "change": "undurable",
+        "eligible": [],
+        "expected": "REVIEW_REQUIRED",
+        "id": "observation-undurable",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "observation-stale-time",
+      "input": {
+        "change": "stale-time",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "observation-stale-time",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "observation-future-time",
+      "input": {
+        "change": "future-time",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "observation-future-time",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "observation-authority",
+      "input": {
+        "change": "authority",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "observation-authority",
+        "kind": "observation",
+        "reasons": []
+      },
+      "kind": "observation",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "sequence-replayed",
+      "input": {
+        "change": "replayed",
+        "eligible": [],
+        "expected": "CONFLICT",
+        "id": "sequence-replayed",
+        "kind": "sequence",
+        "reasons": []
+      },
+      "kind": "sequence",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "sequence-superseded",
+      "input": {
+        "change": "superseded",
+        "eligible": [],
+        "expected": "CONFLICT",
+        "id": "sequence-superseded",
+        "kind": "sequence",
+        "reasons": []
+      },
+      "kind": "sequence",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "sequence-nonmonotone",
+      "input": {
+        "change": "nonmonotone",
+        "eligible": [],
+        "expected": "CONFLICT",
+        "id": "sequence-nonmonotone",
+        "kind": "sequence",
+        "reasons": []
+      },
+      "kind": "sequence",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "stability-count",
+      "input": {
+        "change": "count",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "stability-count",
+        "kind": "stability",
+        "reasons": []
+      },
+      "kind": "stability",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "stability-span",
+      "input": {
+        "change": "span",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "stability-span",
+        "kind": "stability",
+        "reasons": []
+      },
+      "kind": "stability",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING",
+      "expected": "OBSERVING",
+      "id": "stability-scene",
+      "input": {
+        "change": "scene",
+        "eligible": [],
+        "expected": "OBSERVING",
+        "id": "stability-scene",
+        "kind": "stability",
+        "reasons": []
+      },
+      "kind": "stability",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "terminal-CLOSED",
+      "input": {
+        "change": "CLOSED",
+        "eligible": [],
+        "expected": "CONFLICT",
+        "id": "terminal-CLOSED",
+        "kind": "terminal",
+        "reasons": []
+      },
+      "kind": "terminal",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "terminal-REVIEW_REQUIRED",
+      "input": {
+        "change": "REVIEW_REQUIRED",
+        "eligible": [],
+        "expected": "CONFLICT",
+        "id": "terminal-REVIEW_REQUIRED",
+        "kind": "terminal",
+        "reasons": []
+      },
+      "kind": "terminal",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "terminal-ACTION_REQUIRED",
+      "input": {
+        "change": "ACTION_REQUIRED",
+        "eligible": [],
+        "expected": "CONFLICT",
+        "id": "terminal-ACTION_REQUIRED",
+        "kind": "terminal",
+        "reasons": []
+      },
+      "kind": "terminal",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "expiry-pass",
+      "input": {
+        "change": "pass",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "expiry-pass",
+        "kind": "expiry",
+        "reasons": []
+      },
+      "kind": "expiry",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "expiry-authority",
+      "input": {
+        "change": "authority",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "expiry-authority",
+        "kind": "expiry",
+        "reasons": []
+      },
+      "kind": "expiry",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "INVALIDATED",
+      "expected": "INVALIDATED",
+      "id": "nonfinite-time",
+      "input": {
+        "change": "",
+        "eligible": [],
+        "expected": "INVALIDATED",
+        "id": "nonfinite-time",
+        "kind": "nonfinite",
+        "reasons": []
+      },
+      "kind": "nonfinite",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "REVIEW_REQUIRED:2",
+      "expected": "REVIEW_REQUIRED:2",
+      "id": "correction-ceiling",
+      "input": {
+        "change": "ceiling",
+        "eligible": [],
+        "expected": "REVIEW_REQUIRED:2",
+        "id": "correction-ceiling",
+        "kind": "action",
+        "reasons": []
+      },
+      "kind": "action",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "OBSERVING:0:0",
+      "expected": "OBSERVING:0:0",
+      "id": "ack-without-pass",
+      "input": {
+        "change": "ack",
+        "eligible": [],
+        "expected": "OBSERVING:0:0",
+        "id": "ack-without-pass",
+        "kind": "action",
+        "reasons": []
+      },
+      "kind": "action",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "wrong-ack",
+      "input": {
+        "change": "wrong-ack",
+        "eligible": [],
+        "expected": "CONFLICT",
+        "id": "wrong-ack",
+        "kind": "action",
+        "reasons": []
+      },
+      "kind": "action",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "CONFLICT",
+      "expected": "CONFLICT",
+      "id": "stale-proposal",
+      "input": {
+        "change": "stale",
+        "eligible": [],
+        "expected": "CONFLICT",
+        "id": "stale-proposal",
+        "kind": "action",
+        "reasons": []
+      },
+      "kind": "action",
+      "reason": null,
+      "status": "PASS"
+    },
+    {
+      "actual": "PASSED_CURRENT",
+      "expected": "PASSED_CURRENT",
+      "id": "valid-stable-control",
+      "input": {
+        "change": "",
+        "eligible": [],
+        "expected": "PASSED_CURRENT",
+        "id": "valid-stable-control",
+        "kind": "valid",
+        "reasons": []
+      },
+      "kind": "valid",
+      "reason": null,
+      "status": "PASS"
+    }
+  ]
+}
