@@ -21,12 +21,12 @@ Observed through the authenticated browser because Devpost connector whoami and 
 | Built with | Python and OpenCV saved; additional implementation tags optional |
 | Video demo link | Required; actual public/unlisted YouTube/Vimeo URL missing |
 | File upload | Required; maximum 35 MB; report archive prepared locally. Browser upload blocked by extension file-access permission; not uploaded |
-| Repository URL | Created https://github.com/vijay-v-bhoyar/ProofPack as private; source push and judge access must be verified |
+| Repository URL | Created https://github.com/vijay-v-bhoyar/ProofPack as private; source pushed and URL saved to Devpost. Judge access remains pending |
 | Testing instructions | Saved and re-opened to verify persistence; describes local checks and absent hosted access |
 | Working web endpoint | Optional form field, but published requirements demand endpoint OR arranged live screen-share; neither verified |
 | Sponsor / Special Prizes | Leave unselected until qualifying evidence is ready |
 | Special Award Consideration, field 28208 | Separate selection mirrors award intent; do not claim COOL qualification |
-| Repository URL, field 28209 | Use the newly created ProofPack repository after verifying its push |
+| Repository URL, field 28209 | Saved: https://github.com/vijay-v-bhoyar/ProofPack |
 | Testing instructions, field 28210 | Saved |
 | Working web endpoint, field 28211 | Missing |
 
@@ -67,6 +67,8 @@ These are scoped reproduction instructions, not a claim that this clean-install 
 ## Publication boundary
 
 Maintain source, tests, fixtures, documentation, pinned dependencies and explicitly referenced evidence in Git. Keep the approximately 3.4 GB of generated execution workspaces, dependency bundles and raw captures locally. Referenced evidence records preserve their original bytes, failures and provenance; their nested references may refer to local-only raw artifacts. The source repository is not a complete forensic archive. No runtime behavior changed for this preparation. A pattern scan found only four reviewed dummy credential URLs in negative tests and their collection receipt; it is not a guarantee that arbitrary secrets cannot exist. Git whitespace checks report existing historical/log whitespace and three pre-existing blank EOF lines; no historical evidence was rewritten to clear them.
+
+Initial push 1647888 was followed by byte-preservation correction bc5e13e without history rewriting. The corrected archive matched all 1,276 reviewed files and passed all 34 documentation checks from an isolated extraction. The first archive check caught Git line-ending normalization; the next caught an omitted directory link, repaired by including both referenced qualification reports. No application tests or AWS operations ran during submission preparation. A source archive under 35 MB is available locally at artifacts/devpost/publication-source.zip; its file upload is blocked by browser extension permissions, not a Devpost acceptance result. Video remains blank by user instruction. Final terms checkbox remains unchecked and the entry remains DRAFT.
 
 ## Judging alignment
 
